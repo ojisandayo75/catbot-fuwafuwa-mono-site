@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-25T22:37:40",
+      "dateModified": "2026-06-25T23:01:20",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -464,6 +464,19 @@
   .nav-icon[data-icon="match"]{background-position:0 0}
   .nav-icon[data-icon="consult"]{background-position:0 100%}
   .nav-icon[data-icon="seasonal"]{background-position:50% 100%}
+  .nav-icon[data-icon="trust"],
+  .nav-icon[data-icon="consult"]{
+    background-size:cover;
+    background-position:center;
+  }
+  .nav-icon[data-icon="trust"]{
+    background-image:url("assets/ai_shortcut_consult.png");
+    background-image:image-set(url("assets/ai_shortcut_consult.webp") type("image/webp"), url("assets/ai_shortcut_consult.png") type("image/png"));
+  }
+  .nav-icon[data-icon="consult"]{
+    background-image:url("assets/ai_shortcut_consult.png");
+    background-image:image-set(url("assets/ai_shortcut_consult.webp") type("image/webp"), url("assets/ai_shortcut_consult.png") type("image/png"));
+  }
   .disclosure{
     border-top:1px solid var(--line);
     background:#f0dfcc;
@@ -1095,6 +1108,13 @@
     white-space:nowrap;
   }
   .mobile-image-menu-button:hover{background:#fff7eb;color:#25170f}
+  .mobile-image-menu-button.is-journey{
+    background:#fffaf2;
+    box-shadow:inset 0 0 0 1px rgba(185,141,103,.34);
+  }
+  .mobile-image-menu-button.is-journey .mobile-image-menu-icon{
+    border-color:#c79c72;
+  }
   .mobile-image-menu-button.active{
     color:#25170f;
     font-weight:800;
@@ -1158,6 +1178,19 @@
   .mobile-image-menu-icon[data-icon="match"]{background-position:0 0}
   .mobile-image-menu-icon[data-icon="consult"]{background-position:0 100%}
   .mobile-image-menu-icon[data-icon="seasonal"]{background-position:50% 100%}
+  .mobile-image-menu-icon[data-icon="trust"],
+  .mobile-image-menu-icon[data-icon="consult"]{
+    background-size:cover;
+    background-position:center;
+  }
+  .mobile-image-menu-icon[data-icon="trust"]{
+    background-image:url("assets/ai_shortcut_consult.png");
+    background-image:image-set(url("assets/ai_shortcut_consult.webp") type("image/webp"), url("assets/ai_shortcut_consult.png") type("image/png"));
+  }
+  .mobile-image-menu-icon[data-icon="consult"]{
+    background-image:url("assets/ai_shortcut_consult.png");
+    background-image:image-set(url("assets/ai_shortcut_consult.webp") type("image/webp"), url("assets/ai_shortcut_consult.png") type("image/png"));
+  }
   .shortcut-menu{
     margin-top:18px;
     display:grid;
@@ -3752,9 +3785,9 @@
       <a href="#visualMenu"><span class="nav-icon" data-icon="all" aria-hidden="true"></span><span>画像メニュー</span></a>
       <a href="#careRoute"><span class="nav-icon" data-icon="care-route" aria-hidden="true"></span><span>猫の状態</span></a>
       <a href="#catbotConnect"><span class="nav-icon" data-icon="catbot" aria-hidden="true"></span><span>catbotへ戻る</span></a>
-      <a href="#trustBridge"><span class="nav-icon" data-icon="advisor" aria-hidden="true"></span><span>猫優先</span></a>
+      <a href="#trustBridge"><span class="nav-icon" data-icon="trust" aria-hidden="true"></span><span>猫優先</span></a>
       <a href="#followerMilestone"><span class="nav-icon" data-icon="trends" aria-hidden="true"></span><span>1000人準備</span></a>
-      <a href="#safetySummary"><span class="nav-icon" data-icon="advisor" aria-hidden="true"></span><span>猫優先チェック</span></a>
+      <a href="#safetySummary"><span class="nav-icon" data-icon="trust" aria-hidden="true"></span><span>猫優先チェック</span></a>
       <a href="#noBuyGuide"><span class="nav-icon" data-icon="no-buy" aria-hidden="true"></span><span>買わない判断</span></a>
       <a href="#consultFirst"><span class="nav-icon" data-icon="consult" aria-hidden="true"></span><span>相談優先</span></a>
       <a href="#aftercarePlan"><span class="nav-icon" data-icon="care" aria-hidden="true"></span><span>使い始め</span></a>
@@ -3784,27 +3817,23 @@
       <span class="mobile-image-menu-icon" data-icon="all" aria-hidden="true"></span>
       <span>全部</span>
     </button>
-    <a class="mobile-image-menu-button" href="#catMatch">
+    <a class="mobile-image-menu-button is-journey" href="#catMatch" aria-label="うちの子に合わせて選ぶ">
       <span class="mobile-image-menu-icon" data-icon="match" aria-hidden="true"></span>
       <span>うちの子</span>
     </a>
-    <a class="mobile-image-menu-button" href="quiz/">
-      <span class="mobile-image-menu-icon" data-icon="match" aria-hidden="true"></span>
-      <span>診断</span>
-    </a>
-    <a class="mobile-image-menu-button" href="#advisor">
+    <a class="mobile-image-menu-button is-journey" href="#advisor" aria-label="買う前に安全チェックする">
       <span class="mobile-image-menu-icon" data-icon="advisor" aria-hidden="true"></span>
-      <span>チェック</span>
+      <span>買う前</span>
     </a>
-    <a class="mobile-image-menu-button" href="#trustBridge">
-      <span class="mobile-image-menu-icon" data-icon="advisor" aria-hidden="true"></span>
+    <a class="mobile-image-menu-button is-journey" href="#trustBridge" aria-label="猫優先の選び方を見る">
+      <span class="mobile-image-menu-icon" data-icon="trust" aria-hidden="true"></span>
       <span>猫優先</span>
     </a>
-    <a class="mobile-image-menu-button" href="#noBuyGuide">
+    <a class="mobile-image-menu-button" href="#noBuyGuide" aria-label="買わない判断を見る">
       <span class="mobile-image-menu-icon" data-icon="no-buy" aria-hidden="true"></span>
       <span>買わない</span>
     </a>
-    <a class="mobile-image-menu-button" href="#consultFirst">
+    <a class="mobile-image-menu-button is-journey" href="#consultFirst" aria-label="症状があるときの相談優先を見る">
       <span class="mobile-image-menu-icon" data-icon="consult" aria-hidden="true"></span>
       <span>相談</span>
     </a>
