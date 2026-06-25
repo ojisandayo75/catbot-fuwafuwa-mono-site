@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T17:51:25",
+  "generated_at": "2026-06-25T18:23:48",
   "base_dir": "C:\\Users\\User\\catbot-x\\public_shop",
   "ok": true,
-  "required_count": 50,
-  "present_required_count": 50,
+  "required_count": 52,
+  "present_required_count": 52,
   "assets": [
     {
       "path": "assets/ai_brand_mark.webp",
@@ -512,6 +512,42 @@
       ]
     },
     {
+      "path": "assets/ai_nav_icon_sheet_v2.webp",
+      "role": "navigation icon sheet v2",
+      "required": true,
+      "exists": true,
+      "size_bytes": 68646,
+      "updated_at": "2026-06-25T18:18:43",
+      "width": 1536,
+      "height": 1024,
+      "min_width": 900,
+      "min_height": 600,
+      "dimension_ok": true,
+      "used_by": [
+        "header navigation",
+        "mobile shortcut navigation",
+        "buying-check image menu"
+      ]
+    },
+    {
+      "path": "assets/ai_nav_icon_sheet_v2.png",
+      "role": "navigation icon sheet v2 png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 559288,
+      "updated_at": "2026-06-25T18:18:43",
+      "width": 1536,
+      "height": 1024,
+      "min_width": 900,
+      "min_height": 600,
+      "dimension_ok": true,
+      "used_by": [
+        "header navigation fallback",
+        "mobile shortcut navigation fallback",
+        "buying-check image menu fallback"
+      ]
+    },
+    {
       "path": "assets/ai_shortcut_icon_sheet.webp",
       "role": "purpose shortcut icon sheet",
       "required": true,
@@ -833,7 +869,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 2495,
-      "updated_at": "2026-06-25T17:51:25",
+      "updated_at": "2026-06-25T18:23:48",
       "width": 32,
       "height": 32,
       "min_width": 32,
@@ -850,7 +886,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 56785,
-      "updated_at": "2026-06-25T17:51:25",
+      "updated_at": "2026-06-25T18:23:48",
       "width": 192,
       "height": 192,
       "min_width": 192,
@@ -867,7 +903,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 358627,
-      "updated_at": "2026-06-25T17:51:25",
+      "updated_at": "2026-06-25T18:23:48",
       "width": 512,
       "height": 512,
       "min_width": 512,
@@ -884,7 +920,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 50122,
-      "updated_at": "2026-06-25T17:51:25",
+      "updated_at": "2026-06-25T18:23:48",
       "width": 180,
       "height": 180,
       "min_width": 180,
