@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T06:17:00",
-  "exported_at": "2026-06-26T06:17:00",
+  "generated_at": "2026-06-26T06:33:40",
+  "exported_at": "2026-06-26T06:33:40",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -213,18 +213,39 @@
   "shop_post_guard": {
     "allowed": false,
     "decision": "wait",
+    "milestone_ready": false,
+    "followers": 561,
+    "follower_goal": 1000,
+    "followers_to_goal": 439,
     "daily_cap": 2,
     "min_interval_hours": 6.0,
     "direct_product_link_allowed": false,
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "public_monitor_required": true,
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "command": ".\\affiliate_site_ops.bat shop-post-guard --json"
+    "command": ".\\affiliate_site_ops.bat shop-post-guard --json",
+    "blockers": [
+      {
+        "id": "affiliate_link",
+        "detail": "no real affiliate/tracking link is set"
+      },
+      {
+        "id": "follower_goal",
+        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
+      }
+    ],
+    "milestone_blockers": [
+      {
+        "id": "follower_goal",
+        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
+      }
+    ]
   },
   "cat_first_policy": [
     "Show cat fit and no-buy reasons before product links.",
     "Prefer consultation when health, eating, urination, or behavior looks unsafe.",
     "Keep X promotion profile-first; avoid repeated direct product URLs.",
+    "Wait for the follower milestone before shop promotion; use soft site warmup before then.",
     "Do not post shop promotion until the public URL monitor has passed."
   ],
   "commands": {

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T06:17:00",
-  "exported_at": "2026-06-26T06:17:00",
+  "generated_at": "2026-06-26T06:33:40",
+  "exported_at": "2026-06-26T06:33:40",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -8,11 +8,17 @@
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "followers": 561,
+  "follower_goal": 1000,
+  "followers_to_goal": 439,
   "shop_post_guard": {
     "decision": "wait",
     "allowed": false,
     "rate_allowed": true,
     "launch_ready": false,
+    "milestone_ready": false,
+    "followers": 561,
+    "follower_goal": 1000,
+    "followers_to_goal": 439,
     "today_count": 0,
     "daily_cap": 2,
     "remaining_today": 2,
@@ -26,6 +32,10 @@
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
+      },
+      {
+        "id": "follower_goal",
+        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
       }
     ],
     "rate_blockers": [],
@@ -33,6 +43,12 @@
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
+      }
+    ],
+    "milestone_blockers": [
+      {
+        "id": "follower_goal",
+        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
       }
     ],
     "command": ".\\affiliate_site_ops.bat shop-post-guard",
@@ -95,6 +111,7 @@
     "商品直リンクを連投せず、本文ではプロフィールか公開サイトへ案内する。",
     "公開サイトまたはプロフィール導線へ案内する。",
     "バズ投稿への自己リプは短く、投稿につき1本までにする。",
+    "1,000フォロワーまでは商品告知ではなく、商品リンクなしのプレ告知に留める。",
     "猫の不安、体調変化、食欲や飲水の急変がある場合は用品より相談を優先する。"
   ],
   "commands": {
