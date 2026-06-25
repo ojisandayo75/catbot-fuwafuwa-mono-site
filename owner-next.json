@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-26T00:16:45",
-  "exported_at": "2026-06-26T00:16:45",
+  "generated_at": "2026-06-26T01:12:37",
+  "exported_at": "2026-06-26T01:12:37",
   "state": "needs_first_affiliate_link",
-  "headline": "残りは実アフィリリンク",
-  "primary_action": "toys/p2 の追跡付きURLを保存する",
+  "headline": "残りは最初の実アフィリリンクです",
+  "primary_action": "toys/p2 電動猫じゃらし の追跡URLを保存する",
   "account": "@fuwafuwa_mono",
   "followers": 541,
   "follower_goal": 1000,
@@ -23,11 +23,12 @@
     {
       "id": "first_affiliate_link",
       "done": false,
-      "title": "1本目の実アフィリリンクを作る",
+      "title": "1本目の追跡URLを作る",
       "detail": "もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。",
-      "command": ".\\affiliate_site_ops.bat moshimo-workbench --force",
-      "check_command": ".\\affiliate_site_ops.bat check-url --% \"https://MOSHIMO_TRACKING_URL\"",
-      "apply_command": ".\\affiliate_site_ops.bat set-next --% \"https://MOSHIMO_TRACKING_URL\" --package --smoke-test",
+      "command": ".\\catbot_first_link_handoff.bat -Open",
+      "save_command": ".\\catbot_first_link_clipboard_to_inbox.bat",
+      "dry_run_command": ".\\catbot_first_link_finish.bat",
+      "apply_command": ".\\catbot_first_link_finish.bat -Apply -Publish",
       "target": {
         "key": "toys/p2",
         "product": "電動猫じゃらし",
@@ -38,36 +39,34 @@
     {
       "id": "public_url",
       "done": true,
-      "title": "サイトを公開してURLを登録する",
-      "detail": "dist/catbot-affiliate-site.zip をNetlify、Cloudflare Pages、Vercelなどへアップロードし、開けたURLをcatbot側に登録します。",
-      "command": ".\\affiliate_site_ops.bat public-url-workbench --force",
-      "preview_command": ".\\affiliate_site_ops.bat preview-check --build",
-      "apply_command": ".\\affiliate_site_ops.bat profile-url \"https://PUBLIC_URL/\" --package --smoke-test",
-      "verify_command": ".\\affiliate_site_ops.bat verify-public-url \"https://PUBLIC_URL/\""
+      "title": "公開URLを確認する",
+      "detail": "GitHub Pagesの公開URLが登録済みか確認します。ここはすでにOKなら触らなくて大丈夫です。",
+      "command": ".\\affiliate_site_ops.bat verify-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
+      "preview_command": ".\\affiliate_site_ops.bat preview-check --build"
     },
     {
       "id": "finish_launch",
       "done": false,
-      "title": "2つがそろったら一括反映する",
-      "detail": "もしも追跡URLと公開URLが両方ある場合は、保存、公開URL登録、ZIP再生成、スモーク確認を一括で進めます。",
-      "dry_run_command": ".\\affiliate_site_ops.bat finish-launch --dry-run --% \"https://MOSHIMO_TRACKING_URL\" \"https://PUBLIC_URL/\"",
-      "apply_command": ".\\affiliate_site_ops.bat finish-launch --% \"https://MOSHIMO_TRACKING_URL\" \"https://PUBLIC_URL/\"",
-      "file_input_command": ".\\affiliate_site_ops.bat finish-launch --input-file catbot_finish_launch_inputs.txt --dry-run"
+      "title": "dry-runしてから反映する",
+      "detail": "受け箱に保存した追跡URLをdry-runで確認し、対象商品とプロバイダが正しければ公開まで反映します。",
+      "dry_run_command": ".\\catbot_first_link_finish.bat",
+      "apply_command": ".\\catbot_first_link_finish.bat -Apply -Publish",
+      "health_command": ".\\catbot_ops_health.bat"
     },
     {
       "id": "final_check",
       "done": false,
-      "title": "最後にローンチ判定を見る",
-      "detail": "READYになれば、Xプロフィールのwebsite欄に公開URLを入れ、shop-post-guardで告知可否を見ます。",
-      "command": ".\\affiliate_site_ops.bat launch-check",
-      "shop_guard_command": ".\\affiliate_site_ops.bat shop-post-guard"
+      "title": "13/13を確認してX導線へ進む",
+      "detail": "launch gateが13/13になったら、Xプロフィールと投稿ガードを見て告知可否を判断します。",
+      "command": ".\\catbot_auto_pipeline.bat",
+      "shop_guard_command": ".\\catbot_shop_post_ready.bat"
     }
   ],
   "cat_first_notes": [
     "商品直リンクをXに連投しない。プロフィールの公開サイトへ案内する。",
-    "買う前チェック、合わない条件、やめるサインを商品ページより先に見せる。",
-    "最初の公開後はクリック数より、猫に合わない商品が混ざっていないかを優先して見直す。",
-    "フォロワー1000人前でも導線づくりは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。"
+    "商品ページでは、買う前チェック・合わない条件・やめるサインをリンクより先に見せる。",
+    "クリック数より、猫に合わない商品が混ざっていないかを優先して見直す。",
+    "1000フォロワー前でも導線作りは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。"
   ],
   "public_files": {
     "shop": "index.html",

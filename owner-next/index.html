@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<meta name="description" content="catbotアフィリエイトサイト公開前に必要な実アフィリリンク、公開URL、最終確認をまとめた運用ページです。">
+<meta name="description" content="catbotアフィリエイトサイトの最初の追跡URL、公開URL、最終確認をまとめた運用ページです。">
 <meta property="og:title" content="Catbot 次にやること">
-<meta property="og:description" content="catbotアフィリエイトサイト公開前に必要な実アフィリリンク、公開URL、最終確認をまとめた運用ページです。">
+<meta property="og:description" content="catbotアフィリエイトサイトの最初の追跡URL、公開URL、最終確認をまとめた運用ページです。">
 <meta property="og:site_name" content="ふわふわ猫の道具箱">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Catbot 次にやること">
-<meta name="twitter:description" content="catbotアフィリエイトサイト公開前に必要な実アフィリリンク、公開URL、最終確認をまとめた運用ページです。">
+<meta name="twitter:description" content="catbotアフィリエイトサイトの最初の追跡URL、公開URL、最終確認をまとめた運用ページです。">
 <meta name="theme-color" content="#5a3522">
 <link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
 <link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
@@ -30,7 +30,7 @@
 <meta name="twitter:creator" content="@fuwafuwa_mono">
 <title>Catbot 次にやること</title>
 <style>
-:root{--ink:#25170f;--paper:#fff8ef;--panel:#fff3df;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--ok:#edf3e5;--todo:#fff2dd;--soft:#f4eadb}
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--ok:#edf3e5;--todo:#fff2dd;--soft:#f4eadb}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
 .wrap{width:100%;max-width:1120px;margin:0 auto;padding:22px}
@@ -41,9 +41,8 @@ h1{margin:8px 0;font-size:38px;line-height:1.15;letter-spacing:0;overflow-wrap:a
 h2{margin:6px 0;font-size:22px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
 p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
-.metric,.policy,.step-card{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
+.metric,.policy,.step-card,.hero-card{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
 .metric b{display:block;font-size:27px;line-height:1.2;margin-top:5px}
-.hero-card{border:1px solid var(--line);border-radius:8px;background:#fffaf2;padding:14px}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800}
 .button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
@@ -64,23 +63,9 @@ dt{font-weight:800;color:#4e2f1f}
 dd{margin:4px 0 0}
 code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;font-family:Consolas,"Yu Gothic UI",monospace}
 .target{margin-top:10px;border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
-.finish-panel{margin-top:14px;border:1px solid var(--line);border-radius:8px;background:#fffaf2;padding:16px;display:grid;gap:12px}
-.finish-panel h2{margin:0;font-size:24px}
-.finish-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.finish-field{display:grid;gap:6px;min-width:0}
-.finish-field span{font-weight:850;color:#3f281b}
-.finish-field input{width:100%;min-height:44px;border:1px solid #d8bea4;border-radius:8px;background:#fffdf8;color:var(--ink);font:inherit;padding:9px;overflow-wrap:anywhere}
-.finish-field input:focus{outline:3px solid rgba(95,127,103,.22);border-color:#9eb08b}
-.finish-feedback{margin:0;padding:10px;border:1px solid #d8bea4;border-radius:8px;background:#f4eadb;color:#5f4735;font-weight:800}
-.finish-feedback.good{border-color:#9eb08b;background:#edf3e5;color:#446146}
-.finish-feedback.warn{border-color:#d8bea4;background:#fff2dd;color:#845d34}
-.finish-commands{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.finish-command{min-width:0;border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px;display:grid;gap:8px}
-.finish-command strong{color:#3f281b}
-.finish-command .button{width:max-content;max-width:100%}
 .policy{margin-top:14px;background:#f4eadb}
 .policy ul{margin:8px 0 0;padding-left:20px;color:#5f4735}
-@media(max-width:840px){.hero,.metrics,.step-card,.finish-grid,.finish-commands{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.step-art{width:100%;max-width:220px}.finish-command .button{width:100%}}
+@media(max-width:840px){.hero,.metrics,.step-card{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.step-art{width:100%;max-width:220px}}
 </style>
 </head>
 <body>
@@ -89,7 +74,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     <div>
       <span class="label">noindex 運用ページ</span>
       <h1>Catbot 次にやること</h1>
-      <p>残りは実アフィリリンク。いま一番大事なのは、toys/p2 の追跡付きURLを保存することです。</p>
+      <p>残りは最初の実アフィリリンクです。いま一番大事なのは、toys/p2 電動猫じゃらし の追跡URLを保存することです。</p>
       <div class="actions">
         <a class="button" href="../owner-next.json">owner-next.json</a>
         <a class="button light" href="../status/">ステータス</a>
@@ -110,52 +95,14 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     <div class="metric"><span class="label">フォロワー</span><b>541</b><p>459人で1000人</p></div>
     <div class="metric"><span class="label">実リンク</span><b>0/9</b><p>最初は1本でOK</p></div>
     <div class="metric"><span class="label">公開URL</span><b>OK</b><p>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/</p></div>
-    <div class="metric"><span class="label">ローンチ</span><b>準備中</b><p>launch-checkで確定</p></div>
-  </section>
-  <section class="finish-panel" aria-label="最後の入力をコマンド化">
-    <span class="label">貼るだけ</span>
-    <h2>もしもURLと公開URLをここで確認</h2>
-    <p>2つそろったら dry-run で確認してから反映します。片方だけ先に保存するコマンドもここで作れます。</p>
-    <div class="finish-grid">
-      <label class="finish-field">
-        <span>もしも等の追跡付きURL</span>
-        <input id="finishAffiliateUrl" type="url" inputmode="url" autocomplete="off" placeholder="https://af.moshimo.com/...">
-      </label>
-      <label class="finish-field">
-        <span>公開URL</span>
-        <input id="finishPublicUrl" type="url" inputmode="url" autocomplete="off" placeholder="https://your-site.example/">
-      </label>
-    </div>
-    <p id="finishFeedback" class="finish-feedback">URLを貼ると、下のコマンドが本番用に変わります。</p>
-    <div class="finish-commands">
-      <div class="finish-command">
-        <strong>1. 保存前チェック</strong>
-        <code id="finishDryRunCommand">.ffiliate_site_ops.bat finish-launch --dry-run --% "https://MOSHIMO_TRACKING_URL" "https://PUBLIC_URL/"</code>
-        <button class="button light" type="button" data-copy-code="finishDryRunCommand">コピー</button>
-      </div>
-      <div class="finish-command">
-        <strong>2. 反映</strong>
-        <code id="finishApplyCommand">.ffiliate_site_ops.bat finish-launch --% "https://MOSHIMO_TRACKING_URL" "https://PUBLIC_URL/"</code>
-        <button class="button light" type="button" data-copy-code="finishApplyCommand">コピー</button>
-      </div>
-      <div class="finish-command">
-        <strong>もしもURLだけ先に保存</strong>
-        <code id="finishSetNextCommand">.ffiliate_site_ops.bat set-next --% "https://MOSHIMO_TRACKING_URL" --package --smoke-test</code>
-        <button class="button light" type="button" data-copy-code="finishSetNextCommand">コピー</button>
-      </div>
-      <div class="finish-command">
-        <strong>公開URLだけ先に保存</strong>
-        <code id="finishProfileCommand">.ffiliate_site_ops.bat profile-url "https://PUBLIC_URL/" --package --smoke-test</code>
-        <button class="button light" type="button" data-copy-code="finishProfileCommand">コピー</button>
-      </div>
-    </div>
+    <div class="metric"><span class="label">ローンチ</span><b>準備中</b><p>launch-checkで確認</p></div>
   </section>
   <section class="steps" aria-label="次にやること">
         <article class="step-card todo">
           <div class="step-art" data-slot="0" aria-hidden="true"></div>
           <div class="step-body">
             <span class="label">次にやる</span>
-            <h2>1本目の実アフィリリンクを作る</h2>
+            <h2>1本目の追跡URLを作る</h2>
             <p>もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。</p>
             
             <div class="target">
@@ -163,7 +110,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
               <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
               <a class="button light" href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97" target="_blank" rel="noopener noreferrer">検索候補を開く</a>
             </div>
-            <dl><div><dt>開く</dt><dd><code>.\affiliate_site_ops.bat moshimo-workbench --force</code></dd></div><div><dt>確認</dt><dd><code>.\affiliate_site_ops.bat check-url --% &quot;https://MOSHIMO_TRACKING_URL&quot;</code></dd></div><div><dt>反映</dt><dd><code>.\affiliate_site_ops.bat set-next --% &quot;https://MOSHIMO_TRACKING_URL&quot; --package --smoke-test</code></dd></div></dl>
+            <dl><div><dt>開く</dt><dd><code>.\catbot_first_link_handoff.bat -Open</code></dd></div><div><dt>コピーURLを保存</dt><dd><code>.\catbot_first_link_clipboard_to_inbox.bat</code></dd></div><div><dt>dry-run</dt><dd><code>.\catbot_first_link_finish.bat</code></dd></div><div><dt>反映</dt><dd><code>.\catbot_first_link_finish.bat -Apply -Publish</code></dd></div></dl>
           </div>
         </article>
 
@@ -171,10 +118,10 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
           <div class="step-art" data-slot="1" aria-hidden="true"></div>
           <div class="step-body">
             <span class="label">完了</span>
-            <h2>サイトを公開してURLを登録する</h2>
-            <p>dist/catbot-affiliate-site.zip をNetlify、Cloudflare Pages、Vercelなどへアップロードし、開けたURLをcatbot側に登録します。</p>
+            <h2>公開URLを確認する</h2>
+            <p>GitHub Pagesの公開URLが登録済みか確認します。ここはすでにOKなら触らなくて大丈夫です。</p>
             
-            <dl><div><dt>開く</dt><dd><code>.\affiliate_site_ops.bat public-url-workbench --force</code></dd></div><div><dt>プレビュー</dt><dd><code>.\affiliate_site_ops.bat preview-check --build</code></dd></div><div><dt>反映</dt><dd><code>.\affiliate_site_ops.bat profile-url &quot;https://PUBLIC_URL/&quot; --package --smoke-test</code></dd></div><div><dt>外部確認</dt><dd><code>.\affiliate_site_ops.bat verify-public-url &quot;https://PUBLIC_URL/&quot;</code></dd></div></dl>
+            <dl><div><dt>開く</dt><dd><code>.\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code></dd></div><div><dt>プレビュー</dt><dd><code>.\affiliate_site_ops.bat preview-check --build</code></dd></div></dl>
           </div>
         </article>
 
@@ -182,10 +129,10 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
           <div class="step-art" data-slot="2" aria-hidden="true"></div>
           <div class="step-body">
             <span class="label">次にやる</span>
-            <h2>2つがそろったら一括反映する</h2>
-            <p>もしも追跡URLと公開URLが両方ある場合は、保存、公開URL登録、ZIP再生成、スモーク確認を一括で進めます。</p>
+            <h2>dry-runしてから反映する</h2>
+            <p>受け箱に保存した追跡URLをdry-runで確認し、対象商品とプロバイダが正しければ公開まで反映します。</p>
             
-            <dl><div><dt>保存なし確認</dt><dd><code>.\affiliate_site_ops.bat finish-launch --dry-run --% &quot;https://MOSHIMO_TRACKING_URL&quot; &quot;https://PUBLIC_URL/&quot;</code></dd></div><div><dt>反映</dt><dd><code>.\affiliate_site_ops.bat finish-launch --% &quot;https://MOSHIMO_TRACKING_URL&quot; &quot;https://PUBLIC_URL/&quot;</code></dd></div><div><dt>ファイル入力</dt><dd><code>.\affiliate_site_ops.bat finish-launch --input-file catbot_finish_launch_inputs.txt --dry-run</code></dd></div></dl>
+            <dl><div><dt>dry-run</dt><dd><code>.\catbot_first_link_finish.bat</code></dd></div><div><dt>反映</dt><dd><code>.\catbot_first_link_finish.bat -Apply -Publish</code></dd></div><div><dt>健康チェック</dt><dd><code>.\catbot_ops_health.bat</code></dd></div></dl>
           </div>
         </article>
 
@@ -193,15 +140,15 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
           <div class="step-art" data-slot="3" aria-hidden="true"></div>
           <div class="step-body">
             <span class="label">次にやる</span>
-            <h2>最後にローンチ判定を見る</h2>
-            <p>READYになれば、Xプロフィールのwebsite欄に公開URLを入れ、shop-post-guardで告知可否を見ます。</p>
+            <h2>13/13を確認してX導線へ進む</h2>
+            <p>launch gateが13/13になったら、Xプロフィールと投稿ガードを見て告知可否を判断します。</p>
             
-            <dl><div><dt>開く</dt><dd><code>.\affiliate_site_ops.bat launch-check</code></dd></div><div><dt>告知前確認</dt><dd><code>.\affiliate_site_ops.bat shop-post-guard</code></dd></div></dl>
+            <dl><div><dt>開く</dt><dd><code>.\catbot_auto_pipeline.bat</code></dd></div><div><dt>投稿前確認</dt><dd><code>.\catbot_shop_post_ready.bat</code></dd></div></dl>
           </div>
         </article></section>
   <section class="policy">
     <span class="label">猫ファースト運用</span>
-    <ul><li>商品直リンクをXに連投しない。プロフィールの公開サイトへ案内する。</li><li>買う前チェック、合わない条件、やめるサインを商品ページより先に見せる。</li><li>最初の公開後はクリック数より、猫に合わない商品が混ざっていないかを優先して見直す。</li><li>フォロワー1000人前でも導線づくりは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。</li></ul>
+    <ul><li>商品直リンクをXに連投しない。プロフィールの公開サイトへ案内する。</li><li>商品ページでは、買う前チェック・合わない条件・やめるサインをリンクより先に見せる。</li><li>クリック数より、猫に合わない商品が混ざっていないかを優先して見直す。</li><li>1000フォロワー前でも導線作りは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。</li></ul>
     <div class="actions">
       <a class="button light" href="../health/">リンク健全性</a>
       <a class="button light" href="../quiz/">うちの子診断</a>
@@ -211,95 +158,5 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     </div>
   </section>
 </main>
-<script>
-const finishAffiliateUrl = document.getElementById("finishAffiliateUrl");
-const finishPublicUrl = document.getElementById("finishPublicUrl");
-const finishFeedback = document.getElementById("finishFeedback");
-function cleanFinishValue(value) {
-  return String(value || "").trim();
-}
-function finishValue(input, fallback) {
-  return cleanFinishValue(input && input.value) || fallback;
-}
-function looksHttpsPublicUrl(value) {
-  const text = cleanFinishValue(value);
-  if (!text) return false;
-  try {
-    const url = new URL(text);
-    const host = url.hostname.toLowerCase();
-    return url.protocol === "https:" && host !== "localhost" && !host.startsWith("127.") && !host.endsWith(".local");
-  } catch (error) {
-    return false;
-  }
-}
-function looksAffiliateUrl(value) {
-  const text = cleanFinishValue(value);
-  if (!text) return false;
-  try {
-    const url = new URL(text);
-    const keys = [...url.searchParams.keys()].map((key) => key.toLowerCase());
-    const host = url.hostname.toLowerCase();
-    return host.includes("moshimo") || /affiliate|affi|a8mat|valuecommerce|af\./i.test(text) || keys.some((key) => ["a_id", "tag", "linkcode", "linkid", "vc_url", "pid", "scid", "ascsubtag"].includes(key));
-  } catch (error) {
-    return /moshimo|affiliate|affi|a8mat|valuecommerce|tag=/i.test(text);
-  }
-}
-function setFinishCommand(id, text) {
-  const node = document.getElementById(id);
-  if (node) node.textContent = text;
-}
-function updateFinishCommands() {
-  const affiliateUrl = finishValue(finishAffiliateUrl, "https://MOSHIMO_TRACKING_URL");
-  const publicUrl = finishValue(finishPublicUrl, "https://PUBLIC_URL/");
-  setFinishCommand("finishDryRunCommand", '.\\affiliate_site_ops.bat finish-launch --dry-run --% "' + affiliateUrl + '" "' + publicUrl + '"');
-  setFinishCommand("finishApplyCommand", '.\\affiliate_site_ops.bat finish-launch --% "' + affiliateUrl + '" "' + publicUrl + '"');
-  setFinishCommand("finishSetNextCommand", '.\\affiliate_site_ops.bat set-next --% "' + affiliateUrl + '" --package --smoke-test');
-  setFinishCommand("finishProfileCommand", '.\\affiliate_site_ops.bat profile-url "' + publicUrl + '" --package --smoke-test');
-  const hasAffiliate = cleanFinishValue(finishAffiliateUrl && finishAffiliateUrl.value);
-  const hasPublic = cleanFinishValue(finishPublicUrl && finishPublicUrl.value);
-  const affiliateOk = looksAffiliateUrl(hasAffiliate);
-  const publicOk = looksHttpsPublicUrl(hasPublic);
-  if (!finishFeedback) return;
-  finishFeedback.className = "finish-feedback";
-  if (affiliateOk && publicOk) {
-    finishFeedback.classList.add("good");
-    finishFeedback.textContent = "両方とも使えそうです。まず dry-run をコピーして確認します。";
-  } else if (affiliateOk || publicOk) {
-    finishFeedback.classList.add("warn");
-    finishFeedback.textContent = affiliateOk ? "もしもURLは使えそうです。公開URLができたら一括反映できます。" : "公開URLは使えそうです。もしもURLができたら一括反映できます。";
-  } else {
-    finishFeedback.textContent = "URLを貼ると、下のコマンドが本番用に変わります。";
-  }
-}
-async function copyFinishText(text) {
-  if (navigator.clipboard && window.isSecureContext) {
-    await navigator.clipboard.writeText(text);
-    return true;
-  }
-  const area = document.createElement("textarea");
-  area.value = text;
-  area.style.position = "fixed";
-  area.style.left = "-9999px";
-  document.body.appendChild(area);
-  area.select();
-  const ok = document.execCommand("copy");
-  area.remove();
-  return ok;
-}
-[finishAffiliateUrl, finishPublicUrl].forEach((input) => {
-  if (input) input.addEventListener("input", updateFinishCommands);
-});
-document.addEventListener("click", async (event) => {
-  const button = event.target.closest("[data-copy-code]");
-  if (!button) return;
-  const code = document.getElementById(button.getAttribute("data-copy-code"));
-  if (!code) return;
-  await copyFinishText(code.textContent || "");
-  const oldText = button.textContent;
-  button.textContent = "コピー済み";
-  setTimeout(() => { button.textContent = oldText; }, 1200);
-});
-updateFinishCommands();
-</script>
 </body>
 </html>
