@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-25T17:28:10",
+      "dateModified": "2026-06-25T17:51:25",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -687,15 +687,15 @@
     min-height:150px;
     border-bottom:1px solid #d8bea4;
     background-color:#f4eadb;
-    background-image:url("assets/ai_shortcut_icon_sheet_v2.png");
-    background-image:image-set(url("assets/ai_shortcut_icon_sheet_v2.webp") type("image/webp"), url("assets/ai_shortcut_icon_sheet_v2.png") type("image/png"));
+    background-image:url("/assets/ai_gateway_choice_sheet.png");
+    background-image:image-set(url("/assets/ai_gateway_choice_sheet.webp") type("image/webp"), url("/assets/ai_gateway_choice_sheet.png") type("image/png"));
     background-repeat:no-repeat;
-    background-size:300% 200%;
+    background-size:200% 200%;
     box-shadow:inset 0 0 0 1px rgba(255,255,255,.45);
   }
   .first-choice-art[data-icon="match"]{background-position:0 0}
-  .first-choice-art[data-icon="advisor"]{background-position:50% 0}
-  .first-choice-art[data-icon="no-buy"]{background-position:100% 0}
+  .first-choice-art[data-icon="advisor"]{background-position:100% 0}
+  .first-choice-art[data-icon="no-buy"]{background-position:0 100%}
   .first-choice-art[data-icon="trends"]{background-position:100% 100%}
   .first-choice-copy{
     min-width:0;
@@ -721,6 +721,23 @@
     font-size:13px;
     line-height:1.4;
     overflow-wrap:anywhere;
+  }
+  .first-choice-cta{
+    display:inline-flex;
+    width:max-content;
+    max-width:100%;
+    min-height:26px;
+    align-items:center;
+    justify-content:center;
+    margin-top:6px;
+    padding:3px 9px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#fff7eb;
+    color:#5a3522;
+    font-size:12px;
+    font-weight:900;
+    line-height:1.2;
   }
   .trust-bridge{
     display:grid;
@@ -1248,7 +1265,6 @@
     background-position:center;
   }
   .nav-icon[data-icon="match"],
-  .first-choice-art[data-icon="match"],
   .mobile-image-menu-icon[data-icon="match"],
   .shortcut-thumb[data-icon="match"]{
     background-image:url("assets/ai_shortcut_match.png");
@@ -1257,7 +1273,6 @@
     background-position:center;
   }
   .nav-icon[data-icon="advisor"],
-  .first-choice-art[data-icon="advisor"],
   .mobile-image-menu-icon[data-icon="advisor"],
   .shortcut-thumb[data-icon="advisor"]{
     background-image:url("assets/ai_shortcut_advisor.png");
@@ -1266,7 +1281,6 @@
     background-position:center;
   }
   .nav-icon[data-icon="no-buy"],
-  .first-choice-art[data-icon="no-buy"],
   .mobile-image-menu-icon[data-icon="no-buy"],
   .shortcut-thumb[data-icon="no-buy"]{
     background-image:url("assets/ai_shortcut_no_buy.png");
@@ -1291,7 +1305,6 @@
     background-position:center;
   }
   .nav-icon[data-icon="trends"],
-  .first-choice-art[data-icon="trends"],
   .mobile-image-menu-icon[data-icon="trends"],
   .shortcut-thumb[data-icon="trends"]{
     background-image:url("assets/ai_shortcut_trends.png");
@@ -3837,6 +3850,7 @@
         <b>まずここ</b>
         <strong>うちの子から選ぶ</strong>
         <span>性格・暮らし方に近いものだけ見ます。</span>
+        <span class="first-choice-cta">診断へ進む</span>
       </span>
     </a>
     <a class="first-choice-card" href="#advisor" data-step="2">
@@ -3845,6 +3859,7 @@
         <b>買う前</b>
         <strong>合わない理由を見る</strong>
         <span>よさそうでも、先に注意点を確認します。</span>
+        <span class="first-choice-cta">チェックする</span>
       </span>
     </a>
     <a class="first-choice-card" href="#noBuyGuide" data-step="3">
@@ -3853,6 +3868,7 @@
         <b>止める判断</b>
         <strong>買わない条件</strong>
         <span>怖がる・誤飲しそうなら無理にすすめません。</span>
+        <span class="first-choice-cta">先に確認</span>
       </span>
     </a>
     <a class="first-choice-card" href="#nextLink" data-step="4">
@@ -3861,6 +3877,7 @@
         <b>運用</b>
         <strong>次の1件を決める</strong>
         <span>最初に入れるリンク候補を見ます。</span>
+        <span class="first-choice-cta">候補を見る</span>
       </span>
     </a>
   </section>
