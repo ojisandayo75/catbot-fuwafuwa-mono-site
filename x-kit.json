@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T05:20:24",
-  "exported_at": "2026-06-26T05:20:24",
+  "generated_at": "2026-06-26T05:40:16",
+  "exported_at": "2026-06-26T05:40:16",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -52,19 +52,19 @@
       "id": "profile",
       "title": "プロフィール文",
       "use_when": "Xプロフィールの自己紹介や固定文に使う",
-      "text": "猫との暮らしに合う道具を、買う前チェックつきでまとめています。\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+      "text": "猫との暮らしに合う道具を、買う前チェックつきでまとめています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
     },
     {
       "id": "pinned",
       "title": "固定投稿",
       "use_when": "公開URLをプロフィールに入れた後の固定投稿に使う",
-      "text": "猫用品をすぐ買わせる場所ではなく、合う理由・合わない条件・やめるサインから見られるページを作りました。\n今は「遊び」、次は「電動猫じゃらし」を整えています。\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+      "text": "猫用品をすぐ買わせる場所ではなく、合う理由・合わない条件・やめるサインから見られるページを作りました。 今は「遊び」、次は「電動猫じゃらし」を整えています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
     },
     {
       "id": "soft_reply",
       "title": "バズ投稿への短い自己リプ",
       "use_when": "shop-post-guardがOKの時だけ、商品直リンクなしで使う",
-      "text": "この投稿で反応が多かったテーマを、猫に合うかどうかから見られるページにまとめています。\nプロフィールのサイトから見られます。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+      "text": "この投稿で反応が多かったテーマを、猫に合うかどうかから見られるページにまとめています。 プロフィールのサイトから見られます。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
     },
     {
       "id": "site_warmup",
