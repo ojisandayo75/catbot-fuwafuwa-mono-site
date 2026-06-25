@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T02:18:53",
-  "exported_at": "2026-06-26T02:18:53",
+  "generated_at": "2026-06-26T02:26:21",
+  "exported_at": "2026-06-26T02:26:21",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -10,13 +10,13 @@
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "first_affiliate_link_required": true,
-  "followers": 541,
+  "followers": 561,
   "follower_goal": 1000,
-  "followers_to_goal": 459,
+  "followers_to_goal": 439,
   "follower_growth": {
-    "last_7d_gain": 305,
-    "recent_avg_per_day": 43.6,
-    "eta_date": "2026-07-05",
+    "last_7d_gain": 224,
+    "recent_avg_per_day": 34.0,
+    "eta_date": "2026-07-09",
     "state": "growing"
   },
   "catbot_signal": {

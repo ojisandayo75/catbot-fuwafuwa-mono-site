@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-26T02:18:53",
-  "exported_at": "2026-06-26T02:18:53",
+  "generated_at": "2026-06-26T02:26:21",
+  "exported_at": "2026-06-26T02:26:21",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_ready": true,
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
-  "followers": 541,
+  "followers": 561,
   "shop_post_guard": {
     "decision": "wait",
     "allowed": false,

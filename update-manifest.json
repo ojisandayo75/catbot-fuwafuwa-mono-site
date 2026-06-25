@@ -1,11 +1,11 @@
 {
-  "exported_at": "2026-06-26T02:18:53",
-  "generated_at": "2026-06-26T02:18:53",
+  "exported_at": "2026-06-26T02:26:21",
+  "generated_at": "2026-06-26T02:26:21",
   "phase": "needs_affiliate_link",
   "public_url_configured": true,
-  "followers": 541,
-  "followers_to_goal": 459,
-  "follower_progress": 54.1,
+  "followers": 561,
+  "followers_to_goal": 439,
+  "follower_progress": 56.1,
   "ready_links": 0,
   "total_products": 9,
   "top_post_views": 156918,
@@ -223,7 +223,7 @@
     {
       "level": "info",
       "title": "まだ育成フェーズ",
-      "detail": "1,000フォロワーまで残り 459。売り込みよりプロフィール導線を薄く置く。"
+      "detail": "1,000フォロワーまで残り 439。売り込みよりプロフィール導線を薄く置く。"
     }
   ],
   "launch_blockers": [
@@ -251,8 +251,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T02:18:53",
-    "exported_at": "2026-06-26T02:18:53",
+    "generated_at": "2026-06-26T02:26:21",
+    "exported_at": "2026-06-26T02:26:21",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -332,33 +332,33 @@
     ]
   },
   "auto_export": {
-    "exported_at": "2026-06-26T02:18:56",
+    "exported_at": "2026-06-26T02:26:22",
     "output": "C:\\Users\\User\\catbot-x\\public_shop",
     "ready_links": 0,
     "total_products": 9,
-    "followers": 541,
+    "followers": 561,
     "top_post_views": 156918,
     "last_deploy": {
-      "deployed_at": "2026-06-26T02:09:51",
+      "deployed_at": "2026-06-26T02:25:53",
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "file_count": 156,
       "total_bytes": 52036672
     }
   },
   "auto_update": {
-    "checked_at": "2026-06-26T02:18:58",
+    "checked_at": "2026-06-26T02:26:23",
     "synced": true,
-    "last_exported_at": "2026-06-26T02:18:56",
+    "last_exported_at": "2026-06-26T02:26:22",
     "ready_links": 0,
     "total_products": 9,
-    "followers": 541,
+    "followers": 561,
     "top_post_views": 156918,
     "deploy": {
       "configured": true,
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T02:09:51",
+        "deployed_at": "2026-06-26T02:25:53",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 156,
         "total_bytes": 52036672

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T02:18:53",
-  "exported_at": "2026-06-26T02:18:53",
+  "generated_at": "2026-06-26T02:26:21",
+  "exported_at": "2026-06-26T02:26:21",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -225,13 +225,13 @@
     }
   ],
   "follower_milestone": {
-    "followers": 541,
+    "followers": 561,
     "goal": 1000,
-    "remaining": 459,
-    "progress": 54.1,
-    "eta_date": "2026-07-05",
-    "recent_avg_per_day": 43.6,
-    "last_7d_gain": 305
+    "remaining": 439,
+    "progress": 56.1,
+    "eta_date": "2026-07-09",
+    "recent_avg_per_day": 34.0,
+    "last_7d_gain": 224
   },
   "state_entries": [
     {
