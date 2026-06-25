@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-26T08:25:31",
+      "dateModified": "2026-06-26T08:31:24",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -4593,7 +4593,7 @@
             <button class="button search" type="button" id="copyOpsRecommendedCommand">コピー</button>
           </div>
           <p id="opsRecommendedCommandReason">まず、もしも承認状態と最初のリンク候補を同じ画面で確認します。</p>
-          <code id="opsRecommendedCommandText">.\affiliate_site_ops.bat moshimo-workbench --force</code>
+          <code id="opsRecommendedCommandText">.\catbot_first_link_handoff.bat -Open</code>
         </div>
         <div class="ops-command-list" id="opsNextLinkCommands"></div>
       </div>
@@ -5457,7 +5457,7 @@ function opsNextLinkCommandLines(spotlight={}, values={}){
   const affiliateUrl = values.affiliateUrl || "https://もしもURL";
   const publicUrl = values.publicUrl || "https://公開URL/";
   return [
-    `${bat} moshimo-workbench --force`,
+    `.\\catbot_first_link_handoff.bat -Open`,
     `${bat} profile-url "${publicUrl}" --package --smoke-test`,
     `${bat} check-url --% "${affiliateUrl}"`,
     `${bat} set ${categoryId} ${productId} --% "${affiliateUrl}"`,
@@ -5496,7 +5496,7 @@ function opsRecommendedCommand(spotlight={}, affiliateAudit={}, publicAudit={}, 
   return {
     badge:"準備",
     reason:"まず、もしも承認状態と最初のリンク候補を同じ画面で確認します。",
-    command:`${bat} moshimo-workbench --force`,
+    command:`.\\catbot_first_link_handoff.bat -Open`,
   };
 }
 
@@ -5703,7 +5703,7 @@ function renderOpsOwnerSteps(data={}, state={}){
   const categoryName = spotlight.category || "猫用品";
   const searchUrl = String(spotlight.search_url || "").trim();
   const bat = String.raw`.\affiliate_site_ops.bat`;
-  const firstLinkCommand = `${bat} moshimo-workbench --force`;
+  const firstLinkCommand = `.\\catbot_first_link_handoff.bat -Open`;
   const publicCommand = publicReady
     ? `${bat} verify-public-url "${publicUrl}"`
     : `${bat} public-url-workbench --force`;
@@ -5825,10 +5825,10 @@ function renderOpsLaunchGate(data={}){
       : `<div class="ops-gate-action"><span class="badge ready">OK</span><div><strong>公開準備項目はありません</strong><p>必要に応じて launch-check で最終確認します。</p></div></div>`;
   }
   const commands = [];
-  if(!linkReady) commands.push(String.raw`.\affiliate_site_ops.bat moshimo-workbench --force`);
+  if(!linkReady) commands.push(String.raw`.\catbot_first_link_handoff.bat -Open`);
   if(!publicReady) commands.push(String.raw`.\affiliate_site_ops.bat public-url-workbench --force`);
-  commands.push(String.raw`.\affiliate_site_ops.bat finish-launch --dry-run --% "https://もしもURL" "https://公開URL/"`);
-  commands.push(String.raw`.\affiliate_site_ops.bat finish-launch --% "https://もしもURL" "https://公開URL/"`);
+  commands.push(String.raw`.\catbot_first_link_finish.bat`);
+  commands.push(String.raw`.\catbot_first_link_finish.bat -Apply -Publish`);
   commands.push(String.raw`.\affiliate_site_ops.bat launch-check`);
   renderOpsCommandRows($("opsGateCommands"), commands);
 }

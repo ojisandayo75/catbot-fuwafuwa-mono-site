@@ -1,0 +1,407 @@
+{
+  "generated_at": "2026-06-26T08:31:24",
+  "exported_at": "2026-06-26T08:31:24",
+  "state": "cat_first_buying_check_ready",
+  "total_products": 9,
+  "categories": [
+    {
+      "id": "toys",
+      "name": "遊びと運動",
+      "products": 2
+    },
+    {
+      "id": "treats",
+      "name": "おやつ",
+      "products": 2
+    },
+    {
+      "id": "scratch",
+      "name": "爪とぎ",
+      "products": 1
+    },
+    {
+      "id": "water",
+      "name": "水とごはん",
+      "products": 2
+    },
+    {
+      "id": "care",
+      "name": "お手入れ",
+      "products": 1
+    },
+    {
+      "id": "watch",
+      "name": "見守り",
+      "products": 1
+    }
+  ],
+  "products": [
+    {
+      "key": "toys/p1",
+      "anchor": "toys-p1",
+      "category_id": "toys",
+      "category": "遊びと運動",
+      "product_id": "p1",
+      "product": "けりぐるみ",
+      "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
+      "buy_before_check": "縫い目が強く、猫の口より小さすぎないサイズを選びます。",
+      "stop_signal": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。",
+      "first_try": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
+      "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+      "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+      "care_note": "中綿や飾りを噛みちぎる子は、破れた時点で交換。小さい部品が出たらすぐ片付けます。",
+      "tags": [
+        "誤飲確認",
+        "破れたら交換",
+        "留守番中は注意"
+      ],
+      "product_page": "products/toys/p1/",
+      "guide_page": "guides/toys/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "toys/p2",
+      "anchor": "toys-p2",
+      "category_id": "toys",
+      "category": "遊びと運動",
+      "product_id": "p2",
+      "product": "電動猫じゃらし",
+      "reason": "人が手を離していても短時間の運動を作れます。",
+      "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+      "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+      "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+      "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+      "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+      "care_note": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。",
+      "tags": [
+        "短時間",
+        "誤飲確認",
+        "興奮しすぎ注意"
+      ],
+      "product_page": "products/toys/p2/",
+      "guide_page": "guides/toys/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "treats/p1",
+      "anchor": "treats-p1",
+      "category_id": "treats",
+      "category": "おやつ",
+      "product_id": "p1",
+      "product": "CIAO ちゅーる系おやつ",
+      "reason": "少量のごほうびや水分補助として使いやすい定番です。",
+      "buy_before_check": "対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。",
+      "stop_signal": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
+      "first_try": "主食の代わりにせず、あげた日は他のおやつ量を減らします。",
+      "best_for": "ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。",
+      "not_for": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。",
+      "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
+      "tags": [
+        "少量から",
+        "主食にしない",
+        "体調変化を見る"
+      ],
+      "product_page": "products/treats/p1/",
+      "guide_page": "guides/treats/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "treats/p2",
+      "anchor": "treats-p2",
+      "category_id": "treats",
+      "category": "おやつ",
+      "product_id": "p2",
+      "product": "無添加寄りのおやつ",
+      "reason": "毎日ではなくても、原材料を見て選びたい人向け。",
+      "buy_before_check": "原材料、塩分、添加物、対象年齢を見て、体調に合うか先に確認します。",
+      "stop_signal": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
+      "first_try": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。",
+      "best_for": "原材料を見て選びたい子、いつものおやつを少し見直したい子。",
+      "not_for": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。",
+      "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
+      "tags": [
+        "原材料確認",
+        "少量から",
+        "アレルギー注意"
+      ],
+      "product_page": "products/treats/p2/",
+      "guide_page": "guides/treats/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "scratch/p1",
+      "anchor": "scratch-p1",
+      "category_id": "scratch",
+      "category": "爪とぎ",
+      "product_id": "p1",
+      "product": "段ボール爪とぎ 大容量",
+      "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
+      "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
+      "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+      "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+      "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
+      "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+      "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
+      "tags": [
+        "滑り止め",
+        "粉を確認",
+        "食べないか確認"
+      ],
+      "product_page": "products/scratch/p1/",
+      "guide_page": "guides/scratch/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "water/p1",
+      "anchor": "water-p1",
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p1",
+      "product": "循環式水飲み器",
+      "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+      "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。",
+      "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
+      "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
+      "best_for": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。",
+      "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
+      "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
+      "tags": [
+        "水皿も残す",
+        "掃除必須",
+        "音を確認"
+      ],
+      "product_page": "products/water/p1/",
+      "guide_page": "guides/water/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "water/p2",
+      "anchor": "water-p2",
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p2",
+      "product": "自動給餌器",
+      "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
+      "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。",
+      "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+      "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
+      "best_for": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
+      "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
+      "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
+      "tags": [
+        "任せきりにしない",
+        "残量確認",
+        "多頭飼い注意"
+      ],
+      "product_page": "products/water/p2/",
+      "guide_page": "guides/water/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "care/p1",
+      "anchor": "care-p1",
+      "category_id": "care",
+      "category": "お手入れ",
+      "product_id": "p1",
+      "product": "猫用ブラシ",
+      "reason": "換毛期の毛を減らし、部屋の掃除も少し楽になります。",
+      "buy_before_check": "毛質に合う形、肌に強く当たりすぎない先端、握りやすさを確認します。",
+      "stop_signal": "皮膚が赤くなる、フケが増える、怒る、逃げる時は強さや形を見直します。",
+      "first_try": "短時間で終え、嫌がる日はやめて、終わった後の皮膚も見ます。",
+      "best_for": "換毛期の抜け毛が多い子、短時間のブラッシングなら受け入れやすい子。",
+      "not_for": "皮膚が弱い子、触られるのが苦手な子、怒りやすい子。",
+      "care_note": "嫌がる子は短時間から。皮膚が赤くなる、フケが増える、怒る時は強さや形が合っていない可能性があります。",
+      "tags": [
+        "短時間",
+        "皮膚確認",
+        "嫌がれば中止"
+      ],
+      "product_page": "products/care/p1/",
+      "guide_page": "guides/care/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "watch/p1",
+      "anchor": "watch-p1",
+      "category_id": "watch",
+      "category": "見守り",
+      "product_id": "p1",
+      "product": "ペットカメラ",
+      "reason": "留守中の行動や体調変化に気づきやすくなります。",
+      "buy_before_check": "画質、夜間撮影、録画、アプリの使いやすさに加えて、配線と設置の安定を見ます。",
+      "stop_signal": "カメラ音や動きで怖がる、コードを噛む、倒しそうな時は位置を変えます。",
+      "first_try": "見守りは補助。異変が見えたら通知だけで済ませず、直接確認します。",
+      "best_for": "留守中の様子を確認したい家庭、行動変化に早く気づきたい家庭。",
+      "not_for": "カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。",
+      "care_note": "カメラの音や動きで怖がる子は固定位置を変えます。見守りは補助なので、異変があれば直接確認します。",
+      "tags": [
+        "配線確認",
+        "怖がれば移動",
+        "異変は直接確認"
+      ],
+      "product_page": "products/watch/p1/",
+      "guide_page": "guides/watch/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    }
+  ],
+  "global_checks": [
+    {
+      "title": "今あるもので代用できないか",
+      "detail": "似た役割の道具があるなら、買う前に置き場所や使い方を変えて試します。"
+    },
+    {
+      "title": "猫が怖がるサインを先に決める",
+      "detail": "逃げる、固まる、息が上がる、食欲や排泄が変わる時は、道具より休ませる判断を優先します。"
+    },
+    {
+      "title": "掃除と点検を続けられるか",
+      "detail": "水、フード、爪とぎ、おもちゃは、買った後の洗浄・交換・片付けまで含めて選びます。"
+    },
+    {
+      "title": "体調変化は用品で解決しない",
+      "detail": "急な食欲低下、水の増減、嘔吐、下痢、痛がる様子がある時は、購入より獣医相談を優先します。"
+    }
+  ],
+  "consult_first": {
+    "generated_at": "2026-06-26T08:31:24",
+    "exported_at": "2026-06-26T08:31:24",
+    "state": "consult_first_ready",
+    "headline": "商品より先に相談する目安",
+    "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",
+    "levels": [
+      {
+        "id": "emergency",
+        "label": "今すぐ相談",
+        "title": "呼吸が苦しそう、尿が出ない、反応が弱い",
+        "detail": "用品選びを止めて、動物病院や救急相談を優先します。呼吸の異常、尿が出ない状態、強いぐったり感は買い物で様子見しません。",
+        "signals": [
+          "呼吸が苦しそう",
+          "口を開けて呼吸する",
+          "尿が出ない",
+          "トイレに何度も行く",
+          "反応が弱い",
+          "倒れる"
+        ],
+        "action": "近くの動物病院、夜間救急、かかりつけの案内を確認します。",
+        "source_ids": [
+          "avma-emergency",
+          "cornell-dyspnea",
+          "avma-flutd"
+        ]
+      },
+      {
+        "id": "same_day",
+        "label": "早めに相談",
+        "title": "食べない、吐く・下痢が続く、飲水や尿が急に変わる",
+        "detail": "年齢、持病、いつから続いているかを含めて確認します。おやつ、水飲み器、フード用品で体調変化を隠さない運用にします。",
+        "signals": [
+          "食べない",
+          "飲まない",
+          "吐く",
+          "下痢",
+          "水を急にたくさん飲む",
+          "尿が急に増減する",
+          "ぐったり"
+        ],
+        "action": "食事、水、トイレ、嘔吐・下痢の回数をメモして相談します。",
+        "source_ids": [
+          "cornell-hydration",
+          "avma-first-aid"
+        ]
+      },
+      {
+        "id": "watch_and_record",
+        "label": "記録して判断",
+        "title": "いつもと違うが判断に迷う",
+        "detail": "商品を探す前に、いつから、何が、どのくらい変わったかを記録します。迷う時ほど購入ではなく相談しやすい材料を残します。",
+        "signals": [
+          "隠れる",
+          "急に怖がる",
+          "遊ばない",
+          "寝方が変わる",
+          "毛づくろいが急に変わる",
+          "痛そう"
+        ],
+        "action": "食事、水、トイレ、呼吸、行動、使った用品を1つのメモにまとめます。",
+        "source_ids": [
+          "avma-first-aid",
+          "cornell-hydration"
+        ]
+      }
+    ],
+    "record_fields": [
+      "いつから変わったか",
+      "食べた量・飲んだ量",
+      "尿・便・嘔吐や下痢の有無",
+      "呼吸、歩き方、反応、痛がる様子",
+      "新しく使った用品・おやつ・フード"
+    ],
+    "cat_first_policy": [
+      "体調不安がある時は、商品リンクより相談導線を先に見せる。",
+      "用品は治療の代わりとして書かない。",
+      "水、食事、トイレ、呼吸、急な行動変化をX投稿の文脈でも強く扱いすぎない。"
+    ],
+    "sources": [
+      {
+        "id": "avma-emergency",
+        "label": "AVMA: 13 animal emergencies",
+        "url": "https://www.avma.org/resources/pet-owners/emergencycare/13-animal-emergencies-require-immediate-veterinary-consultation-andor-care",
+        "note": "difficulty breathing, inability to urinate, severe signs are emergency consultation/care topics."
+      },
+      {
+        "id": "avma-flutd",
+        "label": "AVMA: Feline lower urinary tract disease",
+        "url": "https://www.avma.org/resources-tools/pet-owners/petcare/feline-lower-urinary-tract-disease",
+        "note": "lower urinary tract signs can be serious and should not be treated as a product-selection issue."
+      },
+      {
+        "id": "avma-first-aid",
+        "label": "AVMA: First aid tips for pet owners",
+        "url": "https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners",
+        "note": "first-aid context for severe injury, shock, and emergency response."
+      },
+      {
+        "id": "cornell-dyspnea",
+        "label": "Cornell Feline Health Center: Dyspnea",
+        "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/dyspnea-difficulty-breathing",
+        "note": "difficulty breathing is an important clinical sign in cats."
+      },
+      {
+        "id": "cornell-hydration",
+        "label": "Cornell Feline Health Center: Hydration",
+        "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration",
+        "note": "vomiting, diarrhea, kidney disease, diabetes, and other diseases can cause dehydration."
+      }
+    ]
+  },
+  "cat_first_policy": [
+    "商品直リンクより、猫に合うかの確認を先に見せる。",
+    "合わない条件と中止サインを各商品に残す。",
+    "最初は短時間・少量・見守りから始める。",
+    "売れそうな商品より、猫の安全と暮らしやすさを優先する。"
+  ],
+  "commands": {
+    "refresh": ".\\affiliate_site_ops.bat sync-now --smoke-test",
+    "launch_check": ".\\affiliate_site_ops.bat launch-check",
+    "link_health": ".\\affiliate_site_ops.bat audit-links",
+    "shop_post_guard": ".\\affiliate_site_ops.bat shop-post-guard"
+  }
+}

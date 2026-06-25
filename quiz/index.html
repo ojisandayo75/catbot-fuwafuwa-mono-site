@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="猫の状態から近いタイプを選び、合う商品、買わない判断、最初の試し方を確認するページです。">
+<meta property="og:title" content="Catbot うちの子診断">
+<meta property="og:description" content="猫の状態から近いタイプを選び、合う商品、買わない判断、最初の試し方を確認するページです。">
+<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catbot うちの子診断">
+<meta name="twitter:description" content="猫の状態から近いタイプを選び、合う商品、買わない判断、最初の試し方を確認するページです。">
+<meta name="theme-color" content="#5a3522">
+<link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
+<link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
+<link rel="apple-touch-icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/quiz/">
+<meta property="og:url" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/quiz/">
+<meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:site" content="@fuwafuwa_mono">
+<meta name="twitter:creator" content="@fuwafuwa_mono">
+<title>Catbot うちの子診断</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--panel:#fff3df;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--soft:#f4eadb;--green:#5f7f67}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:22px}
+.hero{position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(37,23,15,.92) 0%,rgba(66,42,26,.80) 44%,rgba(66,42,26,.20) 76%),image-set(url("../assets/ai_cat_care_scene-960.webp") type("image/webp"),url("../assets/ai_cat_care_scene-960.jpg") type("image/jpeg"));background-size:cover;background-position:center right;color:#fff8ef;border-bottom:1px solid var(--line)}
+.hero .wrap{min-height:360px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;align-items:end}
+.label{display:inline-flex;align-items:center;width:max-content;max-width:100%;min-height:25px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+h1{margin:8px 0;font-size:40px;line-height:1.12;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:6px 0;font-size:24px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+h3{margin:6px 0;font-size:19px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.hero p{color:#f4e6d5;max-width:650px}
+.hero-card,.card,.quiz-choice,.outcome-card,.product-card,.policy{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
+.hero-card{background:#fffaf2;color:var(--ink)}
+.hero-card b{display:block;font-size:28px;line-height:1.2;margin-top:5px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
+.button.disabled{background:#e8d9c8;color:#9f8974;border-color:#d8bea4}
+.quiz-layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:14px;margin-top:18px;align-items:start}
+.quiz-panel{position:sticky;top:14px;display:grid;gap:10px}
+.quiz-choice{display:grid;grid-template-columns:64px minmax(0,1fr);gap:10px;text-align:left;cursor:pointer;color:var(--ink);font:inherit;background:#fffaf2}
+.quiz-choice.active{outline:3px solid rgba(95,127,103,.35);background:#edf3e5}
+.quiz-choice small{display:block;color:var(--muted);font-size:13px;line-height:1.45}
+.choice-art{display:block;width:64px;aspect-ratio:1;border:1px solid #d8bea4;border-radius:8px;background-color:#f4eadb;background-image:url("../assets/ai_category_icon_sheet.png");background-image:image-set(url("../assets/ai_category_icon_sheet.webp") type("image/webp"),url("../assets/ai_category_icon_sheet.png") type("image/png"));background-repeat:no-repeat;background-size:300% 200%;box-shadow:inset 0 0 0 1px rgba(255,255,255,.45)}
+.choice-art[data-icon="toys"],.product-card[data-icon="toys"] .product-art{background-position:0 0}
+.choice-art[data-icon="treats"],.product-card[data-icon="treats"] .product-art{background-position:50% 0}
+.choice-art[data-icon="scratch"],.product-card[data-icon="scratch"] .product-art{background-position:100% 0}
+.choice-art[data-icon="water"],.product-card[data-icon="water"] .product-art{background-position:0 100%}
+.choice-art[data-icon="care"],.product-card[data-icon="care"] .product-art{background-position:50% 100%}
+.choice-art[data-icon="watch"],.product-card[data-icon="watch"] .product-art{background-position:100% 100%}
+.result-title{display:grid;grid-template-columns:58px minmax(0,1fr);gap:10px;align-items:center;margin-bottom:12px}
+.result-icon{display:block;width:58px;aspect-ratio:1;border:1px solid #d8bea4;border-radius:8px;background-color:#f4eadb;background-image:url("../assets/ai_shortcut_icon_sheet_v2.png");background-image:image-set(url("../assets/ai_shortcut_icon_sheet_v2.webp") type("image/webp"),url("../assets/ai_shortcut_icon_sheet_v2.png") type("image/png"));background-repeat:no-repeat;background-size:300% 200%;background-position:50% 0}
+.outcome-card{display:none;background:#fffaf2}
+.outcome-card.selected{display:block}
+.outcome-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.card ul,.policy ul{margin:8px 0 0;padding-left:20px;color:#5f4735}
+.product-list{display:grid;gap:12px;margin-top:14px}
+.product-card{display:grid;grid-template-columns:150px minmax(0,.9fr) minmax(0,1.05fr);gap:14px;align-items:start}
+.product-art{position:relative;overflow:hidden;min-height:158px;border:1px solid #d8bea4;border-radius:8px;background-color:#f4eadb;background-image:url("../assets/ai_category_icon_sheet.png");background-image:image-set(url("../assets/ai_category_icon_sheet.webp") type("image/webp"),url("../assets/ai_category_icon_sheet.png") type("image/png"));background-repeat:no-repeat;background-size:300% 200%;box-shadow:inset 0 0 0 1px rgba(255,255,255,.42)}
+.product-art span{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);min-height:25px;display:inline-flex;align-items:center;padding:3px 8px;border:1px solid rgba(255,248,239,.72);border-radius:8px;background:rgba(37,23,15,.72);color:#fff8ef;font-size:12px;font-weight:850;line-height:1.2;overflow-wrap:anywhere}
+.fit-checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fit-checks div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px;min-width:0}
+.fit-checks strong{display:block;color:#3f281b;margin-bottom:4px}
+.fit-checks p{font-size:13px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tags span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:800}
+.policy{margin-top:14px;background:#f4eadb}
+@media(max-width:980px){.hero .wrap,.quiz-layout,.product-card{grid-template-columns:1fr}.quiz-panel{position:static}.result-grid,.fit-checks{grid-template-columns:1fr}.product-art{min-height:220px}}
+@media(max-width:620px){.wrap{padding:15px}h1{font-size:31px}.button{width:100%}.outcome-head{grid-template-columns:1fr}.quiz-choice{grid-template-columns:54px minmax(0,1fr)}.choice-art{width:54px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="label">猫ファースト診断</span>
+      <h1>Catbot うちの子診断</h1>
+      <p>いまの猫に近い状態を押すと、合いやすい用品、買わない判断、最初の試し方をまとめて見られます。商品リンクより先に、猫に合うかを確認します。</p>
+      <div class="actions">
+        <a class="button" href="#quizResult">診断する</a>
+        <a class="button light" href="../buying-check/">買う前チェック</a>
+        <a class="button light" href="../">トップへ</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <span class="label">現在</span>
+      <b>4</b>
+      <p>猫タイプ / 9 商品から案内します。</p>
+      <div class="actions"><a class="button light" href="../cat-quiz.json">cat-quiz.json</a></div>
+    </aside>
+  </div>
+</header>
+<main class="wrap">
+  <section class="quiz-layout" aria-label="うちの子診断">
+    <div class="quiz-panel">
+        <button class="quiz-choice active" type="button" data-choice="home-alone">
+          <span class="choice-art" data-icon="watch" aria-hidden="true"></span>
+          <span><strong>留守番が多い猫</strong><small>長時間ひとりの時間がある子は、見守りと退屈対策を分けて考えると失敗しにくいです。</small></span>
+        </button>
+
+        <button class="quiz-choice" type="button" data-choice="active">
+          <span class="choice-art" data-icon="toys" aria-hidden="true"></span>
+          <span><strong>よく走る・遊び足りない猫</strong><small>退屈がたまる子は、先に安全に発散できる遊び場を作ると暮らしが落ち着きます。</small></span>
+        </button>
+
+        <button class="quiz-choice" type="button" data-choice="hydration">
+          <span class="choice-art" data-icon="water" aria-hidden="true"></span>
+          <span><strong>水分・ごはんを整えたい猫</strong><small>水をあまり飲まない子や食事時間が乱れやすい家庭は、毎日の管理を楽にする用品から見るのが向いています。</small></span>
+        </button>
+
+        <button class="quiz-choice" type="button" data-choice="daily-care">
+          <span class="choice-art" data-icon="care" aria-hidden="true"></span>
+          <span><strong>毛・爪・部屋のケアを楽にしたい猫</strong><small>抜け毛や爪とぎの悩みは、猫が嫌がりにくい道具と続けやすい頻度で選ぶのが大事です。</small></span>
+        </button></div>
+    <div id="quizResult">
+      <div class="result-title">
+        <span class="result-icon" aria-hidden="true"></span>
+        <div><span class="label">選択中</span><h2 id="selectedTitle">留守番が多い猫</h2></div>
+      </div>
+      
+        <section class="outcome-card selected" data-outcome="home-alone">
+          <div class="outcome-head">
+            <div>
+              <span class="label">診断結果</span>
+              <h2>留守番が多い猫</h2>
+              <p>長時間ひとりの時間がある子は、見守りと退屈対策を分けて考えると失敗しにくいです。</p>
+              <div class="tags"><span>見守り</span><span>水とごはん</span><span>遊び</span></div>
+            </div>
+            <a class="button light" href="../matches/home-alone/">タイプ別ページ</a>
+          </div>
+          <div class="result-grid">
+            <div class="card"><strong>先に見ること</strong><ul><li>停電時や通信不調時に困らない運用にする</li><li>カメラは猫が触れにくい場所に置く</li><li>自動化しすぎず、毎日の直接確認も残す</li></ul></div>
+            <div class="card"><strong>買わない判断</strong><p>見守り機器だけで体調判断を完結させない。</p></div>
+          </div>
+          <div class="product-list">
+        <article class="product-card" data-icon="watch">
+          <div class="product-art" aria-hidden="true"><span>見守り</span></div>
+          <div class="product-main">
+            <span class="label">見守り</span>
+            <h3>ペットカメラ</h3>
+            <p>留守中の行動や体調変化に気づきやすくなります。</p>
+            <div class="tags"><span>リンク準備中</span><span>配線確認</span><span>怖がれば移動</span><span>異変は直接確認</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/watch/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#watch-p1">買う前チェック</a>
+              <a class="button" href="../go/watch/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>留守中の様子を確認したい家庭、行動変化に早く気づきたい家庭。</p></div>
+            <div><strong>合わないかも</strong><p>カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。</p></div>
+            <div><strong>買う前</strong><p>画質、夜間撮影、録画、アプリの使いやすさに加えて、配線と設置の安定を見ます。</p></div>
+            <div><strong>やめるサイン</strong><p>カメラ音や動きで怖がる、コードを噛む、倒しそうな時は位置を変えます。</p></div>
+            <div><strong>最初の試し方</strong><p>まず固定位置で音や動きを最小にし、猫が怖がらない距離から使います。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="water">
+          <div class="product-art" aria-hidden="true"><span>水とごはん</span></div>
+          <div class="product-main">
+            <span class="label">水とごはん</span>
+            <h3>循環式水飲み器</h3>
+            <p>水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。</p>
+            <div class="tags"><span>リンク準備中</span><span>水皿も残す</span><span>掃除必須</span><span>音を確認</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/water/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#water-p1">買う前チェック</a>
+              <a class="button" href="../go/water/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。</p></div>
+            <div><strong>合わないかも</strong><p>モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。</p></div>
+            <div><strong>買う前</strong><p>洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。</p></div>
+            <div><strong>やめるサイン</strong><p>飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。</p></div>
+            <div><strong>最初の試し方</strong><p>いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="water">
+          <div class="product-art" aria-hidden="true"><span>水とごはん</span></div>
+          <div class="product-main">
+            <span class="label">水とごはん</span>
+            <h3>自動給餌器</h3>
+            <p>時間管理が必要な家庭で、食事リズムを整えやすくなります。</p>
+            <div class="tags"><span>リンク準備中</span><span>任せきりにしない</span><span>残量確認</span><span>多頭飼い注意</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/water/p2/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#water-p2">買う前チェック</a>
+              <a class="button" href="../go/water/p2/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。</p></div>
+            <div><strong>合わないかも</strong><p>療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。</p></div>
+            <div><strong>買う前</strong><p>詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。</p></div>
+            <div><strong>やめるサイン</strong><p>食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。</p></div>
+            <div><strong>最初の試し方</strong><p>数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="toys">
+          <div class="product-art" aria-hidden="true"><span>遊び</span></div>
+          <div class="product-main">
+            <span class="label">遊び</span>
+            <h3>けりぐるみ</h3>
+            <p>噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。</p>
+            <div class="tags"><span>リンク準備中</span><span>誤飲確認</span><span>破れたら交換</span><span>留守番中は注意</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/toys/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#toys-p1">買う前チェック</a>
+              <a class="button" href="../go/toys/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。</p></div>
+            <div><strong>合わないかも</strong><p>布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。</p></div>
+            <div><strong>買う前</strong><p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p></div>
+            <div><strong>やめるサイン</strong><p>破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。</p></div>
+            <div><strong>最初の試し方</strong><p>最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="toys">
+          <div class="product-art" aria-hidden="true"><span>遊び</span></div>
+          <div class="product-main">
+            <span class="label">遊び</span>
+            <h3>電動猫じゃらし</h3>
+            <p>人が手を離していても短時間の運動を作れます。</p>
+            <div class="tags"><span>リンク準備中</span><span>短時間</span><span>誤飲確認</span><span>興奮しすぎ注意</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/toys/p2/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#toys-p2">買う前チェック</a>
+              <a class="button" href="../go/toys/p2/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。</p></div>
+            <div><strong>合わないかも</strong><p>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</p></div>
+            <div><strong>買う前</strong><p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p></div>
+            <div><strong>やめるサイン</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
+            <div><strong>最初の試し方</strong><p>最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。</p></div>
+          </div>
+        </article></div>
+        </section>
+
+        <section class="outcome-card" data-outcome="active">
+          <div class="outcome-head">
+            <div>
+              <span class="label">診断結果</span>
+              <h2>よく走る・遊び足りない猫</h2>
+              <p>退屈がたまる子は、先に安全に発散できる遊び場を作ると暮らしが落ち着きます。</p>
+              <div class="tags"><span>遊び</span><span>爪とぎ</span></div>
+            </div>
+            <a class="button light" href="../matches/active/">タイプ別ページ</a>
+          </div>
+          <div class="result-grid">
+            <div class="card"><strong>先に見ること</strong><ul><li>小さい部品が外れにくいかを見る</li><li>留守中に出しっぱなしにしない前提で選ぶ</li><li>床や壁を傷つけにくい置き場所を決める</li></ul></div>
+            <div class="card"><strong>買わない判断</strong><p>壊れたおもちゃや細いひもは誤飲しやすいので早めに交換する。</p></div>
+          </div>
+          <div class="product-list">
+        <article class="product-card" data-icon="toys">
+          <div class="product-art" aria-hidden="true"><span>遊び</span></div>
+          <div class="product-main">
+            <span class="label">遊び</span>
+            <h3>けりぐるみ</h3>
+            <p>噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。</p>
+            <div class="tags"><span>リンク準備中</span><span>誤飲確認</span><span>破れたら交換</span><span>留守番中は注意</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/toys/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#toys-p1">買う前チェック</a>
+              <a class="button" href="../go/toys/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。</p></div>
+            <div><strong>合わないかも</strong><p>布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。</p></div>
+            <div><strong>買う前</strong><p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p></div>
+            <div><strong>やめるサイン</strong><p>破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。</p></div>
+            <div><strong>最初の試し方</strong><p>最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="toys">
+          <div class="product-art" aria-hidden="true"><span>遊び</span></div>
+          <div class="product-main">
+            <span class="label">遊び</span>
+            <h3>電動猫じゃらし</h3>
+            <p>人が手を離していても短時間の運動を作れます。</p>
+            <div class="tags"><span>リンク準備中</span><span>短時間</span><span>誤飲確認</span><span>興奮しすぎ注意</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/toys/p2/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#toys-p2">買う前チェック</a>
+              <a class="button" href="../go/toys/p2/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。</p></div>
+            <div><strong>合わないかも</strong><p>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</p></div>
+            <div><strong>買う前</strong><p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p></div>
+            <div><strong>やめるサイン</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
+            <div><strong>最初の試し方</strong><p>最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="scratch">
+          <div class="product-art" aria-hidden="true"><span>爪とぎ</span></div>
+          <div class="product-main">
+            <span class="label">爪とぎ</span>
+            <h3>段ボール爪とぎ 大容量</h3>
+            <p>消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。</p>
+            <div class="tags"><span>リンク準備中</span><span>滑り止め</span><span>粉を確認</span><span>食べないか確認</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/scratch/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#scratch-p1">買う前チェック</a>
+              <a class="button" href="../go/scratch/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。</p></div>
+            <div><strong>合わないかも</strong><p>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</p></div>
+            <div><strong>買う前</strong><p>粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。</p></div>
+            <div><strong>やめるサイン</strong><p>滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。</p></div>
+            <div><strong>最初の試し方</strong><p>よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。</p></div>
+          </div>
+        </article></div>
+        </section>
+
+        <section class="outcome-card" data-outcome="hydration">
+          <div class="outcome-head">
+            <div>
+              <span class="label">診断結果</span>
+              <h2>水分・ごはんを整えたい猫</h2>
+              <p>水をあまり飲まない子や食事時間が乱れやすい家庭は、毎日の管理を楽にする用品から見るのが向いています。</p>
+              <div class="tags"><span>水とごはん</span><span>おやつ</span></div>
+            </div>
+            <a class="button light" href="../matches/hydration/">タイプ別ページ</a>
+          </div>
+          <div class="result-grid">
+            <div class="card"><strong>先に見ること</strong><ul><li>洗いやすさと部品交換のしやすさを確認する</li><li>年齢・体調に合うフードやおやつかを見る</li><li>音や高さが猫のストレスにならないか考える</li></ul></div>
+            <div class="card"><strong>買わない判断</strong><p>おやつは主食の代わりにせず、量を決めて使う。</p></div>
+          </div>
+          <div class="product-list">
+        <article class="product-card" data-icon="water">
+          <div class="product-art" aria-hidden="true"><span>水とごはん</span></div>
+          <div class="product-main">
+            <span class="label">水とごはん</span>
+            <h3>循環式水飲み器</h3>
+            <p>水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。</p>
+            <div class="tags"><span>リンク準備中</span><span>水皿も残す</span><span>掃除必須</span><span>音を確認</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/water/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#water-p1">買う前チェック</a>
+              <a class="button" href="../go/water/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。</p></div>
+            <div><strong>合わないかも</strong><p>モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。</p></div>
+            <div><strong>買う前</strong><p>洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。</p></div>
+            <div><strong>やめるサイン</strong><p>飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。</p></div>
+            <div><strong>最初の試し方</strong><p>いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="water">
+          <div class="product-art" aria-hidden="true"><span>水とごはん</span></div>
+          <div class="product-main">
+            <span class="label">水とごはん</span>
+            <h3>自動給餌器</h3>
+            <p>時間管理が必要な家庭で、食事リズムを整えやすくなります。</p>
+            <div class="tags"><span>リンク準備中</span><span>任せきりにしない</span><span>残量確認</span><span>多頭飼い注意</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/water/p2/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#water-p2">買う前チェック</a>
+              <a class="button" href="../go/water/p2/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。</p></div>
+            <div><strong>合わないかも</strong><p>療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。</p></div>
+            <div><strong>買う前</strong><p>詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。</p></div>
+            <div><strong>やめるサイン</strong><p>食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。</p></div>
+            <div><strong>最初の試し方</strong><p>数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="treats">
+          <div class="product-art" aria-hidden="true"><span>おやつ</span></div>
+          <div class="product-main">
+            <span class="label">おやつ</span>
+            <h3>CIAO ちゅーる系おやつ</h3>
+            <p>少量のごほうびや水分補助として使いやすい定番です。</p>
+            <div class="tags"><span>リンク準備中</span><span>少量から</span><span>主食にしない</span><span>体調変化を見る</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/treats/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#treats-p1">買う前チェック</a>
+              <a class="button" href="../go/treats/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。</p></div>
+            <div><strong>合わないかも</strong><p>体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。</p></div>
+            <div><strong>買う前</strong><p>対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。</p></div>
+            <div><strong>やめるサイン</strong><p>吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。</p></div>
+            <div><strong>最初の試し方</strong><p>1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="treats">
+          <div class="product-art" aria-hidden="true"><span>おやつ</span></div>
+          <div class="product-main">
+            <span class="label">おやつ</span>
+            <h3>無添加寄りのおやつ</h3>
+            <p>毎日ではなくても、原材料を見て選びたい人向け。</p>
+            <div class="tags"><span>リンク準備中</span><span>原材料確認</span><span>少量から</span><span>アレルギー注意</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/treats/p2/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#treats-p2">買う前チェック</a>
+              <a class="button" href="../go/treats/p2/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>原材料を見て選びたい子、いつものおやつを少し見直したい子。</p></div>
+            <div><strong>合わないかも</strong><p>アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。</p></div>
+            <div><strong>買う前</strong><p>原材料、塩分、添加物、対象年齢を見て、体調に合うか先に確認します。</p></div>
+            <div><strong>やめるサイン</strong><p>吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。</p></div>
+            <div><strong>最初の試し方</strong><p>初日は少量だけ。数日は便、吐き戻し、かゆがる様子を確認します。</p></div>
+          </div>
+        </article></div>
+        </section>
+
+        <section class="outcome-card" data-outcome="daily-care">
+          <div class="outcome-head">
+            <div>
+              <span class="label">診断結果</span>
+              <h2>毛・爪・部屋のケアを楽にしたい猫</h2>
+              <p>抜け毛や爪とぎの悩みは、猫が嫌がりにくい道具と続けやすい頻度で選ぶのが大事です。</p>
+              <div class="tags"><span>ケア</span><span>爪とぎ</span></div>
+            </div>
+            <a class="button light" href="../matches/daily-care/">タイプ別ページ</a>
+          </div>
+          <div class="result-grid">
+            <div class="card"><strong>先に見ること</strong><ul><li>短時間で終えられる道具から始める</li><li>強く引っ張らない形・硬さを選ぶ</li><li>猫が逃げた日は無理に続けない</li></ul></div>
+            <div class="card"><strong>買わない判断</strong><p>嫌がるケアを長時間続けると、次から道具を見るだけで逃げやすくなる。</p></div>
+          </div>
+          <div class="product-list">
+        <article class="product-card" data-icon="care">
+          <div class="product-art" aria-hidden="true"><span>ケア</span></div>
+          <div class="product-main">
+            <span class="label">ケア</span>
+            <h3>猫用ブラシ</h3>
+            <p>換毛期の毛を減らし、部屋の掃除も少し楽になります。</p>
+            <div class="tags"><span>リンク準備中</span><span>短時間</span><span>皮膚確認</span><span>嫌がれば中止</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/care/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#care-p1">買う前チェック</a>
+              <a class="button" href="../go/care/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>換毛期の抜け毛が多い子、短時間のブラッシングなら受け入れやすい子。</p></div>
+            <div><strong>合わないかも</strong><p>皮膚が弱い子、触られるのが苦手な子、怒りやすい子。</p></div>
+            <div><strong>買う前</strong><p>毛質に合う形、肌に強く当たりすぎない先端、握りやすさを確認します。</p></div>
+            <div><strong>やめるサイン</strong><p>皮膚が赤くなる、フケが増える、怒る、逃げる時は強さや形を見直します。</p></div>
+            <div><strong>最初の試し方</strong><p>背中など嫌がりにくい場所を数回だけ。無理に全身を一度で終わらせません。</p></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-icon="scratch">
+          <div class="product-art" aria-hidden="true"><span>爪とぎ</span></div>
+          <div class="product-main">
+            <span class="label">爪とぎ</span>
+            <h3>段ボール爪とぎ 大容量</h3>
+            <p>消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。</p>
+            <div class="tags"><span>リンク準備中</span><span>滑り止め</span><span>粉を確認</span><span>食べないか確認</span></div>
+            <div class="actions">
+              <a class="button light" href="../products/scratch/p1/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#scratch-p1">買う前チェック</a>
+              <a class="button" href="../go/scratch/p1/">商品を見る</a>
+            </div>
+          </div>
+          <div class="fit-checks">
+            <div><strong>合いやすい子</strong><p>家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。</p></div>
+            <div><strong>合わないかも</strong><p>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</p></div>
+            <div><strong>買う前</strong><p>粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。</p></div>
+            <div><strong>やめるサイン</strong><p>滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。</p></div>
+            <div><strong>最初の試し方</strong><p>よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。</p></div>
+          </div>
+        </article></div>
+        </section>
+    </div>
+  </section>
+  <section class="policy">
+    <span class="label">猫優先のルール</span>
+    <ul><li>先に猫の状態を選び、商品名より相性と安全確認を見ます。</li><li>合わない条件、やめるサイン、最初の試し方を商品リンクより前に出します。</li><li>体調変化、食欲低下、飲水量の急変は用品ではなく獣医相談を優先します。</li><li>追跡リンクが入っても、猫に合わないものを無理にすすめない設計にします。</li></ul>
+    <div class="actions">
+      <a class="button light" href="../cat-quiz.json">cat-quiz.json</a>
+      <a class="button light" href="../health/">リンク健全性</a>
+      <a class="button light" href="../owner-next/">次にやること</a>
+    </div>
+  </section>
+</main>
+<script>
+const CATBOT_QUIZ = {"generated_at": "2026-06-26T08:31:24", "exported_at": "2026-06-26T08:31:24", "state": "cat_quiz_ready", "account": "@fuwafuwa_mono", "followers": 561, "ready_links": 0, "total_products": 9, "choices": [{"id": "home-alone", "label": "留守番が多い猫", "lead": "長時間ひとりの時間がある子は、見守りと退屈対策を分けて考えると失敗しにくいです。", "icon": "watch", "product_count": 5}, {"id": "active", "label": "よく走る・遊び足りない猫", "lead": "退屈がたまる子は、先に安全に発散できる遊び場を作ると暮らしが落ち着きます。", "icon": "toys", "product_count": 3}, {"id": "hydration", "label": "水分・ごはんを整えたい猫", "lead": "水をあまり飲まない子や食事時間が乱れやすい家庭は、毎日の管理を楽にする用品から見るのが向いています。", "icon": "water", "product_count": 4}, {"id": "daily-care", "label": "毛・爪・部屋のケアを楽にしたい猫", "lead": "抜け毛や爪とぎの悩みは、猫が嫌がりにくい道具と続けやすい頻度で選ぶのが大事です。", "icon": "care", "product_count": 2}], "outcomes": [{"id": "home-alone", "rank": 1, "score": 166, "title": "留守番が多い猫", "lead": "長時間ひとりの時間がある子は、見守りと退屈対策を分けて考えると失敗しにくいです。", "icon": "watch", "match_url": "matches/home-alone/", "checks": ["停電時や通信不調時に困らない運用にする", "カメラは猫が触れにくい場所に置く", "自動化しすぎず、毎日の直接確認も残す"], "avoid": "見守り機器だけで体調判断を完結させない。", "category_targets": [{"id": "watch", "label": "見守り"}, {"id": "water", "label": "水とごはん"}, {"id": "toys", "label": "遊び"}], "products": [{"key": "watch/p1", "category_id": "watch", "category": "見守り", "product_id": "p1", "product": "ペットカメラ", "reason": "留守中の行動や体調変化に気づきやすくなります。", "product_page": "products/watch/p1/", "guide_page": "guides/watch/", "buying_check": "buying-check/#watch-p1", "go_url": "go/watch/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "留守中の様子を確認したい家庭、行動変化に早く気づきたい家庭。", "not_for": "カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。", "first_try": "まず固定位置で音や動きを最小にし、猫が怖がらない距離から使います。", "buy_before_check": "画質、夜間撮影、録画、アプリの使いやすさに加えて、配線と設置の安定を見ます。", "stop_signal": "カメラ音や動きで怖がる、コードを噛む、倒しそうな時は位置を変えます。", "routine": "見守りは補助。異変が見えたら通知だけで済ませず、直接確認します。", "tags": ["配線確認", "怖がれば移動", "異変は直接確認"]}, {"key": "water/p1", "category_id": "water", "category": "水とごはん", "product_id": "p1", "product": "循環式水飲み器", "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。", "product_page": "products/water/p1/", "guide_page": "guides/water/", "buying_check": "buying-check/#water-p1", "go_url": "go/water/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。", "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。", "first_try": "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。", "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。", "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。", "routine": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。", "tags": ["水皿も残す", "掃除必須", "音を確認"]}, {"key": "water/p2", "category_id": "water", "category": "水とごはん", "product_id": "p2", "product": "自動給餌器", "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。", "product_page": "products/water/p2/", "guide_page": "guides/water/", "buying_check": "buying-check/#water-p2", "go_url": "go/water/p2/", "link_ready": false, "link_status": "検索候補", "best_for": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。", "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。", "first_try": "数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。", "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。", "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。", "routine": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。", "tags": ["任せきりにしない", "残量確認", "多頭飼い注意"]}, {"key": "toys/p1", "category_id": "toys", "category": "遊び", "product_id": "p1", "product": "けりぐるみ", "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。", "product_page": "products/toys/p1/", "guide_page": "guides/toys/", "buying_check": "buying-check/#toys-p1", "go_url": "go/toys/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。", "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。", "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。", "buy_before_check": "縫い目が強く、猫の口より小さすぎないサイズを選びます。", "stop_signal": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。", "routine": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。", "tags": ["誤飲確認", "破れたら交換", "留守番中は注意"]}, {"key": "toys/p2", "category_id": "toys", "category": "遊び", "product_id": "p2", "product": "電動猫じゃらし", "reason": "人が手を離していても短時間の運動を作れます。", "product_page": "products/toys/p2/", "guide_page": "guides/toys/", "buying_check": "buying-check/#toys-p2", "go_url": "go/toys/p2/", "link_ready": false, "link_status": "検索候補", "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。", "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。", "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。", "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。", "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。", "routine": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。", "tags": ["短時間", "誤飲確認", "興奮しすぎ注意"]}]}, {"id": "active", "rank": 2, "score": 146, "title": "よく走る・遊び足りない猫", "lead": "退屈がたまる子は、先に安全に発散できる遊び場を作ると暮らしが落ち着きます。", "icon": "toys", "match_url": "matches/active/", "checks": ["小さい部品が外れにくいかを見る", "留守中に出しっぱなしにしない前提で選ぶ", "床や壁を傷つけにくい置き場所を決める"], "avoid": "壊れたおもちゃや細いひもは誤飲しやすいので早めに交換する。", "category_targets": [{"id": "toys", "label": "遊び"}, {"id": "scratch", "label": "爪とぎ"}], "products": [{"key": "toys/p1", "category_id": "toys", "category": "遊び", "product_id": "p1", "product": "けりぐるみ", "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。", "product_page": "products/toys/p1/", "guide_page": "guides/toys/", "buying_check": "buying-check/#toys-p1", "go_url": "go/toys/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。", "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。", "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。", "buy_before_check": "縫い目が強く、猫の口より小さすぎないサイズを選びます。", "stop_signal": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。", "routine": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。", "tags": ["誤飲確認", "破れたら交換", "留守番中は注意"]}, {"key": "toys/p2", "category_id": "toys", "category": "遊び", "product_id": "p2", "product": "電動猫じゃらし", "reason": "人が手を離していても短時間の運動を作れます。", "product_page": "products/toys/p2/", "guide_page": "guides/toys/", "buying_check": "buying-check/#toys-p2", "go_url": "go/toys/p2/", "link_ready": false, "link_status": "検索候補", "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。", "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。", "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。", "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。", "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。", "routine": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。", "tags": ["短時間", "誤飲確認", "興奮しすぎ注意"]}, {"key": "scratch/p1", "category_id": "scratch", "category": "爪とぎ", "product_id": "p1", "product": "段ボール爪とぎ 大容量", "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。", "product_page": "products/scratch/p1/", "guide_page": "guides/scratch/", "buying_check": "buying-check/#scratch-p1", "go_url": "go/scratch/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。", "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。", "first_try": "よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。", "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。", "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。", "routine": "使う場所に固定し、崩れた面やカスは早めに片付けます。", "tags": ["滑り止め", "粉を確認", "食べないか確認"]}]}, {"id": "hydration", "rank": 3, "score": 74, "title": "水分・ごはんを整えたい猫", "lead": "水をあまり飲まない子や食事時間が乱れやすい家庭は、毎日の管理を楽にする用品から見るのが向いています。", "icon": "water", "match_url": "matches/hydration/", "checks": ["洗いやすさと部品交換のしやすさを確認する", "年齢・体調に合うフードやおやつかを見る", "音や高さが猫のストレスにならないか考える"], "avoid": "おやつは主食の代わりにせず、量を決めて使う。", "category_targets": [{"id": "water", "label": "水とごはん"}, {"id": "treats", "label": "おやつ"}], "products": [{"key": "water/p1", "category_id": "water", "category": "水とごはん", "product_id": "p1", "product": "循環式水飲み器", "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。", "product_page": "products/water/p1/", "guide_page": "guides/water/", "buying_check": "buying-check/#water-p1", "go_url": "go/water/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。", "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。", "first_try": "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。", "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。", "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。", "routine": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。", "tags": ["水皿も残す", "掃除必須", "音を確認"]}, {"key": "water/p2", "category_id": "water", "category": "水とごはん", "product_id": "p2", "product": "自動給餌器", "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。", "product_page": "products/water/p2/", "guide_page": "guides/water/", "buying_check": "buying-check/#water-p2", "go_url": "go/water/p2/", "link_ready": false, "link_status": "検索候補", "best_for": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。", "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。", "first_try": "数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。", "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。", "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。", "routine": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。", "tags": ["任せきりにしない", "残量確認", "多頭飼い注意"]}, {"key": "treats/p1", "category_id": "treats", "category": "おやつ", "product_id": "p1", "product": "CIAO ちゅーる系おやつ", "reason": "少量のごほうびや水分補助として使いやすい定番です。", "product_page": "products/treats/p1/", "guide_page": "guides/treats/", "buying_check": "buying-check/#treats-p1", "go_url": "go/treats/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。", "not_for": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。", "first_try": "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。", "buy_before_check": "対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。", "stop_signal": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。", "routine": "主食の代わりにせず、あげた日は他のおやつ量を減らします。", "tags": ["少量から", "主食にしない", "体調変化を見る"]}, {"key": "treats/p2", "category_id": "treats", "category": "おやつ", "product_id": "p2", "product": "無添加寄りのおやつ", "reason": "毎日ではなくても、原材料を見て選びたい人向け。", "product_page": "products/treats/p2/", "guide_page": "guides/treats/", "buying_check": "buying-check/#treats-p2", "go_url": "go/treats/p2/", "link_ready": false, "link_status": "検索候補", "best_for": "原材料を見て選びたい子、いつものおやつを少し見直したい子。", "not_for": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。", "first_try": "初日は少量だけ。数日は便、吐き戻し、かゆがる様子を確認します。", "buy_before_check": "原材料、塩分、添加物、対象年齢を見て、体調に合うか先に確認します。", "stop_signal": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。", "routine": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。", "tags": ["原材料確認", "少量から", "アレルギー注意"]}]}, {"id": "daily-care", "rank": 4, "score": 56, "title": "毛・爪・部屋のケアを楽にしたい猫", "lead": "抜け毛や爪とぎの悩みは、猫が嫌がりにくい道具と続けやすい頻度で選ぶのが大事です。", "icon": "care", "match_url": "matches/daily-care/", "checks": ["短時間で終えられる道具から始める", "強く引っ張らない形・硬さを選ぶ", "猫が逃げた日は無理に続けない"], "avoid": "嫌がるケアを長時間続けると、次から道具を見るだけで逃げやすくなる。", "category_targets": [{"id": "care", "label": "ケア"}, {"id": "scratch", "label": "爪とぎ"}], "products": [{"key": "care/p1", "category_id": "care", "category": "ケア", "product_id": "p1", "product": "猫用ブラシ", "reason": "換毛期の毛を減らし、部屋の掃除も少し楽になります。", "product_page": "products/care/p1/", "guide_page": "guides/care/", "buying_check": "buying-check/#care-p1", "go_url": "go/care/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "換毛期の抜け毛が多い子、短時間のブラッシングなら受け入れやすい子。", "not_for": "皮膚が弱い子、触られるのが苦手な子、怒りやすい子。", "first_try": "背中など嫌がりにくい場所を数回だけ。無理に全身を一度で終わらせません。", "buy_before_check": "毛質に合う形、肌に強く当たりすぎない先端、握りやすさを確認します。", "stop_signal": "皮膚が赤くなる、フケが増える、怒る、逃げる時は強さや形を見直します。", "routine": "短時間で終え、嫌がる日はやめて、終わった後の皮膚も見ます。", "tags": ["短時間", "皮膚確認", "嫌がれば中止"]}, {"key": "scratch/p1", "category_id": "scratch", "category": "爪とぎ", "product_id": "p1", "product": "段ボール爪とぎ 大容量", "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。", "product_page": "products/scratch/p1/", "guide_page": "guides/scratch/", "buying_check": "buying-check/#scratch-p1", "go_url": "go/scratch/p1/", "link_ready": false, "link_status": "検索候補", "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。", "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。", "first_try": "よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。", "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。", "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。", "routine": "使う場所に固定し、崩れた面やカスは早めに片付けます。", "tags": ["滑り止め", "粉を確認", "食べないか確認"]}]}], "cat_first_policy": ["先に猫の状態を選び、商品名より相性と安全確認を見ます。", "合わない条件、やめるサイン、最初の試し方を商品リンクより前に出します。", "体調変化、食欲低下、飲水量の急変は用品ではなく獣医相談を優先します。", "追跡リンクが入っても、猫に合わないものを無理にすすめない設計にします。"], "public_files": {"cat_quiz": "cat-quiz.json", "cat_quiz_page": "quiz/", "buying_check": "buying-check/", "owner_next": "owner-next/", "shop": "index.html"}};
+const buttons = Array.from(document.querySelectorAll(".quiz-choice"));
+const cards = Array.from(document.querySelectorAll(".outcome-card"));
+const title = document.getElementById("selectedTitle");
+function selectOutcome(id){
+  buttons.forEach(button => button.classList.toggle("active", button.dataset.choice === id));
+  cards.forEach(card => card.classList.toggle("selected", card.dataset.outcome === id));
+  const outcome = (CATBOT_QUIZ.outcomes || []).find(item => item.id === id);
+  if(title && outcome) title.textContent = outcome.title;
+}
+buttons.forEach(button => button.addEventListener("click", () => selectOutcome(button.dataset.choice)));
+if(buttons[0]) selectOutcome(buttons[0].dataset.choice);
+</script>
+</body>
+</html>

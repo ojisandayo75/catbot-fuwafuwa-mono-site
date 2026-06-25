@@ -1,0 +1,254 @@
+{
+  "generated_at": "2026-06-26T08:31:24",
+  "exported_at": "2026-06-26T08:31:24",
+  "phase": "needs_affiliate_link",
+  "account": "@fuwafuwa_mono",
+  "public_url_valid": true,
+  "public_url_entered": true,
+  "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "ready_links": 0,
+  "total_products": 9,
+  "followers": 561,
+  "follower_goal": 1000,
+  "clicks_total": 0,
+  "clicks_7d": 0,
+  "first_link_required": true,
+  "next_link_target": {
+    "category_id": "toys",
+    "category": "遊び",
+    "product_id": "p2",
+    "product": "電動猫じゃらし",
+    "reason": "人が手を離していても短時間の運動を作れます。",
+    "score": 219,
+    "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+    "price_band": "中",
+    "reasons": [
+      "catbot反応",
+      "買う前チェック: 留守番が多い猫",
+      "買う前チェック: よく走る・遊び足りない猫",
+      "中単価"
+    ],
+    "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+    "cat_first_review": {
+      "review_level": "careful",
+      "cat_first_score": 60,
+      "risk_signals": [
+        "誤飲・破損",
+        "怖がり・音",
+        "体調・食事",
+        "興奮・執着"
+      ],
+      "info_complete": true,
+      "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+      "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+      "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+      "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+      "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+      "decision": "review_before_link",
+      "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+    },
+    "available": true
+  },
+  "suggested_link_targets": [
+    {
+      "category_id": "toys",
+      "category": "遊び",
+      "product_id": "p2",
+      "product": "電動猫じゃらし",
+      "reason": "人が手を離していても短時間の運動を作れます。",
+      "score": 219,
+      "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+      "price_band": "中",
+      "reasons": [
+        "catbot反応",
+        "買う前チェック: 留守番が多い猫",
+        "買う前チェック: よく走る・遊び足りない猫",
+        "中単価"
+      ],
+      "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+      "cat_first_review": {
+        "review_level": "careful",
+        "cat_first_score": 60,
+        "risk_signals": [
+          "誤飲・破損",
+          "怖がり・音",
+          "体調・食事",
+          "興奮・執着"
+        ],
+        "info_complete": true,
+        "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+        "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+        "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+        "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+        "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+        "decision": "review_before_link",
+        "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+      }
+    },
+    {
+      "category_id": "toys",
+      "category": "遊び",
+      "product_id": "p1",
+      "product": "けりぐるみ",
+      "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
+      "score": 215,
+      "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+      "price_band": "低",
+      "reasons": [
+        "catbot反応",
+        "買う前チェック: 留守番が多い猫",
+        "買う前チェック: よく走る・遊び足りない猫"
+      ],
+      "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
+      "cat_first_review": {
+        "review_level": "standard",
+        "cat_first_score": 90,
+        "risk_signals": [
+          "誤飲・破損"
+        ],
+        "info_complete": true,
+        "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+        "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+        "buy_before_check": "縫い目が強く、猫の口より小さすぎないサイズを選びます。",
+        "stop_signal": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。",
+        "first_try": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
+        "decision": "review_before_link",
+        "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+      }
+    },
+    {
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p2",
+      "product": "自動給餌器",
+      "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
+      "score": 93,
+      "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
+      "price_band": "高",
+      "reasons": [
+        "季節ケア",
+        "買う前チェック: 留守番が多い猫",
+        "買う前チェック: 水分・ごはんを整えたい猫",
+        "高単価"
+      ],
+      "search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
+      "cat_first_review": {
+        "review_level": "watch",
+        "cat_first_score": 70,
+        "risk_signals": [
+          "誤飲・破損",
+          "体調・食事",
+          "衛生・手入れ"
+        ],
+        "info_complete": true,
+        "best_for": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
+        "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
+        "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。",
+        "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+        "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
+        "decision": "review_before_link",
+        "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+      }
+    },
+    {
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p1",
+      "product": "循環式水飲み器",
+      "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+      "score": 89,
+      "check": "洗いやすさ、フィルター代、音の小ささを確認。",
+      "price_band": "中",
+      "reasons": [
+        "季節ケア",
+        "買う前チェック: 留守番が多い猫",
+        "買う前チェック: 水分・ごはんを整えたい猫",
+        "中単価"
+      ],
+      "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
+      "cat_first_review": {
+        "review_level": "watch",
+        "cat_first_score": 70,
+        "risk_signals": [
+          "誤飲・破損",
+          "怖がり・音",
+          "衛生・手入れ"
+        ],
+        "info_complete": true,
+        "best_for": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。",
+        "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
+        "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。",
+        "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
+        "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
+        "decision": "review_before_link",
+        "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+      }
+    },
+    {
+      "category_id": "scratch",
+      "category": "爪とぎ",
+      "product_id": "p1",
+      "product": "段ボール爪とぎ 大容量",
+      "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
+      "score": 76,
+      "check": "粉が出にくいもの、滑りにくい形を優先。",
+      "price_band": "低",
+      "reasons": [
+        "季節ケア",
+        "買う前チェック: よく走る・遊び足りない猫",
+        "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫"
+      ],
+      "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
+      "cat_first_review": {
+        "review_level": "watch",
+        "cat_first_score": 70,
+        "risk_signals": [
+          "誤飲・破損",
+          "怖がり・音",
+          "衛生・手入れ"
+        ],
+        "info_complete": true,
+        "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
+        "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+        "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
+        "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+        "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+        "decision": "review_before_link",
+        "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+      }
+    }
+  ],
+  "unready_clicked_products": [],
+  "ready_clicked_products": [],
+  "commands": {
+    "open_moshimo_workbench": ".\\catbot_first_link_handoff.bat -Open",
+    "check_url": ".\\catbot_check_clipboard_link.bat",
+    "save_next_link": ".\\catbot_first_link_clipboard_to_inbox.bat",
+    "finish_launch": ".\\catbot_first_link_finish.bat",
+    "review_clicks": ".\\affiliate_site_ops.bat click-review"
+  },
+  "current_target_command": ".\\affiliate_site_ops.bat set toys p2 --% \"https://MOSHIMO_TRACKING_URL\"",
+  "decision_rule": [
+    "If there are clicked products without real affiliate links, replace those links first.",
+    "Before clicks exist, use next_link_target and then suggested_link_targets in order.",
+    "Keep cat safety notes and no-buy checks visible before pushing product links."
+  ],
+  "first_link_safe_flow": {
+    "primary": "wait_for_clipboard_then_apply_publish",
+    "commands": {
+      "handoff": ".\\catbot_first_link_handoff.bat -Open",
+      "wait_for_clipboard": ".\\catbot_first_link_wait_for_clipboard.bat",
+      "after_copy": ".\\catbot_first_link_after_copy.bat",
+      "save_clipboard": ".\\catbot_first_link_clipboard_to_inbox.bat",
+      "dry_run": ".\\catbot_first_link_finish.bat",
+      "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish",
+      "check_clipboard": ".\\catbot_check_clipboard_link.bat"
+    },
+    "steps": [
+      "Open the handoff page and create one real tracking URL for the current target.",
+      "Start catbot_first_link_wait_for_clipboard.bat before copying, or copy the tracking URL and run catbot_first_link_after_copy.bat.",
+      "Dry-run with catbot_first_link_finish.bat.",
+      "Apply and publish with catbot_first_link_finish.bat -Apply -Publish only after the dry-run is correct."
+    ]
+  }
+}

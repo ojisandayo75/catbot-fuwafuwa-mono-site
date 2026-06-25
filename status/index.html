@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ふわふわ猫の道具箱 - 運用状況</title>
+<style>
+body{margin:0;background:#fff8ef;color:#25170f;font-family:"Segoe UI","Yu Gothic UI","Hiragino Sans",Meiryo,sans-serif;line-height:1.65}
+main{max-width:980px;margin:0 auto;padding:24px 18px 48px}
+a{color:#5a3522;font-weight:800}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid #dccab5;padding-bottom:16px;margin-bottom:16px}
+h1{margin:0;font-size:34px;line-height:1.15}
+p{margin:0;color:#6d5948}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:16px 0}
+.card{border:1px solid #dccab5;border-radius:8px;background:#fffdf8;padding:14px;min-width:0}
+.card b,.card strong{display:block;font-size:24px;color:#25170f;overflow-wrap:anywhere}
+.label,.badge{display:inline-flex;min-height:25px;align-items:center;padding:3px 8px;border:1px solid #d8bea4;border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+.badge.warn{background:#f7ead8;color:#875a2c}
+.badge.info{background:#edf3e5;color:#446146}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+li{border:1px solid #dccab5;border-radius:8px;background:#fffdf8;padding:12px}
+li strong{display:block;margin-top:6px}
+code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-radius:8px;background:#2d1b12;color:#fff8ef;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.45}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.actions.compact{margin-top:10px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;background:#5a3522;color:#fff8ef;text-decoration:none}
+.button.light{background:#f4eadb;color:#5a3522;border:1px solid #dccab5}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tags span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid #dccab5;border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:800}
+@media (max-width:760px){.top{display:block}.grid{grid-template-columns:1fr 1fr}h1{font-size:28px}}
+@media (max-width:460px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <div>
+      <span class="label">noindex 運用メモ</span>
+      <h1>公開・自動更新ステータス</h1>
+      <p>公開後に、更新時刻・リンク準備・次にやることを確認するためのページです。</p>
+    </div>
+    <a class="button" href="../">トップへ戻る</a>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="label">フェーズ</span><b>needs_affiliate_link</b></div>
+    <div class="card"><span class="label">フォロワー</span><b>561</b><p>目標まで 439</p></div>
+    <div class="card"><span class="label">提携リンク</span><b>0 / 9</b></div>
+    <div class="card"><span class="label">公開URL</span><b>OK</b></div>
+  </div>
+  <section class="card" style="margin-top:12px">
+    <span class="label">1,000人切り替え</span>
+    <strong>到達見込み: 約 13 日後 / 2026-07-09</strong>
+    <p>直近7日 +224 / 平均 34.0 per day / 最大日次 +133</p>
+    <code>.\affiliate_site_ops.bat follower-milestone --force</code>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">ローンチまで残り</span>
+    <ul>
+        <li>
+          <span class="badge warn">未完了</span>
+          <strong>実アフィリリンク</strong>
+          <p>まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。</p>
+        </li>
+        </ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">手元で実行するコマンド</span>
+    <ul>
+        <li>
+          <strong>もしも承認と最初のリンク作業台を開く</strong>
+          <code>.\catbot_first_link_handoff.bat -Open</code>
+          <p>もしも承認状態も見ながら、check-url と set-next のコマンドを作る。</p>
+        </li>
+        
+
+        <li>
+          <strong>公開前チェック</strong>
+          <code>.\affiliate_site_ops.bat launch-check</code>
+          <p>READYになるまで残り項目を確認する。</p>
+        </li>
+        </ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">公開後の初回監視</span>
+    <p>公開URLを登録して再アップロードしたら、外から読める状態を1回ログに残します。</p>
+    <ul>
+        <li>
+          <strong>公開URLの外部確認</strong>
+          <code>.\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code>
+          <p>公開先からトップ、JSON、画像、商品詳細、statusが読めるか確認する。</p>
+        </li>
+        
+
+        <li>
+          <strong>監視ログを1回残す</strong>
+          <code>.\affiliate_site_ops.bat monitor-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code>
+          <p>確認結果を public_url_monitor.jsonl に保存し、CATBOT_PUBLIC_MONITOR_REPORT.md も更新する。公開直後に1回、以後は異常時や週次で実行する。</p>
+        </li>
+        </ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">自動更新</span>
+    <strong>OK</strong>
+    <p>最終更新: 2026-06-26T08:31:25</p>
+    <p>タスク: Ready / 最終結果 0 / 次回 2026-06-26T08:58:08</p>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">更新契約</span>
+    <strong>26時間以内に更新確認</strong>
+    <p>posts 10 / videos 12 / categories 6 / products 9</p>
+    <code>.\affiliate_site_ops.bat sync-now --smoke-test</code>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">猫優先データ</span>
+    <strong>ok</strong>
+    <p>安全メモ 9/9 / 適合メモ 9/9 / 候補レビュー 6</p>
+    <p>次候補: careful / score 60</p>
+    <div class="tags"><span>誤飲・破損</span><span>怖がり・音</span><span>体調・食事</span><span>興奮・執着</span></div>
+  </section>
+  
+        <div class="card">
+          <span class="label">次のリンク候補</span>
+          <strong>電動猫じゃらし</strong>
+          <p>遊び / score 219 / 価格帯 中</p>
+          <p>人が手を離していても短時間の運動を作れます。</p>
+          <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+          <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span><span>中単価</span></div>
+          <div class="actions compact"><a class="button light" href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97" target="_blank" rel="noopener noreferrer">商品検索を開く</a><a class="button light" href="../products/toys/p2/">詳細ページを見る</a></div>
+        </div>
+        
+  
+        <section class="card" style="margin-top:12px">
+          <span class="label">代替リンク候補</span>
+          <p>最優先の商品でリンクが作れない時は、次の候補から1本目を作ります。</p>
+          <ul class="candidate-list">
+        <li>
+          <strong>けりぐるみ</strong>
+          <p>遊び / score 215 / 価格帯 低</p>
+          <p>噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。</p>
+          <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span></div>
+          <div class="actions compact">
+            <a class="button light" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF" target="_blank" rel="noopener noreferrer">商品検索を開く</a>
+            <a class="button light" href="../products/toys/p1/">詳細ページを見る</a>
+          </div>
+        </li>
+        
+
+        <li>
+          <strong>自動給餌器</strong>
+          <p>水とごはん / score 93 / 価格帯 高</p>
+          <p>時間管理が必要な家庭で、食事リズムを整えやすくなります。</p>
+          <div class="tags"><span>季節ケア</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>高単価</span></div>
+          <div class="actions compact">
+            <a class="button light" href="https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/" target="_blank" rel="noopener noreferrer">商品検索を開く</a>
+            <a class="button light" href="../products/water/p2/">詳細ページを見る</a>
+          </div>
+        </li>
+        
+
+        <li>
+          <strong>循環式水飲み器</strong>
+          <p>水とごはん / score 89 / 価格帯 中</p>
+          <p>水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。</p>
+          <div class="tags"><span>季節ケア</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>中単価</span></div>
+          <div class="actions compact">
+            <a class="button light" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF" target="_blank" rel="noopener noreferrer">商品検索を開く</a>
+            <a class="button light" href="../products/water/p1/">詳細ページを見る</a>
+          </div>
+        </li>
+        
+
+        <li>
+          <strong>段ボール爪とぎ 大容量</strong>
+          <p>爪とぎ / score 76 / 価格帯 低</p>
+          <p>消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。</p>
+          <div class="tags"><span>季節ケア</span><span>買う前チェック: よく走る・遊び足りない猫</span><span>買う前チェック: 毛・爪・部屋のケアを楽にしたい猫</span></div>
+          <div class="actions compact">
+            <a class="button light" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F" target="_blank" rel="noopener noreferrer">商品検索を開く</a>
+            <a class="button light" href="../products/scratch/p1/">詳細ページを見る</a>
+          </div>
+        </li>
+        </ul>
+        </section>
+        
+  <section class="card" style="margin-top:12px">
+    <span class="label">次にやること</span>
+    <ul>
+        <li>
+          <span class="badge warn">warn</span>
+          <strong>提携リンク未設定</strong>
+          <p>もしもで発行したAmazon/楽天リンクを affiliate_products.json の affiliate_url に入れる。</p>
+        </li>
+        
+
+        <li>
+          <span class="badge info">info</span>
+          <strong>まだ育成フェーズ</strong>
+          <p>1,000フォロワーまで残り 439。売り込みよりプロフィール導線を薄く置く。</p>
+        </li>
+        </ul>
+  </section>
+  <div class="actions">
+    <a class="button" href="../owner-next/">次にやること</a>
+    <a class="button" href="../updates/">更新履歴を見る</a>
+    <a class="button" href="../revenue/">収益化ステータス</a>
+    <a class="button" href="../clicks/">クリック改善</a>
+    <a class="button" href="../health/">リンク健全性</a>
+    <a class="button" href="../buying-check/">買う前チェック</a>
+    <a class="button" href="../revenue-plan.json">revenue-plan.json</a>
+    <a class="button" href="../click-review.json">click-review.json</a>
+    <a class="button" href="../link-health.json">link-health.json</a>
+    <a class="button" href="../status.json">status.json</a>
+  </div>
+  <p style="margin-top:16px">生成: 2026-06-26T08:31:24 / 書き出し: 2026-06-26T08:31:24</p>
+</main>
+</body>
+</html>

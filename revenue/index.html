@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Catbot 収益化ステータス</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#dccab5;--muted:#6d5948;--coffee:#5a3522;--soft:#f4eadb;--ok:#edf3e5;--warn:#f7ead8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI","Hiragino Sans",Meiryo,sans-serif;line-height:1.65}
+main{max-width:1040px;margin:0 auto;padding:24px 18px 48px}
+a{color:#5a3522;font-weight:800}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:16px}
+h1{margin:0;font-size:34px;line-height:1.15;letter-spacing:0}
+h2{margin:8px 0 6px;font-size:22px;letter-spacing:0}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px;min-width:0}
+.primary{background:#fff3df;border-color:#d8bea4}
+.card b,.card strong{display:block;color:var(--ink);overflow-wrap:anywhere}
+.card b{font-size:24px}
+.label,.badge{display:inline-flex;min-height:25px;align-items:center;padding:3px 8px;border:1px solid #d8bea4;border-radius:8px;background:var(--soft);color:#5a3522;font-size:12px;font-weight:800}
+.badge.warn{background:var(--warn);color:#875a2c}
+.badge.ok{background:var(--ok);color:#446146}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+li{border:1px solid var(--line);border-radius:8px;background:#fffdf8;padding:12px}
+li strong{font-size:17px}
+code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-radius:8px;background:#2d1b12;color:#fff8ef;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.45}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;background:var(--coffee);color:#fff8ef;text-decoration:none}
+.button.light{background:var(--soft);color:var(--coffee);border:1px solid var(--line)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tags span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:#5f4735;font-size:12px;font-weight:800}
+@media (max-width:760px){.top{display:block}.grid{grid-template-columns:1fr 1fr}h1{font-size:28px}}
+@media (max-width:460px){.grid{grid-template-columns:1fr}.button{width:100%}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <div>
+      <span class="label">noindex 運用ページ</span>
+      <h1>Catbot 収益化ステータス</h1>
+      <p>catbotの伸び、次のアフィリリンク、X告知ガード、公開監視を1か所で確認します。</p>
+    </div>
+    <a class="button" href="../status/">運用ステータスへ</a>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="label">段階</span><b>最初のアフィリリンク待ち</b></div>
+    <div class="card"><span class="label">リンク</span><b>0 / 9</b></div>
+    <div class="card"><span class="label">公開URL</span><b>OK</b></div>
+    <div class="card"><span class="label">フォロワー</span><b>561</b><p>1,000人まで 439</p></div>
+  </div>
+  
+        <section class="card">
+          <span class="label">今やること</span>
+          <h2>最初の実アフィリリンクを入れる</h2>
+          <p>次の最優先商品に、もしも等の追跡付きURLを1本保存します。</p>
+          <code>.\catbot_first_link_handoff.bat -Open</code>
+        </section>
+
+  <section class="card" style="margin-top:12px">
+    <span class="label">未完了</span>
+    <ul>
+        <li>
+          <span class="badge warn">未完了</span>
+          <strong>実アフィリリンク</strong>
+          <p>まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。</p>
+        </li>
+</ul>
+  </section>
+  
+        <section class="card primary">
+          <span class="label">次のリンク候補</span>
+          <h2>電動猫じゃらし</h2>
+          <p>toys/p2 / score 219 / 中</p>
+          <p>人が手を離していても短時間の運動を作れます。</p>
+          <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+          <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span><span>中単価</span></div>
+          <div class="actions">
+            <a class="button light" href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97" target="_blank" rel="noopener noreferrer">商品検索を開く</a>
+            <a class="button light" href="../products/toys/p2/">商品ページを見る</a>
+          </div>
+        </section>
+
+  <section class="card" style="margin-top:12px">
+    <span class="label">代替候補</span>
+    <ul>
+        <li>
+          <strong>電動猫じゃらし</strong>
+          <p>遊び / score 219</p>
+          <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+        </li>
+
+
+        <li>
+          <strong>けりぐるみ</strong>
+          <p>遊び / score 215</p>
+          <p>縫い目が強いもの、誤飲しにくいサイズを優先。</p>
+        </li>
+
+
+        <li>
+          <strong>自動給餌器</strong>
+          <p>水とごはん / score 93</p>
+          <p>詰まりにくさ、洗いやすさ、停電時の挙動を確認。</p>
+        </li>
+
+
+        <li>
+          <strong>循環式水飲み器</strong>
+          <p>水とごはん / score 89</p>
+          <p>洗いやすさ、フィルター代、音の小ささを確認。</p>
+        </li>
+</ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">猫優先ルール</span>
+    <ul>
+        <li>
+          <strong>1</strong>
+          <p>Show cat fit and no-buy reasons before product links.</p>
+        </li>
+
+
+        <li>
+          <strong>2</strong>
+          <p>Prefer consultation when health, eating, urination, or behavior looks unsafe.</p>
+        </li>
+
+
+        <li>
+          <strong>3</strong>
+          <p>Keep X promotion profile-first; avoid repeated direct product URLs.</p>
+        </li>
+
+
+        <li>
+          <strong>4</strong>
+          <p>Wait for the follower milestone before shop promotion; use soft site warmup before then.</p>
+        </li>
+
+
+        <li>
+          <strong>5</strong>
+          <p>Do not post shop promotion until the public URL monitor has passed.</p>
+        </li>
+</ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">X告知ガード</span>
+    <strong>まだ告知しない</strong>
+    <p>判定: wait / 日次上限 2 / 商品直リンク 避ける</p>
+    <code>.\affiliate_site_ops.bat monitor-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">使うコマンド</span>
+    <ul>
+        <li>
+          <strong>最新状態に更新</strong>
+          <code>.\affiliate_site_ops.bat sync-now --smoke-test</code>
+          <p>catbotログと商品設定を公開フォルダへ反映します。</p>
+        </li>
+
+
+        <li>
+          <strong>最初のリンク作業台</strong>
+          <code>.\catbot_first_link_handoff.bat -Open</code>
+          <p>もしもの承認状況と次の商品候補を見ながら作業します。</p>
+        </li>
+
+
+        <li>
+          <strong>最初のアフィリリンクを保存</strong>
+          <code>.\catbot_first_link_clipboard_to_inbox.bat</code>
+          <p>発行した追跡URLを1本入れてZIPを作り直します。</p>
+        </li>
+
+
+        <li>
+          <strong>公開URLを登録</strong>
+          <code>.\affiliate_site_ops.bat profile-url &quot;https://PUBLIC_URL/&quot; --package --smoke-test</code>
+          <p>公開後のURLをcanonicalや共有カードへ反映します。</p>
+        </li>
+
+
+        <li>
+          <strong>公開前チェック</strong>
+          <code>.\affiliate_site_ops.bat launch-check</code>
+          <p>未完了の必須項目を確認します。</p>
+        </li>
+
+
+        <li>
+          <strong>公開URL監視</strong>
+          <code>.\affiliate_site_ops.bat monitor-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code>
+          <p>公開後に外から読めるかを記録します。</p>
+        </li>
+
+
+        <li>
+          <strong>X告知ガード</strong>
+          <code>.\affiliate_site_ops.bat shop-post-guard --json</code>
+          <p>告知してよい状態かを判定します。</p>
+        </li>
+</ul>
+  </section>
+  <div class="actions">
+    <a class="button light" href="../owner-next/">次にやること</a>
+    <a class="button" href="../revenue-plan.json">revenue-plan.json</a>
+    <a class="button light" href="../clicks/">クリック改善</a>
+    <a class="button light" href="../health/">リンク健全性</a>
+    <a class="button light" href="../buying-check/">買う前チェック</a>
+    <a class="button light" href="../x-kit/">X告知キット</a>
+    <a class="button light" href="../click-review.json">click-review.json</a>
+    <a class="button light" href="../link-health.json">link-health.json</a>
+    <a class="button light" href="../link-opportunities.json">link-opportunities.json</a>
+    <a class="button light" href="../ops-summary.json">ops-summary.json</a>
+  </div>
+  <p style="margin-top:16px">生成: 2026-06-26T08:31:24 / 書き出し: 2026-06-26T08:31:24</p>
+</main>
+</body>
+</html>

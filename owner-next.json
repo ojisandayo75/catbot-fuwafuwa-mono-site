@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-06-26T08:31:24",
+  "exported_at": "2026-06-26T08:31:24",
+  "state": "needs_first_affiliate_link",
+  "headline": "残りは最初の実アフィリリンクです",
+  "primary_action": "toys/p2 電動猫じゃらし の追跡URLを保存する",
+  "account": "@fuwafuwa_mono",
+  "followers": 561,
+  "follower_goal": 1000,
+  "followers_to_goal": 439,
+  "ready_links": 0,
+  "total_products": 9,
+  "public_url_ready": true,
+  "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "moshimo": {
+    "amazon_status": "pending",
+    "rakuten_status": "pending"
+  },
+  "blockers": [
+    "実アフィリリンク"
+  ],
+  "next_steps": [
+    {
+      "id": "first_affiliate_link",
+      "done": false,
+      "title": "1本目の追跡URLを作る",
+      "detail": "もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。",
+      "command": ".\\catbot_first_link_handoff.bat -Open",
+      "wait_command": ".\\catbot_first_link_wait_for_clipboard.bat",
+      "after_copy_command": ".\\catbot_first_link_after_copy.bat",
+      "check_command": ".\\catbot_check_clipboard_link.bat",
+      "save_command": ".\\catbot_first_link_clipboard_to_inbox.bat",
+      "dry_run_command": ".\\catbot_first_link_finish.bat",
+      "apply_command": ".\\catbot_first_link_finish.bat -Apply -Publish",
+      "target": {
+        "key": "toys/p2",
+        "product": "電動猫じゃらし",
+        "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+        "cat_first_check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。"
+      }
+    },
+    {
+      "id": "public_url",
+      "done": true,
+      "title": "公開URLを確認する",
+      "detail": "GitHub Pagesの公開URLが登録済みか確認します。ここはすでにOKなら触らなくて大丈夫です。",
+      "command": ".\\affiliate_site_ops.bat verify-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
+      "preview_command": ".\\affiliate_site_ops.bat preview-check --build"
+    },
+    {
+      "id": "finish_launch",
+      "done": false,
+      "title": "dry-runしてから反映する",
+      "detail": "受け箱に保存した追跡URLをdry-runで確認し、対象商品とプロバイダが正しければ公開まで反映します。",
+      "dry_run_command": ".\\catbot_first_link_finish.bat",
+      "apply_command": ".\\catbot_first_link_finish.bat -Apply -Publish",
+      "health_command": ".\\catbot_ops_health.bat"
+    },
+    {
+      "id": "final_check",
+      "done": false,
+      "title": "13/13を確認してX導線へ進む",
+      "detail": "launch gateが13/13になったら、Xプロフィールと投稿ガードを見て告知可否を判断します。",
+      "command": ".\\catbot_auto_pipeline.bat",
+      "shop_guard_command": ".\\catbot_shop_post_ready.bat"
+    }
+  ],
+  "cat_first_notes": [
+    "商品直リンクをXに連投しない。プロフィールの公開サイトへ案内する。",
+    "商品ページでは、買う前チェック・合わない条件・やめるサインをリンクより先に見せる。",
+    "クリック数より、猫に合わない商品が混ざっていないかを優先して見直す。",
+    "1000フォロワー前でも導線作りは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。"
+  ],
+  "moshimo_todo": [
+    {
+      "title": "探す商品",
+      "body": "電動猫じゃらし で検索し、猫が怖がりにくい静音・交換パーツあり・短時間運転しやすい候補を選びます。"
+    },
+    {
+      "title": "コピーするURL",
+      "body": "通常の商品URLではなく、もしもで発行された追跡URLだけをコピーします。短縮URLだけの場合は使わず、追跡情報が見えるURLを選びます。"
+    },
+    {
+      "title": "コピー後",
+      "body": "URLをコピーする前に catbot_first_link_wait_for_clipboard.bat を起動します。もうコピー済みなら catbot_first_link_after_copy.bat を実行します。dry-runで対象が toys/p2 と出るまで本反映しません。"
+    },
+    {
+      "title": "X投稿",
+      "body": "Xには商品直リンクを貼らず、公開サイトへ案内します。投稿前は shop-post-guard が OK になるまで待ちます。"
+    }
+  ],
+  "public_files": {
+    "shop": "index.html",
+    "owner_next": "owner-next.json",
+    "owner_next_page": "owner-next/",
+    "cat_quiz": "cat-quiz.json",
+    "cat_quiz_page": "quiz/",
+    "x_kit": "x-kit.json",
+    "x_kit_page": "x-kit/",
+    "buying_check": "buying-check/",
+    "link_health": "health/",
+    "revenue": "revenue/",
+    "visuals": "visuals/",
+    "status": "status/"
+  }
+}

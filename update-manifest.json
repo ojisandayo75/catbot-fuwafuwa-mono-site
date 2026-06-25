@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-06-26T08:25:31",
-  "generated_at": "2026-06-26T08:25:31",
+  "exported_at": "2026-06-26T08:31:24",
+  "generated_at": "2026-06-26T08:31:24",
   "phase": "needs_affiliate_link",
   "public_url_configured": true,
   "followers": 561,
@@ -236,7 +236,7 @@
   "owner_commands": [
     {
       "title": "もしも承認と最初のリンク作業台を開く",
-      "command": ".\\affiliate_site_ops.bat moshimo-workbench --force",
+      "command": ".\\catbot_first_link_handoff.bat -Open",
       "detail": "もしも承認状態も見ながら、check-url と set-next のコマンドを作る。"
     },
     {
@@ -251,8 +251,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T08:25:31",
-    "exported_at": "2026-06-26T08:25:31",
+    "generated_at": "2026-06-26T08:31:24",
+    "exported_at": "2026-06-26T08:31:24",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -314,5 +314,70 @@
   "generated_assets_page": "visuals/",
   "daily_brief": "daily-brief.json",
   "revenue_plan": "revenue-plan.json",
-  "revenue_page": "revenue/"
+  "revenue_page": "revenue/",
+  "first_link_safe_flow": {
+    "primary": "wait_for_clipboard_then_apply_publish",
+    "commands": {
+      "handoff": ".\\catbot_first_link_handoff.bat -Open",
+      "wait_for_clipboard": ".\\catbot_first_link_wait_for_clipboard.bat",
+      "after_copy": ".\\catbot_first_link_after_copy.bat",
+      "save_clipboard": ".\\catbot_first_link_clipboard_to_inbox.bat",
+      "dry_run": ".\\catbot_first_link_finish.bat",
+      "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish",
+      "check_clipboard": ".\\catbot_check_clipboard_link.bat"
+    },
+    "steps": [
+      "Open the handoff page and create one real tracking URL for the current target.",
+      "Start catbot_first_link_wait_for_clipboard.bat before copying, or copy the tracking URL and run catbot_first_link_after_copy.bat.",
+      "Dry-run with catbot_first_link_finish.bat.",
+      "Apply and publish with catbot_first_link_finish.bat -Apply -Publish only after the dry-run is correct."
+    ]
+  },
+  "auto_export": {
+    "exported_at": "2026-06-26T08:31:25",
+    "output": "C:\\Users\\User\\catbot-x\\public_shop",
+    "ready_links": 0,
+    "total_products": 9,
+    "followers": 561,
+    "top_post_views": 156918,
+    "last_deploy": {
+      "deployed_at": "2026-06-26T08:30:07",
+      "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
+      "file_count": 156,
+      "total_bytes": 52062121
+    }
+  },
+  "auto_update": {
+    "checked_at": "2026-06-26T08:31:26",
+    "synced": true,
+    "last_exported_at": "2026-06-26T08:31:25",
+    "ready_links": 0,
+    "total_products": 9,
+    "followers": 561,
+    "top_post_views": 156918,
+    "deploy": {
+      "configured": true,
+      "enabled": true,
+      "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
+      "last_deploy": {
+        "deployed_at": "2026-06-26T08:30:07",
+        "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
+        "file_count": 156,
+        "total_bytes": 52062121
+      }
+    },
+    "scheduled_task": {
+      "checked": true,
+      "ok": true,
+      "installed": true,
+      "state": "Ready",
+      "last_run_time": "2026-06-26T08:28:09",
+      "last_task_result": 0,
+      "next_run_time": "2026-06-26T08:58:08",
+      "number_of_missed_runs": 0,
+      "repetition_interval": "PT30M",
+      "action_matches": true,
+      "exit_code": 0
+    }
+  }
 }
