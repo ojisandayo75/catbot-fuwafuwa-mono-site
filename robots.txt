@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/sitemap.xml

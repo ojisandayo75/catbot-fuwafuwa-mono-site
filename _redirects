@@ -1,5 +1,0 @@
-# Static hosting compatibility
-/shop / 301
-/shop/ / 301
-/api/shop /shop-data.json 200
-/api/shop/ /shop-data.json 200
