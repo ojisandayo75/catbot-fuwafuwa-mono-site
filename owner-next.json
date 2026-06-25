@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T02:36:03",
-  "exported_at": "2026-06-26T02:36:03",
+  "generated_at": "2026-06-26T03:05:28",
+  "exported_at": "2026-06-26T03:05:28",
   "state": "needs_first_affiliate_link",
   "headline": "残りは最初の実アフィリリンクです",
   "primary_action": "toys/p2 電動猫じゃらし の追跡URLを保存する",
@@ -67,6 +67,24 @@
     "商品ページでは、買う前チェック・合わない条件・やめるサインをリンクより先に見せる。",
     "クリック数より、猫に合わない商品が混ざっていないかを優先して見直す。",
     "1000フォロワー前でも導線作りは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。"
+  ],
+  "moshimo_todo": [
+    {
+      "title": "探す商品",
+      "body": "電動猫じゃらし で検索し、猫が怖がりにくい静音・交換パーツあり・短時間運転しやすい候補を選びます。"
+    },
+    {
+      "title": "コピーするURL",
+      "body": "通常の商品URLではなく、もしもで発行された追跡URLだけをコピーします。短縮URLだけの場合は使わず、追跡情報が見えるURLを選びます。"
+    },
+    {
+      "title": "コピー後",
+      "body": "URLをコピーしたら catbot_first_link_clipboard_to_inbox.bat で保存し、dry-runで対象が toys/p2 と出るまで本反映しません。"
+    },
+    {
+      "title": "X投稿",
+      "body": "Xには商品直リンクを貼らず、公開サイトへ案内します。投稿前は shop-post-guard が OK になるまで待ちます。"
+    }
   ],
   "public_files": {
     "shop": "index.html",
