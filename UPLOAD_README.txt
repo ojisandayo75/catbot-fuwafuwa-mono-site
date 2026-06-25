@@ -24,6 +24,8 @@
 - `/health/`
 - `/buying-check.json`
 - `/buying-check/`
+- `/consult-first.json`
+- `/consult-first/`
 - `/cat-quiz.json`
 - `/quiz/`
 - `/owner-next.json`
@@ -68,7 +70,7 @@
 
 ## 現在の状態
 
-- Generated: 2026-06-25T21:21:21
+- Generated: 2026-06-25T21:47:23
 - Public URL: https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/
 - Ready affiliate links: 0 / 9
 - Follower milestone ETA: 2026-07-05

@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-25T21:21:21",
+      "dateModified": "2026-06-25T21:47:23",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -2273,6 +2273,31 @@
     color:#5f4735;
     font-size:13px;
   }
+  .consult-first-signals{
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+  }
+  .consult-first-signals span,
+  .consult-first-source a{
+    display:inline-flex;
+    min-height:24px;
+    align-items:center;
+    border:1px solid #dccab5;
+    border-radius:8px;
+    background:#fffdf8;
+    padding:3px 8px;
+    color:#5a3522;
+    font-size:12px;
+    font-weight:800;
+    text-decoration:none;
+  }
+  .consult-first-source{
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+    margin-top:10px;
+  }
   .consult-first-note{
     margin-top:10px;
     color:#7c6754;
@@ -4425,24 +4450,9 @@
       </div>
       <span class="badge wait">商品より先</span>
     </div>
-    <div class="consult-first-grid">
-      <article class="card consult-first-card">
-        <div class="product-meta"><span class="badge wait">今すぐ相談</span></div>
-        <h3>呼吸が苦しそう、尿が出ない、反応が弱い</h3>
-        <p>この状態では用品選びを止めて、動物病院や救急相談を優先します。</p>
-      </article>
-      <article class="card consult-first-card">
-        <div class="product-meta"><span class="badge wait">早めに相談</span></div>
-        <h3>食べない、吐く・下痢が続く、ぐったりしている</h3>
-        <p>様子見だけで長引かせず、年齢や持病も含めて獣医師に確認します。</p>
-      </article>
-      <article class="card consult-first-card">
-        <div class="product-meta"><span class="badge">記録する</span></div>
-        <h3>いつもと違うけど判断に迷う</h3>
-        <p>食事、水、トイレ、呼吸、行動の変化をメモして、購入より相談を先にします。</p>
-      </article>
-    </div>
-    <p class="consult-first-note">このサイトは診断をしません。商品紹介は暮らしの補助であり、体調不良や急な変化の代わりにはなりません。</p>
+    <div id="consultFirstGrid" class="consult-first-grid"></div>
+    <p id="consultFirstNote" class="consult-first-note">このサイトは診断をしません。商品紹介は暮らしの補助であり、体調不良や急な変化の代わりにはなりません。</p>
+    <div id="consultFirstSources" class="consult-first-source"></div>
   </section>
 
   <section id="aftercarePlan">
@@ -7032,6 +7042,52 @@ function renderNoBuyGuide(categories=[]){
   }).join("") || `<div class="empty">買わない判断を準備中</div>`;
 }
 
+function renderConsultFirst(consult={}){
+  const grid = $("consultFirstGrid");
+  if(!grid) return;
+  const levels = Array.isArray(consult.levels) ? consult.levels : [];
+  grid.innerHTML = levels.map(level => {
+    const label = level.label || "相談";
+    const title = level.title || "体調不安がある";
+    const detail = level.detail || "商品選びより、獣医師への相談を優先します。";
+    const action = level.action || "食事、水、トイレ、呼吸、行動の変化をメモします。";
+    const signals = (level.signals || []).slice(0,6).map(signal => `<span>${esc(signal)}</span>`).join("");
+    const badgeClass = level.id === "emergency" ? "wait" : "";
+    return `
+      <article class="card consult-first-card">
+        <div class="product-meta"><span class="badge ${badgeClass}">${esc(label)}</span></div>
+        <h3>${esc(title)}</h3>
+        <p>${esc(detail)}</p>
+        <div class="consult-first-signals">${signals}</div>
+        <div class="no-buy-line">
+          <strong>先にすること</strong>
+          <span>${esc(action)}</span>
+        </div>
+      </article>
+    `;
+  }).join("") || `
+    <article class="card consult-first-card">
+      <div class="product-meta"><span class="badge wait">商品より先</span></div>
+      <h3>体調の不安がある</h3>
+      <p>この状態では用品選びを止めて、動物病院や救急相談を優先します。</p>
+    </article>
+  `;
+
+  const note = $("consultFirstNote");
+  if(note) note.textContent = consult.disclaimer || "このサイトは診断をしません。商品紹介は暮らしの補助であり、体調不良や急な変化の代わりにはなりません。";
+  const sourceBox = $("consultFirstSources");
+  if(sourceBox){
+    const sources = Array.isArray(consult.sources) ? consult.sources.slice(0,5) : [];
+    sourceBox.innerHTML = sources.map(source => {
+      const label = source.label || source.id || "参照元";
+      const url = source.url || "";
+      return url
+        ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`
+        : `<span>${esc(label)}</span>`;
+    }).join("");
+  }
+}
+
 function renderAftercarePlan(categories=[]){
   const grid = $("aftercareGrid");
   if(!grid) return;
@@ -7453,6 +7509,7 @@ function render(data){
   renderGuides(data.guides || []);
   renderSafetySummary(data.categories || []);
   renderNoBuyGuide(data.categories || []);
+  renderConsultFirst(data.consult_first || {});
   renderAftercarePlan(data.categories || []);
   renderProducts(data.categories || []);
   renderOpsPanel(data);

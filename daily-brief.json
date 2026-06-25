@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T21:21:21",
-  "exported_at": "2026-06-25T21:21:21",
+  "generated_at": "2026-06-25T21:47:23",
+  "exported_at": "2026-06-25T21:47:23",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -354,6 +354,8 @@
     "link_health_page": "health/",
     "buying_check": "buying-check.json",
     "buying_check_page": "buying-check/",
+    "consult_first": "consult-first.json",
+    "consult_first_page": "consult-first/",
     "cat_quiz": "cat-quiz.json",
     "cat_quiz_page": "quiz/",
     "owner_next": "owner-next.json",

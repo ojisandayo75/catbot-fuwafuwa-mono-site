@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-25T21:21:21",
+  "generated_at": "2026-06-25T21:47:23",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 24,
-  "absolute_url_count": 24,
+  "route_count": 25,
+  "absolute_url_count": 25,
   "routes": [
     {
       "kind": "home",
@@ -44,6 +44,15 @@
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.8
+    },
+    {
+      "kind": "consult-first",
+      "path": "consult-first/",
+      "title": "Catbot 相談を優先する時",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/consult-first/",
+      "lastmod": "2026-06-25",
+      "changefreq": "weekly",
+      "priority": 0.82
     },
     {
       "kind": "cat-quiz",

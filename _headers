@@ -39,6 +39,9 @@
 /buying-check.json
   Cache-Control: no-cache
 
+/consult-first.json
+  Cache-Control: no-cache
+
 /cat-quiz.json
   Cache-Control: no-cache
 
@@ -73,6 +76,9 @@
   Cache-Control: no-cache
 
 /buying-check/*
+  Cache-Control: no-cache
+
+/consult-first/*
   Cache-Control: no-cache
 
 /quiz/*
