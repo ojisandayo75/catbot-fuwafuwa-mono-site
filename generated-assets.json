@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T21:47:24",
+  "generated_at": "2026-06-25T22:21:33",
   "base_dir": "C:\\Users\\User\\catbot-x\\public_shop",
   "ok": true,
-  "required_count": 56,
-  "present_required_count": 56,
+  "required_count": 70,
+  "present_required_count": 70,
   "assets": [
     {
       "path": "assets/ai_brand_mark.webp",
@@ -939,7 +939,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 2495,
-      "updated_at": "2026-06-25T21:47:23",
+      "updated_at": "2026-06-25T22:21:32",
       "width": 32,
       "height": 32,
       "min_width": 32,
@@ -956,7 +956,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 56785,
-      "updated_at": "2026-06-25T21:47:23",
+      "updated_at": "2026-06-25T22:21:32",
       "width": 192,
       "height": 192,
       "min_width": 192,
@@ -973,7 +973,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 358627,
-      "updated_at": "2026-06-25T21:47:23",
+      "updated_at": "2026-06-25T22:21:32",
       "width": 512,
       "height": 512,
       "min_width": 512,
@@ -990,7 +990,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 50122,
-      "updated_at": "2026-06-25T21:47:23",
+      "updated_at": "2026-06-25T22:21:32",
       "width": 180,
       "height": 180,
       "min_width": 180,
@@ -998,6 +998,251 @@
       "dimension_ok": true,
       "used_by": [
         "iOS home screen icon"
+      ]
+    },
+    {
+      "path": "assets/ai_product_treats_p1.webp",
+      "role": "generated product image: tube-style cat treats",
+      "required": true,
+      "exists": true,
+      "size_bytes": 27136,
+      "updated_at": "2026-06-25T22:18:00",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_treats_p1.png",
+      "role": "generated product image: tube-style cat treats png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 352469,
+      "updated_at": "2026-06-25T22:18:00",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
+      ]
+    },
+    {
+      "path": "assets/ai_product_treats_p2.webp",
+      "role": "generated product image: additive-conscious cat treats",
+      "required": true,
+      "exists": true,
+      "size_bytes": 31876,
+      "updated_at": "2026-06-25T22:18:00",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_treats_p2.png",
+      "role": "generated product image: additive-conscious cat treats png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 366011,
+      "updated_at": "2026-06-25T22:18:00",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
+      ]
+    },
+    {
+      "path": "assets/ai_product_scratch_p1.webp",
+      "role": "generated product image: cardboard scratcher",
+      "required": true,
+      "exists": true,
+      "size_bytes": 42656,
+      "updated_at": "2026-06-25T22:18:01",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_scratch_p1.png",
+      "role": "generated product image: cardboard scratcher png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 405042,
+      "updated_at": "2026-06-25T22:18:01",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
+      ]
+    },
+    {
+      "path": "assets/ai_product_water_p1.webp",
+      "role": "generated product image: cat water fountain",
+      "required": true,
+      "exists": true,
+      "size_bytes": 32542,
+      "updated_at": "2026-06-25T22:18:01",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_water_p1.png",
+      "role": "generated product image: cat water fountain png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 372298,
+      "updated_at": "2026-06-25T22:18:01",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
+      ]
+    },
+    {
+      "path": "assets/ai_product_water_p2.webp",
+      "role": "generated product image: automatic feeder and food bowl",
+      "required": true,
+      "exists": true,
+      "size_bytes": 32534,
+      "updated_at": "2026-06-25T22:19:20",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_water_p2.png",
+      "role": "generated product image: automatic feeder and food bowl png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 336713,
+      "updated_at": "2026-06-25T22:19:19",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
+      ]
+    },
+    {
+      "path": "assets/ai_product_care_p1.webp",
+      "role": "generated product image: cat brush",
+      "required": true,
+      "exists": true,
+      "size_bytes": 38940,
+      "updated_at": "2026-06-25T22:18:01",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_care_p1.png",
+      "role": "generated product image: cat brush png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 389496,
+      "updated_at": "2026-06-25T22:18:01",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
+      ]
+    },
+    {
+      "path": "assets/ai_product_watch_p1.webp",
+      "role": "generated product image: pet camera",
+      "required": true,
+      "exists": true,
+      "size_bytes": 22568,
+      "updated_at": "2026-06-25T22:18:01",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_watch_p1.png",
+      "role": "generated product image: pet camera png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 329824,
+      "updated_at": "2026-06-25T22:18:01",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
       ]
     }
   ],

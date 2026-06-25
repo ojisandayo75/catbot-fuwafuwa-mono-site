@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T21:47:23",
+  "generated_at": "2026-06-25T22:21:32",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "tagline": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
@@ -228,6 +228,8 @@
           "affiliate_url": "",
           "fallback_search_url": "https://www.amazon.co.jp/s?k=CIAO+%E3%81%A1%E3%82%85%E3%83%BC%E3%82%8B+%E7%8C%AB",
           "cta": "おやつを見る",
+          "image": "assets/ai_product_treats_p1.png",
+          "image_webp": "assets/ai_product_treats_p1.webp",
           "id": "p1",
           "clicks": 0,
           "link": {
@@ -274,6 +276,8 @@
           "affiliate_url": "",
           "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E3%81%8A%E3%82%84%E3%81%A4+%E7%84%A1%E6%B7%BB%E5%8A%A0/",
           "cta": "やさしいおやつを見る",
+          "image": "assets/ai_product_treats_p2.png",
+          "image_webp": "assets/ai_product_treats_p2.webp",
           "id": "p2",
           "clicks": 0,
           "link": {
@@ -338,6 +342,8 @@
           "affiliate_url": "",
           "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
           "cta": "爪とぎを見る",
+          "image": "assets/ai_product_scratch_p1.png",
+          "image_webp": "assets/ai_product_scratch_p1.webp",
           "id": "p1",
           "clicks": 0,
           "link": {
@@ -403,6 +409,8 @@
           "affiliate_url": "",
           "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
           "cta": "水飲み器を見る",
+          "image": "assets/ai_product_water_p1.png",
+          "image_webp": "assets/ai_product_water_p1.webp",
           "id": "p1",
           "clicks": 0,
           "link": {
@@ -452,6 +460,8 @@
           "affiliate_url": "",
           "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
           "cta": "自動給餌器を見る",
+          "image": "assets/ai_product_water_p2.png",
+          "image_webp": "assets/ai_product_water_p2.webp",
           "id": "p2",
           "clicks": 0,
           "link": {
@@ -518,6 +528,8 @@
           "affiliate_url": "",
           "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%96%E3%83%A9%E3%82%B7",
           "cta": "ブラシを見る",
+          "image": "assets/ai_product_care_p1.png",
+          "image_webp": "assets/ai_product_care_p1.webp",
           "id": "p1",
           "clicks": 0,
           "link": {
@@ -582,6 +594,8 @@
           "affiliate_url": "",
           "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9",
           "cta": "ペットカメラを見る",
+          "image": "assets/ai_product_watch_p1.png",
+          "image_webp": "assets/ai_product_watch_p1.webp",
           "id": "p1",
           "clicks": 0,
           "link": {
@@ -753,7 +767,7 @@
     "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
   },
   "catbot_trends": {
-    "generated_at": "2026-06-25T21:47:23",
+    "generated_at": "2026-06-25T22:21:32",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -788,7 +802,7 @@
     "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
   },
   "purchase_advisor": {
-    "generated_at": "2026-06-25T21:47:23",
+    "generated_at": "2026-06-25T22:21:32",
     "cards": [
       {
         "id": "home-alone",
@@ -925,7 +939,7 @@
     "summary": "猫の性格・暮らし・catbotの反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
   },
   "update_notes": {
-    "generated_at": "2026-06-25T21:47:23",
+    "generated_at": "2026-06-25T22:21:32",
     "cards": [
       {
         "title": "フォロワー進捗",
@@ -1486,7 +1500,7 @@
     "last_posted_at": "2026-06-25T12:44:49"
   },
   "report": {
-    "generated_at": "2026-06-25T21:47:23",
+    "generated_at": "2026-06-25T22:21:32",
     "phase": "link_setup",
     "summary": {
       "followers": 541,
@@ -1946,7 +1960,7 @@
     "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
   },
   "share_copy": {
-    "generated_at": "2026-06-25T21:47:23",
+    "generated_at": "2026-06-25T22:21:32",
     "phase": "launch_waiting",
     "account": "@fuwafuwa_mono",
     "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -2003,10 +2017,10 @@
       ]
     }
   },
-  "exported_at": "2026-06-25T21:47:23",
+  "exported_at": "2026-06-25T22:21:32",
   "consult_first": {
-    "generated_at": "2026-06-25T21:47:23",
-    "exported_at": "2026-06-25T21:47:23",
+    "generated_at": "2026-06-25T22:21:32",
+    "exported_at": "2026-06-25T22:21:32",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",
