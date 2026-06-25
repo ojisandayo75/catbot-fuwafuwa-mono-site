@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T19:31:53",
+  "generated_at": "2026-06-25T19:52:41",
   "phase": "launch_waiting",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -12,13 +12,13 @@
   "trend_metric": "score 219",
   "next_product": "電動猫じゃらし",
   "next_category": "遊び",
-  "primary_text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られるようにしています。\n売り込みより、合わない理由とやめるサインを先に置いています。",
+  "primary_text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全と買う前チェックから見られるようにしています。\n売り込みより、合わない理由とやめるサインを先に置いています。",
   "texts": [
     {
       "id": "soft_launch",
       "title": "通常共有",
       "use_when": "公開後や固定投稿で使う",
-      "text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られるようにしています。\n売り込みより、合わない理由とやめるサインを先に置いています。"
+      "text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全と買う前チェックから見られるようにしています。\n売り込みより、合わない理由とやめるサインを先に置いています。"
     },
     {
       "id": "cat_first",
@@ -36,7 +36,7 @@
   "policy": [
     "Xには商品直リンクを連投しない。",
     "公開URLへ誘導し、サイト内で広告表記と買う前チェックを見せる。",
-    "バズ投稿への自己リプは短く、1投稿につき1本までにする。",
+    "バズ投稿への自己リプは短く、投稿につき1本までにする。",
     "体調変化、食欲や飲水の急変がある場合は用品より相談を優先する。"
   ],
   "posting_guard": {
@@ -57,15 +57,15 @@
       "猫の不安や体調不良を煽る文面"
     ]
   },
-  "exported_at": "2026-06-25T19:31:53",
+  "exported_at": "2026-06-25T19:52:41",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "launch_blockers": [
     {
       "id": "affiliate_link",
-      "title": "実アフィリリンク",
-      "detail": "まだ toys/p2 電動猫じゃらし の追跡リンクが1本必要です。"
+      "title": "実アフィリエイトリンク",
+      "detail": "まだ「電動猫じゃらし」の追跡リンクが1本必要です。"
     }
   ],
   "next_link": {
