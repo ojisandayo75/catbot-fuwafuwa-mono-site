@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T03:22:13",
+  "generated_at": "2026-06-26T03:30:25",
   "phase": "launch_waiting",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -13,7 +13,21 @@
   "next_product": "電動猫じゃらし",
   "next_category": "遊び",
   "primary_text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全と買う前チェックから見られるようにしています。\n売り込みより、合わない理由とやめるサインを先に置いています。",
+  "safe_warmup": {
+    "allowed": true,
+    "decision": "allow_warmup",
+    "text": "ふわふわ猫の道具箱を整えています。\n猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。\ncatbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。\n\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+    "command": ".\\catbot_site_warmup_ready.bat -Copy",
+    "record_command": ".\\catbot_site_warmup_ready.bat -Record",
+    "note": "商品直リンクを入れない、実アフィリリンク前のサイト紹介だけに使う。"
+  },
   "texts": [
+    {
+      "id": "site_warmup",
+      "title": "プレ告知",
+      "use_when": "実アフィリリンクを入れる前のサイト紹介で使う",
+      "text": "ふわふわ猫の道具箱を整えています。\n猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。\ncatbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。\n\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+    },
     {
       "id": "soft_launch",
       "title": "通常共有",
@@ -57,7 +71,7 @@
       "猫の不安や体調不良を煽る文面"
     ]
   },
-  "exported_at": "2026-06-26T03:22:13",
+  "exported_at": "2026-06-26T03:30:25",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
