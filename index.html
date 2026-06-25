@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-26T03:36:12",
+      "dateModified": "2026-06-26T04:09:04",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -778,6 +778,145 @@
     font-size:12px;
     font-weight:900;
     line-height:1.2;
+  }
+  .launch-bridge{
+    display:grid;
+    grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);
+    gap:14px;
+    align-items:stretch;
+    padding:14px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:linear-gradient(135deg,#fffaf2 0%,#f2dfc8 100%);
+    box-shadow:0 12px 32px rgba(64,39,24,.12);
+  }
+  .launch-bridge-main{
+    min-width:0;
+    display:grid;
+    gap:14px;
+    align-content:center;
+    padding:8px;
+  }
+  .launch-bridge-main h2{
+    margin:8px 0 0;
+    color:#25170f;
+    font-size:28px;
+    line-height:1.16;
+    letter-spacing:0;
+    overflow-wrap:anywhere;
+  }
+  .launch-bridge-main p{
+    margin:8px 0 0;
+    color:#5f4735;
+    line-height:1.75;
+  }
+  .launch-bridge-kpis{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:8px;
+  }
+  .launch-bridge-kpis span{
+    min-width:0;
+    display:grid;
+    gap:2px;
+    padding:10px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#fffaf2;
+  }
+  .launch-bridge-kpis strong{
+    color:#25170f;
+    font-size:18px;
+    line-height:1.18;
+    overflow-wrap:anywhere;
+  }
+  .launch-bridge-kpis small{
+    color:#7a6655;
+    font-size:12px;
+    font-weight:800;
+  }
+  .launch-bridge-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .launch-bridge-media{
+    min-width:0;
+    display:grid;
+    grid-template-columns:minmax(190px,.82fr) minmax(0,1.18fr);
+    gap:12px;
+    align-items:stretch;
+  }
+  .launch-bridge-visual{
+    display:block;
+    min-height:284px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background-color:#4a2e1d;
+    background-image:url("assets/ai_category_icon_sheet.png");
+    background-image:image-set(url("assets/ai_category_icon_sheet.webp") type("image/webp"), url("assets/ai_category_icon_sheet.png") type("image/png"));
+    background-repeat:no-repeat;
+    background-size:300% 200%;
+    background-position:0 0;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.38);
+  }
+  .launch-bridge-visual[data-icon="toys"]{background-position:0 0}
+  .launch-bridge-visual[data-icon="treats"]{background-position:50% 0}
+  .launch-bridge-visual[data-icon="scratch"]{background-position:100% 0}
+  .launch-bridge-visual[data-icon="water"]{background-position:0 100%}
+  .launch-bridge-visual[data-icon="care"]{background-position:50% 100%}
+  .launch-bridge-visual[data-icon="watch"]{background-position:100% 100%}
+  .launch-bridge-cards{
+    display:grid;
+    gap:8px;
+  }
+  .launch-bridge-card{
+    min-width:0;
+    display:grid;
+    gap:5px;
+    align-content:start;
+    padding:10px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#fffdf8;
+    color:#4b3728;
+    text-decoration:none;
+    transition:transform .16s ease,border-color .16s ease,background .16s ease;
+  }
+  .launch-bridge-card:hover{
+    transform:translateY(-1px);
+    border-color:#b68d68;
+    background:#fff7eb;
+  }
+  .launch-bridge-card b{
+    width:max-content;
+    max-width:100%;
+    padding:3px 8px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#f4eadb;
+    color:#7b4d31;
+    font-size:11px;
+    line-height:1.2;
+    overflow-wrap:anywhere;
+  }
+  .launch-bridge-card strong{
+    color:#25170f;
+    font-size:16px;
+    line-height:1.22;
+    overflow-wrap:anywhere;
+  }
+  .launch-bridge-card span{
+    color:#6a5646;
+    font-size:13px;
+    line-height:1.48;
+    overflow-wrap:anywhere;
+  }
+  .launch-bridge-card em{
+    color:#5a3522;
+    font-size:12px;
+    font-style:normal;
+    font-weight:900;
   }
   .trust-bridge{
     display:grid;
@@ -3565,6 +3704,9 @@
   .policy p{margin:0}
   @media (max-width:900px){
     .first-choice-menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .launch-bridge{grid-template-columns:1fr}
+    .launch-bridge-media{grid-template-columns:1fr}
+    .launch-bridge-visual{min-height:230px}
     .trust-bridge{grid-template-columns:1fr}
     .trust-bridge-media{min-height:220px}
     .visual-menu-layout{grid-template-columns:1fr}
@@ -3694,6 +3836,28 @@
     .first-choice-copy{padding:8px}
     .first-choice-copy strong{font-size:15px}
     .first-choice-copy span{font-size:12px}
+    .launch-bridge{
+      gap:10px;
+      padding:10px;
+    }
+    .launch-bridge-main{
+      gap:10px;
+      padding:0;
+    }
+    .launch-bridge-main h2{
+      font-size:22px;
+      line-height:1.2;
+    }
+    .launch-bridge-kpis,
+    .launch-bridge-cards{
+      grid-template-columns:1fr;
+    }
+    .launch-bridge-visual{
+      min-height:184px;
+    }
+    .launch-bridge-actions .button{
+      width:100%;
+    }
     .trust-bridge{
       margin-top:12px;
       padding:10px;
@@ -3783,6 +3947,7 @@
     </a>
     <nav class="nav" aria-label="サイト内ナビ">
       <a href="#visualMenu"><span class="nav-icon" data-icon="all" aria-hidden="true"></span><span>画像メニュー</span></a>
+      <a href="#launchBridge"><span class="nav-icon" data-icon="trends" aria-hidden="true"></span><span>今の状態</span></a>
       <a href="#careRoute"><span class="nav-icon" data-icon="care-route" aria-hidden="true"></span><span>猫の状態</span></a>
       <a href="#catbotConnect"><span class="nav-icon" data-icon="catbot" aria-hidden="true"></span><span>catbotへ戻る</span></a>
       <a href="#trustBridge"><span class="nav-icon" data-icon="trust" aria-hidden="true"></span><span>猫優先</span></a>
@@ -3817,6 +3982,10 @@
       <span class="mobile-image-menu-icon" data-icon="all" aria-hidden="true"></span>
       <span>全部</span>
     </button>
+    <a class="mobile-image-menu-button is-journey" href="#launchBridge" aria-label="今のcatbotサイト状態を見る">
+      <span class="mobile-image-menu-icon" data-icon="trends" aria-hidden="true"></span>
+      <span>状態</span>
+    </a>
     <a class="mobile-image-menu-button is-journey" href="#catMatch" aria-label="うちの子に合わせて選ぶ">
       <span class="mobile-image-menu-icon" data-icon="match" aria-hidden="true"></span>
       <span>うちの子</span>
@@ -3961,6 +4130,37 @@
         <span class="first-choice-cta">候補を見る</span>
       </span>
     </a>
+  </section>
+
+  <section id="launchBridge" class="launch-bridge" aria-label="今のcatbotサイト状態">
+    <div class="launch-bridge-main">
+      <div>
+        <span id="launchBridgePhase" class="badge wait">売る前の準備中</span>
+        <h2 id="launchBridgeTitle">猫に合うかを先に見られる受け皿です。</h2>
+        <p id="launchBridgeLead">Xでは商品URLを連投せず、プロフィールからこのサイトへ受けて、猫の状態・買う前チェック・次の1件へ案内します。</p>
+      </div>
+      <div class="launch-bridge-kpis" aria-label="catbotサイトの準備状況">
+        <span><strong id="launchBridgeFollowers">0 / 1000</strong><small>フォロワー</small></span>
+        <span><strong id="launchBridgeLinks">0 / 0</strong><small>実リンク</small></span>
+        <span><strong id="launchBridgeTarget">確認中</strong><small>次の1件</small></span>
+      </div>
+      <div class="launch-bridge-actions">
+        <a class="button product" href="#nextLink">次の1件を見る</a>
+        <a class="button search" href="#catbotConnect">X導線を見る</a>
+        <a class="button search" href="#advisor">買う前チェック</a>
+      </div>
+    </div>
+    <div class="launch-bridge-media">
+      <span id="launchBridgeImage" class="launch-bridge-visual" data-icon="toys" aria-hidden="true"></span>
+      <div id="launchBridgeCards" class="launch-bridge-cards" aria-label="次に見る場所">
+        <a class="launch-bridge-card" href="#nextLink">
+          <b>最優先</b>
+          <strong>最初のリンク候補</strong>
+          <span>追跡URLを1本だけ入れて、クリックを見ながら増やします。</span>
+          <em>候補を見る</em>
+        </a>
+      </div>
+    </div>
   </section>
 
   <section id="trustBridge" class="trust-bridge" aria-label="猫優先の選び方">
@@ -5976,6 +6176,92 @@ function renderStats(stats={}){
   `;
 }
 
+function renderLaunchBridge(data={}){
+  const section = $("launchBridge");
+  if(!section) return;
+  const stats = data.stats || {};
+  const growth = stats.follower_growth || {};
+  const next = data.next_link_spotlight || {};
+  const categories = Array.isArray(data.categories) ? data.categories : [];
+  const category = categories.find(item => item.id === next.category_id) || {};
+  const products = Array.isArray(category.products) ? category.products : [];
+  const product = products.find(item => item.id === next.product_id) || {};
+  const followers = Number(stats.followers || growth.current || 0);
+  const goal = Number(stats.follower_goal || growth.goal || 1000);
+  const readyLinks = Number(stats.ready_links || 0);
+  const totalProducts = Number(stats.total_products || 0);
+  const reached = followers >= goal && goal > 0;
+  const target = next.product || product.name || "次の猫用品";
+  const categoryLabel = next.category || category.short_name || category.name || "猫用品";
+  const linkReady = readyLinks > 0;
+  const phase = linkReady ? "リンク準備OK" : reached ? "1000人到達後の準備" : "売る前の準備中";
+  const title = linkReady
+    ? "商品リンクは、猫優先チェックを通してから案内します。"
+    : `今は「${target}」を、猫に合うかから整理しています。`;
+  const lead = linkReady
+    ? "XではURLを連投せず、プロフィールと固定導線からこのサイトへ受けて、買う前チェックを通った商品だけ見せます。"
+    : `いまは ${num(followers)} / ${num(goal)}。先に受け皿を整えて、最初の実リンクは ${categoryLabel} の1件から静かに始めます。`;
+  const phaseNode = $("launchBridgePhase");
+  phaseNode.textContent = phase;
+  phaseNode.className = `badge ${linkReady ? "ready" : "wait"}`;
+  $("launchBridgeTitle").textContent = title;
+  $("launchBridgeLead").textContent = lead;
+  $("launchBridgeFollowers").textContent = `${num(followers)} / ${num(goal)}`;
+  $("launchBridgeLinks").textContent = `${num(readyLinks)} / ${num(totalProducts)}`;
+  $("launchBridgeTarget").textContent = target;
+
+  const visual = $("launchBridgeImage");
+  if(visual){
+    const icon = ["toys","treats","scratch","water","care","watch"].includes(next.category_id) ? next.category_id : "toys";
+    const image = cleanAssetPath(product.image_webp) || cleanAssetPath(product.image) || cleanAssetPath(next.image_webp) || cleanAssetPath(next.image);
+    visual.dataset.icon = icon;
+    if(image){
+      visual.style.backgroundImage = `url('${image}')`;
+      visual.style.backgroundSize = "cover";
+      visual.style.backgroundPosition = "center";
+    }else{
+      visual.style.backgroundImage = "";
+      visual.style.backgroundSize = "";
+      visual.style.backgroundPosition = "";
+    }
+  }
+
+  const check = next.check || product.check || product.safety_note || "音、サイズ、置き場所、誤飲しにくさを先に見ます。";
+  const cards = [
+    {
+      badge: linkReady ? "投稿前" : "最優先",
+      title: linkReady ? "リンクを出す前に確認" : "最初の追跡URLを作る",
+      body: linkReady
+        ? `追跡付きリンク ${num(readyLinks)} 件。出す前に猫に合う条件を確認します。`
+        : `${target} のもしもURLを1本だけ保存して、クリックを見ます。`,
+      href: "#nextLink",
+      cta: "次の1件"
+    },
+    {
+      badge: "X導線",
+      title: "プロフィールで受ける",
+      body: "バズ投稿に商品URLを連投せず、固定投稿とプロフィールから自然に入れます。",
+      href: "#catbotConnect",
+      cta: "文面を見る"
+    },
+    {
+      badge: "猫優先",
+      title: "合わない理由を先に見る",
+      body: check,
+      href: "#advisor",
+      cta: "買う前チェック"
+    },
+  ];
+  $("launchBridgeCards").innerHTML = cards.map(card => `
+    <a class="launch-bridge-card" href="${esc(card.href)}">
+      <b>${esc(card.badge)}</b>
+      <strong>${esc(card.title)}</strong>
+      <span>${esc(card.body)}</span>
+      <em>${esc(card.cta)}</em>
+    </a>
+  `).join("");
+}
+
 function renderFollowerMilestone(data={}){
   const section = $("followerMilestone");
   if(!section) return;
@@ -7519,6 +7805,7 @@ function render(data){
   window.catbotShopData = data;
   hydrateProfileFromUrl(data.purchase_advisor || {});
   renderHero(data);
+  renderLaunchBridge(data);
   renderCatbotConnect(data);
   renderFollowerMilestone(data);
   renderCatbotSignal(data);
