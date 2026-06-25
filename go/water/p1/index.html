@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>循環式水飲み器 - Catbot shop</title>
+<style>
+body{margin:0;background:#fff8ef;color:#25170f;font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;display:grid;place-items:center;min-height:100vh;padding:24px;line-height:1.65}
+main{width:min(560px,100%);background:#fffdf8;border:1px solid #dccab5;border-radius:8px;padding:20px;box-shadow:0 14px 36px rgba(64,39,24,.12)}
+h1{margin:8px 0 8px;font-size:28px;line-height:1.2}
+p{margin:0;color:#6d5948}
+a{color:#5a3522;font-weight:800}
+.badge{display:inline-flex;min-height:26px;align-items:center;padding:3px 8px;border:1px solid #d8bea4;border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+.product{margin:14px 0;padding:12px;border:1px solid #dccab5;border-radius:8px;background:#fff8ef}
+.product strong{display:block;color:#25170f;font-size:18px}
+.notes{display:grid;gap:8px;margin:14px 0}
+.note{padding:10px;border:1px solid #dccab5;border-radius:8px;background:#f7ead8;color:#5f4735;font-size:14px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 14px;border:1px solid #5a3522;border-radius:8px;background:#5a3522;color:#fff8ef;text-decoration:none;font:inherit;font-weight:800;cursor:pointer}
+.button.secondary{background:#fff8ef;color:#5a3522;border-color:#d8bea4}
+.sub{font-size:12px;color:#8b7664}
+.countdown{margin-top:12px;padding:10px;border:1px solid #c9d8c8;border-radius:8px;background:#f3fbf2;color:#446146;font-weight:800}
+.bar{height:8px;overflow:hidden;border-radius:8px;background:#eadbc8;margin-top:16px}
+.bar span{display:block;width:0;height:100%;background:#5f7f67;transition:width .3s ease}
+</style>
+</head>
+<body>
+<main>
+<span class="badge">商品候補ページへ移動前チェック</span>
+<h1>外部ページを開いています</h1>
+<p>この先は販売元または商品検索ページです。広告・アフィリエイトリンクを含む場合があります。迷う場合は、下の確認だけ読んでから開いてください。</p>
+<div class="product">
+  <span class="badge">水とごはん</span>
+  <strong>循環式水飲み器</strong>
+</div>
+<div class="notes">
+  <div class="note"><strong>リンク状態:</strong> 提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。</div>
+  <div class="note"><strong>見るところ:</strong> 洗いやすさ、フィルター代、音の小ささを確認。</div>
+  <div class="note"><strong>合わないとき:</strong> 水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。</div>
+</div>
+<div class="actions">
+  <a class="button" id="manualLink" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF" rel="noopener noreferrer">今すぐ開く</a>
+  <button class="button secondary" id="pauseLink" type="button">ここで止める</button>
+  <a class="button secondary" href="../../../">サイトに戻る</a>
+  <span class="sub">自動で切り替わらない場合は「今すぐ開く」を押してください。</span>
+</div>
+<p class="countdown" id="countdown">検索候補は自動で開きません。猫に合うか確認してから「今すぐ開く」を押してください。</p>
+<div class="bar" aria-hidden="true"><span></span></div>
+</main>
+<script>
+const target = "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF";
+const productKey = "water/p1";
+const storageKey = "catbotShopClicks:v1";
+const autoRedirect = false;
+const delaySeconds = 0;
+let remaining = delaySeconds;
+let paused = false;
+function newClickSourceId(){
+  if(crypto?.randomUUID) return `ops-${crypto.randomUUID()}`;
+  return `ops-${Date.now().toString(36)}-${Math.random().toString(36).slice(2,10)}`;
+}
+function ensureClickSource(store={}){
+  if(!store.sourceId){
+    store.sourceId = newClickSourceId();
+    store.sourceCreatedAt = new Date().toISOString();
+  }
+  return store;
+}
+try {
+  const now = new Date().toISOString();
+  const store = JSON.parse(localStorage.getItem(storageKey) || "{}");
+  ensureClickSource(store);
+  store.total = Number(store.total || 0) + 1;
+  store.byProduct = store.byProduct || {};
+  store.byProduct[productKey] = Number(store.byProduct[productKey] || 0) + 1;
+  store.lastClickedAt = now;
+  store.lastProduct = productKey;
+  localStorage.setItem(storageKey, JSON.stringify(store));
+} catch (err) {}
+const countdown = document.getElementById("countdown");
+const bar = document.querySelector(".bar span");
+const pauseLink = document.getElementById("pauseLink");
+function paintCountdown(){
+  if(countdown) {
+    if(!autoRedirect) {
+      countdown.textContent = "検索候補は自動で開きません。猫に合うか確認してから「今すぐ開く」を押してください。";
+    } else {
+      countdown.textContent = paused
+        ? "自動移動を止めました。猫に合いそうなら「今すぐ開く」を押してください。"
+        : `猫に合うか確認するため、${remaining}秒後に開きます。`;
+    }
+  }
+  if(bar) bar.style.width = autoRedirect && delaySeconds
+    ? `${Math.round(((delaySeconds - remaining) / delaySeconds) * 100)}%`
+    : "0%";
+}
+paintCountdown();
+let interval = null;
+if(autoRedirect){
+  interval = setInterval(() => {
+    if(paused) return;
+    remaining = Math.max(0, remaining - 1);
+    paintCountdown();
+    if(remaining <= 0){
+      clearInterval(interval);
+      window.location.replace(target);
+    }
+  }, 1000);
+}
+if(pauseLink){
+  pauseLink.addEventListener("click", () => {
+    paused = true;
+    if(interval) clearInterval(interval);
+    paintCountdown();
+  });
+}
+</script>
+</body>
+</html>

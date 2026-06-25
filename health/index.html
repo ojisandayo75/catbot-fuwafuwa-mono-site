@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Catbot リンク健全性</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--panel:#fff3df;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--ok:#edf3e5;--warn:#fff2dd;--bad:#fff0eb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.65}
+.wrap{width:100%;max-width:1060px;margin:0 auto;padding:22px}
+header{background:#efe1cf;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:32px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:0;font-size:22px;line-height:1.35;letter-spacing:0;overflow-wrap:anywhere}
+p{margin:6px 0 0;color:var(--muted);overflow-wrap:anywhere}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+.card,.panel{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:13px}
+.panel{margin-top:14px}
+.panel.primary{background:var(--panel)}
+.card span,.label,.badge{display:inline-flex;align-items:center;width:max-content;max-width:100%;min-height:25px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+.card b{display:block;font-size:25px;line-height:1.2;margin-top:6px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+ul{list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:start;border:1px solid var(--line);border-radius:8px;background:#fffaf2;padding:12px;margin-top:10px}
+.row.tracking_ready{background:var(--ok)}
+.row.missing,.row.needs_tracking_url{background:var(--warn)}
+.row.invalid{background:var(--bad)}
+.row strong{display:block;font-size:18px;overflow-wrap:anywhere}
+code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#4e2f1f;padding:10px;margin-top:6px}
+@media (max-width:760px){.grid{grid-template-columns:1fr 1fr}.top{display:grid}.row{grid-template-columns:1fr}}
+@media (max-width:520px){.wrap{padding:18px}h1{font-size:27px}.grid{grid-template-columns:1fr}.button{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <div>
+      <span class="label">noindex 運用ページ</span>
+      <h1>Catbot リンク健全性</h1>
+      <p>提携リンクが追跡付きに見えるか、未設定の商品がどれかを公開後も確認するページです。</p>
+    </div>
+    <a class="button" href="../status/">運用ステータスへ</a>
+  </div>
+</header>
+<main class="wrap">
+  <section class="grid">
+    <div class="card"><span>状態</span><b>最初の追跡リンク待ち</b></div>
+    <div class="card"><span>追跡リンク</span><b>0 / 9</b></div>
+    <div class="card"><span>未設定</span><b>0</b></div>
+    <div class="card"><span>要確認</span><b>9</b></div>
+  </section>
+  
+      <section class="panel primary">
+        <span class="label">次に見るリンク</span>
+        <h2>電動猫じゃらし</h2>
+        <p>遊びと運動 / toys/p2 / 追跡URLへ差替</p>
+        <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+        <div class="actions">
+          <a class="button" href="../products/toys/p2/">商品ページ</a>
+          <a class="button light" href="../link-opportunities.json">link-opportunities.json</a>
+        </div>
+      </section>
+
+  <section class="panel">
+    <span class="label">リンク一覧</span>
+    <h2>商品ごとの状態</h2>
+    <ul>
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>けりぐるみ</strong>
+            <p>遊びと運動 / toys/p1 / amazon</p>
+            <p>縫い目が強いもの、誤飲しにくいサイズを優先。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/toys/p1/">商品ページ</a>
+            <a class="button light" href="../go/toys/p1/">goページ</a>
+          </div>
+        </li>
+
+
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>電動猫じゃらし</strong>
+            <p>遊びと運動 / toys/p2 / amazon</p>
+            <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/toys/p2/">商品ページ</a>
+            <a class="button light" href="../go/toys/p2/">goページ</a>
+          </div>
+        </li>
+
+
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>CIAO ちゅーる系おやつ</strong>
+            <p>おやつ / treats/p1 / amazon</p>
+            <p>年齢、体調、総合栄養食か一般食かを確認。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/treats/p1/">商品ページ</a>
+            <a class="button light" href="../go/treats/p1/">goページ</a>
+          </div>
+        </li>
+
+
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>無添加寄りのおやつ</strong>
+            <p>おやつ / treats/p2 / rakuten</p>
+            <p>塩分、添加物、対象年齢を確認。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/treats/p2/">商品ページ</a>
+            <a class="button light" href="../go/treats/p2/">goページ</a>
+          </div>
+        </li>
+
+
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>段ボール爪とぎ 大容量</strong>
+            <p>爪とぎ / scratch/p1 / amazon</p>
+            <p>粉が出にくいもの、滑りにくい形を優先。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/scratch/p1/">商品ページ</a>
+            <a class="button light" href="../go/scratch/p1/">goページ</a>
+          </div>
+        </li>
+
+
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>循環式水飲み器</strong>
+            <p>水とごはん / water/p1 / amazon</p>
+            <p>洗いやすさ、フィルター代、音の小ささを確認。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/water/p1/">商品ページ</a>
+            <a class="button light" href="../go/water/p1/">goページ</a>
+          </div>
+        </li>
+
+
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>自動給餌器</strong>
+            <p>水とごはん / water/p2 / rakuten</p>
+            <p>詰まりにくさ、洗いやすさ、停電時の挙動を確認。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/water/p2/">商品ページ</a>
+            <a class="button light" href="../go/water/p2/">goページ</a>
+          </div>
+        </li>
+
+
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>猫用ブラシ</strong>
+            <p>お手入れ / care/p1 / amazon</p>
+            <p>毛質に合う形、肌に強く当たりすぎないものを優先。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/care/p1/">商品ページ</a>
+            <a class="button light" href="../go/care/p1/">goページ</a>
+          </div>
+        </li>
+
+
+        <li class="row needs_tracking_url">
+          <div>
+            <span class="badge">追跡URLへ差替</span>
+            <strong>ペットカメラ</strong>
+            <p>見守り / watch/p1 / amazon</p>
+            <p>画質、夜間撮影、録画、アプリの使いやすさを確認。</p>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/watch/p1/">商品ページ</a>
+            <a class="button light" href="../go/watch/p1/">goページ</a>
+          </div>
+        </li>
+</ul>
+  </section>
+  <section class="panel">
+    <span class="label">手元コマンド</span>
+    <h2>修正・再生成</h2>
+    <ul>
+        <li>
+          <strong>audit_links</strong>
+          <code>.\affiliate_site_ops.bat audit-links</code>
+        </li>
+
+
+        <li>
+          <strong>first_link_workbench</strong>
+          <code>.\affiliate_site_ops.bat moshimo-workbench --force</code>
+        </li>
+
+
+        <li>
+          <strong>set_next</strong>
+          <code>.\affiliate_site_ops.bat set-next --% &quot;https://MOSHIMO_TRACKING_URL&quot; --package --smoke-test</code>
+        </li>
+
+
+        <li>
+          <strong>click_review</strong>
+          <code>.\affiliate_site_ops.bat click-review</code>
+        </li>
+
+
+        <li>
+          <strong>sync_now</strong>
+          <code>.\affiliate_site_ops.bat sync-now --smoke-test</code>
+        </li>
+
+
+        <li>
+          <strong>launch_check</strong>
+          <code>.\affiliate_site_ops.bat launch-check</code>
+        </li>
+</ul>
+    <div class="actions">
+      <a class="button light" href="../link-health.json">link-health.json</a>
+      <a class="button light" href="../click-review.json">click-review.json</a>
+      <a class="button light" href="../revenue-plan.json">revenue-plan.json</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,382 @@
+{
+  "generated_at": "2026-06-25T14:49:28",
+  "exported_at": "2026-06-25T14:49:28",
+  "account": "@fuwafuwa_mono",
+  "phase": "setup",
+  "public_url": "",
+  "public_url_ready": false,
+  "affiliate_links_ready": 0,
+  "affiliate_links_total": 9,
+  "today": {
+    "headline": "catbot reaction theme",
+    "theme": "遊び",
+    "theme_metric": "score 40",
+    "category_id": "toys",
+    "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。",
+    "source_counts": {
+      "posts": 10,
+      "videos": 12,
+      "categories": 6
+    }
+  },
+  "cat_first": {
+    "promise": "Check the cat's fit before the product link.",
+    "checks": [
+      "Show no-buy reasons before pushing product links.",
+      "Prefer consultation when health or behavior looks unsafe.",
+      "Avoid repeated direct product URLs on X."
+    ],
+    "next_target_fit": {
+      "key": "toys/p2",
+      "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+      "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+      "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+      "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。"
+    }
+  },
+  "next_link": {
+    "category_id": "toys",
+    "category": "遊び",
+    "product_id": "p2",
+    "product": "電動猫じゃらし",
+    "reason": "人が手を離していても短時間の運動を作れます。",
+    "score": 219,
+    "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+    "price_band": "中",
+    "reasons": [
+      "catbot反応",
+      "買う前チェック: 留守番が多い猫",
+      "買う前チェック: よく走る・遊び足りない猫",
+      "中単価"
+    ],
+    "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+    "cat_first_review": {
+      "review_level": "careful",
+      "cat_first_score": 60,
+      "risk_signals": [
+        "誤飲・破損",
+        "怖がり・音",
+        "体調・食事",
+        "興奮・執着"
+      ],
+      "info_complete": true,
+      "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+      "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+      "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+      "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+      "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+      "decision": "review_before_link",
+      "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+    },
+    "available": true
+  },
+  "link_queue": [
+    {
+      "rank": 1,
+      "key": "toys/p2",
+      "category_id": "toys",
+      "category": "遊び",
+      "product_id": "p2",
+      "product": "電動猫じゃらし",
+      "score": 219,
+      "reasons": [
+        "catbot反応",
+        "買う前チェック: 留守番が多い猫",
+        "買う前チェック: よく走る・遊び足りない猫",
+        "中単価"
+      ],
+      "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+      "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+      "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+      "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+      "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+      "link_ready": false,
+      "cat_first_review": {
+        "review_level": "careful",
+        "cat_first_score": 60,
+        "risk_signals": [
+          "誤飲・破損",
+          "怖がり・音",
+          "体調・食事",
+          "興奮・執着"
+        ],
+        "decision": "review_before_link"
+      }
+    },
+    {
+      "rank": 2,
+      "key": "toys/p1",
+      "category_id": "toys",
+      "category": "遊び",
+      "product_id": "p1",
+      "product": "けりぐるみ",
+      "score": 215,
+      "reasons": [
+        "catbot反応",
+        "買う前チェック: 留守番が多い猫",
+        "買う前チェック: よく走る・遊び足りない猫"
+      ],
+      "buy_before_check": "縫い目が強く、猫の口より小さすぎないサイズを選びます。",
+      "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+      "stop_signal": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。",
+      "first_try": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
+      "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
+      "link_ready": false,
+      "cat_first_review": {
+        "review_level": "standard",
+        "cat_first_score": 90,
+        "risk_signals": [
+          "誤飲・破損"
+        ],
+        "decision": "review_before_link"
+      }
+    },
+    {
+      "rank": 3,
+      "key": "water/p2",
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p2",
+      "product": "自動給餌器",
+      "score": 93,
+      "reasons": [
+        "季節ケア",
+        "買う前チェック: 留守番が多い猫",
+        "買う前チェック: 水分・ごはんを整えたい猫",
+        "高単価"
+      ],
+      "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。",
+      "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
+      "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+      "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
+      "search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
+      "link_ready": false,
+      "cat_first_review": {
+        "review_level": "watch",
+        "cat_first_score": 70,
+        "risk_signals": [
+          "誤飲・破損",
+          "体調・食事",
+          "衛生・手入れ"
+        ],
+        "decision": "review_before_link"
+      }
+    },
+    {
+      "rank": 4,
+      "key": "water/p1",
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p1",
+      "product": "循環式水飲み器",
+      "score": 89,
+      "reasons": [
+        "季節ケア",
+        "買う前チェック: 留守番が多い猫",
+        "買う前チェック: 水分・ごはんを整えたい猫",
+        "中単価"
+      ],
+      "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。",
+      "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
+      "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
+      "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
+      "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
+      "link_ready": false,
+      "cat_first_review": {
+        "review_level": "watch",
+        "cat_first_score": 70,
+        "risk_signals": [
+          "誤飲・破損",
+          "怖がり・音",
+          "衛生・手入れ"
+        ],
+        "decision": "review_before_link"
+      }
+    },
+    {
+      "rank": 5,
+      "key": "scratch/p1",
+      "category_id": "scratch",
+      "category": "爪とぎ",
+      "product_id": "p1",
+      "product": "段ボール爪とぎ 大容量",
+      "score": 76,
+      "reasons": [
+        "季節ケア",
+        "買う前チェック: よく走る・遊び足りない猫",
+        "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫"
+      ],
+      "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
+      "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+      "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+      "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+      "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
+      "link_ready": false,
+      "cat_first_review": {
+        "review_level": "watch",
+        "cat_first_score": 70,
+        "risk_signals": [
+          "誤飲・破損",
+          "怖がり・音",
+          "衛生・手入れ"
+        ],
+        "decision": "review_before_link"
+      }
+    }
+  ],
+  "follower_milestone": {
+    "followers": 541,
+    "goal": 1000,
+    "remaining": 459,
+    "progress": 54.1,
+    "eta_date": "2026-07-05",
+    "recent_avg_per_day": 43.6,
+    "last_7d_gain": 305
+  },
+  "state_entries": [
+    {
+      "id": "play",
+      "category_id": "toys",
+      "label": "play needs",
+      "target": "#products"
+    },
+    {
+      "id": "water",
+      "category_id": "water",
+      "label": "drinking and feeding",
+      "target": "#products"
+    },
+    {
+      "id": "scratch",
+      "category_id": "scratch",
+      "label": "scratching furniture",
+      "target": "#products"
+    },
+    {
+      "id": "watch",
+      "category_id": "watch",
+      "label": "absence and watching",
+      "target": "#products"
+    }
+  ],
+  "suggested_x": {
+    "profile_first": true,
+    "primary_text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。",
+    "variants": [
+      {
+        "id": "soft_launch",
+        "title": "通常共有",
+        "use_when": "公開直後や固定投稿で使う",
+        "text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。"
+      },
+      {
+        "id": "cat_first",
+        "title": "猫優先",
+        "use_when": "売り込み感を弱めたい時に使う",
+        "text": "ふわふわ猫の道具箱は、猫用品をすぐ買わせる場所ではなく、合わない理由・相談した方がいい状態・最初の試し方を先に見る場所にしています。\n今はcatbot反応から「遊び」まわりを更新中です。"
+      },
+      {
+        "id": "next_product",
+        "title": "次の1件",
+        "use_when": "商品リンクを1本ずつ整える時に使う",
+        "text": "次に整える猫用品は「電動猫じゃらし」。\nカテゴリは「遊び」で、catbot反応と買う前チェックから優先度を見ています。\n実リンクを入れる前に、怖がる子・誤飲しそうな子・体調不安がある子向けの注意も確認します。"
+      }
+    ],
+    "posting_guard": {
+      "max_shop_posts_per_day": 2,
+      "min_hours_between_shop_posts": 6,
+      "max_self_replies_per_viral_post": 1,
+      "direct_product_link_allowed": false,
+      "preferred_url": "site_profile_url",
+      "allowed_contexts": [
+        "公開直後の固定投稿",
+        "バズ投稿への短い自己リプ",
+        "週次の更新報告"
+      ],
+      "avoid": [
+        "商品URLの連投",
+        "同じ文面の連投",
+        "ハッシュタグ過多",
+        "猫の不安や体調不良を煽る文面"
+      ]
+    }
+  },
+  "shop_post_guard": {
+    "allowed": false,
+    "decision": "wait",
+    "daily_cap": 2,
+    "today_count": 0,
+    "remaining_today": 2,
+    "min_interval_hours": 6.0,
+    "next_allowed_at": "",
+    "direct_product_link_allowed": false,
+    "preferred_url": "site_profile_url",
+    "blockers": [
+      {
+        "id": "public_url",
+        "detail": "public URL is not set"
+      },
+      {
+        "id": "affiliate_link",
+        "detail": "no real affiliate/tracking link is set"
+      }
+    ],
+    "command": ".\\affiliate_site_ops.bat shop-post-guard --json",
+    "record_command": ".\\affiliate_site_ops.bat shop-post-guard --record --text \"posted shop profile update\""
+  },
+  "next_actions": [
+    {
+      "title": "URLとリンクをまとめて反映する",
+      "detail": "まずdry-runで検査。問題なければ同じURLで --dry-run を外して実行する。",
+      "command": ".\\affiliate_site_ops.bat finish-launch --dry-run --% \"https://もしもURL\" \"https://公開URL/\"",
+      "source": "launch_gate"
+    },
+    {
+      "title": "もしも承認と最初のリンク作業台を開く",
+      "detail": "もしも承認状態も見ながら、check-url と set-next のコマンドを作る。",
+      "command": ".\\affiliate_site_ops.bat moshimo-workbench --force",
+      "source": "launch_gate"
+    },
+    {
+      "title": "公開URL作業台を開く",
+      "detail": "公開URLの登録・検証コマンドを作る作業台を開く。",
+      "command": ".\\affiliate_site_ops.bat public-url-workbench --force",
+      "source": "launch_gate"
+    },
+    {
+      "title": "公開前チェック",
+      "detail": "READYになるまで残り項目を確認する。",
+      "command": ".\\affiliate_site_ops.bat launch-check",
+      "source": "launch_gate"
+    }
+  ],
+  "commands": {
+    "refresh": ".\\affiliate_site_ops.bat sync-now --smoke-test",
+    "launch_check": ".\\affiliate_site_ops.bat launch-check",
+    "first_link": ".\\affiliate_site_ops.bat set-next --% \"https://MOSHIMO_TRACKING_URL\" --package --smoke-test",
+    "public_url": ".\\affiliate_site_ops.bat profile-url \"https://PUBLIC_URL/\" --package --smoke-test",
+    "shop_post_guard": ".\\affiliate_site_ops.bat shop-post-guard --json",
+    "owner_next_page": "start public_shop\\owner-next\\index.html",
+    "link_plan_page": "start public_shop\\link-plan\\index.html"
+  },
+  "public_files": {
+    "shop_data": "shop-data.json",
+    "share_copy": "share-copy.json",
+    "ops_summary": "ops-summary.json",
+    "link_opportunities": "link-opportunities.json",
+    "click_review": "click-review.json",
+    "click_review_page": "clicks/",
+    "link_health": "link-health.json",
+    "link_health_page": "health/",
+    "buying_check": "buying-check.json",
+    "buying_check_page": "buying-check/",
+    "cat_quiz": "cat-quiz.json",
+    "cat_quiz_page": "quiz/",
+    "owner_next": "owner-next.json",
+    "owner_next_page": "owner-next/",
+    "x_kit": "x-kit.json",
+    "x_kit_page": "x-kit/",
+    "generated_assets_page": "visuals/",
+    "status": "status.json"
+  }
+}

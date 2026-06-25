@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-06-25T14:49:28",
+  "exported_at": "2026-06-25T14:49:28",
+  "state": "needs_link_and_public_url",
+  "headline": "残りは実リンクと公開URL",
+  "primary_action": "もしもリンクを1本作り、ZIPを公開してURLを登録する",
+  "account": "@fuwafuwa_mono",
+  "followers": 541,
+  "follower_goal": 1000,
+  "followers_to_goal": 459,
+  "ready_links": 0,
+  "total_products": 9,
+  "public_url_ready": false,
+  "public_base_url": "",
+  "moshimo": {
+    "amazon_status": "pending",
+    "rakuten_status": "pending"
+  },
+  "blockers": [
+    "実アフィリリンク",
+    "公開URL"
+  ],
+  "next_steps": [
+    {
+      "id": "first_affiliate_link",
+      "done": false,
+      "title": "1本目の実アフィリリンクを作る",
+      "detail": "もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。",
+      "command": ".\\affiliate_site_ops.bat moshimo-workbench --force",
+      "check_command": ".\\affiliate_site_ops.bat check-url --% \"https://MOSHIMO_TRACKING_URL\"",
+      "apply_command": ".\\affiliate_site_ops.bat set-next --% \"https://MOSHIMO_TRACKING_URL\" --package --smoke-test",
+      "target": {
+        "key": "toys/p2",
+        "product": "電動猫じゃらし",
+        "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+        "cat_first_check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。"
+      }
+    },
+    {
+      "id": "public_url",
+      "done": false,
+      "title": "サイトを公開してURLを登録する",
+      "detail": "dist/catbot-affiliate-site.zip をNetlify、Cloudflare Pages、Vercelなどへアップロードし、開けたURLをcatbot側に登録します。",
+      "command": ".\\affiliate_site_ops.bat public-url-workbench --force",
+      "preview_command": ".\\affiliate_site_ops.bat preview-check --build",
+      "apply_command": ".\\affiliate_site_ops.bat profile-url \"https://PUBLIC_URL/\" --package --smoke-test",
+      "verify_command": ".\\affiliate_site_ops.bat verify-public-url \"https://PUBLIC_URL/\""
+    },
+    {
+      "id": "finish_launch",
+      "done": false,
+      "title": "2つがそろったら一括反映する",
+      "detail": "もしも追跡URLと公開URLが両方ある場合は、保存、公開URL登録、ZIP再生成、スモーク確認を一括で進めます。",
+      "dry_run_command": ".\\affiliate_site_ops.bat finish-launch --dry-run --% \"https://MOSHIMO_TRACKING_URL\" \"https://PUBLIC_URL/\"",
+      "apply_command": ".\\affiliate_site_ops.bat finish-launch --% \"https://MOSHIMO_TRACKING_URL\" \"https://PUBLIC_URL/\"",
+      "file_input_command": ".\\affiliate_site_ops.bat finish-launch --input-file catbot_finish_launch_inputs.txt --dry-run"
+    },
+    {
+      "id": "final_check",
+      "done": false,
+      "title": "最後にローンチ判定を見る",
+      "detail": "READYになれば、Xプロフィールのwebsite欄に公開URLを入れ、shop-post-guardで告知可否を見ます。",
+      "command": ".\\affiliate_site_ops.bat launch-check",
+      "shop_guard_command": ".\\affiliate_site_ops.bat shop-post-guard"
+    }
+  ],
+  "cat_first_notes": [
+    "商品直リンクをXに連投しない。プロフィールの公開サイトへ案内する。",
+    "買う前チェック、合わない条件、やめるサインを商品ページより先に見せる。",
+    "最初の公開後はクリック数より、猫に合わない商品が混ざっていないかを優先して見直す。",
+    "フォロワー1000人前でも導線づくりは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。"
+  ],
+  "public_files": {
+    "shop": "index.html",
+    "owner_next": "owner-next.json",
+    "owner_next_page": "owner-next/",
+    "cat_quiz": "cat-quiz.json",
+    "cat_quiz_page": "quiz/",
+    "x_kit": "x-kit.json",
+    "x_kit_page": "x-kit/",
+    "buying_check": "buying-check/",
+    "link_health": "health/",
+    "revenue": "revenue/",
+    "visuals": "visuals/",
+    "status": "status/"
+  }
+}

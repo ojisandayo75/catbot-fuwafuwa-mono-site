@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Catbot クリック改善</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#dccab5;--muted:#6d5948;--coffee:#5a3522;--soft:#f4eadb;--ok:#edf3e5;--warn:#f7ead8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI","Hiragino Sans",Meiryo,sans-serif;line-height:1.65}
+main{max-width:1040px;margin:0 auto;padding:24px 18px 48px}
+a{color:#5a3522;font-weight:800}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:16px}
+h1{margin:0;font-size:34px;line-height:1.15;letter-spacing:0}
+h2{margin:8px 0 6px;font-size:22px;letter-spacing:0}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px;min-width:0}
+.primary{background:#fff3df;border-color:#d8bea4}
+.card b,.card strong{display:block;color:var(--ink);overflow-wrap:anywhere}
+.card b{font-size:24px}
+.label,.badge{display:inline-flex;min-height:25px;align-items:center;padding:3px 8px;border:1px solid #d8bea4;border-radius:8px;background:var(--soft);color:#5a3522;font-size:12px;font-weight:800}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+li{border:1px solid var(--line);border-radius:8px;background:#fffdf8;padding:12px}
+li strong{font-size:17px}
+code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-radius:8px;background:#2d1b12;color:#fff8ef;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.45}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;background:var(--coffee);color:#fff8ef;text-decoration:none}
+.button.light{background:var(--soft);color:var(--coffee);border:1px solid var(--line)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tags span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:#5f4735;font-size:12px;font-weight:800}
+.note{margin-top:6px;color:#4f3b2e}
+@media (max-width:760px){.top{display:block}.grid{grid-template-columns:1fr 1fr}h1{font-size:28px}}
+@media (max-width:460px){.grid{grid-template-columns:1fr}.button{width:100%}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <div>
+      <span class="label">noindex 運用ページ</span>
+      <h1>Catbot クリック改善</h1>
+      <p>公開後のクリックを見て、次に直すリンク・説明文・X導線を決めるためのページです。</p>
+    </div>
+    <a class="button" href="../status/">運用ステータスへ</a>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="label">状態</span><b>クリック待ち</b></div>
+    <div class="card"><span class="label">クリック総数</span><b>0</b></div>
+    <div class="card"><span class="label">7日間</span><b>0</b></div>
+    <div class="card"><span class="label">提携リンク</span><b>0 / 9</b></div>
+  </div>
+  <section class="card">
+    <span class="label">今の判断</span>
+    <p>まだクリック実績がないので、catbot優先度が高い商品から最初の追跡付きリンクを作ります。</p>
+  </section>
+  
+    <section class="card primary">
+      <span class="label">次に見る商品</span>
+      <h2>電動猫じゃらし</h2>
+      <p>遊び / toys/p2 / score 219</p>
+      <p>人が手を離していても短時間の運動を作れます。</p>
+      <div class="actions">
+        <a class="button light" href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97" target="_blank" rel="noopener noreferrer">検索を開く</a>
+        <a class="button light" href="../link-opportunities.json">link-opportunities.json</a>
+      </div>
+    </section>
+
+  <section class="card" style="margin-top:12px">
+    <span class="label">判断ルール</span>
+    <ul><li><strong>1</strong><p>Clicked products without real affiliate links are fixed first.</p></li><li><strong>2</strong><p>If there are no clicks yet, create the first real affiliate link for next_action.</p></li><li><strong>3</strong><p>After publishing, export the hidden ?ops=1 click CSV and import it weekly.</p></li><li><strong>4</strong><p>Keep cat-fit, no-buy, and safety notes visible before pushing product links.</p></li></ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">クリックされた未提携商品</span>
+    <ul><li><strong>まだクリックされた未提携商品はありません</strong><p>公開後にクリックCSVを取り込むと、ここに対象商品が出ます。</p></li></ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">提携済みでクリックされた商品</span>
+    <ul><li><strong>まだ提携済み商品のクリックはありません</strong><p>公開後にクリックCSVを取り込むと、ここに対象商品が出ます。</p></li></ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">クリック前の候補</span>
+    <ul>
+        <li>
+          <strong>電動猫じゃらし</strong>
+          <p>遊び / toys/p2 / click 0 / score 219</p>
+          <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+          <p class="note">猫優先: review_before_link</p>
+          <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span><span>中単価</span></div>
+          <div class="actions"><a class="button light" href="../products/toys/p2/">商品ページ</a><a class="button light" href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97" target="_blank" rel="noopener noreferrer">検索を開く</a></div>
+        </li>
+
+        <li>
+          <strong>けりぐるみ</strong>
+          <p>遊び / toys/p1 / click 0 / score 215</p>
+          <p>縫い目が強いもの、誤飲しにくいサイズを優先。</p>
+          <p class="note">猫優先: review_before_link</p>
+          <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span></div>
+          <div class="actions"><a class="button light" href="../products/toys/p1/">商品ページ</a><a class="button light" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF" target="_blank" rel="noopener noreferrer">検索を開く</a></div>
+        </li>
+
+        <li>
+          <strong>自動給餌器</strong>
+          <p>水とごはん / water/p2 / click 0 / score 93</p>
+          <p>詰まりにくさ、洗いやすさ、停電時の挙動を確認。</p>
+          <p class="note">猫優先: review_before_link</p>
+          <div class="tags"><span>季節ケア</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>高単価</span></div>
+          <div class="actions"><a class="button light" href="../products/water/p2/">商品ページ</a><a class="button light" href="https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/" target="_blank" rel="noopener noreferrer">検索を開く</a></div>
+        </li>
+
+        <li>
+          <strong>循環式水飲み器</strong>
+          <p>水とごはん / water/p1 / click 0 / score 89</p>
+          <p>洗いやすさ、フィルター代、音の小ささを確認。</p>
+          <p class="note">猫優先: review_before_link</p>
+          <div class="tags"><span>季節ケア</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>中単価</span></div>
+          <div class="actions"><a class="button light" href="../products/water/p1/">商品ページ</a><a class="button light" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF" target="_blank" rel="noopener noreferrer">検索を開く</a></div>
+        </li>
+
+        <li>
+          <strong>段ボール爪とぎ 大容量</strong>
+          <p>爪とぎ / scratch/p1 / click 0 / score 76</p>
+          <p>粉が出にくいもの、滑りにくい形を優先。</p>
+          <p class="note">猫優先: review_before_link</p>
+          <div class="tags"><span>季節ケア</span><span>買う前チェック: よく走る・遊び足りない猫</span><span>買う前チェック: 毛・爪・部屋のケアを楽にしたい猫</span></div>
+          <div class="actions"><a class="button light" href="../products/scratch/p1/">商品ページ</a><a class="button light" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F" target="_blank" rel="noopener noreferrer">検索を開く</a></div>
+        </li></ul>
+  </section>
+  <section class="card" style="margin-top:12px">
+    <span class="label">取り込み手順</span>
+    <ul>
+        <li>
+          <strong>公開後にクリックCSVを出す</strong>
+          <code>https://PUBLIC_URL/?ops=1</code>
+        </li>
+
+
+        <li>
+          <strong>取り込み前に確認する</strong>
+          <code>.\affiliate_site_ops.bat import-clicks catbot-local-clicks-YYYY-MM-DD.csv --dry-run</code>
+        </li>
+
+
+        <li>
+          <strong>取り込んで公開ファイルを更新する</strong>
+          <code>.\affiliate_site_ops.bat import-clicks catbot-local-clicks-YYYY-MM-DD.csv --sync --smoke-test</code>
+        </li>
+
+
+        <li>
+          <strong>ローカルのクリック改善を見る</strong>
+          <code>.\affiliate_site_ops.bat click-review</code>
+        </li>
+
+
+        <li>
+          <strong>最新状態で再生成する</strong>
+          <code>.\affiliate_site_ops.bat sync-now --smoke-test</code>
+        </li>
+</ul>
+  </section>
+  <div class="actions">
+    <a class="button" href="../click-review.json">click-review.json</a>
+    <a class="button light" href="../revenue/">収益ステータス</a>
+    <a class="button light" href="../">?ops=1</a>
+  </div>
+  <p style="margin-top:16px">生成: 2026-06-25T14:49:28 / 書き出し: 2026-06-25T14:49:28</p>
+</main>
+</body>
+</html>

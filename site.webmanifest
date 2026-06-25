@@ -1,0 +1,24 @@
+{
+  "name": "ふわふわ猫の道具箱",
+  "short_name": "猫の道具箱",
+  "description": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fff8ef",
+  "theme_color": "#5a3522",
+  "icons": [
+    {
+      "src": "/assets/site-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/site-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

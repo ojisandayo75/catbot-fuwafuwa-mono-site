@@ -1,0 +1,2004 @@
+{
+  "generated_at": "2026-06-25T14:49:28",
+  "site": {
+    "name": "ふわふわ猫の道具箱",
+    "tagline": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
+    "account": "@fuwafuwa_mono",
+    "follower_goal": 1000,
+    "disclosure": "このサイトには広告・アフィリエイトリンクを含む場合があります。猫の安全と暮らしやすさを優先して選びます。",
+    "profile_url": "",
+    "moshimo": {
+      "amazon_status": "pending",
+      "rakuten_status": "pending"
+    },
+    "static_export": true
+  },
+  "stats": {
+    "followers": 541,
+    "follower_goal": 1000,
+    "followers_to_goal": 459,
+    "follower_progress": 54.1,
+    "follower_growth": {
+      "history_count": 26,
+      "first_date": "2026-05-29",
+      "last_date": "2026-06-24",
+      "current": 541,
+      "goal": 1000,
+      "remaining": 459,
+      "overall_gain": 507,
+      "overall_avg_per_day": 19.5,
+      "last_7d_gain": 305,
+      "recent_avg_per_day": 43.6,
+      "eta_days": 11,
+      "eta_date": "2026-07-05",
+      "max_daily_gain": 133,
+      "state": "growing"
+    },
+    "post_count": 173,
+    "top_post_views": 156918,
+    "ready_links": 0,
+    "total_products": 9,
+    "clicks_total": 0,
+    "clicks_7d": 0
+  },
+  "next_actions": [
+    {
+      "level": "warn",
+      "title": "XプロフィールURL未設定",
+      "detail": "公開URLが決まったら site.profile_url に入れて、Xのwebsite欄にも設定する。"
+    },
+    {
+      "level": "warn",
+      "title": "提携リンク未設定",
+      "detail": "もしもで発行したAmazon/楽天リンクを affiliate_products.json の affiliate_url に入れる。"
+    },
+    {
+      "level": "info",
+      "title": "まだ育成フェーズ",
+      "detail": "1,000フォロワーまで残り 459。売り込みよりプロフィール導線を薄く置く。"
+    }
+  ],
+  "copy": {
+    "phase": "育成中",
+    "profile": "毎日かわいい猫動画を集めています。猫との暮らしに役立つ道具も少しずつまとめ中: /shop",
+    "pinned": "猫動画を毎日見ている中で、これは猫のためになりそうと思った道具を ふわふわ猫の道具箱 にまとめています。\n売り込みより、遊び・水分・爪とぎ・見守りの選び方を中心に更新します。",
+    "soft_reply": "見てくれてありがとう。こういう猫の瞬間が好きで、猫との暮らしに役立つものも少しずつまとめています。今は遊びまわりを整理中です。"
+  },
+  "clicks": {
+    "total": 0,
+    "last_7d": 0,
+    "by_product": {},
+    "by_kind": {},
+    "recent": []
+  },
+  "categories": [
+    {
+      "id": "toys",
+      "name": "遊びと運動",
+      "short_name": "遊び",
+      "headline": "よく動く子、退屈しやすい子に。",
+      "why": "バズりやすい猫動画は、走る・跳ぶ・じゃれる瞬間が多め。家でも安全に遊べる道具を優先します。",
+      "priority": 8,
+      "signals": [
+        "play",
+        "funny",
+        "wwe",
+        "jump",
+        "toy",
+        "kitten",
+        "fyp"
+      ],
+      "products": [
+        {
+          "name": "けりぐるみ",
+          "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
+          "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+          "care_note": "中綿や飾りを噛みちぎる子は、破れた時点で交換。小さい部品が出たらすぐ片付けます。",
+          "cat_fit": {
+            "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+            "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+            "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。"
+          },
+          "safety": {
+            "check": "縫い目が強く、猫の口より小さすぎないサイズを選びます。",
+            "stop": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。",
+            "routine": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
+            "tags": [
+              "誤飲確認",
+              "破れたら交換",
+              "留守番中は注意"
+            ]
+          },
+          "price_band": "低",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
+          "cta": "けりぐるみを見る",
+          "id": "p1",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/toys/p1/",
+            "redirect_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF"
+          },
+          "priority": {
+            "rank": 2,
+            "score": 215,
+            "reasons": [
+              "catbot反応",
+              "買う前チェック: 留守番が多い猫",
+              "買う前チェック: よく走る・遊び足りない猫"
+            ],
+            "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+          },
+          "detail_url": "products/toys/p1/"
+        },
+        {
+          "name": "電動猫じゃらし",
+          "reason": "人が手を離していても短時間の運動を作れます。",
+          "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+          "care_note": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。",
+          "cat_fit": {
+            "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+            "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+            "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。"
+          },
+          "safety": {
+            "check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+            "stop": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+            "routine": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+            "tags": [
+              "短時間",
+              "誤飲確認",
+              "興奮しすぎ注意"
+            ]
+          },
+          "price_band": "中",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+          "cta": "電動おもちゃを見る",
+          "id": "p2",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/toys/p2/",
+            "redirect_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
+          },
+          "priority": {
+            "rank": 1,
+            "score": 219,
+            "reasons": [
+              "catbot反応",
+              "買う前チェック: 留守番が多い猫",
+              "買う前チェック: よく走る・遊び足りない猫",
+              "中単価"
+            ],
+            "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+          },
+          "detail_url": "products/toys/p2/"
+        }
+      ],
+      "score": 40
+    },
+    {
+      "id": "treats",
+      "name": "おやつ",
+      "short_name": "おやつ",
+      "headline": "ごほうびは少量で、続けやすいものを。",
+      "why": "動画を見に来る人は猫のかわいい瞬間に反応します。買いやすい入口商品として、おやつは強いカテゴリです。",
+      "priority": 7,
+      "signals": [
+        "food",
+        "eat",
+        "snack",
+        "treat",
+        "churu",
+        "meow"
+      ],
+      "products": [
+        {
+          "name": "CIAO ちゅーる系おやつ",
+          "reason": "少量のごほうびや水分補助として使いやすい定番です。",
+          "check": "年齢、体調、総合栄養食か一般食かを確認。",
+          "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
+          "cat_fit": {
+            "best_for": "ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。",
+            "not_for": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。",
+            "first_try": "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。"
+          },
+          "safety": {
+            "check": "対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。",
+            "stop": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
+            "routine": "主食の代わりにせず、あげた日は他のおやつ量を減らします。",
+            "tags": [
+              "少量から",
+              "主食にしない",
+              "体調変化を見る"
+            ]
+          },
+          "price_band": "低",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.amazon.co.jp/s?k=CIAO+%E3%81%A1%E3%82%85%E3%83%BC%E3%82%8B+%E7%8C%AB",
+          "cta": "おやつを見る",
+          "id": "p1",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.amazon.co.jp/s?k=CIAO+%E3%81%A1%E3%82%85%E3%83%BC%E3%82%8B+%E7%8C%AB",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/treats/p1/",
+            "redirect_url": "https://www.amazon.co.jp/s?k=CIAO+%E3%81%A1%E3%82%85%E3%83%BC%E3%82%8B+%E7%8C%AB"
+          },
+          "priority": {
+            "rank": 8,
+            "score": 35,
+            "reasons": [
+              "買う前チェック: 水分・ごはんを整えたい猫"
+            ],
+            "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+          },
+          "detail_url": "products/treats/p1/"
+        },
+        {
+          "name": "無添加寄りのおやつ",
+          "reason": "毎日ではなくても、原材料を見て選びたい人向け。",
+          "check": "塩分、添加物、対象年齢を確認。",
+          "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
+          "cat_fit": {
+            "best_for": "原材料を見て選びたい子、いつものおやつを少し見直したい子。",
+            "not_for": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。",
+            "first_try": "初日は少量だけ。数日は便、吐き戻し、かゆがる様子を確認します。"
+          },
+          "safety": {
+            "check": "原材料、塩分、添加物、対象年齢を見て、体調に合うか先に確認します。",
+            "stop": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
+            "routine": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。",
+            "tags": [
+              "原材料確認",
+              "少量から",
+              "アレルギー注意"
+            ]
+          },
+          "price_band": "中",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E3%81%8A%E3%82%84%E3%81%A4+%E7%84%A1%E6%B7%BB%E5%8A%A0/",
+          "cta": "やさしいおやつを見る",
+          "id": "p2",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E3%81%8A%E3%82%84%E3%81%A4+%E7%84%A1%E6%B7%BB%E5%8A%A0/",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/treats/p2/",
+            "redirect_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E3%81%8A%E3%82%84%E3%81%A4+%E7%84%A1%E6%B7%BB%E5%8A%A0/"
+          },
+          "priority": {
+            "rank": 7,
+            "score": 39,
+            "reasons": [
+              "買う前チェック: 水分・ごはんを整えたい猫",
+              "中単価"
+            ],
+            "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+          },
+          "detail_url": "products/treats/p2/"
+        }
+      ],
+      "score": 15
+    },
+    {
+      "id": "scratch",
+      "name": "爪とぎ",
+      "short_name": "爪とぎ",
+      "headline": "家具より先に、気持ちよく削れる場所を。",
+      "why": "消耗品で買い替え需要があり、猫のためにも家のためにも納得感が出やすいカテゴリです。",
+      "priority": 6,
+      "signals": [
+        "scratch",
+        "claw",
+        "cardboard",
+        "box"
+      ],
+      "products": [
+        {
+          "name": "段ボール爪とぎ 大容量",
+          "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
+          "check": "粉が出にくいもの、滑りにくい形を優先。",
+          "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
+          "cat_fit": {
+            "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
+            "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+            "first_try": "よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。"
+          },
+          "safety": {
+            "check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
+            "stop": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+            "routine": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+            "tags": [
+              "滑り止め",
+              "粉を確認",
+              "食べないか確認"
+            ]
+          },
+          "price_band": "低",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
+          "cta": "爪とぎを見る",
+          "id": "p1",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/scratch/p1/",
+            "redirect_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F"
+          },
+          "priority": {
+            "rank": 5,
+            "score": 76,
+            "reasons": [
+              "季節ケア",
+              "買う前チェック: よく走る・遊び足りない猫",
+              "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫"
+            ],
+            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+          },
+          "detail_url": "products/scratch/p1/"
+        }
+      ],
+      "score": 6
+    },
+    {
+      "id": "water",
+      "name": "水とごはん",
+      "short_name": "水とごはん",
+      "headline": "毎日の水分とごはんをラクに整える。",
+      "why": "高単価になりやすい一方で、猫の暮らしに直結するので押し売りではなく比較が向きます。",
+      "priority": 5,
+      "signals": [
+        "water",
+        "drink",
+        "feed",
+        "bowl"
+      ],
+      "products": [
+        {
+          "name": "循環式水飲み器",
+          "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+          "check": "洗いやすさ、フィルター代、音の小ささを確認。",
+          "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
+          "cat_fit": {
+            "best_for": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。",
+            "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
+            "first_try": "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。"
+          },
+          "safety": {
+            "check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。",
+            "stop": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
+            "routine": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
+            "tags": [
+              "水皿も残す",
+              "掃除必須",
+              "音を確認"
+            ]
+          },
+          "price_band": "中",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
+          "cta": "水飲み器を見る",
+          "id": "p1",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/water/p1/",
+            "redirect_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF"
+          },
+          "priority": {
+            "rank": 4,
+            "score": 89,
+            "reasons": [
+              "季節ケア",
+              "買う前チェック: 留守番が多い猫",
+              "買う前チェック: 水分・ごはんを整えたい猫",
+              "中単価"
+            ],
+            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+          },
+          "detail_url": "products/water/p1/"
+        },
+        {
+          "name": "自動給餌器",
+          "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
+          "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
+          "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
+          "cat_fit": {
+            "best_for": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
+            "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
+            "first_try": "数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。"
+          },
+          "safety": {
+            "check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。",
+            "stop": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+            "routine": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
+            "tags": [
+              "任せきりにしない",
+              "残量確認",
+              "多頭飼い注意"
+            ]
+          },
+          "price_band": "高",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
+          "cta": "自動給餌器を見る",
+          "id": "p2",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/water/p2/",
+            "redirect_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/"
+          },
+          "priority": {
+            "rank": 3,
+            "score": 93,
+            "reasons": [
+              "季節ケア",
+              "買う前チェック: 留守番が多い猫",
+              "買う前チェック: 水分・ごはんを整えたい猫",
+              "高単価"
+            ],
+            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+          },
+          "detail_url": "products/water/p2/"
+        }
+      ],
+      "score": 5
+    },
+    {
+      "id": "care",
+      "name": "お手入れ",
+      "short_name": "ケア",
+      "headline": "抜け毛と日々のケアを軽くする。",
+      "why": "かわいい動画の裏には毎日の手入れがあります。猫が嫌がりにくいものを選ぶ理由を説明しやすいカテゴリです。",
+      "priority": 4,
+      "signals": [
+        "hair",
+        "brush",
+        "groom",
+        "fur"
+      ],
+      "products": [
+        {
+          "name": "猫用ブラシ",
+          "reason": "換毛期の毛を減らし、部屋の掃除も少し楽になります。",
+          "check": "毛質に合う形、肌に強く当たりすぎないものを優先。",
+          "care_note": "嫌がる子は短時間から。皮膚が赤くなる、フケが増える、怒る時は強さや形が合っていない可能性があります。",
+          "cat_fit": {
+            "best_for": "換毛期の抜け毛が多い子、短時間のブラッシングなら受け入れやすい子。",
+            "not_for": "皮膚が弱い子、触られるのが苦手な子、怒りやすい子。",
+            "first_try": "背中など嫌がりにくい場所を数回だけ。無理に全身を一度で終わらせません。"
+          },
+          "safety": {
+            "check": "毛質に合う形、肌に強く当たりすぎない先端、握りやすさを確認します。",
+            "stop": "皮膚が赤くなる、フケが増える、怒る、逃げる時は強さや形を見直します。",
+            "routine": "短時間で終え、嫌がる日はやめて、終わった後の皮膚も見ます。",
+            "tags": [
+              "短時間",
+              "皮膚確認",
+              "嫌がれば中止"
+            ]
+          },
+          "price_band": "中",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%96%E3%83%A9%E3%82%B7",
+          "cta": "ブラシを見る",
+          "id": "p1",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%96%E3%83%A9%E3%82%B7",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/care/p1/",
+            "redirect_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%96%E3%83%A9%E3%82%B7"
+          },
+          "priority": {
+            "rank": 9,
+            "score": 23,
+            "reasons": [
+              "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫",
+              "中単価"
+            ],
+            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+          },
+          "detail_url": "products/care/p1/"
+        }
+      ],
+      "score": 4
+    },
+    {
+      "id": "watch",
+      "name": "見守り",
+      "short_name": "見守り",
+      "headline": "留守中の様子を見られる安心感。",
+      "why": "高単価ですが、猫の安全確認という理由が明確。1000フォロワー後に比較記事化しやすいカテゴリです。",
+      "priority": 3,
+      "signals": [
+        "home",
+        "camera",
+        "sleep",
+        "alone"
+      ],
+      "products": [
+        {
+          "name": "ペットカメラ",
+          "reason": "留守中の行動や体調変化に気づきやすくなります。",
+          "check": "画質、夜間撮影、録画、アプリの使いやすさを確認。",
+          "care_note": "カメラの音や動きで怖がる子は固定位置を変えます。見守りは補助なので、異変があれば直接確認します。",
+          "cat_fit": {
+            "best_for": "留守中の様子を確認したい家庭、行動変化に早く気づきたい家庭。",
+            "not_for": "カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。",
+            "first_try": "まず固定位置で音や動きを最小にし、猫が怖がらない距離から使います。"
+          },
+          "safety": {
+            "check": "画質、夜間撮影、録画、アプリの使いやすさに加えて、配線と設置の安定を見ます。",
+            "stop": "カメラ音や動きで怖がる、コードを噛む、倒しそうな時は位置を変えます。",
+            "routine": "見守りは補助。異変が見えたら通知だけで済ませず、直接確認します。",
+            "tags": [
+              "配線確認",
+              "怖がれば移動",
+              "異変は直接確認"
+            ]
+          },
+          "price_band": "高",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9",
+          "cta": "ペットカメラを見る",
+          "id": "p1",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9",
+            "kind": "search",
+            "label": "検索候補を見る",
+            "status_label": "検索候補",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/watch/p1/",
+            "redirect_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9"
+          },
+          "priority": {
+            "rank": 6,
+            "score": 71,
+            "reasons": [
+              "季節ケア",
+              "買う前チェック: 留守番が多い猫",
+              "高単価"
+            ],
+            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+          },
+          "detail_url": "products/watch/p1/"
+        }
+      ],
+      "score": 3
+    }
+  ],
+  "guides": [
+    {
+      "id": "toys",
+      "title": "よく走る・跳ぶ子",
+      "lead": "退屈して家具や足に向かいやすい子は、先に安全に発散できる遊び場を作ります。",
+      "steps": [
+        "誤飲しにくい大きさと、壊れにくい縫い目を優先する。",
+        "出しっぱなしにせず、短時間で入れ替えて飽きを防ぐ。",
+        "興奮しすぎる子は、遊んだ後に休める場所までセットで見る。"
+      ],
+      "category": "遊び",
+      "category_score": 40,
+      "product_count": 2,
+      "first_product": "けりぐるみ",
+      "first_product_reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
+      "cta": "遊びを見る",
+      "target": "guides/toys/",
+      "guide_url": "guides/toys/"
+    },
+    {
+      "id": "treats",
+      "title": "ごほうびで仲良くしたい子",
+      "lead": "おやつは売れやすい入口商品ですが、量と成分を見て控えめに選びます。",
+      "steps": [
+        "年齢、体調、総合栄養食か一般食かを確認する。",
+        "毎日大量にあげず、爪切りや通院後など目的を決める。",
+        "原材料や塩分が気になる場合は、無添加寄りから試す。"
+      ],
+      "category": "おやつ",
+      "category_score": 15,
+      "product_count": 2,
+      "first_product": "CIAO ちゅーる系おやつ",
+      "first_product_reason": "少量のごほうびや水分補助として使いやすい定番です。",
+      "cta": "おやつを見る",
+      "target": "guides/treats/",
+      "guide_url": "guides/treats/"
+    },
+    {
+      "id": "scratch",
+      "title": "家具で爪とぎしがちな子",
+      "lead": "叱るより、削りやすい場所を増やした方が猫にも人にも負担が少ないです。",
+      "steps": [
+        "縦型・横型・箱型のうち、その子が使う姿勢に近い形を選ぶ。",
+        "滑りにくさと、削りカスの出にくさを確認する。",
+        "よく通る場所に置いて、家具より先に選べる状態にする。"
+      ],
+      "category": "爪とぎ",
+      "category_score": 6,
+      "product_count": 1,
+      "first_product": "段ボール爪とぎ 大容量",
+      "first_product_reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
+      "cta": "爪とぎを見る",
+      "target": "guides/scratch/",
+      "guide_url": "guides/scratch/"
+    },
+    {
+      "id": "water",
+      "title": "水をあまり飲まない子",
+      "lead": "水分が気になる子は、飲みやすさと手入れのしやすさを先に見ます。",
+      "steps": [
+        "水の置き場所を複数にして、音や高さの好みを試す。",
+        "循環式はフィルター代と洗いやすさまで見る。",
+        "急な体調変化や飲水量の不安が強い時は、商品より先に獣医師へ相談する。"
+      ],
+      "category": "水とごはん",
+      "category_score": 5,
+      "product_count": 2,
+      "first_product": "循環式水飲み器",
+      "first_product_reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+      "cta": "水とごはんを見る",
+      "target": "guides/water/",
+      "guide_url": "guides/water/"
+    },
+    {
+      "id": "care",
+      "title": "抜け毛が気になる子",
+      "lead": "ケア用品は強さより、猫が嫌がりにくく続けられることを優先します。",
+      "steps": [
+        "毛質に合うブラシ形状を選び、最初は短時間だけ試す。",
+        "皮膚に強く当たりすぎない先端の丸さを見る。",
+        "嫌がる日はやめて、おやつや遊びとセットで慣らす。"
+      ],
+      "category": "ケア",
+      "category_score": 4,
+      "product_count": 1,
+      "first_product": "猫用ブラシ",
+      "first_product_reason": "換毛期の毛を減らし、部屋の掃除も少し楽になります。",
+      "cta": "ケアを見る",
+      "target": "guides/care/",
+      "guide_url": "guides/care/"
+    },
+    {
+      "id": "watch",
+      "title": "留守番が多い子",
+      "lead": "見守り系は高単価なので、買う前に必要な機能だけ絞ります。",
+      "steps": [
+        "夜間撮影、録画、通知、アプリの使いやすさを確認する。",
+        "設置場所と電源コードを、猫が触りにくい形にする。",
+        "不安確認用として使い、過度に監視しすぎない運用にする。"
+      ],
+      "category": "見守り",
+      "category_score": 3,
+      "product_count": 1,
+      "first_product": "ペットカメラ",
+      "first_product_reason": "留守中の行動や体調変化に気づきやすくなります。",
+      "cta": "見守りを見る",
+      "target": "guides/watch/",
+      "guide_url": "guides/watch/"
+    }
+  ],
+  "seasonal_care": {
+    "key": "summer",
+    "month": "2026-06",
+    "title": "梅雨から夏の猫ケア",
+    "summary": "湿度と暑さが上がる時期は、水分、風通し、留守中の室温を優先します。遊びは短めにして休む時間も作ります。",
+    "checks": [
+      "水飲み場を複数置き、ぬめりやフィルター汚れを毎日見る。",
+      "留守番中も室温が上がりすぎないよう、見守りやタイマーを使う。",
+      "湿気で爪とぎや布おもちゃが傷みやすいので、においとほつれを確認する。"
+    ],
+    "category_targets": [
+      {
+        "id": "water",
+        "label": "水とごはん",
+        "headline": "毎日の水分とごはんをラクに整える。",
+        "score": 5
+      },
+      {
+        "id": "watch",
+        "label": "見守り",
+        "headline": "留守中の様子を見られる安心感。",
+        "score": 3
+      },
+      {
+        "id": "scratch",
+        "label": "爪とぎ",
+        "headline": "家具より先に、気持ちよく削れる場所を。",
+        "score": 6
+      }
+    ],
+    "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
+  },
+  "catbot_trends": {
+    "generated_at": "2026-06-25T14:49:28",
+    "source_counts": {
+      "posts": 10,
+      "videos": 12,
+      "categories": 6
+    },
+    "cards": [
+      {
+        "kind": "category",
+        "title": "反応が強いテーマ",
+        "label": "遊び",
+        "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
+        "metric": "score 40",
+        "category_id": "toys"
+      },
+      {
+        "kind": "post",
+        "title": "伸びた投稿の空気",
+        "label": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…",
+        "detail": "最近の上位投稿から、読者が反応している猫の雰囲気を拾います。",
+        "metric": "156,918 views / 1,224 likes",
+        "category_id": "toys"
+      },
+      {
+        "kind": "video",
+        "title": "素材動画の傾向",
+        "label": "#cat #catsoftiktok",
+        "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
+        "metric": "176,038,864 plays",
+        "category_id": "toys"
+      }
+    ],
+    "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
+  },
+  "purchase_advisor": {
+    "generated_at": "2026-06-25T14:49:28",
+    "cards": [
+      {
+        "id": "home-alone",
+        "match_url": "matches/home-alone/",
+        "title": "留守番が多い猫",
+        "lead": "長時間ひとりの時間がある子は、見守りと退屈対策を分けて考えると失敗しにくいです。",
+        "checks": [
+          "停電時や通信不調時に困らない運用にする",
+          "カメラは猫が触れにくい場所に置く",
+          "自動化しすぎず、毎日の直接確認も残す"
+        ],
+        "avoid": "見守り機器だけで体調判断を完結させない。",
+        "category_targets": [
+          {
+            "id": "watch",
+            "label": "見守り",
+            "product_count": 1
+          },
+          {
+            "id": "water",
+            "label": "水とごはん",
+            "product_count": 2
+          },
+          {
+            "id": "toys",
+            "label": "遊び",
+            "product_count": 2
+          }
+        ],
+        "first_product": "ペットカメラ",
+        "first_product_reason": "留守中の行動や体調変化に気づきやすくなります。",
+        "score": 166,
+        "source_labels": [
+          "catbot反応",
+          "季節ケア"
+        ],
+        "rank": 1
+      },
+      {
+        "id": "active",
+        "match_url": "matches/active/",
+        "title": "よく走る・遊び足りない猫",
+        "lead": "退屈がたまる子は、先に安全に発散できる遊び場を作ると暮らしが落ち着きます。",
+        "checks": [
+          "小さい部品が外れにくいかを見る",
+          "留守中に出しっぱなしにしない前提で選ぶ",
+          "床や壁を傷つけにくい置き場所を決める"
+        ],
+        "avoid": "壊れたおもちゃや細いひもは誤飲しやすいので早めに交換する。",
+        "category_targets": [
+          {
+            "id": "toys",
+            "label": "遊び",
+            "product_count": 2
+          },
+          {
+            "id": "scratch",
+            "label": "爪とぎ",
+            "product_count": 1
+          }
+        ],
+        "first_product": "けりぐるみ",
+        "first_product_reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
+        "score": 146,
+        "source_labels": [
+          "catbot反応",
+          "季節ケア"
+        ],
+        "rank": 2
+      },
+      {
+        "id": "hydration",
+        "match_url": "matches/hydration/",
+        "title": "水分・ごはんを整えたい猫",
+        "lead": "水をあまり飲まない子や食事時間が乱れやすい家庭は、毎日の管理を楽にする用品から見るのが向いています。",
+        "checks": [
+          "洗いやすさと部品交換のしやすさを確認する",
+          "年齢・体調に合うフードやおやつかを見る",
+          "音や高さが猫のストレスにならないか考える"
+        ],
+        "avoid": "おやつは主食の代わりにせず、量を決めて使う。",
+        "category_targets": [
+          {
+            "id": "water",
+            "label": "水とごはん",
+            "product_count": 2
+          },
+          {
+            "id": "treats",
+            "label": "おやつ",
+            "product_count": 2
+          }
+        ],
+        "first_product": "循環式水飲み器",
+        "first_product_reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+        "score": 74,
+        "source_labels": [
+          "季節ケア"
+        ],
+        "rank": 3
+      },
+      {
+        "id": "daily-care",
+        "match_url": "matches/daily-care/",
+        "title": "毛・爪・部屋のケアを楽にしたい猫",
+        "lead": "抜け毛や爪とぎの悩みは、猫が嫌がりにくい道具と続けやすい頻度で選ぶのが大事です。",
+        "checks": [
+          "短時間で終えられる道具から始める",
+          "強く引っ張らない形・硬さを選ぶ",
+          "猫が逃げた日は無理に続けない"
+        ],
+        "avoid": "嫌がるケアを長時間続けると、次から道具を見るだけで逃げやすくなる。",
+        "category_targets": [
+          {
+            "id": "care",
+            "label": "ケア",
+            "product_count": 1
+          },
+          {
+            "id": "scratch",
+            "label": "爪とぎ",
+            "product_count": 1
+          }
+        ],
+        "first_product": "猫用ブラシ",
+        "first_product_reason": "換毛期の毛を減らし、部屋の掃除も少し楽になります。",
+        "score": 56,
+        "source_labels": [
+          "季節ケア"
+        ],
+        "rank": 4
+      }
+    ],
+    "summary": "猫の性格・暮らし・catbotの反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
+  },
+  "update_notes": {
+    "generated_at": "2026-06-25T14:49:28",
+    "cards": [
+      {
+        "title": "フォロワー進捗",
+        "label": "541 / 1,000",
+        "detail": "1,000人まで残り 459。公開前は売り込みを強めず、プロフィール導線と猫向け情報を育てます。"
+      },
+      {
+        "title": "今日の反応テーマ",
+        "label": "遊び",
+        "detail": "score 40。反応が強いテーマから商品カテゴリを整えます。",
+        "category_id": "toys"
+      },
+      {
+        "title": "季節ケア",
+        "label": "梅雨から夏の猫ケア",
+        "detail": "湿度と暑さが上がる時期は、水分、風通し、留守中の室温を優先します。遊びは短めにして休む時間も作ります。",
+        "category_id": "water"
+      },
+      {
+        "title": "リンク準備",
+        "label": "0 / 9",
+        "detail": "実アフィリリンク未投入。まずは反応が強いカテゴリから、もしもリンクへ差し替えます。"
+      }
+    ],
+    "summary": "catbotのフォロワー、投稿反応、季節ケア、リンク準備をまとめた自動更新メモです。"
+  },
+  "featured_category": {
+    "id": "toys",
+    "name": "遊びと運動",
+    "short_name": "遊び",
+    "headline": "よく動く子、退屈しやすい子に。",
+    "why": "バズりやすい猫動画は、走る・跳ぶ・じゃれる瞬間が多め。家でも安全に遊べる道具を優先します。",
+    "priority": 8,
+    "signals": [
+      "play",
+      "funny",
+      "wwe",
+      "jump",
+      "toy",
+      "kitten",
+      "fyp"
+    ],
+    "products": [
+      {
+        "name": "けりぐるみ",
+        "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
+        "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+        "care_note": "中綿や飾りを噛みちぎる子は、破れた時点で交換。小さい部品が出たらすぐ片付けます。",
+        "cat_fit": {
+          "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+          "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+          "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。"
+        },
+        "safety": {
+          "check": "縫い目が強く、猫の口より小さすぎないサイズを選びます。",
+          "stop": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。",
+          "routine": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
+          "tags": [
+            "誤飲確認",
+            "破れたら交換",
+            "留守番中は注意"
+          ]
+        },
+        "price_band": "低",
+        "affiliate_url": "",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
+        "cta": "けりぐるみを見る",
+        "id": "p1",
+        "clicks": 0,
+        "link": {
+          "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
+          "kind": "search",
+          "label": "検索候補を見る",
+          "status_label": "検索候補",
+          "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+          "ready": false,
+          "go_url": "/go/toys/p1"
+        },
+        "priority": {
+          "rank": 2,
+          "score": 215,
+          "reasons": [
+            "catbot反応",
+            "買う前チェック: 留守番が多い猫",
+            "買う前チェック: よく走る・遊び足りない猫"
+          ],
+          "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        }
+      },
+      {
+        "name": "電動猫じゃらし",
+        "reason": "人が手を離していても短時間の運動を作れます。",
+        "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+        "care_note": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。",
+        "cat_fit": {
+          "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+          "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+          "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。"
+        },
+        "safety": {
+          "check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+          "stop": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+          "routine": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+          "tags": [
+            "短時間",
+            "誤飲確認",
+            "興奮しすぎ注意"
+          ]
+        },
+        "price_band": "中",
+        "affiliate_url": "",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+        "cta": "電動おもちゃを見る",
+        "id": "p2",
+        "clicks": 0,
+        "link": {
+          "url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+          "kind": "search",
+          "label": "検索候補を見る",
+          "status_label": "検索候補",
+          "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+          "ready": false,
+          "go_url": "/go/toys/p2"
+        },
+        "priority": {
+          "rank": 1,
+          "score": 219,
+          "reasons": [
+            "catbot反応",
+            "買う前チェック: 留守番が多い猫",
+            "買う前チェック: よく走る・遊び足りない猫",
+            "中単価"
+          ],
+          "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        }
+      }
+    ],
+    "score": 40
+  },
+  "top_posts": [
+    {
+      "posted_at": "2026-06-08T21:00:38",
+      "tweet_id": "2063954349626392735",
+      "rank": 6,
+      "video_id": "7403222311542721793",
+      "tiktok_user": "cat.f.0622",
+      "text": "まさか、他の子の動画で泣きそうになるなんて。\n\n小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾\n\n#猫好きさんと繋がりたい #猫動画",
+      "char_count": 81,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感と猫動画リプ",
+      "engine": "codex",
+      "play_count": 15157765,
+      "like_count": 1121934,
+      "engagement": {
+        "favorite": 1224,
+        "retweet": 35,
+        "reply": 3,
+        "view": 156918,
+        "bookmark": 165,
+        "age_hours": 159.24
+      }
+    },
+    {
+      "posted_at": "2026-06-09T21:00:35",
+      "tweet_id": "2064316726498795528",
+      "rank": 6,
+      "video_id": "7377402209253805354",
+      "tiktok_user": "mother_ofcats_",
+      "text": "涙出た\n\n他人の猫動画なのに、名前を呼ばれて振り向く瞬間で胸がぎゅっとした。\n\nうちの子にも、今日ちゃんと大好きって言おう🐾 #猫好きさんと繋がりたい #猫動画",
+      "char_count": 80,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感と愛猫への声かけ",
+      "engine": "codex",
+      "play_count": 73064493,
+      "like_count": 9980712,
+      "engagement": {
+        "favorite": 2634,
+        "retweet": 91,
+        "reply": 3,
+        "view": 124526,
+        "bookmark": 326,
+        "age_hours": 159.25
+      }
+    },
+    {
+      "posted_at": "2026-06-17T06:00:37",
+      "tweet_id": "2066989348155953487",
+      "rank": 1,
+      "video_id": "7603013549035703582",
+      "tiktok_user": "aloong110",
+      "text": "泣いた…\n\n知らない家の猫ちゃんが、飼い主さんの帰宅音で耳だけ動かして走る動画。\n\nうちの子を抱きしめたくなった🐾 #猫好きさんと繋がりたい #猫動画",
+      "char_count": 75,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感と愛猫を抱きしめたい反応",
+      "engine": "codex",
+      "play_count": 27911667,
+      "like_count": 1780193,
+      "engagement": {
+        "favorite": 2521,
+        "retweet": 179,
+        "reply": 44,
+        "view": 71057,
+        "bookmark": 282,
+        "age_hours": 150.24
+      }
+    },
+    {
+      "posted_at": "2026-06-09T09:01:37",
+      "tweet_id": "2064135793023779074",
+      "rank": 2,
+      "video_id": "7603013549035703582",
+      "tiktok_user": "aloong110",
+      "text": "まさか、他人の猫動画で泣くとは思わなかった。\n\n小さく鳴いて飼い主さんを見上げた瞬間、うちの子にも会いたくなった🐾\n\n猫って、画面越しでも心をほどく。 #猫好きさんと繋がりたい #猫動画",
+      "char_count": 93,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感と猫動画の共有",
+      "engine": "codex",
+      "play_count": 26573282,
+      "like_count": 1756815,
+      "engagement": {
+        "favorite": 2949,
+        "retweet": 209,
+        "reply": 6,
+        "view": 69017,
+        "bookmark": 302,
+        "age_hours": 147.23
+      }
+    },
+    {
+      "posted_at": "2026-06-16T19:30:47",
+      "tweet_id": "2066830846116696118",
+      "rank": 7,
+      "video_id": "7628924218847071518",
+      "tiktok_user": "schmitt.william",
+      "text": "え、待って\n\n知らないお家の猫動画なのに、眠る前の小さな伸びで胸がぎゅっとなった。\n\n今日も世界のどこかで猫が愛されてる。それだけで救われる🐾 #猫好きさんと繋がりたい #猫動画",
+      "char_count": 89,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感と猫動画の共有",
+      "engine": "codex",
+      "play_count": 14392160,
+      "like_count": 2058028,
+      "engagement": {
+        "favorite": 4539,
+        "retweet": 174,
+        "reply": 6,
+        "view": 22673,
+        "bookmark": 675,
+        "age_hours": 160.74
+      }
+    },
+    {
+      "posted_at": "2026-06-20T19:30:40",
+      "tweet_id": "2068280369628217440",
+      "rank": 7,
+      "video_id": "7462191186703420690",
+      "tiktok_user": "misamama1010",
+      "text": "尊すぎて、他人の猫動画なのに涙腺ゆるんだ。\n\n小さな前足で指をぎゅっと握る瞬間、胸が温かくなった🐾\n\n猫って、画面越しでも心に座ってくる。 #猫好きさんと繋がりたい #猫のいる幸せ",
+      "char_count": 90,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感・猫動画エピソード",
+      "engine": "codex",
+      "play_count": 21608349,
+      "like_count": 822311,
+      "engagement": {
+        "favorite": 1285,
+        "retweet": 51,
+        "reply": 3,
+        "view": 19665,
+        "bookmark": 368,
+        "age_hours": 88.74
+      }
+    },
+    {
+      "posted_at": "2026-06-11T06:00:34",
+      "tweet_id": "2064815008991813868",
+      "rank": 1,
+      "video_id": "7165883165049916718",
+      "tiktok_user": "mother_ofcats_",
+      "text": "え、今\n\n知らない猫ちゃんが、飼い主さんの声で急に目を細めた瞬間、私まで胸がぎゅっとなった\n\n画面越しでも愛って伝わるね🐾 #猫好きさんと繋がりたい #猫動画",
+      "char_count": 79,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "猫動画で泣いた共感",
+      "engine": "codex",
+      "play_count": 35311819,
+      "like_count": 8072219,
+      "engagement": {
+        "favorite": 280,
+        "retweet": 15,
+        "reply": 1,
+        "view": 15435,
+        "bookmark": 59,
+        "age_hours": 150.25
+      }
+    },
+    {
+      "posted_at": "2026-06-20T22:30:43",
+      "tweet_id": "2068325680555954370",
+      "rank": 8,
+      "video_id": "7636329379626274061",
+      "tiktok_user": "catfunny86.0",
+      "text": "え、今\n\n他人の猫動画なのに、こっちを見上げて小さく鳴いた瞬間、胸がぎゅっとした。今日も猫に救われてる🐾\n\n#猫好きさんと繋がりたい #猫動画",
+      "char_count": 71,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感リプと猫動画共有",
+      "engine": "codex",
+      "play_count": 17147855,
+      "like_count": 2637602,
+      "engagement": {
+        "favorite": 929,
+        "retweet": 113,
+        "reply": 1,
+        "view": 13697,
+        "bookmark": 220,
+        "age_hours": 85.74
+      }
+    },
+    {
+      "posted_at": "2026-06-14T22:30:37",
+      "tweet_id": "2066151326187405759",
+      "rank": 8,
+      "video_id": "7177587937427655941",
+      "tiktok_user": "bbly11the",
+      "text": "ちょっ…\n\n知らない子なのに、動画の中で小さく鳴いて手を伸ばした瞬間、胸がぎゅっとなった。私もその場で撫でたかった🐾\n\n#猫好きさんと繋がりたい #猫動画",
+      "char_count": 77,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感リプ・いいね",
+      "engine": "codex",
+      "play_count": 24348429,
+      "like_count": 3997849,
+      "engagement": {
+        "favorite": 407,
+        "retweet": 21,
+        "reply": 1,
+        "view": 12549,
+        "bookmark": 27,
+        "age_hours": 157.75
+      }
+    },
+    {
+      "posted_at": "2026-06-20T18:00:48",
+      "tweet_id": "2068257751189667878",
+      "rank": 5,
+      "video_id": "7591304458475228446",
+      "tiktok_user": "etelbertomatilda",
+      "text": "涙腺がゆるんだ\n\n他人の猫動画なのに、飼い主さんを見つけて小さく駆け寄る姿に胸がぎゅっとなった。\n\nうちの子にも会いたい夜🐾 #猫好きさんと繋がりたい #猫動画",
+      "char_count": 80,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感・うちの子語り",
+      "engine": "codex",
+      "play_count": 27830144,
+      "like_count": 3460817,
+      "engagement": {
+        "favorite": 924,
+        "retweet": 34,
+        "reply": 4,
+        "view": 10933,
+        "bookmark": 284,
+        "age_hours": 90.24
+      }
+    }
+  ],
+  "videos": [
+    {
+      "rank": 1,
+      "video_id": "7291651785746386219",
+      "username": "lovelycute_baby",
+      "url": "https://www.tiktok.com/@lovelycute_baby/video/7291651785746386219",
+      "title": "#cat #catsoftiktok ",
+      "play_count": 176038864,
+      "like_count": 14420631,
+      "comment_count": 69646,
+      "mp4": "01_lovelycute_baby_7291651785746386219.mp4",
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-25T12:44:49"
+    },
+    {
+      "rank": 2,
+      "video_id": "7571394880136629518",
+      "username": "pawsitive.energy7",
+      "url": "https://www.tiktok.com/@pawsitive.energy7/video/7571394880136629518",
+      "title": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp ",
+      "play_count": 114864396,
+      "like_count": 25019479,
+      "comment_count": 45559,
+      "mp4": "02_pawsitive.energy7_7571394880136629518.mp4",
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-21T06:00:34"
+    },
+    {
+      "rank": 3,
+      "video_id": "7507952145832889643",
+      "username": "lovecat.0338",
+      "url": "https://www.tiktok.com/@lovecat.0338/video/7507952145832889643",
+      "title": "Cat WWE🥊(perfect body technique)#funnycat #pet #fyp #funnyvideos #catsoftiktok #cute #kitten #cat #funny #foyou #PetsOfTikTok #WWE #tiktok #UFC ",
+      "play_count": 96132548,
+      "like_count": 4596459,
+      "comment_count": 66067,
+      "mp4": "03_lovecat.0338_7507952145832889643.mp4",
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-24T09:06:58"
+    },
+    {
+      "rank": 4,
+      "video_id": "7491989294274350366",
+      "username": "phanthavongrisugl",
+      "url": "https://www.tiktok.com/@phanthavongrisugl/video/7491989294274350366",
+      "title": "Cat caught doing something bad #cat #catsoftiktok #funny #funnycats #pets #cute #kitty #catlover #foryou ",
+      "play_count": 87076641,
+      "like_count": 12101467,
+      "comment_count": 30514,
+      "mp4": "04_phanthavongrisugl_7491989294274350366.mp4",
+      "status": "fresh",
+      "posted_count": 0,
+      "last_posted_at": null
+    },
+    {
+      "rank": 5,
+      "video_id": "7508869947372703022",
+      "username": "knitpets",
+      "url": "https://www.tiktok.com/@knitpets/video/7508869947372703022",
+      "title": "Crochet kitty caught by tickle monster #cutecat #pet #kucing #kucinglucu #猫 #kitty #viral ",
+      "play_count": 84812400,
+      "like_count": 3451022,
+      "comment_count": 21323,
+      "mp4": "05_knitpets_7508869947372703022.mp4",
+      "status": "fresh",
+      "posted_count": 0,
+      "last_posted_at": null
+    },
+    {
+      "rank": 6,
+      "video_id": "7620350949999037709",
+      "username": "code_mamat5",
+      "url": "https://www.tiktok.com/@code_mamat5/video/7620350949999037709",
+      "title": "#catsoftiktok ",
+      "play_count": 78010591,
+      "like_count": 16059501,
+      "comment_count": 73428,
+      "mp4": "06_code_mamat5_7620350949999037709.mp4",
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-22T06:00:30"
+    },
+    {
+      "rank": 7,
+      "video_id": "7194375695504526634",
+      "username": "watts.on.on",
+      "url": "https://www.tiktok.com/@watts.on.on/video/7194375695504526634",
+      "title": "Funny #cat #catsoftiktok #kitten #funny #foryou #pet #meme #catlover #cute #fyp #kittensoftiktok ",
+      "play_count": 75063346,
+      "like_count": 8410810,
+      "comment_count": 56382,
+      "mp4": null,
+      "status": "fresh",
+      "posted_count": 0,
+      "last_posted_at": null
+    },
+    {
+      "rank": 8,
+      "video_id": "7587334753955663117",
+      "username": "furball.magic666",
+      "url": "https://www.tiktok.com/@furball.magic666/video/7587334753955663117",
+      "title": "Cat’s Version of ‘Helping’ 💥🐾 #cat #cats #catslovers #catsoftiktok #fyp",
+      "play_count": 57489470,
+      "like_count": 5652473,
+      "comment_count": 8098,
+      "mp4": null,
+      "status": "fresh",
+      "posted_count": 0,
+      "last_posted_at": null
+    },
+    {
+      "rank": 9,
+      "video_id": "7592934067977342221",
+      "username": "castobong3",
+      "url": "https://www.tiktok.com/@castobong3/video/7592934067977342221",
+      "title": "Meow 👹 VS Meow 😇#cat #funny #catsoftiktok #fyp #usa ",
+      "play_count": 53790099,
+      "like_count": 7406735,
+      "comment_count": 14520,
+      "mp4": null,
+      "status": "fresh",
+      "posted_count": 0,
+      "last_posted_at": null
+    },
+    {
+      "rank": 10,
+      "video_id": "7650829523151277343",
+      "username": "okgocute",
+      "url": "https://www.tiktok.com/@okgocute/video/7650829523151277343",
+      "title": "#catsoftiktok #cat #cutebaby #baby ",
+      "play_count": 37947143,
+      "like_count": 1705753,
+      "comment_count": 25195,
+      "mp4": null,
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-23T09:00:31"
+    },
+    {
+      "rank": 11,
+      "video_id": "7512479649004293422",
+      "username": "ringodanyan",
+      "url": "https://www.tiktok.com/@ringodanyan/video/7512479649004293422",
+      "title": "My heart is 100% damaged!😍 #cute #cat #catsoftiktok ",
+      "play_count": 36646250,
+      "like_count": 5491876,
+      "comment_count": 14388,
+      "mp4": null,
+      "status": "fresh",
+      "posted_count": 0,
+      "last_posted_at": null
+    },
+    {
+      "rank": 12,
+      "video_id": "7624806782132669717",
+      "username": "fluffyfishlover",
+      "url": "https://www.tiktok.com/@fluffyfishlover/video/7624806782132669717",
+      "title": "Fluffy heard Brazilian funk and went OFF 🐱🇧🇷💃 #fyp #viral #cutecat #orangecat #brazilianfunk #catsoftiktok #dancingcat",
+      "play_count": 36522768,
+      "like_count": 839610,
+      "comment_count": 12302,
+      "mp4": null,
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-21T09:00:30"
+    }
+  ],
+  "hero_video": {
+    "rank": 1,
+    "video_id": "7291651785746386219",
+    "username": "lovelycute_baby",
+    "url": "https://www.tiktok.com/@lovelycute_baby/video/7291651785746386219",
+    "title": "#cat #catsoftiktok ",
+    "play_count": 176038864,
+    "like_count": 14420631,
+    "comment_count": 69646,
+    "mp4": "01_lovelycute_baby_7291651785746386219.mp4",
+    "status": "blocked",
+    "posted_count": 1,
+    "last_posted_at": "2026-06-25T12:44:49"
+  },
+  "report": {
+    "generated_at": "2026-06-25T14:49:28",
+    "phase": "link_setup",
+    "summary": {
+      "followers": 541,
+      "follower_goal": 1000,
+      "ready_links": 0,
+      "total_products": 9,
+      "clicks_total": 0,
+      "clicks_7d": 0,
+      "top_category": {
+        "id": "toys",
+        "name": "遊びと運動",
+        "short_name": "遊び",
+        "score": 40,
+        "priority": 8,
+        "product_count": 2,
+        "ready_links": 0,
+        "clicks": 0,
+        "headline": "よく動く子、退屈しやすい子に。"
+      },
+      "next_link_target": {
+        "category_id": "toys",
+        "category": "遊び",
+        "category_score": 40,
+        "priority_score": 219,
+        "priority_reasons": [
+          "catbot反応",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: よく走る・遊び足りない猫",
+          "中単価"
+        ],
+        "product_id": "p2",
+        "product": "電動猫じゃらし",
+        "reason": "人が手を離していても短時間の運動を作れます。",
+        "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+        "care_note": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+        "clicks": 0,
+        "price_band": "中",
+        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+      }
+    },
+    "category_rows": [
+      {
+        "id": "toys",
+        "name": "遊びと運動",
+        "short_name": "遊び",
+        "score": 40,
+        "priority": 8,
+        "product_count": 2,
+        "ready_links": 0,
+        "clicks": 0,
+        "headline": "よく動く子、退屈しやすい子に。"
+      },
+      {
+        "id": "treats",
+        "name": "おやつ",
+        "short_name": "おやつ",
+        "score": 15,
+        "priority": 7,
+        "product_count": 2,
+        "ready_links": 0,
+        "clicks": 0,
+        "headline": "ごほうびは少量で、続けやすいものを。"
+      },
+      {
+        "id": "scratch",
+        "name": "爪とぎ",
+        "short_name": "爪とぎ",
+        "score": 6,
+        "priority": 6,
+        "product_count": 1,
+        "ready_links": 0,
+        "clicks": 0,
+        "headline": "家具より先に、気持ちよく削れる場所を。"
+      },
+      {
+        "id": "water",
+        "name": "水とごはん",
+        "short_name": "水とごはん",
+        "score": 5,
+        "priority": 5,
+        "product_count": 2,
+        "ready_links": 0,
+        "clicks": 0,
+        "headline": "毎日の水分とごはんをラクに整える。"
+      },
+      {
+        "id": "care",
+        "name": "お手入れ",
+        "short_name": "ケア",
+        "score": 4,
+        "priority": 4,
+        "product_count": 1,
+        "ready_links": 0,
+        "clicks": 0,
+        "headline": "抜け毛と日々のケアを軽くする。"
+      },
+      {
+        "id": "watch",
+        "name": "見守り",
+        "short_name": "見守り",
+        "score": 3,
+        "priority": 3,
+        "product_count": 1,
+        "ready_links": 0,
+        "clicks": 0,
+        "headline": "留守中の様子を見られる安心感。"
+      }
+    ],
+    "product_rows": [
+      {
+        "category_id": "toys",
+        "category": "遊び",
+        "category_score": 40,
+        "priority_score": 219,
+        "priority_reasons": [
+          "catbot反応",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: よく走る・遊び足りない猫",
+          "中単価"
+        ],
+        "product_id": "p2",
+        "product": "電動猫じゃらし",
+        "reason": "人が手を離していても短時間の運動を作れます。",
+        "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+        "care_note": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+        "clicks": 0,
+        "price_band": "中",
+        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+      },
+      {
+        "category_id": "toys",
+        "category": "遊び",
+        "category_score": 40,
+        "priority_score": 215,
+        "priority_reasons": [
+          "catbot反応",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: よく走る・遊び足りない猫"
+        ],
+        "product_id": "p1",
+        "product": "けりぐるみ",
+        "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
+        "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+        "care_note": "中綿や飾りを噛みちぎる子は、破れた時点で交換。小さい部品が出たらすぐ片付けます。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
+        "clicks": 0,
+        "price_band": "低",
+        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+      },
+      {
+        "category_id": "water",
+        "category": "水とごはん",
+        "category_score": 5,
+        "priority_score": 93,
+        "priority_reasons": [
+          "季節ケア",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: 水分・ごはんを整えたい猫",
+          "高単価"
+        ],
+        "product_id": "p2",
+        "product": "自動給餌器",
+        "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
+        "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
+        "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
+        "clicks": 0,
+        "price_band": "高",
+        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+      },
+      {
+        "category_id": "water",
+        "category": "水とごはん",
+        "category_score": 5,
+        "priority_score": 89,
+        "priority_reasons": [
+          "季節ケア",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: 水分・ごはんを整えたい猫",
+          "中単価"
+        ],
+        "product_id": "p1",
+        "product": "循環式水飲み器",
+        "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+        "check": "洗いやすさ、フィルター代、音の小ささを確認。",
+        "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
+        "clicks": 0,
+        "price_band": "中",
+        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+      },
+      {
+        "category_id": "scratch",
+        "category": "爪とぎ",
+        "category_score": 6,
+        "priority_score": 76,
+        "priority_reasons": [
+          "季節ケア",
+          "買う前チェック: よく走る・遊び足りない猫",
+          "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫"
+        ],
+        "product_id": "p1",
+        "product": "段ボール爪とぎ 大容量",
+        "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
+        "check": "粉が出にくいもの、滑りにくい形を優先。",
+        "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
+        "clicks": 0,
+        "price_band": "低",
+        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+      },
+      {
+        "category_id": "watch",
+        "category": "見守り",
+        "category_score": 3,
+        "priority_score": 71,
+        "priority_reasons": [
+          "季節ケア",
+          "買う前チェック: 留守番が多い猫",
+          "高単価"
+        ],
+        "product_id": "p1",
+        "product": "ペットカメラ",
+        "reason": "留守中の行動や体調変化に気づきやすくなります。",
+        "check": "画質、夜間撮影、録画、アプリの使いやすさを確認。",
+        "care_note": "カメラの音や動きで怖がる子は固定位置を変えます。見守りは補助なので、異変があれば直接確認します。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9",
+        "clicks": 0,
+        "price_band": "高",
+        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+      },
+      {
+        "category_id": "treats",
+        "category": "おやつ",
+        "category_score": 15,
+        "priority_score": 39,
+        "priority_reasons": [
+          "買う前チェック: 水分・ごはんを整えたい猫",
+          "中単価"
+        ],
+        "product_id": "p2",
+        "product": "無添加寄りのおやつ",
+        "reason": "毎日ではなくても、原材料を見て選びたい人向け。",
+        "check": "塩分、添加物、対象年齢を確認。",
+        "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E3%81%8A%E3%82%84%E3%81%A4+%E7%84%A1%E6%B7%BB%E5%8A%A0/",
+        "clicks": 0,
+        "price_band": "中",
+        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+      },
+      {
+        "category_id": "treats",
+        "category": "おやつ",
+        "category_score": 15,
+        "priority_score": 35,
+        "priority_reasons": [
+          "買う前チェック: 水分・ごはんを整えたい猫"
+        ],
+        "product_id": "p1",
+        "product": "CIAO ちゅーる系おやつ",
+        "reason": "少量のごほうびや水分補助として使いやすい定番です。",
+        "check": "年齢、体調、総合栄養食か一般食かを確認。",
+        "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=CIAO+%E3%81%A1%E3%82%85%E3%83%BC%E3%82%8B+%E7%8C%AB",
+        "clicks": 0,
+        "price_band": "低",
+        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+      },
+      {
+        "category_id": "care",
+        "category": "ケア",
+        "category_score": 4,
+        "priority_score": 23,
+        "priority_reasons": [
+          "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫",
+          "中単価"
+        ],
+        "product_id": "p1",
+        "product": "猫用ブラシ",
+        "reason": "換毛期の毛を減らし、部屋の掃除も少し楽になります。",
+        "check": "毛質に合う形、肌に強く当たりすぎないものを優先。",
+        "care_note": "嫌がる子は短時間から。皮膚が赤くなる、フケが増える、怒る時は強さや形が合っていない可能性があります。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%96%E3%83%A9%E3%82%B7",
+        "clicks": 0,
+        "price_band": "中",
+        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+      }
+    ],
+    "suggested_link_targets": [
+      {
+        "category_id": "toys",
+        "category": "遊び",
+        "category_score": 40,
+        "priority_score": 219,
+        "priority_reasons": [
+          "catbot反応",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: よく走る・遊び足りない猫",
+          "中単価"
+        ],
+        "product_id": "p2",
+        "product": "電動猫じゃらし",
+        "reason": "人が手を離していても短時間の運動を作れます。",
+        "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+        "care_note": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+        "clicks": 0,
+        "price_band": "中",
+        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+      },
+      {
+        "category_id": "toys",
+        "category": "遊び",
+        "category_score": 40,
+        "priority_score": 215,
+        "priority_reasons": [
+          "catbot反応",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: よく走る・遊び足りない猫"
+        ],
+        "product_id": "p1",
+        "product": "けりぐるみ",
+        "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
+        "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+        "care_note": "中綿や飾りを噛みちぎる子は、破れた時点で交換。小さい部品が出たらすぐ片付けます。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
+        "clicks": 0,
+        "price_band": "低",
+        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+      },
+      {
+        "category_id": "water",
+        "category": "水とごはん",
+        "category_score": 5,
+        "priority_score": 93,
+        "priority_reasons": [
+          "季節ケア",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: 水分・ごはんを整えたい猫",
+          "高単価"
+        ],
+        "product_id": "p2",
+        "product": "自動給餌器",
+        "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
+        "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
+        "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
+        "clicks": 0,
+        "price_band": "高",
+        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+      },
+      {
+        "category_id": "water",
+        "category": "水とごはん",
+        "category_score": 5,
+        "priority_score": 89,
+        "priority_reasons": [
+          "季節ケア",
+          "買う前チェック: 留守番が多い猫",
+          "買う前チェック: 水分・ごはんを整えたい猫",
+          "中単価"
+        ],
+        "product_id": "p1",
+        "product": "循環式水飲み器",
+        "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+        "check": "洗いやすさ、フィルター代、音の小ささを確認。",
+        "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
+        "clicks": 0,
+        "price_band": "中",
+        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+      },
+      {
+        "category_id": "scratch",
+        "category": "爪とぎ",
+        "category_score": 6,
+        "priority_score": 76,
+        "priority_reasons": [
+          "季節ケア",
+          "買う前チェック: よく走る・遊び足りない猫",
+          "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫"
+        ],
+        "product_id": "p1",
+        "product": "段ボール爪とぎ 大容量",
+        "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
+        "check": "粉が出にくいもの、滑りにくい形を優先。",
+        "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
+        "ready": false,
+        "link_kind": "search",
+        "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
+        "clicks": 0,
+        "price_band": "低",
+        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+      }
+    ],
+    "next_actions": [
+      {
+        "level": "warn",
+        "title": "次に作る商品リンク",
+        "detail": "toys/p2 電動猫じゃらし を最優先。"
+      },
+      {
+        "level": "info",
+        "title": "見方",
+        "detail": "クリックが出た検索リンクは実アフィリリンクへ優先差し替え。クリック前はカテゴリスコア順にリンクを作る。"
+      }
+    ]
+  },
+  "next_link_spotlight": {
+    "available": true,
+    "title": "次に整える猫用品",
+    "lead": "catbotの反応、季節ケア、買う前チェックから、次に詳しく見る候補を自動で選んでいます。",
+    "category_id": "toys",
+    "category": "遊び",
+    "product_id": "p2",
+    "product": "電動猫じゃらし",
+    "reason": "人が手を離していても短時間の運動を作れます。",
+    "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+    "price_band": "中",
+    "score": 219,
+    "reasons": [
+      "catbot反応",
+      "買う前チェック: 留守番が多い猫",
+      "買う前チェック: よく走る・遊び足りない猫",
+      "中単価"
+    ],
+    "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
+  },
+  "share_copy": {
+    "generated_at": "2026-06-25T14:49:28",
+    "phase": "launch_waiting",
+    "account": "@fuwafuwa_mono",
+    "public_url": "",
+    "url_hint": "公開URLが入ったらここに差し替え",
+    "followers": 541,
+    "follower_goal": 1000,
+    "ready_links": 0,
+    "trend_label": "遊び",
+    "trend_metric": "score 40",
+    "next_product": "電動猫じゃらし",
+    "next_category": "遊び",
+    "primary_text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。",
+    "texts": [
+      {
+        "id": "soft_launch",
+        "title": "通常共有",
+        "use_when": "公開直後や固定投稿で使う",
+        "text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。"
+      },
+      {
+        "id": "cat_first",
+        "title": "猫優先",
+        "use_when": "売り込み感を弱めたい時に使う",
+        "text": "ふわふわ猫の道具箱は、猫用品をすぐ買わせる場所ではなく、合わない理由・相談した方がいい状態・最初の試し方を先に見る場所にしています。\n今はcatbot反応から「遊び」まわりを更新中です。"
+      },
+      {
+        "id": "next_product",
+        "title": "次の1件",
+        "use_when": "商品リンクを1本ずつ整える時に使う",
+        "text": "次に整える猫用品は「電動猫じゃらし」。\nカテゴリは「遊び」で、catbot反応と買う前チェックから優先度を見ています。\n実リンクを入れる前に、怖がる子・誤飲しそうな子・体調不安がある子向けの注意も確認します。"
+      }
+    ],
+    "policy": [
+      "Xには商品直リンクを連投しない。",
+      "公開URLへ誘導し、サイト内で広告表記と買う前チェックを見せる。",
+      "バズ投稿への自己リプは短く、プロフィール導線を中心にする。"
+    ],
+    "posting_guard": {
+      "max_shop_posts_per_day": 2,
+      "min_hours_between_shop_posts": 6,
+      "max_self_replies_per_viral_post": 1,
+      "direct_product_link_allowed": false,
+      "preferred_url": "site_profile_url",
+      "allowed_contexts": [
+        "公開直後の固定投稿",
+        "バズ投稿への短い自己リプ",
+        "週次の更新報告"
+      ],
+      "avoid": [
+        "商品URLの連投",
+        "同じ文面の連投",
+        "ハッシュタグ過多",
+        "猫の不安や体調不良を煽る文面"
+      ]
+    }
+  },
+  "exported_at": "2026-06-25T14:49:28"
+}
