@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-25T20:00:18",
+      "dateModified": "2026-06-25T20:25:08",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -681,10 +681,12 @@
     transform:translateY(-1px);
   }
   .first-choice-art{
+    position:relative;
     display:block;
     width:100%;
     height:100%;
     min-height:150px;
+    overflow:hidden;
     border-bottom:1px solid #d8bea4;
     background-color:#f4eadb;
     background-image:url("assets/ai_gateway_choice_sheet.png");
@@ -692,11 +694,36 @@
     background-repeat:no-repeat;
     background-size:200% 200%;
     box-shadow:inset 0 0 0 1px rgba(255,255,255,.45);
+    transition:transform .18s ease, filter .18s ease;
   }
-  .first-choice-art[data-icon="match"]{background-position:0 0}
-  .first-choice-art[data-icon="advisor"]{background-position:100% 0}
-  .first-choice-art[data-icon="no-buy"]{background-position:0 100%}
-  .first-choice-art[data-icon="trends"]{background-position:100% 100%}
+  .first-choice-card:hover .first-choice-art{
+    transform:scale(1.02);
+    filter:saturate(1.05) contrast(1.02);
+  }
+  .first-choice-art[data-icon="match"]{
+    background-image:url("assets/ai_shortcut_match.png");
+    background-image:image-set(url("assets/ai_shortcut_match.webp") type("image/webp"), url("assets/ai_shortcut_match.png") type("image/png"));
+    background-size:cover;
+    background-position:center;
+  }
+  .first-choice-art[data-icon="advisor"]{
+    background-image:url("assets/ai_shortcut_advisor.png");
+    background-image:image-set(url("assets/ai_shortcut_advisor.webp") type("image/webp"), url("assets/ai_shortcut_advisor.png") type("image/png"));
+    background-size:cover;
+    background-position:center;
+  }
+  .first-choice-art[data-icon="no-buy"]{
+    background-image:url("assets/ai_shortcut_no_buy.png");
+    background-image:image-set(url("assets/ai_shortcut_no_buy.webp") type("image/webp"), url("assets/ai_shortcut_no_buy.png") type("image/png"));
+    background-size:cover;
+    background-position:center;
+  }
+  .first-choice-art[data-icon="trends"]{
+    background-image:url("assets/ai_shortcut_trends.png");
+    background-image:image-set(url("assets/ai_shortcut_trends.webp") type("image/webp"), url("assets/ai_shortcut_trends.png") type("image/png"));
+    background-size:cover;
+    background-position:center;
+  }
   .first-choice-copy{
     min-width:0;
     display:grid;
@@ -1044,10 +1071,10 @@
     display:grid;
     justify-items:center;
     align-content:start;
-    gap:4px;
-    width:82px;
-    min-width:82px;
-    min-height:76px;
+    gap:5px;
+    width:88px;
+    min-width:88px;
+    min-height:84px;
     border:0;
     border-radius:8px;
     background:transparent;
@@ -1076,8 +1103,8 @@
   }
   .mobile-image-menu-icon{
     display:block;
-    width:54px;
-    height:54px;
+    width:60px;
+    height:60px;
     border:1px solid #d8bea4;
     border-radius:8px;
     background-image:url("assets/ai_category_icon_sheet.png");
@@ -3555,15 +3582,15 @@
     }
     .mobile-image-menu-scroll::-webkit-scrollbar{display:none}
     .mobile-image-menu-button{
-      flex:0 0 82px;
-      width:82px;
-      min-width:82px;
-      min-height:90px;
+      flex:0 0 92px;
+      width:92px;
+      min-width:92px;
+      min-height:96px;
       padding:5px 5px 7px;
     }
     .mobile-image-menu-icon{
-      width:62px;
-      height:62px;
+      width:68px;
+      height:68px;
     }
     .hero{height:58vh;min-height:430px}
     .hero-inner{padding-bottom:108px}
