@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-25T16:16:46",
+      "dateModified": "2026-06-25T16:29:24",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -721,6 +721,107 @@
     font-size:13px;
     line-height:1.4;
     overflow-wrap:anywhere;
+  }
+  .trust-bridge{
+    display:grid;
+    grid-template-columns:minmax(280px,.88fr) minmax(0,1.12fr);
+    gap:14px;
+    align-items:stretch;
+    padding:14px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:linear-gradient(135deg,#fffdf8 0%,#fff8ef 58%,#efe1cf 100%);
+    box-shadow:0 12px 32px rgba(64,39,24,.12);
+  }
+  .trust-bridge-media{
+    position:relative;
+    overflow:hidden;
+    min-height:280px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#3a2417;
+  }
+  .trust-bridge-media picture,
+  .trust-bridge-media img{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  .trust-bridge-media img{
+    object-fit:cover;
+  }
+  .trust-bridge-media::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg,rgba(37,23,15,.04),rgba(37,23,15,.46));
+  }
+  .trust-bridge-copy{
+    min-width:0;
+    display:grid;
+    gap:12px;
+    align-content:center;
+  }
+  .trust-bridge-copy h2{
+    margin:0;
+    color:#25170f;
+    font-size:28px;
+    line-height:1.18;
+  }
+  .trust-bridge-copy p{
+    margin:0;
+    color:#5f4735;
+  }
+  .trust-steps{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:9px;
+  }
+  .trust-step{
+    min-width:0;
+    display:grid;
+    grid-template-columns:54px minmax(0,1fr);
+    gap:9px;
+    align-items:start;
+    padding:9px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#fffaf2;
+  }
+  .trust-step-icon{
+    display:block;
+    width:54px;
+    height:54px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background-color:#f4eadb;
+    background-image:url("assets/ai_shortcut_icon_sheet_v2.png");
+    background-image:image-set(url("assets/ai_shortcut_icon_sheet_v2.webp") type("image/webp"), url("assets/ai_shortcut_icon_sheet_v2.png") type("image/png"));
+    background-repeat:no-repeat;
+    background-size:300% 200%;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.42);
+  }
+  .trust-step-icon[data-icon="advisor"]{background-position:50% 0}
+  .trust-step-icon[data-icon="no-buy"]{background-position:100% 0}
+  .trust-step-icon[data-icon="trends"]{background-position:100% 100%}
+  .trust-step strong{
+    display:block;
+    color:#4e2f1f;
+    font-size:15px;
+    line-height:1.25;
+  }
+  .trust-step span{
+    display:block;
+    margin-top:3px;
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.35;
+    overflow-wrap:anywhere;
+  }
+  .trust-actions{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
   }
   .visual-menu{
     margin-top:18px;
@@ -3366,6 +3467,8 @@
   .policy p{margin:0}
   @media (max-width:900px){
     .first-choice-menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .trust-bridge{grid-template-columns:1fr}
+    .trust-bridge-media{min-height:220px}
     .visual-menu-layout{grid-template-columns:1fr}
     .visual-menu-feature{min-height:210px}
     .visual-menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -3493,6 +3596,23 @@
     .first-choice-copy{padding:8px}
     .first-choice-copy strong{font-size:15px}
     .first-choice-copy span{font-size:12px}
+    .trust-bridge{
+      margin-top:12px;
+      padding:10px;
+      gap:10px;
+    }
+    .trust-bridge-media{min-height:188px}
+    .trust-bridge-copy h2{font-size:24px}
+    .trust-steps{grid-template-columns:1fr}
+    .trust-step{
+      grid-template-columns:58px minmax(0,1fr);
+      min-height:78px;
+    }
+    .trust-step-icon{
+      width:58px;
+      height:58px;
+    }
+    .trust-actions .button{width:100%}
     .visual-menu{margin-top:12px}
     .visual-menu-head{display:block}
     .visual-menu-feature{min-height:188px}
@@ -3567,6 +3687,7 @@
       <a href="#visualMenu"><span class="nav-icon" data-icon="all" aria-hidden="true"></span><span>画像メニュー</span></a>
       <a href="#careRoute"><span class="nav-icon" data-icon="care-route" aria-hidden="true"></span><span>猫の状態</span></a>
       <a href="#catbotConnect"><span class="nav-icon" data-icon="catbot" aria-hidden="true"></span><span>catbotへ戻る</span></a>
+      <a href="#trustBridge"><span class="nav-icon" data-icon="advisor" aria-hidden="true"></span><span>猫優先</span></a>
       <a href="#followerMilestone"><span class="nav-icon" data-icon="trends" aria-hidden="true"></span><span>1000人準備</span></a>
       <a href="#safetySummary"><span class="nav-icon" data-icon="advisor" aria-hidden="true"></span><span>猫優先チェック</span></a>
       <a href="#noBuyGuide"><span class="nav-icon" data-icon="no-buy" aria-hidden="true"></span><span>買わない判断</span></a>
@@ -3609,6 +3730,10 @@
     <a class="mobile-image-menu-button" href="#advisor">
       <span class="mobile-image-menu-icon" data-icon="advisor" aria-hidden="true"></span>
       <span>チェック</span>
+    </a>
+    <a class="mobile-image-menu-button" href="#trustBridge">
+      <span class="mobile-image-menu-icon" data-icon="advisor" aria-hidden="true"></span>
+      <span>猫優先</span>
     </a>
     <a class="mobile-image-menu-button" href="#noBuyGuide">
       <span class="mobile-image-menu-icon" data-icon="no-buy" aria-hidden="true"></span>
@@ -3738,6 +3863,50 @@
         <span>最初に入れるリンク候補を見ます。</span>
       </span>
     </a>
+  </section>
+
+  <section id="trustBridge" class="trust-bridge" aria-label="猫優先の選び方">
+    <div class="trust-bridge-media" aria-hidden="true">
+      <picture>
+        <source type="image/webp" srcset="assets/ai_cat_care_scene-960.webp 960w, assets/ai_cat_care_scene.webp 1672w" sizes="(max-width:820px) 100vw, 38vw">
+        <img src="assets/ai_cat_care_scene.jpg" srcset="assets/ai_cat_care_scene-960.jpg 960w, assets/ai_cat_care_scene.jpg 1672w" sizes="(max-width:820px) 100vw, 38vw" width="1672" height="941" alt="" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <div class="trust-bridge-copy">
+      <div>
+        <span class="badge ready">猫優先の道具箱</span>
+        <h2>すぐ買わせるより、先に合うかを見る。</h2>
+      </div>
+      <p>catbotで反応が強い猫テーマを入口にしながら、商品リンクの前に「合う子」「合わないかも」「やめるサイン」を見られる形にしています。</p>
+      <div class="trust-steps">
+        <div class="trust-step">
+          <span class="trust-step-icon" data-icon="advisor" aria-hidden="true"></span>
+          <span>
+            <strong>買う前に見る</strong>
+            <span>音、サイズ、置き場所、誤飲しにくさを先に確認。</span>
+          </span>
+        </div>
+        <div class="trust-step">
+          <span class="trust-step-icon" data-icon="no-buy" aria-hidden="true"></span>
+          <span>
+            <strong>買わない判断</strong>
+            <span>怖がる、食べそう、体調不安がある時は止める。</span>
+          </span>
+        </div>
+        <div class="trust-step">
+          <span class="trust-step-icon" data-icon="trends" aria-hidden="true"></span>
+          <span>
+            <strong>少しずつ更新</strong>
+            <span>最初は1本だけ。反応と安全メモを見て増やす。</span>
+          </span>
+        </div>
+      </div>
+      <div class="trust-actions">
+        <a class="button product" href="#catMatch">うちの子から選ぶ</a>
+        <a class="button search" href="#advisor">買う前チェック</a>
+        <a class="button search" href="#products">猫用品を見る</a>
+      </div>
+    </div>
   </section>
 
   <section id="visualMenu" class="visual-menu" aria-label="画像で選ぶ猫用品メニュー">
