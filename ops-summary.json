@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
-  "exported_at": "2026-06-25T14:49:28",
-  "phase": "setup",
+  "generated_at": "2026-06-25T14:56:29",
+  "exported_at": "2026-06-25T14:56:29",
+  "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
-  "public_url": "",
-  "public_url_ready": false,
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "public_url_ready": true,
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "followers": 541,
@@ -25,11 +25,6 @@
       "id": "affiliate_link",
       "title": "実アフィリリンク",
       "detail": "まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。"
-    },
-    {
-      "id": "public_url",
-      "title": "公開URL",
-      "detail": "アップロード先のURLをcatbot側へ登録し、Xプロフィールのwebsite欄にも使う。"
     }
   ],
   "shop_post_guard": {
@@ -45,12 +40,8 @@
     "hours_since_last": null,
     "next_allowed_at": "",
     "direct_product_link_allowed": false,
-    "preferred_url": "site_profile_url",
+    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "blockers": [
-      {
-        "id": "public_url",
-        "detail": "public URL is not set"
-      },
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
@@ -58,10 +49,6 @@
     ],
     "rate_blockers": [],
     "launch_blockers": [
-      {
-        "id": "public_url",
-        "detail": "public URL is not set"
-      },
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
@@ -310,7 +297,7 @@
       "min_hours_between_shop_posts": 6,
       "max_self_replies_per_viral_post": 1,
       "direct_product_link_allowed": false,
-      "preferred_url": "site_profile_url",
+      "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
       "allowed_contexts": [
         "公開直後の固定投稿",
         "バズ投稿への短い自己リプ",
@@ -326,19 +313,9 @@
   },
   "owner_commands": [
     {
-      "title": "URLとリンクをまとめて反映する",
-      "command": ".\\affiliate_site_ops.bat finish-launch --dry-run --% \"https://もしもURL\" \"https://公開URL/\"",
-      "detail": "まずdry-runで検査。問題なければ同じURLで --dry-run を外して実行する。"
-    },
-    {
       "title": "もしも承認と最初のリンク作業台を開く",
       "command": ".\\affiliate_site_ops.bat moshimo-workbench --force",
       "detail": "もしも承認状態も見ながら、check-url と set-next のコマンドを作る。"
-    },
-    {
-      "title": "公開URL作業台を開く",
-      "command": ".\\affiliate_site_ops.bat public-url-workbench --force",
-      "detail": "公開URLの登録・検証コマンドを作る作業台を開く。"
     },
     {
       "title": "公開前チェック",
@@ -349,12 +326,12 @@
   "post_launch_commands": [
     {
       "title": "公開URLの外部確認",
-      "command": ".\\affiliate_site_ops.bat verify-public-url \"https://公開URL/\"",
+      "command": ".\\affiliate_site_ops.bat verify-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
       "detail": "公開先からトップ、JSON、画像、商品詳細、statusが読めるか確認する。"
     },
     {
       "title": "監視ログを1回残す",
-      "command": ".\\affiliate_site_ops.bat monitor-public-url \"https://公開URL/\"",
+      "command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
       "detail": "確認結果を public_url_monitor.jsonl に保存し、CATBOT_PUBLIC_MONITOR_REPORT.md も更新する。公開直後に1回、以後は異常時や週次で実行する。"
     }
   ],

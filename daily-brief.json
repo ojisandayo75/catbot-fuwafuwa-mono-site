@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
-  "exported_at": "2026-06-25T14:49:28",
+  "generated_at": "2026-06-25T14:56:29",
+  "exported_at": "2026-06-25T14:56:29",
   "account": "@fuwafuwa_mono",
-  "phase": "setup",
-  "public_url": "",
-  "public_url_ready": false,
+  "phase": "needs_affiliate_link",
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "public_url_ready": true,
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "today": {
@@ -287,7 +287,7 @@
       "min_hours_between_shop_posts": 6,
       "max_self_replies_per_viral_post": 1,
       "direct_product_link_allowed": false,
-      "preferred_url": "site_profile_url",
+      "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
       "allowed_contexts": [
         "公開直後の固定投稿",
         "バズ投稿への短い自己リプ",
@@ -310,12 +310,8 @@
     "min_interval_hours": 6.0,
     "next_allowed_at": "",
     "direct_product_link_allowed": false,
-    "preferred_url": "site_profile_url",
+    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "blockers": [
-      {
-        "id": "public_url",
-        "detail": "public URL is not set"
-      },
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
@@ -326,21 +322,9 @@
   },
   "next_actions": [
     {
-      "title": "URLとリンクをまとめて反映する",
-      "detail": "まずdry-runで検査。問題なければ同じURLで --dry-run を外して実行する。",
-      "command": ".\\affiliate_site_ops.bat finish-launch --dry-run --% \"https://もしもURL\" \"https://公開URL/\"",
-      "source": "launch_gate"
-    },
-    {
       "title": "もしも承認と最初のリンク作業台を開く",
       "detail": "もしも承認状態も見ながら、check-url と set-next のコマンドを作る。",
       "command": ".\\affiliate_site_ops.bat moshimo-workbench --force",
-      "source": "launch_gate"
-    },
-    {
-      "title": "公開URL作業台を開く",
-      "detail": "公開URLの登録・検証コマンドを作る作業台を開く。",
-      "command": ".\\affiliate_site_ops.bat public-url-workbench --force",
       "source": "launch_gate"
     },
     {

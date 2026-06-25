@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
+  "generated_at": "2026-06-25T14:56:29",
   "phase": "launch_waiting",
   "account": "@fuwafuwa_mono",
-  "public_url": "",
-  "url_hint": "公開URLが入ったらここに差し替え",
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "url_hint": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "followers": 541,
   "follower_goal": 1000,
   "ready_links": 0,
@@ -42,7 +42,7 @@
     "min_hours_between_shop_posts": 6,
     "max_self_replies_per_viral_post": 1,
     "direct_product_link_allowed": false,
-    "preferred_url": "site_profile_url",
+    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "allowed_contexts": [
       "公開直後の固定投稿",
       "バズ投稿への短い自己リプ",
@@ -55,20 +55,15 @@
       "猫の不安や体調不良を煽る文面"
     ]
   },
-  "exported_at": "2026-06-25T14:49:28",
-  "public_url_configured": false,
-  "public_url_valid": false,
-  "public_base_url": "",
+  "exported_at": "2026-06-25T14:56:29",
+  "public_url_configured": true,
+  "public_url_valid": true,
+  "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "launch_blockers": [
     {
       "id": "affiliate_link",
       "title": "実アフィリリンク",
       "detail": "まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。"
-    },
-    {
-      "id": "public_url",
-      "title": "公開URL",
-      "detail": "アップロード先のURLをcatbot側へ登録し、Xプロフィールのwebsite欄にも使う。"
     }
   ],
   "next_link": {

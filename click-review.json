@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
-  "exported_at": "2026-06-25T14:49:28",
-  "phase": "setup",
+  "generated_at": "2026-06-25T14:56:29",
+  "exported_at": "2026-06-25T14:56:29",
+  "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
-  "public_base_url": "",
-  "public_url_ready": false,
+  "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "public_url_ready": true,
   "state": "no_clicks_yet",
   "clicks_total": 0,
   "clicks_7d": 0,
@@ -225,7 +225,7 @@
     "Keep cat-fit, no-buy, and safety notes visible before pushing product links."
   ],
   "commands": {
-    "open_ops_panel": "https://PUBLIC_URL/?ops=1",
+    "open_ops_panel": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/?ops=1",
     "import_dry_run": ".\\affiliate_site_ops.bat import-clicks catbot-local-clicks-YYYY-MM-DD.csv --dry-run",
     "import_sync": ".\\affiliate_site_ops.bat import-clicks catbot-local-clicks-YYYY-MM-DD.csv --sync --smoke-test",
     "click_review": ".\\affiliate_site_ops.bat click-review",

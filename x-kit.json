@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
-  "exported_at": "2026-06-25T14:49:28",
+  "generated_at": "2026-06-25T14:56:29",
+  "exported_at": "2026-06-25T14:56:29",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
-  "public_url": "",
-  "public_url_ready": false,
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "public_url_ready": true,
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "followers": 541,
@@ -21,12 +21,8 @@
     "hours_since_last": null,
     "next_allowed_at": "",
     "direct_product_link_allowed": false,
-    "preferred_url": "site_profile_url",
+    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "blockers": [
-      {
-        "id": "public_url",
-        "detail": "public URL is not set"
-      },
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
@@ -34,10 +30,6 @@
     ],
     "rate_blockers": [],
     "launch_blockers": [
-      {
-        "id": "public_url",
-        "detail": "public URL is not set"
-      },
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
@@ -52,19 +44,19 @@
       "id": "profile",
       "title": "プロフィール文",
       "use_when": "Xプロフィールの自己紹介や固定文に使う",
-      "text": "猫との暮らしに合う道具を、買う前チェックつきでまとめ中です。公開URL準備中。"
+      "text": "猫との暮らしに合う道具を、買う前チェックつきでまとめています。https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
     },
     {
       "id": "pinned",
       "title": "固定投稿",
       "use_when": "公開URLをプロフィールに入れた後の固定投稿に使う",
-      "text": "猫用品をすぐ買わせる場所ではなく、合わない理由・やめるサイン・最初の試し方から見られるページを準備中です。\nいまは「遊び」まわり、次は「電動猫じゃらし」を整えています。"
+      "text": "猫用品をすぐ買わせる場所ではなく、合わない理由・やめるサイン・最初の試し方から見られるページを作りました。\nいまは「遊び」まわり、次は「電動猫じゃらし」を整えています。\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
     },
     {
       "id": "soft_reply",
       "title": "バズ投稿への短い自己リプ",
       "use_when": "shop-post-guardがOKの時だけ、商品直リンクなしで使う",
-      "text": "猫に合うかを先に見られるよう、買う前チェックと診断ページを準備中です。公開後はプロフィールから案内します。"
+      "text": "猫に合うかを先に見られるよう、買う前チェックと診断ページにまとめています。\nプロフィールのサイトから見られます: https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
     },
     {
       "id": "soft_launch",

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
+  "generated_at": "2026-06-25T14:56:29",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "tagline": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
     "account": "@fuwafuwa_mono",
     "follower_goal": 1000,
     "disclosure": "このサイトには広告・アフィリエイトリンクを含む場合があります。猫の安全と暮らしやすさを優先して選びます。",
-    "profile_url": "",
+    "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "moshimo": {
       "amazon_status": "pending",
       "rakuten_status": "pending"
@@ -44,11 +44,6 @@
   "next_actions": [
     {
       "level": "warn",
-      "title": "XプロフィールURL未設定",
-      "detail": "公開URLが決まったら site.profile_url に入れて、Xのwebsite欄にも設定する。"
-    },
-    {
-      "level": "warn",
       "title": "提携リンク未設定",
       "detail": "もしもで発行したAmazon/楽天リンクを affiliate_products.json の affiliate_url に入れる。"
     },
@@ -60,7 +55,7 @@
   ],
   "copy": {
     "phase": "育成中",
-    "profile": "毎日かわいい猫動画を集めています。猫との暮らしに役立つ道具も少しずつまとめ中: /shop",
+    "profile": "毎日かわいい猫動画を集めています。猫との暮らしに役立つ道具も少しずつまとめ中: https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "pinned": "猫動画を毎日見ている中で、これは猫のためになりそうと思った道具を ふわふわ猫の道具箱 にまとめています。\n売り込みより、遊び・水分・爪とぎ・見守りの選び方を中心に更新します。",
     "soft_reply": "見てくれてありがとう。こういう猫の瞬間が好きで、猫との暮らしに役立つものも少しずつまとめています。今は遊びまわりを整理中です。"
   },
@@ -754,7 +749,7 @@
     "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
   },
   "catbot_trends": {
-    "generated_at": "2026-06-25T14:49:28",
+    "generated_at": "2026-06-25T14:56:29",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -789,7 +784,7 @@
     "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
   },
   "purchase_advisor": {
-    "generated_at": "2026-06-25T14:49:28",
+    "generated_at": "2026-06-25T14:56:29",
     "cards": [
       {
         "id": "home-alone",
@@ -926,7 +921,7 @@
     "summary": "猫の性格・暮らし・catbotの反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
   },
   "update_notes": {
-    "generated_at": "2026-06-25T14:49:28",
+    "generated_at": "2026-06-25T14:56:29",
     "cards": [
       {
         "title": "フォロワー進捗",
@@ -1483,7 +1478,7 @@
     "last_posted_at": "2026-06-25T12:44:49"
   },
   "report": {
-    "generated_at": "2026-06-25T14:49:28",
+    "generated_at": "2026-06-25T14:56:29",
     "phase": "link_setup",
     "summary": {
       "followers": 541,
@@ -1943,11 +1938,11 @@
     "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
   },
   "share_copy": {
-    "generated_at": "2026-06-25T14:49:28",
+    "generated_at": "2026-06-25T14:56:29",
     "phase": "launch_waiting",
     "account": "@fuwafuwa_mono",
-    "public_url": "",
-    "url_hint": "公開URLが入ったらここに差し替え",
+    "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+    "url_hint": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "followers": 541,
     "follower_goal": 1000,
     "ready_links": 0,
@@ -1986,7 +1981,7 @@
       "min_hours_between_shop_posts": 6,
       "max_self_replies_per_viral_post": 1,
       "direct_product_link_allowed": false,
-      "preferred_url": "site_profile_url",
+      "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
       "allowed_contexts": [
         "公開直後の固定投稿",
         "バズ投稿への短い自己リプ",
@@ -2000,5 +1995,5 @@
       ]
     }
   },
-  "exported_at": "2026-06-25T14:49:28"
+  "exported_at": "2026-06-25T14:56:29"
 }

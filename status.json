@@ -1,16 +1,14 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
-  "exported_at": "2026-06-25T14:49:28",
-  "phase": "setup",
+  "generated_at": "2026-06-25T14:56:29",
+  "exported_at": "2026-06-25T14:56:29",
+  "phase": "needs_affiliate_link",
   "site_name": "ふわふわ猫の道具箱",
-  "public_url_configured": false,
-  "public_url_valid": false,
-  "public_url_entered": false,
-  "public_url_raw": "",
-  "public_url_errors": [
-    "public URL must be a valid https URL"
-  ],
-  "public_base_url": "",
+  "public_url_configured": true,
+  "public_url_valid": true,
+  "public_url_entered": true,
+  "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "public_url_errors": [],
+  "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "followers": 541,
   "follower_goal": 1000,
   "followers_to_goal": 459,
@@ -240,11 +238,6 @@
   "next_actions": [
     {
       "level": "warn",
-      "title": "XプロフィールURL未設定",
-      "detail": "公開URLが決まったら site.profile_url に入れて、Xのwebsite欄にも設定する。"
-    },
-    {
-      "level": "warn",
       "title": "提携リンク未設定",
       "detail": "もしもで発行したAmazon/楽天リンクを affiliate_products.json の affiliate_url に入れる。"
     },
@@ -259,28 +252,13 @@
       "id": "affiliate_link",
       "title": "実アフィリリンク",
       "detail": "まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。"
-    },
-    {
-      "id": "public_url",
-      "title": "公開URL",
-      "detail": "アップロード先のURLをcatbot側へ登録し、Xプロフィールのwebsite欄にも使う。"
     }
   ],
   "owner_commands": [
     {
-      "title": "URLとリンクをまとめて反映する",
-      "command": ".\\affiliate_site_ops.bat finish-launch --dry-run --% \"https://もしもURL\" \"https://公開URL/\"",
-      "detail": "まずdry-runで検査。問題なければ同じURLで --dry-run を外して実行する。"
-    },
-    {
       "title": "もしも承認と最初のリンク作業台を開く",
       "command": ".\\affiliate_site_ops.bat moshimo-workbench --force",
       "detail": "もしも承認状態も見ながら、check-url と set-next のコマンドを作る。"
-    },
-    {
-      "title": "公開URL作業台を開く",
-      "command": ".\\affiliate_site_ops.bat public-url-workbench --force",
-      "detail": "公開URLの登録・検証コマンドを作る作業台を開く。"
     },
     {
       "title": "公開前チェック",
@@ -291,12 +269,12 @@
   "post_launch_commands": [
     {
       "title": "公開URLの外部確認",
-      "command": ".\\affiliate_site_ops.bat verify-public-url \"https://公開URL/\"",
+      "command": ".\\affiliate_site_ops.bat verify-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
       "detail": "公開先からトップ、JSON、画像、商品詳細、statusが読めるか確認する。"
     },
     {
       "title": "監視ログを1回残す",
-      "command": ".\\affiliate_site_ops.bat monitor-public-url \"https://公開URL/\"",
+      "command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
       "detail": "確認結果を public_url_monitor.jsonl に保存し、CATBOT_PUBLIC_MONITOR_REPORT.md も更新する。公開直後に1回、以後は異常時や週次で実行する。"
     }
   ],
@@ -305,9 +283,9 @@
     "max_stale_hours": 26,
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
-    "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://公開URL/\"",
-    "generated_at": "2026-06-25T14:49:28",
-    "exported_at": "2026-06-25T14:49:28",
+    "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
+    "generated_at": "2026-06-25T14:56:29",
+    "exported_at": "2026-06-25T14:56:29",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -349,9 +327,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-25T14:49:30",
+    "checked_at": "2026-06-25T14:56:31",
     "synced": true,
-    "last_exported_at": "2026-06-25T14:49:29",
+    "last_exported_at": "2026-06-25T14:56:30",
     "ready_links": 0,
     "total_products": 9,
     "followers": 541,
@@ -361,7 +339,7 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-25T14:30:00",
+        "deployed_at": "2026-06-25T14:49:32",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 131,
         "total_bytes": 40866096

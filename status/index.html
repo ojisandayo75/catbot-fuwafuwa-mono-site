@@ -43,10 +43,10 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <a class="button" href="../">トップへ戻る</a>
   </div>
   <div class="grid">
-    <div class="card"><span class="label">フェーズ</span><b>setup</b></div>
+    <div class="card"><span class="label">フェーズ</span><b>needs_affiliate_link</b></div>
     <div class="card"><span class="label">フォロワー</span><b>541</b><p>目標まで 459</p></div>
     <div class="card"><span class="label">提携リンク</span><b>0 / 9</b></div>
-    <div class="card"><span class="label">公開URL</span><b>未設定</b></div>
+    <div class="card"><span class="label">公開URL</span><b>OK</b></div>
   </div>
   <section class="card" style="margin-top:12px">
     <span class="label">1,000人切り替え</span>
@@ -62,36 +62,15 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
           <strong>実アフィリリンク</strong>
           <p>まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。</p>
         </li>
-        
-
-        <li>
-          <span class="badge warn">未完了</span>
-          <strong>公開URL</strong>
-          <p>アップロード先のURLをcatbot側へ登録し、Xプロフィールのwebsite欄にも使う。</p>
-        </li>
         </ul>
   </section>
   <section class="card" style="margin-top:12px">
     <span class="label">手元で実行するコマンド</span>
     <ul>
         <li>
-          <strong>URLとリンクをまとめて反映する</strong>
-          <code>.\affiliate_site_ops.bat finish-launch --dry-run --% &quot;https://もしもURL&quot; &quot;https://公開URL/&quot;</code>
-          <p>まずdry-runで検査。問題なければ同じURLで --dry-run を外して実行する。</p>
-        </li>
-        
-
-        <li>
           <strong>もしも承認と最初のリンク作業台を開く</strong>
           <code>.\affiliate_site_ops.bat moshimo-workbench --force</code>
           <p>もしも承認状態も見ながら、check-url と set-next のコマンドを作る。</p>
-        </li>
-        
-
-        <li>
-          <strong>公開URL作業台を開く</strong>
-          <code>.\affiliate_site_ops.bat public-url-workbench --force</code>
-          <p>公開URLの登録・検証コマンドを作る作業台を開く。</p>
         </li>
         
 
@@ -108,14 +87,14 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <ul>
         <li>
           <strong>公開URLの外部確認</strong>
-          <code>.\affiliate_site_ops.bat verify-public-url &quot;https://公開URL/&quot;</code>
+          <code>.\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code>
           <p>公開先からトップ、JSON、画像、商品詳細、statusが読めるか確認する。</p>
         </li>
         
 
         <li>
           <strong>監視ログを1回残す</strong>
-          <code>.\affiliate_site_ops.bat monitor-public-url &quot;https://公開URL/&quot;</code>
+          <code>.\affiliate_site_ops.bat monitor-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code>
           <p>確認結果を public_url_monitor.jsonl に保存し、CATBOT_PUBLIC_MONITOR_REPORT.md も更新する。公開直後に1回、以後は異常時や週次で実行する。</p>
         </li>
         </ul>
@@ -123,7 +102,7 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
   <section class="card" style="margin-top:12px">
     <span class="label">自動更新</span>
     <strong>OK</strong>
-    <p>最終更新: 2026-06-25T14:49:29</p>
+    <p>最終更新: 2026-06-25T14:56:30</p>
     <p>タスク: Ready / 最終結果 0 / 次回 2026-06-25T14:58:08</p>
   </section>
   <section class="card" style="margin-top:12px">
@@ -209,13 +188,6 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <ul>
         <li>
           <span class="badge warn">warn</span>
-          <strong>XプロフィールURL未設定</strong>
-          <p>公開URLが決まったら site.profile_url に入れて、Xのwebsite欄にも設定する。</p>
-        </li>
-        
-
-        <li>
-          <span class="badge warn">warn</span>
           <strong>提携リンク未設定</strong>
           <p>もしもで発行したAmazon/楽天リンクを affiliate_products.json の affiliate_url に入れる。</p>
         </li>
@@ -240,7 +212,7 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <a class="button" href="../link-health.json">link-health.json</a>
     <a class="button" href="../status.json">status.json</a>
   </div>
-  <p style="margin-top:16px">生成: 2026-06-25T14:49:28 / 書き出し: 2026-06-25T14:49:28</p>
+  <p style="margin-top:16px">生成: 2026-06-25T14:56:29 / 書き出し: 2026-06-25T14:56:29</p>
 </main>
 </body>
 </html>

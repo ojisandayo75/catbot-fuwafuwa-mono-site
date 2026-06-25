@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
-  "exported_at": "2026-06-25T14:49:28",
+  "generated_at": "2026-06-25T14:56:29",
+  "exported_at": "2026-06-25T14:56:29",
   "account": "@fuwafuwa_mono",
-  "phase": "setup",
+  "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
   "monetization_ready": false,
-  "public_url_ready": false,
-  "public_url": "",
+  "public_url_ready": true,
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "first_affiliate_link_required": true,
@@ -208,11 +208,6 @@
       "id": "affiliate_link",
       "title": "実アフィリリンク",
       "detail": "まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。"
-    },
-    {
-      "id": "public_url",
-      "title": "公開URL",
-      "detail": "アップロード先のURLをcatbot側へ登録し、Xプロフィールのwebsite欄にも使う。"
     }
   ],
   "shop_post_guard": {
@@ -221,9 +216,9 @@
     "daily_cap": 2,
     "min_interval_hours": 6.0,
     "direct_product_link_allowed": false,
-    "preferred_url": "site_profile_url",
+    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "public_monitor_required": true,
-    "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://PUBLIC_URL/\"",
+    "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
     "command": ".\\affiliate_site_ops.bat shop-post-guard --json"
   },
   "cat_first_policy": [
@@ -239,8 +234,8 @@
     "set_public_url": ".\\affiliate_site_ops.bat profile-url \"https://PUBLIC_URL/\" --package --smoke-test",
     "launch_check": ".\\affiliate_site_ops.bat launch-check",
     "preview_check": ".\\affiliate_site_ops.bat preview-check",
-    "verify_public_url": ".\\affiliate_site_ops.bat verify-public-url \"https://PUBLIC_URL/\"",
-    "monitor_public_url": ".\\affiliate_site_ops.bat monitor-public-url \"https://PUBLIC_URL/\"",
+    "verify_public_url": ".\\affiliate_site_ops.bat verify-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
+    "monitor_public_url": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
     "shop_post_guard": ".\\affiliate_site_ops.bat shop-post-guard --json"
   },
   "public_files": {

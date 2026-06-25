@@ -1,21 +1,19 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
-  "public_url_configured": false,
-  "public_url_valid": false,
-  "public_url_entered": false,
-  "public_url_raw": "",
-  "public_url_errors": [
-    "public URL must be a valid https URL"
-  ],
-  "public_base_url": "",
+  "generated_at": "2026-06-25T14:56:29",
+  "public_url_configured": true,
+  "public_url_valid": true,
+  "public_url_entered": true,
+  "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "public_url_errors": [],
+  "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "route_count": 24,
-  "absolute_url_count": 0,
+  "absolute_url_count": 24,
   "routes": [
     {
       "kind": "home",
       "path": "/",
       "title": "ふわふわ猫の道具箱",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
       "lastmod": "2026-06-25",
       "changefreq": "daily",
       "priority": 1.0
@@ -24,7 +22,7 @@
       "kind": "policy",
       "path": "policy/",
       "title": "選定方針と広告表記",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/policy/",
       "lastmod": "2026-06-25",
       "changefreq": "monthly",
       "priority": 0.7
@@ -33,7 +31,7 @@
       "kind": "updates",
       "path": "updates/",
       "title": "自動更新履歴",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/updates/",
       "lastmod": "2026-06-25",
       "changefreq": "daily",
       "priority": 0.7
@@ -42,7 +40,7 @@
       "kind": "buying-check",
       "path": "buying-check/",
       "title": "Catbot 買う前チェック",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/buying-check/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.8
@@ -51,7 +49,7 @@
       "kind": "cat-quiz",
       "path": "quiz/",
       "title": "Catbot うちの子診断",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/quiz/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.85
@@ -60,7 +58,7 @@
       "kind": "guide",
       "path": "guides/toys/",
       "title": "よく走る・跳ぶ子",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/toys/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.8
@@ -69,7 +67,7 @@
       "kind": "guide",
       "path": "guides/treats/",
       "title": "ごほうびで仲良くしたい子",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/treats/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.8
@@ -78,7 +76,7 @@
       "kind": "guide",
       "path": "guides/scratch/",
       "title": "家具で爪とぎしがちな子",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/scratch/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.8
@@ -87,7 +85,7 @@
       "kind": "guide",
       "path": "guides/water/",
       "title": "水をあまり飲まない子",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/water/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.8
@@ -96,7 +94,7 @@
       "kind": "guide",
       "path": "guides/care/",
       "title": "抜け毛が気になる子",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/care/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.8
@@ -105,7 +103,7 @@
       "kind": "guide",
       "path": "guides/watch/",
       "title": "留守番が多い子",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/watch/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.8
@@ -114,7 +112,7 @@
       "kind": "match",
       "path": "matches/home-alone/",
       "title": "留守番が多い猫",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/matches/home-alone/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.85
@@ -123,7 +121,7 @@
       "kind": "match",
       "path": "matches/active/",
       "title": "よく走る・遊び足りない猫",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/matches/active/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.85
@@ -132,7 +130,7 @@
       "kind": "match",
       "path": "matches/hydration/",
       "title": "水分・ごはんを整えたい猫",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/matches/hydration/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.85
@@ -141,7 +139,7 @@
       "kind": "match",
       "path": "matches/daily-care/",
       "title": "毛・爪・部屋のケアを楽にしたい猫",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/matches/daily-care/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.85
@@ -150,7 +148,7 @@
       "kind": "product",
       "path": "products/toys/p1/",
       "title": "けりぐるみ - 遊び",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/toys/p1/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75
@@ -159,7 +157,7 @@
       "kind": "product",
       "path": "products/toys/p2/",
       "title": "電動猫じゃらし - 遊び",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/toys/p2/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75
@@ -168,7 +166,7 @@
       "kind": "product",
       "path": "products/treats/p1/",
       "title": "CIAO ちゅーる系おやつ - おやつ",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/treats/p1/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75
@@ -177,7 +175,7 @@
       "kind": "product",
       "path": "products/treats/p2/",
       "title": "無添加寄りのおやつ - おやつ",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/treats/p2/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75
@@ -186,7 +184,7 @@
       "kind": "product",
       "path": "products/scratch/p1/",
       "title": "段ボール爪とぎ 大容量 - 爪とぎ",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/scratch/p1/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75
@@ -195,7 +193,7 @@
       "kind": "product",
       "path": "products/water/p1/",
       "title": "循環式水飲み器 - 水とごはん",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p1/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75
@@ -204,7 +202,7 @@
       "kind": "product",
       "path": "products/water/p2/",
       "title": "自動給餌器 - 水とごはん",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p2/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75
@@ -213,7 +211,7 @@
       "kind": "product",
       "path": "products/care/p1/",
       "title": "猫用ブラシ - ケア",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/care/p1/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75
@@ -222,7 +220,7 @@
       "kind": "product",
       "path": "products/watch/p1/",
       "title": "ペットカメラ - 見守り",
-      "loc": "",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/watch/p1/",
       "lastmod": "2026-06-25",
       "changefreq": "weekly",
       "priority": 0.75

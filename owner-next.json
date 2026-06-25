@@ -1,24 +1,23 @@
 {
-  "generated_at": "2026-06-25T14:49:28",
-  "exported_at": "2026-06-25T14:49:28",
-  "state": "needs_link_and_public_url",
-  "headline": "残りは実リンクと公開URL",
-  "primary_action": "もしもリンクを1本作り、ZIPを公開してURLを登録する",
+  "generated_at": "2026-06-25T14:56:29",
+  "exported_at": "2026-06-25T14:56:29",
+  "state": "needs_first_affiliate_link",
+  "headline": "残りは実アフィリリンク",
+  "primary_action": "toys/p2 の追跡付きURLを保存する",
   "account": "@fuwafuwa_mono",
   "followers": 541,
   "follower_goal": 1000,
   "followers_to_goal": 459,
   "ready_links": 0,
   "total_products": 9,
-  "public_url_ready": false,
-  "public_base_url": "",
+  "public_url_ready": true,
+  "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "moshimo": {
     "amazon_status": "pending",
     "rakuten_status": "pending"
   },
   "blockers": [
-    "実アフィリリンク",
-    "公開URL"
+    "実アフィリリンク"
   ],
   "next_steps": [
     {
@@ -38,7 +37,7 @@
     },
     {
       "id": "public_url",
-      "done": false,
+      "done": true,
       "title": "サイトを公開してURLを登録する",
       "detail": "dist/catbot-affiliate-site.zip をNetlify、Cloudflare Pages、Vercelなどへアップロードし、開けたURLをcatbot側に登録します。",
       "command": ".\\affiliate_site_ops.bat public-url-workbench --force",
