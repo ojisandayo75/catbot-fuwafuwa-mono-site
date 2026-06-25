@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-06-25T20:58:32",
-  "generated_at": "2026-06-25T20:58:32",
+  "exported_at": "2026-06-25T21:04:46",
+  "generated_at": "2026-06-25T21:04:46",
   "phase": "needs_affiliate_link",
   "public_url_configured": true,
   "followers": 541,
@@ -251,8 +251,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-25T20:58:32",
-    "exported_at": "2026-06-25T20:58:32",
+    "generated_at": "2026-06-25T21:04:46",
+    "exported_at": "2026-06-25T21:04:46",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -313,23 +313,23 @@
   "revenue_plan": "revenue-plan.json",
   "revenue_page": "revenue/",
   "auto_export": {
-    "exported_at": "2026-06-25T20:58:33",
+    "exported_at": "2026-06-25T21:04:47",
     "output": "C:\\Users\\User\\catbot-x\\public_shop",
     "ready_links": 0,
     "total_products": 9,
     "followers": 541,
     "top_post_views": 156918,
     "last_deploy": {
-      "deployed_at": "2026-06-25T20:58:14",
+      "deployed_at": "2026-06-25T21:04:26",
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "file_count": 140,
-      "total_bytes": 49512848
+      "total_bytes": 49520927
     }
   },
   "auto_update": {
-    "checked_at": "2026-06-25T20:58:34",
+    "checked_at": "2026-06-25T21:04:49",
     "synced": true,
-    "last_exported_at": "2026-06-25T20:58:33",
+    "last_exported_at": "2026-06-25T21:04:47",
     "ready_links": 0,
     "total_products": 9,
     "followers": 541,
@@ -339,19 +339,19 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-25T20:58:14",
+        "deployed_at": "2026-06-25T21:04:26",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 140,
-        "total_bytes": 49512848
+        "total_bytes": 49520927
       }
     },
     "scheduled_task": {
       "checked": true,
       "ok": true,
       "installed": true,
-      "state": "Running",
+      "state": "Ready",
       "last_run_time": "2026-06-25T20:58:09",
-      "last_task_result": 267009,
+      "last_task_result": 0,
       "next_run_time": "2026-06-25T21:28:08",
       "number_of_missed_runs": 0,
       "repetition_interval": "PT30M",

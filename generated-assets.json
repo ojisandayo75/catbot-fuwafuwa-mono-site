@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T20:58:33",
+  "generated_at": "2026-06-25T21:04:47",
   "base_dir": "C:\\Users\\User\\catbot-x\\public_shop",
   "ok": true,
-  "required_count": 52,
-  "present_required_count": 52,
+  "required_count": 56,
+  "present_required_count": 56,
   "assets": [
     {
       "path": "assets/ai_brand_mark.webp",
@@ -287,6 +287,76 @@
         "mobile image menu fallback",
         "state entry fallback",
         "quick check fallback"
+      ]
+    },
+    {
+      "path": "assets/ai_product_toys_p1.webp",
+      "role": "generated product image: kicker plush",
+      "required": true,
+      "exists": true,
+      "size_bytes": 10738,
+      "updated_at": "2026-06-25T20:57:29",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_toys_p1.png",
+      "role": "generated product image: kicker plush png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 58300,
+      "updated_at": "2026-06-25T20:57:29",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
+      ]
+    },
+    {
+      "path": "assets/ai_product_toys_p2.webp",
+      "role": "generated product image: electric cat teaser",
+      "required": true,
+      "exists": true,
+      "size_bytes": 13304,
+      "updated_at": "2026-06-25T20:57:28",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards",
+        "product detail hero",
+        "structured product image"
+      ]
+    },
+    {
+      "path": "assets/ai_product_toys_p2.png",
+      "role": "generated product image: electric cat teaser png fallback",
+      "required": true,
+      "exists": true,
+      "size_bytes": 71912,
+      "updated_at": "2026-06-25T20:57:28",
+      "width": 512,
+      "height": 512,
+      "min_width": 360,
+      "min_height": 360,
+      "dimension_ok": true,
+      "used_by": [
+        "product cards fallback",
+        "product detail hero fallback"
       ]
     },
     {
@@ -869,7 +939,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 2495,
-      "updated_at": "2026-06-25T20:58:33",
+      "updated_at": "2026-06-25T21:04:47",
       "width": 32,
       "height": 32,
       "min_width": 32,
@@ -886,7 +956,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 56785,
-      "updated_at": "2026-06-25T20:58:33",
+      "updated_at": "2026-06-25T21:04:47",
       "width": 192,
       "height": 192,
       "min_width": 192,
@@ -903,7 +973,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 358627,
-      "updated_at": "2026-06-25T20:58:33",
+      "updated_at": "2026-06-25T21:04:47",
       "width": 512,
       "height": 512,
       "min_width": 512,
@@ -920,7 +990,7 @@
       "required": true,
       "exists": true,
       "size_bytes": 50122,
-      "updated_at": "2026-06-25T20:58:33",
+      "updated_at": "2026-06-25T21:04:47",
       "width": 180,
       "height": 180,
       "min_width": 180,

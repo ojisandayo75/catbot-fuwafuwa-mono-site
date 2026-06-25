@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-25T20:58:32",
+      "dateModified": "2026-06-25T21:04:46",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -4948,6 +4948,24 @@ function productAnchorId(product){
   return `product-${String(product.categoryId || "").replace(/[^a-z0-9_-]/gi, "")}-${String(product.id || "").replace(/[^a-z0-9_-]/gi, "")}`;
 }
 
+function cleanAssetPath(path){
+  const value = String(path || "").trim().replace(/^\/+/, "");
+  return /^assets\/[A-Za-z0-9._/-]+$/.test(value) && !value.split("/").includes("..") ? value : "";
+}
+
+function productVisualStyle(product){
+  const image = cleanAssetPath(product.image);
+  const imageWebp = cleanAssetPath(product.image_webp);
+  const fallback = image || imageWebp;
+  if(!fallback) return "";
+  const style = [`background-image:url('${fallback}')`];
+  if(image && imageWebp){
+    style.push(`background-image:image-set(url('${imageWebp}') type('image/webp'), url('${image}') type('image/png'))`);
+  }
+  style.push("background-size:cover", "background-position:center");
+  return ` style="${style.join(";")}"`;
+}
+
 const PRODUCT_STATE_COPY = {
   toys: {
     label: "遊び足りない時",
@@ -7137,8 +7155,8 @@ function renderProducts(categories=[]){
     return `
       <article class="card product-card" id="${esc(productAnchorId(product))}" data-category-id="${esc(product.categoryId || "")}">
         <div class="product-visual" aria-hidden="true">
-          <span class="product-visual-thumb" data-icon="${esc(product.categoryId || "")}"></span>
-          <span class="product-visual-label">${esc(product.categoryName || "猫用品")}</span>
+          <span class="product-visual-thumb" data-icon="${esc(product.categoryId || "")}"${productVisualStyle(product)}></span>
+          <span class="product-visual-label">${esc(product.image || product.image_webp ? product.name : product.categoryName || "猫用品")}</span>
         </div>
         ${productStateStrip(product)}
         <div>
