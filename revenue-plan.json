@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T01:21:25",
-  "exported_at": "2026-06-26T01:21:25",
+  "generated_at": "2026-06-26T01:53:38",
+  "exported_at": "2026-06-26T01:53:38",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -201,7 +201,7 @@
     "id": "set_first_affiliate_link",
     "title": "最初の実アフィリリンクを入れる",
     "detail": "次の最優先商品に、もしも等の追跡付きURLを1本保存します。",
-    "command": ".\\affiliate_site_ops.bat moshimo-workbench --force"
+    "command": ".\\catbot_first_link_handoff.bat -Open"
   },
   "launch_blockers": [
     {
@@ -229,8 +229,8 @@
   ],
   "commands": {
     "refresh": ".\\affiliate_site_ops.bat sync-now --smoke-test",
-    "first_link_workbench": ".\\affiliate_site_ops.bat moshimo-workbench --force",
-    "set_first_link": ".\\affiliate_site_ops.bat set-next --% \"https://MOSHIMO_TRACKING_URL\" --package --smoke-test",
+    "first_link_workbench": ".\\catbot_first_link_handoff.bat -Open",
+    "set_first_link": ".\\catbot_first_link_clipboard_to_inbox.bat",
     "set_public_url": ".\\affiliate_site_ops.bat profile-url \"https://PUBLIC_URL/\" --package --smoke-test",
     "launch_check": ".\\affiliate_site_ops.bat launch-check",
     "preview_check": ".\\affiliate_site_ops.bat preview-check",
@@ -260,5 +260,21 @@
     "revenue_plan": "revenue-plan.json",
     "revenue_page": "revenue/",
     "shop_data": "shop-data.json"
+  },
+  "first_link_safe_flow": {
+    "primary": "copy_tracking_url_then_save_to_inbox",
+    "commands": {
+      "handoff": ".\\catbot_first_link_handoff.bat -Open",
+      "save_clipboard": ".\\catbot_first_link_clipboard_to_inbox.bat",
+      "dry_run": ".\\catbot_first_link_finish.bat",
+      "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish",
+      "check_clipboard": ".\\catbot_check_clipboard_link.bat"
+    },
+    "steps": [
+      "Open the handoff page and create one real tracking URL for the current target.",
+      "Copy the tracking URL, then save it with catbot_first_link_clipboard_to_inbox.bat.",
+      "Dry-run with catbot_first_link_finish.bat.",
+      "Apply and publish with catbot_first_link_finish.bat -Apply -Publish only after the dry-run is correct."
+    ]
   }
 }

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T01:21:25",
-  "exported_at": "2026-06-26T01:21:25",
+  "generated_at": "2026-06-26T01:53:38",
+  "exported_at": "2026-06-26T01:53:38",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "public_url_valid": true,
@@ -221,10 +221,10 @@
   "unready_clicked_products": [],
   "ready_clicked_products": [],
   "commands": {
-    "open_moshimo_workbench": ".\\affiliate_site_ops.bat moshimo-workbench --force",
-    "check_url": ".\\affiliate_site_ops.bat check-url --% \"https://MOSHIMO_TRACKING_URL\"",
-    "save_next_link": ".\\affiliate_site_ops.bat set-next --% \"https://MOSHIMO_TRACKING_URL\" --package --smoke-test",
-    "finish_launch": ".\\affiliate_site_ops.bat finish-launch --dry-run --% \"https://MOSHIMO_TRACKING_URL\" \"https://PUBLIC_URL/\"",
+    "open_moshimo_workbench": ".\\catbot_first_link_handoff.bat -Open",
+    "check_url": ".\\catbot_check_clipboard_link.bat",
+    "save_next_link": ".\\catbot_first_link_clipboard_to_inbox.bat",
+    "finish_launch": ".\\catbot_first_link_finish.bat",
     "review_clicks": ".\\affiliate_site_ops.bat click-review"
   },
   "current_target_command": ".\\affiliate_site_ops.bat set toys p2 --% \"https://MOSHIMO_TRACKING_URL\"",
@@ -232,5 +232,21 @@
     "If there are clicked products without real affiliate links, replace those links first.",
     "Before clicks exist, use next_link_target and then suggested_link_targets in order.",
     "Keep cat safety notes and no-buy checks visible before pushing product links."
-  ]
+  ],
+  "first_link_safe_flow": {
+    "primary": "copy_tracking_url_then_save_to_inbox",
+    "commands": {
+      "handoff": ".\\catbot_first_link_handoff.bat -Open",
+      "save_clipboard": ".\\catbot_first_link_clipboard_to_inbox.bat",
+      "dry_run": ".\\catbot_first_link_finish.bat",
+      "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish",
+      "check_clipboard": ".\\catbot_check_clipboard_link.bat"
+    },
+    "steps": [
+      "Open the handoff page and create one real tracking URL for the current target.",
+      "Copy the tracking URL, then save it with catbot_first_link_clipboard_to_inbox.bat.",
+      "Dry-run with catbot_first_link_finish.bat.",
+      "Apply and publish with catbot_first_link_finish.bat -Apply -Publish only after the dry-run is correct."
+    ]
+  }
 }

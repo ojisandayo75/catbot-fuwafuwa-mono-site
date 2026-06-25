@@ -24,8 +24,8 @@
     "max_daily_gain": 133,
     "state": "growing"
   },
-  "generated_at": "2026-06-26T01:21:25",
-  "exported_at": "2026-06-26T01:21:25",
+  "generated_at": "2026-06-26T01:53:38",
+  "exported_at": "2026-06-26T01:53:38",
   "next_link": {
     "category_id": "toys",
     "category": "遊び",
@@ -253,7 +253,7 @@
   "owner_commands": [
     {
       "title": "もしも承認と最初のリンク作業台を開く",
-      "command": ".\\affiliate_site_ops.bat moshimo-workbench --force",
+      "command": ".\\catbot_first_link_handoff.bat -Open",
       "detail": "もしも承認状態も見ながら、check-url と set-next のコマンドを作る。"
     },
     {
@@ -268,8 +268,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T01:21:25",
-    "exported_at": "2026-06-26T01:21:25",
+    "generated_at": "2026-06-26T01:53:38",
+    "exported_at": "2026-06-26T01:53:38",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -332,10 +332,26 @@
   "ops_summary": "ops-summary.json",
   "revenue_plan": "revenue-plan.json",
   "revenue_page": "revenue/",
+  "first_link_safe_flow": {
+    "primary": "copy_tracking_url_then_save_to_inbox",
+    "commands": {
+      "handoff": ".\\catbot_first_link_handoff.bat -Open",
+      "save_clipboard": ".\\catbot_first_link_clipboard_to_inbox.bat",
+      "dry_run": ".\\catbot_first_link_finish.bat",
+      "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish",
+      "check_clipboard": ".\\catbot_check_clipboard_link.bat"
+    },
+    "steps": [
+      "Open the handoff page and create one real tracking URL for the current target.",
+      "Copy the tracking URL, then save it with catbot_first_link_clipboard_to_inbox.bat.",
+      "Dry-run with catbot_first_link_finish.bat.",
+      "Apply and publish with catbot_first_link_finish.bat -Apply -Publish only after the dry-run is correct."
+    ]
+  },
   "auto_update": {
-    "checked_at": "2026-06-26T01:21:27",
+    "checked_at": "2026-06-26T01:53:42",
     "synced": true,
-    "last_exported_at": "2026-06-26T01:21:26",
+    "last_exported_at": "2026-06-26T01:53:40",
     "ready_links": 0,
     "total_products": 9,
     "followers": 541,
@@ -345,7 +361,7 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T01:12:42",
+        "deployed_at": "2026-06-26T01:21:28",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 156,
         "total_bytes": 52029689
@@ -356,9 +372,9 @@
       "ok": true,
       "installed": true,
       "state": "Ready",
-      "last_run_time": "2026-06-26T00:58:09",
+      "last_run_time": "2026-06-26T01:28:09",
       "last_task_result": 0,
-      "next_run_time": "2026-06-26T01:28:08",
+      "next_run_time": "2026-06-26T01:58:08",
       "number_of_missed_runs": 0,
       "repetition_interval": "PT30M",
       "action_matches": true,
