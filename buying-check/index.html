@@ -85,12 +85,17 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 </style>
 </head>
 <body>
-<header class="hero"><div class="wrap top"><div><span class="label">猫ファースト</span><h1>Catbot 買う前チェック</h1><p>商品を見る前に、その子に必要か、合わない条件は何か、最初はどう試すかを確認します。画像メニューから、買う前の確認・やめるサイン・リンク状態まで迷わず見られます。</p><div class="actions"><a class="button" href="#products">商品ごとのチェック</a><a class="button light" href="../visuals/">生成画像を見る</a></div></div><a class="button" href="../">トップへ</a></div></header>
+<header class="hero"><div class="wrap top"><div><span class="label">猫ファースト</span><h1>Catbot 買う前チェック</h1><p>商品を見る前に、その子に必要か、合わない条件は何か、最初はどう試すかを確認します。画像メニューから、買う前の確認・やめるサイン・リンク状態まで迷わず見られます。</p><div class="actions"><a class="button" href="#products">商品ごとのチェック</a><a class="button light" href="../cat-first/">猫優先ランキング</a><a class="button light" href="../visuals/">生成画像を見る</a></div></div><a class="button" href="../">トップへ</a></div></header>
 <main class="wrap">
   <section class="visual-nav" aria-label="画像メニュー">
         <a class="visual-nav-card" href="../">
           <span class="nav-art" data-slot="0" aria-hidden="true"></span>
           <strong>商品を探す</strong>
+        </a>
+
+        <a class="visual-nav-card" href="../cat-first/">
+          <span class="nav-art" data-slot="4" aria-hidden="true"></span>
+          <strong>猫優先ランキング</strong>
         </a>
 
         <a class="visual-nav-card" href="../buying-check/">
@@ -161,7 +166,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           <h2>体調変化は用品で解決しない</h2>
           <p>急な食欲低下、水の増減、嘔吐、下痢、痛がる様子がある時は、購入より獣医相談を優先します。</p>
         </article></section>
-  <section class="card policy"><span class="label">サイト方針</span><ul><li>商品直リンクより、猫に合うかの確認を先に見せる。</li><li>合わない条件と中止サインを各商品に残す。</li><li>最初は短時間・少量・見守りから始める。</li><li>売れそうな商品より、猫の安全と暮らしやすさを優先する。</li></ul><div class="actions"><a class="button light" href="../buying-check.json">buying-check.json</a><a class="button light" href="../consult-first/">相談優先</a><a class="button light" href="../quiz/">うちの子診断</a><a class="button light" href="../policy/">選定方針</a><a class="button light" href="../health/">リンク健全性</a></div></section>
+  <section class="card policy"><span class="label">サイト方針</span><ul><li>商品直リンクより、猫に合うかの確認を先に見せる。</li><li>合わない条件と中止サインを各商品に残す。</li><li>最初は短時間・少量・見守りから始める。</li><li>売れそうな商品より、猫の安全と暮らしやすさを優先する。</li></ul><div class="actions"><a class="button light" href="../cat-first/">猫優先ランキング</a><a class="button light" href="../buying-check.json">buying-check.json</a><a class="button light" href="../consult-first/">相談優先</a><a class="button light" href="../quiz/">うちの子診断</a><a class="button light" href="../policy/">選定方針</a><a class="button light" href="../health/">リンク健全性</a></div></section>
   <section class="product-list" id="products" aria-label="商品ごとの買う前チェック">
         <article class="product-card" id="toys-p1">
           <div class="product-art" data-icon="toys" aria-hidden="true">
@@ -181,6 +186,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/toys/p1/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/toys/">カテゴリガイド</a>
           </div>
         </article>
@@ -203,6 +209,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/toys/p2/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/toys/">カテゴリガイド</a>
           </div>
         </article>
@@ -225,6 +232,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/treats/p1/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/treats/">カテゴリガイド</a>
           </div>
         </article>
@@ -247,6 +255,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/treats/p2/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/treats/">カテゴリガイド</a>
           </div>
         </article>
@@ -269,6 +278,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/scratch/p1/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/scratch/">カテゴリガイド</a>
           </div>
         </article>
@@ -291,6 +301,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/water/p1/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/water/">カテゴリガイド</a>
           </div>
         </article>
@@ -313,6 +324,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/water/p2/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/water/">カテゴリガイド</a>
           </div>
         </article>
@@ -335,6 +347,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/care/p1/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/care/">カテゴリガイド</a>
           </div>
         </article>
@@ -357,6 +370,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
           <div class="actions">
             <a class="button light" href="../products/watch/p1/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
             <a class="button light" href="../guides/watch/">カテゴリガイド</a>
           </div>
         </article></section>
