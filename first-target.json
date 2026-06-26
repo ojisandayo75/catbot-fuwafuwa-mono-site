@@ -1,7 +1,7 @@
 {
   "state": "first_target_ready",
-  "generated_at": "2026-06-26T13:15:04",
-  "exported_at": "2026-06-26T13:15:04",
+  "generated_at": "2026-06-26T13:24:16",
+  "exported_at": "2026-06-26T13:24:16",
   "category_id": "toys",
   "product_id": "p2",
   "key": "toys/p2",
@@ -84,6 +84,7 @@
       "link_kind": "search"
     }
   ],
+  "ad_disclosure": "このサイトには広告・アフィリエイトリンクを含む場合があります。リンクが入っても、猫に合うか・合わない条件・やめるサインを先に確認します。",
   "cat_first_rules": [
     "いきなり買わせず、合う子・合わない子を先に見せる。",
     "実リンクが入るまでは検索候補に留める。",
