@@ -1,15 +1,27 @@
 {
-  "generated_at": "2026-06-27T07:57:51",
-  "exported_at": "2026-06-27T07:57:51",
+  "generated_at": "2026-06-27T08:14:44",
+  "exported_at": "2026-06-27T08:14:44",
   "account": "@fuwafuwa_mono",
-  "phase": "needs_affiliate_link",
-  "monetization_stage": "needs_first_affiliate_link",
+  "phase": "needs_moshimo_approval",
+  "monetization_stage": "needs_moshimo_approval",
   "monetization_ready": false,
   "public_url_ready": true,
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "first_affiliate_link_required": true,
+  "moshimo": {
+    "amazon_status": "pending",
+    "rakuten_status": "pending",
+    "ready_for_first_link": false,
+    "approval_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_update_commands": {
+      "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+    }
+  },
+  "moshimo_ready_for_first_link": false,
   "followers": 578,
   "follower_goal": 1000,
   "followers_to_goal": 422,
@@ -235,16 +247,21 @@
     "watch_only": 0
   },
   "recommended_action": {
-    "id": "set_first_affiliate_link",
-    "title": "最初の実アフィリリンクを入れる",
-    "detail": "次の最優先商品に、もしも等の追跡付きURLを1本保存前チェックします。",
-    "command": ".\\catbot_first_link_live_finish.bat -Open"
+    "id": "moshimo_approval_check",
+    "title": "もしも承認を確認する",
+    "detail": "Amazonまたは楽天がapprovedになってから、最初の追跡URLを作ります。",
+    "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_update_commands": {
+      "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+    }
   },
   "launch_blockers": [
     {
-      "id": "affiliate_link",
-      "title": "実アフィリリンク",
-      "detail": "まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。"
+      "id": "moshimo_approval",
+      "title": "もしも提携承認",
+      "detail": "Amazonまたは楽天がapprovedになってから、toys/p2 電動猫じゃらし の追跡URLを作る。"
     }
   ],
   "shop_post_guard": {
@@ -287,6 +304,10 @@
   ],
   "commands": {
     "refresh": ".\\affiliate_site_ops.bat sync-now --smoke-test",
+    "moshimo_approval": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "moshimo_amazon_approved": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+    "moshimo_rakuten_approved": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+    "moshimo_both_approved": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish",
     "first_link_live_finish": ".\\catbot_first_link_live_finish.bat -Open",
     "first_link_live_apply": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
     "first_link_check_clipboard": ".\\catbot_check_clipboard_link.bat",

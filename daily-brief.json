@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-27T07:57:51",
-  "exported_at": "2026-06-27T07:57:51",
+  "generated_at": "2026-06-27T08:14:44",
+  "exported_at": "2026-06-27T08:14:44",
   "account": "@fuwafuwa_mono",
-  "phase": "needs_affiliate_link",
+  "phase": "needs_moshimo_approval",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_ready": true,
   "affiliate_links_ready": 0,
@@ -360,9 +360,9 @@
   },
   "next_actions": [
     {
-      "title": "最初のリンク一括ガイドを開く",
-      "detail": "もしもで発行した追跡URLをコピーして、保存前のdry-runまで一気に確認する。",
-      "command": ".\\catbot_first_link_live_finish.bat -Open",
+      "title": "もしも承認を確認する",
+      "detail": "pendingのまま追跡URL作成へ進まず、Amazon/楽天の提携状態を先に確認する。",
+      "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
       "source": "launch_gate"
     },
     {

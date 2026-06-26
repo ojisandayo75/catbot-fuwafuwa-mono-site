@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-27T07:57:51",
-  "exported_at": "2026-06-27T07:57:51",
-  "phase": "needs_affiliate_link",
+  "generated_at": "2026-06-27T08:14:44",
+  "exported_at": "2026-06-27T08:14:44",
+  "phase": "needs_moshimo_approval",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -15,16 +15,21 @@
   "top_post_views": 156918,
   "clicks_7d": 0,
   "recommended_action": {
-    "id": "set_first_affiliate_link",
-    "title": "最初の実アフィリリンクを入れる",
-    "detail": "次の最優先商品に、もしも等の追跡付きURLを1本保存前チェックします。",
-    "command": ".\\catbot_first_link_live_finish.bat -Open"
+    "id": "moshimo_approval_check",
+    "title": "もしも承認を確認する",
+    "detail": "Amazonまたは楽天がapprovedになってから、最初の追跡URLを作ります。",
+    "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_update_commands": {
+      "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+    }
   },
   "launch_blockers": [
     {
-      "id": "affiliate_link",
-      "title": "実アフィリリンク",
-      "detail": "まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。"
+      "id": "moshimo_approval",
+      "title": "もしも提携承認",
+      "detail": "Amazonまたは楽天がapprovedになってから、toys/p2 電動猫じゃらし の追跡URLを作る。"
     }
   ],
   "shop_post_guard": {
@@ -380,9 +385,9 @@
   },
   "owner_commands": [
     {
-      "title": "最初のリンク一括ガイドを開く",
-      "command": ".\\catbot_first_link_live_finish.bat -Open",
-      "detail": "もしもで発行した追跡URLをコピーして、保存前のdry-runまで一気に確認する。"
+      "title": "もしも承認を確認する",
+      "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+      "detail": "pendingのまま追跡URL作成へ進まず、Amazon/楽天の提携状態を先に確認する。"
     },
     {
       "title": "公開前チェック",

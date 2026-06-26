@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-27T07:57:51",
-  "exported_at": "2026-06-27T07:57:51",
+  "generated_at": "2026-06-27T08:14:44",
+  "exported_at": "2026-06-27T08:14:44",
   "account": "@fuwafuwa_mono",
   "stage": "pre_900_prepare",
   "stage_label": "900人までは静かに土台作り",
-  "stage_detail": "Xでは売り込みを増やさず、最初の追跡URLと猫優先ページを完成させます。",
+  "stage_detail": "Xでは売り込みを増やさず、もしも承認確認、最初の追跡URL、猫優先ページを順番に完成させます。",
   "followers": 578,
   "goal": 1000,
   "remaining": 422,
@@ -14,6 +14,18 @@
   "eta_date": "2026-07-09",
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
+  "moshimo": {
+    "amazon_status": "pending",
+    "rakuten_status": "pending",
+    "ready_for_first_link": false,
+    "approval_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_update_commands": {
+      "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+    }
+  },
+  "moshimo_ready_for_first_link": false,
   "public_url_ready": true,
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "shop_post_allowed": false,
@@ -26,14 +38,14 @@
     "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
   },
   "now_action": {
-    "title": "最初の本番アフィリエイトURLを1本入れる",
-    "detail": "もしもで発行した追跡URLを入れるまで、Xの販売投稿は増やしません。",
-    "command": ".\\catbot_next_action.bat -Open"
+    "title": "もしも承認を確認する",
+    "detail": "Amazonまたは楽天がapprovedになってから、最初の追跡URLを作ります。",
+    "command": ".\\catbot_moshimo_status.bat -OpenWorkbench"
   },
   "milestone_flow": [
     {
       "title": "900人を超える前",
-      "detail": "サイト、プロフィール導線、猫優先ランキング、最初の追跡URLだけを整えます。",
+      "detail": "サイト、プロフィール導線、猫優先ランキング、もしも承認確認、最初の追跡URLだけを整えます。",
       "posting": "売り込み投稿は待つ"
     },
     {

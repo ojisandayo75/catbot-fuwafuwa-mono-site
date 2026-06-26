@@ -53,7 +53,7 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <a class="button" href="../status/">運用ステータスへ</a>
   </div>
   <div class="grid">
-    <div class="card"><span class="label">段階</span><b>最初のアフィリリンク待ち</b></div>
+    <div class="card"><span class="label">段階</span><b>もしも承認確認待ち</b></div>
     <div class="card"><span class="label">リンク</span><b>0 / 9</b></div>
     <div class="card"><span class="label">公開URL</span><b>OK</b></div>
     <div class="card"><span class="label">フォロワー</span><b>578</b><p>1,000人まで 422</p></div>
@@ -88,9 +88,9 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
   
         <section class="card">
           <span class="label">今やること</span>
-          <h2>最初の実アフィリリンクを入れる</h2>
-          <p>次の最優先商品に、もしも等の追跡付きURLを1本保存前チェックします。</p>
-          <code>.\catbot_first_link_live_finish.bat -Open</code>
+          <h2>もしも承認を確認する</h2>
+          <p>Amazonまたは楽天がapprovedになってから、最初の追跡URLを作ります。</p>
+          <code>.\catbot_moshimo_status.bat -OpenWorkbench</code>
         </section>
 
   <section class="card" style="margin-top:12px">
@@ -98,8 +98,8 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <ul>
         <li>
           <span class="badge warn">未完了</span>
-          <strong>実アフィリリンク</strong>
-          <p>まず toys/p2 電動猫じゃらし のもしも追跡リンクを1本入れる。</p>
+          <strong>もしも提携承認</strong>
+          <p>Amazonまたは楽天がapprovedになってから、toys/p2 電動猫じゃらし の追跡URLを作る。</p>
         </li>
 </ul>
   </section>
@@ -203,6 +203,27 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
 
 
         <li>
+          <strong>もしも承認確認</strong>
+          <code>.\catbot_moshimo_status.bat -OpenWorkbench</code>
+          <p>Amazonまたは楽天がapprovedか確認してから、追跡URL作成へ進みます。</p>
+        </li>
+
+
+        <li>
+          <strong>Amazon承認を反映</strong>
+          <code>.\catbot_moshimo_status.bat -Amazon approved -Sync -Publish</code>
+          <p>もしもでAmazonがapprovedになっていた時だけ実行します。</p>
+        </li>
+
+
+        <li>
+          <strong>楽天承認を反映</strong>
+          <code>.\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish</code>
+          <p>もしもで楽天がapprovedになっていた時だけ実行します。</p>
+        </li>
+
+
+        <li>
           <strong>最初のリンク一括ガイド</strong>
           <code>.\catbot_first_link_live_finish.bat -Open</code>
           <p>もしもで発行した追跡URLをコピーして、保存前のdry-runまで一気に確認します。</p>
@@ -271,7 +292,7 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <a class="button light" href="../link-opportunities.json">link-opportunities.json</a>
     <a class="button light" href="../ops-summary.json">ops-summary.json</a>
   </div>
-  <p style="margin-top:16px">生成: 2026-06-27T07:57:51 / 書き出し: 2026-06-27T07:57:51</p>
+  <p style="margin-top:16px">生成: 2026-06-27T08:14:44 / 書き出し: 2026-06-27T08:14:44</p>
 </main>
 </body>
 </html>
