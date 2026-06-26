@@ -16,6 +16,13 @@ a{color:#5a3522;font-weight:800}
 .product strong{display:block;color:#25170f;font-size:18px}
 .notes{display:grid;gap:8px;margin:14px 0}
 .note{padding:10px;border:1px solid #dccab5;border-radius:8px;background:#f7ead8;color:#5f4735;font-size:14px}
+.final-check{margin:14px 0;padding:12px;border:1px solid #d9b98f;border-radius:8px;background:#fff7ec}
+.final-check strong{display:block;color:#25170f;font-size:18px}
+.final-check p{font-size:13px;margin-top:4px}
+.final-check ul{display:grid;gap:8px;list-style:none;margin:10px 0 0;padding:0}
+.final-check li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:9px}
+.final-check b{display:block;color:#5a3522}
+.final-check span{display:block;color:#5f4735;font-size:13px;line-height:1.55}
 .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px}
 .button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 14px;border:1px solid #5a3522;border-radius:8px;background:#5a3522;color:#fff8ef;text-decoration:none;font:inherit;font-weight:800;cursor:pointer}
 .button.secondary{background:#fff8ef;color:#5a3522;border-color:#d8bea4}
@@ -37,8 +44,18 @@ a{color:#5a3522;font-weight:800}
 <div class="notes">
   <div class="note"><strong>リンク状態:</strong> 提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。</div>
   <div class="note"><strong>見るところ:</strong> 粉が出にくいもの、滑りにくい形を優先。</div>
-  <div class="note"><strong>合わないとき:</strong> 粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。</div>
+  <div class="note"><strong>合わないとき:</strong> 削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</div>
+  <div class="note"><strong>使った後:</strong> 粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。</div>
 </div>
+<section class="final-check" aria-label="リンクを開く前の最終チェック">
+  <strong>リンクを開く前の最終チェック</strong>
+  <p>この先を開く前に、買う理由より猫に合う条件を先に確認します。</p>
+  <ul>
+    <li><b>合わない猫</b><span>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</span></li>
+    <li><b>最初の試し方</b><span>よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。</span></li>
+    <li><b>やめるサイン</b><span>滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。</span></li>
+  </ul>
+</section>
 <div class="actions">
   <a class="button" id="manualLink" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F" rel="noopener noreferrer">今すぐ開く</a>
   <button class="button secondary" id="pauseLink" type="button">ここで止める</button>

@@ -16,6 +16,13 @@ a{color:#5a3522;font-weight:800}
 .product strong{display:block;color:#25170f;font-size:18px}
 .notes{display:grid;gap:8px;margin:14px 0}
 .note{padding:10px;border:1px solid #dccab5;border-radius:8px;background:#f7ead8;color:#5f4735;font-size:14px}
+.final-check{margin:14px 0;padding:12px;border:1px solid #d9b98f;border-radius:8px;background:#fff7ec}
+.final-check strong{display:block;color:#25170f;font-size:18px}
+.final-check p{font-size:13px;margin-top:4px}
+.final-check ul{display:grid;gap:8px;list-style:none;margin:10px 0 0;padding:0}
+.final-check li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:9px}
+.final-check b{display:block;color:#5a3522}
+.final-check span{display:block;color:#5f4735;font-size:13px;line-height:1.55}
 .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px}
 .button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 14px;border:1px solid #5a3522;border-radius:8px;background:#5a3522;color:#fff8ef;text-decoration:none;font:inherit;font-weight:800;cursor:pointer}
 .button.secondary{background:#fff8ef;color:#5a3522;border-color:#d8bea4}
@@ -37,8 +44,18 @@ a{color:#5a3522;font-weight:800}
 <div class="notes">
   <div class="note"><strong>リンク状態:</strong> 提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。</div>
   <div class="note"><strong>見るところ:</strong> 年齢、体調、総合栄養食か一般食かを確認。</div>
-  <div class="note"><strong>合わないとき:</strong> 主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。</div>
+  <div class="note"><strong>合わないとき:</strong> 体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。</div>
+  <div class="note"><strong>使った後:</strong> 主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。</div>
 </div>
+<section class="final-check" aria-label="リンクを開く前の最終チェック">
+  <strong>リンクを開く前の最終チェック</strong>
+  <p>この先を開く前に、買う理由より猫に合う条件を先に確認します。</p>
+  <ul>
+    <li><b>合わない猫</b><span>体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。</span></li>
+    <li><b>最初の試し方</b><span>1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。</span></li>
+    <li><b>やめるサイン</b><span>吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。</span></li>
+  </ul>
+</section>
 <div class="actions">
   <a class="button" id="manualLink" href="https://www.amazon.co.jp/s?k=CIAO+%E3%81%A1%E3%82%85%E3%83%BC%E3%82%8B+%E7%8C%AB" rel="noopener noreferrer">今すぐ開く</a>
   <button class="button secondary" id="pauseLink" type="button">ここで止める</button>

@@ -16,6 +16,13 @@ a{color:#5a3522;font-weight:800}
 .product strong{display:block;color:#25170f;font-size:18px}
 .notes{display:grid;gap:8px;margin:14px 0}
 .note{padding:10px;border:1px solid #dccab5;border-radius:8px;background:#f7ead8;color:#5f4735;font-size:14px}
+.final-check{margin:14px 0;padding:12px;border:1px solid #d9b98f;border-radius:8px;background:#fff7ec}
+.final-check strong{display:block;color:#25170f;font-size:18px}
+.final-check p{font-size:13px;margin-top:4px}
+.final-check ul{display:grid;gap:8px;list-style:none;margin:10px 0 0;padding:0}
+.final-check li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:9px}
+.final-check b{display:block;color:#5a3522}
+.final-check span{display:block;color:#5f4735;font-size:13px;line-height:1.55}
 .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px}
 .button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 14px;border:1px solid #5a3522;border-radius:8px;background:#5a3522;color:#fff8ef;text-decoration:none;font:inherit;font-weight:800;cursor:pointer}
 .button.secondary{background:#fff8ef;color:#5a3522;border-color:#d8bea4}
@@ -37,8 +44,18 @@ a{color:#5a3522;font-weight:800}
 <div class="notes">
   <div class="note"><strong>リンク状態:</strong> 提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。</div>
   <div class="note"><strong>見るところ:</strong> 毛質に合う形、肌に強く当たりすぎないものを優先。</div>
-  <div class="note"><strong>合わないとき:</strong> 嫌がる子は短時間から。皮膚が赤くなる、フケが増える、怒る時は強さや形が合っていない可能性があります。</div>
+  <div class="note"><strong>合わないとき:</strong> 皮膚が弱い子、触られるのが苦手な子、怒りやすい子。</div>
+  <div class="note"><strong>使った後:</strong> 嫌がる子は短時間から。皮膚が赤くなる、フケが増える、怒る時は強さや形が合っていない可能性があります。</div>
 </div>
+<section class="final-check" aria-label="リンクを開く前の最終チェック">
+  <strong>リンクを開く前の最終チェック</strong>
+  <p>この先を開く前に、買う理由より猫に合う条件を先に確認します。</p>
+  <ul>
+    <li><b>合わない猫</b><span>皮膚が弱い子、触られるのが苦手な子、怒りやすい子。</span></li>
+    <li><b>最初の試し方</b><span>背中など嫌がりにくい場所を数回だけ。無理に全身を一度で終わらせません。</span></li>
+    <li><b>やめるサイン</b><span>皮膚が赤くなる、フケが増える、怒る、逃げる時は強さや形を見直します。</span></li>
+  </ul>
+</section>
 <div class="actions">
   <a class="button" id="manualLink" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%96%E3%83%A9%E3%82%B7" rel="noopener noreferrer">今すぐ開く</a>
   <button class="button secondary" id="pauseLink" type="button">ここで止める</button>

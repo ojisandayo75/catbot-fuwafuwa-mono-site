@@ -16,6 +16,13 @@ a{color:#5a3522;font-weight:800}
 .product strong{display:block;color:#25170f;font-size:18px}
 .notes{display:grid;gap:8px;margin:14px 0}
 .note{padding:10px;border:1px solid #dccab5;border-radius:8px;background:#f7ead8;color:#5f4735;font-size:14px}
+.final-check{margin:14px 0;padding:12px;border:1px solid #d9b98f;border-radius:8px;background:#fff7ec}
+.final-check strong{display:block;color:#25170f;font-size:18px}
+.final-check p{font-size:13px;margin-top:4px}
+.final-check ul{display:grid;gap:8px;list-style:none;margin:10px 0 0;padding:0}
+.final-check li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:9px}
+.final-check b{display:block;color:#5a3522}
+.final-check span{display:block;color:#5f4735;font-size:13px;line-height:1.55}
 .actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px}
 .button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 14px;border:1px solid #5a3522;border-radius:8px;background:#5a3522;color:#fff8ef;text-decoration:none;font:inherit;font-weight:800;cursor:pointer}
 .button.secondary{background:#fff8ef;color:#5a3522;border-color:#d8bea4}
@@ -37,8 +44,18 @@ a{color:#5a3522;font-weight:800}
 <div class="notes">
   <div class="note"><strong>リンク状態:</strong> 提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。</div>
   <div class="note"><strong>見るところ:</strong> 画質、夜間撮影、録画、アプリの使いやすさを確認。</div>
-  <div class="note"><strong>合わないとき:</strong> カメラの音や動きで怖がる子は固定位置を変えます。見守りは補助なので、異変があれば直接確認します。</div>
+  <div class="note"><strong>合わないとき:</strong> カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。</div>
+  <div class="note"><strong>使った後:</strong> カメラの音や動きで怖がる子は固定位置を変えます。見守りは補助なので、異変があれば直接確認します。</div>
 </div>
+<section class="final-check" aria-label="リンクを開く前の最終チェック">
+  <strong>リンクを開く前の最終チェック</strong>
+  <p>この先を開く前に、買う理由より猫に合う条件を先に確認します。</p>
+  <ul>
+    <li><b>合わない猫</b><span>カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。</span></li>
+    <li><b>最初の試し方</b><span>まず固定位置で音や動きを最小にし、猫が怖がらない距離から使います。</span></li>
+    <li><b>やめるサイン</b><span>カメラ音や動きで怖がる、コードを噛む、倒しそうな時は位置を変えます。</span></li>
+  </ul>
+</section>
 <div class="actions">
   <a class="button" id="manualLink" href="https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9" rel="noopener noreferrer">今すぐ開く</a>
   <button class="button secondary" id="pauseLink" type="button">ここで止める</button>
