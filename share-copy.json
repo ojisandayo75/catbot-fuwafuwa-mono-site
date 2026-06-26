@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-06-26T13:24:16",
+  "generated_at": "2026-06-26T13:38:32",
   "phase": "launch_waiting",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "url_hint": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "first_target_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
+  "cat_first_entry_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
   "followers": 578,
   "follower_goal": 1000,
   "ready_links": 0,
@@ -29,6 +31,12 @@
       "text": "ふわふわ猫の道具箱を整えています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
     },
     {
+      "id": "first_target_entry",
+      "title": "最初の1件導線",
+      "use_when": "商品直リンクではなく買う前チェックへ誘導する時に使う",
+      "text": "次に整える猫用品は「電動猫じゃらし」。 いきなり買う前に、合う子・合わない子・最初の試し方を先にまとめています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
+    },
+    {
       "id": "soft_launch",
       "title": "通常共有",
       "use_when": "公開後や固定投稿で使う",
@@ -50,6 +58,7 @@
   "policy": [
     "Xには商品直リンクを連投しない。",
     "公開URLへ誘導し、サイト内で広告表記と買う前チェックを見せる。",
+    "商品候補の話をする時も、販売元URLではなく公開サイト内の買う前チェックページへ案内する。",
     "バズ投稿への自己リプは短く、投稿につき1本までにする。",
     "体調変化、食欲や飲水の急変がある場合は用品より相談を優先する。"
   ],
@@ -59,6 +68,10 @@
     "max_self_replies_per_viral_post": 1,
     "direct_product_link_allowed": false,
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+    "allowed_site_urls": [
+      "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+      "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
+    ],
     "allowed_contexts": [
       "公開後の固定投稿",
       "バズ投稿への短い自己リプ",
@@ -71,7 +84,7 @@
       "猫の不安や体調不良を煽る文面"
     ]
   },
-  "exported_at": "2026-06-26T13:24:16",
+  "exported_at": "2026-06-26T13:38:32",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",

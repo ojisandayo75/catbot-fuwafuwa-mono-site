@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T13:24:16",
-  "exported_at": "2026-06-26T13:24:16",
+  "generated_at": "2026-06-26T13:38:32",
+  "exported_at": "2026-06-26T13:38:32",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -296,13 +296,19 @@
       "record_command": ".\\catbot_site_warmup_ready.bat -Record",
       "note": "商品直リンクを入れない、実アフィリリンク前のサイト紹介だけに使う。"
     },
-    "text_count": 4,
+    "text_count": 5,
     "texts": [
       {
         "id": "site_warmup",
         "title": "プレ告知",
         "use_when": "実アフィリリンクを入れる前のサイト紹介で使う",
         "text": "ふわふわ猫の道具箱を整えています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+      },
+      {
+        "id": "first_target_entry",
+        "title": "最初の1件導線",
+        "use_when": "商品直リンクではなく買う前チェックへ誘導する時に使う",
+        "text": "次に整える猫用品は「電動猫じゃらし」。 いきなり買う前に、合う子・合わない子・最初の試し方を先にまとめています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
       },
       {
         "id": "soft_launch",
@@ -315,17 +321,12 @@
         "title": "猫優先",
         "use_when": "売り込み感を弱めたい時に使う",
         "text": "猫用品をすぐ買わせる場所ではなく、合う理由・合わない条件・最初の試し方を先に見る場所にしています。 今は「遊び」まわりを更新中です。"
-      },
-      {
-        "id": "next_product",
-        "title": "次の1件",
-        "use_when": "商品リンクを1本ずつ整える時に使う",
-        "text": "次に整える猫用品は「電動猫じゃらし」。 買う前チェック: 連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。 合わない子: 音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。"
       }
     ],
     "policy": [
       "Xには商品直リンクを連投しない。",
       "公開URLへ誘導し、サイト内で広告表記と買う前チェックを見せる。",
+      "商品候補の話をする時も、販売元URLではなく公開サイト内の買う前チェックページへ案内する。",
       "バズ投稿への自己リプは短く、投稿につき1本までにする。",
       "体調変化、食欲や飲水の急変がある場合は用品より相談を優先する。"
     ],
@@ -335,6 +336,10 @@
       "max_self_replies_per_viral_post": 1,
       "direct_product_link_allowed": false,
       "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+      "allowed_site_urls": [
+        "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+        "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
+      ],
       "allowed_contexts": [
         "公開後の固定投稿",
         "バズ投稿への短い自己リプ",

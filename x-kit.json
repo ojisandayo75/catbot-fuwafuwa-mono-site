@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-06-26T13:24:16",
-  "exported_at": "2026-06-26T13:24:16",
+  "generated_at": "2026-06-26T13:38:32",
+  "exported_at": "2026-06-26T13:38:32",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "first_target_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
+  "cat_first_entry_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
   "public_url_ready": true,
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
@@ -74,19 +76,25 @@
       "id": "pinned",
       "title": "固定投稿",
       "use_when": "公開URLをプロフィールに入れた後の固定投稿に使う",
-      "text": "猫用品をすぐ買わせる場所ではなく、合う理由・合わない条件・やめるサインから見られるページを作りました。 今は「遊び」、次は「電動猫じゃらし」を整えています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+      "text": "猫用品をすぐ買わせる場所ではなく、合う理由・合わない条件・やめるサインから見られるページを作りました。 今は「遊び」、次は「電動猫じゃらし」を整えています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
     },
     {
       "id": "soft_reply",
       "title": "バズ投稿への短い自己リプ",
       "use_when": "shop-post-guardがOKの時だけ、商品直リンクなしで使う",
-      "text": "この投稿で反応が多かったテーマを、猫に合うかどうかから見られるページにまとめています。 プロフィールのサイトから見られます。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+      "text": "この投稿で反応が多かったテーマを、猫に合うかどうかから見られるページにまとめています。 買う前チェックから見られます。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
     },
     {
       "id": "site_warmup",
       "title": "プレ告知",
       "use_when": "実アフィリリンクを入れる前のサイト紹介で使う",
       "text": "ふわふわ猫の道具箱を整えています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+    },
+    {
+      "id": "first_target_entry",
+      "title": "最初の1件導線",
+      "use_when": "商品直リンクではなく買う前チェックへ誘導する時に使う",
+      "text": "次に整える猫用品は「電動猫じゃらし」。 いきなり買う前に、合う子・合わない子・最初の試し方を先にまとめています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
     },
     {
       "id": "soft_launch",
@@ -110,6 +118,7 @@
   "rules": [
     "商品直リンクを連投せず、本文ではプロフィールか公開サイトへ案内する。",
     "公開サイトまたはプロフィール導線へ案内する。",
+    "商品候補は公開サイト内の買う前チェックページへ案内し、販売元URLを本文に出さない。",
     "バズ投稿への自己リプは短く、投稿につき1本までにする。",
     "1,000フォロワーまでは商品告知ではなく、商品リンクなしのプレ告知に留める。",
     "猫の不安、体調変化、食欲や飲水の急変がある場合は用品より相談を優先する。"
@@ -129,6 +138,7 @@
     "link_plan": "link-plan/",
     "daily_brief": "daily-brief.json",
     "owner_next": "owner-next/",
-    "cat_quiz": "quiz/"
+    "cat_quiz": "quiz/",
+    "first_target": "first-target/"
   }
 }
