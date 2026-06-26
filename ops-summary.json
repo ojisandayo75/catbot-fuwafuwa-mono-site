@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T16:43:41",
-  "exported_at": "2026-06-26T16:43:41",
+  "generated_at": "2026-06-26T16:54:04",
+  "exported_at": "2026-06-26T16:54:04",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -417,6 +417,8 @@
     "commands": {
       "next_action": ".\\catbot_next_action.bat -Open",
       "next_action_apply_publish": ".\\catbot_next_action.bat -Apply -Publish",
+      "live_finish": ".\\catbot_first_link_live_finish.bat -Open",
+      "live_apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
       "handoff": ".\\catbot_first_link_handoff.bat -Open",
       "wait_for_clipboard": ".\\catbot_first_link_wait_for_clipboard.bat",
       "after_copy": ".\\catbot_first_link_after_copy.bat",
@@ -427,9 +429,9 @@
     },
     "steps": [
       "Open the handoff page and create one real tracking URL for the current target.",
-      "Start catbot_first_link_wait_for_clipboard.bat before copying, or copy the tracking URL and run catbot_first_link_after_copy.bat.",
-      "Dry-run with catbot_first_link_finish.bat.",
-      "Apply and publish with catbot_first_link_finish.bat -Apply -Publish only after the dry-run is correct."
+      "Run catbot_first_link_live_finish.bat -Open, then copy the tracking URL after the command is waiting.",
+      "The live command saves the copied URL and dry-runs it without applying.",
+      "Apply and publish with catbot_first_link_live_finish.bat -Apply -Publish only after the dry-run is correct."
     ]
   }
 }

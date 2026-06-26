@@ -24,8 +24,8 @@
     "max_daily_gain": 133,
     "state": "growing"
   },
-  "generated_at": "2026-06-26T16:43:41",
-  "exported_at": "2026-06-26T16:43:41",
+  "generated_at": "2026-06-26T16:54:04",
+  "exported_at": "2026-06-26T16:54:04",
   "next_link": {
     "category_id": "toys",
     "category": "遊び",
@@ -268,8 +268,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T16:43:41",
-    "exported_at": "2026-06-26T16:43:41",
+    "generated_at": "2026-06-26T16:54:04",
+    "exported_at": "2026-06-26T16:54:04",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -348,6 +348,8 @@
     "commands": {
       "next_action": ".\\catbot_next_action.bat -Open",
       "next_action_apply_publish": ".\\catbot_next_action.bat -Apply -Publish",
+      "live_finish": ".\\catbot_first_link_live_finish.bat -Open",
+      "live_apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
       "handoff": ".\\catbot_first_link_handoff.bat -Open",
       "wait_for_clipboard": ".\\catbot_first_link_wait_for_clipboard.bat",
       "after_copy": ".\\catbot_first_link_after_copy.bat",
@@ -358,15 +360,15 @@
     },
     "steps": [
       "Open the handoff page and create one real tracking URL for the current target.",
-      "Start catbot_first_link_wait_for_clipboard.bat before copying, or copy the tracking URL and run catbot_first_link_after_copy.bat.",
-      "Dry-run with catbot_first_link_finish.bat.",
-      "Apply and publish with catbot_first_link_finish.bat -Apply -Publish only after the dry-run is correct."
+      "Run catbot_first_link_live_finish.bat -Open, then copy the tracking URL after the command is waiting.",
+      "The live command saves the copied URL and dry-runs it without applying.",
+      "Apply and publish with catbot_first_link_live_finish.bat -Apply -Publish only after the dry-run is correct."
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T16:43:44",
+    "checked_at": "2026-06-26T16:54:08",
     "synced": true,
-    "last_exported_at": "2026-06-26T16:43:43",
+    "last_exported_at": "2026-06-26T16:54:06",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -376,7 +378,7 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T16:42:19",
+        "deployed_at": "2026-06-26T16:43:45",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 175,
         "total_bytes": 36233449
