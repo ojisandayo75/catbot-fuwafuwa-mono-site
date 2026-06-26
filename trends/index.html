@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="catbotで伸びた投稿・動画・テーマを、猫のための確認ポイントに変換するページです。">
+<meta property="og:title" content="Catbot 反応トレンド">
+<meta property="og:description" content="catbotで伸びた投稿・動画・テーマを、猫のための確認ポイントに変換するページです。">
+<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catbot 反応トレンド">
+<meta name="twitter:description" content="catbotで伸びた投稿・動画・テーマを、猫のための確認ポイントに変換するページです。">
+<meta name="theme-color" content="#5a3522">
+<link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
+<link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
+<link rel="apple-touch-icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/trends/">
+<meta property="og:url" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/trends/">
+<meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:site" content="@fuwafuwa_mono">
+<meta name="twitter:creator" content="@fuwafuwa_mono">
+<title>Catbot 反応トレンド</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--soft:#f4eadb;--sage:#5f7f67}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:22px}
+.hero{background-image:linear-gradient(90deg,rgba(37,23,15,.96),rgba(62,39,25,.78),rgba(62,39,25,.22)),image-set(url("../assets/ai_shortcut_trends.webp") type("image/webp"),url("../assets/ai_shortcut_trends.png") type("image/png"));background-size:cover;background-position:center;color:#fff8ef}
+.hero .wrap{min-height:340px;display:grid;align-items:end;padding-top:34px;padding-bottom:34px}
+.label{display:inline-flex;align-items:center;width:max-content;max-width:100%;min-height:25px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+.hero .label{background:rgba(244,234,219,.96)}
+h1{margin:8px 0;font-size:39px;line-height:1.14;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:7px 0;font-size:23px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+h3{margin:0 0 5px;font-size:15px;letter-spacing:0}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.hero p{color:#f4e6d5;max-width:720px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;max-width:100%;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800;text-align:center}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.stat,.policy,.trend-card{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
+.stat{background:#fffaf2}.stat b{display:block;font-size:26px;line-height:1.2}
+.policy{margin-top:14px;background:#fff3df;border-color:#caa982}
+.trend-list{display:grid;gap:12px;margin-top:14px}
+.trend-card{display:grid;grid-template-columns:190px minmax(0,1fr);gap:14px;background:#fffaf2}
+.trend-art{min-height:170px;border:1px solid var(--line);border-radius:8px;background-image:image-set(url("../assets/ai_shortcut_trends.webp") type("image/webp"),url("../assets/ai_shortcut_trends.png") type("image/png"));background-size:cover;background-position:center}
+.trend-art[data-kind="category"]{background-image:image-set(url("../assets/ai_category_toys.webp") type("image/webp"),url("../assets/ai_category_toys.png") type("image/png"))}
+.trend-art[data-kind="video"]{background-image:image-set(url("../assets/ai_social_card.webp") type("image/webp"),url("../assets/ai_social_card.jpg") type("image/jpeg"))}
+.trend-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap}
+.trend-head strong{color:#5a3522}
+.take{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px;margin-top:10px}
+ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:7px}
+li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:9px}
+li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
+.products{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:12px}
+@media(max-width:860px){.hero .wrap{min-height:390px}.stats,.trend-card,.products{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.trend-art{min-height:150px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="label">catbot連動</span>
+      <h1>反応トレンド</h1>
+      <p>伸びた投稿や動画の勢いを、そのまま売り込みにせず、猫に必要か確認する入口へ変換します。</p>
+      <div class="actions">
+        <a class="button" href="#cards">トレンドを見る</a>
+        <a class="button light" href="../needs/">困りごとから探す</a>
+        <a class="button light" href="../daily/">今日の猫メモ</a>
+        <a class="button light" href="../">トップへ</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="stats" aria-label="集計元">
+    <article class="stat"><span class="label">投稿</span><b>10</b><p>最近の上位投稿から空気を見る</p></article>
+    <article class="stat"><span class="label">動画</span><b>12</b><p>素材側の反応を見る</p></article>
+    <article class="stat"><span class="label">カテゴリ</span><b>6</b><p>商品より先に猫テーマへ変換</p></article>
+  </section>
+  <section class="policy" aria-label="猫ファースト方針">
+    <span class="label">運用方針</span>
+    <h2>反応が強いほど、買わない条件を先に見る</h2>
+    <p>catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。</p>
+    <ul><li>伸びたテーマは、売る理由ではなく猫の困りごとを見つける入口にする。</li><li>反応が強くても、合わない条件とやめるサインを先に表示する。</li><li>Xでは商品直リンクを急がず、サイト内の確認ページへ送る。</li></ul>
+  </section>
+  <section id="cards" class="trend-list" aria-label="catbot反応カード">
+    
+        <article class="trend-card" id="toys">
+          <div class="trend-art" data-kind="category" aria-hidden="true"></div>
+          <div>
+            <div class="trend-head">
+              <span class="label">反応が強いテーマ</span>
+              <strong>score 40</strong>
+            </div>
+            <h2>遊び</h2>
+            <p>catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。</p>
+            <section class="take">
+              <h3>猫のために見るなら</h3>
+              <p>遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。</p>
+            </section>
+            <ul class="products">
+          <li>
+            <strong>けりぐるみ</strong>
+            <p>縫い目が強いもの、誤飲しにくいサイズを優先。</p>
+            <a href="../products/toys/p1/">候補を見る</a>
+          </li>
+          <li>
+            <strong>電動猫じゃらし</strong>
+            <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+            <a href="../products/toys/p2/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/toys/">カテゴリを見る</a>
+              <a class="button light" href="../needs/#toys">困りごとから見る</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trend-card" id="toys">
+          <div class="trend-art" data-kind="post" aria-hidden="true"></div>
+          <div>
+            <div class="trend-head">
+              <span class="label">伸びた投稿の空気</span>
+              <strong>156,918 views / 1,224 likes</strong>
+            </div>
+            <h2>まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…</h2>
+            <p>最近の上位投稿から、読者が反応している猫の雰囲気を拾います。</p>
+            <section class="take">
+              <h3>猫のために見るなら</h3>
+              <p>読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。</p>
+            </section>
+            <ul class="products">
+          <li>
+            <strong>けりぐるみ</strong>
+            <p>縫い目が強いもの、誤飲しにくいサイズを優先。</p>
+            <a href="../products/toys/p1/">候補を見る</a>
+          </li>
+          <li>
+            <strong>電動猫じゃらし</strong>
+            <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+            <a href="../products/toys/p2/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/toys/">カテゴリを見る</a>
+              <a class="button light" href="../needs/#toys">困りごとから見る</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trend-card" id="toys">
+          <div class="trend-art" data-kind="video" aria-hidden="true"></div>
+          <div>
+            <div class="trend-head">
+              <span class="label">素材動画の傾向</span>
+              <strong>176,038,864 plays</strong>
+            </div>
+            <h2>#cat #catsoftiktok</h2>
+            <p>catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。</p>
+            <section class="take">
+              <h3>猫のために見るなら</h3>
+              <p>動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。</p>
+            </section>
+            <ul class="products">
+          <li>
+            <strong>けりぐるみ</strong>
+            <p>縫い目が強いもの、誤飲しにくいサイズを優先。</p>
+            <a href="../products/toys/p1/">候補を見る</a>
+          </li>
+          <li>
+            <strong>電動猫じゃらし</strong>
+            <p>連続稼働しすぎないもの、羽根の交換ができるものを優先。</p>
+            <a href="../products/toys/p2/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/toys/">カテゴリを見る</a>
+              <a class="button light" href="../needs/#toys">困りごとから見る</a>
+            </div>
+          </div>
+        </article>
+  </section>
+  <div class="actions">
+    <a class="button light" href="../trends-signal.json">trends-signal.json</a>
+    <a class="button light" href="../link-plan/">リンク計画</a>
+    <a class="button light" href="../buying-check/">買う前チェック</a>
+  </div>
+</main>
+</body>
+</html>

@@ -36,6 +36,9 @@
 /link-health.json
   Cache-Control: no-cache
 
+/trends-signal.json
+  Cache-Control: no-cache
+
 /needs-index.json
   Cache-Control: no-cache
 
@@ -85,6 +88,9 @@
   Cache-Control: no-cache
 
 /health/*
+  Cache-Control: no-cache
+
+/trends/*
   Cache-Control: no-cache
 
 /needs/*

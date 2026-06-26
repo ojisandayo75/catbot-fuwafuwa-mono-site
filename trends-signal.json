@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-06-26T11:09:48",
+  "exported_at": "2026-06-26T11:09:48",
+  "state": "trends_signal_ready",
+  "account": "@fuwafuwa_mono",
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。",
+  "source_counts": {
+    "posts": 10,
+    "videos": 12,
+    "categories": 6
+  },
+  "cards": [
+    {
+      "kind": "category",
+      "title": "反応が強いテーマ",
+      "label": "遊び",
+      "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
+      "metric": "score 40",
+      "category_id": "toys",
+      "category": "遊び",
+      "guide_url": "guides/toys/",
+      "products": [
+        {
+          "id": "p1",
+          "name": "けりぐるみ",
+          "detail_url": "products/toys/p1/",
+          "ready": false,
+          "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+          "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+          "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+          "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。",
+          "stop_signal": ""
+        },
+        {
+          "id": "p2",
+          "name": "電動猫じゃらし",
+          "detail_url": "products/toys/p2/",
+          "ready": false,
+          "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+          "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+          "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+          "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。",
+          "stop_signal": ""
+        }
+      ],
+      "cat_first_take": "遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。"
+    },
+    {
+      "kind": "post",
+      "title": "伸びた投稿の空気",
+      "label": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…",
+      "detail": "最近の上位投稿から、読者が反応している猫の雰囲気を拾います。",
+      "metric": "156,918 views / 1,224 likes",
+      "category_id": "toys",
+      "category": "遊び",
+      "guide_url": "guides/toys/",
+      "products": [
+        {
+          "id": "p1",
+          "name": "けりぐるみ",
+          "detail_url": "products/toys/p1/",
+          "ready": false,
+          "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+          "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+          "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+          "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。",
+          "stop_signal": ""
+        },
+        {
+          "id": "p2",
+          "name": "電動猫じゃらし",
+          "detail_url": "products/toys/p2/",
+          "ready": false,
+          "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+          "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+          "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+          "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。",
+          "stop_signal": ""
+        }
+      ],
+      "cat_first_take": "読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。"
+    },
+    {
+      "kind": "video",
+      "title": "素材動画の傾向",
+      "label": "#cat #catsoftiktok",
+      "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
+      "metric": "176,038,864 plays",
+      "category_id": "toys",
+      "category": "遊び",
+      "guide_url": "guides/toys/",
+      "products": [
+        {
+          "id": "p1",
+          "name": "けりぐるみ",
+          "detail_url": "products/toys/p1/",
+          "ready": false,
+          "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+          "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+          "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+          "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。",
+          "stop_signal": ""
+        },
+        {
+          "id": "p2",
+          "name": "電動猫じゃらし",
+          "detail_url": "products/toys/p2/",
+          "ready": false,
+          "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+          "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+          "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+          "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。",
+          "stop_signal": ""
+        }
+      ],
+      "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。"
+    }
+  ],
+  "next_link": {
+    "category_id": "toys",
+    "product_id": "p2",
+    "product": "電動猫じゃらし",
+    "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。"
+  },
+  "cat_first_policy": [
+    "伸びたテーマは、売る理由ではなく猫の困りごとを見つける入口にする。",
+    "反応が強くても、合わない条件とやめるサインを先に表示する。",
+    "Xでは商品直リンクを急がず、サイト内の確認ページへ送る。"
+  ],
+  "related": {
+    "needs": "needs/",
+    "daily": "daily/",
+    "seasonal": "seasonal/",
+    "buying_check": "buying-check/",
+    "link_plan": "link-plan/"
+  }
+}
