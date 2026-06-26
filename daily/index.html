@@ -44,7 +44,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800}
 .button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
 .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:14px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
 .card,.product-card,.copy-card{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
 .stat-card{background:#fffaf2}
@@ -57,6 +57,11 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .checks strong{display:block;color:#3f281b;margin-bottom:4px}
 .tags,.blockers{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .tags span,.blockers span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:800}
+.lane{display:inline-flex;width:max-content;max-width:100%;min-height:25px;align-items:center;margin-top:7px;padding:3px 8px;border:1px solid #caa982;border-radius:8px;background:#fff3df;color:#5a3522;font-size:12px;font-weight:900}
+.lane.ready{background:#edf3e5;border-color:#b8c9ad;color:#446146}
+.lane.careful{background:#fff2dd;border-color:#d8b070;color:#79521f}
+.lane.watch_only{background:#f4eadb;border-color:#d8bea4;color:#6a5646}
+.lane-note{margin-top:8px;color:#5f4735;font-weight:700}
 .action-list{margin:8px 0 0;padding-left:20px;color:#5f4735}
 .action-list li{margin-top:8px}
 .action-list strong,.action-list span,.action-list code{display:block}
@@ -100,6 +105,12 @@ code{margin-top:4px;padding:6px 8px;border:1px solid #d8bea4;border-radius:8px;b
           <span class="label">リンク</span>
           <b>0/9</b>
           <p>実リンクはまだ待機中</p>
+        </article>
+
+        <article class="card stat-card">
+          <span class="label">猫優先</span>
+          <b>慎重にリンク化</b>
+          <p>ready 1 / careful 4 / watch 0</p>
         </article></section>
   <section class="grid" aria-label="catbot反応と投稿ガード">
     <article class="card focus">
@@ -135,7 +146,9 @@ code{margin-top:4px;padding:6px 8px;border:1px solid #d8bea4;border-radius:8px;b
     <article class="card">
       <span class="label">次の対象</span>
       <h2>電動猫じゃらし</h2>
+      <span class="lane careful">慎重にリンク化</span>
       <p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p>
+      <p class="lane-note">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
       <div class="actions"><a class="button light" href="../link-plan/">リンク計画</a><a class="button light" href="../buying-check/">買う前チェック</a></div>
     </article>
   </section>
@@ -145,8 +158,10 @@ code{margin-top:4px;padding:6px 8px;border:1px solid #d8bea4;border-radius:8px;b
         <article class="product-card">
           <div>
             <span class="label">rank 1</span>
+            <span class="lane careful">慎重にリンク化</span>
             <h2>電動猫じゃらし</h2>
             <p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p>
+            <p class="lane-note">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
             <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span><span>中単価</span></div>
           </div>
           <div class="checks">
@@ -160,8 +175,10 @@ code{margin-top:4px;padding:6px 8px;border:1px solid #d8bea4;border-radius:8px;b
         <article class="product-card">
           <div>
             <span class="label">rank 2</span>
+            <span class="lane ready">リンク化しやすい</span>
             <h2>けりぐるみ</h2>
             <p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p>
+            <p class="lane-note">通常の猫ファースト注意を添えて、次のリンク候補にできます。</p>
             <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span></div>
           </div>
           <div class="checks">
@@ -175,8 +192,10 @@ code{margin-top:4px;padding:6px 8px;border:1px solid #d8bea4;border-radius:8px;b
         <article class="product-card">
           <div>
             <span class="label">rank 3</span>
+            <span class="lane careful">慎重にリンク化</span>
             <h2>自動給餌器</h2>
             <p>詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。</p>
+            <p class="lane-note">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
             <div class="tags"><span>季節ケア</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>高単価</span></div>
           </div>
           <div class="checks">
@@ -190,8 +209,10 @@ code{margin-top:4px;padding:6px 8px;border:1px solid #d8bea4;border-radius:8px;b
         <article class="product-card">
           <div>
             <span class="label">rank 4</span>
+            <span class="lane careful">慎重にリンク化</span>
             <h2>循環式水飲み器</h2>
             <p>洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。</p>
+            <p class="lane-note">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
             <div class="tags"><span>季節ケア</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>中単価</span></div>
           </div>
           <div class="checks">

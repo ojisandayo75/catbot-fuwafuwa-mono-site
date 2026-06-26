@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T21:17:32",
+  "generated_at": "2026-06-26T21:38:16",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "tagline": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
@@ -767,7 +767,7 @@
     "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
   },
   "catbot_trends": {
-    "generated_at": "2026-06-26T21:17:32",
+    "generated_at": "2026-06-26T21:38:16",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -802,7 +802,7 @@
     "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
   },
   "purchase_advisor": {
-    "generated_at": "2026-06-26T21:17:32",
+    "generated_at": "2026-06-26T21:38:16",
     "cards": [
       {
         "id": "home-alone",
@@ -939,7 +939,7 @@
     "summary": "猫の性格・暮らし・catbotの反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
   },
   "update_notes": {
-    "generated_at": "2026-06-26T21:17:32",
+    "generated_at": "2026-06-26T21:38:16",
     "cards": [
       {
         "title": "フォロワー進捗",
@@ -1500,7 +1500,7 @@
     "last_posted_at": "2026-06-25T12:44:49"
   },
   "report": {
-    "generated_at": "2026-06-26T21:17:32",
+    "generated_at": "2026-06-26T21:38:16",
     "phase": "link_setup",
     "summary": {
       "followers": 578,
@@ -1960,7 +1960,7 @@
     "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
   },
   "share_copy": {
-    "generated_at": "2026-06-26T21:17:32",
+    "generated_at": "2026-06-26T21:38:16",
     "phase": "launch_waiting",
     "account": "@fuwafuwa_mono",
     "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -2017,10 +2017,10 @@
       ]
     }
   },
-  "exported_at": "2026-06-26T21:17:32",
+  "exported_at": "2026-06-26T21:38:16",
   "consult_first": {
-    "generated_at": "2026-06-26T21:17:32",
-    "exported_at": "2026-06-26T21:17:32",
+    "generated_at": "2026-06-26T21:38:16",
+    "exported_at": "2026-06-26T21:38:16",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",
