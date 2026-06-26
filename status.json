@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T15:55:08",
-  "exported_at": "2026-06-26T15:55:08",
+  "generated_at": "2026-06-26T16:04:08",
+  "exported_at": "2026-06-26T16:04:08",
   "phase": "needs_affiliate_link",
   "site_name": "ふわふわ猫の道具箱",
   "public_url_configured": true,
@@ -284,8 +284,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T15:55:08",
-    "exported_at": "2026-06-26T15:55:08",
+    "generated_at": "2026-06-26T16:04:08",
+    "exported_at": "2026-06-26T16:04:08",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -330,6 +330,8 @@
   "first_link_safe_flow": {
     "primary": "wait_for_clipboard_then_apply_publish",
     "commands": {
+      "next_action": ".\\catbot_next_action.bat -Open",
+      "next_action_apply_publish": ".\\catbot_next_action.bat -Apply -Publish",
       "handoff": ".\\catbot_first_link_handoff.bat -Open",
       "wait_for_clipboard": ".\\catbot_first_link_wait_for_clipboard.bat",
       "after_copy": ".\\catbot_first_link_after_copy.bat",
@@ -346,9 +348,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T15:55:12",
+    "checked_at": "2026-06-26T16:04:12",
     "synced": true,
-    "last_exported_at": "2026-06-26T15:55:10",
+    "last_exported_at": "2026-06-26T16:04:10",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -358,10 +360,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T15:53:25",
+        "deployed_at": "2026-06-26T16:03:22",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 175,
-        "total_bytes": 36233634
+        "total_bytes": 36235014
       }
     },
     "scheduled_task": {
@@ -369,9 +371,9 @@
       "ok": true,
       "installed": true,
       "state": "Running",
-      "last_run_time": "2026-06-26T15:28:09",
+      "last_run_time": "2026-06-26T15:58:09",
       "last_task_result": 2147946720,
-      "next_run_time": "2026-06-26T15:58:08",
+      "next_run_time": "2026-06-26T16:28:08",
       "number_of_missed_runs": 0,
       "repetition_interval": "PT30M",
       "action_matches": true,

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T15:55:08",
-  "exported_at": "2026-06-26T15:55:08",
+  "generated_at": "2026-06-26T16:04:08",
+  "exported_at": "2026-06-26T16:04:08",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "public_url_valid": true,
@@ -236,6 +236,8 @@
   "first_link_safe_flow": {
     "primary": "wait_for_clipboard_then_apply_publish",
     "commands": {
+      "next_action": ".\\catbot_next_action.bat -Open",
+      "next_action_apply_publish": ".\\catbot_next_action.bat -Apply -Publish",
       "handoff": ".\\catbot_first_link_handoff.bat -Open",
       "wait_for_clipboard": ".\\catbot_first_link_wait_for_clipboard.bat",
       "after_copy": ".\\catbot_first_link_after_copy.bat",
