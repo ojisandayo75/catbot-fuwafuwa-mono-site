@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T03:49:21",
-  "exported_at": "2026-06-27T03:49:21",
+  "generated_at": "2026-06-27T04:22:23",
+  "exported_at": "2026-06-27T04:22:23",
   "state": "needs_first_affiliate_link",
   "headline": "残りは最初の実アフィリリンクです",
   "primary_action": "toys/p2 電動猫じゃらし の追跡URLを保存する",
@@ -94,7 +94,7 @@
     "ok": [
       "もしもで発行した追跡URL。",
       "af.moshimo.com、a.r10.to、hb.afl.rakuten.co.jp など提携経由だと分かるURL。",
-      "Amazon URLなら tag= / ascsubtag= / linkCode= など追跡情報が見えるURL。"
+      "Amazon URLなら tag= / ascsubtag= など追跡情報が見えるURL。"
     ],
     "ng": [
       "普通のAmazon/Rakuten商品ページURL。",
