@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T21:38:16",
+  "generated_at": "2026-06-26T21:51:04",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "tagline": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
@@ -132,7 +132,26 @@
             ],
             "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
           },
-          "detail_url": "products/toys/p1/"
+          "detail_url": "products/toys/p1/",
+          "cat_first_review": {
+            "review_level": "standard",
+            "cat_first_score": 90,
+            "risk_signals": [
+              "誤飲・破損"
+            ],
+            "info_complete": true,
+            "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+            "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+            "buy_before_check": "縫い目が強く、猫の口より小さすぎないサイズを選びます。",
+            "stop_signal": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。",
+            "first_try": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "ready",
+          "cat_first_lane_rank": 1,
+          "cat_first_lane_label": "リンク化しやすい",
+          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
         },
         {
           "name": "電動猫じゃらし",
@@ -183,7 +202,29 @@
             ],
             "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
           },
-          "detail_url": "products/toys/p2/"
+          "detail_url": "products/toys/p2/",
+          "cat_first_review": {
+            "review_level": "careful",
+            "cat_first_score": 60,
+            "risk_signals": [
+              "誤飲・破損",
+              "怖がり・音",
+              "体調・食事",
+              "興奮・執着"
+            ],
+            "info_complete": true,
+            "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+            "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+            "buy_before_check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。",
+            "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+            "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "careful",
+          "cat_first_lane_rank": 2,
+          "cat_first_lane_label": "慎重にリンク化",
+          "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
         }
       ],
       "score": 32
@@ -250,7 +291,26 @@
             ],
             "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
           },
-          "detail_url": "products/treats/p1/"
+          "detail_url": "products/treats/p1/",
+          "cat_first_review": {
+            "review_level": "standard",
+            "cat_first_score": 90,
+            "risk_signals": [
+              "体調・食事"
+            ],
+            "info_complete": true,
+            "best_for": "ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。",
+            "not_for": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。",
+            "buy_before_check": "対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。",
+            "stop_signal": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
+            "first_try": "主食の代わりにせず、あげた日は他のおやつ量を減らします。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "ready",
+          "cat_first_lane_rank": 1,
+          "cat_first_lane_label": "リンク化しやすい",
+          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
         },
         {
           "name": "無添加寄りのおやつ",
@@ -299,7 +359,27 @@
             ],
             "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
           },
-          "detail_url": "products/treats/p2/"
+          "detail_url": "products/treats/p2/",
+          "cat_first_review": {
+            "review_level": "watch",
+            "cat_first_score": 80,
+            "risk_signals": [
+              "誤飲・破損",
+              "体調・食事"
+            ],
+            "info_complete": true,
+            "best_for": "原材料を見て選びたい子、いつものおやつを少し見直したい子。",
+            "not_for": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。",
+            "buy_before_check": "原材料、塩分、添加物、対象年齢を見て、体調に合うか先に確認します。",
+            "stop_signal": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
+            "first_try": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "careful",
+          "cat_first_lane_rank": 2,
+          "cat_first_lane_label": "慎重にリンク化",
+          "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
         }
       ],
       "score": 15
@@ -366,7 +446,28 @@
             ],
             "action": "優先度は中。主要商品のリンク投入後に差し替える。"
           },
-          "detail_url": "products/scratch/p1/"
+          "detail_url": "products/scratch/p1/",
+          "cat_first_review": {
+            "review_level": "watch",
+            "cat_first_score": 70,
+            "risk_signals": [
+              "誤飲・破損",
+              "怖がり・音",
+              "衛生・手入れ"
+            ],
+            "info_complete": true,
+            "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
+            "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+            "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
+            "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+            "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "careful",
+          "cat_first_lane_rank": 2,
+          "cat_first_lane_label": "慎重にリンク化",
+          "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
         }
       ],
       "score": 6
@@ -434,7 +535,28 @@
             ],
             "action": "優先度は中。主要商品のリンク投入後に差し替える。"
           },
-          "detail_url": "products/water/p1/"
+          "detail_url": "products/water/p1/",
+          "cat_first_review": {
+            "review_level": "watch",
+            "cat_first_score": 70,
+            "risk_signals": [
+              "誤飲・破損",
+              "怖がり・音",
+              "衛生・手入れ"
+            ],
+            "info_complete": true,
+            "best_for": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。",
+            "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
+            "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。",
+            "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
+            "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "careful",
+          "cat_first_lane_rank": 2,
+          "cat_first_lane_label": "慎重にリンク化",
+          "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
         },
         {
           "name": "自動給餌器",
@@ -485,7 +607,28 @@
             ],
             "action": "優先度は中。主要商品のリンク投入後に差し替える。"
           },
-          "detail_url": "products/water/p2/"
+          "detail_url": "products/water/p2/",
+          "cat_first_review": {
+            "review_level": "watch",
+            "cat_first_score": 70,
+            "risk_signals": [
+              "誤飲・破損",
+              "体調・食事",
+              "衛生・手入れ"
+            ],
+            "info_complete": true,
+            "best_for": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
+            "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
+            "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。",
+            "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+            "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "careful",
+          "cat_first_lane_rank": 2,
+          "cat_first_lane_label": "慎重にリンク化",
+          "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
         }
       ],
       "score": 5
@@ -551,7 +694,24 @@
             ],
             "action": "優先度は中。主要商品のリンク投入後に差し替える。"
           },
-          "detail_url": "products/care/p1/"
+          "detail_url": "products/care/p1/",
+          "cat_first_review": {
+            "review_level": "standard",
+            "cat_first_score": 100,
+            "risk_signals": [],
+            "info_complete": true,
+            "best_for": "換毛期の抜け毛が多い子、短時間のブラッシングなら受け入れやすい子。",
+            "not_for": "皮膚が弱い子、触られるのが苦手な子、怒りやすい子。",
+            "buy_before_check": "毛質に合う形、肌に強く当たりすぎない先端、握りやすさを確認します。",
+            "stop_signal": "皮膚が赤くなる、フケが増える、怒る、逃げる時は強さや形を見直します。",
+            "first_try": "短時間で終え、嫌がる日はやめて、終わった後の皮膚も見ます。",
+            "decision": "ready_for_soft_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "ready",
+          "cat_first_lane_rank": 1,
+          "cat_first_lane_label": "リンク化しやすい",
+          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
         }
       ],
       "score": 4
@@ -618,7 +778,27 @@
             ],
             "action": "優先度は中。主要商品のリンク投入後に差し替える。"
           },
-          "detail_url": "products/watch/p1/"
+          "detail_url": "products/watch/p1/",
+          "cat_first_review": {
+            "review_level": "watch",
+            "cat_first_score": 80,
+            "risk_signals": [
+              "誤飲・破損",
+              "怖がり・音"
+            ],
+            "info_complete": true,
+            "best_for": "留守中の様子を確認したい家庭、行動変化に早く気づきたい家庭。",
+            "not_for": "カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。",
+            "buy_before_check": "画質、夜間撮影、録画、アプリの使いやすさに加えて、配線と設置の安定を見ます。",
+            "stop_signal": "カメラ音や動きで怖がる、コードを噛む、倒しそうな時は位置を変えます。",
+            "first_try": "見守りは補助。異変が見えたら通知だけで済ませず、直接確認します。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "careful",
+          "cat_first_lane_rank": 2,
+          "cat_first_lane_label": "慎重にリンク化",
+          "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
         }
       ],
       "score": 3
@@ -767,7 +947,7 @@
     "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
   },
   "catbot_trends": {
-    "generated_at": "2026-06-26T21:38:16",
+    "generated_at": "2026-06-26T21:51:04",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -802,7 +982,7 @@
     "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
   },
   "purchase_advisor": {
-    "generated_at": "2026-06-26T21:38:16",
+    "generated_at": "2026-06-26T21:51:04",
     "cards": [
       {
         "id": "home-alone",
@@ -939,7 +1119,7 @@
     "summary": "猫の性格・暮らし・catbotの反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
   },
   "update_notes": {
-    "generated_at": "2026-06-26T21:38:16",
+    "generated_at": "2026-06-26T21:51:04",
     "cards": [
       {
         "title": "フォロワー進捗",
@@ -1500,7 +1680,7 @@
     "last_posted_at": "2026-06-25T12:44:49"
   },
   "report": {
-    "generated_at": "2026-06-26T21:38:16",
+    "generated_at": "2026-06-26T21:51:04",
     "phase": "link_setup",
     "summary": {
       "followers": 578,
@@ -1960,7 +2140,7 @@
     "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
   },
   "share_copy": {
-    "generated_at": "2026-06-26T21:38:16",
+    "generated_at": "2026-06-26T21:51:04",
     "phase": "launch_waiting",
     "account": "@fuwafuwa_mono",
     "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -2017,10 +2197,10 @@
       ]
     }
   },
-  "exported_at": "2026-06-26T21:38:16",
+  "exported_at": "2026-06-26T21:51:04",
   "consult_first": {
-    "generated_at": "2026-06-26T21:38:16",
-    "exported_at": "2026-06-26T21:38:16",
+    "generated_at": "2026-06-26T21:51:04",
+    "exported_at": "2026-06-26T21:51:04",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",

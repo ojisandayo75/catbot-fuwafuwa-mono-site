@@ -53,7 +53,19 @@
         "@type": "Offer",
         "url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/go/treats/p2/",
         "availability": "https://schema.org/PreOrder"
-      }
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "猫優先ランク",
+          "value": "慎重にリンク化"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "猫優先スコア",
+          "value": "80"
+        }
+      ]
     },
     {
       "@type": "Article",
@@ -62,7 +74,7 @@
       "description": "毎日ではなくても、原材料を見て選びたい人向け。",
       "inLanguage": "ja",
       "mainEntityOfPage": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/treats/p2/",
-      "dateModified": "2026-06-26T21:38:16",
+      "dateModified": "2026-06-26T21:51:04",
       "author": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
@@ -157,11 +169,16 @@ section{margin-top:22px}
 .panel{background:var(--soft)}
 h2{font-size:22px;line-height:1.25;margin:0 0 10px;letter-spacing:0}
 .facts,.checks,.fit-grid{display:grid;gap:10px}
-.facts{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:12px}
+.facts{grid-template-columns:repeat(auto-fit,minmax(138px,1fr));margin-top:12px}
 .fit-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 .fact{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:10px;min-width:0}
 .fact span{display:block;color:var(--muted);font-size:12px;font-weight:800}
 .fact strong{display:block;color:var(--ink);font-size:20px;overflow-wrap:anywhere}
+.lane{display:inline-flex;width:max-content;max-width:100%;min-height:28px;align-items:center;margin:8px 0 2px;padding:3px 9px;border:1px solid #caa982;border-radius:8px;background:#fff3df;color:#5a3522;font-size:13px;font-weight:900}
+.lane.ready{background:#edf3e5;border-color:#b8c9ad;color:#446146}
+.lane.careful{background:#fff2dd;border-color:#d8b070;color:#79521f}
+.lane.watch_only{background:#f4eadb;border-color:#d8bea4;color:#6a5646}
+.lane-note{margin-top:8px;color:#5f4735;font-weight:750}
 .fit-card{border:1px solid #dccab5;border-radius:8px;background:#fffaf2;padding:12px;color:#5f4735;min-width:0}
 .fit-card strong{display:block;color:#4e2f1f;margin-bottom:4px}
 .fit-card p{margin:0;font-size:14px}
@@ -203,7 +220,9 @@ h2{font-size:22px;line-height:1.25;margin:0 0 10px;letter-spacing:0}
     <div>
       <span class="eyebrow">おやつ</span>
       <h1>無添加寄りのおやつ</h1>
+      <span class="lane careful">猫優先: 慎重にリンク化</span>
       <p class="lead">毎日ではなくても、原材料を見て選びたい人向け。</p>
+      <p class="lane-note">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
       
         <div class="product-state-strip">
           <span class="product-state-icon" data-icon="treats" aria-hidden="true"></span>
@@ -216,6 +235,7 @@ h2{font-size:22px;line-height:1.25;margin:0 0 10px;letter-spacing:0}
       <div class="facts">
         <div class="fact"><span>catbot優先度</span><strong>39</strong></div>
         <div class="fact"><span>rank</span><strong>7</strong></div>
+        <div class="fact"><span>猫優先スコア</span><strong>80</strong></div>
         <div class="fact"><span>価格帯</span><strong>中</strong></div>
       </div>
       <div class="hero-actions">
@@ -237,6 +257,12 @@ h2{font-size:22px;line-height:1.25;margin:0 0 10px;letter-spacing:0}
       <p>毎日ではなくても、原材料を見て選びたい人向け。</p>
       <div class="priority-tags"><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>中単価</span></div>
       <p>catbotデータとの相性が高い。最初にもしもリンクを作る候補。</p>
+    </section>
+    <section class="panel">
+      <h2>猫優先ランク</h2>
+      <span class="lane careful">慎重にリンク化</span>
+      <p class="lane-note">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
+      <div class="priority-tags"><span>誤飲・破損</span><span>体調・食事</span></div>
     </section>
     <section class="panel">
       <h2>リンクの見方</h2>
