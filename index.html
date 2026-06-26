@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-26T15:34:33",
+      "dateModified": "2026-06-26T15:47:50",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -3831,7 +3831,7 @@
     .match-list{grid-template-columns:1fr 1fr}
   }
   @media (max-width:620px){
-    body{padding-bottom:126px}
+    body{padding-bottom:112px}
     .sitebar-inner{align-items:flex-start;flex-direction:column}
     .brand{width:100%;max-width:100%;min-width:0;grid-template-columns:38px minmax(0,1fr)}
     .brand-copy{max-width:calc(100vw - 84px)}
@@ -3865,9 +3865,9 @@
     .mobile-image-menu-scroll{
       max-width:1160px;
       margin:0 auto;
-      padding:9px 8px calc(8px + env(safe-area-inset-bottom));
+      padding:8px 6px calc(7px + env(safe-area-inset-bottom));
       display:flex;
-      gap:5px;
+      gap:3px;
       overflow-x:auto;
       overflow-y:hidden;
       scroll-snap-type:x proximity;
@@ -3876,15 +3876,15 @@
     }
     .mobile-image-menu-scroll::-webkit-scrollbar{display:none}
     .mobile-image-menu-button{
-      flex:0 0 92px;
-      width:92px;
-      min-width:92px;
-      min-height:96px;
-      padding:5px 5px 7px;
+      flex:0 0 70px;
+      width:70px;
+      min-width:70px;
+      min-height:82px;
+      padding:4px 4px 6px;
     }
     .mobile-image-menu-icon{
-      width:68px;
-      height:68px;
+      width:52px;
+      height:52px;
     }
     .hero{height:58vh;min-height:430px}
     .hero-inner{padding-bottom:108px}
@@ -4086,41 +4086,33 @@
       <span class="mobile-image-menu-icon" data-icon="match" aria-hidden="true"></span>
       <span>入口</span>
     </a>
-    <button class="mobile-image-menu-button" type="button" data-filter-category="all">
+    <button class="mobile-image-menu-button" type="button" data-filter-category="all" aria-label="猫用品をすべて見る">
       <span class="mobile-image-menu-icon" data-icon="all" aria-hidden="true"></span>
-      <span>全部</span>
+      <span>用品</span>
     </button>
-    <a class="mobile-image-menu-button is-journey" href="#launchBridge" aria-label="今のcatbotサイト状態を見る">
-      <span class="mobile-image-menu-icon" data-icon="trends" aria-hidden="true"></span>
-      <span>状態</span>
-    </a>
-    <a class="mobile-image-menu-button is-journey" href="#catMatch" aria-label="うちの子に合わせて選ぶ">
-      <span class="mobile-image-menu-icon" data-icon="match" aria-hidden="true"></span>
-      <span>うちの子</span>
-    </a>
     <a class="mobile-image-menu-button is-journey" href="#advisor" aria-label="買う前に安全チェックする">
       <span class="mobile-image-menu-icon" data-icon="advisor" aria-hidden="true"></span>
       <span>買う前</span>
     </a>
-    <a class="mobile-image-menu-button is-journey" href="#trustBridge" aria-label="猫優先の選び方を見る">
-      <span class="mobile-image-menu-icon" data-icon="trust" aria-hidden="true"></span>
-      <span>猫優先</span>
+    <a class="mobile-image-menu-button is-journey" href="quiz/" aria-label="うちの子診断を開く">
+      <span class="mobile-image-menu-icon" data-icon="match" aria-hidden="true"></span>
+      <span>診断</span>
     </a>
     <a class="mobile-image-menu-button" href="#noBuyGuide" aria-label="買わない判断を見る">
       <span class="mobile-image-menu-icon" data-icon="no-buy" aria-hidden="true"></span>
-      <span>買わない</span>
+      <span>止める</span>
     </a>
     <a class="mobile-image-menu-button is-journey" href="#consultFirst" aria-label="症状があるときの相談優先を見る">
       <span class="mobile-image-menu-icon" data-icon="consult" aria-hidden="true"></span>
       <span>相談</span>
     </a>
-    <a class="mobile-image-menu-button" href="#followerMilestone">
+    <a class="mobile-image-menu-button is-journey" href="#launchBridge" aria-label="今のcatbotサイト状態を見る">
       <span class="mobile-image-menu-icon" data-icon="trends" aria-hidden="true"></span>
-      <span>1000</span>
+      <span>状況</span>
     </a>
-    <a class="mobile-image-menu-button" href="#nextLink">
+    <a class="mobile-image-menu-button" href="#nextLink" aria-label="最初の候補を見る">
       <span class="mobile-image-menu-icon" data-icon="watch" aria-hidden="true"></span>
-      <span>次の1件</span>
+      <span>最初</span>
     </a>
     <button class="mobile-image-menu-button" type="button" data-filter-category="toys">
       <span class="mobile-image-menu-icon" data-icon="toys" aria-hidden="true"></span>
@@ -4152,7 +4144,11 @@
     </a>
     <a class="mobile-image-menu-button" href="#trends">
       <span class="mobile-image-menu-icon" data-icon="trends" aria-hidden="true"></span>
-      <span>反応</span>
+      <span>注目</span>
+    </a>
+    <a class="mobile-image-menu-button is-journey" href="#trustBridge" aria-label="猫優先の選び方を見る">
+      <span class="mobile-image-menu-icon" data-icon="trust" aria-hidden="true"></span>
+      <span>方針</span>
     </a>
   </div>
 </nav>
