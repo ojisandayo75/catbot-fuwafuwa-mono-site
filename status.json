@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T11:53:07",
-  "exported_at": "2026-06-26T11:53:07",
+  "generated_at": "2026-06-26T12:01:39",
+  "exported_at": "2026-06-26T12:01:39",
   "phase": "needs_affiliate_link",
   "site_name": "ふわふわ猫の道具箱",
   "public_url_configured": true,
@@ -36,7 +36,7 @@
     "product_id": "p2",
     "product": "電動猫じゃらし",
     "reason": "人が手を離していても短時間の運動を作れます。",
-    "score": 219,
+    "score": 211,
     "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
     "price_band": "中",
     "reasons": [
@@ -73,7 +73,7 @@
       "product_id": "p2",
       "product": "電動猫じゃらし",
       "reason": "人が手を離していても短時間の運動を作れます。",
-      "score": 219,
+      "score": 211,
       "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
       "price_band": "中",
       "reasons": [
@@ -108,7 +108,7 @@
       "product_id": "p1",
       "product": "けりぐるみ",
       "reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
-      "score": 215,
+      "score": 207,
       "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
       "price_band": "低",
       "reasons": [
@@ -284,8 +284,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T11:53:07",
-    "exported_at": "2026-06-26T11:53:07",
+    "generated_at": "2026-06-26T12:01:39",
+    "exported_at": "2026-06-26T12:01:39",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -346,9 +346,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T11:53:10",
+    "checked_at": "2026-06-26T12:01:42",
     "synced": true,
-    "last_exported_at": "2026-06-26T11:53:09",
+    "last_exported_at": "2026-06-26T12:01:41",
     "ready_links": 0,
     "total_products": 9,
     "followers": 561,
@@ -358,10 +358,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T11:38:25",
+        "deployed_at": "2026-06-26T12:00:50",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-        "file_count": 166,
-        "total_bytes": 52203209
+        "file_count": 167,
+        "total_bytes": 35666246
       }
     },
     "scheduled_task": {

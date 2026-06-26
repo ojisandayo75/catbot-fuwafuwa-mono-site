@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T11:53:07",
-  "exported_at": "2026-06-26T11:53:07",
+  "generated_at": "2026-06-26T12:01:39",
+  "exported_at": "2026-06-26T12:01:39",
   "state": "cat_quiz_ready",
   "account": "@fuwafuwa_mono",
   "followers": 561,
@@ -40,7 +40,7 @@
     {
       "id": "home-alone",
       "rank": 1,
-      "score": 166,
+      "score": 158,
       "title": "留守番が多い猫",
       "lead": "長時間ひとりの時間がある子は、見守りと退屈対策を分けて考えると失敗しにくいです。",
       "icon": "watch",
@@ -196,7 +196,7 @@
     {
       "id": "active",
       "rank": 2,
-      "score": 146,
+      "score": 138,
       "title": "よく走る・遊び足りない猫",
       "lead": "退屈がたまる子は、先に安全に発散できる遊び場を作ると暮らしが落ち着きます。",
       "icon": "toys",

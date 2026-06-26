@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T11:53:07",
+  "generated_at": "2026-06-26T12:01:39",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "tagline": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
@@ -124,7 +124,7 @@
           },
           "priority": {
             "rank": 2,
-            "score": 215,
+            "score": 207,
             "reasons": [
               "catbot反応",
               "買う前チェック: 留守番が多い猫",
@@ -174,7 +174,7 @@
           },
           "priority": {
             "rank": 1,
-            "score": 219,
+            "score": 211,
             "reasons": [
               "catbot反応",
               "買う前チェック: 留守番が多い猫",
@@ -186,7 +186,7 @@
           "detail_url": "products/toys/p2/"
         }
       ],
-      "score": 40
+      "score": 32
     },
     {
       "id": "treats",
@@ -635,7 +635,7 @@
         "興奮しすぎる子は、遊んだ後に休める場所までセットで見る。"
       ],
       "category": "遊び",
-      "category_score": 40,
+      "category_score": 32,
       "product_count": 2,
       "first_product": "けりぐるみ",
       "first_product_reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
@@ -767,7 +767,7 @@
     "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
   },
   "catbot_trends": {
-    "generated_at": "2026-06-26T11:53:07",
+    "generated_at": "2026-06-26T12:01:39",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -779,7 +779,7 @@
         "title": "反応が強いテーマ",
         "label": "遊び",
         "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
-        "metric": "score 40",
+        "metric": "score 32",
         "category_id": "toys"
       },
       {
@@ -795,14 +795,14 @@
         "title": "素材動画の傾向",
         "label": "#cat #catsoftiktok",
         "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
-        "metric": "176,038,864 plays",
+        "metric": "176,039,702 plays",
         "category_id": "toys"
       }
     ],
     "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
   },
   "purchase_advisor": {
-    "generated_at": "2026-06-26T11:53:07",
+    "generated_at": "2026-06-26T12:01:39",
     "cards": [
       {
         "id": "home-alone",
@@ -834,7 +834,7 @@
         ],
         "first_product": "ペットカメラ",
         "first_product_reason": "留守中の行動や体調変化に気づきやすくなります。",
-        "score": 166,
+        "score": 158,
         "source_labels": [
           "catbot反応",
           "季節ケア"
@@ -866,7 +866,7 @@
         ],
         "first_product": "けりぐるみ",
         "first_product_reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
-        "score": 146,
+        "score": 138,
         "source_labels": [
           "catbot反応",
           "季節ケア"
@@ -939,7 +939,7 @@
     "summary": "猫の性格・暮らし・catbotの反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
   },
   "update_notes": {
-    "generated_at": "2026-06-26T11:53:07",
+    "generated_at": "2026-06-26T12:01:39",
     "cards": [
       {
         "title": "フォロワー進捗",
@@ -949,7 +949,7 @@
       {
         "title": "今日の反応テーマ",
         "label": "遊び",
-        "detail": "score 40。反応が強いテーマから商品カテゴリを整えます。",
+        "detail": "score 32。反応が強いテーマから商品カテゴリを整えます。",
         "category_id": "toys"
       },
       {
@@ -1022,7 +1022,7 @@
         },
         "priority": {
           "rank": 2,
-          "score": 215,
+          "score": 207,
           "reasons": [
             "catbot反応",
             "買う前チェック: 留守番が多い猫",
@@ -1070,7 +1070,7 @@
         },
         "priority": {
           "rank": 1,
-          "score": 219,
+          "score": 211,
           "reasons": [
             "catbot反応",
             "買う前チェック: 留守番が多い猫",
@@ -1081,7 +1081,7 @@
         }
       }
     ],
-    "score": 40
+    "score": 32
   },
   "top_posts": [
     {
@@ -1322,9 +1322,9 @@
       "username": "lovelycute_baby",
       "url": "https://www.tiktok.com/@lovelycute_baby/video/7291651785746386219",
       "title": "#cat #catsoftiktok ",
-      "play_count": 176038864,
-      "like_count": 14420631,
-      "comment_count": 69646,
+      "play_count": 176039702,
+      "like_count": 14420772,
+      "comment_count": 69642,
       "mp4": "01_lovelycute_baby_7291651785746386219.mp4",
       "status": "blocked",
       "posted_count": 1,
@@ -1336,9 +1336,9 @@
       "username": "pawsitive.energy7",
       "url": "https://www.tiktok.com/@pawsitive.energy7/video/7571394880136629518",
       "title": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp ",
-      "play_count": 114864396,
-      "like_count": 25019479,
-      "comment_count": 45559,
+      "play_count": 114887133,
+      "like_count": 25021240,
+      "comment_count": 45562,
       "mp4": "02_pawsitive.energy7_7571394880136629518.mp4",
       "status": "blocked",
       "posted_count": 1,
@@ -1346,143 +1346,143 @@
     },
     {
       "rank": 3,
-      "video_id": "7507952145832889643",
-      "username": "lovecat.0338",
-      "url": "https://www.tiktok.com/@lovecat.0338/video/7507952145832889643",
-      "title": "Cat WWE🥊(perfect body technique)#funnycat #pet #fyp #funnyvideos #catsoftiktok #cute #kitten #cat #funny #foyou #PetsOfTikTok #WWE #tiktok #UFC ",
-      "play_count": 96132548,
-      "like_count": 4596459,
-      "comment_count": 66067,
-      "mp4": "03_lovecat.0338_7507952145832889643.mp4",
-      "status": "blocked",
-      "posted_count": 1,
-      "last_posted_at": "2026-06-24T09:06:58"
-    },
-    {
-      "rank": 4,
-      "video_id": "7491989294274350366",
-      "username": "phanthavongrisugl",
-      "url": "https://www.tiktok.com/@phanthavongrisugl/video/7491989294274350366",
-      "title": "Cat caught doing something bad #cat #catsoftiktok #funny #funnycats #pets #cute #kitty #catlover #foryou ",
-      "play_count": 87076641,
-      "like_count": 12101467,
-      "comment_count": 30514,
-      "mp4": "04_phanthavongrisugl_7491989294274350366.mp4",
-      "status": "blocked",
-      "posted_count": 1,
-      "last_posted_at": "2026-06-26T09:08:34"
-    },
-    {
-      "rank": 5,
-      "video_id": "7508869947372703022",
-      "username": "knitpets",
-      "url": "https://www.tiktok.com/@knitpets/video/7508869947372703022",
-      "title": "Crochet kitty caught by tickle monster #cutecat #pet #kucing #kucinglucu #猫 #kitty #viral ",
-      "play_count": 84812400,
-      "like_count": 3451022,
-      "comment_count": 21323,
-      "mp4": "05_knitpets_7508869947372703022.mp4",
-      "status": "blocked",
-      "posted_count": 1,
-      "last_posted_at": "2026-06-25T15:10:13"
-    },
-    {
-      "rank": 6,
-      "video_id": "7620350949999037709",
-      "username": "code_mamat5",
-      "url": "https://www.tiktok.com/@code_mamat5/video/7620350949999037709",
-      "title": "#catsoftiktok ",
-      "play_count": 78010591,
-      "like_count": 16059501,
-      "comment_count": 73428,
-      "mp4": "06_code_mamat5_7620350949999037709.mp4",
-      "status": "blocked",
-      "posted_count": 1,
-      "last_posted_at": "2026-06-22T06:00:30"
-    },
-    {
-      "rank": 7,
-      "video_id": "7194375695504526634",
-      "username": "watts.on.on",
-      "url": "https://www.tiktok.com/@watts.on.on/video/7194375695504526634",
-      "title": "Funny #cat #catsoftiktok #kitten #funny #foryou #pet #meme #catlover #cute #fyp #kittensoftiktok ",
-      "play_count": 75063346,
-      "like_count": 8410810,
-      "comment_count": 56382,
-      "mp4": null,
+      "video_id": "7254604537238162734",
+      "username": "paquito_thecat",
+      "url": "https://www.tiktok.com/@paquito_thecat/video/7254604537238162734",
+      "title": "Yes, I know how lucky I am🥹 #catsoftiktok #cuddlycat #purring ",
+      "play_count": 85653991,
+      "like_count": 16075495,
+      "comment_count": 99815,
+      "mp4": "03_paquito_thecat_7254604537238162734.mp4",
       "status": "fresh",
       "posted_count": 0,
       "last_posted_at": null
     },
     {
-      "rank": 8,
+      "rank": 4,
+      "video_id": "7508869947372703022",
+      "username": "knitpets",
+      "url": "https://www.tiktok.com/@knitpets/video/7508869947372703022",
+      "title": "Crochet kitty caught by tickle monster #cutecat #pet #kucing #kucinglucu #猫 #kitty #viral ",
+      "play_count": 84814661,
+      "like_count": 3451079,
+      "comment_count": 21322,
+      "mp4": "04_knitpets_7508869947372703022.mp4",
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-25T15:10:13"
+    },
+    {
+      "rank": 5,
+      "video_id": "7620350949999037709",
+      "username": "code_mamat5",
+      "url": "https://www.tiktok.com/@code_mamat5/video/7620350949999037709",
+      "title": "#catsoftiktok ",
+      "play_count": 78042190,
+      "like_count": 16061509,
+      "comment_count": 73418,
+      "mp4": "05_code_mamat5_7620350949999037709.mp4",
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-22T06:00:30"
+    },
+    {
+      "rank": 6,
+      "video_id": "7653780483217640734",
+      "username": "catcoffee96",
+      "url": "https://www.tiktok.com/@catcoffee96/video/7653780483217640734",
+      "title": "#kitten #funny #foryou #pests #loveyou ",
+      "play_count": 70392498,
+      "like_count": 3664241,
+      "comment_count": 27946,
+      "mp4": "06_catcoffee96_7653780483217640734.mp4",
+      "status": "fresh",
+      "posted_count": 0,
+      "last_posted_at": null
+    },
+    {
+      "rank": 7,
       "video_id": "7587334753955663117",
       "username": "furball.magic666",
       "url": "https://www.tiktok.com/@furball.magic666/video/7587334753955663117",
       "title": "Cat’s Version of ‘Helping’ 💥🐾 #cat #cats #catslovers #catsoftiktok #fyp",
-      "play_count": 57489470,
-      "like_count": 5652473,
-      "comment_count": 8098,
-      "mp4": "99_furball.magic666_7587334753955663117.mp4",
+      "play_count": 57493792,
+      "like_count": 5652832,
+      "comment_count": 8101,
+      "mp4": null,
       "status": "blocked",
       "posted_count": 1,
       "last_posted_at": "2026-06-25T18:13:16"
     },
     {
-      "rank": 9,
-      "video_id": "7592934067977342221",
-      "username": "castobong3",
-      "url": "https://www.tiktok.com/@castobong3/video/7592934067977342221",
-      "title": "Meow 👹 VS Meow 😇#cat #funny #catsoftiktok #fyp #usa ",
-      "play_count": 53790099,
-      "like_count": 7406735,
-      "comment_count": 14520,
-      "mp4": "99_castobong3_7592934067977342221.mp4",
-      "status": "blocked",
-      "posted_count": 1,
-      "last_posted_at": "2026-06-26T06:02:26"
-    },
-    {
-      "rank": 10,
+      "rank": 8,
       "video_id": "7650829523151277343",
       "username": "okgocute",
       "url": "https://www.tiktok.com/@okgocute/video/7650829523151277343",
       "title": "#catsoftiktok #cat #cutebaby #baby ",
-      "play_count": 37947143,
-      "like_count": 1705753,
-      "comment_count": 25195,
+      "play_count": 39001946,
+      "like_count": 1757786,
+      "comment_count": 25860,
       "mp4": null,
       "status": "blocked",
       "posted_count": 1,
       "last_posted_at": "2026-06-23T09:00:31"
     },
     {
-      "rank": 11,
-      "video_id": "7512479649004293422",
-      "username": "ringodanyan",
-      "url": "https://www.tiktok.com/@ringodanyan/video/7512479649004293422",
-      "title": "My heart is 100% damaged!😍 #cute #cat #catsoftiktok ",
-      "play_count": 36646250,
-      "like_count": 5491876,
-      "comment_count": 14388,
+      "rank": 9,
+      "video_id": "7607787265405848845",
+      "username": "funny.cat555",
+      "url": "https://www.tiktok.com/@funny.cat555/video/7607787265405848845",
+      "title": "A clingy cat 🐱🥰 #cat #cats #catsoftiktok #funnycat #catlovers #cutecat #funnyvideos #funny #funnyanimals #funnytiktok #viral #fyp #cute #tiktok #Foryou ",
+      "play_count": 35744304,
+      "like_count": 4628481,
+      "comment_count": 9708,
+      "mp4": null,
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-22T21:00:55"
+    },
+    {
+      "rank": 10,
+      "video_id": "7606455685215243542",
+      "username": "artista.myelson.1",
+      "url": "https://www.tiktok.com/@artista.myelson.1/video/7606455685215243542",
+      "title": "The poor cat who refused to give up. #catg #meow #HistoryTime #cat",
+      "play_count": 29619871,
+      "like_count": 1091766,
+      "comment_count": 22459,
       "mp4": null,
       "status": "fresh",
       "posted_count": 0,
       "last_posted_at": null
     },
     {
-      "rank": 12,
-      "video_id": "7624806782132669717",
-      "username": "fluffyfishlover",
-      "url": "https://www.tiktok.com/@fluffyfishlover/video/7624806782132669717",
-      "title": "Fluffy heard Brazilian funk and went OFF 🐱🇧🇷💃 #fyp #viral #cutecat #orangecat #brazilianfunk #catsoftiktok #dancingcat",
-      "play_count": 36522768,
-      "like_count": 839610,
-      "comment_count": 12302,
+      "rank": 11,
+      "video_id": "7603013549035703582",
+      "username": "aloong110",
+      "url": "https://www.tiktok.com/@aloong110/video/7603013549035703582",
+      "title": "Let's learn to meow together! #Cats #KittensMeow #CuteCats",
+      "play_count": 29023617,
+      "like_count": 1798467,
+      "comment_count": 9554,
       "mp4": null,
       "status": "blocked",
       "posted_count": 1,
-      "last_posted_at": "2026-06-21T09:00:30"
+      "last_posted_at": "2026-06-24T06:10:08"
+    },
+    {
+      "rank": 12,
+      "video_id": "7641693768831225101",
+      "username": "akay.editz",
+      "url": "https://www.tiktok.com/@akay.editz/video/7641693768831225101",
+      "title": "In another life? #couple #cats #cat #cute #us ",
+      "play_count": 26755756,
+      "like_count": 5261480,
+      "comment_count": 16235,
+      "mp4": null,
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-21T12:30:28"
     }
   ],
   "hero_video": {
@@ -1491,16 +1491,16 @@
     "username": "lovelycute_baby",
     "url": "https://www.tiktok.com/@lovelycute_baby/video/7291651785746386219",
     "title": "#cat #catsoftiktok ",
-    "play_count": 176038864,
-    "like_count": 14420631,
-    "comment_count": 69646,
+    "play_count": 176039702,
+    "like_count": 14420772,
+    "comment_count": 69642,
     "mp4": "01_lovelycute_baby_7291651785746386219.mp4",
     "status": "blocked",
     "posted_count": 1,
     "last_posted_at": "2026-06-25T12:44:49"
   },
   "report": {
-    "generated_at": "2026-06-26T11:53:07",
+    "generated_at": "2026-06-26T12:01:39",
     "phase": "link_setup",
     "summary": {
       "followers": 561,
@@ -1513,7 +1513,7 @@
         "id": "toys",
         "name": "遊びと運動",
         "short_name": "遊び",
-        "score": 40,
+        "score": 32,
         "priority": 8,
         "product_count": 2,
         "ready_links": 0,
@@ -1523,8 +1523,8 @@
       "next_link_target": {
         "category_id": "toys",
         "category": "遊び",
-        "category_score": 40,
-        "priority_score": 219,
+        "category_score": 32,
+        "priority_score": 211,
         "priority_reasons": [
           "catbot反応",
           "買う前チェック: 留守番が多い猫",
@@ -1549,7 +1549,7 @@
         "id": "toys",
         "name": "遊びと運動",
         "short_name": "遊び",
-        "score": 40,
+        "score": 32,
         "priority": 8,
         "product_count": 2,
         "ready_links": 0,
@@ -1616,8 +1616,8 @@
       {
         "category_id": "toys",
         "category": "遊び",
-        "category_score": 40,
-        "priority_score": 219,
+        "category_score": 32,
+        "priority_score": 211,
         "priority_reasons": [
           "catbot反応",
           "買う前チェック: 留守番が多い猫",
@@ -1639,8 +1639,8 @@
       {
         "category_id": "toys",
         "category": "遊び",
-        "category_score": 40,
-        "priority_score": 215,
+        "category_score": 32,
+        "priority_score": 207,
         "priority_reasons": [
           "catbot反応",
           "買う前チェック: 留守番が多い猫",
@@ -1815,8 +1815,8 @@
       {
         "category_id": "toys",
         "category": "遊び",
-        "category_score": 40,
-        "priority_score": 219,
+        "category_score": 32,
+        "priority_score": 211,
         "priority_reasons": [
           "catbot反応",
           "買う前チェック: 留守番が多い猫",
@@ -1838,8 +1838,8 @@
       {
         "category_id": "toys",
         "category": "遊び",
-        "category_score": 40,
-        "priority_score": 215,
+        "category_score": 32,
+        "priority_score": 207,
         "priority_reasons": [
           "catbot反応",
           "買う前チェック: 留守番が多い猫",
@@ -1950,7 +1950,7 @@
     "reason": "人が手を離していても短時間の運動を作れます。",
     "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
     "price_band": "中",
-    "score": 219,
+    "score": 211,
     "reasons": [
       "catbot反応",
       "買う前チェック: 留守番が多い猫",
@@ -1960,7 +1960,7 @@
     "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
   },
   "share_copy": {
-    "generated_at": "2026-06-26T11:53:07",
+    "generated_at": "2026-06-26T12:01:39",
     "phase": "launch_waiting",
     "account": "@fuwafuwa_mono",
     "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -1969,7 +1969,7 @@
     "follower_goal": 1000,
     "ready_links": 0,
     "trend_label": "遊び",
-    "trend_metric": "score 40",
+    "trend_metric": "score 32",
     "next_product": "電動猫じゃらし",
     "next_category": "遊び",
     "primary_text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。",
@@ -2017,10 +2017,10 @@
       ]
     }
   },
-  "exported_at": "2026-06-26T11:53:07",
+  "exported_at": "2026-06-26T12:01:39",
   "consult_first": {
-    "generated_at": "2026-06-26T11:53:07",
-    "exported_at": "2026-06-26T11:53:07",
+    "generated_at": "2026-06-26T12:01:39",
+    "exported_at": "2026-06-26T12:01:39",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",

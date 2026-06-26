@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T11:53:07",
-  "exported_at": "2026-06-26T11:53:07",
+  "generated_at": "2026-06-26T12:01:39",
+  "exported_at": "2026-06-26T12:01:39",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -10,7 +10,7 @@
   "today": {
     "headline": "catbot reaction theme",
     "theme": "遊び",
-    "theme_metric": "score 40",
+    "theme_metric": "score 32",
     "category_id": "toys",
     "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。",
     "source_counts": {
@@ -40,7 +40,7 @@
     "product_id": "p2",
     "product": "電動猫じゃらし",
     "reason": "人が手を離していても短時間の運動を作れます。",
-    "score": 219,
+    "score": 211,
     "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
     "price_band": "中",
     "reasons": [
@@ -78,7 +78,7 @@
       "category": "遊び",
       "product_id": "p2",
       "product": "電動猫じゃらし",
-      "score": 219,
+      "score": 211,
       "reasons": [
         "catbot反応",
         "買う前チェック: 留守番が多い猫",
@@ -110,7 +110,7 @@
       "category": "遊び",
       "product_id": "p1",
       "product": "けりぐるみ",
-      "score": 215,
+      "score": 207,
       "reasons": [
         "catbot反応",
         "買う前チェック: 留守番が多い猫",

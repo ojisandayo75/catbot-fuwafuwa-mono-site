@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T11:53:07",
+  "generated_at": "2026-06-26T12:01:39",
   "phase": "launch_waiting",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -9,7 +9,7 @@
   "ready_links": 0,
   "total_products": 9,
   "trend_label": "遊び",
-  "trend_metric": "score 219",
+  "trend_metric": "score 211",
   "next_product": "電動猫じゃらし",
   "next_category": "遊び",
   "primary_text": "ふわふわ猫の道具箱を更新しました。 catbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全と買う前チェックから見られるようにしています。 売り込みより、合わない理由とやめるサインを先に置いています。",
@@ -71,7 +71,7 @@
       "猫の不安や体調不良を煽る文面"
     ]
   },
-  "exported_at": "2026-06-26T11:53:07",
+  "exported_at": "2026-06-26T12:01:39",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -93,7 +93,7 @@
     "category_id": "toys",
     "product_id": "p2",
     "key": "toys/p2",
-    "score": 219,
+    "score": 211,
     "reasons": [
       "catbot反応",
       "買う前チェック",
