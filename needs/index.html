@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="商品名ではなく、猫の困りごと・様子・買わない条件から確認する入口ページです。">
+<meta property="og:title" content="Catbot 困りごとから探す">
+<meta property="og:description" content="商品名ではなく、猫の困りごと・様子・買わない条件から確認する入口ページです。">
+<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catbot 困りごとから探す">
+<meta name="twitter:description" content="商品名ではなく、猫の困りごと・様子・買わない条件から確認する入口ページです。">
+<meta name="theme-color" content="#5a3522">
+<link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
+<link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
+<link rel="apple-touch-icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/needs/">
+<meta property="og:url" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/needs/">
+<meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:site" content="@fuwafuwa_mono">
+<meta name="twitter:creator" content="@fuwafuwa_mono">
+<title>Catbot 困りごとから探す</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--soft:#f4eadb;--sage:#5f7f67;--warn:#fff2dd}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:22px}
+.hero{background-image:linear-gradient(90deg,rgba(37,23,15,.96),rgba(62,39,25,.78),rgba(62,39,25,.24)),image-set(url("../assets/ai_category_icon_sheet.webp") type("image/webp"),url("../assets/ai_category_icon_sheet.png") type("image/png"));background-size:cover;background-position:center;color:#fff8ef}
+.hero .wrap{min-height:340px;display:grid;align-items:end;padding-top:34px;padding-bottom:34px}
+.label{display:inline-flex;align-items:center;width:max-content;max-width:100%;min-height:25px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+.hero .label{background:rgba(244,234,219,.96)}
+h1{margin:8px 0;font-size:39px;line-height:1.14;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:7px 0;font-size:23px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+h3{margin:0 0 5px;font-size:15px;letter-spacing:0}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.hero p{color:#f4e6d5;max-width:700px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;max-width:100%;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800;text-align:center}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:12px;margin-top:14px}
+.panel,.need-card{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
+.panel.primary{background:#fff3df;border-color:#caa982}
+.needs{display:grid;gap:12px;margin-top:14px}
+.need-card{display:grid;grid-template-columns:220px minmax(0,1fr);gap:14px;background:#fffaf2}
+.need-art{min-height:190px;border:1px solid var(--line);border-radius:8px;background-size:cover;background-position:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.42)}
+.need-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap}
+.badges{display:flex;gap:6px;flex-wrap:wrap}
+.badges span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:800}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:12px}
+ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:7px}
+li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:9px}
+li strong,li span{display:block}
+li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
+.products{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:12px}
+@media(max-width:860px){.hero .wrap{min-height:390px}.intro,.need-card,.split,.products{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.need-art{min-height:160px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="label">猫の様子から選ぶ</span>
+      <h1>困りごとから探す</h1>
+      <p>商品名を先に決めず、水分、遊び、爪とぎ、おやつ、ケア、留守番の不安から見ます。合わない条件を確認してから、候補へ進むページです。</p>
+      <div class="actions">
+        <a class="button" href="#needs">困りごとを見る</a>
+        <a class="button light" href="../start/">はじめに見る3つ</a>
+        <a class="button light" href="../">トップへ</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="intro" aria-label="このページの使い方">
+    <article class="panel primary">
+      <span class="label">商品より先に猫の状態</span>
+      <h2>買う理由を、猫の様子から決める</h2>
+      <p>商品名からではなく、猫の様子や困りごとから確認する入口です。</p>
+      <ul><li>商品より先に、猫の状態・怖がり方・食欲水分排泄の変化を見る。</li><li>合わない条件とやめるサインを見てから、候補ページへ進む。</li><li>体調変化が続く時は、このサイトで判断せず相談を優先する。</li></ul>
+    </article>
+    <article class="panel">
+      <span class="label">迷った時</span>
+      <h2>相談を優先する時を先に見る</h2>
+      <p>元気、食欲、水分、排泄、呼吸、嘔吐下痢などに変化がある時は、用品を探す前に確認します。</p>
+      <div class="actions">
+        <a class="button light" href="../consult-first/">相談を優先する時</a>
+        <a class="button light" href="../seasonal/">今月の猫ケア</a>
+        <a class="button light" href="../needs-index.json">needs-index.json</a>
+      </div>
+    </article>
+  </section>
+  <section id="needs" class="needs" aria-label="困りごと別の入口">
+    
+        <article class="need-card" id="toys">
+          <div class="need-art" style="background-image:url(&#x27;../assets/ai_category_toys.png&#x27;);background-image:image-set(url(&#x27;../assets/ai_category_toys.webp&#x27;) type(&#x27;image/webp&#x27;),url(&#x27;../assets/ai_category_toys.png&#x27;) type(&#x27;image/png&#x27;))" aria-hidden="true"></div>
+          <div class="need-body">
+            <div class="need-head">
+              <span class="label">遊び</span>
+              <div class="badges"><span>次の整備候補</span></div>
+            </div>
+            <h2>遊び足りない・退屈しやすい</h2>
+            <p>走り回る、構ってほしがる、留守番後に興奮しやすい時の入口です。</p>
+            <div class="split">
+              <section>
+                <h3>先に見ること</h3>
+                <ul><li>縫い目が強いもの、誤飲しにくいサイズを優先。</li><li>最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。</li><li>食欲・水分・排泄・元気に変化がある時は、用品選びより相談を優先します。</li></ul>
+              </section>
+              <section>
+                <h3>無理に買わない時</h3>
+                <ul><li>布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。</li><li>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</li></ul>
+              </section>
+            </div>
+            <ul class="products">
+          <li>
+            <strong>けりぐるみ</strong>
+            <span>検索・確認用 / score 215</span>
+            <p>噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。</p>
+            <a href="../products/toys/p1/">候補を見る</a>
+          </li>
+          <li>
+            <strong>電動猫じゃらし</strong>
+            <span>検索・確認用 / score 219</span>
+            <p>遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。</p>
+            <a href="../products/toys/p2/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/toys/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#toys-p1">買う前チェック</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="need-card" id="water">
+          <div class="need-art" style="background-image:url(&#x27;../assets/ai_category_water.png&#x27;);background-image:image-set(url(&#x27;../assets/ai_category_water.webp&#x27;) type(&#x27;image/webp&#x27;),url(&#x27;../assets/ai_category_water.png&#x27;) type(&#x27;image/png&#x27;))" aria-hidden="true"></div>
+          <div class="need-body">
+            <div class="need-head">
+              <span class="label">水とごはん</span>
+              <div class="badges"><span>今月のケア対象</span></div>
+            </div>
+            <h2>水分・ごはん管理が不安</h2>
+            <p>飲む量、食べる量、留守中の管理を用品だけで判断しない入口です。</p>
+            <div class="split">
+              <section>
+                <h3>先に見ること</h3>
+                <ul><li>洗いやすさ、フィルター代、音の小ささを確認。</li><li>いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。</li><li>食欲・水分・排泄・元気に変化がある時は、用品選びより相談を優先します。</li></ul>
+              </section>
+              <section>
+                <h3>無理に買わない時</h3>
+                <ul><li>モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。</li><li>療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。</li></ul>
+              </section>
+            </div>
+            <ul class="products">
+          <li>
+            <strong>循環式水飲み器</strong>
+            <span>検索・確認用 / score 89</span>
+            <p>流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。</p>
+            <a href="../products/water/p1/">候補を見る</a>
+          </li>
+          <li>
+            <strong>自動給餌器</strong>
+            <span>検索・確認用 / score 93</span>
+            <p>食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。</p>
+            <a href="../products/water/p2/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/water/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#water-p1">買う前チェック</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="need-card" id="scratch">
+          <div class="need-art" style="background-image:url(&#x27;../assets/ai_category_scratch.png&#x27;);background-image:image-set(url(&#x27;../assets/ai_category_scratch.webp&#x27;) type(&#x27;image/webp&#x27;),url(&#x27;../assets/ai_category_scratch.png&#x27;) type(&#x27;image/png&#x27;))" aria-hidden="true"></div>
+          <div class="need-body">
+            <div class="need-head">
+              <span class="label">爪とぎ</span>
+              <div class="badges"><span>今月のケア対象</span></div>
+            </div>
+            <h2>家具で爪とぎしやすい</h2>
+            <p>叱る前に、削りやすい場所と滑らない置き方を作ります。</p>
+            <div class="split">
+              <section>
+                <h3>先に見ること</h3>
+                <ul><li>粉が出にくいもの、滑りにくい形を優先。</li><li>よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。</li><li>食欲・水分・排泄・元気に変化がある時は、用品選びより相談を優先します。</li></ul>
+              </section>
+              <section>
+                <h3>無理に買わない時</h3>
+                <ul><li>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</li></ul>
+              </section>
+            </div>
+            <ul class="products">
+          <li>
+            <strong>段ボール爪とぎ 大容量</strong>
+            <span>検索・確認用 / score 76</span>
+            <p>家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。</p>
+            <a href="../products/scratch/p1/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/scratch/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#scratch-p1">買う前チェック</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="need-card" id="watch">
+          <div class="need-art" style="background-image:url(&#x27;../assets/ai_category_watch.png&#x27;);background-image:image-set(url(&#x27;../assets/ai_category_watch.webp&#x27;) type(&#x27;image/webp&#x27;),url(&#x27;../assets/ai_category_watch.png&#x27;) type(&#x27;image/png&#x27;))" aria-hidden="true"></div>
+          <div class="need-body">
+            <div class="need-head">
+              <span class="label">見守り</span>
+              <div class="badges"><span>今月のケア対象</span></div>
+            </div>
+            <h2>留守番中の様子が気になる</h2>
+            <p>安心のための補助として、置き場所と怖がらない使い方を確認します。</p>
+            <div class="split">
+              <section>
+                <h3>先に見ること</h3>
+                <ul><li>画質、夜間撮影、録画、アプリの使いやすさを確認。</li><li>まず固定位置で音や動きを最小にし、猫が怖がらない距離から使います。</li><li>食欲・水分・排泄・元気に変化がある時は、用品選びより相談を優先します。</li></ul>
+              </section>
+              <section>
+                <h3>無理に買わない時</h3>
+                <ul><li>カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。</li></ul>
+              </section>
+            </div>
+            <ul class="products">
+          <li>
+            <strong>ペットカメラ</strong>
+            <span>検索・確認用 / score 71</span>
+            <p>留守中の様子を確認したい家庭、行動変化に早く気づきたい家庭。</p>
+            <a href="../products/watch/p1/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/watch/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#watch-p1">買う前チェック</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="need-card" id="treats">
+          <div class="need-art" style="background-image:url(&#x27;../assets/ai_category_treats.png&#x27;);background-image:image-set(url(&#x27;../assets/ai_category_treats.webp&#x27;) type(&#x27;image/webp&#x27;),url(&#x27;../assets/ai_category_treats.png&#x27;) type(&#x27;image/png&#x27;))" aria-hidden="true"></div>
+          <div class="need-body">
+            <div class="need-head">
+              <span class="label">おやつ</span>
+              <div class="badges"></div>
+            </div>
+            <h2>おやつを安全に選びたい</h2>
+            <p>食いつきだけで選ばず、体重・年齢・体調を先に見ます。</p>
+            <div class="split">
+              <section>
+                <h3>先に見ること</h3>
+                <ul><li>年齢、体調、総合栄養食か一般食かを確認。</li><li>1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。</li><li>食欲・水分・排泄・元気に変化がある時は、用品選びより相談を優先します。</li></ul>
+              </section>
+              <section>
+                <h3>無理に買わない時</h3>
+                <ul><li>体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。</li><li>アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。</li></ul>
+              </section>
+            </div>
+            <ul class="products">
+          <li>
+            <strong>CIAO ちゅーる系おやつ</strong>
+            <span>検索・確認用 / score 35</span>
+            <p>ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。</p>
+            <a href="../products/treats/p1/">候補を見る</a>
+          </li>
+          <li>
+            <strong>無添加寄りのおやつ</strong>
+            <span>検索・確認用 / score 39</span>
+            <p>原材料を見て選びたい子、いつものおやつを少し見直したい子。</p>
+            <a href="../products/treats/p2/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/treats/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#treats-p1">買う前チェック</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="need-card" id="care">
+          <div class="need-art" style="background-image:url(&#x27;../assets/ai_category_care.png&#x27;);background-image:image-set(url(&#x27;../assets/ai_category_care.webp&#x27;) type(&#x27;image/webp&#x27;),url(&#x27;../assets/ai_category_care.png&#x27;) type(&#x27;image/png&#x27;))" aria-hidden="true"></div>
+          <div class="need-body">
+            <div class="need-head">
+              <span class="label">ケア</span>
+              <div class="badges"></div>
+            </div>
+            <h2>抜け毛・ブラッシングが大変</h2>
+            <p>嫌がる子には、道具より先に時間・強さ・触る場所を見ます。</p>
+            <div class="split">
+              <section>
+                <h3>先に見ること</h3>
+                <ul><li>毛質に合う形、肌に強く当たりすぎないものを優先。</li><li>背中など嫌がりにくい場所を数回だけ。無理に全身を一度で終わらせません。</li><li>食欲・水分・排泄・元気に変化がある時は、用品選びより相談を優先します。</li></ul>
+              </section>
+              <section>
+                <h3>無理に買わない時</h3>
+                <ul><li>皮膚が弱い子、触られるのが苦手な子、怒りやすい子。</li></ul>
+              </section>
+            </div>
+            <ul class="products">
+          <li>
+            <strong>猫用ブラシ</strong>
+            <span>検索・確認用 / score 23</span>
+            <p>換毛期の抜け毛が多い子、短時間のブラッシングなら受け入れやすい子。</p>
+            <a href="../products/care/p1/">候補を見る</a>
+          </li></ul>
+            <div class="actions">
+              <a class="button" href="../guides/care/">詳しく見る</a>
+              <a class="button light" href="../buying-check/#care-p1">買う前チェック</a>
+            </div>
+          </div>
+        </article>
+  </section>
+</main>
+</body>
+</html>

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-26T10:33:59",
+  "generated_at": "2026-06-26T10:54:43",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 29,
-  "absolute_url_count": 29,
+  "route_count": 30,
+  "absolute_url_count": 30,
   "routes": [
     {
       "kind": "home",
@@ -53,6 +53,15 @@
       "lastmod": "2026-06-26",
       "changefreq": "daily",
       "priority": 0.86
+    },
+    {
+      "kind": "needs",
+      "path": "needs/",
+      "title": "Catbot 困りごとから探す",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/needs/",
+      "lastmod": "2026-06-26",
+      "changefreq": "daily",
+      "priority": 0.9
     },
     {
       "kind": "buying-check",

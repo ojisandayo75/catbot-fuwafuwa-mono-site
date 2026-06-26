@@ -36,6 +36,9 @@
 /link-health.json
   Cache-Control: no-cache
 
+/needs-index.json
+  Cache-Control: no-cache
+
 /buying-check.json
   Cache-Control: no-cache
 
@@ -82,6 +85,9 @@
   Cache-Control: no-cache
 
 /health/*
+  Cache-Control: no-cache
+
+/needs/*
   Cache-Control: no-cache
 
 /buying-check/*
