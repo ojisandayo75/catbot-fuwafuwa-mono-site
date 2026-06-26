@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-06-26T10:33:59",
+  "exported_at": "2026-06-26T10:33:59",
+  "account": "@fuwafuwa_mono",
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "month": "2026-06",
+  "key": "summer",
+  "title": "梅雨から夏の猫ケア",
+  "summary": "湿度と暑さが上がる時期は、水分、風通し、留守中の室温を優先します。遊びは短めにして休む時間も作ります。",
+  "checks": [
+    "水飲み場を複数置き、ぬめりやフィルター汚れを毎日見る。",
+    "留守番中も室温が上がりすぎないよう、見守りやタイマーを使う。",
+    "湿気で爪とぎや布おもちゃが傷みやすいので、においとほつれを確認する。"
+  ],
+  "category_targets": [
+    {
+      "id": "water",
+      "label": "水とごはん",
+      "headline": "毎日の水分とごはんをラクに整える。",
+      "score": 5,
+      "guide_url": "",
+      "products": [
+        {
+          "id": "p1",
+          "name": "循環式水飲み器",
+          "check": "洗いやすさ、フィルター代、音の小ささを確認。",
+          "not_for": "",
+          "stop_signal": "",
+          "detail_url": "products/water/p1/",
+          "ready": false
+        },
+        {
+          "id": "p2",
+          "name": "自動給餌器",
+          "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
+          "not_for": "",
+          "stop_signal": "",
+          "detail_url": "products/water/p2/",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "id": "watch",
+      "label": "見守り",
+      "headline": "留守中の様子を見られる安心感。",
+      "score": 3,
+      "guide_url": "",
+      "products": [
+        {
+          "id": "p1",
+          "name": "ペットカメラ",
+          "check": "画質、夜間撮影、録画、アプリの使いやすさを確認。",
+          "not_for": "",
+          "stop_signal": "",
+          "detail_url": "products/watch/p1/",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "id": "scratch",
+      "label": "爪とぎ",
+      "headline": "家具より先に、気持ちよく削れる場所を。",
+      "score": 6,
+      "guide_url": "",
+      "products": [
+        {
+          "id": "p1",
+          "name": "段ボール爪とぎ 大容量",
+          "check": "粉が出にくいもの、滑りにくい形を優先。",
+          "not_for": "",
+          "stop_signal": "",
+          "detail_url": "products/scratch/p1/",
+          "ready": false
+        }
+      ]
+    }
+  ],
+  "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。",
+  "next_link": {
+    "category_id": "toys",
+    "product_id": "p2",
+    "product": "電動猫じゃらし",
+    "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+    "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
+  },
+  "cat_first_policy": [
+    "季節の不安がある時は、商品より水分・室温・休息・相談を先に見る。",
+    "暑さや湿度で体調が変わる時期は、留守中の環境と飲水を優先する。",
+    "体調変化が続く時は、このサイトでは判断せず動物病院へ相談する。"
+  ],
+  "public_files": {
+    "seasonal_care": "seasonal-care.json",
+    "seasonal_page": "seasonal/",
+    "buying_check": "buying-check/",
+    "aftercare": "aftercare/",
+    "consult_first": "consult-first/",
+    "daily": "daily/"
+  }
+}

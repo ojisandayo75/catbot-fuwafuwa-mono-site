@@ -90,6 +90,12 @@
 /aftercare/*
   Cache-Control: no-cache
 
+/seasonal-care.json
+  Cache-Control: no-cache
+
+/seasonal/*
+  Cache-Control: no-cache
+
 /consult-first/*
   Cache-Control: no-cache
 
