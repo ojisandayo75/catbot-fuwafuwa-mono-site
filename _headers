@@ -36,6 +36,12 @@
 /link-health.json
   Cache-Control: no-cache
 
+/decision-guide.json
+  Cache-Control: no-cache
+
+/choose/*
+  Cache-Control: no-cache
+
 /trends-signal.json
   Cache-Control: no-cache
 

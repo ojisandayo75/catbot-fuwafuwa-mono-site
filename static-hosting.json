@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-26T11:38:22",
+  "generated_at": "2026-06-26T11:53:07",
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "files": 166,
-  "bytes": 52199970,
+  "files": 168,
+  "bytes": 52261169,
   "ready_links": 0,
   "total_products": 9,
   "helpers": {
@@ -26,6 +26,8 @@
     "link_plan_page": "link-plan/index.html",
     "link_health": "link-health.json",
     "link_health_page": "health/index.html",
+    "decision_guide": "decision-guide.json",
+    "decision_guide_page": "choose/index.html",
     "trends_signal": "trends-signal.json",
     "trends_page": "trends/index.html",
     "needs_index": "needs-index.json",
@@ -73,6 +75,7 @@
     "clicks": "no-cache",
     "link_plan": "no-cache",
     "health": "no-cache",
+    "decision_guide": "no-cache",
     "trends": "no-cache",
     "needs": "no-cache",
     "buying_check": "no-cache",

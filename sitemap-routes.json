@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-26T11:38:22",
+  "generated_at": "2026-06-26T11:53:07",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 31,
-  "absolute_url_count": 31,
+  "route_count": 32,
+  "absolute_url_count": 32,
   "routes": [
     {
       "kind": "home",
@@ -17,6 +17,15 @@
       "lastmod": "2026-06-26",
       "changefreq": "daily",
       "priority": 1.0
+    },
+    {
+      "kind": "choose",
+      "path": "choose/",
+      "title": "Catbot 猫の様子から選ぶ",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/choose/",
+      "lastmod": "2026-06-26",
+      "changefreq": "daily",
+      "priority": 0.94
     },
     {
       "kind": "policy",

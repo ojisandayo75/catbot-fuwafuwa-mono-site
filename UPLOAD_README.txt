@@ -22,6 +22,8 @@
 - `/link-plan/`
 - `/link-health.json`
 - `/health/`
+- `/decision-guide.json`
+- `/choose/`
 - `/trends-signal.json`
 - `/trends/`
 - `/needs-index.json`
@@ -80,7 +82,7 @@
 
 ## 現在の状態
 
-- Generated: 2026-06-26T11:38:22
+- Generated: 2026-06-26T11:53:07
 - Public URL: https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/
 - Ready affiliate links: 0 / 9
 - Follower milestone ETA: 2026-07-09

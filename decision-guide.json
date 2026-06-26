@@ -1,11 +1,76 @@
 {
   "generated_at": "2026-06-26T11:53:07",
   "exported_at": "2026-06-26T11:53:07",
-  "state": "needs_index_ready",
+  "state": "decision_guide_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "title": "困りごとから探す",
-  "summary": "商品名からではなく、猫の様子や困りごとから確認する入口です。",
+  "summary": "商品名より先に、猫の様子・困りごと・買わない条件から入口を選ぶためのcatbot連動ページです。",
+  "followers": 561,
+  "follower_goal": 1000,
+  "ready_links": 0,
+  "total_products": 9,
+  "routes": [
+    {
+      "id": "cat_profile",
+      "label": "うちの子",
+      "title": "性格・暮らし方から選ぶ",
+      "summary": "怖がり、留守番、水分、遊び不足など、猫の状態に近い入口から候補を絞ります。",
+      "path": "quiz/",
+      "icon": "match",
+      "priority": 1,
+      "cat_first_check": "猫が怖がる、使いにくい、続かない条件を先に見ます。"
+    },
+    {
+      "id": "needs",
+      "label": "困りごと",
+      "title": "必要な理由から選ぶ",
+      "summary": "水分、爪とぎ、ケア、見守りなど、商品名ではなく暮らしの困りごとから探します。",
+      "path": "needs/",
+      "icon": "needs",
+      "priority": 2,
+      "cat_first_check": "買う理由が猫の暮らしにあるかを先に確認します。"
+    },
+    {
+      "id": "trends",
+      "label": "catbot連動",
+      "title": "反応が強いテーマから見る",
+      "summary": "伸びた投稿や動画の反応を、猫のための確認ポイントに変換して見ます。",
+      "path": "trends/",
+      "icon": "trends",
+      "priority": 3,
+      "cat_first_check": "反応が強くても、合わない条件とやめるサインを先に出します。"
+    },
+    {
+      "id": "buying_check",
+      "label": "買う前",
+      "title": "合わない理由を確認する",
+      "summary": "音、サイズ、誤飲、設置場所、体調への影響を買う前に見ます。",
+      "path": "buying-check/",
+      "icon": "advisor",
+      "priority": 4,
+      "cat_first_check": "よさそうでも、使わない・怖がる可能性を先に見ます。"
+    },
+    {
+      "id": "consult_first",
+      "label": "相談優先",
+      "title": "買うより先に相談する時",
+      "summary": "元気、食欲、水分、排泄、呼吸などに変化がある時は商品より相談を優先します。",
+      "path": "consult-first/",
+      "icon": "consult",
+      "priority": 5,
+      "cat_first_check": "体調変化がある時は、用品選びを急がない判断を置きます。"
+    },
+    {
+      "id": "seasonal",
+      "label": "季節",
+      "title": "今月の猫ケアから見る",
+      "summary": "季節の温度、湿度、水分、ブラッシングなど、その月に見直すことから入ります。",
+      "path": "seasonal/",
+      "icon": "seasonal",
+      "priority": 6,
+      "cat_first_check": "季節で必要性が変わるものだけを見直します。"
+    }
+  ],
   "needs": [
     {
       "id": "toys",
@@ -269,6 +334,119 @@
       ]
     }
   ],
+  "trends": [
+    {
+      "kind": "category",
+      "title": "反応が強いテーマ",
+      "label": "遊び",
+      "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
+      "metric": "score 40",
+      "category_id": "toys",
+      "category": "遊び",
+      "guide_url": "guides/toys/",
+      "products": [
+        {
+          "id": "p1",
+          "name": "けりぐるみ",
+          "detail_url": "products/toys/p1/",
+          "ready": false,
+          "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+          "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+          "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+          "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。",
+          "stop_signal": ""
+        },
+        {
+          "id": "p2",
+          "name": "電動猫じゃらし",
+          "detail_url": "products/toys/p2/",
+          "ready": false,
+          "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+          "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+          "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+          "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。",
+          "stop_signal": ""
+        }
+      ],
+      "cat_first_take": "遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。"
+    },
+    {
+      "kind": "post",
+      "title": "伸びた投稿の空気",
+      "label": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…",
+      "detail": "最近の上位投稿から、読者が反応している猫の雰囲気を拾います。",
+      "metric": "156,918 views / 1,224 likes",
+      "category_id": "toys",
+      "category": "遊び",
+      "guide_url": "guides/toys/",
+      "products": [
+        {
+          "id": "p1",
+          "name": "けりぐるみ",
+          "detail_url": "products/toys/p1/",
+          "ready": false,
+          "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+          "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+          "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+          "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。",
+          "stop_signal": ""
+        },
+        {
+          "id": "p2",
+          "name": "電動猫じゃらし",
+          "detail_url": "products/toys/p2/",
+          "ready": false,
+          "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+          "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+          "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+          "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。",
+          "stop_signal": ""
+        }
+      ],
+      "cat_first_take": "読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。"
+    },
+    {
+      "kind": "video",
+      "title": "素材動画の傾向",
+      "label": "#cat #catsoftiktok",
+      "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
+      "metric": "176,038,864 plays",
+      "category_id": "toys",
+      "category": "遊び",
+      "guide_url": "guides/toys/",
+      "products": [
+        {
+          "id": "p1",
+          "name": "けりぐるみ",
+          "detail_url": "products/toys/p1/",
+          "ready": false,
+          "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+          "best_for": "噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。",
+          "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+          "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。",
+          "stop_signal": ""
+        },
+        {
+          "id": "p2",
+          "name": "電動猫じゃらし",
+          "detail_url": "products/toys/p2/",
+          "ready": false,
+          "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+          "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+          "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+          "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。",
+          "stop_signal": ""
+        }
+      ],
+      "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。"
+    }
+  ],
+  "source_counts": {
+    "needs": 6,
+    "trend_cards": 3,
+    "trend_posts": 10,
+    "trend_videos": 12
+  },
   "next_link": {
     "category_id": "toys",
     "product_id": "p2",
@@ -276,16 +454,17 @@
     "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。"
   },
   "cat_first_policy": [
-    "商品より先に、猫の状態・怖がり方・食欲水分排泄の変化を見る。",
-    "合わない条件とやめるサインを見てから、候補ページへ進む。",
-    "体調変化が続く時は、このサイトで判断せず相談を優先する。"
+    "商品名からではなく、猫の様子と困りごとから入口を選びます。",
+    "合わない条件、やめるサイン、相談を優先する時を商品より先に見せます。",
+    "catbotで反応が強いテーマも、売る理由ではなく確認ポイントとして扱います。"
   ],
   "related": {
     "start": "start/",
-    "daily": "daily/",
-    "seasonal": "seasonal/",
+    "needs": "needs/",
+    "trends": "trends/",
     "buying_check": "buying-check/",
     "consult_first": "consult-first/",
-    "aftercare": "aftercare/"
+    "seasonal": "seasonal/",
+    "daily": "daily/"
   }
 }
