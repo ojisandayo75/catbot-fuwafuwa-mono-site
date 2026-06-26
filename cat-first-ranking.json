@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T22:11:41",
-  "exported_at": "2026-06-26T22:11:41",
+  "generated_at": "2026-06-26T22:18:23",
+  "exported_at": "2026-06-26T22:18:23",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "account": "@fuwafuwa_mono",
@@ -14,6 +14,7 @@
   "total_products": 9,
   "ranking": [
     {
+      "key": "care/p1",
       "category_id": "care",
       "category": "ケア",
       "product_id": "p1",
@@ -53,6 +54,7 @@
       "rank": 1
     },
     {
+      "key": "toys/p1",
       "category_id": "toys",
       "category": "遊び",
       "product_id": "p1",
@@ -96,6 +98,7 @@
       "rank": 2
     },
     {
+      "key": "treats/p1",
       "category_id": "treats",
       "category": "おやつ",
       "product_id": "p1",
@@ -139,6 +142,7 @@
       "rank": 3
     },
     {
+      "key": "watch/p1",
       "category_id": "watch",
       "category": "見守り",
       "product_id": "p1",
@@ -184,6 +188,7 @@
       "rank": 4
     },
     {
+      "key": "treats/p2",
       "category_id": "treats",
       "category": "おやつ",
       "product_id": "p2",
@@ -229,6 +234,7 @@
       "rank": 5
     },
     {
+      "key": "water/p2",
       "category_id": "water",
       "category": "水とごはん",
       "product_id": "p2",
@@ -276,6 +282,7 @@
       "rank": 6
     },
     {
+      "key": "water/p1",
       "category_id": "water",
       "category": "水とごはん",
       "product_id": "p1",
@@ -323,6 +330,7 @@
       "rank": 7
     },
     {
+      "key": "scratch/p1",
       "category_id": "scratch",
       "category": "爪とぎ",
       "product_id": "p1",
@@ -370,6 +378,7 @@
       "rank": 8
     },
     {
+      "key": "toys/p2",
       "category_id": "toys",
       "category": "遊び",
       "product_id": "p2",
