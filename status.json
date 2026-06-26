@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T20:53:53",
-  "exported_at": "2026-06-26T20:53:53",
+  "generated_at": "2026-06-26T21:17:32",
+  "exported_at": "2026-06-26T21:17:32",
   "phase": "needs_affiliate_link",
   "site_name": "ふわふわ猫の道具箱",
   "public_url_configured": true,
@@ -64,6 +64,10 @@
       "decision": "review_before_link",
       "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
     },
+    "cat_first_lane": "careful",
+    "cat_first_lane_rank": 2,
+    "cat_first_lane_label": "慎重にリンク化",
+    "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。",
     "available": true
   },
   "next_link_candidates": [
@@ -100,7 +104,11 @@
         "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
     },
     {
       "category_id": "toys",
@@ -131,7 +139,11 @@
         "first_try": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "ready",
+      "cat_first_lane_rank": 1,
+      "cat_first_lane_label": "リンク化しやすい",
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
     },
     {
       "category_id": "water",
@@ -165,7 +177,11 @@
         "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
     },
     {
       "category_id": "water",
@@ -199,7 +215,11 @@
         "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
     },
     {
       "category_id": "scratch",
@@ -232,7 +252,11 @@
         "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
     }
   ],
   "next_actions": [
@@ -284,8 +308,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T20:53:53",
-    "exported_at": "2026-06-26T20:53:53",
+    "generated_at": "2026-06-26T21:17:32",
+    "exported_at": "2026-06-26T21:17:32",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -315,6 +339,13 @@
     "reviewed_link_candidates": 6,
     "next_target_review_level": "careful",
     "next_target_cat_first_score": 60,
+    "next_target_cat_first_lane": "careful",
+    "next_target_cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。",
+    "candidate_lane_summary": {
+      "ready": 1,
+      "careful": 5,
+      "watch_only": 0
+    },
     "next_target_risk_signals": [
       "誤飲・破損",
       "怖がり・音",
@@ -346,9 +377,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T20:53:57",
+    "checked_at": "2026-06-26T21:17:35",
     "synced": true,
-    "last_exported_at": "2026-06-26T20:53:55",
+    "last_exported_at": "2026-06-26T21:17:34",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -358,10 +389,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T20:52:55",
+        "deployed_at": "2026-06-26T21:16:17",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 175,
-        "total_bytes": 36231496
+        "total_bytes": 36248569
       }
     },
     "scheduled_task": {
@@ -369,9 +400,9 @@
       "ok": true,
       "installed": true,
       "state": "Ready",
-      "last_run_time": "2026-06-26T20:28:09",
+      "last_run_time": "2026-06-26T20:58:09",
       "last_task_result": 0,
-      "next_run_time": "2026-06-26T20:58:08",
+      "next_run_time": "2026-06-26T21:28:08",
       "number_of_missed_runs": 0,
       "repetition_interval": "PT30M",
       "action_matches": true,

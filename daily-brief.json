@@ -1,12 +1,17 @@
 {
-  "generated_at": "2026-06-26T20:53:53",
-  "exported_at": "2026-06-26T20:53:53",
+  "generated_at": "2026-06-26T21:17:32",
+  "exported_at": "2026-06-26T21:17:32",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_ready": true,
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
+  "cat_first_lanes": {
+    "ready": 1,
+    "careful": 4,
+    "watch_only": 0
+  },
   "today": {
     "headline": "catbot reaction theme",
     "theme": "遊び",
@@ -68,6 +73,10 @@
       "decision": "review_before_link",
       "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
     },
+    "cat_first_lane": "careful",
+    "cat_first_lane_rank": 2,
+    "cat_first_lane_label": "慎重にリンク化",
+    "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。",
     "available": true
   },
   "link_queue": [
@@ -91,6 +100,10 @@
       "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
       "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
       "link_ready": false,
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。",
       "cat_first_review": {
         "review_level": "careful",
         "cat_first_score": 60,
@@ -122,6 +135,10 @@
       "first_try": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
       "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
       "link_ready": false,
+      "cat_first_lane": "ready",
+      "cat_first_lane_rank": 1,
+      "cat_first_lane_label": "リンク化しやすい",
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。",
       "cat_first_review": {
         "review_level": "standard",
         "cat_first_score": 90,
@@ -151,6 +168,10 @@
       "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
       "search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
       "link_ready": false,
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。",
       "cat_first_review": {
         "review_level": "watch",
         "cat_first_score": 70,
@@ -182,6 +203,10 @@
       "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
       "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
       "link_ready": false,
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。",
       "cat_first_review": {
         "review_level": "watch",
         "cat_first_score": 70,
@@ -212,6 +237,10 @@
       "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
       "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
       "link_ready": false,
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。",
       "cat_first_review": {
         "review_level": "watch",
         "cat_first_score": 70,

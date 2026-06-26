@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T20:53:53",
-  "exported_at": "2026-06-26T20:53:53",
+  "generated_at": "2026-06-26T21:17:32",
+  "exported_at": "2026-06-26T21:17:32",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "public_url_valid": true,
@@ -47,6 +47,10 @@
       "decision": "review_before_link",
       "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
     },
+    "cat_first_lane": "careful",
+    "cat_first_lane_rank": 2,
+    "cat_first_lane_label": "慎重にリンク化",
+    "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。",
     "available": true
   },
   "suggested_link_targets": [
@@ -83,7 +87,11 @@
         "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
     },
     {
       "category_id": "toys",
@@ -114,7 +122,11 @@
         "first_try": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "ready",
+      "cat_first_lane_rank": 1,
+      "cat_first_lane_label": "リンク化しやすい",
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
     },
     {
       "category_id": "water",
@@ -148,7 +160,11 @@
         "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
     },
     {
       "category_id": "water",
@@ -182,7 +198,11 @@
         "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
     },
     {
       "category_id": "scratch",
@@ -215,9 +235,18 @@
         "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
         "decision": "review_before_link",
         "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-      }
+      },
+      "cat_first_lane": "careful",
+      "cat_first_lane_rank": 2,
+      "cat_first_lane_label": "慎重にリンク化",
+      "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
     }
   ],
+  "cat_first_lanes": {
+    "ready": 1,
+    "careful": 5,
+    "watch_only": 0
+  },
   "unready_clicked_products": [],
   "ready_clicked_products": [],
   "commands": {
