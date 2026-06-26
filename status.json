@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T13:38:32",
-  "exported_at": "2026-06-26T13:38:32",
+  "generated_at": "2026-06-26T13:52:43",
+  "exported_at": "2026-06-26T13:52:43",
   "phase": "needs_affiliate_link",
   "site_name": "ふわふわ猫の道具箱",
   "public_url_configured": true,
@@ -284,8 +284,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T13:38:32",
-    "exported_at": "2026-06-26T13:38:32",
+    "generated_at": "2026-06-26T13:52:43",
+    "exported_at": "2026-06-26T13:52:43",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -346,9 +346,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T13:38:35",
+    "checked_at": "2026-06-26T13:52:48",
     "synced": true,
-    "last_exported_at": "2026-06-26T13:38:34",
+    "last_exported_at": "2026-06-26T13:52:46",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -358,24 +358,24 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T13:36:09",
+        "deployed_at": "2026-06-26T13:52:42",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 175,
-        "total_bytes": 36233604
+        "total_bytes": 36233774
       }
     },
     "scheduled_task": {
-      "checked": false,
-      "ok": false,
-      "installed": false,
-      "state": "",
-      "last_run_time": "",
-      "last_task_result": null,
-      "next_run_time": "",
-      "number_of_missed_runs": null,
-      "repetition_interval": "",
-      "action_matches": false,
-      "exit_code": 1
+      "checked": true,
+      "ok": true,
+      "installed": true,
+      "state": "Running",
+      "last_run_time": "2026-06-26T13:28:09",
+      "last_task_result": 2147946720,
+      "next_run_time": "2026-06-26T13:58:08",
+      "number_of_missed_runs": 0,
+      "repetition_interval": "PT30M",
+      "action_matches": true,
+      "exit_code": 0
     }
   }
 }
