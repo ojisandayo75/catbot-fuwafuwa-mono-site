@@ -81,6 +81,13 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .checks div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
 .queue-list{display:grid;gap:10px}
 .queue-card a{display:inline-flex;margin-top:8px;min-height:34px;align-items:center;padding:6px 10px;border-radius:8px;background:#f4eadb;color:#5a3522;text-decoration:none;font-weight:900}
+.no-buy-panel{background:#fff7ec;border-color:#d4a477}
+.no-buy-grid{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;align-items:start;margin-top:10px}
+.no-buy-art{width:120px;aspect-ratio:1;object-fit:cover;border-radius:8px;border:1px solid #e3c6a8;background:#f4eadb}
+.no-buy-list{display:grid;gap:8px}
+.no-buy-list div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
+.no-buy-list strong{display:block;color:#3f281b;margin-bottom:3px}
+.no-buy-list p{font-size:13px;line-height:1.55}
 .aftercare-panel{background:#fffaf2}
 .aftercare-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
 .aftercare-list div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
@@ -90,7 +97,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .badges span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.aftercare-list{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.no-buy-art{width:100%;max-height:210px}}
 </style>
 </head>
 <body>
@@ -248,6 +255,30 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           <a href="../products/water/p2/">候補を見る</a>
         </article></div>
     </aside>
+  </section>
+
+  <section class="grid" aria-label="買わない判断">
+    <article class="panel no-buy-panel">
+      <span class="pill">今日は買わないでいい時</span>
+      <h2>買わない判断</h2>
+      <p>電動猫じゃらし を見送る時。反応が強い商品でも、猫に合わない条件がある時は無理に進めません。</p>
+      <div class="no-buy-grid">
+        <img class="no-buy-art" src="../assets/ai_shortcut_no_buy.webp" alt="" loading="lazy">
+        <div class="no-buy-list">
+        <div><strong>合わない猫</strong><p>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</p></div>
+
+        <div><strong>やめるサイン</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
+
+        <div><strong>相談を優先</strong><p>呼吸、尿、食欲、嘔吐・下痢、ぐったりなどがある時は、用品より相談を優先します。</p></div></div>
+      </div>
+      <div class="actions"><a class="button light" href="../buying-check/">買う前チェック</a><a class="button light" href="../consult-first/">相談を優先する時</a></div>
+    </article>
+    <article class="panel">
+      <span class="pill">判断の方針</span>
+      <h2>売るより、合わない理由を先に出します</h2>
+      <p>catbotで反応が強くても、怖がる子・誤飲しやすい子・体調に不安がある子には別の入口を案内します。買わない判断があるほうが、猫のための導線として長く使えます。</p>
+      <div class="actions"><a class="button light" href="../needs/">困りごとから探す</a><a class="button light" href="../cat-first/">猫優先ランキング</a></div>
+    </article>
   </section>
 
   <section class="grid" aria-label="買った後の見直し">

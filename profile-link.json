@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T06:12:03",
-  "exported_at": "2026-06-27T06:12:03",
+  "generated_at": "2026-06-27T06:20:54",
+  "exported_at": "2026-06-27T06:20:54",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -26,6 +26,30 @@
     "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
     "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
     "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。"
+  },
+  "no_buy": {
+    "title": "買わない判断",
+    "subtitle": "電動猫じゃらし を見送る時",
+    "image": "assets/ai_shortcut_no_buy.webp",
+    "fallback": "assets/ai_shortcut_no_buy.png",
+    "reasons": [
+      {
+        "label": "合わない猫",
+        "detail": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。"
+      },
+      {
+        "label": "やめるサイン",
+        "detail": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。"
+      },
+      {
+        "label": "相談を優先",
+        "detail": "呼吸、尿、食欲、嘔吐・下痢、ぐったりなどがある時は、用品より相談を優先します。"
+      }
+    ],
+    "links": {
+      "buying_check": "buying-check/",
+      "consult_first": "consult-first/"
+    }
   },
   "aftercare": {
     "title": "買った後の見直し",
