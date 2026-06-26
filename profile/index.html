@@ -53,6 +53,16 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .metric,.panel,.queue-card{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
 .metric{background:#fffaf2}
 .metric strong{display:block;font-size:26px;line-height:1.2;margin-top:4px;overflow-wrap:anywhere}
+.journey{margin-top:14px;border:1px solid var(--line);border-radius:8px;background:#fffaf2;padding:14px}
+.journey-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.journey-head p{max-width:640px}
+.journey-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.journey-step{position:relative;display:grid;grid-template-columns:82px minmax(0,1fr);gap:10px;align-items:center;min-height:128px;border:1px solid #e4c8aa;border-radius:8px;background:#fffdf8;padding:10px;text-decoration:none}
+.journey-step img{width:82px;aspect-ratio:1;object-fit:cover;border-radius:8px;border:1px solid #e7d1b8;background:#f4eadb}
+.journey-step .step-no{position:absolute;left:8px;top:8px;display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:999px;border:1px solid rgba(255,248,239,.82);background:rgba(90,53,34,.88);color:#fff8ef;font-weight:900}
+.journey-step small{display:inline-flex;width:max-content;max-width:100%;min-height:23px;align-items:center;padding:2px 7px;border-radius:8px;background:#f4eadb;color:#65462f;font-size:12px;font-weight:900}
+.journey-step strong{display:block;margin-top:4px;font-size:17px;line-height:1.25;overflow-wrap:anywhere}
+.journey-step p{margin-top:4px;font-size:13px;line-height:1.55}
 .menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
 .menu-card{display:grid;grid-template-rows:auto auto auto 1fr;gap:6px;min-height:230px;border:1px solid var(--line);border-radius:8px;background:#fffdf8;padding:12px;text-decoration:none}
 .menu-card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid #e7d1b8;background:#f4eadb}
@@ -72,7 +82,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .badges span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.menu,.grid{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}}
 </style>
 </head>
 <body>
@@ -96,6 +106,46 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
     <article class="metric"><span class="pill">今日の候補</span><strong>電動猫じゃらし</strong><p>遊び</p></article>
     <article class="metric"><span class="pill">買う前</span><strong>相性確認</strong><p>合わない条件とやめるサインを先に見ます</p></article>
     <article class="metric"><span class="pill">広告</span><strong>表記あり</strong><p>紹介リンクでも猫優先の基準を残します</p></article>
+  </section>
+
+  <section class="journey" aria-label="迷ったらこの順番">
+    <div class="journey-head">
+      <div>
+        <span class="pill">迷ったらこの順番</span>
+        <h2>商品より先に、うちの子に合うかを見ます</h2>
+      </div>
+      <p>診断、買う前チェック、今日の候補の順に見ると、衝動買いではなく猫に合う候補だけを残せます。</p>
+    </div>
+    <div class="journey-grid">
+        <a class="journey-step" href="../quiz/">
+          <img src="../assets/ai_shortcut_match.webp" alt="" loading="lazy">
+          <span class="step-no">1</span>
+          <div>
+            <small>まず診断</small>
+            <strong>うちの子に近い入口を選ぶ</strong>
+            <p>性格、怖がり方、困りごとから、いきなり商品へ行かず見る順番を決めます。</p>
+          </div>
+        </a>
+
+        <a class="journey-step" href="../buying-check/">
+          <img src="../assets/ai_shortcut_advisor.webp" alt="" loading="lazy">
+          <span class="step-no">2</span>
+          <div>
+            <small>買う前</small>
+            <strong>合わない条件を先に見る</strong>
+            <p>音、サイズ、置き場所、使いすぎ、やめるサインを確認してから候補へ進みます。</p>
+          </div>
+        </a>
+
+        <a class="journey-step" href="../first-target/">
+          <img src="../assets/ai_product_toys_p2.webp" alt="" loading="lazy">
+          <span class="step-no">3</span>
+          <div>
+            <small>候補を見る</small>
+            <strong>今日の候補は 電動猫じゃらし</strong>
+            <p>catbotで反応が強いテーマを、猫優先の基準に通してから見ます。</p>
+          </div>
+        </a></div>
   </section>
 
   <section class="menu" aria-label="アイコンメニュー">

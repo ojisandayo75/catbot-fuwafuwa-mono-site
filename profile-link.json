@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T05:42:01",
-  "exported_at": "2026-06-27T05:42:01",
+  "generated_at": "2026-06-27T05:51:56",
+  "exported_at": "2026-06-27T05:51:56",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -264,6 +264,32 @@
       "title": "広告と選定方針",
       "href": "policy/",
       "image": "assets/ai_brand_mark.webp"
+    }
+  ],
+  "journey_steps": [
+    {
+      "step": "1",
+      "label": "まず診断",
+      "title": "うちの子に近い入口を選ぶ",
+      "body": "性格、怖がり方、困りごとから、いきなり商品へ行かず見る順番を決めます。",
+      "href": "quiz/",
+      "image": "assets/ai_shortcut_match.webp"
+    },
+    {
+      "step": "2",
+      "label": "買う前",
+      "title": "合わない条件を先に見る",
+      "body": "音、サイズ、置き場所、使いすぎ、やめるサインを確認してから候補へ進みます。",
+      "href": "buying-check/",
+      "image": "assets/ai_shortcut_advisor.webp"
+    },
+    {
+      "step": "3",
+      "label": "候補を見る",
+      "title": "今日の候補は 電動猫じゃらし",
+      "body": "catbotで反応が強いテーマを、猫優先の基準に通してから見ます。",
+      "href": "first-target/",
+      "image": "assets/ai_product_toys_p2.webp"
     }
   ],
   "first_link_command": ".\\catbot_first_link_live_finish.bat -Open",
