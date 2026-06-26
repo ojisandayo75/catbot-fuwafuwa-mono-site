@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T23:02:29",
-  "exported_at": "2026-06-26T23:02:29",
+  "generated_at": "2026-06-26T23:19:39",
+  "exported_at": "2026-06-26T23:19:39",
   "state": "decision_guide_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -10,6 +10,16 @@
   "ready_links": 0,
   "total_products": 9,
   "routes": [
+    {
+      "id": "cat_first_ranking",
+      "label": "ランキング",
+      "title": "猫優先ランキング",
+      "summary": "売れそう順ではなく、猫に合いやすいか、慎重に見るべきかで候補を並べます。",
+      "path": "cat-first/",
+      "icon": "advisor",
+      "priority": 1,
+      "cat_first_check": "リンク化しやすい商品でも、合わない条件とやめるサインを先に見ます。"
+    },
     {
       "id": "cat_profile",
       "label": "うちの子",
@@ -460,6 +470,7 @@
   ],
   "related": {
     "start": "start/",
+    "cat_first": "cat-first/",
     "needs": "needs/",
     "trends": "trends/",
     "buying_check": "buying-check/",
