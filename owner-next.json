@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T23:19:39",
-  "exported_at": "2026-06-26T23:19:39",
+  "generated_at": "2026-06-26T23:34:45",
+  "exported_at": "2026-06-26T23:34:45",
   "state": "needs_first_affiliate_link",
   "headline": "残りは最初の実アフィリリンクです",
   "primary_action": "toys/p2 電動猫じゃらし の追跡URLを保存する",
@@ -89,6 +89,23 @@
       "body": "Xには商品直リンクを貼らず、公開サイトへ案内します。投稿前は shop-post-guard が OK になるまで待ちます。"
     }
   ],
+  "tracking_url_rules": {
+    "ok": [
+      "もしもで発行した追跡URL。",
+      "af.moshimo.com、a.r10.to、hb.afl.rakuten.co.jp など提携経由だと分かるURL。",
+      "Amazon URLなら tag= / ascsubtag= / linkCode= など追跡情報が見えるURL。"
+    ],
+    "ng": [
+      "普通のAmazon/Rakuten商品ページURL。",
+      "検索結果URL、カートURL、ログイン後だけ見えるURL。",
+      "amzn.to だけなど追跡情報を確認できない短縮URL。"
+    ]
+  },
+  "primary_flow": {
+    "open": ".\\catbot_first_link_live_finish.bat -Open",
+    "dry_run": ".\\catbot_first_link_finish.bat",
+    "apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish"
+  },
   "public_files": {
     "shop": "index.html",
     "owner_next": "owner-next.json",
