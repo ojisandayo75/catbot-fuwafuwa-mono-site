@@ -39,6 +39,9 @@
 /buying-check.json
   Cache-Control: no-cache
 
+/aftercare-plan.json
+  Cache-Control: no-cache
+
 /consult-first.json
   Cache-Control: no-cache
 
@@ -76,6 +79,9 @@
   Cache-Control: no-cache
 
 /buying-check/*
+  Cache-Control: no-cache
+
+/aftercare/*
   Cache-Control: no-cache
 
 /consult-first/*

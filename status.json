@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T09:21:15",
-  "exported_at": "2026-06-26T09:21:15",
+  "generated_at": "2026-06-26T09:37:56",
+  "exported_at": "2026-06-26T09:37:56",
   "phase": "needs_affiliate_link",
   "site_name": "ふわふわ猫の道具箱",
   "public_url_configured": true,
@@ -284,8 +284,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T09:21:15",
-    "exported_at": "2026-06-26T09:21:15",
+    "generated_at": "2026-06-26T09:37:56",
+    "exported_at": "2026-06-26T09:37:56",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -346,9 +346,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T09:21:17",
+    "checked_at": "2026-06-26T09:37:59",
     "synced": true,
-    "last_exported_at": "2026-06-26T09:21:16",
+    "last_exported_at": "2026-06-26T09:37:58",
     "ready_links": 0,
     "total_products": 9,
     "followers": 561,
@@ -358,24 +358,24 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T09:20:24",
+        "deployed_at": "2026-06-26T09:35:57",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-        "file_count": 156,
-        "total_bytes": 52062170
+        "file_count": 158,
+        "total_bytes": 52097289
       }
     },
     "scheduled_task": {
-      "checked": true,
-      "ok": true,
-      "installed": true,
-      "state": "Running",
-      "last_run_time": "2026-06-26T08:58:09",
-      "last_task_result": 267009,
-      "next_run_time": "2026-06-26T09:28:08",
-      "number_of_missed_runs": 0,
-      "repetition_interval": "PT30M",
-      "action_matches": true,
-      "exit_code": 0
+      "checked": false,
+      "ok": false,
+      "installed": false,
+      "state": "",
+      "last_run_time": "",
+      "last_task_result": null,
+      "next_run_time": "",
+      "number_of_missed_runs": null,
+      "repetition_interval": "",
+      "action_matches": false,
+      "exit_code": 1
     }
   }
 }

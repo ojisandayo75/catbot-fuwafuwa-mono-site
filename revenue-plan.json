@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T09:21:15",
-  "exported_at": "2026-06-26T09:21:15",
+  "generated_at": "2026-06-26T09:37:56",
+  "exported_at": "2026-06-26T09:37:56",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -269,6 +269,8 @@
     "link_health_page": "health/",
     "buying_check": "buying-check.json",
     "buying_check_page": "buying-check/",
+    "aftercare_plan": "aftercare-plan.json",
+    "aftercare_page": "aftercare/",
     "cat_quiz": "cat-quiz.json",
     "cat_quiz_page": "quiz/",
     "owner_next": "owner-next.json",

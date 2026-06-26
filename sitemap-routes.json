@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-26T09:21:15",
+  "generated_at": "2026-06-26T09:37:56",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 25,
-  "absolute_url_count": 25,
+  "route_count": 26,
+  "absolute_url_count": 26,
   "routes": [
     {
       "kind": "home",
@@ -44,6 +44,15 @@
       "lastmod": "2026-06-26",
       "changefreq": "weekly",
       "priority": 0.8
+    },
+    {
+      "kind": "aftercare",
+      "path": "aftercare/",
+      "title": "Catbot 使い始めの見直し",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/aftercare/",
+      "lastmod": "2026-06-26",
+      "changefreq": "weekly",
+      "priority": 0.82
     },
     {
       "kind": "consult-first",
