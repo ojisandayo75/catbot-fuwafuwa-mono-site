@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-06-26T09:43:35",
-  "generated_at": "2026-06-26T09:43:35",
+  "exported_at": "2026-06-26T09:57:55",
+  "generated_at": "2026-06-26T09:57:55",
   "phase": "needs_affiliate_link",
   "public_url_configured": true,
   "followers": 561,
@@ -251,8 +251,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T09:43:35",
-    "exported_at": "2026-06-26T09:43:35",
+    "generated_at": "2026-06-26T09:57:55",
+    "exported_at": "2026-06-26T09:57:55",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -315,6 +315,7 @@
   "x_kit_page": "x-kit/",
   "generated_assets_page": "visuals/",
   "daily_brief": "daily-brief.json",
+  "daily_brief_page": "daily/",
   "revenue_plan": "revenue-plan.json",
   "revenue_page": "revenue/",
   "first_link_safe_flow": {
@@ -336,23 +337,23 @@
     ]
   },
   "auto_export": {
-    "exported_at": "2026-06-26T09:43:36",
+    "exported_at": "2026-06-26T09:57:56",
     "output": "C:\\Users\\User\\catbot-x\\public_shop",
     "ready_links": 0,
     "total_products": 9,
     "followers": 561,
     "top_post_views": 156918,
     "last_deploy": {
-      "deployed_at": "2026-06-26T09:43:19",
+      "deployed_at": "2026-06-26T09:56:42",
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-      "file_count": 158,
-      "total_bytes": 52097289
+      "file_count": 159,
+      "total_bytes": 52113786
     }
   },
   "auto_update": {
-    "checked_at": "2026-06-26T09:43:37",
+    "checked_at": "2026-06-26T09:57:57",
     "synced": true,
-    "last_exported_at": "2026-06-26T09:43:36",
+    "last_exported_at": "2026-06-26T09:57:56",
     "ready_links": 0,
     "total_products": 9,
     "followers": 561,
@@ -362,10 +363,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T09:43:19",
+        "deployed_at": "2026-06-26T09:56:42",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-        "file_count": 158,
-        "total_bytes": 52097289
+        "file_count": 159,
+        "total_bytes": 52113786
       }
     },
     "scheduled_task": {

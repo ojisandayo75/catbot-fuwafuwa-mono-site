@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T09:43:35",
-  "exported_at": "2026-06-26T09:43:35",
+  "generated_at": "2026-06-26T09:57:55",
+  "exported_at": "2026-06-26T09:57:55",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -398,7 +398,8 @@
     "generated_assets_page": "visuals/",
     "shop_data": "shop-data.json",
     "revenue_plan": "revenue-plan.json",
-    "revenue_page": "revenue/"
+    "revenue_page": "revenue/",
+    "daily_brief_page": "daily/"
   },
   "automation": {
     "source": "catbot logs + affiliate_products.json",

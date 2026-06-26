@@ -57,6 +57,9 @@
 /daily-brief.json
   Cache-Control: no-cache
 
+/daily/*
+  Cache-Control: no-cache
+
 /site.webmanifest
   Cache-Control: no-cache
 

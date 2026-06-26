@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="catbotの反応、フォロワー進捗、次に整える猫用品候補を毎日更新するページです。">
+<meta property="og:title" content="Catbot 今日の猫メモ">
+<meta property="og:description" content="catbotの反応、フォロワー進捗、次に整える猫用品候補を毎日更新するページです。">
+<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catbot 今日の猫メモ">
+<meta name="twitter:description" content="catbotの反応、フォロワー進捗、次に整える猫用品候補を毎日更新するページです。">
+<meta name="theme-color" content="#5a3522">
+<link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
+<link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
+<link rel="apple-touch-icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/daily/">
+<meta property="og:url" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/daily/">
+<meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:site" content="@fuwafuwa_mono">
+<meta name="twitter:creator" content="@fuwafuwa_mono">
+<title>Catbot 今日の猫メモ</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--soft:#f4eadb;--green:#5f7f67}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:22px}
+.hero{position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(37,23,15,.94) 0%,rgba(55,34,22,.80) 45%,rgba(55,34,22,.18) 74%),image-set(url("../assets/ai_hero_generated.webp") type("image/webp"),url("../assets/ai_hero_generated.jpg") type("image/jpeg"));background-size:cover;background-position:center right;color:#fff8ef}
+.hero .wrap{min-height:360px;display:grid;align-items:end;padding-top:34px;padding-bottom:34px}
+.top{display:grid;grid-template-columns:minmax(0,660px) auto;gap:14px;align-items:start}
+.label{display:inline-flex;align-items:center;width:max-content;max-width:100%;min-height:25px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+h1{margin:8px 0;font-size:36px;line-height:1.15;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:6px 0;font-size:21px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.hero p{color:#f4e6d5;max-width:610px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.card,.product-card,.copy-card{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
+.stat-card{background:#fffaf2}
+.stat-card b{display:block;font-size:25px;line-height:1.2;margin-top:4px}
+.focus{background:#fffaf2;border-color:#caa982}
+.product-list{display:grid;gap:12px;margin-top:14px}
+.product-card{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:14px;align-items:start;background:#fffaf2}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.checks div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px;min-width:0}
+.checks strong{display:block;color:#3f281b;margin-bottom:4px}
+.tags,.blockers{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tags span,.blockers span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:800}
+.action-list{margin:8px 0 0;padding-left:20px;color:#5f4735}
+.action-list li{margin-top:8px}
+.action-list strong,.action-list span,.action-list code{display:block}
+code{margin-top:4px;padding:6px 8px;border:1px solid #d8bea4;border-radius:8px;background:#fffdf8;color:#3f281b;white-space:normal;overflow-wrap:anywhere}
+@media(max-width:820px){.hero .wrap{min-height:430px}.top,.stats,.grid,.product-card,.checks{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:29px}.button{width:100%}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap top">
+    <div>
+      <span class="label">自動更新</span>
+      <h1>今日の猫メモ</h1>
+      <p>catbotの反応から、今日見られている猫テーマと、次に整える猫用品候補をまとめます。商品リンクより先に、猫に合うか・やめる条件を確認します。</p>
+      <div class="actions"><a class="button" href="#queue">次の候補を見る</a><a class="button light" href="../aftercare/">使い始めの見直し</a><a class="button light" href="../">トップへ</a></div>
+    </div>
+    <a class="button" href="../daily-brief.json">daily-brief.json</a>
+  </div>
+</header>
+<main class="wrap">
+  <section class="stats" aria-label="今日の状態">
+        <article class="card stat-card">
+          <span class="label">フォロワー</span>
+          <b>561/1000</b>
+          <p>残り 439 / ETA 2026-07-09</p>
+        </article>
+
+        <article class="card stat-card">
+          <span class="label">投稿ログ</span>
+          <b>10</b>
+          <p>catbotが見ている投稿数</p>
+        </article>
+
+        <article class="card stat-card">
+          <span class="label">動画素材</span>
+          <b>12</b>
+          <p>サイトに戻せる素材</p>
+        </article>
+
+        <article class="card stat-card">
+          <span class="label">リンク</span>
+          <b>0/9</b>
+          <p>実リンクはまだ待機中</p>
+        </article></section>
+  <section class="grid" aria-label="catbot反応と投稿ガード">
+    <article class="card focus">
+      <span class="label">今日の反応テーマ</span>
+      <h2>遊び</h2>
+      <p>catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。</p>
+      <div class="tags"><span>score 40</span><span>toys</span></div>
+    </article>
+    <article class="card">
+      <span class="label">X投稿ガード</span>
+      <h2>ショップ投稿は待機</h2>
+      <p>wait</p>
+      <div class="blockers"><span>{&#x27;id&#x27;: &#x27;affiliate_link&#x27;, &#x27;detail&#x27;: &#x27;no real affiliate/tracking link is set&#x27;}</span><span>{&#x27;id&#x27;: &#x27;follower_goal&#x27;, &#x27;detail&#x27;: &#x27;shop promotion waits for 1000 followers (561/1000, remaining 439)&#x27;}</span></div>
+    </article>
+  </section>
+  <section class="grid" aria-label="次の行動">
+    <article class="card">
+      <span class="label">今やること</span>
+      <h2>もしも承認と最初のリンク作業台を開く</h2>
+      <ul class="action-list">
+        <li>
+          <strong>もしも承認と最初のリンク作業台を開く</strong>
+          <span>もしも承認状態も見ながら、check-url と set-next のコマンドを作る。</span>
+          <code>.\catbot_first_link_handoff.bat -Open</code>
+        </li>
+
+        <li>
+          <strong>公開前チェック</strong>
+          <span>READYになるまで残り項目を確認する。</span>
+          <code>.\affiliate_site_ops.bat launch-check</code>
+        </li></ul>
+    </article>
+    <article class="card">
+      <span class="label">次の対象</span>
+      <h2>電動猫じゃらし</h2>
+      <p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p>
+      <div class="actions"><a class="button light" href="../link-plan/">リンク計画</a><a class="button light" href="../buying-check/">買う前チェック</a></div>
+    </article>
+  </section>
+  <section id="queue">
+    <div class="actions"><a class="button light" href="../link-plan/">リンク計画を見る</a><a class="button light" href="../owner-next/">次にやること</a></div>
+    <div class="product-list">
+        <article class="product-card">
+          <div>
+            <span class="label">rank 1</span>
+            <h2>電動猫じゃらし</h2>
+            <p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p>
+            <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span><span>中単価</span></div>
+          </div>
+          <div class="checks">
+            <div><strong>合わないかも</strong><p>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</p></div>
+            <div><strong>やめるサイン</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
+            <div><strong>最初の試し方</strong><p>最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。</p></div>
+            <div><strong>注意テーマ</strong><p><span>誤飲・破損</span><span>怖がり・音</span><span>体調・食事</span><span>興奮・執着</span></p></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div>
+            <span class="label">rank 2</span>
+            <h2>けりぐるみ</h2>
+            <p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p>
+            <div class="tags"><span>catbot反応</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: よく走る・遊び足りない猫</span></div>
+          </div>
+          <div class="checks">
+            <div><strong>合わないかも</strong><p>布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。</p></div>
+            <div><strong>やめるサイン</strong><p>破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。</p></div>
+            <div><strong>最初の試し方</strong><p>遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。</p></div>
+            <div><strong>注意テーマ</strong><p><span>誤飲・破損</span></p></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div>
+            <span class="label">rank 3</span>
+            <h2>自動給餌器</h2>
+            <p>詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。</p>
+            <div class="tags"><span>季節ケア</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>高単価</span></div>
+          </div>
+          <div class="checks">
+            <div><strong>合わないかも</strong><p>療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。</p></div>
+            <div><strong>やめるサイン</strong><p>食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。</p></div>
+            <div><strong>最初の試し方</strong><p>毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。</p></div>
+            <div><strong>注意テーマ</strong><p><span>誤飲・破損</span><span>体調・食事</span><span>衛生・手入れ</span></p></div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div>
+            <span class="label">rank 4</span>
+            <h2>循環式水飲み器</h2>
+            <p>洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。</p>
+            <div class="tags"><span>季節ケア</span><span>買う前チェック: 留守番が多い猫</span><span>買う前チェック: 水分・ごはんを整えたい猫</span><span>中単価</span></div>
+          </div>
+          <div class="checks">
+            <div><strong>合わないかも</strong><p>モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。</p></div>
+            <div><strong>やめるサイン</strong><p>飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。</p></div>
+            <div><strong>最初の試し方</strong><p>水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。</p></div>
+            <div><strong>注意テーマ</strong><p><span>誤飲・破損</span><span>怖がり・音</span><span>衛生・手入れ</span></p></div>
+          </div>
+        </article></div>
+  </section>
+  <section class="grid" aria-label="X向けの安全な導線"><article class="copy-card"><span class="label">X案</span><p>ふわふわ猫の道具箱を整えています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/</p></article>
+<article class="copy-card"><span class="label">X案</span><p>ふわふわ猫の道具箱を更新しました。 catbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全と買う前チェックから見られるようにしています。 売り込みより、合わない理由とやめるサインを先に置いています。</p></article>
+<article class="copy-card"><span class="label">X案</span><p>猫用品をすぐ買わせる場所ではなく、合う理由・合わない条件・最初の試し方を先に見る場所にしています。 今は「遊び」まわりを更新中です。</p></article></section>
+</main>
+</body>
+</html>

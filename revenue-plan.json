@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T09:43:35",
-  "exported_at": "2026-06-26T09:43:35",
+  "generated_at": "2026-06-26T09:57:55",
+  "exported_at": "2026-06-26T09:57:55",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -279,6 +279,7 @@
     "x_kit_page": "x-kit/",
     "share_copy": "share-copy.json",
     "daily_brief": "daily-brief.json",
+    "daily_brief_page": "daily/",
     "ops_summary": "ops-summary.json",
     "revenue_plan": "revenue-plan.json",
     "revenue_page": "revenue/",

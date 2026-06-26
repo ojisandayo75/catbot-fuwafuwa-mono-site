@@ -19,6 +19,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/daily/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.86</priority>
+  </url>
+  <url>
     <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/buying-check/</loc>
     <lastmod>2026-06-26</lastmod>
     <changefreq>weekly</changefreq>
