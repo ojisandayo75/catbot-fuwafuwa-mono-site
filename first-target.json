@@ -1,7 +1,7 @@
 {
   "state": "first_target_ready",
-  "generated_at": "2026-06-27T03:14:26",
-  "exported_at": "2026-06-27T03:14:26",
+  "generated_at": "2026-06-27T03:33:41",
+  "exported_at": "2026-06-27T03:33:41",
   "category_id": "toys",
   "product_id": "p2",
   "key": "toys/p2",
@@ -31,6 +31,7 @@
     "kind": "search",
     "external": true
   },
+  "rakuten_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB%20%E9%9B%BB%E5%8B%95%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97/",
   "next_candidates": [
     {
       "rank": 2,

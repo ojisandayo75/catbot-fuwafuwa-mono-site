@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T03:14:26",
-  "exported_at": "2026-06-27T03:14:26",
+  "generated_at": "2026-06-27T03:33:41",
+  "exported_at": "2026-06-27T03:33:41",
   "state": "needs_first_affiliate_link",
   "headline": "残りは最初の実アフィリリンクです",
   "primary_action": "toys/p2 電動猫じゃらし の追跡URLを保存する",
@@ -35,6 +35,7 @@
         "key": "toys/p2",
         "product": "電動猫じゃらし",
         "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+        "rakuten_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB%20%E9%9B%BB%E5%8B%95%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97/",
         "cat_first_check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。"
       }
     },
