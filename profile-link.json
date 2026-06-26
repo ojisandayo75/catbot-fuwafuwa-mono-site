@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T06:03:35",
-  "exported_at": "2026-06-27T06:03:35",
+  "generated_at": "2026-06-27T06:12:03",
+  "exported_at": "2026-06-27T06:12:03",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -26,6 +26,16 @@
     "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
     "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
     "first_try": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。"
+  },
+  "aftercare": {
+    "title": "買った後の見直し",
+    "href": "aftercare/",
+    "image": "assets/ai_cat_care_scene.webp",
+    "product": "電動猫じゃらし",
+    "first_day": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。",
+    "day_three": "使う頻度、片付けやすさ、猫の生活リズムが崩れていないかを見ます。",
+    "day_seven": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+    "pause_if": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。"
   },
   "shop_post_guard": {
     "allowed": false,
@@ -306,6 +316,7 @@
     "buying_check": "buying-check/",
     "needs": "needs/",
     "daily": "daily/",
+    "aftercare": "aftercare/",
     "policy": "policy/"
   },
   "first_link_safe_flow": {

@@ -81,10 +81,16 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .checks div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
 .queue-list{display:grid;gap:10px}
 .queue-card a{display:inline-flex;margin-top:8px;min-height:34px;align-items:center;padding:6px 10px;border-radius:8px;background:#f4eadb;color:#5a3522;text-decoration:none;font-weight:900}
+.aftercare-panel{background:#fffaf2}
+.aftercare-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+.aftercare-list div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
+.aftercare-list strong{display:block;color:#3f281b;margin-bottom:3px}
+.aftercare-list p{font-size:13px;line-height:1.55}
+.aftercare-art{width:100%;min-height:220px;object-fit:cover;border-radius:8px;border:1px solid #e3c6a8;background:#f4eadb}
 .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .badges span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.aftercare-list{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}}
 </style>
 </head>
 <body>
@@ -244,12 +250,33 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
     </aside>
   </section>
 
+  <section class="grid" aria-label="買った後の見直し">
+    <article class="panel aftercare-panel">
+      <span class="pill">買った後まで見る</span>
+      <h2>買った後の見直し</h2>
+      <p>電動猫じゃらし は、買って終わりではなく、猫が怖がらないか・生活が崩れないかを短く見直します。</p>
+      <div class="aftercare-list">
+        <div><strong>初日</strong><p>最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。</p></div>
+        <div><strong>3日目</strong><p>使う頻度、片付けやすさ、猫の生活リズムが崩れていないかを見ます。</p></div>
+        <div><strong>7日目</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
+      </div>
+      <div class="checks">
+        <div><strong>無理に続けない条件</strong><p>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</p></div>
+      </div>
+      <div class="actions"><a class="button light" href="../aftercare/">使い始めの見直し</a><a class="button light" href="../consult-first/">相談を優先する時</a></div>
+    </article>
+    <article class="panel">
+      <img class="aftercare-art" src="../assets/ai_cat_care_scene.webp" alt="" loading="lazy">
+      <div class="badges"><span>初日は短時間</span><span>3日目に生活リズム確認</span><span>7日目に続けるか判断</span></div>
+    </article>
+  </section>
+
   <section class="grid" aria-label="安心して見るための方針">
     <article class="panel">
       <span class="pill">困ったらここ</span>
       <h2>目的から探す</h2>
       <p>遊び、水分、爪とぎ、留守番など、猫の困りごとに合わせて入口を分けています。</p>
-      <div class="actions"><a class="button light" href="../needs/">困りごとから探す</a><a class="button light" href="../quiz/">うちの子診断</a><a class="button light" href="../consult-first/">相談を優先する時</a></div>
+      <div class="actions"><a class="button light" href="../needs/">困りごとから探す</a><a class="button light" href="../quiz/">うちの子診断</a><a class="button light" href="../aftercare/">使い始めの見直し</a><a class="button light" href="../consult-first/">相談を優先する時</a></div>
     </article>
     <article class="panel">
       <span class="pill">広告と選定方針</span>
