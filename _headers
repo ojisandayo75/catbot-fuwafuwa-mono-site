@@ -75,10 +75,16 @@
 /daily-brief.json
   Cache-Control: no-cache
 
+/cat-first-ranking.json
+  Cache-Control: no-cache
+
 /daily/*
   Cache-Control: no-cache
 
 /start/*
+  Cache-Control: no-cache
+
+/cat-first/*
   Cache-Control: no-cache
 
 /site.webmanifest

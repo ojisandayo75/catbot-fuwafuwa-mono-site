@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-26T21:51:04",
+  "generated_at": "2026-06-26T22:11:41",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 33,
-  "absolute_url_count": 33,
+  "route_count": 34,
+  "absolute_url_count": 34,
   "routes": [
     {
       "kind": "home",
@@ -71,6 +71,15 @@
       "lastmod": "2026-06-26",
       "changefreq": "daily",
       "priority": 0.86
+    },
+    {
+      "kind": "cat-first",
+      "path": "cat-first/",
+      "title": "Catbot 猫優先ランキング",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/cat-first/",
+      "lastmod": "2026-06-26",
+      "changefreq": "daily",
+      "priority": 0.92
     },
     {
       "kind": "trends",

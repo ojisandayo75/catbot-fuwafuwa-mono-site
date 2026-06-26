@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-26T21:51:04",
+  "generated_at": "2026-06-26T22:11:41",
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "files": 175,
-  "bytes": 36273696,
+  "files": 177,
+  "bytes": 36319985,
   "ready_links": 0,
   "total_products": 9,
   "helpers": {
@@ -44,6 +44,8 @@
     "consult_first_page": "consult-first/index.html",
     "cat_quiz": "cat-quiz.json",
     "cat_quiz_page": "quiz/index.html",
+    "cat_first_ranking": "cat-first-ranking.json",
+    "cat_first_ranking_page": "cat-first/index.html",
     "owner_next": "owner-next.json",
     "owner_next_page": "owner-next/index.html",
     "x_kit": "x-kit.json",
@@ -85,6 +87,7 @@
     "seasonal": "no-cache",
     "consult_first": "no-cache",
     "cat_quiz": "no-cache",
+    "cat_first_ranking": "no-cache",
     "owner_next": "no-cache",
     "x_kit": "no-cache",
     "visuals": "no-cache",
