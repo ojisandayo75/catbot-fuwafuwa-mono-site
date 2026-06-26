@@ -42,6 +42,12 @@
 /choose/*
   Cache-Control: no-cache
 
+/first-target.json
+  Cache-Control: no-cache
+
+/first-target/*
+  Cache-Control: no-cache
+
 /trends-signal.json
   Cache-Control: no-cache
 

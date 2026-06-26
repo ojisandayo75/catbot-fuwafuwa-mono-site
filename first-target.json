@@ -1,0 +1,40 @@
+{
+  "state": "first_target_ready",
+  "generated_at": "2026-06-26T12:58:37",
+  "exported_at": "2026-06-26T12:58:37",
+  "category_id": "toys",
+  "product_id": "p2",
+  "key": "toys/p2",
+  "category": "遊びと運動",
+  "product": "電動猫じゃらし",
+  "lead": "人が手を離していても、短時間だけ遊びを足せる候補です。",
+  "best_for": "遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。",
+  "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+  "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。",
+  "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+  "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。",
+  "care_note": "遊び終わりは手動のおもちゃで落ち着かせます。破損や小さな部品が出たらすぐ片付けます。",
+  "consult_note": "食欲・水分・排泄・呼吸・元気に変化がある時は、用品選びより相談を優先します。",
+  "detail_path": "products/toys/p2/",
+  "buying_check_anchor": "buying-check/#toys-p2",
+  "needs_anchor": "needs/#toys",
+  "ready": false,
+  "ready_links": 0,
+  "total_products": 9,
+  "followers": 578,
+  "follower_goal": 1000,
+  "score": 211,
+  "price_band": "中",
+  "primary_action": {
+    "label": "検索候補を開く",
+    "href": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+    "kind": "search",
+    "external": true
+  },
+  "cat_first_rules": [
+    "いきなり買わせず、合う子・合わない子を先に見せる。",
+    "実リンクが入るまでは検索候補に留める。",
+    "怖がる、壊す、飲み込む可能性がある時は止める。",
+    "体調の変化がある時は、商品より相談を優先する。"
+  ]
+}
