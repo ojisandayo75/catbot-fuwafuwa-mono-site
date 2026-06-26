@@ -1,10 +1,12 @@
 {
-  "generated_at": "2026-06-27T01:00:06",
+  "generated_at": "2026-06-27T01:09:51",
   "phase": "launch_waiting",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "url_hint": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
+  "url_hint": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "first_target_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
+  "profile_entry_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "cat_first_entry_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
   "followers": 578,
   "follower_goal": 1000,
@@ -18,7 +20,7 @@
   "safe_warmup": {
     "allowed": true,
     "decision": "allow_warmup",
-    "text": "ふわふわ猫の道具箱を整えています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+    "text": "ふわふわ猫の道具箱を整えています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "command": ".\\catbot_site_warmup_ready.bat -Copy",
     "record_command": ".\\catbot_site_warmup_ready.bat -Record",
     "note": "商品直リンクを入れない、実アフィリリンク前のサイト紹介だけに使う。"
@@ -28,7 +30,7 @@
       "id": "site_warmup",
       "title": "プレ告知",
       "use_when": "実アフィリリンクを入れる前のサイト紹介で使う",
-      "text": "ふわふわ猫の道具箱を整えています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
+      "text": "ふわふわ猫の道具箱を整えています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/"
     },
     {
       "id": "first_target_entry",
@@ -67,10 +69,11 @@
     "min_hours_between_shop_posts": 6,
     "max_self_replies_per_viral_post": 1,
     "direct_product_link_allowed": false,
-    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "allowed_site_urls": [
-      "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-      "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
+      "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
+      "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
+      "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/"
     ],
     "allowed_contexts": [
       "公開後の固定投稿",
@@ -84,7 +87,7 @@
       "猫の不安や体調不良を煽る文面"
     ]
   },
-  "exported_at": "2026-06-27T01:00:06",
+  "exported_at": "2026-06-27T01:09:51",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",

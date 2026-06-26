@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T01:00:06",
-  "exported_at": "2026-06-27T01:00:06",
+  "generated_at": "2026-06-27T01:09:51",
+  "exported_at": "2026-06-27T01:09:51",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -257,7 +257,7 @@
     "daily_cap": 2,
     "min_interval_hours": 6.0,
     "direct_product_link_allowed": false,
-    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+    "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "public_monitor_required": true,
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
     "command": ".\\affiliate_site_ops.bat shop-post-guard --json",
