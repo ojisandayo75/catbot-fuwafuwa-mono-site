@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T17:44:49",
-  "exported_at": "2026-06-26T17:44:49",
+  "generated_at": "2026-06-26T18:06:05",
+  "exported_at": "2026-06-26T18:06:05",
   "phase": "needs_affiliate_link",
   "state": "needs_first_tracking_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -260,7 +260,7 @@
   ],
   "commands": {
     "audit_links": ".\\affiliate_site_ops.bat audit-links",
-    "first_link_workbench": ".\\catbot_first_link_handoff.bat -Open",
+    "first_link_workbench": ".\\catbot_first_link_live_finish.bat -Open",
     "set_next": ".\\catbot_first_link_clipboard_to_inbox.bat",
     "click_review": ".\\affiliate_site_ops.bat click-review",
     "sync_now": ".\\affiliate_site_ops.bat sync-now --smoke-test",

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T17:44:49",
-  "exported_at": "2026-06-26T17:44:49",
+  "generated_at": "2026-06-26T18:06:05",
+  "exported_at": "2026-06-26T18:06:05",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -330,9 +330,9 @@
   },
   "next_actions": [
     {
-      "title": "もしも承認と最初のリンク作業台を開く",
-      "detail": "もしも承認状態も見ながら、check-url と set-next のコマンドを作る。",
-      "command": ".\\catbot_first_link_handoff.bat -Open",
+      "title": "最初のリンク一括ガイドを開く",
+      "detail": "もしもで発行した追跡URLをコピーして、保存前のdry-runまで一気に確認する。",
+      "command": ".\\catbot_first_link_live_finish.bat -Open",
       "source": "launch_gate"
     },
     {
@@ -345,7 +345,7 @@
   "commands": {
     "refresh": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "launch_check": ".\\affiliate_site_ops.bat launch-check",
-    "first_link": ".\\catbot_first_link_clipboard_to_inbox.bat",
+    "first_link": ".\\catbot_first_link_live_finish.bat -Open",
     "public_url": ".\\affiliate_site_ops.bat profile-url \"https://PUBLIC_URL/\" --package --smoke-test",
     "shop_post_guard": ".\\affiliate_site_ops.bat shop-post-guard --json",
     "owner_next_page": "start public_shop\\owner-next\\index.html",

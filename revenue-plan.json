@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T17:44:49",
-  "exported_at": "2026-06-26T17:44:49",
+  "generated_at": "2026-06-26T18:06:05",
+  "exported_at": "2026-06-26T18:06:05",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -200,8 +200,8 @@
   "recommended_action": {
     "id": "set_first_affiliate_link",
     "title": "最初の実アフィリリンクを入れる",
-    "detail": "次の最優先商品に、もしも等の追跡付きURLを1本保存します。",
-    "command": ".\\catbot_first_link_handoff.bat -Open"
+    "detail": "次の最優先商品に、もしも等の追跡付きURLを1本保存前チェックします。",
+    "command": ".\\catbot_first_link_live_finish.bat -Open"
   },
   "launch_blockers": [
     {
@@ -250,7 +250,7 @@
   ],
   "commands": {
     "refresh": ".\\affiliate_site_ops.bat sync-now --smoke-test",
-    "first_link_workbench": ".\\catbot_first_link_handoff.bat -Open",
+    "first_link_workbench": ".\\catbot_first_link_live_finish.bat -Open",
     "set_first_link": ".\\catbot_first_link_clipboard_to_inbox.bat",
     "set_public_url": ".\\affiliate_site_ops.bat profile-url \"https://PUBLIC_URL/\" --package --smoke-test",
     "launch_check": ".\\affiliate_site_ops.bat launch-check",

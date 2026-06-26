@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T17:44:49",
-  "exported_at": "2026-06-26T17:44:49",
+  "generated_at": "2026-06-26T18:06:05",
+  "exported_at": "2026-06-26T18:06:05",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -17,8 +17,8 @@
   "recommended_action": {
     "id": "set_first_affiliate_link",
     "title": "最初の実アフィリリンクを入れる",
-    "detail": "次の最優先商品に、もしも等の追跡付きURLを1本保存します。",
-    "command": ".\\catbot_first_link_handoff.bat -Open"
+    "detail": "次の最優先商品に、もしも等の追跡付きURLを1本保存前チェックします。",
+    "command": ".\\catbot_first_link_live_finish.bat -Open"
   },
   "launch_blockers": [
     {
@@ -355,9 +355,9 @@
   },
   "owner_commands": [
     {
-      "title": "もしも承認と最初のリンク作業台を開く",
-      "command": ".\\catbot_first_link_handoff.bat -Open",
-      "detail": "もしも承認状態も見ながら、check-url と set-next のコマンドを作る。"
+      "title": "最初のリンク一括ガイドを開く",
+      "command": ".\\catbot_first_link_live_finish.bat -Open",
+      "detail": "もしもで発行した追跡URLをコピーして、保存前のdry-runまで一気に確認する。"
     },
     {
       "title": "公開前チェック",
