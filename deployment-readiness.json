@@ -24,8 +24,8 @@
     "max_daily_gain": 133,
     "state": "growing"
   },
-  "generated_at": "2026-06-26T18:35:16",
-  "exported_at": "2026-06-26T18:35:16",
+  "generated_at": "2026-06-26T18:45:51",
+  "exported_at": "2026-06-26T18:45:51",
   "next_link": {
     "category_id": "toys",
     "category": "遊び",
@@ -268,8 +268,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T18:35:16",
-    "exported_at": "2026-06-26T18:35:16",
+    "generated_at": "2026-06-26T18:45:51",
+    "exported_at": "2026-06-26T18:45:51",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -344,31 +344,27 @@
   "revenue_plan": "revenue-plan.json",
   "revenue_page": "revenue/",
   "first_link_safe_flow": {
-    "primary": "wait_for_clipboard_then_apply_publish",
+    "primary": "live_finish_then_apply_publish",
     "commands": {
       "next_action": ".\\catbot_next_action.bat -Open",
       "next_action_apply_publish": ".\\catbot_next_action.bat -Apply -Publish",
       "live_finish": ".\\catbot_first_link_live_finish.bat -Open",
       "live_apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
-      "handoff": ".\\catbot_first_link_handoff.bat -Open",
-      "wait_for_clipboard": ".\\catbot_first_link_wait_for_clipboard.bat",
-      "after_copy": ".\\catbot_first_link_after_copy.bat",
-      "save_clipboard": ".\\catbot_first_link_clipboard_to_inbox.bat",
+      "check_clipboard": ".\\catbot_check_clipboard_link.bat",
       "dry_run": ".\\catbot_first_link_finish.bat",
-      "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish",
-      "check_clipboard": ".\\catbot_check_clipboard_link.bat"
+      "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish"
     },
     "steps": [
-      "Open the handoff page and create one real tracking URL for the current target.",
-      "Run catbot_first_link_live_finish.bat -Open, then copy the tracking URL after the command is waiting.",
-      "The live command saves the copied URL and dry-runs it without applying.",
-      "Apply and publish with catbot_first_link_live_finish.bat -Apply -Publish only after the dry-run is correct."
+      "Open the live guide for the current target.",
+      "Copy one real tracking URL after the guide is waiting.",
+      "Confirm the copied URL and dry-run without applying.",
+      "Apply and publish only after the dry-run is correct."
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T18:35:19",
+    "checked_at": "2026-06-26T18:45:55",
     "synced": true,
-    "last_exported_at": "2026-06-26T18:35:18",
+    "last_exported_at": "2026-06-26T18:45:53",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -378,10 +374,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T18:34:10",
+        "deployed_at": "2026-06-26T18:44:55",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 175,
-        "total_bytes": 36235852
+        "total_bytes": 36231540
       }
     },
     "scheduled_task": {
