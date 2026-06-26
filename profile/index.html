@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Xから来た人が、猫に合うかを確認してから候補へ進めるプロフィール用入口です。">
+<meta property="og:title" content="Catbot プロフィール入口">
+<meta property="og:description" content="Xから来た人が、猫に合うかを確認してから候補へ進めるプロフィール用入口です。">
+<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catbot プロフィール入口">
+<meta name="twitter:description" content="Xから来た人が、猫に合うかを確認してから候補へ進めるプロフィール用入口です。">
+<meta name="theme-color" content="#5a3522">
+<link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
+<link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
+<link rel="apple-touch-icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/">
+<meta property="og:url" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/">
+<meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:site" content="@fuwafuwa_mono">
+<meta name="twitter:creator" content="@fuwafuwa_mono">
+<title>Catbot プロフィール入口</title>
+<style>
+:root{--ink:#26170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6b5544;--coffee:#5a3522;--coffee2:#7a4b2c;--soft:#f4eadb;--sage:#607d62;--amber:#fff2dd}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+a{color:inherit}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:18px}
+.hero{position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(38,23,15,.96) 0%,rgba(73,45,27,.82) 48%,rgba(73,45,27,.18) 78%),image-set(url("../assets/ai_hero_generated-960.webp") type("image/webp"),url("../assets/ai_hero_generated.jpg") type("image/jpeg"));background-size:cover;background-position:center;color:#fff8ef}
+.hero .wrap{min-height:420px;display:grid;align-items:end;padding-top:32px;padding-bottom:34px}
+.hero-copy{max-width:720px}
+.label,.pill{display:inline-flex;align-items:center;width:max-content;max-width:100%;min-height:25px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:var(--coffee);font-size:12px;font-weight:900}
+.hero .label{background:rgba(244,234,219,.96)}
+h1{margin:8px 0;font-size:42px;line-height:1.12;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:6px 0;font-size:24px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+h3{margin:6px 0;font-size:18px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.hero p{max-width:650px;color:#f5e7d6}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;max-width:100%;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:900;text-align:center}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
+.button.sage{background:var(--sage);border-color:var(--sage)}
+.status{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+.metric,.panel,.queue-card{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
+.metric{background:#fffaf2}
+.metric strong{display:block;font-size:26px;line-height:1.2;margin-top:4px;overflow-wrap:anywhere}
+.menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.menu-card{display:grid;grid-template-rows:auto auto auto 1fr;gap:6px;min-height:230px;border:1px solid var(--line);border-radius:8px;background:#fffdf8;padding:12px;text-decoration:none}
+.menu-card img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid #e7d1b8;background:#f4eadb}
+.menu-card span{display:inline-flex;width:max-content;max-width:100%;min-height:24px;align-items:center;padding:2px 7px;border-radius:8px;background:#f4eadb;color:#65462f;font-size:12px;font-weight:900}
+.menu-card strong{font-size:19px;line-height:1.25;overflow-wrap:anywhere}
+.grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:12px;margin-top:14px}
+.panel.primary{background:#fff3df;border-color:#caa982}
+.panel img.hero-product{width:100%;max-height:250px;object-fit:cover;border-radius:8px;border:1px solid #e3c6a8;background:#f4eadb;margin:10px 0}
+.lane{display:inline-flex;width:max-content;max-width:100%;min-height:25px;align-items:center;padding:3px 8px;border:1px solid #caa982;border-radius:8px;background:#fff3df;color:#5a3522;font-size:12px;font-weight:900}
+.lane.ready{background:#edf3e5;border-color:#b8c9ad;color:#446146}
+.lane.careful{background:#fff2dd;border-color:#d8b070;color:#79521f}
+.lane.watch_only{background:#f4eadb;border-color:#d8bea4;color:#6a5646}
+.checks{display:grid;gap:8px;margin-top:10px}
+.checks div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
+.queue-list{display:grid;gap:10px}
+.queue-card a{display:inline-flex;margin-top:8px;min-height:34px;align-items:center;padding:6px 10px;border-radius:8px;background:#f4eadb;color:#5a3522;text-decoration:none;font-weight:900}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.badges span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:900}
+.disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.menu,.grid{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="label">Xから来た人へ</span>
+      <h1>Catbot プロフィール入口</h1>
+      <p>ここは商品リンクを急いで押す場所ではなく、猫に合うかを先に見てから候補へ進む入口です。迷ったら、猫優先ランキング、今日の候補、買う前チェックの順で見ます。</p>
+      <div class="actions">
+        <a class="button sage" href="../cat-first/">猫優先ランキング</a>
+        <a class="button light" href="../first-target/">今日の候補</a>
+        <a class="button light" href="../buying-check/">買う前チェック</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="status" aria-label="catbotの現在地">
+    <article class="metric"><span class="pill">フォロワー</span><strong>578/1000</strong><p>1000人まで残り 422</p></article>
+    <article class="metric"><span class="pill">実リンク</span><strong>0/9</strong><p>最初の本物リンクを準備中</p></article>
+    <article class="metric"><span class="pill">今の候補</span><strong>電動猫じゃらし</strong><p>遊び</p></article>
+    <article class="metric"><span class="pill">Xガード</span><strong>販売投稿はまだ待つ</strong><p>Xでは商品リンクを強く出さず、この入口から猫に合うか確認してもらいます。</p></article>
+  </section>
+
+  <section class="menu" aria-label="アイコンメニュー">
+    
+        <a class="menu-card" href="../cat-first/">
+          <img src="../assets/ai_category_care.webp" alt="" loading="lazy">
+          <span>猫に合うか見る</span>
+          <strong>猫優先ランキング</strong>
+          <p>合いやすい順、慎重に見る順、様子見を分けて確認できます。</p>
+        </a>
+
+        <a class="menu-card" href="../first-target/">
+          <img src="../assets/ai_product_toys_p2.webp" alt="" loading="lazy">
+          <span>今の候補</span>
+          <strong>今日の候補</strong>
+          <p>今いちばん整える候補は 電動猫じゃらし です。</p>
+        </a>
+
+        <a class="menu-card" href="../buying-check/">
+          <img src="../assets/ai_category_toys.webp" alt="" loading="lazy">
+          <span>買う前に止まる</span>
+          <strong>買う前チェック</strong>
+          <p>音、サイズ、置き場所、使いすぎを買う前に確認します。</p>
+        </a>
+
+        <a class="menu-card" href="../needs/">
+          <img src="../assets/ai_nav_icon_sheet_v2.webp" alt="" loading="lazy">
+          <span>困りごとから探す</span>
+          <strong>困りごとメニュー</strong>
+          <p>遊び、水、爪とぎ、留守番など困りごとから選べます。</p>
+        </a>
+
+        <a class="menu-card" href="../daily/">
+          <img src="../assets/ai_cat_care_scene.webp" alt="" loading="lazy">
+          <span>今日の反応</span>
+          <strong>今日の猫メモ</strong>
+          <p>catbotの反応とフォロワーの伸びを短く見られます。</p>
+        </a>
+
+        <a class="menu-card" href="../policy/">
+          <img src="../assets/ai_brand_mark.webp" alt="" loading="lazy">
+          <span>方針を見る</span>
+          <strong>広告と選定方針</strong>
+          <p>広告表記、選び方、猫を優先する基準を置いています。</p>
+        </a>
+  </section>
+
+  <section class="grid" aria-label="今日の候補と猫優先チェック">
+    <article class="panel primary">
+      <span class="pill">今日の候補</span>
+      <h2>電動猫じゃらし</h2>
+      <span class="lane careful">慎重にリンク化</span>
+      <img class="hero-product" src="../assets/ai_product_toys_p2.webp" alt="" loading="lazy">
+      <div class="checks">
+        <div><strong>買う前チェック</strong><p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p></div>
+        <div><strong>合わない猫</strong><p>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</p></div>
+        <div><strong>やめるサイン</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../products/toys/p2/">候補を見る</a>
+        <a class="button light" href="../first-target/">今日の候補</a>
+      </div>
+      <div class="badges"><span>実アフィリリンク待ち: 電動猫じゃらし</span><span>1,000フォロワーまで待機: 578/1000</span></div>
+    </article>
+    <aside class="panel">
+      <span class="pill">次に見る順番</span>
+      <h2>リンクより先に、猫に合うか</h2>
+      <p>catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。</p>
+      <div class="queue-list">
+        <article class="queue-card">
+          <span class="lane careful">慎重にリンク化</span>
+          <h3>電動猫じゃらし</h3>
+          <p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p>
+          <a href="../products/toys/p2/">候補を見る</a>
+        </article>
+
+        <article class="queue-card">
+          <span class="lane ready">リンク化しやすい</span>
+          <h3>けりぐるみ</h3>
+          <p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p>
+          <a href="../products/toys/p1/">候補を見る</a>
+        </article>
+
+        <article class="queue-card">
+          <span class="lane careful">慎重にリンク化</span>
+          <h3>自動給餌器</h3>
+          <p>詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。</p>
+          <a href="../products/water/p2/">候補を見る</a>
+        </article></div>
+    </aside>
+  </section>
+
+  <section class="grid" aria-label="安心して見るための方針">
+    <article class="panel">
+      <span class="pill">困ったらここ</span>
+      <h2>目的から探す</h2>
+      <p>遊び、水分、爪とぎ、留守番など、猫の困りごとに合わせて入口を分けています。</p>
+      <div class="actions"><a class="button light" href="../needs/">困りごとから探す</a><a class="button light" href="../quiz/">うちの子診断</a><a class="button light" href="../consult-first/">相談を優先する時</a></div>
+    </article>
+    <article class="panel">
+      <span class="pill">広告と選定方針</span>
+      <h2>猫優先で紹介します</h2>
+      <p>このサイトには広告・アフィリエイトリンクを含む場合があります。猫に合うか、合わない条件、やめるサインを先に確認します。</p>
+      <div class="actions"><a class="button light" href="../policy/">広告と選定方針</a><a class="button light" href="../daily/">今日の猫メモ</a></div>
+    </article>
+  </section>
+  <p class="disclosure">広告・アフィリエイトリンクを含む場合があります。商品より先に、猫の安全、相性、使いすぎないことを確認します。</p>
+</main>
+</body>
+</html>

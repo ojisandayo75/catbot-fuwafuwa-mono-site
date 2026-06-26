@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-06-27T00:39:32",
-  "generated_at": "2026-06-27T00:39:32",
+  "exported_at": "2026-06-27T00:55:21",
+  "generated_at": "2026-06-27T00:55:21",
   "phase": "needs_affiliate_link",
   "public_url_configured": true,
   "followers": 578,
@@ -275,8 +275,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-27T00:39:32",
-    "exported_at": "2026-06-27T00:39:32",
+    "generated_at": "2026-06-27T00:55:21",
+    "exported_at": "2026-06-27T00:55:21",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -360,6 +360,8 @@
   "daily_brief": "daily-brief.json",
   "daily_brief_page": "daily/",
   "start_page": "start/",
+  "profile_link": "profile-link.json",
+  "profile_landing_page": "profile/",
   "revenue_plan": "revenue-plan.json",
   "revenue_page": "revenue/",
   "follower_milestone": "follower-milestone.json",
@@ -383,23 +385,23 @@
     ]
   },
   "auto_export": {
-    "exported_at": "2026-06-27T00:39:34",
+    "exported_at": "2026-06-27T00:55:23",
     "output": "C:\\Users\\User\\catbot-x\\public_shop",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
     "top_post_views": 156918,
     "last_deploy": {
-      "deployed_at": "2026-06-27T00:38:37",
+      "deployed_at": "2026-06-27T00:54:14",
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-      "file_count": 179,
-      "total_bytes": 36352668
+      "file_count": 181,
+      "total_bytes": 36380620
     }
   },
   "auto_update": {
-    "checked_at": "2026-06-27T00:39:35",
+    "checked_at": "2026-06-27T00:55:24",
     "synced": true,
-    "last_exported_at": "2026-06-27T00:39:34",
+    "last_exported_at": "2026-06-27T00:55:23",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -409,10 +411,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-27T00:38:37",
+        "deployed_at": "2026-06-27T00:54:14",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-        "file_count": 179,
-        "total_bytes": 36352668
+        "file_count": 181,
+        "total_bytes": 36380620
       }
     },
     "scheduled_task": {

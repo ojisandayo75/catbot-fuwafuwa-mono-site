@@ -81,10 +81,16 @@
 /follower-milestone.json
   Cache-Control: no-cache
 
+/profile-link.json
+  Cache-Control: no-cache
+
 /daily/*
   Cache-Control: no-cache
 
 /start/*
+  Cache-Control: no-cache
+
+/profile/*
   Cache-Control: no-cache
 
 /cat-first/*
