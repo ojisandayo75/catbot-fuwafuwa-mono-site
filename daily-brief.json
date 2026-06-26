@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T09:57:55",
-  "exported_at": "2026-06-26T09:57:55",
+  "generated_at": "2026-06-26T10:17:04",
+  "exported_at": "2026-06-26T10:17:04",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -370,6 +370,7 @@
     "x_kit_page": "x-kit/",
     "generated_assets_page": "visuals/",
     "status": "status.json",
+    "start_page": "start/",
     "daily_brief_page": "daily/"
   },
   "first_link_safe_flow": {

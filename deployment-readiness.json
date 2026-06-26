@@ -24,8 +24,8 @@
     "max_daily_gain": 133,
     "state": "growing"
   },
-  "generated_at": "2026-06-26T09:57:55",
-  "exported_at": "2026-06-26T09:57:55",
+  "generated_at": "2026-06-26T10:17:04",
+  "exported_at": "2026-06-26T10:17:04",
   "next_link": {
     "category_id": "toys",
     "category": "遊び",
@@ -268,8 +268,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T09:57:55",
-    "exported_at": "2026-06-26T09:57:55",
+    "generated_at": "2026-06-26T10:17:04",
+    "exported_at": "2026-06-26T10:17:04",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -331,6 +331,7 @@
   "x_kit_page": "x-kit/",
   "share_copy": "share-copy.json",
   "daily_brief": "daily-brief.json",
+  "start_page": "start/",
   "ops_summary": "ops-summary.json",
   "revenue_plan": "revenue-plan.json",
   "revenue_page": "revenue/",
@@ -353,9 +354,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T09:57:57",
+    "checked_at": "2026-06-26T10:17:07",
     "synced": true,
-    "last_exported_at": "2026-06-26T09:57:56",
+    "last_exported_at": "2026-06-26T10:17:06",
     "ready_links": 0,
     "total_products": 9,
     "followers": 561,
@@ -365,10 +366,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T09:56:42",
+        "deployed_at": "2026-06-26T10:15:39",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-        "file_count": 159,
-        "total_bytes": 52113786
+        "file_count": 160,
+        "total_bytes": 52125234
       }
     },
     "scheduled_task": {

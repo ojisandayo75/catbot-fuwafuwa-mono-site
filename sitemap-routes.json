@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-26T09:57:55",
+  "generated_at": "2026-06-26T10:17:04",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 27,
-  "absolute_url_count": 27,
+  "route_count": 28,
+  "absolute_url_count": 28,
   "routes": [
     {
       "kind": "home",
@@ -35,6 +35,15 @@
       "lastmod": "2026-06-26",
       "changefreq": "daily",
       "priority": 0.7
+    },
+    {
+      "kind": "start",
+      "path": "start/",
+      "title": "Catbot はじめに見る3つ",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/start/",
+      "lastmod": "2026-06-26",
+      "changefreq": "daily",
+      "priority": 0.93
     },
     {
       "kind": "daily",

@@ -60,6 +60,9 @@
 /daily/*
   Cache-Control: no-cache
 
+/start/*
+  Cache-Control: no-cache
+
 /site.webmanifest
   Cache-Control: no-cache
 
