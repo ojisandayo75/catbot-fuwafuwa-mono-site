@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-26T11:17:36",
+      "dateModified": "2026-06-26T11:38:22",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -778,6 +778,98 @@
     font-size:12px;
     font-weight:900;
     line-height:1.2;
+  }
+  .decision-compass{
+    display:grid;
+    grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+    gap:14px;
+    align-items:stretch;
+    margin-top:16px;
+    padding:14px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:linear-gradient(135deg,#fffdf8 0%,#fff4e5 54%,#ead4ba 100%);
+    box-shadow:0 14px 34px rgba(64,39,24,.13);
+  }
+  .decision-compass-art{
+    min-height:278px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background-image:url("assets/ai_cat_care_scene-960.jpg");
+    background-image:image-set(url("assets/ai_cat_care_scene-960.webp") type("image/webp"), url("assets/ai_cat_care_scene-960.jpg") type("image/jpeg"));
+    background-size:cover;
+    background-position:center;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.45);
+  }
+  .decision-compass-copy{
+    min-width:0;
+    display:grid;
+    gap:12px;
+    align-content:center;
+    padding:6px;
+  }
+  .decision-compass-copy h2{
+    margin:0;
+    color:#25170f;
+    font-size:30px;
+    line-height:1.15;
+    letter-spacing:0;
+    overflow-wrap:anywhere;
+  }
+  .decision-compass-copy p{
+    margin:0;
+    color:#5f4735;
+    line-height:1.75;
+  }
+  .decision-routes{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:9px;
+  }
+  .decision-route{
+    min-width:0;
+    display:grid;
+    gap:6px;
+    align-content:start;
+    min-height:130px;
+    padding:10px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#fffaf2;
+    color:#5a3522;
+    text-decoration:none;
+    transition:border-color .16s ease,background .16s ease,transform .16s ease;
+  }
+  .decision-route:hover{
+    border-color:#b68d68;
+    background:#fff7eb;
+    transform:translateY(-1px);
+  }
+  .decision-route b{
+    display:inline-flex;
+    width:max-content;
+    max-width:100%;
+    min-height:24px;
+    align-items:center;
+    padding:2px 7px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#f4eadb;
+    color:#6d4a34;
+    font-size:11px;
+    line-height:1.25;
+  }
+  .decision-route strong{
+    display:block;
+    color:#25170f;
+    font-size:16px;
+    line-height:1.24;
+    overflow-wrap:anywhere;
+  }
+  .decision-route span{
+    color:#6a5646;
+    font-size:12px;
+    line-height:1.45;
   }
   .launch-bridge{
     display:grid;
@@ -3704,6 +3796,8 @@
   .policy p{margin:0}
   @media (max-width:900px){
     .first-choice-menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .decision-compass{grid-template-columns:1fr}
+    .decision-compass-art{min-height:230px}
     .launch-bridge{grid-template-columns:1fr}
     .launch-bridge-media{grid-template-columns:1fr}
     .launch-bridge-visual{min-height:230px}
@@ -3836,6 +3930,15 @@
     .first-choice-copy{padding:8px}
     .first-choice-copy strong{font-size:15px}
     .first-choice-copy span{font-size:12px}
+    .decision-compass{
+      padding:10px;
+      gap:10px;
+    }
+    .decision-compass-art{min-height:180px}
+    .decision-compass-copy{padding:0}
+    .decision-compass-copy h2{font-size:24px}
+    .decision-routes{grid-template-columns:1fr}
+    .decision-route{min-height:0}
     .launch-bridge{
       gap:10px;
       padding:10px;
@@ -3946,6 +4049,7 @@
       </span>
     </a>
     <nav class="nav" aria-label="サイト内ナビ">
+      <a href="#decisionCompass"><span class="nav-icon" data-icon="match" aria-hidden="true"></span><span>はじめに</span></a>
       <a href="#visualMenu"><span class="nav-icon" data-icon="all" aria-hidden="true"></span><span>画像メニュー</span></a>
       <a href="#launchBridge"><span class="nav-icon" data-icon="trends" aria-hidden="true"></span><span>今の状態</span></a>
       <a href="#careRoute"><span class="nav-icon" data-icon="care-route" aria-hidden="true"></span><span>猫の状態</span></a>
@@ -3978,6 +4082,10 @@
 
 <nav class="mobile-image-menu" aria-label="画像カテゴリメニュー">
   <div class="mobile-image-menu-scroll">
+    <a class="mobile-image-menu-button is-journey" href="#decisionCompass" aria-label="最初に見る入口を選ぶ">
+      <span class="mobile-image-menu-icon" data-icon="match" aria-hidden="true"></span>
+      <span>入口</span>
+    </a>
     <button class="mobile-image-menu-button" type="button" data-filter-category="all">
       <span class="mobile-image-menu-icon" data-icon="all" aria-hidden="true"></span>
       <span>全部</span>
@@ -4059,9 +4167,10 @@
     <h1><span>猫のために選ぶ、</span><span>暮らしの道具箱。</span></h1>
     <p class="hero-copy">バズった猫動画のかわいさだけで終わらせず、遊び・水分・爪とぎ・見守りまで、猫との毎日を少し整えるものを集めます。</p>
     <div class="hero-actions">
-      <a class="button primary" href="#products">猫用品を見る</a>
+      <a class="button primary" href="#decisionCompass">まず入口を選ぶ</a>
       <a class="button secondary" href="#dailyEntry">今日見る3つ</a>
       <a class="button secondary" href="quiz/">うちの子診断</a>
+      <a class="button secondary" href="#products">猫用品を見る</a>
     </div>
     <div class="hero-icon-strip" aria-label="猫用品カテゴリ">
       <button class="hero-icon-button" type="button" data-filter-category="toys">
@@ -4121,15 +4230,43 @@
         <span class="first-choice-cta">先に確認</span>
       </span>
     </a>
-    <a class="first-choice-card" href="#nextLink" data-step="4">
+    <a class="first-choice-card" href="trends/" data-step="4">
       <span class="first-choice-art" data-icon="trends" aria-hidden="true"></span>
       <span class="first-choice-copy">
         <b>今の注目</b>
         <strong>反応が強い道具</strong>
         <span>catbotで伸びたテーマから見ます。</span>
-        <span class="first-choice-cta">注目を見る</span>
+        <span class="first-choice-cta">トレンドを見る</span>
       </span>
     </a>
+  </section>
+
+  <section id="decisionCompass" class="decision-compass" aria-label="猫のための最初の入口">
+    <div class="decision-compass-art" role="img" aria-label="水飲み器、爪とぎ、おもちゃ、ブラシを猫のそばに置いた部屋"></div>
+    <div class="decision-compass-copy">
+      <div>
+        <span class="badge">最初に見るところ</span>
+        <h2>商品名より先に、猫の様子から入れます。</h2>
+        <p>catbotから来た人が、いきなり買うのではなく「今の困りごと」「合わない理由」「反応が強いテーマ」から選べる入口です。</p>
+      </div>
+      <div class="decision-routes" aria-label="猫ファーストの入口">
+        <a class="decision-route" href="#catMatch">
+          <b>うちの子</b>
+          <strong>性格・暮らし方で見る</strong>
+          <span>怖がり、遊び不足、留守番などから候補を絞ります。</span>
+        </a>
+        <a class="decision-route" href="needs/">
+          <b>困りごと</b>
+          <strong>必要な理由で見る</strong>
+          <span>水分、爪とぎ、ケア、見守りなどから探します。</span>
+        </a>
+        <a class="decision-route" href="trends/">
+          <b>catbot連動</b>
+          <strong>反応トレンドで見る</strong>
+          <span>伸びた投稿を、猫のための確認ポイントに変えます。</span>
+        </a>
+      </div>
+    </div>
   </section>
 
   <section id="launchBridge" class="launch-bridge" aria-label="今のcatbotサイト状態">
