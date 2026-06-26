@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T18:14:56",
-  "exported_at": "2026-06-26T18:14:56",
+  "generated_at": "2026-06-26T18:35:16",
+  "exported_at": "2026-06-26T18:35:16",
   "state": "needs_first_tracking_link",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
@@ -270,10 +270,11 @@
     "体調変化、誤飲、怖がるサインがある場合は、用品ではなく相談を優先する。"
   ],
   "commands": {
-    "open_moshimo_workbench": ".\\catbot_first_link_live_finish.bat -Open",
-    "check_url": ".\\catbot_check_clipboard_link.bat",
-    "save_next_link": ".\\catbot_first_link_clipboard_to_inbox.bat",
-    "finish_launch": ".\\catbot_first_link_finish.bat",
+    "live_finish": ".\\catbot_first_link_live_finish.bat -Open",
+    "live_apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
+    "check_clipboard": ".\\catbot_check_clipboard_link.bat",
+    "dry_run": ".\\catbot_first_link_finish.bat",
+    "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish",
     "review_clicks": ".\\affiliate_site_ops.bat click-review",
     "shop_post_guard": ".\\affiliate_site_ops.bat shop-post-guard --json"
   },

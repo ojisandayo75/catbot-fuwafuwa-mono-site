@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-26T18:14:56",
+      "dateModified": "2026-06-26T18:35:16",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -5594,7 +5594,7 @@ function opsAuditUrl(value, kind="affiliate"){
 function opsLaunchFeedback(affiliateAudit, publicAudit){
   if(affiliateAudit.warn) return {tone:"warn", text:affiliateAudit.message};
   if(publicAudit.warn) return {tone:"warn", text:publicAudit.message};
-  if(affiliateAudit.ok && publicAudit.ok) return {tone:"good", text:"両方そろっています。dry-runで確認してからfinish-launchで反映できます。"};
+  if(affiliateAudit.ok && publicAudit.ok) return {tone:"good", text:"両方そろっています。一括ガイドのdry-runで確認してから反映できます。"};
   if(affiliateAudit.ok) return {tone:"good", text:"もしもURLは使えそうです。公開URLがまだなら set-next で先に保存します。"};
   if(publicAudit.ok) return {tone:"good", text:"公開URLは使えそうです。profile-urlで先にサイト側へ反映できます。"};
   return {tone:"", text:"URLを貼ると、下のコマンドが本番用に変わります。"};
@@ -5609,11 +5609,11 @@ function opsNextLinkCommandLines(spotlight={}, values={}){
   return [
     `.\\catbot_first_link_live_finish.bat -Open`,
     `${bat} profile-url "${publicUrl}" --package --smoke-test`,
-    `${bat} check-url --% "${affiliateUrl}"`,
+    `.\\catbot_check_clipboard_link.bat`,
     `${bat} set ${categoryId} ${productId} --% "${affiliateUrl}"`,
-    `${bat} set-next --% "${affiliateUrl}" --package`,
-    `${bat} finish-launch --dry-run --% "${affiliateUrl}" "${publicUrl}"`,
-    `${bat} finish-launch --% "${affiliateUrl}" "${publicUrl}"`,
+    `.\\catbot_first_link_live_finish.bat -Open`,
+    `.\\catbot_first_link_finish.bat`,
+    `.\\catbot_first_link_finish.bat -Apply -Publish`,
     `${bat} launch-check`,
   ];
 }
@@ -5626,14 +5626,14 @@ function opsRecommendedCommand(spotlight={}, affiliateAudit={}, publicAudit={}, 
     return {
       badge:"dry-run",
       reason:"両方そろっています。まずdry-runで保存前チェックをします。",
-      command:`${bat} finish-launch --dry-run --% "${affiliateUrl}" "${publicUrl}"`,
+      command:`.\\catbot_first_link_finish.bat`,
     };
   }
   if(affiliateAudit.ok){
     return {
       badge:"set-next",
       reason:"もしもURLは使えそうです。公開URLがまだなら、最初の1本だけ先に保存します。",
-      command:`${bat} set-next --% "${affiliateUrl}" --package --smoke-test`,
+      command:`.\\catbot_first_link_live_finish.bat -Open`,
     };
   }
   if(publicAudit.ok){
@@ -5859,7 +5859,7 @@ function renderOpsOwnerSteps(data={}, state={}){
     : `${bat} public-url-workbench --force`;
   const finishCommand = publicReady && linkReady
     ? `${bat} launch-check`
-    : `${bat} finish-launch --dry-run --% "https://もしもURL" "https://公開URL/"`;
+    : `.\\catbot_first_link_finish.bat`;
   const steps = [
     {
       badge: publicReady ? "OK" : "1",
@@ -5946,7 +5946,7 @@ function renderOpsLaunchGate(data={}){
   }
   if(lead){
     lead.textContent = missingRequired
-      ? "実行する順番をここで確認して、URLがそろったら finish-launch で反映します。"
+      ? "実行する順番をここで確認して、dry-runが正しければ一括反映します。"
       : "公開URLと実アフィリリンクがそろっています。launch-check を実行して最終確認します。";
   }
   if(badge){

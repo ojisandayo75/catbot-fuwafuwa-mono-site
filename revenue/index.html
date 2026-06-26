@@ -165,16 +165,30 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
 
 
         <li>
-          <strong>最初のリンク作業台</strong>
+          <strong>最初のリンク一括ガイド</strong>
           <code>.\catbot_first_link_live_finish.bat -Open</code>
-          <p>もしもの承認状況と次の商品候補を見ながら作業します。</p>
+          <p>もしもで発行した追跡URLをコピーして、保存前のdry-runまで一気に確認します。</p>
         </li>
 
 
         <li>
-          <strong>最初のアフィリリンクを保存</strong>
-          <code>.\catbot_first_link_clipboard_to_inbox.bat</code>
-          <p>発行した追跡URLを1本入れてZIPを作り直します。</p>
+          <strong>コピーURL確認</strong>
+          <code>.\catbot_check_clipboard_link.bat</code>
+          <p>不安な時だけ、クリップボードのURLが追跡付きか確認します。</p>
+        </li>
+
+
+        <li>
+          <strong>保存前dry-run</strong>
+          <code>.\catbot_first_link_finish.bat</code>
+          <p>一括ガイドで保存された候補を、反映前に確認します。</p>
+        </li>
+
+
+        <li>
+          <strong>一括反映と公開</strong>
+          <code>.\catbot_first_link_live_finish.bat -Apply -Publish</code>
+          <p>dry-runが正しい時だけ、実リンク反映と公開を行います。</p>
         </li>
 
 
@@ -218,7 +232,7 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <a class="button light" href="../link-opportunities.json">link-opportunities.json</a>
     <a class="button light" href="../ops-summary.json">ops-summary.json</a>
   </div>
-  <p style="margin-top:16px">生成: 2026-06-26T18:14:56 / 書き出し: 2026-06-26T18:14:56</p>
+  <p style="margin-top:16px">生成: 2026-06-26T18:35:16 / 書き出し: 2026-06-26T18:35:16</p>
 </main>
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T18:14:56",
-  "exported_at": "2026-06-26T18:14:56",
+  "generated_at": "2026-06-26T18:35:16",
+  "exported_at": "2026-06-26T18:35:16",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -250,8 +250,10 @@
   ],
   "commands": {
     "refresh": ".\\affiliate_site_ops.bat sync-now --smoke-test",
-    "first_link_workbench": ".\\catbot_first_link_live_finish.bat -Open",
-    "set_first_link": ".\\catbot_first_link_clipboard_to_inbox.bat",
+    "first_link_live_finish": ".\\catbot_first_link_live_finish.bat -Open",
+    "first_link_live_apply": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
+    "first_link_check_clipboard": ".\\catbot_check_clipboard_link.bat",
+    "first_link_dry_run": ".\\catbot_first_link_finish.bat",
     "set_public_url": ".\\affiliate_site_ops.bat profile-url \"https://PUBLIC_URL/\" --package --smoke-test",
     "launch_check": ".\\affiliate_site_ops.bat launch-check",
     "preview_check": ".\\affiliate_site_ops.bat preview-check",
