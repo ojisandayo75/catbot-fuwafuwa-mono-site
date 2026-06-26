@@ -80,7 +80,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     <div>
       <span class="label">noindex 運用ページ</span>
       <h1>Catbot 次にやること</h1>
-      <p>残りは最初の実アフィリリンクです。いま一番大事なのは、toys/p2 電動猫じゃらし の追跡URLを保存することです。</p>
+      <p>まずもしも承認確認です。いま一番大事なのは、Amazonまたは楽天の提携承認を確認することです。</p>
       <div class="actions">
         <a class="button" href="../owner-next.json">owner-next.json</a>
         <a class="button light" href="../status/">ステータス</a>
@@ -92,8 +92,8 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     </div>
     <aside class="hero-card">
       <span class="label">残り</span>
-      <h2>実アフィリリンク</h2>
-      <p>状態: needs_first_affiliate_link / Amazon: pending / 楽天: pending</p>
+      <h2>もしも提携承認</h2>
+      <p>状態: needs_moshimo_approval / Amazon: pending / 楽天: pending</p>
     </aside>
   </div>
 </header>
@@ -108,7 +108,15 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     <span class="label">もしもでやること</span>
     <div class="moshimo-guide">
         <article class="todo-card">
-          <h2>探す商品</h2>
+          <h2>承認を確認</h2>
+          <p>もしもでAmazonまたは楽天の提携状態がapprovedか確認します。pendingならURL作成はまだ待ちます。</p>
+        </article>
+        <article class="todo-card">
+          <h2>状態を更新</h2>
+          <p>Amazonだけ承認済みなら .\catbot_moshimo_status.bat -Amazon approved -Sync -Publish、楽天だけなら .\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish を実行します。</p>
+        </article>
+        <article class="todo-card">
+          <h2>承認後に探す商品</h2>
           <p>電動猫じゃらし で検索し、猫が怖がりにくい静音・交換パーツあり・短時間運転しやすい候補を選びます。</p>
         </article>
         <article class="todo-card">
@@ -135,10 +143,10 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
   <section class="policy" aria-label="迷った時の3コマンド">
     <span class="label">迷った時はこれだけ</span>
     <div class="flow-grid">
-      <article class="flow-card"><h2>1. 作業台を開く</h2><code>.\catbot_first_link_live_finish.bat -Open</code></article>
+      <article class="flow-card"><h2>1. 作業台を開く</h2><code>.\catbot_moshimo_status.bat -OpenWorkbench</code></article>
       <article class="flow-card"><h2>2. 保存前確認</h2><code>.\catbot_first_link_finish.bat</code></article>
       <article class="flow-card"><h2>3. 反映して公開</h2><code>.\catbot_first_link_live_finish.bat -Apply -Publish</code></article>
-      <article class="flow-card"><h2>対象</h2><p>toys/p2 電動猫じゃらし の追跡URLを保存する</p></article>
+      <article class="flow-card"><h2>対象</h2><p>Amazonまたは楽天の提携承認を確認する</p></article>
     </div>
   </section>
   <section class="steps" aria-label="次にやること">
@@ -146,8 +154,19 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
           <div class="step-art" data-slot="0" aria-hidden="true"></div>
           <div class="step-body">
             <span class="label">次にやる</span>
+            <h2>もしも承認を確認する</h2>
+            <p>Amazonまたは楽天がapprovedになってから追跡URLを作ります。pendingのままURL作成へ進まないようにします。</p>
+            
+            <dl><div><dt>実行</dt><dd><code>.\catbot_moshimo_status.bat -OpenWorkbench</code></dd></div><div><dt>Amazon承認を反映</dt><dd><code>.\catbot_moshimo_status.bat -Amazon approved -Sync -Publish</code></dd></div><div><dt>楽天承認を反映</dt><dd><code>.\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish</code></dd></div><div><dt>両方承認を反映</dt><dd><code>.\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish</code></dd></div><div><dt>次に開く</dt><dd><code>.\catbot_next_action.bat -Open</code></dd></div></dl>
+          </div>
+        </article>
+
+        <article class="step-card todo">
+          <div class="step-art" data-slot="1" aria-hidden="true"></div>
+          <div class="step-body">
+            <span class="label">次にやる</span>
             <h2>1本目の追跡URLを作る</h2>
-            <p>もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。</p>
+            <p>承認済みになったら、もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。</p>
             
             <div class="target">
               <strong>toys/p2 電動猫じゃらし</strong>
@@ -160,7 +179,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
         </article>
 
         <article class="step-card done">
-          <div class="step-art" data-slot="1" aria-hidden="true"></div>
+          <div class="step-art" data-slot="2" aria-hidden="true"></div>
           <div class="step-body">
             <span class="label">完了</span>
             <h2>公開URLを確認する</h2>
@@ -171,7 +190,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
         </article>
 
         <article class="step-card todo">
-          <div class="step-art" data-slot="2" aria-hidden="true"></div>
+          <div class="step-art" data-slot="3" aria-hidden="true"></div>
           <div class="step-body">
             <span class="label">次にやる</span>
             <h2>dry-runしてから反映する</h2>
@@ -182,7 +201,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
         </article>
 
         <article class="step-card todo">
-          <div class="step-art" data-slot="3" aria-hidden="true"></div>
+          <div class="step-art" data-slot="4" aria-hidden="true"></div>
           <div class="step-body">
             <span class="label">次にやる</span>
             <h2>13/13を確認してX導線へ進む</h2>

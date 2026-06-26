@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-27T07:48:53",
-  "exported_at": "2026-06-27T07:48:53",
-  "state": "needs_first_affiliate_link",
-  "headline": "残りは最初の実アフィリリンクです",
-  "primary_action": "toys/p2 電動猫じゃらし の追跡URLを保存する",
+  "generated_at": "2026-06-27T07:57:51",
+  "exported_at": "2026-06-27T07:57:51",
+  "state": "needs_moshimo_approval",
+  "headline": "まずもしも承認確認です",
+  "primary_action": "Amazonまたは楽天の提携承認を確認する",
   "account": "@fuwafuwa_mono",
   "followers": 578,
   "follower_goal": 1000,
@@ -14,23 +14,42 @@
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "moshimo": {
     "amazon_status": "pending",
-    "rakuten_status": "pending"
+    "rakuten_status": "pending",
+    "ready_for_first_link": false,
+    "approval_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_update_commands": {
+      "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+    }
   },
   "blockers": [
-    "実アフィリリンク"
+    "もしも提携承認"
   ],
   "next_steps": [
+    {
+      "id": "moshimo_approval_check",
+      "done": false,
+      "title": "もしも承認を確認する",
+      "detail": "Amazonまたは楽天がapprovedになってから追跡URLを作ります。pendingのままURL作成へ進まないようにします。",
+      "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+      "amazon_update_command": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten_update_command": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both_update_command": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish",
+      "then_command": ".\\catbot_next_action.bat -Open"
+    },
     {
       "id": "first_affiliate_link",
       "done": false,
       "title": "1本目の追跡URLを作る",
-      "detail": "もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。",
+      "detail": "承認済みになったら、もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。",
       "command": ".\\catbot_first_link_live_finish.bat -Open",
       "live_command": ".\\catbot_first_link_live_finish.bat -Open",
       "check_command": ".\\catbot_check_clipboard_link.bat",
       "dry_run_command": ".\\catbot_first_link_finish.bat",
       "apply_command": ".\\catbot_first_link_finish.bat -Apply -Publish",
       "live_apply_command": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
+      "blocked_by": "moshimo_approval_check",
       "target": {
         "key": "toys/p2",
         "product": "電動猫じゃらし",
@@ -74,7 +93,15 @@
   ],
   "moshimo_todo": [
     {
-      "title": "探す商品",
+      "title": "承認を確認",
+      "body": "もしもでAmazonまたは楽天の提携状態がapprovedか確認します。pendingならURL作成はまだ待ちます。"
+    },
+    {
+      "title": "状態を更新",
+      "body": "Amazonだけ承認済みなら .\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish、楽天だけなら .\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish を実行します。"
+    },
+    {
+      "title": "承認後に探す商品",
       "body": "電動猫じゃらし で検索し、猫が怖がりにくい静音・交換パーツあり・短時間運転しやすい候補を選びます。"
     },
     {
@@ -103,7 +130,7 @@
     ]
   },
   "primary_flow": {
-    "open": ".\\catbot_first_link_live_finish.bat -Open",
+    "open": ".\\catbot_moshimo_status.bat -OpenWorkbench",
     "dry_run": ".\\catbot_first_link_finish.bat",
     "apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish"
   },
