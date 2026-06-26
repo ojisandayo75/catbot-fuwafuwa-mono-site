@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T05:51:56",
-  "exported_at": "2026-06-27T05:51:56",
+  "generated_at": "2026-06-27T06:03:35",
+  "exported_at": "2026-06-27T06:03:35",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -266,6 +266,11 @@
       "image": "assets/ai_brand_mark.webp"
     }
   ],
+  "journey_visual": {
+    "image": "assets/ai_profile_journey.webp",
+    "fallback": "assets/ai_profile_journey.png",
+    "alt": "診断、買う前チェック、今日の候補へ進む猫優先の導線"
+  },
   "journey_steps": [
     {
       "step": "1",

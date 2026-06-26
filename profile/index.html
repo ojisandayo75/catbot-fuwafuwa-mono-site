@@ -56,6 +56,8 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .journey{margin-top:14px;border:1px solid var(--line);border-radius:8px;background:#fffaf2;padding:14px}
 .journey-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
 .journey-head p{max-width:640px}
+.journey-visual{position:relative;overflow:hidden;margin:4px 0 12px;border:1px solid #e2c4a3;border-radius:8px;background:#f4eadb}
+.journey-visual img{display:block;width:100%;aspect-ratio:1200/630;object-fit:cover}
 .journey-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .journey-step{position:relative;display:grid;grid-template-columns:82px minmax(0,1fr);gap:10px;align-items:center;min-height:128px;border:1px solid #e4c8aa;border-radius:8px;background:#fffdf8;padding:10px;text-decoration:none}
 .journey-step img{width:82px;aspect-ratio:1;object-fit:cover;border-radius:8px;border:1px solid #e7d1b8;background:#f4eadb}
@@ -116,6 +118,10 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       </div>
       <p>診断、買う前チェック、今日の候補の順に見ると、衝動買いではなく猫に合う候補だけを残せます。</p>
     </div>
+    <picture class="journey-visual">
+      <source srcset="../assets/ai_profile_journey.webp" type="image/webp">
+      <img src="../assets/ai_profile_journey.png" alt="診断、買う前チェック、今日の候補へ進む猫優先の導線" loading="lazy">
+    </picture>
     <div class="journey-grid">
         <a class="journey-step" href="../quiz/">
           <img src="../assets/ai_shortcut_match.webp" alt="" loading="lazy">
