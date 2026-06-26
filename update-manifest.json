@@ -1,11 +1,11 @@
 {
-  "exported_at": "2026-06-26T12:01:39",
-  "generated_at": "2026-06-26T12:01:39",
+  "exported_at": "2026-06-26T12:16:52",
+  "generated_at": "2026-06-26T12:16:52",
   "phase": "needs_affiliate_link",
   "public_url_configured": true,
-  "followers": 561,
-  "followers_to_goal": 439,
-  "follower_progress": 56.1,
+  "followers": 578,
+  "followers_to_goal": 422,
+  "follower_progress": 57.8,
   "ready_links": 0,
   "total_products": 9,
   "top_post_views": 156918,
@@ -223,7 +223,7 @@
     {
       "level": "info",
       "title": "まだ育成フェーズ",
-      "detail": "1,000フォロワーまで残り 439。売り込みよりプロフィール導線を薄く置く。"
+      "detail": "1,000フォロワーまで残り 422。売り込みよりプロフィール導線を薄く置く。"
     }
   ],
   "launch_blockers": [
@@ -251,8 +251,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T12:01:39",
-    "exported_at": "2026-06-26T12:01:39",
+    "generated_at": "2026-06-26T12:16:52",
+    "exported_at": "2026-06-26T12:16:52",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -346,36 +346,36 @@
     ]
   },
   "auto_export": {
-    "exported_at": "2026-06-26T12:01:41",
+    "exported_at": "2026-06-26T12:16:53",
     "output": "C:\\Users\\User\\catbot-x\\public_shop",
     "ready_links": 0,
     "total_products": 9,
-    "followers": 561,
+    "followers": 578,
     "top_post_views": 156918,
     "last_deploy": {
-      "deployed_at": "2026-06-26T12:00:50",
+      "deployed_at": "2026-06-26T12:15:41",
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-      "file_count": 167,
-      "total_bytes": 35666246
+      "file_count": 173,
+      "total_bytes": 36204381
     }
   },
   "auto_update": {
-    "checked_at": "2026-06-26T12:01:42",
+    "checked_at": "2026-06-26T12:16:55",
     "synced": true,
-    "last_exported_at": "2026-06-26T12:01:41",
+    "last_exported_at": "2026-06-26T12:16:53",
     "ready_links": 0,
     "total_products": 9,
-    "followers": 561,
+    "followers": 578,
     "top_post_views": 156918,
     "deploy": {
       "configured": true,
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T12:00:50",
+        "deployed_at": "2026-06-26T12:15:41",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-        "file_count": 167,
-        "total_bytes": 35666246
+        "file_count": 173,
+        "total_bytes": 36204381
       }
     },
     "scheduled_task": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T12:01:39",
+  "generated_at": "2026-06-26T12:16:52",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "tagline": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
@@ -14,21 +14,21 @@
     "static_export": true
   },
   "stats": {
-    "followers": 561,
+    "followers": 578,
     "follower_goal": 1000,
-    "followers_to_goal": 439,
-    "follower_progress": 56.1,
+    "followers_to_goal": 422,
+    "follower_progress": 57.8,
     "follower_growth": {
       "history_count": 27,
       "first_date": "2026-05-29",
       "last_date": "2026-06-26",
-      "current": 561,
+      "current": 578,
       "goal": 1000,
-      "remaining": 439,
-      "overall_gain": 527,
-      "overall_avg_per_day": 19.1,
-      "last_7d_gain": 224,
-      "recent_avg_per_day": 34.0,
+      "remaining": 422,
+      "overall_gain": 544,
+      "overall_avg_per_day": 19.4,
+      "last_7d_gain": 241,
+      "recent_avg_per_day": 34.4,
       "eta_days": 13,
       "eta_date": "2026-07-09",
       "max_daily_gain": 133,
@@ -50,7 +50,7 @@
     {
       "level": "info",
       "title": "まだ育成フェーズ",
-      "detail": "1,000フォロワーまで残り 439。売り込みよりプロフィール導線を薄く置く。"
+      "detail": "1,000フォロワーまで残り 422。売り込みよりプロフィール導線を薄く置く。"
     }
   ],
   "copy": {
@@ -767,7 +767,7 @@
     "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
   },
   "catbot_trends": {
-    "generated_at": "2026-06-26T12:01:39",
+    "generated_at": "2026-06-26T12:16:52",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -802,7 +802,7 @@
     "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
   },
   "purchase_advisor": {
-    "generated_at": "2026-06-26T12:01:39",
+    "generated_at": "2026-06-26T12:16:52",
     "cards": [
       {
         "id": "home-alone",
@@ -939,12 +939,12 @@
     "summary": "猫の性格・暮らし・catbotの反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
   },
   "update_notes": {
-    "generated_at": "2026-06-26T12:01:39",
+    "generated_at": "2026-06-26T12:16:52",
     "cards": [
       {
         "title": "フォロワー進捗",
-        "label": "561 / 1,000",
-        "detail": "1,000人まで残り 439。公開前は売り込みを強めず、プロフィール導線と猫向け情報を育てます。"
+        "label": "578 / 1,000",
+        "detail": "1,000人まで残り 422。公開前は売り込みを強めず、プロフィール導線と猫向け情報を育てます。"
       },
       {
         "title": "今日の反応テーマ",
@@ -1500,10 +1500,10 @@
     "last_posted_at": "2026-06-25T12:44:49"
   },
   "report": {
-    "generated_at": "2026-06-26T12:01:39",
+    "generated_at": "2026-06-26T12:16:52",
     "phase": "link_setup",
     "summary": {
-      "followers": 561,
+      "followers": 578,
       "follower_goal": 1000,
       "ready_links": 0,
       "total_products": 9,
@@ -1960,12 +1960,12 @@
     "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
   },
   "share_copy": {
-    "generated_at": "2026-06-26T12:01:39",
+    "generated_at": "2026-06-26T12:16:52",
     "phase": "launch_waiting",
     "account": "@fuwafuwa_mono",
     "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "url_hint": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-    "followers": 561,
+    "followers": 578,
     "follower_goal": 1000,
     "ready_links": 0,
     "trend_label": "遊び",
@@ -2017,10 +2017,10 @@
       ]
     }
   },
-  "exported_at": "2026-06-26T12:01:39",
+  "exported_at": "2026-06-26T12:16:52",
   "consult_first": {
-    "generated_at": "2026-06-26T12:01:39",
-    "exported_at": "2026-06-26T12:01:39",
+    "generated_at": "2026-06-26T12:16:52",
+    "exported_at": "2026-06-26T12:16:52",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",

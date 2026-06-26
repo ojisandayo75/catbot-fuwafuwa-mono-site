@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T12:01:39",
-  "exported_at": "2026-06-26T12:01:39",
+  "generated_at": "2026-06-26T12:16:52",
+  "exported_at": "2026-06-26T12:16:52",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -10,12 +10,12 @@
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "first_affiliate_link_required": true,
-  "followers": 561,
+  "followers": 578,
   "follower_goal": 1000,
-  "followers_to_goal": 439,
+  "followers_to_goal": 422,
   "follower_growth": {
-    "last_7d_gain": 224,
-    "recent_avg_per_day": 34.0,
+    "last_7d_gain": 241,
+    "recent_avg_per_day": 34.4,
     "eta_date": "2026-07-09",
     "state": "growing"
   },
@@ -214,9 +214,9 @@
     "allowed": false,
     "decision": "wait",
     "milestone_ready": false,
-    "followers": 561,
+    "followers": 578,
     "follower_goal": 1000,
-    "followers_to_goal": 439,
+    "followers_to_goal": 422,
     "daily_cap": 2,
     "min_interval_hours": 6.0,
     "direct_product_link_allowed": false,
@@ -231,13 +231,13 @@
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
+        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
       }
     ],
     "milestone_blockers": [
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
+        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T12:01:39",
-  "exported_at": "2026-06-26T12:01:39",
+  "generated_at": "2026-06-26T12:16:52",
+  "exported_at": "2026-06-26T12:16:52",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -225,13 +225,13 @@
     }
   ],
   "follower_milestone": {
-    "followers": 561,
+    "followers": 578,
     "goal": 1000,
-    "remaining": 439,
-    "progress": 56.1,
+    "remaining": 422,
+    "progress": 57.8,
     "eta_date": "2026-07-09",
-    "recent_avg_per_day": 34.0,
-    "last_7d_gain": 224
+    "recent_avg_per_day": 34.4,
+    "last_7d_gain": 241
   },
   "state_entries": [
     {
@@ -318,7 +318,7 @@
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
+        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
       }
     ],
     "command": ".\\affiliate_site_ops.bat shop-post-guard --json",

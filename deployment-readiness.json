@@ -8,24 +8,24 @@
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "ready_links": 0,
   "total_products": 9,
-  "followers": 561,
+  "followers": 578,
   "follower_goal": 1000,
-  "followers_to_goal": 439,
+  "followers_to_goal": 422,
   "follower_growth": {
     "history_count": 27,
-    "current": 561,
+    "current": 578,
     "goal": 1000,
-    "remaining": 439,
-    "last_7d_gain": 224,
-    "recent_avg_per_day": 34.0,
-    "overall_avg_per_day": 19.1,
+    "remaining": 422,
+    "last_7d_gain": 241,
+    "recent_avg_per_day": 34.4,
+    "overall_avg_per_day": 19.4,
     "eta_days": 13,
     "eta_date": "2026-07-09",
     "max_daily_gain": 133,
     "state": "growing"
   },
-  "generated_at": "2026-06-26T12:01:39",
-  "exported_at": "2026-06-26T12:01:39",
+  "generated_at": "2026-06-26T12:16:52",
+  "exported_at": "2026-06-26T12:16:52",
   "next_link": {
     "category_id": "toys",
     "category": "遊び",
@@ -240,7 +240,7 @@
     {
       "level": "info",
       "title": "まだ育成フェーズ",
-      "detail": "1,000フォロワーまで残り 439。売り込みよりプロフィール導線を薄く置く。"
+      "detail": "1,000フォロワーまで残り 422。売り込みよりプロフィール導線を薄く置く。"
     }
   ],
   "launch_blockers": [
@@ -268,8 +268,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-26T12:01:39",
-    "exported_at": "2026-06-26T12:01:39",
+    "generated_at": "2026-06-26T12:16:52",
+    "exported_at": "2026-06-26T12:16:52",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -362,22 +362,22 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-26T12:01:42",
+    "checked_at": "2026-06-26T12:16:55",
     "synced": true,
-    "last_exported_at": "2026-06-26T12:01:41",
+    "last_exported_at": "2026-06-26T12:16:53",
     "ready_links": 0,
     "total_products": 9,
-    "followers": 561,
+    "followers": 578,
     "top_post_views": 156918,
     "deploy": {
       "configured": true,
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-26T12:00:50",
+        "deployed_at": "2026-06-26T12:15:41",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-        "file_count": 167,
-        "total_bytes": 35666246
+        "file_count": 173,
+        "total_bytes": 36204381
       }
     },
     "scheduled_task": {

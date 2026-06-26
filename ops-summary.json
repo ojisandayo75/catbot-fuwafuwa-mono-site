@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T12:01:39",
-  "exported_at": "2026-06-26T12:01:39",
+  "generated_at": "2026-06-26T12:16:52",
+  "exported_at": "2026-06-26T12:16:52",
   "phase": "needs_affiliate_link",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -8,9 +8,9 @@
   "public_url_ready": true,
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
-  "followers": 561,
+  "followers": 578,
   "follower_goal": 1000,
-  "follower_progress": 56.1,
+  "follower_progress": 57.8,
   "follower_eta_date": "2026-07-09",
   "top_post_views": 156918,
   "clicks_7d": 0,
@@ -33,9 +33,9 @@
     "rate_allowed": true,
     "launch_ready": false,
     "milestone_ready": false,
-    "followers": 561,
+    "followers": 578,
     "follower_goal": 1000,
-    "followers_to_goal": 439,
+    "followers_to_goal": 422,
     "today_count": 0,
     "daily_cap": 2,
     "remaining_today": 2,
@@ -52,7 +52,7 @@
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
+        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
       }
     ],
     "rate_blockers": [],
@@ -65,7 +65,7 @@
     "milestone_blockers": [
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (561/1000, remaining 439)"
+        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
       }
     ],
     "command": ".\\affiliate_site_ops.bat shop-post-guard",
