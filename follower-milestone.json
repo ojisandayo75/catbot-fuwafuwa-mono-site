@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T02:25:48",
-  "exported_at": "2026-06-27T02:25:48",
+  "generated_at": "2026-06-27T02:37:05",
+  "exported_at": "2026-06-27T02:37:05",
   "account": "@fuwafuwa_mono",
   "stage": "pre_900_prepare",
   "stage_label": "900人までは静かに土台作り",
@@ -28,7 +28,7 @@
   "now_action": {
     "title": "最初の本番アフィリエイトURLを1本入れる",
     "detail": "もしもで発行した追跡URLを入れるまで、Xの販売投稿は増やしません。",
-    "command": ".\\catbot_first_link_live_finish.bat -Open"
+    "command": ".\\catbot_next_action.bat -Open"
   },
   "milestone_flow": [
     {
