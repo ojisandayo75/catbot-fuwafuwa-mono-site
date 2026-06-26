@@ -1,8 +1,20 @@
 {
-  "generated_at": "2026-06-27T08:30:29",
-  "exported_at": "2026-06-27T08:30:29",
+  "generated_at": "2026-06-27T08:39:10",
+  "exported_at": "2026-06-27T08:39:10",
   "phase": "needs_moshimo_approval",
-  "state": "needs_first_tracking_link",
+  "state": "needs_moshimo_approval",
+  "moshimo": {
+    "amazon_status": "pending",
+    "rakuten_status": "pending",
+    "ready_for_first_link": false,
+    "approval_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_update_commands": {
+      "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+    }
+  },
+  "moshimo_ready_for_first_link": false,
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_ready": true,
   "ready_links": 0,
@@ -260,6 +272,9 @@
   ],
   "commands": {
     "audit_links": ".\\affiliate_site_ops.bat audit-links",
+    "moshimo_approval": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "moshimo_amazon_approved": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+    "moshimo_rakuten_approved": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
     "first_link_workbench": ".\\catbot_first_link_live_finish.bat -Open",
     "set_next": ".\\catbot_first_link_live_finish.bat -Open",
     "click_review": ".\\affiliate_site_ops.bat click-review",

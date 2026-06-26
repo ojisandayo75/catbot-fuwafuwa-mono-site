@@ -48,7 +48,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid 
 </header>
 <main class="wrap">
   <section class="grid">
-    <div class="card"><span>状態</span><b>最初の追跡リンク待ち</b></div>
+    <div class="card"><span>状態</span><b>もしも承認確認待ち</b></div>
     <div class="card"><span>追跡リンク</span><b>0 / 9</b></div>
     <div class="card"><span>未設定</span><b>0</b></div>
     <div class="card"><span>要確認</span><b>9</b></div>
@@ -202,6 +202,24 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid 
         <li>
           <strong>audit_links</strong>
           <code>.\affiliate_site_ops.bat audit-links</code>
+        </li>
+
+
+        <li>
+          <strong>moshimo_approval</strong>
+          <code>.\catbot_moshimo_status.bat -OpenWorkbench</code>
+        </li>
+
+
+        <li>
+          <strong>moshimo_amazon_approved</strong>
+          <code>.\catbot_moshimo_status.bat -Amazon approved -Sync -Publish</code>
+        </li>
+
+
+        <li>
+          <strong>moshimo_rakuten_approved</strong>
+          <code>.\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish</code>
         </li>
 
 

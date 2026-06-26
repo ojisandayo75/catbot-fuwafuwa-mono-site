@@ -1,8 +1,20 @@
 {
-  "generated_at": "2026-06-27T08:30:29",
-  "exported_at": "2026-06-27T08:30:29",
-  "state": "needs_first_tracking_link",
+  "generated_at": "2026-06-27T08:39:10",
+  "exported_at": "2026-06-27T08:39:10",
+  "state": "needs_moshimo_approval",
   "phase": "needs_moshimo_approval",
+  "moshimo": {
+    "amazon_status": "pending",
+    "rakuten_status": "pending",
+    "ready_for_first_link": false,
+    "approval_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_update_commands": {
+      "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+    }
+  },
+  "moshimo_ready_for_first_link": false,
   "account": "@fuwafuwa_mono",
   "public_url_ready": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -299,6 +311,9 @@
     "体調変化、誤飲、怖がるサインがある場合は、用品ではなく相談を優先する。"
   ],
   "commands": {
+    "moshimo_approval": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "moshimo_amazon_approved": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+    "moshimo_rakuten_approved": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
     "live_finish": ".\\catbot_first_link_live_finish.bat -Open",
     "live_apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
     "check_clipboard": ".\\catbot_check_clipboard_link.bat",
