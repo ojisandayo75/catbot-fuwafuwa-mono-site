@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T16:04:08",
-  "exported_at": "2026-06-26T16:04:08",
+  "generated_at": "2026-06-26T16:20:09",
+  "exported_at": "2026-06-26T16:20:09",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -273,7 +273,7 @@
         "id": "first_target_entry",
         "title": "最初の1件導線",
         "use_when": "商品直リンクではなく買う前チェックへ誘導する時に使う",
-        "text": "次に整える猫用品は「電動猫じゃらし」。 いきなり買う前に、合う子・合わない子・最初の試し方を先にまとめています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
+        "text": "次に整える猫用品は「電動猫じゃらし」。 買う前チェック: 連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。 合わない子: 音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
       },
       {
         "id": "soft_launch",
