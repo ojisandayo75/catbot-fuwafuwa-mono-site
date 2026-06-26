@@ -32,8 +32,14 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
 .button.light{background:var(--soft);color:var(--coffee);border:1px solid var(--line)}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .tags span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:#5f4735;font-size:12px;font-weight:800}
+.progress{height:14px;border:1px solid var(--line);border-radius:999px;background:#fffdf8;overflow:hidden;margin-top:12px}
+.progress span{display:block;height:100%;background:#5f7f67}
+.mini-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.mini-grid div{border:1px solid var(--line);border-radius:8px;background:#fffdf8;padding:10px}
+.mini-grid strong{display:block;color:#25170f}
 @media (max-width:760px){.top{display:block}.grid{grid-template-columns:1fr 1fr}h1{font-size:28px}}
-@media (max-width:460px){.grid{grid-template-columns:1fr}.button{width:100%}}
+@media (max-width:620px){.mini-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.grid,.mini-grid{grid-template-columns:1fr}.button{width:100%}}
 </style>
 </head>
 <body>
@@ -52,6 +58,33 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <div class="card"><span class="label">公開URL</span><b>OK</b></div>
     <div class="card"><span class="label">フォロワー</span><b>578</b><p>1,000人まで 422</p></div>
   </div>
+  
+  <section class="card milestone" style="margin-top:12px">
+    <span class="label">1,000フォロワー準備</span>
+    <h2>売り込み投稿は待機、サイトの受け皿は育成中</h2>
+    <p>578/1000人。残り 422人 / ETA 2026-07-09</p>
+    <div class="progress" aria-label="フォロワー進捗"><span style="width:57.8%"></span></div>
+    <div class="mini-grid">
+      <div><strong>直近7日</strong><p>+241</p></div>
+      <div><strong>平均/日</strong><p>34.4</p></div>
+      <div><strong>状態</strong><p>growing</p></div>
+      <div><strong>サイト準備</strong><p>ready</p></div>
+    </div>
+  </section>
+
+  
+  <section class="card" style="margin-top:12px">
+    <span class="label">catbot連動データ</span>
+    <h2>伸びた反応を、猫の確認ポイントへ変換</h2>
+    <p>catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。</p>
+    <div class="mini-grid">
+      <div><strong>投稿</strong><p>10</p></div>
+      <div><strong>動画</strong><p>12</p></div>
+      <div><strong>最大表示</strong><p>156918</p></div>
+      <div><strong>猫優先</strong><p>ready 1 / careful 5</p></div>
+    </div>
+  </section>
+
   
         <section class="card">
           <span class="label">今やること</span>
@@ -125,31 +158,31 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <ul>
         <li>
           <strong>1</strong>
-          <p>Show cat fit and no-buy reasons before product links.</p>
+          <p>商品リンクより先に、猫に合う条件・買わない理由・やめるサインを出します。</p>
         </li>
 
 
         <li>
           <strong>2</strong>
-          <p>Prefer consultation when health, eating, urination, or behavior looks unsafe.</p>
+          <p>食欲、水分、排泄、呼吸、元気に変化がある時は、用品より相談を優先します。</p>
         </li>
 
 
         <li>
           <strong>3</strong>
-          <p>Keep X promotion profile-first; avoid repeated direct product URLs.</p>
+          <p>Xでは商品直リンクを連投せず、プロフィールと公開サイトへ案内します。</p>
         </li>
 
 
         <li>
           <strong>4</strong>
-          <p>Wait for the follower milestone before shop promotion; use soft site warmup before then.</p>
+          <p>1,000フォロワーまでは売り込み投稿を待ち、サイトの受け皿だけを温めます。</p>
         </li>
 
 
         <li>
           <strong>5</strong>
-          <p>Do not post shop promotion until the public URL monitor has passed.</p>
+          <p>公開URL監視と投稿ガードが通るまで、ショップ投稿は出しません。</p>
         </li>
 </ul>
   </section>
@@ -227,6 +260,7 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
   </section>
   <div class="actions">
     <a class="button light" href="../owner-next/">次にやること</a>
+    <a class="button light" href="../cat-first/">猫優先ランキング</a>
     <a class="button" href="../revenue-plan.json">revenue-plan.json</a>
     <a class="button light" href="../clicks/">クリック改善</a>
     <a class="button light" href="../health/">リンク健全性</a>
@@ -237,7 +271,7 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <a class="button light" href="../link-opportunities.json">link-opportunities.json</a>
     <a class="button light" href="../ops-summary.json">ops-summary.json</a>
   </div>
-  <p style="margin-top:16px">生成: 2026-06-26T23:34:45 / 書き出し: 2026-06-26T23:34:45</p>
+  <p style="margin-top:16px">生成: 2026-06-26T23:48:55 / 書き出し: 2026-06-26T23:48:55</p>
 </main>
 </body>
 </html>
