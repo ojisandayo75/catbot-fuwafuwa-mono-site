@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T23:48:55",
-  "exported_at": "2026-06-26T23:48:55",
+  "generated_at": "2026-06-27T00:12:58",
+  "exported_at": "2026-06-27T00:12:58",
   "account": "@fuwafuwa_mono",
   "phase": "needs_affiliate_link",
   "monetization_stage": "needs_first_affiliate_link",
@@ -324,6 +324,8 @@
     "ops_summary": "ops-summary.json",
     "revenue_plan": "revenue-plan.json",
     "revenue_page": "revenue/",
+    "follower_milestone": "follower-milestone.json",
+    "follower_milestone_page": "milestone/",
     "shop_data": "shop-data.json"
   },
   "first_link_safe_flow": {

@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-06-27T00:12:58",
+  "exported_at": "2026-06-27T00:12:58",
+  "account": "@fuwafuwa_mono",
+  "stage": "pre_900_prepare",
+  "stage_label": "900人までは静かに土台作り",
+  "stage_detail": "Xでは売り込みを増やさず、最初の追跡URLと猫優先ページを完成させます。",
+  "followers": 578,
+  "goal": 1000,
+  "remaining": 422,
+  "progress": 57.8,
+  "last_7d_gain": 241,
+  "recent_avg_per_day": 34.4,
+  "eta_date": "2026-07-09",
+  "affiliate_links_ready": 0,
+  "affiliate_links_total": 9,
+  "public_url_ready": true,
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "shop_post_allowed": false,
+  "shop_post_decision": "wait",
+  "current_target": {
+    "key": "toys/p2",
+    "product": "電動猫じゃらし",
+    "lane": "careful",
+    "lane_label": "慎重にリンク化",
+    "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
+  },
+  "now_action": {
+    "title": "最初の本番アフィリエイトURLを1本入れる",
+    "detail": "もしもで発行した追跡URLを入れるまで、Xの販売投稿は増やしません。",
+    "command": ".\\catbot_first_link_live_finish.bat -Open"
+  },
+  "milestone_flow": [
+    {
+      "title": "900人を超える前",
+      "detail": "サイト、プロフィール導線、猫優先ランキング、最初の追跡URLだけを整えます。",
+      "posting": "売り込み投稿は待つ"
+    },
+    {
+      "title": "900人を超えたら",
+      "detail": "Xは柔らかい案内にして、商品直リンクよりプロフィールとサイトへ流します。",
+      "posting": "商品名の連投やタグ増やしはしない"
+    },
+    {
+      "title": "1,000人に到達したら",
+      "detail": "投稿前にショップ投稿ガードを通し、承認された文だけ使います。",
+      "posting": "ガードOKまで販売投稿しない"
+    },
+    {
+      "title": "毎週やること",
+      "detail": "クリックCSVを取り込み、実際に見られたカテゴリから次の商品を選びます。",
+      "posting": "クリックで伸びた猫用品だけ次に回す"
+    }
+  ],
+  "commands": {
+    "first_link_live_finish": ".\\catbot_first_link_live_finish.bat -Open",
+    "first_link_live_apply": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
+    "launch_check": ".\\affiliate_site_ops.bat launch-check",
+    "shop_post_guard": ".\\affiliate_site_ops.bat shop-post-guard --json",
+    "click_review": ".\\affiliate_site_ops.bat click-review",
+    "ops_next": ".\\affiliate_site_ops.bat ops-next"
+  },
+  "related_pages": {
+    "owner_next": "owner-next/",
+    "revenue": "revenue/",
+    "cat_first": "cat-first/",
+    "x_kit": "x-kit/",
+    "daily": "daily/",
+    "clicks": "clicks/"
+  },
+  "first_link_safe_flow": {
+    "primary": "live_finish_then_apply_publish",
+    "commands": {
+      "next_action": ".\\catbot_next_action.bat -Open",
+      "next_action_apply_publish": ".\\catbot_next_action.bat -Apply -Publish",
+      "live_finish": ".\\catbot_first_link_live_finish.bat -Open",
+      "live_apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
+      "check_clipboard": ".\\catbot_check_clipboard_link.bat",
+      "dry_run": ".\\catbot_first_link_finish.bat",
+      "apply_publish": ".\\catbot_first_link_finish.bat -Apply -Publish"
+    },
+    "steps": [
+      "Open the live guide for the current target.",
+      "Copy one real tracking URL after the guide is waiting.",
+      "Confirm the copied URL and dry-run without applying.",
+      "Apply and publish only after the dry-run is correct."
+    ]
+  }
+}

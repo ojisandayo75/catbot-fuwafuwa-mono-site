@@ -78,6 +78,9 @@
 /cat-first-ranking.json
   Cache-Control: no-cache
 
+/follower-milestone.json
+  Cache-Control: no-cache
+
 /daily/*
   Cache-Control: no-cache
 
@@ -85,6 +88,9 @@
   Cache-Control: no-cache
 
 /cat-first/*
+  Cache-Control: no-cache
+
+/milestone/*
   Cache-Control: no-cache
 
 /site.webmanifest
