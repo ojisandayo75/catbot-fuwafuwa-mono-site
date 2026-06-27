@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T11:07:22",
-  "exported_at": "2026-06-27T11:07:22",
+  "generated_at": "2026-06-27T11:20:09",
+  "exported_at": "2026-06-27T11:20:09",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -44,6 +44,26 @@
       "直近7日 +241",
       "残り 422",
       "到達目安 2026-07-09"
+    ]
+  },
+  "auto_update_panel": {
+    "title": "自動更新メモ",
+    "body": "catbotの投稿ログ、動画素材、商品候補を見て、猫に合う入口と今日の候補を更新します。",
+    "synced": true,
+    "last_exported_at": "2026-06-27T11:20:09",
+    "next_run_time": "定期更新",
+    "interval": "定期更新",
+    "source_counts": {
+      "posts": 10,
+      "videos": 12,
+      "categories": 6,
+      "products": 9
+    },
+    "badges": [
+      "同期済み",
+      "投稿 10",
+      "動画 12",
+      "商品 9"
     ]
   },
   "current_target": {

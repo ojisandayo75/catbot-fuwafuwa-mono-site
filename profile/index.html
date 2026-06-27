@@ -112,8 +112,14 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .growth-stats div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
 .growth-stats b{display:block;font-size:21px;line-height:1.2;color:#3f281b;overflow-wrap:anywhere}
 .growth-stats small{display:block;color:#6b5544;font-weight:900}
+.auto-update-panel{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:12px;margin-top:14px;border:1px solid #d8bea4;border-radius:8px;background:#fffdf8;padding:14px}
+.auto-update-panel strong{display:block;margin-top:4px;font-size:22px;line-height:1.25;color:#2f1e14;overflow-wrap:anywhere}
+.update-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.update-stats div{border:1px solid #ead1b6;border-radius:8px;background:#fffaf2;padding:10px}
+.update-stats b{display:block;font-size:20px;line-height:1.2;color:#3f281b;overflow-wrap:anywhere}
+.update-stats small{display:block;color:#6b5544;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.growth-meter,.growth-side,.growth-stats{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.growth-meter,.growth-side,.growth-stats,.auto-update-panel,.update-stats{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}}
 </style>
 </head>
 <body>
@@ -167,6 +173,21 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
         <div><small>直近7日</small><b>+241</b><p>catbot反応を導線へ反映</p></div>
         <div><small>到達目安</small><b>2026-07-09</b><p>自動更新で再計算</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="auto-update-panel" aria-label="自動更新メモ">
+    <div>
+      <span class="pill">自動更新メモ</span>
+      <strong>自動更新メモ</strong>
+      <p>catbotの投稿ログ、動画素材、商品候補を見て、猫に合う入口と今日の候補を更新します。</p>
+      <div class="badges"><span>同期済み</span><span>投稿 10</span><span>動画 12</span><span>商品 9</span></div>
+    </div>
+    <div class="update-stats">
+      <div><small>最終更新</small><b>2026-06-27T11:20:09</b><p>公開データに反映済み</p></div>
+      <div><small>次回目安</small><b>定期更新</b><p>定期更新</p></div>
+      <div><small>投稿ログ</small><b>10</b><p>catbot反応の入口</p></div>
+      <div><small>動画/商品</small><b>12/9</b><p>猫用品候補へ変換</p></div>
     </div>
   </section>
 
