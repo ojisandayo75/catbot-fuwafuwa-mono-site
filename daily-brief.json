@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T14:25:16",
-  "exported_at": "2026-06-27T14:25:16",
+  "generated_at": "2026-06-27T14:39:06",
+  "exported_at": "2026-06-27T14:39:06",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -338,11 +338,21 @@
   "shop_post_guard": {
     "allowed": false,
     "decision": "wait",
+    "rate_allowed": false,
+    "launch_ready": false,
+    "milestone_ready": false,
     "daily_cap": 2,
     "today_count": 0,
     "remaining_today": 2,
     "min_interval_hours": 6.0,
     "next_allowed_at": "",
+    "safety_cooldown": {
+      "active": true,
+      "until": "2026-06-28T12:34:42+09:00",
+      "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+      "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+      "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json"
+    },
     "direct_product_link_allowed": false,
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "blockers": [
@@ -354,6 +364,24 @@
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
       },
+      {
+        "id": "follower_goal",
+        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
+      }
+    ],
+    "rate_blockers": [
+      {
+        "id": "safety_cooldown",
+        "detail": "cooldown active until 2026-06-28T12:34:42+09:00"
+      }
+    ],
+    "launch_blockers": [
+      {
+        "id": "affiliate_link",
+        "detail": "no real affiliate/tracking link is set"
+      }
+    ],
+    "milestone_blockers": [
       {
         "id": "follower_goal",
         "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
