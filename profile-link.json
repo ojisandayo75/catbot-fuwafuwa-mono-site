@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T02:52:59",
-  "exported_at": "2026-06-28T02:52:59",
+  "generated_at": "2026-06-28T03:07:55",
+  "exported_at": "2026-06-28T03:07:55",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -14,7 +14,7 @@
   "visitor_status": {
     "phase": "needs_moshimo_approval",
     "title": "商品直リンクはまだ置いていません",
-    "body": "今は、猫に合うか・合わない条件・やめるサインを先に見られる準備ページです。もしも承認と実リンク確認が終わるまで、販売リンクより買う前チェックを優先します。",
+    "body": "今は、猫に合うか・合わない条件・やめるサインを先に見られる準備ページです。紹介リンクの確認が終わるまで、販売リンクより買う前チェックを優先します。",
     "ready_links": 0,
     "total_links": 9,
     "moshimo_ready_for_first_link": false,
@@ -22,7 +22,7 @@
       "商品直リンクなし",
       "買う前チェック優先",
       "578/1000フォロワー",
-      "もしも承認待ち"
+      "紹介リンク準備中"
     ]
   },
   "growth_meter": {
@@ -50,7 +50,7 @@
     "title": "自動更新メモ",
     "body": "catbotの投稿ログ、動画素材、商品候補を見て、猫に合う入口と今日の候補を更新します。",
     "synced": true,
-    "last_exported_at": "2026-06-28T02:52:59",
+    "last_exported_at": "2026-06-28T03:07:55",
     "next_run_time": "定期更新",
     "interval": "定期更新",
     "source_counts": {
