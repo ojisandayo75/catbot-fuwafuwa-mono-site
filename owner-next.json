@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T09:50:03",
-  "exported_at": "2026-06-27T09:50:03",
+  "generated_at": "2026-06-27T10:00:10",
+  "exported_at": "2026-06-27T10:00:10",
   "state": "needs_moshimo_approval",
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
@@ -128,6 +128,14 @@
       "検索結果URL、カートURL、ログイン後だけ見えるURL。",
       "amzn.to だけなど追跡情報を確認できない短縮URL。"
     ]
+  },
+  "approval_gate": {
+    "id": "moshimo_first_link_gate",
+    "active": true,
+    "blocked_command": ".\\catbot_first_link_live_finish.bat -Open",
+    "safe_next_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "message": "承認前は初回リンク待機に入りません。まずもしも承認確認へ戻します。",
+    "why": "pendingのままURL作成へ進むと、通常の商品URLや検索URLを保存しやすいためです。"
   },
   "primary_flow": {
     "open": ".\\catbot_moshimo_status.bat -OpenWorkbench",
