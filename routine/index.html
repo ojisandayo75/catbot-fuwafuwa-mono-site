@@ -51,11 +51,20 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
 li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px;color:#3f281b;overflow-wrap:anywhere}
 li strong{display:block;color:#5a3522;margin-bottom:2px}
+.check-row{padding:0}
+.check-row label{display:grid;grid-template-columns:28px minmax(0,1fr);gap:9px;align-items:start;padding:10px;cursor:pointer}
+.check-row input{width:20px;height:20px;margin-top:2px;accent-color:#5f7f67}
+.check-row span{line-height:1.55}
+.check-row input:checked + span{text-decoration:line-through;color:#7a6758}
 .product-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
 .product{display:grid;align-content:start;gap:10px;background:#fffaf2}
 .note{background:#f4eadb}
 .stop{background:#fff2dd;border-color:#d9ac78}
+.progress-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;margin-top:14px;background:#fff3df;border-color:#caa982}
+.progress-number{display:inline-flex;min-width:86px;min-height:48px;align-items:center;justify-content:center;border-radius:8px;background:#5a3522;color:#fff8ef;font-size:20px;font-weight:900}
+.saved-at{font-size:13px;color:#6a5646;margin-top:3px}
 @media(max-width:900px){.grid,.product-list{grid-template-columns:1fr}.wrap{padding:15px}.hero .wrap{min-height:430px}h1{font-size:30px}.button{width:100%}}
+@media(max-width:620px){.progress-card{grid-template-columns:1fr}.progress-number{width:100%}}
 </style>
 </head>
 <body>
@@ -73,32 +82,131 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
   </div>
 </header>
 <main class="wrap">
+  <section class="panel progress-card" aria-label="今日の完了状況">
+    <div>
+      <span class="label">今日の完了</span>
+      <h2>できた項目だけ残す</h2>
+      <p class="saved-at" id="routineSavedAt">未保存</p>
+      <div class="actions"><button class="button light" type="button" id="routineReset">今日のチェックをリセット</button></div>
+    </div>
+    <strong class="progress-number" id="routineProgress" aria-live="polite">0/0</strong>
+  </section>
   <section id="routine" class="grid" aria-label="毎日の猫ケアルーティン">
         <article class="panel period">
           <span class="label">朝</span>
           <h2>食欲・水・トイレを見る</h2>
-          <ul><li>昨日と比べて食べる量、水を飲む量、トイレ回数が大きく変わっていないかを見る。</li><li>吐き戻し、下痢、血尿、排尿姿勢の長さなどがあれば商品選びを止める。</li><li>自動給餌器や水飲み器は、猫が自然に使えているかだけを短く確認する。</li></ul>
+          <ul>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="morning-1" aria-label="昨日と比べて食べる量、水を飲む量、トイレ回数が大きく変わっていないかを見る。">
+                        <span>昨日と比べて食べる量、水を飲む量、トイレ回数が大きく変わっていないかを見る。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="morning-2" aria-label="吐き戻し、下痢、血尿、排尿姿勢の長さなどがあれば商品選びを止める。">
+                        <span>吐き戻し、下痢、血尿、排尿姿勢の長さなどがあれば商品選びを止める。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="morning-3" aria-label="自動給餌器や水飲み器は、猫が自然に使えているかだけを短く確認する。">
+                        <span>自動給餌器や水飲み器は、猫が自然に使えているかだけを短く確認する。</span>
+                      </label>
+                    </li></ul>
         </article>
         <article class="panel period">
           <span class="label">夜</span>
           <h2>遊び・爪とぎ・落ち着き方を見る</h2>
-          <ul><li>遊ぶ前に、紐・羽根・中綿・小さい部品が外れていないか確認する。</li><li>怖がる、興奮しすぎる、噛みちぎる時は短時間で止める。</li><li>寝る前に、爪とぎ跡・水の残量・見守りカメラの置き場所を見直す。</li></ul>
+          <ul>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="evening-1" aria-label="遊ぶ前に、紐・羽根・中綿・小さい部品が外れていないか確認する。">
+                        <span>遊ぶ前に、紐・羽根・中綿・小さい部品が外れていないか確認する。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="evening-2" aria-label="怖がる、興奮しすぎる、噛みちぎる時は短時間で止める。">
+                        <span>怖がる、興奮しすぎる、噛みちぎる時は短時間で止める。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="evening-3" aria-label="寝る前に、爪とぎ跡・水の残量・見守りカメラの置き場所を見直す。">
+                        <span>寝る前に、爪とぎ跡・水の残量・見守りカメラの置き場所を見直す。</span>
+                      </label>
+                    </li></ul>
         </article>
         <article class="panel period">
           <span class="label">週1</span>
           <h2>掃除・交換・買わない判断を入れる</h2>
-          <ul><li>おもちゃ、爪とぎ、ブラシ、水飲み器は、壊れ・汚れ・におい・猫の避け方を見る。</li><li>使わないものは置きっぱなしにせず、場所・高さ・音・素材を変えてから判断する。</li><li>体調変化が続く時は、便利グッズを足す前に相談メモを作る。</li></ul>
+          <ul>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="weekly-1" aria-label="おもちゃ、爪とぎ、ブラシ、水飲み器は、壊れ・汚れ・におい・猫の避け方を見る。">
+                        <span>おもちゃ、爪とぎ、ブラシ、水飲み器は、壊れ・汚れ・におい・猫の避け方を見る。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="weekly-2" aria-label="使わないものは置きっぱなしにせず、場所・高さ・音・素材を変えてから判断する。">
+                        <span>使わないものは置きっぱなしにせず、場所・高さ・音・素材を変えてから判断する。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="weekly-3" aria-label="体調変化が続く時は、便利グッズを足す前に相談メモを作る。">
+                        <span>体調変化が続く時は、便利グッズを足す前に相談メモを作る。</span>
+                      </label>
+                    </li></ul>
         </article>
         <article class="panel period">
           <span class="label">今月</span>
           <h2>梅雨から夏の猫ケア</h2>
-          <ul><li>水飲み場を複数置き、ぬめりやフィルター汚れを毎日見る。</li><li>留守番中も室温が上がりすぎないよう、見守りやタイマーを使う。</li><li>湿気で爪とぎや布おもちゃが傷みやすいので、においとほつれを確認する。</li></ul>
+          <ul>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="seasonal-1" aria-label="水飲み場を複数置き、ぬめりやフィルター汚れを毎日見る。">
+                        <span>水飲み場を複数置き、ぬめりやフィルター汚れを毎日見る。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="seasonal-2" aria-label="留守番中も室温が上がりすぎないよう、見守りやタイマーを使う。">
+                        <span>留守番中も室温が上がりすぎないよう、見守りやタイマーを使う。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="seasonal-3" aria-label="湿気で爪とぎや布おもちゃが傷みやすいので、においとほつれを確認する。">
+                        <span>湿気で爪とぎや布おもちゃが傷みやすいので、においとほつれを確認する。</span>
+                      </label>
+                    </li></ul>
         </article></section>
   <section class="grid" aria-label="今日の観察メモ">
     <article class="panel note">
       <span class="label">今日の観察メモ</span>
       <h2>あとで比べられる形で残す</h2>
-      <ul><li>食べた量・水・トイレ・元気を一言で残す。</li><li>新しく試したもの、置き場所、使った時間を残す。</li><li>気になる変化があれば写真や動画を残し、病院メモに移す。</li></ul>
+      <ul>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="today-1" aria-label="食べた量・水・トイレ・元気を一言で残す。">
+                        <span>食べた量・水・トイレ・元気を一言で残す。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="today-2" aria-label="新しく試したもの、置き場所、使った時間を残す。">
+                        <span>新しく試したもの、置き場所、使った時間を残す。</span>
+                      </label>
+                    </li>
+                    <li class="check-row">
+                      <label>
+                        <input type="checkbox" data-routine-check="today-3" aria-label="気になる変化があれば写真や動画を残し、病院メモに移す。">
+                        <span>気になる変化があれば写真や動画を残し、病院メモに移す。</span>
+                      </label>
+                    </li></ul>
       <div class="actions"><a class="button light" href="../vet-note/">病院メモへ</a><a class="button light" href="../daily/">今日の猫メモ</a></div>
     </article>
     <article class="panel stop">
@@ -233,5 +341,62 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
     <a class="button light" href="../">トップへ</a>
   </div>
 </main>
+<script>
+(() => {
+  const today = new Date().toISOString().slice(0, 10);
+  const storageKey = `catbot:routine:${today}`;
+  const boxes = Array.from(document.querySelectorAll("[data-routine-check]"));
+  const progress = document.getElementById("routineProgress");
+  const savedAt = document.getElementById("routineSavedAt");
+  const reset = document.getElementById("routineReset");
+
+  const readState = () => {
+    try {
+      const raw = localStorage.getItem(storageKey);
+      return raw ? JSON.parse(raw) : {};
+    } catch (_error) {
+      return {};
+    }
+  };
+
+  const writeState = () => {
+    const checked = boxes
+      .filter((box) => box.checked)
+      .map((box) => box.getAttribute("data-routine-check"));
+    const saved = new Date();
+    localStorage.setItem(storageKey, JSON.stringify({ checked, savedAt: saved.toISOString() }));
+    updateProgress(saved);
+  };
+
+  const updateProgress = (saved = null) => {
+    const checkedCount = boxes.filter((box) => box.checked).length;
+    if (progress) progress.textContent = `${checkedCount}/${boxes.length}`;
+    if (savedAt) {
+      savedAt.textContent = saved
+        ? `保存 ${
+            saved.toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" })
+          }`
+        : "今日の端末内メモ";
+    }
+  };
+
+  const state = readState();
+  const saved = Array.isArray(state.checked) ? new Set(state.checked) : new Set();
+  boxes.forEach((box) => {
+    box.checked = saved.has(box.getAttribute("data-routine-check"));
+    box.addEventListener("change", writeState);
+  });
+  if (reset) {
+    reset.addEventListener("click", () => {
+      boxes.forEach((box) => {
+        box.checked = false;
+      });
+      localStorage.removeItem(storageKey);
+      updateProgress();
+    });
+  }
+  updateProgress(state.savedAt ? new Date(state.savedAt) : null);
+})();
+</script>
 </body>
 </html>
