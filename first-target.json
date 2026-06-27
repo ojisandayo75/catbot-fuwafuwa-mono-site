@@ -1,7 +1,7 @@
 {
   "state": "first_target_ready",
-  "generated_at": "2026-06-28T03:20:44",
-  "exported_at": "2026-06-28T03:20:44",
+  "generated_at": "2026-06-28T03:33:02",
+  "exported_at": "2026-06-28T03:33:02",
   "category_id": "toys",
   "product_id": "p2",
   "key": "toys/p2",
@@ -158,6 +158,33 @@
       "やめるサイン"
     ],
     "status_element_id": "firstTargetSearchGateStatus"
+  },
+  "selection_scorecard": {
+    "state": "cat_first_selection_scorecard",
+    "minimum_yes_count": 4,
+    "items": [
+      {
+        "label": "静音か",
+        "detail": "怖がりやすい子でも数分だけ試せる音量かを見ます。"
+      },
+      {
+        "label": "交換パーツ",
+        "detail": "羽根や先端が消耗しても交換でき、壊れたまま使わないで済むかを見ます。"
+      },
+      {
+        "label": "短時間運転",
+        "detail": "止めやすい、または自動停止しやすく、興奮しすぎを避けられるかを見ます。"
+      },
+      {
+        "label": "誤飲しにくさ",
+        "detail": "ひも・羽根・小さい部品を飲み込みやすい作りではないかを見ます。"
+      },
+      {
+        "label": "掃除しやすさ",
+        "detail": "毛やほこりが絡んだ時に、飼い主がすぐ外して清潔に戻せるかを見ます。"
+      }
+    ],
+    "owner_note": "承認後に商品を選ぶ時は、売れ筋より先に4項目以上YESになる候補だけを初回リンクにします。"
   },
   "ad_disclosure": "このサイトには広告・アフィリエイトリンクを含む場合があります。リンクが入っても、猫に合うか・合わない条件・やめるサインを先に確認します。",
   "cat_first_rules": [
