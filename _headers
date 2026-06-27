@@ -150,6 +150,9 @@
 /vet-note/*
   Cache-Control: no-cache
 
+/routine/*
+  Cache-Control: no-cache
+
 /quiz/*
   Cache-Control: no-cache
 

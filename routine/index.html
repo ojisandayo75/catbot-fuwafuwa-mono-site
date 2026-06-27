@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preload" as="image" href="../assets/ai_cat_care_scene.webp">
+<meta name="description" content="朝・夜・週1で猫の様子を見て、商品を足す前に生活と体調を確認するページです。">
+<meta property="og:title" content="Catbot 毎日の猫ケアルーティン">
+<meta property="og:description" content="朝・夜・週1で猫の様子を見て、商品を足す前に生活と体調を確認するページです。">
+<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catbot 毎日の猫ケアルーティン">
+<meta name="twitter:description" content="朝・夜・週1で猫の様子を見て、商品を足す前に生活と体調を確認するページです。">
+<meta name="theme-color" content="#5a3522">
+<link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
+<link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
+<link rel="apple-touch-icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/routine/">
+<meta property="og:url" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/routine/">
+<meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:site" content="@fuwafuwa_mono">
+<meta name="twitter:creator" content="@fuwafuwa_mono">
+<title>Catbot 毎日の猫ケアルーティン</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--soft:#f4eadb;--sage:#5f7f67;--warn:#fff2dd}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:22px}
+.hero{background-image:linear-gradient(90deg,rgba(37,23,15,.96),rgba(76,48,31,.78),rgba(76,48,31,.18)),image-set(url("../assets/ai_cat_care_scene.webp") type("image/webp"),url("../assets/ai_cat_care_scene.png") type("image/png"));background-size:cover;background-position:center;color:#fff8ef}
+.hero .wrap{min-height:380px;display:grid;align-items:end;padding-top:38px;padding-bottom:38px}
+.label{display:inline-flex;width:max-content;max-width:100%;min-height:25px;align-items:center;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5a3522;padding:3px 8px;font-size:12px;font-weight:850}
+.hero .label{background:rgba(244,234,219,.96)}
+h1{margin:8px 0;font-size:40px;line-height:1.12;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:7px 0;font-size:21px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.hero p{color:#f5e7d7;max-width:720px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;max-width:100%;border:1px solid var(--coffee);border-radius:8px;background:var(--coffee);color:#fff8ef;padding:8px 12px;text-decoration:none;font-weight:850;text-align:center}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.panel,.product{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px;min-width:0;box-shadow:0 12px 24px rgba(64,39,24,.07)}
+.period:first-child{background:#fff3df;border-color:#caa982}
+ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
+li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px;color:#3f281b;overflow-wrap:anywhere}
+li strong{display:block;color:#5a3522;margin-bottom:2px}
+.product-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.product{display:grid;align-content:start;gap:10px;background:#fffaf2}
+.note{background:#f4eadb}
+.stop{background:#fff2dd;border-color:#d9ac78}
+@media(max-width:900px){.grid,.product-list{grid-template-columns:1fr}.wrap{padding:15px}.hero .wrap{min-height:430px}h1{font-size:30px}.button{width:100%}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <span class="label">商品より先に生活を見る</span>
+    <h1>毎日の猫ケアルーティン</h1>
+    <p>商品名より先に、朝・夜・週1で猫の様子を見るための自動更新メモです。</p>
+    <div class="actions">
+      <a class="button" href="#routine">朝・夜・週1を見る</a>
+      <a class="button light" href="../vet-note/">病院に伝えるメモ</a>
+      <a class="button light" href="../consult-first/">相談を優先する時</a>
+      <a class="button light" href="../care-routine.json">care-routine.json</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section id="routine" class="grid" aria-label="毎日の猫ケアルーティン">
+        <article class="panel period">
+          <span class="label">朝</span>
+          <h2>食欲・水・トイレを見る</h2>
+          <ul><li>昨日と比べて食べる量、水を飲む量、トイレ回数が大きく変わっていないかを見る。</li><li>吐き戻し、下痢、血尿、排尿姿勢の長さなどがあれば商品選びを止める。</li><li>自動給餌器や水飲み器は、猫が自然に使えているかだけを短く確認する。</li></ul>
+        </article>
+        <article class="panel period">
+          <span class="label">夜</span>
+          <h2>遊び・爪とぎ・落ち着き方を見る</h2>
+          <ul><li>遊ぶ前に、紐・羽根・中綿・小さい部品が外れていないか確認する。</li><li>怖がる、興奮しすぎる、噛みちぎる時は短時間で止める。</li><li>寝る前に、爪とぎ跡・水の残量・見守りカメラの置き場所を見直す。</li></ul>
+        </article>
+        <article class="panel period">
+          <span class="label">週1</span>
+          <h2>掃除・交換・買わない判断を入れる</h2>
+          <ul><li>おもちゃ、爪とぎ、ブラシ、水飲み器は、壊れ・汚れ・におい・猫の避け方を見る。</li><li>使わないものは置きっぱなしにせず、場所・高さ・音・素材を変えてから判断する。</li><li>体調変化が続く時は、便利グッズを足す前に相談メモを作る。</li></ul>
+        </article>
+        <article class="panel period">
+          <span class="label">今月</span>
+          <h2>梅雨から夏の猫ケア</h2>
+          <ul><li>水飲み場を複数置き、ぬめりやフィルター汚れを毎日見る。</li><li>留守番中も室温が上がりすぎないよう、見守りやタイマーを使う。</li><li>湿気で爪とぎや布おもちゃが傷みやすいので、においとほつれを確認する。</li></ul>
+        </article></section>
+  <section class="grid" aria-label="今日の観察メモ">
+    <article class="panel note">
+      <span class="label">今日の観察メモ</span>
+      <h2>あとで比べられる形で残す</h2>
+      <ul><li>食べた量・水・トイレ・元気を一言で残す。</li><li>新しく試したもの、置き場所、使った時間を残す。</li><li>気になる変化があれば写真や動画を残し、病院メモに移す。</li></ul>
+      <div class="actions"><a class="button light" href="../vet-note/">病院メモへ</a><a class="button light" href="../daily/">今日の猫メモ</a></div>
+    </article>
+    <article class="panel stop">
+      <span class="label">止めるサイン</span>
+      <h2>商品を足す前に止まる</h2>
+      <ul><li>呼吸が苦しそう、ぐったり、食欲が戻らない時は商品選びを止める。</li><li>尿が出ない、血尿、トイレで何度も踏ん張る時は早めに相談する。</li><li>嘔吐・下痢が続く、急に水を飲む量が増減する時は記録して相談する。</li><li>新しい用品で怖がる、隠れる、攻撃的になる時は短時間でも中止する。</li></ul>
+      <div class="actions"><a class="button light" href="../consult-first/">相談を優先する時</a><a class="button light" href="../fit-reset/">見送り・やめどき</a></div>
+    </article>
+  </section>
+  <section class="product-list" aria-label="用品ごとの生活チェック">
+        <article class="product">
+          <div>
+            <span class="label">遊んだ後 / 慎重にリンク化</span>
+            <h2>電動猫じゃらし</h2>
+            <p>破れ、羽根、紐、中綿を見て、誤飲しそうならすぐ片付ける。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>連続稼働しすぎないもの、羽根の交換ができるものを優先。</li>
+            <li><strong>続けない条件</strong>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/toys/p2/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="label">遊んだ後 / リンク化しやすい</span>
+            <h2>けりぐるみ</h2>
+            <p>破れ、羽根、紐、中綿を見て、誤飲しそうならすぐ片付ける。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>縫い目が強いもの、誤飲しにくいサイズを優先。</li>
+            <li><strong>続けない条件</strong>布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/toys/p1/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="label">あげる前 / リンク化しやすい</span>
+            <h2>CIAO ちゅーる系おやつ</h2>
+            <p>体重管理・食事制限・吐き戻しがある子は量を増やさない。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>年齢、体調、総合栄養食か一般食かを確認。</li>
+            <li><strong>続けない条件</strong>体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/treats/p1/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="label">使う前 / リンク化しやすい</span>
+            <h2>猫用ブラシ</h2>
+            <p>皮膚、毛玉、嫌がり方を見て、強く続けず短時間で止める。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>毛質に合う形、肌に強く当たりすぎないものを優先。</li>
+            <li><strong>続けない条件</strong>皮膚が弱い子、触られるのが苦手な子、怒りやすい子。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/care/p1/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="label">毎日 / 慎重にリンク化</span>
+            <h2>自動給餌器</h2>
+            <p>水量、ぬめり、音、猫が近づくかを見て、飲めていない時は環境を先に直す。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>詰まりにくさ、洗いやすさ、停電時の挙動を確認。</li>
+            <li><strong>続けない条件</strong>療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/water/p2/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="label">毎日 / 慎重にリンク化</span>
+            <h2>循環式水飲み器</h2>
+            <p>水量、ぬめり、音、猫が近づくかを見て、飲めていない時は環境を先に直す。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>洗いやすさ、フィルター代、音の小ささを確認。</li>
+            <li><strong>続けない条件</strong>モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/water/p1/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="label">週1 / 慎重にリンク化</span>
+            <h2>段ボール爪とぎ 大容量</h2>
+            <p>ぐらつき、削れ、粉、置き場所を見て、使いやすい高さに戻す。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>粉が出にくいもの、滑りにくい形を優先。</li>
+            <li><strong>続けない条件</strong>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/scratch/p1/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="label">設置後 / 慎重にリンク化</span>
+            <h2>ペットカメラ</h2>
+            <p>コード、熱、置き場所、猫の休む場所を邪魔していないかを見る。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>画質、夜間撮影、録画、アプリの使いやすさを確認。</li>
+            <li><strong>続けない条件</strong>カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/watch/p1/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="label">あげる前 / 慎重にリンク化</span>
+            <h2>無添加寄りのおやつ</h2>
+            <p>体重管理・食事制限・吐き戻しがある子は量を増やさない。</p>
+          </div>
+          <ul>
+            <li><strong>最初に見る</strong>塩分、添加物、対象年齢を確認。</li>
+            <li><strong>続けない条件</strong>アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。</li>
+          </ul>
+          <div class="actions"><a class="button light" href="../products/treats/p2/">商品ページ</a><a class="button light" href="../fit-reset/">やめどき</a></div>
+        </article></section>
+  <div class="actions">
+    <a class="button light" href="../cat-first/">猫優先ランキング</a>
+    <a class="button light" href="../buying-check/">買う前チェック</a>
+    <a class="button light" href="../aftercare/">使い始めの見直し</a>
+    <a class="button light" href="../seasonal/">今月の猫ケア</a>
+    <a class="button light" href="../">トップへ</a>
+  </div>
+</main>
+</body>
+</html>

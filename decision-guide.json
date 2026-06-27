@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T12:25:09",
-  "exported_at": "2026-06-27T12:25:09",
+  "generated_at": "2026-06-27T12:46:42",
+  "exported_at": "2026-06-27T12:46:42",
   "state": "decision_guide_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -79,6 +79,16 @@
       "icon": "consult",
       "priority": 5,
       "cat_first_check": "体調変化がある時は、用品選びを急がない判断を置きます。"
+    },
+    {
+      "id": "routine",
+      "label": "毎日の習慣",
+      "title": "朝・夜・週1の見直しから入る",
+      "summary": "食欲、水、トイレ、遊び方、掃除や交換のタイミングを見てから、必要な用品だけを確認します。",
+      "path": "routine/",
+      "icon": "seasonal",
+      "priority": 5,
+      "cat_first_check": "商品を足す前に、生活の中で変わったことと止めるサインを先に見ます。"
     },
     {
       "id": "seasonal",

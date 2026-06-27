@@ -1,0 +1,242 @@
+{
+  "generated_at": "2026-06-27T12:46:42",
+  "exported_at": "2026-06-27T12:46:42",
+  "state": "care_routine_ready",
+  "account": "@fuwafuwa_mono",
+  "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "title": "毎日の猫ケアルーティン",
+  "summary": "商品名より先に、朝・夜・週1で猫の様子を見るための自動更新メモです。",
+  "periods": [
+    {
+      "id": "morning",
+      "label": "朝",
+      "title": "食欲・水・トイレを見る",
+      "tasks": [
+        "昨日と比べて食べる量、水を飲む量、トイレ回数が大きく変わっていないかを見る。",
+        "吐き戻し、下痢、血尿、排尿姿勢の長さなどがあれば商品選びを止める。",
+        "自動給餌器や水飲み器は、猫が自然に使えているかだけを短く確認する。"
+      ]
+    },
+    {
+      "id": "evening",
+      "label": "夜",
+      "title": "遊び・爪とぎ・落ち着き方を見る",
+      "tasks": [
+        "遊ぶ前に、紐・羽根・中綿・小さい部品が外れていないか確認する。",
+        "怖がる、興奮しすぎる、噛みちぎる時は短時間で止める。",
+        "寝る前に、爪とぎ跡・水の残量・見守りカメラの置き場所を見直す。"
+      ]
+    },
+    {
+      "id": "weekly",
+      "label": "週1",
+      "title": "掃除・交換・買わない判断を入れる",
+      "tasks": [
+        "おもちゃ、爪とぎ、ブラシ、水飲み器は、壊れ・汚れ・におい・猫の避け方を見る。",
+        "使わないものは置きっぱなしにせず、場所・高さ・音・素材を変えてから判断する。",
+        "体調変化が続く時は、便利グッズを足す前に相談メモを作る。"
+      ]
+    },
+    {
+      "id": "seasonal",
+      "label": "今月",
+      "title": "梅雨から夏の猫ケア",
+      "tasks": [
+        "水飲み場を複数置き、ぬめりやフィルター汚れを毎日見る。",
+        "留守番中も室温が上がりすぎないよう、見守りやタイマーを使う。",
+        "湿気で爪とぎや布おもちゃが傷みやすいので、においとほつれを確認する。"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "key": "toys/p2",
+      "category_id": "toys",
+      "category": "遊び",
+      "id": "p2",
+      "name": "電動猫じゃらし",
+      "cadence": "遊んだ後",
+      "routine_note": "破れ、羽根、紐、中綿を見て、誤飲しそうならすぐ片付ける。",
+      "check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+      "care_note": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。",
+      "first_try": "最初は数分だけ見守り、怖がる・息が上がる・部品を噛みちぎる時はすぐ止めます。",
+      "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
+      "detail_url": "products/toys/p2/",
+      "lane": "careful",
+      "lane_label": "慎重にリンク化",
+      "score": 211,
+      "next_target": true
+    },
+    {
+      "key": "toys/p1",
+      "category_id": "toys",
+      "category": "遊び",
+      "id": "p1",
+      "name": "けりぐるみ",
+      "cadence": "遊んだ後",
+      "routine_note": "破れ、羽根、紐、中綿を見て、誤飲しそうならすぐ片付ける。",
+      "check": "縫い目が強いもの、誤飲しにくいサイズを優先。",
+      "care_note": "中綿や飾りを噛みちぎる子は、破れた時点で交換。小さい部品が出たらすぐ片付けます。",
+      "first_try": "最初は目の届く場所で短時間だけ渡し、破れ・中綿・飾りを毎回確認します。",
+      "not_for": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。",
+      "detail_url": "products/toys/p1/",
+      "lane": "ready",
+      "lane_label": "リンク化しやすい",
+      "score": 207,
+      "next_target": false
+    },
+    {
+      "key": "treats/p1",
+      "category_id": "treats",
+      "category": "おやつ",
+      "id": "p1",
+      "name": "CIAO ちゅーる系おやつ",
+      "cadence": "あげる前",
+      "routine_note": "体重管理・食事制限・吐き戻しがある子は量を増やさない。",
+      "check": "年齢、体調、総合栄養食か一般食かを確認。",
+      "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
+      "first_try": "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。",
+      "not_for": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。",
+      "detail_url": "products/treats/p1/",
+      "lane": "ready",
+      "lane_label": "リンク化しやすい",
+      "score": 43,
+      "next_target": false
+    },
+    {
+      "key": "care/p1",
+      "category_id": "care",
+      "category": "ケア",
+      "id": "p1",
+      "name": "猫用ブラシ",
+      "cadence": "使う前",
+      "routine_note": "皮膚、毛玉、嫌がり方を見て、強く続けず短時間で止める。",
+      "check": "毛質に合う形、肌に強く当たりすぎないものを優先。",
+      "care_note": "嫌がる子は短時間から。皮膚が赤くなる、フケが増える、怒る時は強さや形が合っていない可能性があります。",
+      "first_try": "背中など嫌がりにくい場所を数回だけ。無理に全身を一度で終わらせません。",
+      "not_for": "皮膚が弱い子、触られるのが苦手な子、怒りやすい子。",
+      "detail_url": "products/care/p1/",
+      "lane": "ready",
+      "lane_label": "リンク化しやすい",
+      "score": 23,
+      "next_target": false
+    },
+    {
+      "key": "water/p2",
+      "category_id": "water",
+      "category": "水とごはん",
+      "id": "p2",
+      "name": "自動給餌器",
+      "cadence": "毎日",
+      "routine_note": "水量、ぬめり、音、猫が近づくかを見て、飲めていない時は環境を先に直す。",
+      "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
+      "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
+      "first_try": "数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。",
+      "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
+      "detail_url": "products/water/p2/",
+      "lane": "careful",
+      "lane_label": "慎重にリンク化",
+      "score": 93,
+      "next_target": false
+    },
+    {
+      "key": "water/p1",
+      "category_id": "water",
+      "category": "水とごはん",
+      "id": "p1",
+      "name": "循環式水飲み器",
+      "cadence": "毎日",
+      "routine_note": "水量、ぬめり、音、猫が近づくかを見て、飲めていない時は環境を先に直す。",
+      "check": "洗いやすさ、フィルター代、音の小ささを確認。",
+      "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
+      "first_try": "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
+      "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
+      "detail_url": "products/water/p1/",
+      "lane": "careful",
+      "lane_label": "慎重にリンク化",
+      "score": 89,
+      "next_target": false
+    },
+    {
+      "key": "scratch/p1",
+      "category_id": "scratch",
+      "category": "爪とぎ",
+      "id": "p1",
+      "name": "段ボール爪とぎ 大容量",
+      "cadence": "週1",
+      "routine_note": "ぐらつき、削れ、粉、置き場所を見て、使いやすい高さに戻す。",
+      "check": "粉が出にくいもの、滑りにくい形を優先。",
+      "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
+      "first_try": "よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。",
+      "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+      "detail_url": "products/scratch/p1/",
+      "lane": "careful",
+      "lane_label": "慎重にリンク化",
+      "score": 76,
+      "next_target": false
+    },
+    {
+      "key": "watch/p1",
+      "category_id": "watch",
+      "category": "見守り",
+      "id": "p1",
+      "name": "ペットカメラ",
+      "cadence": "設置後",
+      "routine_note": "コード、熱、置き場所、猫の休む場所を邪魔していないかを見る。",
+      "check": "画質、夜間撮影、録画、アプリの使いやすさを確認。",
+      "care_note": "カメラの音や動きで怖がる子は固定位置を変えます。見守りは補助なので、異変があれば直接確認します。",
+      "first_try": "まず固定位置で音や動きを最小にし、猫が怖がらない距離から使います。",
+      "not_for": "カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。",
+      "detail_url": "products/watch/p1/",
+      "lane": "careful",
+      "lane_label": "慎重にリンク化",
+      "score": 71,
+      "next_target": false
+    },
+    {
+      "key": "treats/p2",
+      "category_id": "treats",
+      "category": "おやつ",
+      "id": "p2",
+      "name": "無添加寄りのおやつ",
+      "cadence": "あげる前",
+      "routine_note": "体重管理・食事制限・吐き戻しがある子は量を増やさない。",
+      "check": "塩分、添加物、対象年齢を確認。",
+      "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
+      "first_try": "初日は少量だけ。数日は便、吐き戻し、かゆがる様子を確認します。",
+      "not_for": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。",
+      "detail_url": "products/treats/p2/",
+      "lane": "careful",
+      "lane_label": "慎重にリンク化",
+      "score": 47,
+      "next_target": false
+    }
+  ],
+  "stop_rules": [
+    "呼吸が苦しそう、ぐったり、食欲が戻らない時は商品選びを止める。",
+    "尿が出ない、血尿、トイレで何度も踏ん張る時は早めに相談する。",
+    "嘔吐・下痢が続く、急に水を飲む量が増減する時は記録して相談する。",
+    "新しい用品で怖がる、隠れる、攻撃的になる時は短時間でも中止する。"
+  ],
+  "today_note": [
+    "食べた量・水・トイレ・元気を一言で残す。",
+    "新しく試したもの、置き場所、使った時間を残す。",
+    "気になる変化があれば写真や動画を残し、病院メモに移す。"
+  ],
+  "links": {
+    "buying_check": "buying-check/",
+    "fit_reset": "fit-reset/",
+    "aftercare": "aftercare/",
+    "consult_first": "consult-first/",
+    "vet_note": "vet-note/",
+    "cat_first": "cat-first/",
+    "seasonal": "seasonal/",
+    "daily": "daily/"
+  },
+  "sources": {
+    "products": 9,
+    "seasonal_checks": 3,
+    "ready_links": 0,
+    "total_links": 0
+  }
+}
