@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T14:13:35",
-  "exported_at": "2026-06-27T14:13:35",
+  "generated_at": "2026-06-27T14:25:16",
+  "exported_at": "2026-06-27T14:25:16",
   "phase": "needs_moshimo_approval",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -35,7 +35,7 @@
   "shop_post_guard": {
     "decision": "wait",
     "allowed": false,
-    "rate_allowed": true,
+    "rate_allowed": false,
     "launch_ready": false,
     "milestone_ready": false,
     "followers": 578,
@@ -48,9 +48,20 @@
     "last_post_at": "",
     "hours_since_last": null,
     "next_allowed_at": "",
+    "safety_cooldown": {
+      "active": true,
+      "until": "2026-06-28T12:34:42+09:00",
+      "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+      "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+      "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json"
+    },
     "direct_product_link_allowed": false,
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "blockers": [
+      {
+        "id": "safety_cooldown",
+        "detail": "cooldown active until 2026-06-28T12:34:42+09:00"
+      },
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
@@ -60,7 +71,12 @@
         "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
       }
     ],
-    "rate_blockers": [],
+    "rate_blockers": [
+      {
+        "id": "safety_cooldown",
+        "detail": "cooldown active until 2026-06-28T12:34:42+09:00"
+      }
+    ],
     "launch_blockers": [
       {
         "id": "affiliate_link",

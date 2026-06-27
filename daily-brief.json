@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T14:13:35",
-  "exported_at": "2026-06-27T14:13:35",
+  "generated_at": "2026-06-27T14:25:16",
+  "exported_at": "2026-06-27T14:25:16",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -346,6 +346,10 @@
     "direct_product_link_allowed": false,
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "blockers": [
+      {
+        "id": "safety_cooldown",
+        "detail": "cooldown active until 2026-06-28T12:34:42+09:00"
+      },
       {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
