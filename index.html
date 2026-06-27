@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-27T11:20:09",
+      "dateModified": "2026-06-27T11:35:43",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -4036,6 +4036,89 @@
     .section-head{display:block}
     section{scroll-margin-top:190px}
   }
+
+  .home-auto-update{
+    display:grid;
+    grid-template-columns:minmax(0,1.04fr) minmax(300px,.96fr);
+    gap:14px;
+    align-items:stretch;
+    margin-top:-56px;
+    position:relative;
+    z-index:3;
+    padding:16px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:linear-gradient(135deg,#fffdf8 0%,#fff3df 58%,#ead0b1 100%);
+    box-shadow:0 14px 34px rgba(64,39,24,.13);
+  }
+  .home-auto-update + .first-choice-menu{margin-top:14px}
+  .home-auto-update-copy{
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:10px;
+  }
+  .home-auto-update-copy h2{
+    margin:0;
+    color:#25170f;
+    font-size:28px;
+    line-height:1.16;
+    letter-spacing:0;
+    overflow-wrap:anywhere;
+  }
+  .home-auto-update-copy p{
+    margin:0;
+    color:#6a5646;
+    font-size:15px;
+  }
+  .home-auto-update-actions{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:2px;
+  }
+  .home-auto-update-stats{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+  .home-auto-update-stat{
+    min-width:0;
+    padding:12px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:rgba(255,253,248,.72);
+  }
+  .home-auto-update-stat span{
+    display:block;
+    color:#7b4d31;
+    font-size:12px;
+    font-weight:900;
+  }
+  .home-auto-update-stat strong{
+    display:block;
+    margin-top:3px;
+    color:#25170f;
+    font-size:22px;
+    line-height:1.15;
+    overflow-wrap:anywhere;
+  }
+  .home-auto-update-stat small{
+    display:block;
+    margin-top:4px;
+    color:#776555;
+    line-height:1.35;
+  }
+  @media (max-width:760px){
+    .home-auto-update{
+      grid-template-columns:1fr;
+      padding:13px;
+    }
+    .home-auto-update-copy h2{font-size:23px}
+    .home-auto-update-actions .button{width:100%}
+  }
+
 </style>
 </head>
 <body>
@@ -4204,6 +4287,29 @@
 </section>
 
 <main>
+  <section id="homeAutoUpdate" class="home-auto-update" aria-label="catbot連動の自動更新メモ" data-home-auto-update="catbot">
+    <div class="home-auto-update-copy">
+      <div class="product-meta">
+        <span class="badge ready">catbot連動</span>
+        <span class="badge wait">実リンク準備中</span>
+        <span class="badge">578 followers</span>
+      </div>
+      <h2>自動更新メモ</h2>
+      <p>catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。</p>
+      <div class="home-auto-update-actions">
+        <a class="button product" href="profile/">プロフィール導線を見る</a>
+        <a class="button search" href="updates/">更新履歴</a>
+        <a class="button search" href="first-target/">次の1件</a>
+      </div>
+    </div>
+    <div class="home-auto-update-stats" aria-label="自動更新の元データ">
+      <article class="home-auto-update-stat"><span>最終更新</span><strong>2026-06-27 11:35</strong><small>公開データを再生成</small></article>
+      <article class="home-auto-update-stat"><span>投稿ログ</span><strong>10</strong><small>catbot反応を反映</small></article>
+      <article class="home-auto-update-stat"><span>動画</span><strong>12</strong><small>素材と見せ方を調整</small></article>
+      <article class="home-auto-update-stat"><span>商品候補</span><strong>9</strong><small>商品直リンクなし / 電動猫じゃらし</small></article>
+    </div>
+  </section>
+
   <section class="first-choice-menu" aria-label="最初に選ぶ入口">
     <a class="first-choice-card" href="#catMatch" data-step="1">
       <span class="first-choice-art" data-icon="match" aria-hidden="true"></span>
