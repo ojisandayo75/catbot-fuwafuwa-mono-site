@@ -112,6 +112,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .profile-reaction-card p{font-size:13px;line-height:1.45}
 .profile-reaction-card small{color:#ffe4bd;font-weight:900;overflow-wrap:anywhere}
 .profile-reaction-card:hover{background:rgba(255,248,239,.16);border-color:rgba(255,248,239,.48)}
+.profile-sticky-nav{display:none}
 .quick-paths{margin-top:14px;border:1px solid #d8bea4;border-radius:8px;background:#fffaf2;padding:14px}
 .quick-path-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
 .quick-path-head p{max-width:640px}
@@ -144,7 +145,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .update-stats b{display:block;font-size:20px;line-height:1.2;color:#3f281b;overflow-wrap:anywhere}
 .update-stats small{display:block;color:#6b5544;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.profile-reaction,.profile-reaction-grid,.growth-meter,.growth-side,.growth-stats,.auto-update-panel,.update-stats{grid-template-columns:1fr}.quick-path-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.button{width:100%}.menu-card,.quick-path-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}}
+@media(max-width:860px){body{padding-bottom:82px}.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.profile-reaction,.profile-reaction-grid,.growth-meter,.growth-side,.growth-stats,.auto-update-panel,.update-stats{grid-template-columns:1fr}.quick-path-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.button{width:100%}.menu-card,.quick-path-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}.profile-sticky-nav{position:fixed;left:10px;right:10px;bottom:10px;z-index:40;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:7px;border:1px solid rgba(90,53,34,.30);border-radius:8px;background:rgba(255,248,239,.96);box-shadow:0 12px 30px rgba(64,39,24,.20);backdrop-filter:blur(10px)}.profile-sticky-nav a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:7px 6px;border:1px solid #d8bea4;border-radius:8px;background:#5a3522;color:#fff8ef;text-decoration:none;font-size:12px;font-weight:900;text-align:center;line-height:1.15;overflow-wrap:anywhere}.profile-sticky-nav a:nth-child(2){background:#7a4b2c}.profile-sticky-nav a:nth-child(4){background:#607d62;border-color:#607d62}}
 @media(max-width:520px){.quick-path-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -292,7 +293,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <div class="badges"><span>同期済み</span><span>投稿 10</span><span>動画 12</span><span>商品 9</span></div>
     </div>
     <div class="update-stats">
-      <div><small>最終更新</small><b>2026-06-28T02:13:37</b><p>公開データに反映済み</p></div>
+      <div><small>最終更新</small><b>2026-06-28T02:28:58</b><p>公開データに反映済み</p></div>
       <div><small>次回目安</small><b>定期更新</b><p>定期更新</p></div>
       <div><small>投稿ログ</small><b>10</b><p>catbot反応の入口</p></div>
       <div><small>動画/商品</small><b>12/9</b><p>猫用品候補へ変換</p></div>
@@ -501,6 +502,12 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
   </section>
   <p class="disclosure">広告・アフィリエイトリンクを含む場合があります。商品より先に、猫の安全、相性、使いすぎないことを確認します。</p>
 </main>
+<nav id="profileStickyNav" class="profile-sticky-nav" aria-label="スマホ用プロフィール導線" data-profile-sticky-nav="mobile">
+  <a href="../quiz/">診断</a>
+  <a href="../buying-check/">買う前</a>
+  <a href="../first-target/">今日の候補</a>
+  <a href="#profileCatbotReaction">反応</a>
+</nav>
 <script>
 (function(){
   const panel = document.getElementById("lastQuizPanel");
