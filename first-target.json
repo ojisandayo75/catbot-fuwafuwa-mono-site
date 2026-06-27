@@ -1,7 +1,7 @@
 {
   "state": "first_target_ready",
-  "generated_at": "2026-06-28T03:10:24",
-  "exported_at": "2026-06-28T03:10:24",
+  "generated_at": "2026-06-28T03:20:44",
+  "exported_at": "2026-06-28T03:20:44",
   "category_id": "toys",
   "product_id": "p2",
   "key": "toys/p2",
@@ -149,6 +149,16 @@
     }
   ],
   "pre_click_policy": "リンクを開く前に、買う理由より猫が使える条件を先に確認します。",
+  "external_search_gate": {
+    "state": "cat_first_before_external_search",
+    "required_check_count": 3,
+    "required_markers": [
+      "音と動き",
+      "合わない猫",
+      "やめるサイン"
+    ],
+    "status_element_id": "firstTargetSearchGateStatus"
+  },
   "ad_disclosure": "このサイトには広告・アフィリエイトリンクを含む場合があります。リンクが入っても、猫に合うか・合わない条件・やめるサインを先に確認します。",
   "cat_first_rules": [
     "いきなり買わせず、合う子・合わない子を先に見せる。",
