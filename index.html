@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-28T01:45:08",
+      "dateModified": "2026-06-28T01:57:26",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -4054,6 +4054,8 @@
   .home-auto-update + .first-choice-menu{margin-top:14px}
   .home-auto-update + .home-decision-strip{margin-top:14px}
   .home-decision-strip + .first-choice-menu{margin-top:14px}
+  .home-decision-strip + .home-signal-strip{margin-top:14px}
+  .home-signal-strip + .first-choice-menu{margin-top:14px}
   .home-auto-update-copy{
     min-width:0;
     display:flex;
@@ -4198,6 +4200,85 @@
     border-color:#b68d68;
     background:#fff7eb;
   }
+  .home-signal-strip{
+    display:grid;
+    grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
+    gap:12px;
+    padding:14px;
+    border:1px solid #c5a07d;
+    border-radius:8px;
+    background:linear-gradient(135deg,#4a2d1c 0%,#68452d 58%,#90643d 100%);
+    color:#fff8ef;
+  }
+  .home-signal-copy{
+    display:flex;
+    min-width:0;
+    flex-direction:column;
+    justify-content:center;
+    gap:8px;
+  }
+  .home-signal-copy h2{
+    margin:0;
+    font-size:24px;
+    line-height:1.18;
+    letter-spacing:0;
+    overflow-wrap:anywhere;
+  }
+  .home-signal-copy p{
+    margin:0;
+    color:#f1dfca;
+    font-size:14px;
+    line-height:1.55;
+  }
+  .home-signal-copy .badge{
+    width:max-content;
+    max-width:100%;
+    background:rgba(255,248,239,.14);
+    border-color:rgba(255,248,239,.34);
+    color:#fff8ef;
+  }
+  .home-signal-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:10px;
+  }
+  .home-signal-card{
+    display:grid;
+    gap:6px;
+    min-width:0;
+    padding:11px;
+    border:1px solid rgba(255,248,239,.28);
+    border-radius:8px;
+    background:rgba(255,248,239,.10);
+    color:#fff8ef;
+    text-decoration:none;
+  }
+  .home-signal-card span{
+    color:#f8d8ae;
+    font-size:12px;
+    font-weight:900;
+    overflow-wrap:anywhere;
+  }
+  .home-signal-card strong{
+    font-size:17px;
+    line-height:1.25;
+    overflow-wrap:anywhere;
+  }
+  .home-signal-card p{
+    margin:0;
+    color:#f1dfca;
+    font-size:13px;
+    line-height:1.45;
+  }
+  .home-signal-card small{
+    color:#ffe4bd;
+    font-weight:900;
+    overflow-wrap:anywhere;
+  }
+  .home-signal-card:hover{
+    background:rgba(255,248,239,.16);
+    border-color:rgba(255,248,239,.48);
+  }
   @media (max-width:760px){
     .home-auto-update{
       grid-template-columns:1fr;
@@ -4207,6 +4288,8 @@
     .home-auto-update-actions .button{width:100%}
     .home-decision-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     .home-decision-card{min-height:0}
+    .home-signal-strip{grid-template-columns:1fr}
+    .home-signal-grid{grid-template-columns:1fr}
   }
   @media (max-width:520px){
     .home-decision-grid{grid-template-columns:1fr}
@@ -4402,7 +4485,7 @@
       </div>
     </div>
     <div class="home-auto-update-stats" aria-label="自動更新の元データ">
-      <article class="home-auto-update-stat"><span>最終更新</span><strong>2026-06-28 01:45</strong><small>公開データを再生成</small></article>
+      <article class="home-auto-update-stat"><span>最終更新</span><strong>2026-06-28 01:57</strong><small>公開データを再生成</small></article>
       <article class="home-auto-update-stat"><span>投稿ログ</span><strong>10</strong><small>catbot反応を反映</small></article>
       <article class="home-auto-update-stat"><span>動画</span><strong>12</strong><small>素材と見せ方を調整</small></article>
       <article class="home-auto-update-stat"><span>商品候補</span><strong>9</strong><small>商品直リンクなし / 電動猫じゃらし</small></article>
@@ -4443,6 +4526,35 @@
         <span>今日の候補</span>
         <strong>電動猫じゃらし</strong>
         <p>catbotで反応が強い候補を、猫優先の注意つきで見ます。</p>
+      </a>
+    </div>
+  </section>
+  <section id="homeCatbotSignalStrip" class="home-signal-strip" aria-label="catbot反応から今日見る入口" data-home-signal-strip="catbot-reaction">
+    <div class="home-signal-copy">
+      <span class="badge">catbot反応から自動更新</span>
+      <h2>伸びた反応を、猫のための入口に変える</h2>
+      <p>catbotで反応が強い投稿やテーマを、そのまま商品へ飛ばさず、今日の猫メモ・反応トレンド・1000人準備へ分けて見られるようにします。</p>
+    </div>
+    <div class="home-signal-grid">
+      <a class="home-signal-card" data-signal-card="daily" href="daily/">
+        <span>今日の反応</span>
+        <strong>遊び</strong>
+        <p>catbotで反応が強いテーマを、今日見る猫メモにまとめます。</p>
+        <small>score 32</small>
+      </a>
+      
+      <a class="home-signal-card" data-signal-card="trends" href="trends/">
+        <span>伸びた投稿</span>
+        <strong>まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾…</strong>
+        <p>バズの空気を、買う理由ではなく猫に合うかの確認へ変換します。</p>
+        <small>156,918 views / 1,224 likes</small>
+      </a>
+      
+      <a class="home-signal-card" data-signal-card="milestone" href="milestone/">
+        <span>1000人準備</span>
+        <strong>578/1000人</strong>
+        <p>売り込みを増やす前に、プロフィール導線と買う前チェックを育てます。</p>
+        <small>残り 422人 / 57.8%</small>
       </a>
     </div>
   </section>
