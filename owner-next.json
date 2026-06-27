@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T00:44:38",
-  "exported_at": "2026-06-28T00:44:38",
+  "generated_at": "2026-06-28T01:10:21",
+  "exported_at": "2026-06-28T01:10:21",
   "state": "needs_moshimo_approval",
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
@@ -12,6 +12,9 @@
   "total_products": 9,
   "public_url_ready": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "next_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+  "next_command_reason": "Moshi-mo approval is still pending, so the first-link workflow remains gated.",
+  "next_command_blocked_by": "moshimo_approval_check",
   "safety_cooldown": {
     "active": true,
     "until": "2026-06-28T12:34:42+09:00",

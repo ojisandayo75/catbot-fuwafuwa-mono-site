@@ -1,8 +1,10 @@
 {
-  "generated_at": "2026-06-28T00:44:38",
-  "exported_at": "2026-06-28T00:44:38",
+  "generated_at": "2026-06-28T01:10:21",
+  "exported_at": "2026-06-28T01:10:21",
   "state": "needs_moshimo_approval",
   "phase": "needs_moshimo_approval",
+  "next_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+  "next_command_reason": "Moshi-mo approval is still pending, so URL creation stays gated.",
   "moshimo": {
     "amazon_status": "pending",
     "rakuten_status": "pending",
@@ -314,6 +316,7 @@
     "moshimo_approval": ".\\catbot_moshimo_status.bat -OpenWorkbench",
     "moshimo_amazon_approved": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
     "moshimo_rakuten_approved": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+    "moshimo_both_approved": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish",
     "live_finish": ".\\catbot_first_link_live_finish.bat -Open",
     "live_apply_publish": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
     "check_clipboard": ".\\catbot_check_clipboard_link.bat",
