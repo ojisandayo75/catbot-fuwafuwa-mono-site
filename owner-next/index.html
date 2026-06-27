@@ -33,6 +33,7 @@
 :root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--ok:#edf3e5;--todo:#fff2dd;--soft:#f4eadb}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+html,body{max-width:100%;overflow-x:hidden}
 .wrap{width:100%;max-width:1120px;margin:0 auto;padding:22px}
 header{background:#efe1cf;border-bottom:1px solid var(--line)}
 .hero{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px;align-items:end}
@@ -40,6 +41,8 @@ header{background:#efe1cf;border-bottom:1px solid var(--line)}
 h1{margin:8px 0;font-size:38px;line-height:1.15;letter-spacing:0;overflow-wrap:anywhere}
 h2{margin:6px 0;font-size:22px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
 p{margin:0;color:var(--muted);overflow-wrap:anywhere}
+.wrap,.metric,.policy,.step-card,.hero-card,.todo-card,.url-rule-card,.flow-card,.remaining-card,.button,.actions{min-width:0;max-width:100%}
+p,a,code,.button,.metric b,.hero-card h2{overflow-wrap:anywhere;word-break:break-word}
 .metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
 .metric,.policy,.step-card,.hero-card{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
 .metric b{display:block;font-size:27px;line-height:1.2;margin-top:5px}
@@ -62,6 +65,12 @@ dl div{min-width:0;border:1px solid #ead1b6;border-radius:8px;background:#fffdf8
 dt{font-weight:800;color:#4e2f1f}
 dd{margin:4px 0 0}
 code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;font-family:Consolas,"Yu Gothic UI",monospace}
+.command-box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;margin-top:6px}
+.command-box code{margin:0}
+.copy-command{min-height:34px;border:1px solid var(--coffee);border-radius:8px;background:#fff8ef;color:var(--coffee);font:inherit;font-weight:800;padding:5px 9px;cursor:pointer}
+.copy-command.copied{background:var(--coffee);color:#fff8ef}
+.copy-status{position:fixed;right:14px;bottom:14px;z-index:5;max-width:min(320px,calc(100% - 28px));border:1px solid var(--line);border-radius:8px;background:#fffdf8;color:#4e2f1f;padding:10px 12px;box-shadow:0 12px 30px rgba(64,39,24,.16);font-weight:800;opacity:0;transform:translateY(8px);transition:opacity .16s ease,transform .16s ease;pointer-events:none}
+.copy-status.show{opacity:1;transform:translateY(0)}
 .target{margin-top:10px;border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
 .policy{margin-top:14px;background:#f4eadb}
 .policy ul{margin:8px 0 0;padding-left:20px;color:#5f4735}
@@ -78,7 +87,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
 .remaining-card h2{font-size:18px}
 .remaining-card code{margin-top:8px}
 @media(max-width:1040px){.remaining-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:840px){.hero,.metrics,.step-card,.moshimo-guide,.url-rule-grid,.flow-grid,.remaining-grid{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.step-art{width:100%;max-width:220px}}
+@media(max-width:840px){.hero,.metrics,.step-card,.moshimo-guide,.url-rule-grid,.flow-grid,.remaining-grid,.command-box{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button,.copy-command{width:100%}.step-art{width:100%;max-width:220px}}
 </style>
 </head>
 <body>
@@ -119,37 +128,37 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
           <span class="label">待ち</span>
           <h2>もしも承認</h2>
           <p>Amazonまたは楽天の提携承認がpendingです。ここが今の最優先です。</p>
-          <code>.\catbot_moshimo_status.bat -OpenWorkbench</code>
+          <div class="command-box"><code>.\catbot_moshimo_status.bat -OpenWorkbench</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -OpenWorkbench" aria-label="コマンドをコピー">コピー</button></div>
         </article>
         <article class="remaining-card wait">
           <span class="label">待ち</span>
           <h2>最初の追跡URL</h2>
           <p>toys/p2 電動猫じゃらし のもしも追跡URLを1本だけ入れます。</p>
-          <code>.\catbot_moshimo_status.bat -OpenWorkbench</code>
+          <div class="command-box"><code>.\catbot_moshimo_status.bat -OpenWorkbench</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -OpenWorkbench" aria-label="コマンドをコピー">コピー</button></div>
         </article>
         <article class="remaining-card wait">
           <span class="label">育成中</span>
           <h2>1000フォロワー</h2>
           <p>現在 578/1000 人。残り 422 人です。</p>
-          <code>.\catbot_ops_health.bat -Json</code>
+          <div class="command-box"><code>.\catbot_ops_health.bat -Json</code><button class="copy-command" type="button" data-copy-command=".\catbot_ops_health.bat -Json" aria-label="コマンドをコピー">コピー</button></div>
         </article>
         <article class="remaining-card wait">
           <span class="label">待ち</span>
           <h2>X安全クールダウン</h2>
           <p>2026-06-28T12:34:42+09:00 まではX投稿文は参考用です。コピー投稿はガード解除後にします。</p>
-          <code>.\affiliate_site_ops.bat shop-post-guard --json</code>
+          <div class="command-box"><code>.\affiliate_site_ops.bat shop-post-guard --json</code><button class="copy-command" type="button" data-copy-command=".\affiliate_site_ops.bat shop-post-guard --json" aria-label="コマンドをコピー">コピー</button></div>
         </article>
         <article class="remaining-card wait">
           <span class="label">予定</span>
           <h2>X回復モード</h2>
           <p>2026-06-29T00:34:42+09:00 までは解除直後の慣らし運転です。投稿残り 1、tweet送信残り 2。リプ・引用・フォローは初期値0で止めます。</p>
-          <code>.\catbot_site_warmup_ready.bat -Json</code>
+          <div class="command-box"><code>.\catbot_site_warmup_ready.bat -Json</code><button class="copy-command" type="button" data-copy-command=".\catbot_site_warmup_ready.bat -Json" aria-label="コマンドをコピー">コピー</button></div>
         </article>
         <article class="remaining-card done">
           <span class="label">OK</span>
           <h2>公開サイト</h2>
           <p>公開URLと自動更新は使えます。</p>
-          <code>.\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code>
+          <div class="command-box"><code>.\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code><button class="copy-command" type="button" data-copy-command=".\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;" aria-label="コマンドをコピー">コピー</button></div>
         </article></div>
   </section>
   <section class="policy">
@@ -191,9 +200,9 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
   <section class="policy" aria-label="迷った時の3コマンド">
     <span class="label">迷った時はこれだけ</span>
     <div class="flow-grid">
-      <article class="flow-card"><h2>1. 作業台を開く</h2><code>.\catbot_moshimo_status.bat -OpenWorkbench</code></article>
-      <article class="flow-card"><h2>2. 保存前確認</h2><code>.\catbot_first_link_finish.bat</code></article>
-      <article class="flow-card"><h2>3. 反映して公開</h2><code>.\catbot_first_link_live_finish.bat -Apply -Publish</code></article>
+      <article class="flow-card"><h2>1. 作業台を開く</h2><div class="command-box"><code>.\catbot_moshimo_status.bat -OpenWorkbench</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -OpenWorkbench" aria-label="コマンドをコピー">コピー</button></div></article>
+      <article class="flow-card"><h2>2. 保存前確認</h2><div class="command-box"><code>.\catbot_first_link_finish.bat</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_finish.bat" aria-label="コマンドをコピー">コピー</button></div></article>
+      <article class="flow-card"><h2>3. 反映して公開</h2><div class="command-box"><code>.\catbot_first_link_live_finish.bat -Apply -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_live_finish.bat -Apply -Publish" aria-label="コマンドをコピー">コピー</button></div></article>
       <article class="flow-card"><h2>対象</h2><p>Amazonまたは楽天の提携承認を確認する</p></article>
     </div>
   </section>
@@ -204,8 +213,8 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     <p>pendingのままURL作成へ進むと、通常の商品URLや検索URLを保存しやすいためです。</p>
     <div class="flow-grid">
       <article class="flow-card"><h2>状態</h2><p>有効</p></article>
-      <article class="flow-card"><h2>止めるコマンド</h2><code>.\catbot_first_link_live_finish.bat -Open</code></article>
-      <article class="flow-card"><h2>次にやるコマンド</h2><code>.\catbot_moshimo_status.bat -OpenWorkbench</code></article>
+      <article class="flow-card"><h2>止めるコマンド</h2><div class="command-box"><code>.\catbot_first_link_live_finish.bat -Open</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_live_finish.bat -Open" aria-label="コマンドをコピー">コピー</button></div></article>
+      <article class="flow-card"><h2>次にやるコマンド</h2><div class="command-box"><code>.\catbot_moshimo_status.bat -OpenWorkbench</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -OpenWorkbench" aria-label="コマンドをコピー">コピー</button></div></article>
       <article class="flow-card"><h2>判定ID</h2><code>moshimo_first_link_gate</code></article>
     </div>
   </section>
@@ -217,7 +226,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
             <h2>もしも承認を確認する</h2>
             <p>Amazonまたは楽天がapprovedになってから追跡URLを作ります。pendingのままURL作成へ進まないようにします。</p>
             
-            <dl><div><dt>実行</dt><dd><code>.\catbot_moshimo_status.bat -OpenWorkbench</code></dd></div><div><dt>Amazon承認を反映</dt><dd><code>.\catbot_moshimo_status.bat -Amazon approved -Sync -Publish</code></dd></div><div><dt>楽天承認を反映</dt><dd><code>.\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish</code></dd></div><div><dt>両方承認を反映</dt><dd><code>.\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish</code></dd></div><div><dt>次に開く</dt><dd><code>.\catbot_next_action.bat -Open</code></dd></div></dl>
+            <dl><div><dt>実行</dt><dd><div class="command-box"><code>.\catbot_moshimo_status.bat -OpenWorkbench</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -OpenWorkbench" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>Amazon承認を反映</dt><dd><div class="command-box"><code>.\catbot_moshimo_status.bat -Amazon approved -Sync -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -Amazon approved -Sync -Publish" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>楽天承認を反映</dt><dd><div class="command-box"><code>.\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>両方承認を反映</dt><dd><div class="command-box"><code>.\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>次に開く</dt><dd><div class="command-box"><code>.\catbot_next_action.bat -Open</code><button class="copy-command" type="button" data-copy-command=".\catbot_next_action.bat -Open" aria-label="コマンドをコピー">コピー</button></div></dd></div></dl>
           </div>
         </article>
 
@@ -234,7 +243,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
               <a class="button light" href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97" target="_blank" rel="noopener noreferrer">検索候補を開く</a>
               <div class="actions"><a class="button light" href="https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97" target="_blank" rel="noopener noreferrer">Amazon検索を開く</a><a class="button light" href="https://www.rakuten.co.jp/search/mall/%E7%8C%AB%20%E9%9B%BB%E5%8B%95%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97/" target="_blank" rel="noopener noreferrer">楽天検索を開く</a></div>
             </div>
-            <dl><div><dt>一括ガイド</dt><dd><code>.\catbot_first_link_live_finish.bat -Open</code></dd></div><div><dt>コピーURL確認</dt><dd><code>.\catbot_check_clipboard_link.bat</code></dd></div><div><dt>保存前確認</dt><dd><code>.\catbot_first_link_finish.bat</code></dd></div><div><dt>反映</dt><dd><code>.\catbot_first_link_finish.bat -Apply -Publish</code></dd></div><div><dt>一括反映</dt><dd><code>.\catbot_first_link_live_finish.bat -Apply -Publish</code></dd></div></dl>
+            <dl><div><dt>一括ガイド</dt><dd><div class="command-box"><code>.\catbot_first_link_live_finish.bat -Open</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_live_finish.bat -Open" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>コピーURL確認</dt><dd><div class="command-box"><code>.\catbot_check_clipboard_link.bat</code><button class="copy-command" type="button" data-copy-command=".\catbot_check_clipboard_link.bat" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>保存前確認</dt><dd><div class="command-box"><code>.\catbot_first_link_finish.bat</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_finish.bat" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>反映</dt><dd><div class="command-box"><code>.\catbot_first_link_finish.bat -Apply -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_finish.bat -Apply -Publish" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>一括反映</dt><dd><div class="command-box"><code>.\catbot_first_link_live_finish.bat -Apply -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_live_finish.bat -Apply -Publish" aria-label="コマンドをコピー">コピー</button></div></dd></div></dl>
           </div>
         </article>
 
@@ -245,7 +254,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
             <h2>公開URLを確認する</h2>
             <p>GitHub Pagesの公開URLが登録済みか確認します。ここはすでにOKなら触らなくて大丈夫です。</p>
             
-            <dl><div><dt>実行</dt><dd><code>.\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code></dd></div><div><dt>プレビュー</dt><dd><code>.\affiliate_site_ops.bat preview-check --build</code></dd></div></dl>
+            <dl><div><dt>実行</dt><dd><div class="command-box"><code>.\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code><button class="copy-command" type="button" data-copy-command=".\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>プレビュー</dt><dd><div class="command-box"><code>.\affiliate_site_ops.bat preview-check --build</code><button class="copy-command" type="button" data-copy-command=".\affiliate_site_ops.bat preview-check --build" aria-label="コマンドをコピー">コピー</button></div></dd></div></dl>
           </div>
         </article>
 
@@ -256,7 +265,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
             <h2>dry-runしてから反映する</h2>
             <p>受け箱に保存した追跡URLをdry-runで確認し、対象商品とプロバイダが正しければ公開まで反映します。</p>
             
-            <dl><div><dt>保存前確認</dt><dd><code>.\catbot_first_link_finish.bat</code></dd></div><div><dt>反映</dt><dd><code>.\catbot_first_link_finish.bat -Apply -Publish</code></dd></div><div><dt>一括反映</dt><dd><code>.\catbot_first_link_live_finish.bat -Apply -Publish</code></dd></div><div><dt>健康チェック</dt><dd><code>.\catbot_ops_health.bat</code></dd></div></dl>
+            <dl><div><dt>保存前確認</dt><dd><div class="command-box"><code>.\catbot_first_link_finish.bat</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_finish.bat" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>反映</dt><dd><div class="command-box"><code>.\catbot_first_link_finish.bat -Apply -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_finish.bat -Apply -Publish" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>一括反映</dt><dd><div class="command-box"><code>.\catbot_first_link_live_finish.bat -Apply -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_first_link_live_finish.bat -Apply -Publish" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>健康チェック</dt><dd><div class="command-box"><code>.\catbot_ops_health.bat</code><button class="copy-command" type="button" data-copy-command=".\catbot_ops_health.bat" aria-label="コマンドをコピー">コピー</button></div></dd></div></dl>
           </div>
         </article>
 
@@ -267,7 +276,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
             <h2>13/13を確認してX導線へ進む</h2>
             <p>launch gateが13/13になったら、Xプロフィールと投稿ガードを見て告知可否を判断します。</p>
             
-            <dl><div><dt>実行</dt><dd><code>.\catbot_auto_pipeline.bat</code></dd></div><div><dt>投稿前確認</dt><dd><code>.\catbot_shop_post_ready.bat</code></dd></div></dl>
+            <dl><div><dt>実行</dt><dd><div class="command-box"><code>.\catbot_auto_pipeline.bat</code><button class="copy-command" type="button" data-copy-command=".\catbot_auto_pipeline.bat" aria-label="コマンドをコピー">コピー</button></div></dd></div><div><dt>投稿前確認</dt><dd><div class="command-box"><code>.\catbot_shop_post_ready.bat</code><button class="copy-command" type="button" data-copy-command=".\catbot_shop_post_ready.bat" aria-label="コマンドをコピー">コピー</button></div></dd></div></dl>
           </div>
         </article></section>
   <section class="policy">
@@ -283,5 +292,49 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     </div>
   </section>
 </main>
+<div class="copy-status" id="ownerNextCopyStatus" aria-live="polite"></div>
+<script>
+const ownerNextCopyStatus = document.getElementById("ownerNextCopyStatus");
+function showOwnerNextCopyStatus(message) {
+  if (!ownerNextCopyStatus) return;
+  ownerNextCopyStatus.textContent = message;
+  ownerNextCopyStatus.classList.add("show");
+  window.clearTimeout(showOwnerNextCopyStatus.timer);
+  showOwnerNextCopyStatus.timer = window.setTimeout(() => ownerNextCopyStatus.classList.remove("show"), 1800);
+}
+async function copyOwnerNextCommand(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+  const area = document.createElement("textarea");
+  area.value = text;
+  area.setAttribute("readonly", "");
+  area.style.position = "fixed";
+  area.style.opacity = "0";
+  document.body.appendChild(area);
+  area.select();
+  document.execCommand("copy");
+  area.remove();
+}
+document.querySelectorAll("[data-copy-command]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const command = button.getAttribute("data-copy-command") || "";
+    if (!command) return;
+    try {
+      await copyOwnerNextCommand(command);
+      button.classList.add("copied");
+      button.textContent = "コピー済み";
+      showOwnerNextCopyStatus("コピーしました");
+      window.setTimeout(() => {
+        button.classList.remove("copied");
+        button.textContent = "コピー";
+      }, 1600);
+    } catch (error) {
+      showOwnerNextCopyStatus("コピーできませんでした");
+    }
+  });
+});
+</script>
 </body>
 </html>
