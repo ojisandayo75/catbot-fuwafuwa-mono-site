@@ -101,6 +101,15 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .visitor-state strong{display:block;margin-top:4px;font-size:22px;line-height:1.25;color:#2f1e14;overflow-wrap:anywhere}
 .visitor-state .badges{margin-top:0;align-content:start}
 .visitor-state .badges span{background:#fffdf8;border-color:#d8bea4}
+.quick-paths{margin-top:14px;border:1px solid #d8bea4;border-radius:8px;background:#fffaf2;padding:14px}
+.quick-path-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.quick-path-head p{max-width:640px}
+.quick-path-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.quick-path-card{display:grid;grid-template-rows:auto auto auto 1fr;gap:6px;min-height:210px;border:1px solid #e4c8aa;border-radius:8px;background:#fffdf8;padding:10px;text-decoration:none}
+.quick-path-card img{width:100%;aspect-ratio:1.08;object-fit:cover;border-radius:8px;border:1px solid #e7d1b8;background:#f4eadb}
+.quick-path-card span{display:inline-flex;width:max-content;max-width:100%;min-height:23px;align-items:center;padding:2px 7px;border-radius:8px;background:#f4eadb;color:#65462f;font-size:12px;font-weight:900}
+.quick-path-card strong{font-size:17px;line-height:1.25;overflow-wrap:anywhere}
+.quick-path-card p{font-size:13px;line-height:1.55}
 .last-quiz{display:none;grid-template-columns:minmax(0,1fr) minmax(220px,.42fr);gap:12px;margin-top:14px;border:1px solid #caa982;border-radius:8px;background:#fff7ec;padding:14px}
 .last-quiz.is-visible{display:grid}
 .last-quiz strong{display:block;margin-top:4px;font-size:22px;line-height:1.25;color:#2f1e14;overflow-wrap:anywhere}
@@ -124,7 +133,8 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .update-stats b{display:block;font-size:20px;line-height:1.2;color:#3f281b;overflow-wrap:anywhere}
 .update-stats small{display:block;color:#6b5544;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.growth-meter,.growth-side,.growth-stats,.auto-update-panel,.update-stats{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.growth-meter,.growth-side,.growth-stats,.auto-update-panel,.update-stats{grid-template-columns:1fr}.quick-path-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.button{width:100%}.menu-card,.quick-path-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}}
+@media(max-width:520px){.quick-path-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -157,6 +167,44 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <p>今は、猫に合うか・合わない条件・やめるサインを先に見られる準備ページです。もしも承認と実リンク確認が終わるまで、販売リンクより買う前チェックを優先します。</p>
     </div>
     <div class="badges"><span>商品直リンクなし</span><span>買う前チェック優先</span><span>578/1000フォロワー</span><span>もしも承認待ち</span></div>
+  </section>
+
+  <section class="quick-paths" aria-label="すぐ選ぶ入口">
+    <div class="quick-path-head">
+      <div>
+        <span class="pill">すぐ選ぶ</span>
+        <h2>リンク集ではなく、猫の状態から入る</h2>
+      </div>
+      <p>Xから来た人が迷わないように、診断、困りごと、買う前チェック、今日の候補へすぐ進める入口です。</p>
+    </div>
+    <div class="quick-path-grid">
+        <a class="quick-path-card" href="../quiz/">
+          <img src="../assets/ai_shortcut_match.webp" alt="" loading="lazy">
+          <span>うちの子から</span>
+          <strong>性格と困りごとで選ぶ</strong>
+          <p>初めて来た人は、商品名より先に猫のタイプから入口を選びます。</p>
+        </a>
+
+        <a class="quick-path-card" href="../needs/">
+          <img src="../assets/ai_nav_icon_sheet_v2.webp" alt="" loading="lazy">
+          <span>困りごとから</span>
+          <strong>水・遊び・爪とぎで探す</strong>
+          <p>いま困っていることに近いページへ進み、合わない条件も一緒に見ます。</p>
+        </a>
+
+        <a class="quick-path-card" href="../buying-check/">
+          <img src="../assets/ai_shortcut_advisor.webp" alt="" loading="lazy">
+          <span>買う前に</span>
+          <strong>失敗しやすい条件を見る</strong>
+          <p>音、サイズ、置き場所、誤飲、使いすぎを先に確認します。</p>
+        </a>
+
+        <a class="quick-path-card" href="../first-target/">
+          <img src="../assets/ai_product_toys_p2.webp" alt="" loading="lazy">
+          <span>今日の候補</span>
+          <strong>電動猫じゃらし</strong>
+          <p>catbotで反応が強い候補を、猫優先の注意つきで見ます。</p>
+        </a></div>
   </section>
 
   <section class="last-quiz" id="lastQuizPanel" aria-label="前回のうちの子診断" hidden>
@@ -204,7 +252,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <div class="badges"><span>同期済み</span><span>投稿 10</span><span>動画 12</span><span>商品 9</span></div>
     </div>
     <div class="update-stats">
-      <div><small>最終更新</small><b>2026-06-27T21:00:28</b><p>公開データに反映済み</p></div>
+      <div><small>最終更新</small><b>2026-06-27T22:24:03</b><p>公開データに反映済み</p></div>
       <div><small>次回目安</small><b>定期更新</b><p>定期更新</p></div>
       <div><small>投稿ログ</small><b>10</b><p>catbot反応の入口</p></div>
       <div><small>動画/商品</small><b>12/9</b><p>猫用品候補へ変換</p></div>

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T21:00:28",
-  "exported_at": "2026-06-27T21:00:28",
+  "generated_at": "2026-06-27T22:24:03",
+  "exported_at": "2026-06-27T22:24:03",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -50,7 +50,7 @@
     "title": "自動更新メモ",
     "body": "catbotの投稿ログ、動画素材、商品候補を見て、猫に合う入口と今日の候補を更新します。",
     "synced": true,
-    "last_exported_at": "2026-06-27T21:00:28",
+    "last_exported_at": "2026-06-27T22:24:03",
     "next_run_time": "定期更新",
     "interval": "定期更新",
     "source_counts": {
@@ -364,6 +364,38 @@
       "title": "広告と選定方針",
       "href": "policy/",
       "image": "assets/ai_brand_mark.webp"
+    }
+  ],
+  "quick_paths_title": "すぐ選ぶ",
+  "quick_paths_body": "Xから来た人が迷わないように、診断、困りごと、買う前チェック、今日の候補へすぐ進める入口です。",
+  "quick_paths": [
+    {
+      "label": "うちの子から",
+      "title": "性格と困りごとで選ぶ",
+      "body": "初めて来た人は、商品名より先に猫のタイプから入口を選びます。",
+      "href": "quiz/",
+      "image": "assets/ai_shortcut_match.webp"
+    },
+    {
+      "label": "困りごとから",
+      "title": "水・遊び・爪とぎで探す",
+      "body": "いま困っていることに近いページへ進み、合わない条件も一緒に見ます。",
+      "href": "needs/",
+      "image": "assets/ai_nav_icon_sheet_v2.webp"
+    },
+    {
+      "label": "買う前に",
+      "title": "失敗しやすい条件を見る",
+      "body": "音、サイズ、置き場所、誤飲、使いすぎを先に確認します。",
+      "href": "buying-check/",
+      "image": "assets/ai_shortcut_advisor.webp"
+    },
+    {
+      "label": "今日の候補",
+      "title": "電動猫じゃらし",
+      "body": "catbotで反応が強い候補を、猫優先の注意つきで見ます。",
+      "href": "first-target/",
+      "image": "assets/ai_product_toys_p2.webp"
     }
   ],
   "journey_visual": {
