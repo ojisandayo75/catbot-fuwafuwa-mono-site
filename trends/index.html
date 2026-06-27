@@ -61,7 +61,17 @@ ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:7px}
 li{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:9px}
 li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
 .products{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:12px}
-@media(max-width:860px){.hero .wrap{min-height:390px}.stats,.trend-card,.products{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.trend-art{min-height:150px}}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;flex-wrap:wrap;margin:22px 0 10px}
+.section-head p{max-width:720px}
+.product-signal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.product-signal-card{border:1px solid #caa982;border-radius:8px;background:#fff6e8;padding:14px}
+.product-signal-head{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+.product-signal-head strong{color:#5a3522}
+.signal-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;color:#6a5646;font-size:13px}
+.signal-sources{margin-top:10px}
+.signal-source span{display:block;color:#6a5646;font-size:12px;font-weight:800}
+.signal-source strong{display:block;color:#25170f}
+@media(max-width:860px){.hero .wrap{min-height:390px}.stats,.trend-card,.products,.product-signal-grid{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.trend-art{min-height:150px}}
 </style>
 </head>
 <body>
@@ -92,6 +102,78 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
     <h2>反応が強いほど、買わない条件を先に見る</h2>
     <p>catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。</p>
     <ul><li>伸びたテーマは、売る理由ではなく猫の困りごとを見つける入口にする。</li><li>反応が強くても、合わない条件とやめるサインを先に表示する。</li><li>Xでは商品直リンクを急がず、サイト内の確認ページへ送る。</li></ul>
+  </section>
+  <section id="product-signals" aria-label="反応から商品候補">
+    <div class="section-head">
+      <div>
+        <span class="label">反応から商品候補</span>
+        <h2>伸びた反応を、猫に合うかの確認へつなげる</h2>
+        <p>catbotで反応が出たテーマをそのまま売り込まず、商品ページ・買う前チェック・やめる条件へ分けて見ます。</p>
+      </div>
+      <a class="button light" href="../buying-check/">買う前チェック</a>
+    </div>
+    <div class="product-signal-grid">
+        <article class="product-signal-card" data-product-signal="toys/p2">
+          <div class="product-signal-head">
+            <span class="label">次に整える候補</span>
+            <strong>3 signals</strong>
+          </div>
+          <h2>電動猫じゃらし</h2>
+          <p>catbotで伸びた反応を、買う前チェックと猫に合うかの確認へつなげます。</p>
+          <div class="signal-meta"><span>根拠: category / post / video</span></div>
+          <ul class="signal-sources">
+          <li class="signal-source">
+            <span>反応が強いテーマ</span>
+            <strong>score 32</strong>
+            <p>遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。</p>
+          </li>
+          <li class="signal-source">
+            <span>伸びた投稿の空気</span>
+            <strong>156,918 views / 1,224 likes</strong>
+            <p>読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。</p>
+          </li>
+          <li class="signal-source">
+            <span>素材動画の傾向</span>
+            <strong>176,040,708 plays</strong>
+            <p>動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。</p>
+          </li></ul>
+          <div class="actions">
+            <a class="button" href="../products/toys/p2/">商品ページを見る</a>
+            <a class="button light" href="#toys">反応カードを見る</a>
+            <a class="button light" href="../buying-check/">買う前チェック</a>
+          </div>
+        </article>
+
+        <article class="product-signal-card" data-product-signal="toys/p1">
+          <div class="product-signal-head">
+            <span class="label">関連候補</span>
+            <strong>3 signals</strong>
+          </div>
+          <h2>けりぐるみ</h2>
+          <p>catbotで伸びた反応を、買う前チェックと猫に合うかの確認へつなげます。</p>
+          <div class="signal-meta"><span>根拠: category / post / video</span></div>
+          <ul class="signal-sources">
+          <li class="signal-source">
+            <span>反応が強いテーマ</span>
+            <strong>score 32</strong>
+            <p>遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。</p>
+          </li>
+          <li class="signal-source">
+            <span>伸びた投稿の空気</span>
+            <strong>156,918 views / 1,224 likes</strong>
+            <p>読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。</p>
+          </li>
+          <li class="signal-source">
+            <span>素材動画の傾向</span>
+            <strong>176,040,708 plays</strong>
+            <p>動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。</p>
+          </li></ul>
+          <div class="actions">
+            <a class="button" href="../products/toys/p1/">商品ページを見る</a>
+            <a class="button light" href="#toys">反応カードを見る</a>
+            <a class="button light" href="../buying-check/">買う前チェック</a>
+          </div>
+        </article></div>
   </section>
   <section id="cards" class="trend-list" aria-label="catbot反応カード">
     
