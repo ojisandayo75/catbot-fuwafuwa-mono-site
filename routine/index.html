@@ -63,6 +63,9 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
 .progress-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;margin-top:14px;background:#fff3df;border-color:#caa982}
 .progress-number{display:inline-flex;min-width:86px;min-height:48px;align-items:center;justify-content:center;border-radius:8px;background:#5a3522;color:#fff8ef;font-size:20px;font-weight:900}
 .saved-at{font-size:13px;color:#6a5646;margin-top:3px}
+.memo-copy{margin-top:14px;background:#fffaf2}
+.memo-copy textarea{width:100%;min-height:136px;margin-top:10px;border:1px solid #d8bea4;border-radius:8px;background:#fffdf8;color:#25170f;padding:10px;font:inherit;line-height:1.55;resize:vertical}
+.copy-status{font-size:13px;color:#6a5646;margin-top:6px}
 @media(max-width:900px){.grid,.product-list{grid-template-columns:1fr}.wrap{padding:15px}.hero .wrap{min-height:430px}h1{font-size:30px}.button{width:100%}}
 @media(max-width:620px){.progress-card{grid-template-columns:1fr}.progress-number{width:100%}}
 </style>
@@ -90,6 +93,13 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
       <div class="actions"><button class="button light" type="button" id="routineReset">今日のチェックをリセット</button></div>
     </div>
     <strong class="progress-number" id="routineProgress" aria-live="polite">0/0</strong>
+  </section>
+  <section class="panel memo-copy" aria-label="今日の猫メモコピー">
+    <span class="label">コピー用メモ</span>
+    <h2>今日の猫メモをコピー</h2>
+    <textarea id="routineMemoPreview" readonly></textarea>
+    <div class="actions"><button class="button" type="button" id="routineCopyMemo">メモをコピー</button><a class="button light" href="../vet-note/">病院メモへ</a></div>
+    <p class="copy-status" id="routineCopyStatus" aria-live="polite">端末内で作成</p>
   </section>
   <section id="routine" class="grid" aria-label="毎日の猫ケアルーティン">
         <article class="panel period">
@@ -349,6 +359,9 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
   const progress = document.getElementById("routineProgress");
   const savedAt = document.getElementById("routineSavedAt");
   const reset = document.getElementById("routineReset");
+  const memoPreview = document.getElementById("routineMemoPreview");
+  const copyMemo = document.getElementById("routineCopyMemo");
+  const copyStatus = document.getElementById("routineCopyStatus");
 
   const readState = () => {
     try {
@@ -359,6 +372,33 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
     }
   };
 
+  const checkedText = () => boxes
+    .filter((box) => box.checked)
+    .map((box) => {
+      const label = box.closest("label");
+      return label ? label.textContent.trim().replace(/\s+/g, " ") : "";
+    })
+    .filter(Boolean);
+
+  const buildMemo = () => {
+    const checked = checkedText();
+    const lines = [
+      `Catbot 今日の猫メモ ${today}`,
+      `完了 ${checked.length}/${boxes.length}`,
+      "",
+      "見たこと:",
+      ...(checked.length ? checked.map((text) => `- ${text}`) : ["- まだチェックなし"]),
+      "",
+      "気になる変化が続く時は、商品を足す前に相談を優先。"
+    ];
+    return lines.join("
+");
+  };
+
+  const updateMemo = () => {
+    if (memoPreview) memoPreview.value = buildMemo();
+  };
+
   const writeState = () => {
     const checked = boxes
       .filter((box) => box.checked)
@@ -366,6 +406,7 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
     const saved = new Date();
     localStorage.setItem(storageKey, JSON.stringify({ checked, savedAt: saved.toISOString() }));
     updateProgress(saved);
+    updateMemo();
   };
 
   const updateProgress = (saved = null) => {
@@ -378,6 +419,7 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
           }`
         : "今日の端末内メモ";
     }
+    updateMemo();
   };
 
   const state = readState();
@@ -393,9 +435,28 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
       });
       localStorage.removeItem(storageKey);
       updateProgress();
+      if (copyStatus) copyStatus.textContent = "リセットしました";
+    });
+  }
+  if (copyMemo) {
+    copyMemo.addEventListener("click", async () => {
+      const text = buildMemo();
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          memoPreview.focus();
+          memoPreview.select();
+          document.execCommand("copy");
+        }
+        if (copyStatus) copyStatus.textContent = "コピーしました";
+      } catch (_error) {
+        if (copyStatus) copyStatus.textContent = "コピーできませんでした";
+      }
     });
   }
   updateProgress(state.savedAt ? new Date(state.savedAt) : null);
+  updateMemo();
 })();
 </script>
 </body>
