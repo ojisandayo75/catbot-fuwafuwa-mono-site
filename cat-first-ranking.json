@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T11:57:18",
-  "exported_at": "2026-06-27T11:57:18",
+  "generated_at": "2026-06-27T12:02:01",
+  "exported_at": "2026-06-27T12:02:01",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "account": "@fuwafuwa_mono",
@@ -137,7 +137,7 @@
       "link_kind": "search",
       "link_status": "検索候補",
       "priority_rank": 8,
-      "priority_score": 35,
+      "priority_score": 43,
       "price_band": "低",
       "rank": 3
     },
@@ -229,7 +229,7 @@
       "link_kind": "search",
       "link_status": "検索候補",
       "priority_rank": 7,
-      "priority_score": 39,
+      "priority_score": 47,
       "price_band": "中",
       "rank": 5
     },

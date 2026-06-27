@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T11:57:18",
-  "exported_at": "2026-06-27T11:57:18",
+  "generated_at": "2026-06-27T12:02:01",
+  "exported_at": "2026-06-27T12:02:01",
   "state": "trends_signal_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -86,7 +86,7 @@
       "title": "素材動画の傾向",
       "label": "#cat #catsoftiktok",
       "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
-      "metric": "176,039,702 plays",
+      "metric": "176,040,708 plays",
       "category_id": "toys",
       "category": "遊び",
       "guide_url": "guides/toys/",

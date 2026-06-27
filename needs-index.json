@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T11:57:18",
-  "exported_at": "2026-06-27T11:57:18",
+  "generated_at": "2026-06-27T12:02:01",
+  "exported_at": "2026-06-27T12:02:01",
   "state": "needs_index_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -191,7 +191,7 @@
       "buying_check_url": "buying-check/#treats-p1",
       "seasonal": false,
       "next_target": false,
-      "score": 39,
+      "score": 47,
       "quick_checks": [
         "年齢、体調、総合栄養食か一般食かを確認。",
         "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。",
@@ -214,7 +214,7 @@
           "first_try": "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。",
           "stop_signal": "",
           "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
-          "score": 35
+          "score": 43
         },
         {
           "id": "p2",
@@ -228,7 +228,7 @@
           "first_try": "初日は少量だけ。数日は便、吐き戻し、かゆがる様子を確認します。",
           "stop_signal": "",
           "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
-          "score": 39
+          "score": 47
         }
       ]
     },
