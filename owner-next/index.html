@@ -163,6 +163,28 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
   </section>
   <section class="policy">
     <span class="label">もしもでやること</span>
+    <h2>承認状態に合うコマンドだけ使います。</h2>
+    <div class="moshimo-guide">
+        <article class="todo-card" data-approval-command="check">
+          <h2>まだ確認していない</h2>
+          <p>もしもの作業台を開き、Amazonと楽天の提携状態を見ます。</p>
+          <div class="command-box"><code>.\catbot_moshimo_status.bat -OpenWorkbench</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -OpenWorkbench" aria-label="コマンドをコピー">コピー</button></div>
+        </article>
+        <article class="todo-card" data-approval-command="amazon_only">
+          <h2>Amazonだけapproved</h2>
+          <p>Amazonだけ承認済み、楽天はpendingの時だけ使います。</p>
+          <div class="command-box"><code>.\catbot_moshimo_status.bat -Amazon approved -Sync -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -Amazon approved -Sync -Publish" aria-label="コマンドをコピー">コピー</button></div>
+        </article>
+        <article class="todo-card" data-approval-command="rakuten_only">
+          <h2>楽天だけapproved</h2>
+          <p>楽天だけ承認済み、Amazonはpendingの時だけ使います。</p>
+          <div class="command-box"><code>.\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish" aria-label="コマンドをコピー">コピー</button></div>
+        </article>
+        <article class="todo-card" data-approval-command="both">
+          <h2>両方approved</h2>
+          <p>Amazonと楽天の両方が承認済みの時だけ使います。</p>
+          <div class="command-box"><code>.\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish</code><button class="copy-command" type="button" data-copy-command=".\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish" aria-label="コマンドをコピー">コピー</button></div>
+        </article></div>
     <div class="moshimo-guide">
         <article class="todo-card">
           <h2>承認を確認</h2>
@@ -170,7 +192,7 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
         </article>
         <article class="todo-card">
           <h2>状態を更新</h2>
-          <p>Amazonだけ承認済みなら .\catbot_moshimo_status.bat -Amazon approved -Sync -Publish、楽天だけなら .\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish を実行します。</p>
+          <p>Amazonだけ承認済みなら .\catbot_moshimo_status.bat -Amazon approved -Sync -Publish、楽天だけなら .\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish、両方承認済みなら .\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish を実行します。</p>
         </article>
         <article class="todo-card">
           <h2>承認後に探す商品</h2>

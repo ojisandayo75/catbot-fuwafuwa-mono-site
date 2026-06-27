@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T00:19:49",
-  "exported_at": "2026-06-28T00:19:49",
+  "generated_at": "2026-06-28T00:44:38",
+  "exported_at": "2026-06-28T00:44:38",
   "state": "needs_moshimo_approval",
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
@@ -134,7 +134,33 @@
       "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
       "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
       "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
-    }
+    },
+    "approval_command_cards": [
+      {
+        "id": "check",
+        "title": "まだ確認していない",
+        "detail": "もしもの作業台を開き、Amazonと楽天の提携状態を見ます。",
+        "command": ".\\catbot_moshimo_status.bat -OpenWorkbench"
+      },
+      {
+        "id": "amazon_only",
+        "title": "Amazonだけapproved",
+        "detail": "Amazonだけ承認済み、楽天はpendingの時だけ使います。",
+        "command": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish"
+      },
+      {
+        "id": "rakuten_only",
+        "title": "楽天だけapproved",
+        "detail": "楽天だけ承認済み、Amazonはpendingの時だけ使います。",
+        "command": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish"
+      },
+      {
+        "id": "both",
+        "title": "両方approved",
+        "detail": "Amazonと楽天の両方が承認済みの時だけ使います。",
+        "command": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+      }
+    ]
   },
   "blockers": [
     "もしも提携承認"
@@ -211,7 +237,7 @@
     },
     {
       "title": "状態を更新",
-      "body": "Amazonだけ承認済みなら .\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish、楽天だけなら .\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish を実行します。"
+      "body": "Amazonだけ承認済みなら .\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish、楽天だけなら .\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish、両方承認済みなら .\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish を実行します。"
     },
     {
       "title": "承認後に探す商品",
