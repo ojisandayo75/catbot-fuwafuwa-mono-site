@@ -24,8 +24,26 @@
     "max_daily_gain": 133,
     "state": "growing"
   },
-  "generated_at": "2026-06-28T05:38:48",
-  "exported_at": "2026-06-28T05:38:48",
+  "moshimo": {
+    "amazon_status": "pending",
+    "rakuten_status": "pending",
+    "ready_for_first_link": false,
+    "approval_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_check_interval_hours": 12,
+    "approval_last_check_at": "2026-06-28T04:54:29",
+    "approval_next_check_at": "2026-06-28T16:54:29",
+    "approval_next_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_check_due": false,
+    "approval_check_note": "pendingの間は何度も確認しすぎず、次回確認時刻か承認メールが来た時だけ見ます。",
+    "approval_update_commands": {
+      "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
+      "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
+      "both": ".\\catbot_moshimo_status.bat -Amazon approved -Rakuten approved -Sync -Publish"
+    }
+  },
+  "moshimo_ready_for_first_link": false,
+  "generated_at": "2026-06-28T05:46:59",
+  "exported_at": "2026-06-28T05:46:59",
   "next_link": {
     "category_id": "toys",
     "category": "遊び",
@@ -292,8 +310,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-28T05:38:48",
-    "exported_at": "2026-06-28T05:38:48",
+    "generated_at": "2026-06-28T05:46:59",
+    "exported_at": "2026-06-28T05:46:59",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -407,9 +425,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-28T05:38:53",
+    "checked_at": "2026-06-28T05:47:04",
     "synced": true,
-    "last_exported_at": "2026-06-28T05:38:51",
+    "last_exported_at": "2026-06-28T05:47:02",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -419,10 +437,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-28T05:30:25",
+        "deployed_at": "2026-06-28T05:45:31",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 191,
-        "total_bytes": 37468408
+        "total_bytes": 37469365
       }
     },
     "scheduled_task": {
