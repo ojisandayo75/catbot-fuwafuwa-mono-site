@@ -74,7 +74,7 @@
       "description": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
       "inLanguage": "ja",
       "mainEntityOfPage": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p1/",
-      "dateModified": "2026-06-27T13:50:52",
+      "dateModified": "2026-06-27T13:59:53",
       "author": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
@@ -201,6 +201,13 @@ h2{font-size:22px;line-height:1.25;margin:0 0 10px;letter-spacing:0}
 .consult{background:#f4eadb;color:#5f4735}
 .policy{background:#f4eadb;color:#5f4735;font-size:13px}
 @media (max-width:800px){.hero .wrap,.grid,.facts,.fit-grid,.fit-check-list{grid-template-columns:1fr}h1{font-size:31px}.bar-inner{align-items:flex-start;flex-direction:column}.button{width:100%}.nav a{width:auto}}
+
+.product-quiz-memo{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:14px;align-items:start;background:#fffaf2;border-color:#c7a47f}
+.product-quiz-memo textarea{width:100%;min-height:170px;resize:vertical;border:1px solid #dccab5;border-radius:8px;background:#fffdf8;color:#25170f;padding:11px;font:inherit;line-height:1.55}
+.product-quiz-memo .memo-status{min-height:24px;color:#5f7f67;font-weight:800;margin-top:8px}
+button.button{cursor:pointer;font:inherit}
+@media (max-width:800px){.product-quiz-memo{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -290,6 +297,21 @@ h2{font-size:22px;line-height:1.25;margin:0 0 10px;letter-spacing:0}
     </div>
     <div class="tags"><span>水皿も残す</span><span>掃除必須</span><span>音を確認</span></div>
   </section>
+
+  <section class="card product-quiz-memo" aria-label="うちの子メモ">
+    <div>
+      <h2>うちの子メモを見ながら選ぶ</h2>
+      <p>うちの子診断で保存したメモを読み込みます。商品を見る前に、選んだタイプ・買わない判断・最初の試し方を見返せます。</p>
+      <div class="actions">
+        <button class="button search" type="button" id="productCopyQuizMemo">うちの子メモをコピー</button>
+        <a class="button search" href="../../../quiz/">うちの子診断へ</a>
+        <a class="button search" href="../../../buying-check/">買う前チェックへ</a>
+        <a class="button search" href="../../../vet-note/">病院メモへ</a>
+      </div>
+      <p class="memo-status" id="productQuizMemoStatus" aria-live="polite"></p>
+    </div>
+    <textarea id="productQuizMemoText" readonly></textarea>
+  </section>
   <section class="card fit-check" data-fit-check>
     <h2>30秒セルフチェック</h2>
     <p>3つ確認できたら候補を見ます。迷う時は先に買う前チェックへ戻ります。</p>
@@ -335,5 +357,57 @@ document.querySelectorAll("[data-fit-check]").forEach((panel) => {
   sync();
 });
 </script>
+
+<script>
+(() => {
+  const memoArea = document.getElementById("productQuizMemoText");
+  const copyButton = document.getElementById("productCopyQuizMemo");
+  const status = document.getElementById("productQuizMemoStatus");
+  const loadQuizMemo = () => {
+    try {
+      const raw = localStorage.getItem("catbot:quiz:last");
+      if (!raw) return { memo: "", savedAt: "" };
+      const state = JSON.parse(raw);
+      return {
+        memo: String(state.memo || ""),
+        savedAt: String(state.savedAt || "")
+      };
+    } catch (_error) {
+      return { memo: "", savedAt: "" };
+    }
+  };
+  const data = loadQuizMemo();
+  if (memoArea) {
+    memoArea.value = data.memo || [
+      "Catbot うちの子メモ",
+      "まだ診断メモはありません。",
+      "先にうちの子診断でタイプを選ぶと、この商品ページで見比べられます。"
+    ].join("\n");
+  }
+  if (status) {
+    status.textContent = data.savedAt
+      ? `診断メモ保存 ${new Date(data.savedAt).toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" })}`
+      : "quiz/でうちの子診断メモを保存すると読み込めます";
+  }
+  if (copyButton) {
+    copyButton.addEventListener("click", async () => {
+      const text = memoArea ? memoArea.value : "";
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else if (memoArea) {
+          memoArea.focus();
+          memoArea.select();
+          document.execCommand("copy");
+        }
+        if (status) status.textContent = "うちの子メモをコピーしました";
+      } catch (_error) {
+        if (status) status.textContent = "コピーできませんでした";
+      }
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
