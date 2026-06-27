@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-27T12:02:01",
+  "generated_at": "2026-06-27T12:25:09",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 36,
-  "absolute_url_count": 36,
+  "route_count": 37,
+  "absolute_url_count": 37,
   "routes": [
     {
       "kind": "home",
@@ -152,6 +152,15 @@
       "lastmod": "2026-06-27",
       "changefreq": "weekly",
       "priority": 0.82
+    },
+    {
+      "kind": "vet-note",
+      "path": "vet-note/",
+      "title": "Catbot 病院に伝えるメモ",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/vet-note/",
+      "lastmod": "2026-06-27",
+      "changefreq": "weekly",
+      "priority": 0.84
     },
     {
       "kind": "cat-quiz",

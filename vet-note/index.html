@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="猫用品を買う前に、体調不安がある時の記録項目と相談時に伝える順番をまとめるページです。">
+<meta property="og:title" content="Catbot 病院に伝えるメモ">
+<meta property="og:description" content="猫用品を買う前に、体調不安がある時の記録項目と相談時に伝える順番をまとめるページです。">
+<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catbot 病院に伝えるメモ">
+<meta name="twitter:description" content="猫用品を買う前に、体調不安がある時の記録項目と相談時に伝える順番をまとめるページです。">
+<meta name="theme-color" content="#5a3522">
+<link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
+<link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
+<link rel="apple-touch-icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/vet-note/">
+<meta property="og:url" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/vet-note/">
+<meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:site" content="@fuwafuwa_mono">
+<meta name="twitter:creator" content="@fuwafuwa_mono">
+<title>Catbot 病院に伝えるメモ</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--soft:#f4eadb;--warn:#fff2dd;--sage:#edf3e5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:22px}
+.hero{position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(37,23,15,.94) 0%,rgba(55,34,22,.78) 50%,rgba(55,34,22,.18) 78%),image-set(url("../assets/ai_cat_care_scene.webp") type("image/webp"),url("../assets/ai_cat_care_scene.jpg") type("image/jpeg"));background-size:cover;background-position:center right;color:#fff8ef}
+.hero .wrap{min-height:340px;display:grid;align-items:end}
+h1{margin:8px 0;font-size:38px;line-height:1.12;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:0 0 8px;font-size:20px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}.hero p{color:#f4e6d5;max-width:700px}
+.label{display:inline-flex;align-items:center;width:max-content;max-width:100%;min-height:25px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+.hero .label{background:rgba(255,248,239,.16);color:#fff8ef;border-color:rgba(255,248,239,.46)}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.notice,.memo-card,.template-card,.source-link{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
+.notice{display:grid;gap:10px;margin-top:18px;background:var(--warn);border-color:#bd8f5e}
+.urgent-tags{display:flex;flex-wrap:wrap;gap:6px}
+.urgent-tags span{display:inline-flex;min-height:26px;align-items:center;padding:3px 8px;border:1px solid #caa982;border-radius:8px;background:#fff8ef;color:#5a3522;font-size:12px;font-weight:900}
+.memo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.memo-card ul,.template-card ul{margin:0;padding-left:20px;color:#5f4735}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:14px}
+pre{white-space:pre-wrap;overflow:auto;margin:0;padding:12px;border:1px solid var(--line);border-radius:8px;background:#fff8ef;color:#3b2417;font:14px/1.6 Consolas,"Yu Gothic UI",monospace}
+.sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.source-link{display:grid;gap:4px;text-decoration:none;color:inherit}
+.source-link strong{color:#4e2f1f}.source-link span{color:#6a5646;font-size:13px}
+@media(max-width:760px){.wrap{padding:15px}.hero .wrap{min-height:390px}h1{font-size:30px}.memo-grid,.split,.sources{grid-template-columns:1fr}.button{width:100%}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="label">商品より先に相談</span>
+      <h1>病院に伝えるメモ</h1>
+      <p>猫用品を買う前に、体調不安がある時は症状と変化を整理して相談を優先するためのメモです。</p>
+      <div class="actions">
+        <a class="button" href="#memo">メモ項目を見る</a>
+        <a class="button light" href="../consult-first/">相談を優先する時</a>
+        <a class="button light" href="../buying-check/">買う前チェック</a>
+        <a class="button light" href="../vet-note.json">vet-note.json</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="notice" aria-label="このページの方針">
+    <span class="label">診断ではありません</span>
+    <p>このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、商品選びではなく獣医師への相談を優先します。</p>
+    <div class="urgent-tags" aria-label="今すぐ相談するサイン"><span>呼吸が苦しそう</span><span>口を開けて呼吸する</span><span>尿が出ない</span><span>トイレに何度も行く</span><span>反応が弱い</span><span>倒れる</span></div>
+  </section>
+  <section id="memo" class="memo-grid" aria-label="病院に伝えるメモ項目">
+        <article class="memo-card">
+          <h2>いつから</h2>
+          <ul><li>気づいた日時</li><li>急に変わったか、少しずつ変わったか</li><li>最後にいつ普段どおりだったか</li></ul>
+        </article>
+
+        <article class="memo-card">
+          <h2>何が変わったか</h2>
+          <ul><li>食欲</li><li>水を飲む量</li><li>トイレの回数や尿の量</li><li>嘔吐・下痢</li><li>呼吸</li><li>歩き方</li><li>元気・反応</li></ul>
+        </article>
+
+        <article class="memo-card">
+          <h2>使ったもの</h2>
+          <ul><li>新しく使った猫用品</li><li>食べたものやおやつ</li><li>壊れた部品・飲み込みそうなもの</li><li>気になっていた商品: 電動猫じゃらし</li></ul>
+        </article>
+
+        <article class="memo-card">
+          <h2>今の対応</h2>
+          <ul><li>使っていた用品を止めたか</li><li>水や食事は取れているか</li><li>写真・動画で様子を残したか</li><li>かかりつけや夜間救急へ連絡したか</li></ul>
+        </article></section>
+  <section class="split" aria-label="電話で伝える順番と止める判断">
+    <article class="template-card">
+      <span class="label">電話で伝える順番</span>
+      <ul><li>猫の年齢・体重・持病があれば先に伝える。</li><li>いつから、何が、どのくらい変わったかを短く伝える。</li><li>呼吸・尿・食欲・嘔吐下痢・ぐったり・誤飲の有無を伝える。</li><li>新しく使った用品、食べたもの、壊れた部品があれば伝える。</li><li>今すぐ受診か、何を観察するかを確認する。</li></ul>
+    </article>
+    <article class="template-card">
+      <span class="label">用品を止める判断</span>
+      <ul><li>怖がる、息が上がる、食欲やトイレが変わる時は用品の使用を止める。</li><li>ひも、羽根、小さい部品、欠けた破片を飲み込みそうなら片付ける。</li><li>迷う時は買い足さず、相談メモを作って獣医師に確認する。</li></ul>
+    </article>
+  </section>
+  <section class="template-card" style="margin-top:14px" aria-label="メモテンプレート">
+    <h2>メモテンプレート</h2>
+    <pre>病院に伝えるメモ
+いつから:
+食欲:
+水:
+トイレ・尿:
+嘔吐・下痢:
+呼吸:
+元気・反応:
+使った用品・食べたもの:
+誤飲や破損の心配:
+今止めていること:</pre>
+    <div class="actions">
+      <a class="button light" href="../fit-reset/">見送り・やめどき</a>
+      <a class="button light" href="../aftercare/">使い始めの見直し</a>
+      <a class="button light" href="../cat-first/">猫優先ランキング</a>
+    </div>
+  </section>
+  <section class="sources" aria-label="参考元">
+        <a class="source-link" href="https://www.avma.org/resources/pet-owners/emergencycare/13-animal-emergencies-require-immediate-veterinary-consultation-andor-care" target="_blank" rel="noopener noreferrer">
+          <strong>AVMA: 13 animal emergencies</strong>
+          <span>difficulty breathing, inability to urinate, severe signs are emergency consultation/care topics.</span>
+        </a>
+
+        <a class="source-link" href="https://www.avma.org/resources-tools/pet-owners/petcare/feline-lower-urinary-tract-disease" target="_blank" rel="noopener noreferrer">
+          <strong>AVMA: Feline lower urinary tract disease</strong>
+          <span>lower urinary tract signs can be serious and should not be treated as a product-selection issue.</span>
+        </a>
+
+        <a class="source-link" href="https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners" target="_blank" rel="noopener noreferrer">
+          <strong>AVMA: First aid tips for pet owners</strong>
+          <span>first-aid context for severe injury, shock, and emergency response.</span>
+        </a>
+
+        <a class="source-link" href="https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/dyspnea-difficulty-breathing" target="_blank" rel="noopener noreferrer">
+          <strong>Cornell Feline Health Center: Dyspnea</strong>
+          <span>difficulty breathing is an important clinical sign in cats.</span>
+        </a>
+
+        <a class="source-link" href="https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration" target="_blank" rel="noopener noreferrer">
+          <strong>Cornell Feline Health Center: Hydration</strong>
+          <span>vomiting, diarrhea, kidney disease, diabetes, and other diseases can cause dehydration.</span>
+        </a></section>
+</main>
+</body>
+</html>

@@ -147,6 +147,9 @@
 /consult-first/*
   Cache-Control: no-cache
 
+/vet-note/*
+  Cache-Control: no-cache
+
 /quiz/*
   Cache-Control: no-cache
 

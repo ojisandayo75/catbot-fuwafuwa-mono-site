@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-06-27T12:02:01",
-  "generated_at": "2026-06-27T12:02:01",
+  "exported_at": "2026-06-27T12:25:09",
+  "generated_at": "2026-06-27T12:25:09",
   "phase": "needs_moshimo_approval",
   "public_url_configured": true,
   "followers": 578,
@@ -275,8 +275,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-27T12:02:01",
-    "exported_at": "2026-06-27T12:02:01",
+    "generated_at": "2026-06-27T12:25:09",
+    "exported_at": "2026-06-27T12:25:09",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -293,6 +293,7 @@
       "link-health.json",
       "buying-check.json",
       "consult-first.json",
+      "vet-note.json",
       "owner-next.json"
     ],
     "cat_first_review_required": true,
@@ -352,6 +353,8 @@
   "seasonal_page": "seasonal/",
   "consult_first": "consult-first.json",
   "consult_first_page": "consult-first/",
+  "vet_note": "vet-note.json",
+  "vet_note_page": "vet-note/",
   "cat_quiz": "cat-quiz.json",
   "cat_quiz_page": "quiz/",
   "owner_next": "owner-next.json",
@@ -387,23 +390,23 @@
     ]
   },
   "auto_export": {
-    "exported_at": "2026-06-27T12:02:04",
+    "exported_at": "2026-06-27T12:25:12",
     "output": "C:\\Users\\User\\catbot-x\\public_shop",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
     "top_post_views": 156918,
     "last_deploy": {
-      "deployed_at": "2026-06-27T11:57:24",
+      "deployed_at": "2026-06-27T12:08:42",
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "file_count": 185,
-      "total_bytes": 36830229
+      "total_bytes": 37225798
     }
   },
   "auto_update": {
-    "checked_at": "2026-06-27T12:02:06",
+    "checked_at": "2026-06-27T12:25:13",
     "synced": true,
-    "last_exported_at": "2026-06-27T12:02:04",
+    "last_exported_at": "2026-06-27T12:25:12",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -413,10 +416,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-27T11:57:24",
+        "deployed_at": "2026-06-27T12:08:42",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 185,
-        "total_bytes": 36830229
+        "total_bytes": 37225798
       }
     },
     "scheduled_task": {
