@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-06-27T23:03:22",
-  "generated_at": "2026-06-27T23:03:22",
+  "exported_at": "2026-06-27T23:11:14",
+  "generated_at": "2026-06-27T23:11:14",
   "phase": "needs_moshimo_approval",
   "public_url_configured": true,
   "followers": 578,
@@ -275,8 +275,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-27T23:03:22",
-    "exported_at": "2026-06-27T23:03:22",
+    "generated_at": "2026-06-27T23:11:14",
+    "exported_at": "2026-06-27T23:11:14",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -393,23 +393,23 @@
     ]
   },
   "auto_export": {
-    "exported_at": "2026-06-27T23:03:24",
+    "exported_at": "2026-06-27T23:11:16",
     "output": "C:\\Users\\User\\catbot-x\\public_shop",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
     "top_post_views": 156918,
     "last_deploy": {
-      "deployed_at": "2026-06-27T22:54:01",
+      "deployed_at": "2026-06-27T23:03:27",
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "file_count": 191,
-      "total_bytes": 37424012
+      "total_bytes": 37424237
     }
   },
   "auto_update": {
-    "checked_at": "2026-06-27T23:03:26",
+    "checked_at": "2026-06-27T23:11:18",
     "synced": true,
-    "last_exported_at": "2026-06-27T23:03:24",
+    "last_exported_at": "2026-06-27T23:11:16",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -419,10 +419,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-27T22:54:01",
+        "deployed_at": "2026-06-27T23:03:27",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 191,
-        "total_bytes": 37424012
+        "total_bytes": 37424237
       }
     },
     "scheduled_task": {
