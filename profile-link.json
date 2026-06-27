@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T10:53:10",
-  "exported_at": "2026-06-27T10:53:10",
+  "generated_at": "2026-06-27T11:07:22",
+  "exported_at": "2026-06-27T11:07:22",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -28,6 +28,9 @@
   "growth_meter": {
     "title": "1000フォロワー準備",
     "body": "catbotの伸びに合わせて、売り込みではなくプロフィール導線と買う前チェックを先に育てます。",
+    "image": "assets/ai_cat_care_scene.webp",
+    "fallback": "assets/ai_cat_care_scene.jpg",
+    "alt": "catbotの伸びに合わせて猫のための導線を育てるイメージ",
     "current": 578,
     "goal": 1000,
     "remaining": 422,

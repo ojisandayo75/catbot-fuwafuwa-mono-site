@@ -105,12 +105,15 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .growth-meter strong{display:block;margin-top:4px;font-size:24px;line-height:1.25;color:#2f1e14;overflow-wrap:anywhere}
 .progress-track{height:14px;border-radius:999px;background:#ead6be;overflow:hidden;border:1px solid #d1ac83;margin:10px 0 8px}
 .progress-track span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#6f8a5c,#c58b4a);width:0}
+.growth-side{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:8px;align-items:stretch}
+.growth-visual{display:block;overflow:hidden;border:1px solid #e3c6a8;border-radius:8px;background:#f4eadb;min-height:178px}
+.growth-visual img{display:block;width:100%;height:100%;min-height:178px;object-fit:cover}
 .growth-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 .growth-stats div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
 .growth-stats b{display:block;font-size:21px;line-height:1.2;color:#3f281b;overflow-wrap:anywhere}
 .growth-stats small{display:block;color:#6b5544;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.growth-meter,.growth-stats{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.no-buy-art{width:100%;max-height:210px}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.growth-meter,.growth-side,.growth-stats{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}}
 </style>
 </head>
 <body>
@@ -153,11 +156,17 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <div class="progress-track" role="img" aria-label="57.8%"><span style="width:57.8%"></span></div>
       <div class="badges"><span>進捗 57.8%</span><span>直近7日 +241</span><span>残り 422</span><span>到達目安 2026-07-09</span></div>
     </div>
-    <div class="growth-stats">
-      <div><small>現在</small><b>578</b><p>1000フォロワーまで</p></div>
-      <div><small>残り</small><b>422</b><p>売り込みを強めず準備</p></div>
-      <div><small>直近7日</small><b>+241</b><p>catbot反応を導線へ反映</p></div>
-      <div><small>到達目安</small><b>2026-07-09</b><p>自動更新で再計算</p></div>
+    <div class="growth-side">
+      <picture class="growth-visual">
+        <source srcset="../assets/ai_cat_care_scene.webp" type="image/webp">
+        <img src="../assets/ai_cat_care_scene.jpg" alt="catbotの伸びに合わせて猫のための導線を育てるイメージ" loading="lazy">
+      </picture>
+      <div class="growth-stats">
+        <div><small>現在</small><b>578</b><p>1000フォロワーまで</p></div>
+        <div><small>残り</small><b>422</b><p>売り込みを強めず準備</p></div>
+        <div><small>直近7日</small><b>+241</b><p>catbot反応を導線へ反映</p></div>
+        <div><small>到達目安</small><b>2026-07-09</b><p>自動更新で再計算</p></div>
+      </div>
     </div>
   </section>
 
