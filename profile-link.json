@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T03:52:16",
-  "exported_at": "2026-06-28T03:52:16",
+  "generated_at": "2026-06-28T04:05:16",
+  "exported_at": "2026-06-28T04:05:16",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -23,6 +23,23 @@
       "買う前チェック優先",
       "578/1000フォロワー",
       "紹介リンク準備中"
+    ]
+  },
+  "quiz_resume": {
+    "state": "saved_diagnosis_resume",
+    "storage_key": "catbot:quiz:last",
+    "panel_id": "lastQuizPanel",
+    "title_id": "lastQuizTitle",
+    "memo_id": "lastQuizMemo",
+    "match_link_id": "lastQuizMatchLink",
+    "match_url_pattern": "matches/{selected}/",
+    "fallback_url": "quiz/",
+    "purpose": "商品を見る前に、前回保存した猫タイプと買わない判断を見返せるようにする。",
+    "required_markers": [
+      "前回のうちの子診断",
+      "タイプ別ページへ",
+      "買う前チェックへ",
+      "見送り・やめどき"
     ]
   },
   "growth_meter": {
@@ -50,7 +67,7 @@
     "title": "自動更新メモ",
     "body": "catbotの投稿ログ、動画素材、商品候補を見て、猫に合う入口と今日の候補を更新します。",
     "synced": true,
-    "last_exported_at": "2026-06-28T03:52:16",
+    "last_exported_at": "2026-06-28T04:05:16",
     "next_run_time": "定期更新",
     "interval": "定期更新",
     "source_counts": {
