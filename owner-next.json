@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T01:20:31",
-  "exported_at": "2026-06-28T01:20:31",
+  "generated_at": "2026-06-28T01:32:56",
+  "exported_at": "2026-06-28T01:32:56",
   "state": "needs_moshimo_approval",
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
@@ -12,6 +12,22 @@
   "total_products": 9,
   "public_url_ready": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "current_target": {
+    "key": "toys/p2",
+    "category_id": "toys",
+    "product_id": "p2",
+    "category": "遊び",
+    "product": "電動猫じゃらし",
+    "product_page": "products/toys/p2/",
+    "go_page": "go/toys/p2/",
+    "buying_check_anchor": "buying-check/#toys-p2",
+    "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
+    "rakuten_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB%20%E9%9B%BB%E5%8B%95%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97/",
+    "cat_first_check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+    "not_for": "音や動きに怖がりやすい猫、ひもや羽根を飲み込みやすい猫は慎重に見ます。",
+    "stop_signal": "怖がる、息が上がる、執着が強くなる時は短時間で止めます。",
+    "first_try": "最初は数分だけ。猫の反応を見て続けるか決めます。"
+  },
   "next_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
   "next_command_reason": "Moshi-mo approval is still pending, so the first-link workflow remains gated.",
   "next_command_blocked_by": "moshimo_approval_check",
@@ -194,10 +210,19 @@
       "blocked_by": "moshimo_approval_check",
       "target": {
         "key": "toys/p2",
+        "category_id": "toys",
+        "product_id": "p2",
+        "category": "遊び",
         "product": "電動猫じゃらし",
+        "product_page": "products/toys/p2/",
+        "go_page": "go/toys/p2/",
+        "buying_check_anchor": "buying-check/#toys-p2",
         "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
         "rakuten_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB%20%E9%9B%BB%E5%8B%95%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97/",
-        "cat_first_check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。"
+        "cat_first_check": "連続稼働しすぎないもの、羽根の交換ができるものを優先。",
+        "not_for": "音や動きに怖がりやすい猫、ひもや羽根を飲み込みやすい猫は慎重に見ます。",
+        "stop_signal": "怖がる、息が上がる、執着が強くなる時は短時間で止めます。",
+        "first_try": "最初は数分だけ。猫の反応を見て続けるか決めます。"
       }
     },
     {
