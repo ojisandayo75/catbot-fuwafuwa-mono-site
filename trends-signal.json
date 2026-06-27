@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T18:21:10",
-  "exported_at": "2026-06-27T18:21:10",
+  "generated_at": "2026-06-27T18:38:12",
+  "exported_at": "2026-06-27T18:38:12",
   "state": "trends_signal_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -115,6 +115,106 @@
         }
       ],
       "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。"
+    }
+  ],
+  "product_signals": [
+    {
+      "key": "toys/p2",
+      "category_id": "toys",
+      "product_id": "p2",
+      "product": "電動猫じゃらし",
+      "detail_url": "products/toys/p2/",
+      "trend_url": "trends/#toys",
+      "panel_markers": [
+        "catbotSignal",
+        "catbot反応から見る",
+        "反応トレンドで見る"
+      ],
+      "signals": [
+        {
+          "kind": "category",
+          "title": "反応が強いテーマ",
+          "label": "遊び",
+          "metric": "score 32",
+          "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
+          "cat_first_take": "遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。",
+          "trend_url": "trends/#toys"
+        },
+        {
+          "kind": "post",
+          "title": "伸びた投稿の空気",
+          "label": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…",
+          "metric": "156,918 views / 1,224 likes",
+          "detail": "最近の上位投稿から、読者が反応している猫の雰囲気を拾います。",
+          "cat_first_take": "読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。",
+          "trend_url": "trends/#toys"
+        },
+        {
+          "kind": "video",
+          "title": "素材動画の傾向",
+          "label": "#cat #catsoftiktok",
+          "metric": "176,040,708 plays",
+          "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
+          "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。",
+          "trend_url": "trends/#toys"
+        }
+      ],
+      "signal_count": 3,
+      "source_kinds": [
+        "category",
+        "post",
+        "video"
+      ],
+      "is_next_target": true
+    },
+    {
+      "key": "toys/p1",
+      "category_id": "toys",
+      "product_id": "p1",
+      "product": "けりぐるみ",
+      "detail_url": "products/toys/p1/",
+      "trend_url": "trends/#toys",
+      "panel_markers": [
+        "catbotSignal",
+        "catbot反応から見る",
+        "反応トレンドで見る"
+      ],
+      "signals": [
+        {
+          "kind": "category",
+          "title": "反応が強いテーマ",
+          "label": "遊び",
+          "metric": "score 32",
+          "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
+          "cat_first_take": "遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。",
+          "trend_url": "trends/#toys"
+        },
+        {
+          "kind": "post",
+          "title": "伸びた投稿の空気",
+          "label": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…",
+          "metric": "156,918 views / 1,224 likes",
+          "detail": "最近の上位投稿から、読者が反応している猫の雰囲気を拾います。",
+          "cat_first_take": "読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。",
+          "trend_url": "trends/#toys"
+        },
+        {
+          "kind": "video",
+          "title": "素材動画の傾向",
+          "label": "#cat #catsoftiktok",
+          "metric": "176,040,708 plays",
+          "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
+          "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。",
+          "trend_url": "trends/#toys"
+        }
+      ],
+      "signal_count": 3,
+      "source_kinds": [
+        "category",
+        "post",
+        "video"
+      ],
+      "is_next_target": false
     }
   ],
   "next_link": {
