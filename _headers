@@ -36,6 +36,9 @@
 /link-health.json
   Cache-Control: no-cache
 
+/link-transparency.json
+  Cache-Control: no-cache
+
 /decision-guide.json
   Cache-Control: no-cache
 
@@ -175,6 +178,9 @@
   Cache-Control: no-cache
 
 /policy/*
+  Cache-Control: no-cache
+
+/link-transparency/*
   Cache-Control: no-cache
 
 /updates/*

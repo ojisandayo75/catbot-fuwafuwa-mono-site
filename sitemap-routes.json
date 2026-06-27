@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-27T19:02:07",
+  "generated_at": "2026-06-27T19:20:55",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 38,
-  "absolute_url_count": 38,
+  "route_count": 39,
+  "absolute_url_count": 39,
   "routes": [
     {
       "kind": "home",
@@ -44,6 +44,15 @@
       "lastmod": "2026-06-27",
       "changefreq": "monthly",
       "priority": 0.7
+    },
+    {
+      "kind": "link-transparency",
+      "path": "link-transparency/",
+      "title": "リンク方針と広告の透明性",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/link-transparency/",
+      "lastmod": "2026-06-27",
+      "changefreq": "weekly",
+      "priority": 0.72
     },
     {
       "kind": "updates",
