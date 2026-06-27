@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T09:06:07",
-  "exported_at": "2026-06-27T09:06:07",
+  "generated_at": "2026-06-27T09:17:40",
+  "exported_at": "2026-06-27T09:17:40",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -10,6 +10,20 @@
   "affiliate_links": {
     "ready": 0,
     "total": 9
+  },
+  "visitor_status": {
+    "phase": "needs_moshimo_approval",
+    "title": "商品直リンクはまだ置いていません",
+    "body": "今は、猫に合うか・合わない条件・やめるサインを先に見られる準備ページです。もしも承認と実リンク確認が終わるまで、販売リンクより買う前チェックを優先します。",
+    "ready_links": 0,
+    "total_links": 9,
+    "moshimo_ready_for_first_link": false,
+    "badges": [
+      "商品直リンクなし",
+      "買う前チェック優先",
+      "578/1000フォロワー",
+      "もしも承認待ち"
+    ]
   },
   "current_target": {
     "key": "toys/p2",

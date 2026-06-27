@@ -96,8 +96,12 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .aftercare-art{width:100%;min-height:220px;object-fit:cover;border-radius:8px;border:1px solid #e3c6a8;background:#f4eadb}
 .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .badges span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:900}
+.visitor-state{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr);gap:12px;margin-top:14px;border:1px solid #d2aa7c;border-radius:8px;background:#fff3df;padding:14px}
+.visitor-state strong{display:block;margin-top:4px;font-size:22px;line-height:1.25;color:#2f1e14;overflow-wrap:anywhere}
+.visitor-state .badges{margin-top:0;align-content:start}
+.visitor-state .badges span{background:#fffdf8;border-color:#d8bea4}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.no-buy-art{width:100%;max-height:210px}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.no-buy-art{width:100%;max-height:210px}}
 </style>
 </head>
 <body>
@@ -120,7 +124,16 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
     <article class="metric"><span class="pill">はじめに</span><strong>うちの子診断</strong><p>性格と困りごとから入口を選びます</p></article>
     <article class="metric"><span class="pill">今日の候補</span><strong>電動猫じゃらし</strong><p>遊び</p></article>
     <article class="metric"><span class="pill">買う前</span><strong>相性確認</strong><p>合わない条件とやめるサインを先に見ます</p></article>
-    <article class="metric"><span class="pill">広告</span><strong>表記あり</strong><p>紹介リンクでも猫優先の基準を残します</p></article>
+    <article class="metric"><span class="pill">リンク準備中</span><strong>商品直リンクなし</strong><p>今は買う前チェックを優先します</p></article>
+  </section>
+
+  <section class="visitor-state" aria-label="現在のサイト状態">
+    <div>
+      <span class="pill">現在の状態</span>
+      <strong>商品直リンクはまだ置いていません</strong>
+      <p>今は、猫に合うか・合わない条件・やめるサインを先に見られる準備ページです。もしも承認と実リンク確認が終わるまで、販売リンクより買う前チェックを優先します。</p>
+    </div>
+    <div class="badges"><span>商品直リンクなし</span><span>買う前チェック優先</span><span>578/1000フォロワー</span><span>もしも承認待ち</span></div>
   </section>
 
   <section class="journey" aria-label="迷ったらこの順番">
