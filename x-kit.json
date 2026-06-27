@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T15:54:25",
-  "exported_at": "2026-06-27T15:54:25",
+  "generated_at": "2026-06-27T16:05:51",
+  "exported_at": "2026-06-27T16:05:51",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -76,14 +76,21 @@
     "record_command": ".\\affiliate_site_ops.bat shop-post-guard --record --text \"posted shop profile update\""
   },
   "safe_warmup": {
-    "allowed": true,
+    "allowed": false,
     "decision": "wait_safety_cooldown",
     "text": "ふわふわ猫の道具箱を整えています。\n商品直リンクはまだ置かず、買う前チェックを優先しています。\n猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。\ncatbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。\n\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
-    "command": ".\\catbot_site_warmup_ready.bat -Copy",
-    "record_command": ".\\catbot_site_warmup_ready.bat -Record",
-    "note": "商品直リンクを入れない、実アフィリリンク前のサイト紹介だけに使う。",
+    "command": ".\\catbot_site_warmup_ready.bat",
+    "record_command": "",
     "copy_enabled": false,
-    "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+    "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。",
+    "safety_cooldown": {
+      "active": true,
+      "until": "2026-06-28T12:34:42+09:00",
+      "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+      "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+      "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json"
+    },
+    "note": "商品直リンクを入れない、実アフィリリンク前のサイト紹介だけに使う。"
   },
   "variants": [
     {
@@ -163,7 +170,7 @@
     "record": ".\\affiliate_site_ops.bat shop-post-guard --record --text \"posted shop profile update\"",
     "daily_brief": ".\\affiliate_site_ops.bat daily-brief",
     "x_copy": ".\\affiliate_site_ops.bat x-copy",
-    "site_warmup": ".\\catbot_site_warmup_ready.bat -Copy",
+    "site_warmup": ".\\catbot_site_warmup_ready.bat",
     "launch_check": ".\\affiliate_site_ops.bat launch-check"
   },
   "public_files": {
