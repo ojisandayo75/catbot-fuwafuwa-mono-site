@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T05:10:01",
-  "exported_at": "2026-06-28T05:10:01",
+  "generated_at": "2026-06-28T05:30:21",
+  "exported_at": "2026-06-28T05:30:21",
   "state": "needs_moshimo_approval",
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
@@ -170,6 +170,12 @@
     "rakuten_status": "pending",
     "ready_for_first_link": false,
     "approval_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_check_interval_hours": 12,
+    "approval_last_check_at": "2026-06-28T04:54:29",
+    "approval_next_check_at": "2026-06-28T16:54:29",
+    "approval_next_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_check_due": false,
+    "approval_check_note": "pendingの間は何度も確認しすぎず、次回確認時刻か承認メールが来た時だけ見ます。",
     "approval_update_commands": {
       "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
       "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
@@ -179,7 +185,7 @@
       {
         "id": "check",
         "title": "まだ確認していない",
-        "detail": "もしもの作業台を開き、Amazonと楽天の提携状態を見ます。",
+        "detail": "次回確認: 2026-06-28T16:54:29。Amazonと楽天の提携状態を見ます。",
         "command": ".\\catbot_moshimo_status.bat -OpenWorkbench"
       },
       {
@@ -282,7 +288,7 @@
   "moshimo_todo": [
     {
       "title": "承認を確認",
-      "body": "もしもでAmazonまたは楽天の提携状態がapprovedか確認します。pendingならURL作成はまだ待ちます。"
+      "body": "次回確認は 2026-06-28T16:54:29 です。もしもでAmazonまたは楽天の提携状態がapprovedか確認します。pendingならURL作成はまだ待ちます。"
     },
     {
       "title": "状態を更新",

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T05:10:01",
-  "exported_at": "2026-06-28T05:10:01",
+  "generated_at": "2026-06-28T05:30:21",
+  "exported_at": "2026-06-28T05:30:21",
   "account": "@fuwafuwa_mono",
   "stage": "pre_900_prepare",
   "stage_label": "900人までは静かに土台作り",
@@ -19,6 +19,12 @@
     "rakuten_status": "pending",
     "ready_for_first_link": false,
     "approval_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_check_interval_hours": 12,
+    "approval_last_check_at": "2026-06-28T04:54:29",
+    "approval_next_check_at": "2026-06-28T16:54:29",
+    "approval_next_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
+    "approval_check_due": false,
+    "approval_check_note": "pendingの間は何度も確認しすぎず、次回確認時刻か承認メールが来た時だけ見ます。",
     "approval_update_commands": {
       "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
       "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
