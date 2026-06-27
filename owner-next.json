@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T02:28:58",
-  "exported_at": "2026-06-28T02:28:58",
+  "generated_at": "2026-06-28T02:42:30",
+  "exported_at": "2026-06-28T02:42:30",
   "state": "needs_moshimo_approval",
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
@@ -93,6 +93,27 @@
       "series": 0
     },
     "note": "After cooldown ends, keep X actions slow: post<=1, tweet_send<=2, like<=2; reply/quote/follow/promo/series disabled by default."
+  },
+  "remaining_counts": {
+    "open": 5,
+    "done": 1,
+    "total": 6,
+    "open_ids": [
+      "moshimo_approval",
+      "first_tracking_url",
+      "follower_goal",
+      "x_safety_cooldown",
+      "x_recovery_mode"
+    ],
+    "done_ids": [
+      "public_site"
+    ]
+  },
+  "next_owner_focus": {
+    "id": "moshimo_approval",
+    "title": "もしも承認",
+    "detail": "Amazonまたは楽天の提携承認がpendingです。ここが今の最優先です。",
+    "command": ".\\catbot_moshimo_status.bat -OpenWorkbench"
   },
   "remaining_summary": [
     {
