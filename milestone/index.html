@@ -22,8 +22,11 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .progress{height:16px;border:1px solid var(--line);border-radius:999px;background:#fffdf8;overflow:hidden;margin-top:12px}
 .progress span{display:block;height:100%;width:57.8%;background:var(--green)}
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:12px}
+.decision-grid{align-items:start}
 ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 li{border:1px solid var(--line);border-radius:8px;background:#fffdf8;padding:12px;min-width:0}
+.safe-list li{background:#f3f7ec}
+.hold-list li{background:#fff2dd}
 .flow li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px}
 .flow li span{display:grid;place-items:center;width:34px;height:34px;border-radius:8px;background:#5b3826;color:#fff8ef;font-weight:800}
 li strong{display:block;color:var(--ink);font-size:17px;overflow-wrap:anywhere}
@@ -67,6 +70,31 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <h2>もしも承認を確認する</h2>
     <p>Amazonまたは楽天がapprovedになってから、最初の追跡URLを作ります。</p>
     <code>.\catbot_moshimo_status.bat -OpenWorkbench</code>
+  </section>
+  <section class="split decision-grid">
+    <div class="panel">
+      <span class="label">今してよいこと</span>
+      <h2>外部待ちの間に進める作業</h2>
+      <ul class="safe-list"><li>もしも承認状態を確認する</li>
+<li>猫優先ランキング、買う前チェック、商品ページを整える</li>
+<li>最初の追跡URL候補を下調べする</li>
+<li>公開URL、自動更新、リンク健全性を確認する</li></ul>
+    </div>
+    <div class="panel">
+      <span class="label">まだしないこと</span>
+      <h2>売り込みと誤リンクを止める</h2>
+      <ul class="hold-list"><li>商品直リンクをXに貼る</li>
+<li>販売投稿、リプ誘導、タグ増やし、連投を始める</li>
+<li>普通の商品URLや検索URLを実アフィリリンクとして保存する</li>
+<li>2026-06-28T12:34:42+09:00まではX投稿文をコピー投稿しない</li>
+<li>2026-06-29T00:34:42+09:00までは回復上限を超えない (post残り1, tweet送信残り2, like残り2)</li></ul>
+    </div>
+  </section>
+  <section class="panel" style="margin-top:12px">
+    <span class="label">X安全状態</span>
+    <h2>クールダウン中</h2>
+    <p>2026-06-28T12:34:42+09:00まではX投稿を増やさず、サイト編集ともしも確認だけ進めます。</p>
+    <code>.\affiliate_site_ops.bat shop-post-guard --json</code>
   </section>
   <section class="split">
     <div class="panel">
@@ -164,7 +192,7 @@ code{display:block;margin-top:8px;padding:10px;border:1px solid #dccab5;border-r
     <a class="button light" href="../health/">リンク健全性</a>
     <a class="button light" href="../status/">公開状態</a>
   </div>
-  <p style="margin-top:16px">生成: 2026-06-27T20:43:55 / 更新: 2026-06-27T20:43:55</p>
+  <p style="margin-top:16px">生成: 2026-06-27T20:54:20 / 更新: 2026-06-27T20:54:20</p>
 </main>
 </body>
 </html>

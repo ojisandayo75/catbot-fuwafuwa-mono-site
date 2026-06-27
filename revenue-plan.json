@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T20:43:55",
-  "exported_at": "2026-06-27T20:43:55",
+  "generated_at": "2026-06-27T20:54:20",
+  "exported_at": "2026-06-27T20:54:20",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "monetization_stage": "needs_moshimo_approval",
@@ -267,12 +267,50 @@
   "shop_post_guard": {
     "allowed": false,
     "decision": "wait",
+    "rate_allowed": false,
+    "launch_ready": false,
     "milestone_ready": false,
     "followers": 578,
     "follower_goal": 1000,
     "followers_to_goal": 422,
     "daily_cap": 2,
+    "remaining_today": 2,
     "min_interval_hours": 6.0,
+    "safety_cooldown": {
+      "active": true,
+      "until": "2026-06-28T12:34:42+09:00",
+      "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+      "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+      "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
+      "recovery": {
+        "active": false,
+        "pending": true,
+        "starts_at": "2026-06-28T12:34:42+09:00",
+        "until": "2026-06-29T00:34:42+09:00",
+        "hours": 12,
+        "caps": {
+          "tweet_send": 2,
+          "post": 1,
+          "like": 2,
+          "follow": 0,
+          "reply": 0,
+          "quote": 0,
+          "promo": 0,
+          "series": 0
+        },
+        "remaining": {
+          "tweet_send": 2,
+          "post": 1,
+          "like": 2,
+          "follow": 0,
+          "reply": 0,
+          "quote": 0,
+          "promo": 0,
+          "series": 0
+        },
+        "note": "After cooldown ends, keep X actions slow: post<=1, tweet_send<=2, like<=2; reply/quote/follow/promo/series disabled by default."
+      }
+    },
     "direct_product_link_allowed": false,
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "public_monitor_required": true,

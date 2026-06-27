@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T20:43:55",
-  "exported_at": "2026-06-27T20:43:55",
+  "generated_at": "2026-06-27T20:54:20",
+  "exported_at": "2026-06-27T20:54:20",
   "account": "@fuwafuwa_mono",
   "stage": "pre_900_prepare",
   "stage_label": "900人までは静かに土台作り",
@@ -30,6 +30,37 @@
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "shop_post_allowed": false,
   "shop_post_decision": "wait",
+  "x_safety": {
+    "cooldown_active": true,
+    "cooldown_until": "2026-06-28T12:34:42+09:00",
+    "cooldown_reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+    "recovery_active": false,
+    "recovery_pending": true,
+    "recovery_until": "2026-06-29T00:34:42+09:00",
+    "recovery_remaining": {
+      "post": 1,
+      "tweet_send": 2,
+      "like": 2
+    },
+    "recovery_caps": {
+      "post": 1,
+      "tweet_send": 2,
+      "like": 2
+    }
+  },
+  "safe_work_now": [
+    "もしも承認状態を確認する",
+    "猫優先ランキング、買う前チェック、商品ページを整える",
+    "最初の追跡URL候補を下調べする",
+    "公開URL、自動更新、リンク健全性を確認する"
+  ],
+  "do_not_do_yet": [
+    "商品直リンクをXに貼る",
+    "販売投稿、リプ誘導、タグ増やし、連投を始める",
+    "普通の商品URLや検索URLを実アフィリリンクとして保存する",
+    "2026-06-28T12:34:42+09:00まではX投稿文をコピー投稿しない",
+    "2026-06-29T00:34:42+09:00までは回復上限を超えない (post残り1, tweet送信残り2, like残り2)"
+  ],
   "current_target": {
     "key": "toys/p2",
     "product": "電動猫じゃらし",
