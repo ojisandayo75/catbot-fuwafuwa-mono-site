@@ -71,7 +71,14 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
 .url-rule-card.ng{background:#fff2dd}
 .url-rule-card h2,.flow-card h2,.todo-card h2{font-size:18px}
 .flow-card code{margin-top:6px}
-@media(max-width:840px){.hero,.metrics,.step-card,.moshimo-guide,.url-rule-grid,.flow-grid{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.step-art{width:100%;max-width:220px}}
+.remaining-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:12px}
+.remaining-card{min-width:0;border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:12px}
+.remaining-card.wait{background:#fff2dd}
+.remaining-card.done{background:#edf3e5}
+.remaining-card h2{font-size:18px}
+.remaining-card code{margin-top:8px}
+@media(max-width:1040px){.remaining-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:840px){.hero,.metrics,.step-card,.moshimo-guide,.url-rule-grid,.flow-grid,.remaining-grid{grid-template-columns:1fr}.wrap{padding:15px}h1{font-size:30px}.button{width:100%}.step-art{width:100%;max-width:220px}}
 </style>
 </head>
 <body>
@@ -103,6 +110,41 @@ code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;color:#4e2f1f;fon
     <div class="metric"><span class="label">実リンク</span><b>0/9</b><p>最初は1本でOK</p></div>
     <div class="metric"><span class="label">公開URL</span><b>OK</b><p>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/</p></div>
     <div class="metric"><span class="label">ローンチ</span><b>準備中</b><p>launch-checkで確認</p></div>
+  </section>
+  <section class="policy" aria-label="残ってること">
+    <span class="label">残ってること</span>
+    <h2>今は承認確認、最初の追跡URL、1000人到達、X安全待ちを分けて見ます。</h2>
+    <div class="remaining-grid">
+        <article class="remaining-card wait">
+          <span class="label">待ち</span>
+          <h2>もしも承認</h2>
+          <p>Amazonまたは楽天の提携承認がpendingです。ここが今の最優先です。</p>
+          <code>.\catbot_moshimo_status.bat -OpenWorkbench</code>
+        </article>
+        <article class="remaining-card wait">
+          <span class="label">待ち</span>
+          <h2>最初の追跡URL</h2>
+          <p>toys/p2 電動猫じゃらし のもしも追跡URLを1本だけ入れます。</p>
+          <code>.\catbot_moshimo_status.bat -OpenWorkbench</code>
+        </article>
+        <article class="remaining-card wait">
+          <span class="label">育成中</span>
+          <h2>1000フォロワー</h2>
+          <p>現在 578/1000 人。残り 422 人です。</p>
+          <code>.\catbot_ops_health.bat -Json</code>
+        </article>
+        <article class="remaining-card wait">
+          <span class="label">待ち</span>
+          <h2>X安全クールダウン</h2>
+          <p>2026-06-28T12:34:42+09:00 まではX投稿文は参考用です。コピー投稿はガード解除後にします。</p>
+          <code>.\affiliate_site_ops.bat shop-post-guard --json</code>
+        </article>
+        <article class="remaining-card done">
+          <span class="label">OK</span>
+          <h2>公開サイト</h2>
+          <p>公開URLと自動更新は使えます。</p>
+          <code>.\affiliate_site_ops.bat verify-public-url &quot;https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/&quot;</code>
+        </article></div>
   </section>
   <section class="policy">
     <span class="label">もしもでやること</span>

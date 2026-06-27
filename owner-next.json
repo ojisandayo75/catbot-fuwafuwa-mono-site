@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T14:55:27",
-  "exported_at": "2026-06-27T14:55:27",
+  "generated_at": "2026-06-27T15:20:24",
+  "exported_at": "2026-06-27T15:20:24",
   "state": "needs_moshimo_approval",
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
@@ -12,6 +12,55 @@
   "total_products": 9,
   "public_url_ready": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
+  "safety_cooldown": {
+    "active": true,
+    "until": "2026-06-28T12:34:42+09:00",
+    "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+    "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+    "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json"
+  },
+  "remaining_summary": [
+    {
+      "id": "moshimo_approval",
+      "done": false,
+      "label": "待ち",
+      "title": "もしも承認",
+      "detail": "Amazonまたは楽天の提携承認がpendingです。ここが今の最優先です。",
+      "command": ".\\catbot_moshimo_status.bat -OpenWorkbench"
+    },
+    {
+      "id": "first_tracking_url",
+      "done": false,
+      "label": "待ち",
+      "title": "最初の追跡URL",
+      "detail": "toys/p2 電動猫じゃらし のもしも追跡URLを1本だけ入れます。",
+      "command": ".\\catbot_moshimo_status.bat -OpenWorkbench"
+    },
+    {
+      "id": "follower_goal",
+      "done": false,
+      "label": "育成中",
+      "title": "1000フォロワー",
+      "detail": "現在 578/1000 人。残り 422 人です。",
+      "command": ".\\catbot_ops_health.bat -Json"
+    },
+    {
+      "id": "x_safety_cooldown",
+      "done": false,
+      "label": "待ち",
+      "title": "X安全クールダウン",
+      "detail": "2026-06-28T12:34:42+09:00 まではX投稿文は参考用です。コピー投稿はガード解除後にします。",
+      "command": ".\\affiliate_site_ops.bat shop-post-guard --json"
+    },
+    {
+      "id": "public_site",
+      "done": true,
+      "label": "OK",
+      "title": "公開サイト",
+      "detail": "公開URLと自動更新は使えます。",
+      "command": ".\\affiliate_site_ops.bat verify-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\""
+    }
+  ],
   "moshimo": {
     "amazon_status": "pending",
     "rakuten_status": "pending",
