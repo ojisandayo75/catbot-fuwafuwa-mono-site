@@ -100,8 +100,16 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .visitor-state strong{display:block;margin-top:4px;font-size:22px;line-height:1.25;color:#2f1e14;overflow-wrap:anywhere}
 .visitor-state .badges{margin-top:0;align-content:start}
 .visitor-state .badges span{background:#fffdf8;border-color:#d8bea4}
+.growth-meter{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);gap:12px;align-items:center;margin-top:14px;border:1px solid #d8bea4;border-radius:8px;background:#fffaf2;padding:14px}
+.growth-meter strong{display:block;margin-top:4px;font-size:24px;line-height:1.25;color:#2f1e14;overflow-wrap:anywhere}
+.progress-track{height:14px;border-radius:999px;background:#ead6be;overflow:hidden;border:1px solid #d1ac83;margin:10px 0 8px}
+.progress-track span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#6f8a5c,#c58b4a);width:0}
+.growth-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.growth-stats div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}
+.growth-stats b{display:block;font-size:21px;line-height:1.2;color:#3f281b;overflow-wrap:anywhere}
+.growth-stats small{display:block;color:#6b5544;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.no-buy-art{width:100%;max-height:210px}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.growth-meter,.growth-stats{grid-template-columns:1fr}.button{width:100%}.menu-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.no-buy-art{width:100%;max-height:210px}}
 </style>
 </head>
 <body>
@@ -134,6 +142,22 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <p>今は、猫に合うか・合わない条件・やめるサインを先に見られる準備ページです。もしも承認と実リンク確認が終わるまで、販売リンクより買う前チェックを優先します。</p>
     </div>
     <div class="badges"><span>商品直リンクなし</span><span>買う前チェック優先</span><span>578/1000フォロワー</span><span>もしも承認待ち</span></div>
+  </section>
+
+  <section class="growth-meter" aria-label="1000フォロワー準備">
+    <div>
+      <span class="pill">catbotの伸び</span>
+      <strong>1000フォロワー準備</strong>
+      <p>catbotの伸びに合わせて、売り込みではなくプロフィール導線と買う前チェックを先に育てます。</p>
+      <div class="progress-track" role="img" aria-label="57.8%"><span style="width:57.8%"></span></div>
+      <div class="badges"><span>進捗 57.8%</span><span>直近7日 +241</span><span>残り 422</span><span>到達目安 2026-07-09</span></div>
+    </div>
+    <div class="growth-stats">
+      <div><small>現在</small><b>578</b><p>1000フォロワーまで</p></div>
+      <div><small>残り</small><b>422</b><p>売り込みを強めず準備</p></div>
+      <div><small>直近7日</small><b>+241</b><p>catbot反応を導線へ反映</p></div>
+      <div><small>到達目安</small><b>2026-07-09</b><p>自動更新で再計算</p></div>
+    </div>
   </section>
 
   <section class="journey" aria-label="迷ったらこの順番">
