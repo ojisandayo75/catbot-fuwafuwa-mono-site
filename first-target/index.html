@@ -80,9 +80,14 @@ ul{margin:8px 0 0;padding-left:20px;color:#5f4735}
 .scorecard{margin-top:14px;border:1px solid #caa982;border-radius:8px;background:#fffdf8;padding:14px}
 .scorecard ol{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:12px 0 0;padding:0;list-style:none}
 .scorecard li{border:1px solid #ead1b6;border-radius:8px;background:#fff7ec;padding:10px}
+.scorecard label{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start;min-height:100%}
+.scorecard input{width:18px;height:18px;accent-color:#5a3522;margin-top:2px}
 .scorecard b{display:block;color:#5a3522;line-height:1.25}
-.scorecard span{display:block;color:#5f4735;font-size:13px;line-height:1.55;margin-top:4px}
+.scorecard .scorecard-detail{display:block;color:#5f4735;font-size:13px;line-height:1.55;margin-top:4px}
 .scorecard .score-note{margin-top:10px;border:1px solid #ead1b6;border-radius:8px;background:#f4eadb;padding:9px;color:#4c3526;font-size:13px;font-weight:800}
+.score-status{margin-top:10px;border:1px solid #d9b98f;border-radius:8px;background:#fff7ec;padding:9px;color:#5a3522;font-weight:800}
+.scorecard.is-ready{border-color:#8aa06f;background:#f8fbf2}
+.scorecard.is-ready .score-status{background:#edf3e5;border-color:#adc29a;color:#38502f}
 .target-quiz{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,.44fr);gap:12px;margin-top:14px;border:1px solid #caa982;border-radius:8px;background:#fff7ec;padding:14px}
 .target-quiz strong{display:block;color:#25170f;font-size:22px;line-height:1.25;overflow-wrap:anywhere}
 .target-quiz pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:10px 0 0;padding:12px;border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;color:#4b3424;font:inherit;font-size:13px;line-height:1.55;max-height:220px;overflow:auto}
@@ -198,15 +203,16 @@ ul{margin:8px 0 0;padding-left:20px;color:#5f4735}
         <div class="check"><b>やめるサイン</b><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
         <div class="check"><b>使った後</b><p>遊んだ後は片付け、羽根やひもが傷んでいないか確認します。</p></div>
       </div>
-      <div class="scorecard" data-first-target-scorecard="cat-first-selection">
+      <div class="scorecard" data-first-target-scorecard="cat-first-selection" data-scorecard-minimum="4" data-scorecard-storage="catbot:first-target:scorecard">
         <span class="label">商品選びの採点表</span>
         <h3>最初の1本は、4つ以上YESの候補だけにします。</h3>
         <ol>
-        <li><b>静音か</b><span>怖がりやすい子でも数分だけ試せる音量かを見ます。</span></li>
-        <li><b>交換パーツ</b><span>羽根や先端が消耗しても交換でき、壊れたまま使わないで済むかを見ます。</span></li>
-        <li><b>短時間運転</b><span>止めやすい、または自動停止しやすく、興奮しすぎを避けられるかを見ます。</span></li>
-        <li><b>誤飲しにくさ</b><span>ひも・羽根・小さい部品を飲み込みやすい作りではないかを見ます。</span></li>
-        <li><b>掃除しやすさ</b><span>毛やほこりが絡んだ時に、飼い主がすぐ外して清潔に戻せるかを見ます。</span></li></ol>
+        <li><label><input type="checkbox" data-scorecard-check value="0"><span class="scorecard-text"><b>静音か</b><span class="scorecard-detail">怖がりやすい子でも数分だけ試せる音量かを見ます。</span></span></label></li>
+        <li><label><input type="checkbox" data-scorecard-check value="1"><span class="scorecard-text"><b>交換パーツ</b><span class="scorecard-detail">羽根や先端が消耗しても交換でき、壊れたまま使わないで済むかを見ます。</span></span></label></li>
+        <li><label><input type="checkbox" data-scorecard-check value="2"><span class="scorecard-text"><b>短時間運転</b><span class="scorecard-detail">止めやすい、または自動停止しやすく、興奮しすぎを避けられるかを見ます。</span></span></label></li>
+        <li><label><input type="checkbox" data-scorecard-check value="3"><span class="scorecard-text"><b>誤飲しにくさ</b><span class="scorecard-detail">ひも・羽根・小さい部品を飲み込みやすい作りではないかを見ます。</span></span></label></li>
+        <li><label><input type="checkbox" data-scorecard-check value="4"><span class="scorecard-text"><b>掃除しやすさ</b><span class="scorecard-detail">毛やほこりが絡んだ時に、飼い主がすぐ外して清潔に戻せるかを見ます。</span></span></label></li></ol>
+        <p class="score-status" id="firstTargetScorecardStatus" role="status">判定: まだ見送りです。0/5 件。</p>
         <p class="score-note">承認後に商品を選ぶ時は、売れ筋より先に4項目以上YESになる候補だけを初回リンクにします。</p>
       </div>
     </article>
@@ -311,7 +317,7 @@ ul{margin:8px 0 0;padding-left:20px;color:#5f4735}
     </div>
   </section>
 </main>
-<script type="application/json" id="firstTargetData">{"state": "first_target_ready", "generated_at": "2026-06-28T03:33:02", "exported_at": "2026-06-28T03:33:02", "category_id": "toys", "product_id": "p2", "key": "toys/p2", "category": "遊び", "product": "電動猫じゃらし", "lead": "人が手を離していても、短時間の運動を作れる候補です。", "best_for": "遊び足りない子、留守番後に走り回る子、反応するおもちゃを増やしたい子。", "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。", "first_try": "最初は数分だけ。怖がる、息が上がる、部品を噛みちぎる時はすぐ止めます。", "check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。", "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。", "care_note": "遊んだ後は片付け、羽根やひもが傷んでいないか確認します。", "consult_note": "食欲・水分・排泄・呼吸・元気に変化がある時は、用品選びより相談を優先します。", "detail_path": "products/toys/p2/", "buying_check_anchor": "buying-check/#toys-p2", "needs_anchor": "needs/#toys", "ready": false, "ready_links": 0, "total_products": 9, "followers": 578, "follower_goal": 1000, "score": 211, "price_band": "中", "primary_action": {"label": "候補検索を見る", "href": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97", "kind": "search", "external": true}, "rakuten_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB%20%E9%9B%BB%E5%8B%95%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97/", "catbot_signal": {"key": "toys/p2", "category_id": "toys", "product_id": "p2", "product": "電動猫じゃらし", "detail_url": "products/toys/p2/", "trend_url": "trends/#toys", "panel_markers": ["catbotSignal", "catbot反応から見る", "反応トレンドで見る"], "signals": [{"kind": "category", "title": "反応が強いテーマ", "label": "遊び", "metric": "score 32", "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。", "cat_first_take": "遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。", "trend_url": "trends/#toys"}, {"kind": "post", "title": "伸びた投稿の空気", "label": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…", "metric": "156,918 views / 1,224 likes", "detail": "最近の上位投稿から、読者が反応している猫の雰囲気を拾います。", "cat_first_take": "読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。", "trend_url": "trends/#toys"}, {"kind": "video", "title": "素材動画の傾向", "label": "#cat #catsoftiktok", "metric": "176,040,708 plays", "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。", "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。", "trend_url": "trends/#toys"}], "signal_count": 3, "source_kinds": ["category", "post", "video"], "is_next_target": true}, "next_candidates": [{"rank": 2, "key": "toys/p1", "category_id": "toys", "product_id": "p1", "category": "遊び", "product": "けりぐるみ", "score": 207, "product_page": "products/toys/p1/", "buying_check_anchor": "buying-check/#toys-p1", "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF", "buy_before_check": "縫い目が強く、誤飲しにくいサイズを優先します。", "not_for": "布や中綿を食べやすい子、小さな飾りを噛みちぎる子。", "first_try": "最初は目の届く場所で短時間だけ試します。", "link_ready": false, "link_kind": "search"}, {"rank": 3, "key": "water/p2", "category_id": "water", "product_id": "p2", "category": "水とごはん", "product": "自動給餌器", "score": 93, "product_page": "products/water/p2/", "buying_check_anchor": "buying-check/#water-p2", "search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/", "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の動作、フード粒サイズを確認します。", "not_for": "多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。", "first_try": "手動給餌と併用し、詰まりや誤作動がないか見ます。", "link_ready": false, "link_kind": "search"}, {"rank": 4, "key": "water/p1", "category_id": "water", "product_id": "p1", "category": "水とごはん", "product": "循環式水飲み器", "score": 89, "product_page": "products/water/p1/", "buying_check_anchor": "buying-check/#water-p1", "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF", "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。", "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭。", "first_try": "最初は普段の水皿も残し、近づくかを見ます。", "link_ready": false, "link_kind": "search"}], "pre_click_checklist": [{"label": "音と動き", "detail": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。"}, {"label": "合わない猫", "detail": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。"}, {"label": "やめるサイン", "detail": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。"}], "pre_click_policy": "リンクを開く前に、買う理由より猫が使える条件を先に確認します。", "external_search_gate": {"state": "cat_first_before_external_search", "required_check_count": 3, "required_markers": ["音と動き", "合わない猫", "やめるサイン"], "status_element_id": "firstTargetSearchGateStatus"}, "selection_scorecard": {"state": "cat_first_selection_scorecard", "minimum_yes_count": 4, "items": [{"label": "静音か", "detail": "怖がりやすい子でも数分だけ試せる音量かを見ます。"}, {"label": "交換パーツ", "detail": "羽根や先端が消耗しても交換でき、壊れたまま使わないで済むかを見ます。"}, {"label": "短時間運転", "detail": "止めやすい、または自動停止しやすく、興奮しすぎを避けられるかを見ます。"}, {"label": "誤飲しにくさ", "detail": "ひも・羽根・小さい部品を飲み込みやすい作りではないかを見ます。"}, {"label": "掃除しやすさ", "detail": "毛やほこりが絡んだ時に、飼い主がすぐ外して清潔に戻せるかを見ます。"}], "owner_note": "承認後に商品を選ぶ時は、売れ筋より先に4項目以上YESになる候補だけを初回リンクにします。"}, "ad_disclosure": "このサイトには広告・アフィリエイトリンクを含む場合があります。リンクが入っても、猫に合うか・合わない条件・やめるサインを先に確認します。", "cat_first_rules": ["いきなり買わせず、合う子・合わない子を先に見せる。", "実リンクが入るまでは検索候補に留める。", "怖がる、壊す、飲み込む可能性がある時は止める。", "体調の変化がある時は、商品より相談を優先する。"]}</script>
+<script type="application/json" id="firstTargetData">{"state": "first_target_ready", "generated_at": "2026-06-28T03:41:52", "exported_at": "2026-06-28T03:41:52", "category_id": "toys", "product_id": "p2", "key": "toys/p2", "category": "遊び", "product": "電動猫じゃらし", "lead": "人が手を離していても、短時間の運動を作れる候補です。", "best_for": "遊び足りない子、留守番後に走り回る子、反応するおもちゃを増やしたい子。", "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。", "first_try": "最初は数分だけ。怖がる、息が上がる、部品を噛みちぎる時はすぐ止めます。", "check": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。", "stop_signal": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。", "care_note": "遊んだ後は片付け、羽根やひもが傷んでいないか確認します。", "consult_note": "食欲・水分・排泄・呼吸・元気に変化がある時は、用品選びより相談を優先します。", "detail_path": "products/toys/p2/", "buying_check_anchor": "buying-check/#toys-p2", "needs_anchor": "needs/#toys", "ready": false, "ready_links": 0, "total_products": 9, "followers": 578, "follower_goal": 1000, "score": 211, "price_band": "中", "primary_action": {"label": "候補検索を見る", "href": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97", "kind": "search", "external": true}, "rakuten_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB%20%E9%9B%BB%E5%8B%95%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97/", "catbot_signal": {"key": "toys/p2", "category_id": "toys", "product_id": "p2", "product": "電動猫じゃらし", "detail_url": "products/toys/p2/", "trend_url": "trends/#toys", "panel_markers": ["catbotSignal", "catbot反応から見る", "反応トレンドで見る"], "signals": [{"kind": "category", "title": "反応が強いテーマ", "label": "遊び", "metric": "score 32", "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。", "cat_first_take": "遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。", "trend_url": "trends/#toys"}, {"kind": "post", "title": "伸びた投稿の空気", "label": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…", "metric": "156,918 views / 1,224 likes", "detail": "最近の上位投稿から、読者が反応している猫の雰囲気を拾います。", "cat_first_take": "読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。", "trend_url": "trends/#toys"}, {"kind": "video", "title": "素材動画の傾向", "label": "#cat #catsoftiktok", "metric": "176,040,708 plays", "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。", "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。", "trend_url": "trends/#toys"}], "signal_count": 3, "source_kinds": ["category", "post", "video"], "is_next_target": true}, "next_candidates": [{"rank": 2, "key": "toys/p1", "category_id": "toys", "product_id": "p1", "category": "遊び", "product": "けりぐるみ", "score": 207, "product_page": "products/toys/p1/", "buying_check_anchor": "buying-check/#toys-p1", "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF", "buy_before_check": "縫い目が強く、誤飲しにくいサイズを優先します。", "not_for": "布や中綿を食べやすい子、小さな飾りを噛みちぎる子。", "first_try": "最初は目の届く場所で短時間だけ試します。", "link_ready": false, "link_kind": "search"}, {"rank": 3, "key": "water/p2", "category_id": "water", "product_id": "p2", "category": "水とごはん", "product": "自動給餌器", "score": 93, "product_page": "products/water/p2/", "buying_check_anchor": "buying-check/#water-p2", "search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/", "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の動作、フード粒サイズを確認します。", "not_for": "多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。", "first_try": "手動給餌と併用し、詰まりや誤作動がないか見ます。", "link_ready": false, "link_kind": "search"}, {"rank": 4, "key": "water/p1", "category_id": "water", "product_id": "p1", "category": "水とごはん", "product": "循環式水飲み器", "score": 89, "product_page": "products/water/p1/", "buying_check_anchor": "buying-check/#water-p1", "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF", "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。", "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭。", "first_try": "最初は普段の水皿も残し、近づくかを見ます。", "link_ready": false, "link_kind": "search"}], "pre_click_checklist": [{"label": "音と動き", "detail": "連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。"}, {"label": "合わない猫", "detail": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。"}, {"label": "やめるサイン", "detail": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。"}], "pre_click_policy": "リンクを開く前に、買う理由より猫が使える条件を先に確認します。", "external_search_gate": {"state": "cat_first_before_external_search", "required_check_count": 3, "required_markers": ["音と動き", "合わない猫", "やめるサイン"], "status_element_id": "firstTargetSearchGateStatus"}, "selection_scorecard": {"state": "cat_first_selection_scorecard", "minimum_yes_count": 4, "status_element_id": "firstTargetScorecardStatus", "storage_key": "catbot:first-target:scorecard", "items": [{"label": "静音か", "detail": "怖がりやすい子でも数分だけ試せる音量かを見ます。"}, {"label": "交換パーツ", "detail": "羽根や先端が消耗しても交換でき、壊れたまま使わないで済むかを見ます。"}, {"label": "短時間運転", "detail": "止めやすい、または自動停止しやすく、興奮しすぎを避けられるかを見ます。"}, {"label": "誤飲しにくさ", "detail": "ひも・羽根・小さい部品を飲み込みやすい作りではないかを見ます。"}, {"label": "掃除しやすさ", "detail": "毛やほこりが絡んだ時に、飼い主がすぐ外して清潔に戻せるかを見ます。"}], "owner_note": "承認後に商品を選ぶ時は、売れ筋より先に4項目以上YESになる候補だけを初回リンクにします。"}, "ad_disclosure": "このサイトには広告・アフィリエイトリンクを含む場合があります。リンクが入っても、猫に合うか・合わない条件・やめるサインを先に確認します。", "cat_first_rules": ["いきなり買わせず、合う子・合わない子を先に見せる。", "実リンクが入るまでは検索候補に留める。", "怖がる、壊す、飲み込む可能性がある時は止める。", "体調の変化がある時は、商品より相談を優先する。"]}</script>
 <script>
 (function(){
   const panel = document.getElementById("firstTargetQuizPanel");
@@ -368,6 +374,38 @@ ul{margin:8px 0 0;padding-left:20px;color:#5f4735}
     });
   });
   update();
+})();
+(function(){
+  const card = document.querySelector('[data-first-target-scorecard="cat-first-selection"]');
+  if(!card) return;
+  const checks = Array.from(card.querySelectorAll('[data-scorecard-check]'));
+  const status = document.getElementById("firstTargetScorecardStatus");
+  const minimum = Number(card.getAttribute("data-scorecard-minimum") || "4");
+  const storageKey = card.getAttribute("data-scorecard-storage") || "catbot:first-target:scorecard";
+  if(!checks.length || !status) return;
+  function save(){
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(checks.map((input) => input.checked)));
+    } catch (error) {}
+  }
+  function restore(){
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
+      if(Array.isArray(saved)){
+        checks.forEach((input, index) => { input.checked = Boolean(saved[index]); });
+      }
+    } catch (error) {}
+  }
+  function update(skipSave){
+    const count = checks.filter((input) => input.checked).length;
+    const ready = count >= minimum;
+    card.classList.toggle("is-ready", ready);
+    status.textContent = ready ? "判定: 初回リンク候補OKです。 " + count + "/" + checks.length + " 件。" : "判定: まだ見送りです。 " + count + "/" + checks.length + " 件。";
+    if(!skipSave) save();
+  }
+  restore();
+  checks.forEach((input) => input.addEventListener("change", () => update(false)));
+  update(true);
 })();
 </script>
 </body>
