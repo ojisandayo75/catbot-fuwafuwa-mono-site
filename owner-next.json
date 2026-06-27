@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-06-28T05:50:57",
-  "exported_at": "2026-06-28T05:50:57",
+  "generated_at": "2026-06-28T06:07:15",
+  "exported_at": "2026-06-28T06:07:15",
   "state": "needs_moshimo_approval",
+  "completion_estimate": {
+    "stage_label": "技術側はほぼ完了",
+    "phase": "needs_moshimo_approval",
+    "technical_site_percent": 95,
+    "launch_gate_estimate": "12/13",
+    "remaining_inputs": [
+      "もしも承認",
+      "最初の追跡URL"
+    ],
+    "current_blocker": "moshimo_approval",
+    "human_summary": "サイト本体・公開・自動更新は動いています。今の実質ブロックはもしも承認と最初の追跡URLです。",
+    "after_moshimo_approval_minutes": {
+      "min": 30,
+      "max": 60
+    },
+    "after_first_tracking_url_minutes": {
+      "min": 10,
+      "max": 20
+    },
+    "approval_next_check_at": "2026-06-28T16:54:29",
+    "approval_check_due": false,
+    "followers": 578,
+    "follower_goal": 1000,
+    "followers_to_goal": 422,
+    "follower_eta_date": "2026-07-09",
+    "follower_eta_days": 13,
+    "ready_links": 0,
+    "total_products": 9
+  },
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
   "account": "@fuwafuwa_mono",
