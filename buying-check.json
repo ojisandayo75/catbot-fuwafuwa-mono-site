@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T01:10:21",
-  "exported_at": "2026-06-28T01:10:21",
+  "generated_at": "2026-06-28T01:20:31",
+  "exported_at": "2026-06-28T01:20:31",
   "state": "cat_first_buying_check_ready",
   "total_products": 9,
   "categories": [
@@ -281,8 +281,8 @@
     }
   ],
   "consult_first": {
-    "generated_at": "2026-06-28T01:10:21",
-    "exported_at": "2026-06-28T01:10:21",
+    "generated_at": "2026-06-28T01:20:31",
+    "exported_at": "2026-06-28T01:20:31",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",
