@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="猫用品を買わない条件、使い始めてから止める条件、先に試すことを商品ごとに確認するページです。">
+<meta property="og:title" content="Catbot 見送り・やめどき">
+<meta property="og:description" content="猫用品を買わない条件、使い始めてから止める条件、先に試すことを商品ごとに確認するページです。">
+<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catbot 見送り・やめどき">
+<meta name="twitter:description" content="猫用品を買わない条件、使い始めてから止める条件、先に試すことを商品ごとに確認するページです。">
+<meta name="theme-color" content="#5a3522">
+<link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
+<link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
+<link rel="apple-touch-icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/apple-touch-icon.png">
+<link rel="canonical" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/fit-reset/">
+<meta property="og:url" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/fit-reset/">
+<meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
+<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:site" content="@fuwafuwa_mono">
+<meta name="twitter:creator" content="@fuwafuwa_mono">
+<title>Catbot 見送り・やめどき</title>
+<style>
+:root{--ink:#25170f;--paper:#fff8ef;--card:#fffdf8;--line:#d8bea4;--muted:#6a5646;--coffee:#5a3522;--soft:#f4eadb;--warn:#fff1df}
+*{box-sizing:border-box;min-width:0}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI","Yu Gothic UI",Meiryo,sans-serif;line-height:1.7}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:22px}
+.hero{position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(37,23,15,.94),rgba(74,45,28,.78),rgba(74,45,28,.18)),image-set(url("../assets/ai_shortcut_no_buy.webp") type("image/webp"),url("../assets/ai_shortcut_no_buy.png") type("image/png"));background-size:cover;background-position:center right;color:#fff8ef}
+.hero .wrap{min-height:370px;display:grid;align-items:end;padding-top:34px;padding-bottom:34px}
+.label{display:inline-flex;align-items:center;width:max-content;max-width:100%;min-height:25px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5a3522;font-size:12px;font-weight:800}
+.hero .label{background:rgba(244,234,219,.96)}
+h1{margin:8px 0;font-size:42px;line-height:1.12;letter-spacing:0;overflow-wrap:anywhere}
+h2{margin:6px 0;font-size:21px;line-height:1.25;letter-spacing:0;overflow-wrap:anywhere}
+p{margin:0;color:var(--muted);overflow-wrap:anywhere}.hero p{max-width:660px;color:#f4e6d5}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:40px;max-width:100%;padding:8px 12px;border-radius:8px;border:1px solid var(--coffee);background:var(--coffee);color:#fff8ef;text-decoration:none;font-weight:800;text-align:center}
+.button.light{background:#f4eadb;color:var(--coffee);border-color:var(--line)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.panel,.reset-card{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:14px}
+.panel{background:#fffaf2}.panel b{display:block;font-size:26px;line-height:1.2;margin-top:4px;color:#25170f}
+.policy{margin-top:14px;background:#fff1df}.policy ul{margin:8px 0 0;padding-left:20px;color:#5f4735}
+.list{display:grid;gap:12px;margin-top:14px}
+.reset-card{display:grid;grid-template-columns:164px minmax(0,.8fr) minmax(0,1.1fr);gap:14px;align-items:start;background:#fffaf2}
+.thumb{position:relative;overflow:hidden;min-height:170px;border:1px solid #d8bea4;border-radius:8px;background-color:#f4eadb;background-image:image-set(url("../assets/ai_category_icon_sheet.webp") type("image/webp"),url("../assets/ai_category_icon_sheet.png") type("image/png"));background-repeat:no-repeat;background-size:300% 200%;box-shadow:inset 0 0 0 1px rgba(255,255,255,.42)}
+.thumb[data-icon="toys"]{background-position:0 0}.thumb[data-icon="treats"]{background-position:50% 0}.thumb[data-icon="scratch"]{background-position:100% 0}.thumb[data-icon="water"]{background-position:0 100%}.thumb[data-icon="care"]{background-position:50% 100%}.thumb[data-icon="watch"]{background-position:100% 100%}
+.thumb span{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);min-height:25px;display:inline-flex;align-items:center;padding:3px 8px;border:1px solid rgba(255,248,239,.72);border-radius:8px;background:rgba(37,23,15,.72);color:#fff8ef;font-size:12px;font-weight:850;line-height:1.2;overflow-wrap:anywhere}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.checks div{border:1px solid #ead1b6;border-radius:8px;background:#fffdf8;padding:10px}.checks strong{display:block;color:#3f281b;margin-bottom:4px}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.badges span{display:inline-flex;min-height:24px;align-items:center;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:#f4eadb;color:#5f4735;font-size:12px;font-weight:800}
+@media(max-width:980px){.reset-card{grid-template-columns:minmax(0,220px) minmax(0,1fr)}.checks{grid-column:1/-1}}
+@media(max-width:820px){.wrap{padding:15px}.hero .wrap{min-height:420px}h1{font-size:31px}.summary,.reset-card,.checks{grid-template-columns:1fr}.button{width:100%}.thumb{min-height:210px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap"><span class="label">猫ファースト</span><h1>見送り・やめどき</h1><p>売るためのページではなく、買わない判断を残すページです。怖がる、飲み込みそう、体調が変わるなどのサインがあれば、リンクを開く前でも、買った後でも止まれるようにします。</p><div class="actions"><a class="button" href="#items">商品ごとの見送り条件</a><a class="button light" href="../buying-check/">買う前チェック</a><a class="button light" href="../aftercare/">使い始めの見直し</a><a class="button light" href="../cat-first/">猫優先ランキング</a></div></div></header>
+<main class="wrap">
+  <section class="summary" aria-label="見送りページの概要">
+    <article class="panel"><span class="label">対象商品</span><b>9</b><p>全候補に買わない条件を付けます。</p></article>
+    <article class="panel"><span class="label">実リンク</span><b>0</b><p>リンクが増えても条件は残します。</p></article>
+    <article class="panel"><span class="label">方針</span><b>止まれる</b><p>合わない時は買わない、続けない。</p></article>
+  </section>
+  <section class="panel policy"><span class="label">このページの方針</span><ul><li>買う理由より先に、買わない条件を確認します。</li><li>猫が怖がる、体調が変わる、誤飲しそうな時は便利でも見送ります。</li><li>使った後に合わないサインが出たら、継続ではなく中止と相談を優先します。</li><li>リンクが用意できても、見送り条件を商品ページと買う前チェックに残します。</li></ul><div class="actions"><a class="button light" href="../consult-first/">相談を優先する時</a><a class="button light" href="../needs/">困りごとから探す</a><a class="button light" href="../fit-reset.json">fit-reset.json</a></div></section>
+  <section class="list" id="items" aria-label="商品ごとの見送り条件">
+        <article class="reset-card" id="toys-p1">
+          <div class="thumb" data-icon="toys" aria-hidden="true">
+            <span>遊びと運動</span>
+          </div>
+          <div class="copy">
+            <span class="label">遊びと運動</span>
+            <h2>けりぐるみ</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。</p></div>
+            <div><strong>いったん止める時</strong><p>破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。</p></div>
+            <div><strong>先に試すこと</strong><p>遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。</p></div>
+            <div><strong>見直すタイミング</strong><p>中綿や飾りを噛みちぎる子は、破れた時点で交換。小さい部品が出たらすぐ片付けます。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#toys-p1">買う前チェック</a>
+            <a class="button light" href="../products/toys/p1/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article>
+
+        <article class="reset-card" id="toys-p2">
+          <div class="thumb" data-icon="toys" aria-hidden="true">
+            <span>遊びと運動</span>
+          </div>
+          <div class="copy">
+            <span class="label">遊びと運動</span>
+            <h2>電動猫じゃらし</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。</p></div>
+            <div><strong>いったん止める時</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
+            <div><strong>先に試すこと</strong><p>最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。</p></div>
+            <div><strong>見直すタイミング</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#toys-p2">買う前チェック</a>
+            <a class="button light" href="../products/toys/p2/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article>
+
+        <article class="reset-card" id="treats-p1">
+          <div class="thumb" data-icon="treats" aria-hidden="true">
+            <span>おやつ</span>
+          </div>
+          <div class="copy">
+            <span class="label">おやつ</span>
+            <h2>CIAO ちゅーる系おやつ</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。</p></div>
+            <div><strong>いったん止める時</strong><p>吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。</p></div>
+            <div><strong>先に試すこと</strong><p>主食の代わりにせず、あげた日は他のおやつ量を減らします。</p></div>
+            <div><strong>見直すタイミング</strong><p>主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#treats-p1">買う前チェック</a>
+            <a class="button light" href="../products/treats/p1/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article>
+
+        <article class="reset-card" id="treats-p2">
+          <div class="thumb" data-icon="treats" aria-hidden="true">
+            <span>おやつ</span>
+          </div>
+          <div class="copy">
+            <span class="label">おやつ</span>
+            <h2>無添加寄りのおやつ</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。</p></div>
+            <div><strong>いったん止める時</strong><p>吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。</p></div>
+            <div><strong>先に試すこと</strong><p>新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。</p></div>
+            <div><strong>見直すタイミング</strong><p>初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#treats-p2">買う前チェック</a>
+            <a class="button light" href="../products/treats/p2/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article>
+
+        <article class="reset-card" id="scratch-p1">
+          <div class="thumb" data-icon="scratch" aria-hidden="true">
+            <span>爪とぎ</span>
+          </div>
+          <div class="copy">
+            <span class="label">爪とぎ</span>
+            <h2>段ボール爪とぎ 大容量</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</p></div>
+            <div><strong>いったん止める時</strong><p>滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。</p></div>
+            <div><strong>先に試すこと</strong><p>使う場所に固定し、崩れた面やカスは早めに片付けます。</p></div>
+            <div><strong>見直すタイミング</strong><p>粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#scratch-p1">買う前チェック</a>
+            <a class="button light" href="../products/scratch/p1/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article>
+
+        <article class="reset-card" id="water-p1">
+          <div class="thumb" data-icon="water" aria-hidden="true">
+            <span>水とごはん</span>
+          </div>
+          <div class="copy">
+            <span class="label">水とごはん</span>
+            <h2>循環式水飲み器</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。</p></div>
+            <div><strong>いったん止める時</strong><p>飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。</p></div>
+            <div><strong>先に試すこと</strong><p>水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。</p></div>
+            <div><strong>見直すタイミング</strong><p>水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#water-p1">買う前チェック</a>
+            <a class="button light" href="../products/water/p1/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article>
+
+        <article class="reset-card" id="water-p2">
+          <div class="thumb" data-icon="water" aria-hidden="true">
+            <span>水とごはん</span>
+          </div>
+          <div class="copy">
+            <span class="label">水とごはん</span>
+            <h2>自動給餌器</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。</p></div>
+            <div><strong>いったん止める時</strong><p>食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。</p></div>
+            <div><strong>先に試すこと</strong><p>毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。</p></div>
+            <div><strong>見直すタイミング</strong><p>食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#water-p2">買う前チェック</a>
+            <a class="button light" href="../products/water/p2/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article>
+
+        <article class="reset-card" id="care-p1">
+          <div class="thumb" data-icon="care" aria-hidden="true">
+            <span>お手入れ</span>
+          </div>
+          <div class="copy">
+            <span class="label">お手入れ</span>
+            <h2>猫用ブラシ</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>皮膚が弱い子、触られるのが苦手な子、怒りやすい子。</p></div>
+            <div><strong>いったん止める時</strong><p>皮膚が赤くなる、フケが増える、怒る、逃げる時は強さや形を見直します。</p></div>
+            <div><strong>先に試すこと</strong><p>短時間で終え、嫌がる日はやめて、終わった後の皮膚も見ます。</p></div>
+            <div><strong>見直すタイミング</strong><p>嫌がる子は短時間から。皮膚が赤くなる、フケが増える、怒る時は強さや形が合っていない可能性があります。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#care-p1">買う前チェック</a>
+            <a class="button light" href="../products/care/p1/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article>
+
+        <article class="reset-card" id="watch-p1">
+          <div class="thumb" data-icon="watch" aria-hidden="true">
+            <span>見守り</span>
+          </div>
+          <div class="copy">
+            <span class="label">見守り</span>
+            <h2>ペットカメラ</h2>
+            <p>買う前と使った後の両方で、合わないサインを先に見ます。</p>
+            <div class="badges">
+              <span>実リンク準備中</span>
+              <span>見送り条件あり</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>買わない時</strong><p>カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。</p></div>
+            <div><strong>いったん止める時</strong><p>カメラ音や動きで怖がる、コードを噛む、倒しそうな時は位置を変えます。</p></div>
+            <div><strong>先に試すこと</strong><p>見守りは補助。異変が見えたら通知だけで済ませず、直接確認します。</p></div>
+            <div><strong>見直すタイミング</strong><p>カメラの音や動きで怖がる子は固定位置を変えます。見守りは補助なので、異変があれば直接確認します。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../buying-check/#watch-p1">買う前チェック</a>
+            <a class="button light" href="../products/watch/p1/">商品ページ</a>
+            <a class="button light" href="../consult-first/">相談を優先する時</a>
+          </div>
+        </article></section>
+</main>
+<script type="application/json" id="fitResetData">{"generated_at": "2026-06-27T10:34:22", "exported_at": "2026-06-27T10:34:22", "state": "fit_reset_ready", "total_products": 9, "ready_links": 0, "items": [{"key": "toys/p1", "anchor": "toys-p1", "category_id": "toys", "category": "遊びと運動", "product_id": "p1", "product": "けりぐるみ", "product_page": "products/toys/p1/", "buying_check": "buying-check/#toys-p1", "consult_first": "consult-first/", "no_buy_if": "布や中綿を食べやすい子、飾りや小さい部品を噛みちぎる子。", "pause_if": "破れた、中綿が出た、飾りを噛みちぎる時はすぐ片付けます。", "try_instead": "遊んだ後にほつれを見て、留守番中に出しっぱなしにしない運用から始めます。", "revisit_when": "中綿や飾りを噛みちぎる子は、破れた時点で交換。小さい部品が出たらすぐ片付けます。", "link_ready": false}, {"key": "toys/p2", "anchor": "toys-p2", "category_id": "toys", "category": "遊びと運動", "product_id": "p2", "product": "電動猫じゃらし", "product_page": "products/toys/p2/", "buying_check": "buying-check/#toys-p2", "consult_first": "consult-first/", "no_buy_if": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。", "pause_if": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。", "try_instead": "最初は数分だけ。興奮が強い日は手動のおもちゃで落ち着かせます。", "revisit_when": "怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。遊び終わりは手動のおもちゃで落ち着かせます。", "link_ready": false}, {"key": "treats/p1", "anchor": "treats-p1", "category_id": "treats", "category": "おやつ", "product_id": "p1", "product": "CIAO ちゅーる系おやつ", "product_page": "products/treats/p1/", "buying_check": "buying-check/#treats-p1", "consult_first": "consult-first/", "no_buy_if": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。", "pause_if": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。", "try_instead": "主食の代わりにせず、あげた日は他のおやつ量を減らします。", "revisit_when": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。", "link_ready": false}, {"key": "treats/p2", "anchor": "treats-p2", "category_id": "treats", "category": "おやつ", "product_id": "p2", "product": "無添加寄りのおやつ", "product_page": "products/treats/p2/", "buying_check": "buying-check/#treats-p2", "consult_first": "consult-first/", "no_buy_if": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。", "pause_if": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。", "try_instead": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。", "revisit_when": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。", "link_ready": false}, {"key": "scratch/p1", "anchor": "scratch-p1", "category_id": "scratch", "category": "爪とぎ", "product_id": "p1", "product": "段ボール爪とぎ 大容量", "product_page": "products/scratch/p1/", "buying_check": "buying-check/#scratch-p1", "consult_first": "consult-first/", "no_buy_if": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。", "pause_if": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。", "try_instead": "使う場所に固定し、崩れた面やカスは早めに片付けます。", "revisit_when": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。", "link_ready": false}, {"key": "water/p1", "anchor": "water-p1", "category_id": "water", "category": "水とごはん", "product_id": "p1", "product": "循環式水飲み器", "product_page": "products/water/p1/", "buying_check": "buying-check/#water-p1", "consult_first": "consult-first/", "no_buy_if": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。", "pause_if": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。", "try_instead": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。", "revisit_when": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。", "link_ready": false}, {"key": "water/p2", "anchor": "water-p2", "category_id": "water", "category": "水とごはん", "product_id": "p2", "product": "自動給餌器", "product_page": "products/water/p2/", "buying_check": "buying-check/#water-p2", "consult_first": "consult-first/", "no_buy_if": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。", "pause_if": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。", "try_instead": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。", "revisit_when": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。", "link_ready": false}, {"key": "care/p1", "anchor": "care-p1", "category_id": "care", "category": "お手入れ", "product_id": "p1", "product": "猫用ブラシ", "product_page": "products/care/p1/", "buying_check": "buying-check/#care-p1", "consult_first": "consult-first/", "no_buy_if": "皮膚が弱い子、触られるのが苦手な子、怒りやすい子。", "pause_if": "皮膚が赤くなる、フケが増える、怒る、逃げる時は強さや形を見直します。", "try_instead": "短時間で終え、嫌がる日はやめて、終わった後の皮膚も見ます。", "revisit_when": "嫌がる子は短時間から。皮膚が赤くなる、フケが増える、怒る時は強さや形が合っていない可能性があります。", "link_ready": false}, {"key": "watch/p1", "anchor": "watch-p1", "category_id": "watch", "category": "見守り", "product_id": "p1", "product": "ペットカメラ", "product_page": "products/watch/p1/", "buying_check": "buying-check/#watch-p1", "consult_first": "consult-first/", "no_buy_if": "カメラの音や首振りを怖がる子、置き場所や配線を安全に確保できない家庭。", "pause_if": "カメラ音や動きで怖がる、コードを噛む、倒しそうな時は位置を変えます。", "try_instead": "見守りは補助。異変が見えたら通知だけで済ませず、直接確認します。", "revisit_when": "カメラの音や動きで怖がる子は固定位置を変えます。見守りは補助なので、異変があれば直接確認します。", "link_ready": false}], "policy": ["買う理由より先に、買わない条件を確認します。", "猫が怖がる、体調が変わる、誤飲しそうな時は便利でも見送ります。", "使った後に合わないサインが出たら、継続ではなく中止と相談を優先します。", "リンクが用意できても、見送り条件を商品ページと買う前チェックに残します。"], "related": {"buying_check": "buying-check/", "aftercare": "aftercare/", "consult_first": "consult-first/", "cat_first": "cat-first/", "needs": "needs/"}}</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T10:16:52",
-  "exported_at": "2026-06-27T10:16:52",
+  "generated_at": "2026-06-27T10:34:22",
+  "exported_at": "2026-06-27T10:34:22",
   "state": "decision_guide_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -59,6 +59,16 @@
       "icon": "advisor",
       "priority": 4,
       "cat_first_check": "よさそうでも、使わない・怖がる可能性を先に見ます。"
+    },
+    {
+      "id": "fit_reset",
+      "label": "見送り",
+      "title": "買わない・やめる条件を見る",
+      "summary": "便利そうな用品でも、怖がる、飲み込みそう、体調が変わる時は止まれる入口です。",
+      "path": "fit-reset/",
+      "icon": "no_buy",
+      "priority": 4,
+      "cat_first_check": "買う理由より、買わない条件とやめどきを先に見ます。"
     },
     {
       "id": "consult_first",
@@ -474,6 +484,7 @@
     "needs": "needs/",
     "trends": "trends/",
     "buying_check": "buying-check/",
+    "fit_reset": "fit-reset/",
     "consult_first": "consult-first/",
     "seasonal": "seasonal/",
     "daily": "daily/"

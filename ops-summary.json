@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T10:16:52",
-  "exported_at": "2026-06-27T10:16:52",
+  "generated_at": "2026-06-27T10:34:22",
+  "exported_at": "2026-06-27T10:34:22",
   "phase": "needs_moshimo_approval",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -421,6 +421,8 @@
     "buying_check_page": "buying-check/",
     "aftercare_plan": "aftercare-plan.json",
     "aftercare_page": "aftercare/",
+    "fit_reset": "fit-reset.json",
+    "fit_reset_page": "fit-reset/",
     "consult_first": "consult-first.json",
     "consult_first_page": "consult-first/",
     "cat_quiz": "cat-quiz.json",

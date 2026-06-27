@@ -60,6 +60,9 @@
 /aftercare-plan.json
   Cache-Control: no-cache
 
+/fit-reset.json
+  Cache-Control: no-cache
+
 /consult-first.json
   Cache-Control: no-cache
 
@@ -130,6 +133,9 @@
   Cache-Control: no-cache
 
 /aftercare/*
+  Cache-Control: no-cache
+
+/fit-reset/*
   Cache-Control: no-cache
 
 /seasonal-care.json

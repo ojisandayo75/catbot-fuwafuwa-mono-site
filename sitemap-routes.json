@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-27T10:16:52",
+  "generated_at": "2026-06-27T10:34:22",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "route_count": 35,
-  "absolute_url_count": 35,
+  "route_count": 36,
+  "absolute_url_count": 36,
   "routes": [
     {
       "kind": "home",
@@ -116,6 +116,15 @@
       "lastmod": "2026-06-27",
       "changefreq": "weekly",
       "priority": 0.8
+    },
+    {
+      "kind": "fit-reset",
+      "path": "fit-reset/",
+      "title": "Catbot 見送り・やめどき",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/fit-reset/",
+      "lastmod": "2026-06-27",
+      "changefreq": "weekly",
+      "priority": 0.83
     },
     {
       "kind": "aftercare",

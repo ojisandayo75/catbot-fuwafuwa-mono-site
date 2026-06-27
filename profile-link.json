@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T10:16:52",
-  "exported_at": "2026-06-27T10:16:52",
+  "generated_at": "2026-06-27T10:34:22",
+  "exported_at": "2026-06-27T10:34:22",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -62,6 +62,7 @@
     ],
     "links": {
       "buying_check": "buying-check/",
+      "fit_reset": "fit-reset/",
       "consult_first": "consult-first/"
     }
   },
@@ -296,6 +297,12 @@
       "image": "assets/ai_category_toys.webp"
     },
     {
+      "label": "買わない判断",
+      "title": "見送り・やめどき",
+      "href": "fit-reset/",
+      "image": "assets/ai_shortcut_no_buy.webp"
+    },
+    {
       "label": "困りごとから探す",
       "title": "困りごとメニュー",
       "href": "needs/",
@@ -352,6 +359,7 @@
     "cat_first_ranking": "cat-first/",
     "first_target": "first-target/",
     "buying_check": "buying-check/",
+    "fit_reset": "fit-reset/",
     "needs": "needs/",
     "daily": "daily/",
     "aftercare": "aftercare/",

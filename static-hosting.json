@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-27T10:16:52",
+  "generated_at": "2026-06-27T10:34:22",
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "files": 183,
-  "bytes": 36773547,
+  "files": 185,
+  "bytes": 36817693,
   "ready_links": 0,
   "total_products": 9,
   "helpers": {
@@ -38,6 +38,8 @@
     "buying_check_page": "buying-check/index.html",
     "aftercare_plan": "aftercare-plan.json",
     "aftercare_page": "aftercare/index.html",
+    "fit_reset": "fit-reset.json",
+    "fit_reset_page": "fit-reset/index.html",
     "seasonal_care": "seasonal-care.json",
     "seasonal_page": "seasonal/index.html",
     "consult_first": "consult-first.json",

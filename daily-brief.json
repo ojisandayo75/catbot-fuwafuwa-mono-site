@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T10:16:52",
-  "exported_at": "2026-06-27T10:16:52",
+  "generated_at": "2026-06-27T10:34:22",
+  "exported_at": "2026-06-27T10:34:22",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -396,6 +396,8 @@
     "buying_check_page": "buying-check/",
     "aftercare_plan": "aftercare-plan.json",
     "aftercare_page": "aftercare/",
+    "fit_reset": "fit-reset.json",
+    "fit_reset_page": "fit-reset/",
     "consult_first": "consult-first.json",
     "consult_first_page": "consult-first/",
     "cat_quiz": "cat-quiz.json",
