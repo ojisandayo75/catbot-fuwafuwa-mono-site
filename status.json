@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T04:05:16",
-  "exported_at": "2026-06-28T04:05:16",
+  "generated_at": "2026-06-28T04:18:02",
+  "exported_at": "2026-06-28T04:18:02",
   "phase": "needs_moshimo_approval",
   "site_name": "ふわふわ猫の道具箱",
   "public_url_configured": true,
@@ -319,8 +319,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-28T04:05:16",
-    "exported_at": "2026-06-28T04:05:16",
+    "generated_at": "2026-06-28T04:18:02",
+    "exported_at": "2026-06-28T04:18:02",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -390,9 +390,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-28T04:05:20",
+    "checked_at": "2026-06-28T04:18:06",
     "synced": true,
-    "last_exported_at": "2026-06-28T04:05:18",
+    "last_exported_at": "2026-06-28T04:18:04",
     "ready_links": 0,
     "total_products": 9,
     "followers": 578,
@@ -402,10 +402,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-28T03:52:21",
+        "deployed_at": "2026-06-28T04:05:21",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 191,
-        "total_bytes": 37460152
+        "total_bytes": 37460940
       }
     },
     "scheduled_task": {

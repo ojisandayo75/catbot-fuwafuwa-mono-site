@@ -1,7 +1,7 @@
 {
   "state": "first_target_ready",
-  "generated_at": "2026-06-28T04:05:16",
-  "exported_at": "2026-06-28T04:05:16",
+  "generated_at": "2026-06-28T04:18:02",
+  "exported_at": "2026-06-28T04:18:02",
   "category_id": "toys",
   "product_id": "p2",
   "key": "toys/p2",
@@ -134,6 +134,47 @@
       "link_kind": "search"
     }
   ],
+  "quiz_match_gate": {
+    "state": "saved_diagnosis_target_fit",
+    "storage_key": "catbot:quiz:last",
+    "panel_id": "firstTargetQuizPanel",
+    "status_element_id": "firstTargetQuizFitStatus",
+    "compatible_outcome_ids": [
+      "home-alone",
+      "active"
+    ],
+    "alternate_outcome_ids": [
+      "hydration",
+      "daily-care"
+    ],
+    "compatible_outcomes": [
+      {
+        "id": "home-alone",
+        "title": "留守番が多い猫",
+        "match_url": "matches/home-alone/"
+      },
+      {
+        "id": "active",
+        "title": "よく走る・遊び足りない猫",
+        "match_url": "matches/active/"
+      }
+    ],
+    "alternate_outcomes": [
+      {
+        "id": "hydration",
+        "title": "水分・ごはんを整えたい猫",
+        "match_url": "matches/hydration/"
+      },
+      {
+        "id": "daily-care",
+        "title": "毛・爪・部屋のケアを楽にしたい猫",
+        "match_url": "matches/daily-care/"
+      }
+    ],
+    "compatible_message": "この診断タイプでは、この候補も確認候補に入ります。買う前チェックと採点表を見てから進みます。",
+    "mismatch_message": "この診断タイプでは、この候補は主候補ではありません。商品検索より先にタイプ別ページで近い候補を見ます。",
+    "fallback_url": "quiz/"
+  },
   "pre_click_checklist": [
     {
       "label": "音と動き",
