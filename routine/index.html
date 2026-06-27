@@ -404,7 +404,7 @@ li strong{display:block;color:#5a3522;margin-bottom:2px}
       .filter((box) => box.checked)
       .map((box) => box.getAttribute("data-routine-check"));
     const saved = new Date();
-    localStorage.setItem(storageKey, JSON.stringify({ checked, savedAt: saved.toISOString() }));
+    localStorage.setItem(storageKey, JSON.stringify({ checked, memo: buildMemo(), savedAt: saved.toISOString() }));
     updateProgress(saved);
     updateMemo();
   };

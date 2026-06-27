@@ -51,6 +51,9 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}.hero p{color:#f4e6d5;max-w
 .memo-card ul,.template-card ul{margin:0;padding-left:20px;color:#5f4735}
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:14px}
 pre{white-space:pre-wrap;overflow:auto;margin:0;padding:12px;border:1px solid var(--line);border-radius:8px;background:#fff8ef;color:#3b2417;font:14px/1.6 Consolas,"Yu Gothic UI",monospace}
+.routine-import{margin-top:14px;background:#fffaf2}
+.routine-import textarea{width:100%;min-height:150px;margin-top:10px;border:1px solid var(--line);border-radius:8px;background:#fffdf8;color:#25170f;padding:10px;font:inherit;line-height:1.55;resize:vertical}
+.copy-status{font-size:13px;color:#6a5646;margin-top:6px}
 .sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
 .source-link{display:grid;gap:4px;text-decoration:none;color:inherit}
 .source-link strong{color:#4e2f1f}.source-link span{color:#6a5646;font-size:13px}
@@ -79,6 +82,14 @@ pre{white-space:pre-wrap;overflow:auto;margin:0;padding:12px;border:1px solid va
     <span class="label">診断ではありません</span>
     <p>このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、商品選びではなく獣医師への相談を優先します。</p>
     <div class="urgent-tags" aria-label="今すぐ相談するサイン"><span>呼吸が苦しそう</span><span>口を開けて呼吸する</span><span>尿が出ない</span><span>トイレに何度も行く</span><span>反応が弱い</span><span>倒れる</span></div>
+  </section>
+  <section class="template-card routine-import" aria-label="毎日のケアメモ読込">
+    <span class="label">routine連携</span>
+    <h2>今日の猫メモを読み込む</h2>
+    <p>同じ端末でroutineをチェックしていれば、今日のメモをここに表示します。相談前の記録としてそのままコピーできます。</p>
+    <textarea id="vetRoutineMemo" readonly>routine/で今日のチェックを保存すると、ここに表示されます。</textarea>
+    <div class="actions"><button class="button" type="button" id="vetCopyRoutineMemo">routineメモをコピー</button><a class="button light" href="../routine/">毎日のケア習慣へ</a></div>
+    <p class="copy-status" id="vetRoutineStatus" aria-live="polite">端末内メモを確認中</p>
   </section>
   <section id="memo" class="memo-grid" aria-label="病院に伝えるメモ項目">
         <article class="memo-card">
@@ -156,5 +167,74 @@ pre{white-space:pre-wrap;overflow:auto;margin:0;padding:12px;border:1px solid va
           <span>vomiting, diarrhea, kidney disease, diabetes, and other diseases can cause dehydration.</span>
         </a></section>
 </main>
+<script>
+(() => {
+  const today = new Date().toISOString().slice(0, 10);
+  const storageKey = `catbot:routine:${today}`;
+  const memoArea = document.getElementById("vetRoutineMemo");
+  const copyButton = document.getElementById("vetCopyRoutineMemo");
+  const status = document.getElementById("vetRoutineStatus");
+
+  const fallbackMemo = (state) => {
+    const checked = Array.isArray(state.checked) ? state.checked : [];
+    if (!checked.length) {
+      return "routine/で今日のチェックを保存すると、ここに表示されます。";
+    }
+    return [
+      `Catbot 今日の猫メモ ${today}`,
+      `完了 ${checked.length}項目`,
+      "",
+      "見たこと:",
+      ...checked.map((item) => `- ${item}`),
+      "",
+      "気になる変化が続く時は、商品を足す前に相談を優先。"
+    ].join("
+");
+  };
+
+  const loadMemo = () => {
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (!raw) return { memo: "", savedAt: "" };
+      const state = JSON.parse(raw);
+      return {
+        memo: String(state.memo || fallbackMemo(state)),
+        savedAt: String(state.savedAt || "")
+      };
+    } catch (_error) {
+      return { memo: "", savedAt: "" };
+    }
+  };
+
+  const data = loadMemo();
+  if (memoArea && data.memo) {
+    memoArea.value = data.memo;
+  }
+  if (status) {
+    status.textContent = data.savedAt
+      ? `routine保存 ${
+          new Date(data.savedAt).toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" })
+        }`
+      : "routine/で今日のチェックを保存すると読み込めます";
+  }
+  if (copyButton) {
+    copyButton.addEventListener("click", async () => {
+      const text = memoArea ? memoArea.value : "";
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else if (memoArea) {
+          memoArea.focus();
+          memoArea.select();
+          document.execCommand("copy");
+        }
+        if (status) status.textContent = "routineメモをコピーしました";
+      } catch (_error) {
+        if (status) status.textContent = "コピーできませんでした";
+      }
+    });
+  }
+})();
+</script>
 </body>
 </html>
