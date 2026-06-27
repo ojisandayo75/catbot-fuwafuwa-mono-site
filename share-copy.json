@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T16:05:51",
+  "generated_at": "2026-06-27T17:16:08",
   "phase": "launch_waiting",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -30,7 +30,35 @@
       "until": "2026-06-28T12:34:42+09:00",
       "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
       "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
-      "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json"
+      "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
+      "recovery": {
+        "active": false,
+        "pending": true,
+        "starts_at": "2026-06-28T12:34:42+09:00",
+        "until": "2026-06-29T00:34:42+09:00",
+        "hours": 12,
+        "caps": {
+          "tweet_send": 2,
+          "post": 1,
+          "like": 2,
+          "follow": 0,
+          "reply": 0,
+          "quote": 0,
+          "promo": 0,
+          "series": 0
+        },
+        "remaining": {
+          "tweet_send": 2,
+          "post": 1,
+          "like": 2,
+          "follow": 0,
+          "reply": 0,
+          "quote": 0,
+          "promo": 0,
+          "series": 0
+        },
+        "note": "After cooldown ends, keep X actions slow: post<=1, tweet_send<=2, like<=2; reply/quote/follow/promo/series disabled by default."
+      }
     },
     "note": "商品直リンクを入れない、実アフィリリンク前のサイト紹介だけに使う。"
   },
@@ -96,7 +124,7 @@
       "猫の不安や体調不良を煽る文面"
     ]
   },
-  "exported_at": "2026-06-27T16:05:51",
+  "exported_at": "2026-06-27T17:16:08",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
