@@ -101,6 +101,17 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .visitor-state strong{display:block;margin-top:4px;font-size:22px;line-height:1.25;color:#2f1e14;overflow-wrap:anywhere}
 .visitor-state .badges{margin-top:0;align-content:start}
 .visitor-state .badges span{background:#fffdf8;border-color:#d8bea4}
+.profile-reaction{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:12px;margin-top:14px;border:1px solid #c5a07d;border-radius:8px;background:linear-gradient(135deg,#4a2d1c 0%,#68452d 58%,#90643d 100%);color:#fff8ef;padding:14px}
+.profile-reaction p{color:#f1dfca}
+.profile-reaction h2{color:#fff8ef}
+.profile-reaction .pill{background:rgba(255,248,239,.14);border-color:rgba(255,248,239,.34);color:#fff8ef}
+.profile-reaction-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.profile-reaction-card{display:grid;gap:6px;min-width:0;border:1px solid rgba(255,248,239,.28);border-radius:8px;background:rgba(255,248,239,.10);padding:11px;color:#fff8ef;text-decoration:none}
+.profile-reaction-card span{color:#f8d8ae;font-size:12px;font-weight:900;overflow-wrap:anywhere}
+.profile-reaction-card strong{font-size:17px;line-height:1.25;overflow-wrap:anywhere}
+.profile-reaction-card p{font-size:13px;line-height:1.45}
+.profile-reaction-card small{color:#ffe4bd;font-weight:900;overflow-wrap:anywhere}
+.profile-reaction-card:hover{background:rgba(255,248,239,.16);border-color:rgba(255,248,239,.48)}
 .quick-paths{margin-top:14px;border:1px solid #d8bea4;border-radius:8px;background:#fffaf2;padding:14px}
 .quick-path-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
 .quick-path-head p{max-width:640px}
@@ -133,7 +144,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 .update-stats b{display:block;font-size:20px;line-height:1.2;color:#3f281b;overflow-wrap:anywhere}
 .update-stats small{display:block;color:#6b5544;font-weight:900}
 .disclosure{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;color:#5f4735;font-size:14px}
-@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.growth-meter,.growth-side,.growth-stats,.auto-update-panel,.update-stats{grid-template-columns:1fr}.quick-path-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.button{width:100%}.menu-card,.quick-path-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}}
+@media(max-width:860px){.wrap{padding:14px}.hero .wrap{min-height:440px}.hero-copy{max-width:100%}.hero p{max-width:100%;font-size:15px;line-height:1.65;word-break:break-word}h1{font-size:31px}.status,.journey-grid,.menu,.grid,.no-buy-grid,.aftercare-list,.visitor-state,.profile-reaction,.profile-reaction-grid,.growth-meter,.growth-side,.growth-stats,.auto-update-panel,.update-stats{grid-template-columns:1fr}.quick-path-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.button{width:100%}.menu-card,.quick-path-card{min-height:0}.journey-step{grid-template-columns:74px minmax(0,1fr);min-height:116px}.journey-step img{width:74px}.growth-visual,.growth-visual img{min-height:190px}.no-buy-art{width:100%;max-height:210px}}
 @media(max-width:520px){.quick-path-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -167,6 +178,35 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <p>今は、猫に合うか・合わない条件・やめるサインを先に見られる準備ページです。もしも承認と実リンク確認が終わるまで、販売リンクより買う前チェックを優先します。</p>
     </div>
     <div class="badges"><span>商品直リンクなし</span><span>買う前チェック優先</span><span>578/1000フォロワー</span><span>もしも承認待ち</span></div>
+  </section>
+
+  <section id="profileCatbotReaction" class="profile-reaction" aria-label="catbot反応から今日見る入口" data-profile-reaction-strip="catbot">
+    <div>
+      <span class="pill">catbot反応から自動更新</span>
+      <h2>catbot反応から今日見る</h2>
+      <p>伸びた投稿や反応テーマを、そのまま商品へ飛ばさず、猫の状態・買う前チェック・1000人準備へ分けて見ます。</p>
+    </div>
+    <div class="profile-reaction-grid">
+        <a class="profile-reaction-card" data-profile-reaction-card="daily" href="../daily/">
+          <span>今日の反応</span>
+          <strong>遊び</strong>
+          <p>catbotで反応が強いテーマを、今日の猫メモで短く確認します。</p>
+          <small>score 32</small>
+        </a>
+
+        <a class="profile-reaction-card" data-profile-reaction-card="trends" href="../trends/">
+          <span>伸びた投稿</span>
+          <strong>まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…</strong>
+          <p>バズの空気を、買う理由ではなく猫に合うかの確認へ変換します。</p>
+          <small>156,918 views / 1,224 likes</small>
+        </a>
+
+        <a class="profile-reaction-card" data-profile-reaction-card="milestone" href="../milestone/">
+          <span>1000人準備</span>
+          <strong>578/1000人</strong>
+          <p>販売導線を強める前に、プロフィール入口と買う前チェックを育てます。</p>
+          <small>残り 422人 / 直近7日 +241</small>
+        </a></div>
   </section>
 
   <section class="quick-paths" aria-label="すぐ選ぶ入口">
@@ -252,7 +292,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <div class="badges"><span>同期済み</span><span>投稿 10</span><span>動画 12</span><span>商品 9</span></div>
     </div>
     <div class="update-stats">
-      <div><small>最終更新</small><b>2026-06-28T01:57:26</b><p>公開データに反映済み</p></div>
+      <div><small>最終更新</small><b>2026-06-28T02:13:37</b><p>公開データに反映済み</p></div>
       <div><small>次回目安</small><b>定期更新</b><p>定期更新</p></div>
       <div><small>投稿ログ</small><b>10</b><p>catbot反応の入口</p></div>
       <div><small>動画/商品</small><b>12/9</b><p>猫用品候補へ変換</p></div>

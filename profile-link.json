@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T01:57:26",
-  "exported_at": "2026-06-28T01:57:26",
+  "generated_at": "2026-06-28T02:13:37",
+  "exported_at": "2026-06-28T02:13:37",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -50,7 +50,7 @@
     "title": "自動更新メモ",
     "body": "catbotの投稿ログ、動画素材、商品候補を見て、猫に合う入口と今日の候補を更新します。",
     "synced": true,
-    "last_exported_at": "2026-06-28T01:57:26",
+    "last_exported_at": "2026-06-28T02:13:37",
     "next_run_time": "定期更新",
     "interval": "定期更新",
     "source_counts": {
@@ -322,6 +322,36 @@
       }
     }
   ],
+  "catbot_reaction_strip": {
+    "title": "catbot反応から今日見る",
+    "body": "伸びた投稿や反応テーマを、そのまま商品へ飛ばさず、猫の状態・買う前チェック・1000人準備へ分けて見ます。",
+    "cards": [
+      {
+        "kind": "daily",
+        "label": "今日の反応",
+        "title": "遊び",
+        "body": "catbotで反応が強いテーマを、今日の猫メモで短く確認します。",
+        "metric": "score 32",
+        "href": "daily/"
+      },
+      {
+        "kind": "trends",
+        "label": "伸びた投稿",
+        "title": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…",
+        "body": "バズの空気を、買う理由ではなく猫に合うかの確認へ変換します。",
+        "metric": "156,918 views / 1,224 likes",
+        "href": "trends/"
+      },
+      {
+        "kind": "milestone",
+        "label": "1000人準備",
+        "title": "578/1000人",
+        "body": "販売導線を強める前に、プロフィール入口と買う前チェックを育てます。",
+        "metric": "残り 422人 / 直近7日 +241",
+        "href": "milestone/"
+      }
+    ]
+  },
   "routes": [
     {
       "label": "猫に合うか見る",
@@ -439,6 +469,7 @@
     "fit_reset": "fit-reset/",
     "needs": "needs/",
     "daily": "daily/",
+    "milestone": "milestone/",
     "aftercare": "aftercare/",
     "policy": "policy/"
   },
