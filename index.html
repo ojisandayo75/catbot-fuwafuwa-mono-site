@@ -56,7 +56,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-06-28T01:32:56",
+      "dateModified": "2026-06-28T01:45:08",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -4052,6 +4052,8 @@
     box-shadow:0 14px 34px rgba(64,39,24,.13);
   }
   .home-auto-update + .first-choice-menu{margin-top:14px}
+  .home-auto-update + .home-decision-strip{margin-top:14px}
+  .home-decision-strip + .first-choice-menu{margin-top:14px}
   .home-auto-update-copy{
     min-width:0;
     display:flex;
@@ -4110,6 +4112,92 @@
     color:#776555;
     line-height:1.35;
   }
+  .home-decision-strip{
+    display:grid;
+    gap:12px;
+    padding:14px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#fffaf2;
+  }
+  .home-decision-strip-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .home-decision-strip-head h2{
+    margin:0;
+    color:#25170f;
+    font-size:24px;
+    line-height:1.18;
+    letter-spacing:0;
+    overflow-wrap:anywhere;
+  }
+  .home-decision-strip-head p{
+    margin:0;
+    max-width:640px;
+    color:#6a5646;
+    font-size:14px;
+  }
+  .home-decision-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:10px;
+  }
+  .home-decision-card{
+    display:grid;
+    grid-template-rows:auto auto auto 1fr;
+    gap:7px;
+    min-width:0;
+    min-height:218px;
+    padding:10px;
+    border:1px solid #e4c8aa;
+    border-radius:8px;
+    background:#fffdf8;
+    color:#25170f;
+    text-decoration:none;
+  }
+  .home-decision-card img{
+    display:block;
+    width:100%;
+    aspect-ratio:1.12;
+    object-fit:cover;
+    border:1px solid #e7d1b8;
+    border-radius:8px;
+    background:#f4eadb;
+  }
+  .home-decision-card span{
+    display:inline-flex;
+    width:max-content;
+    max-width:100%;
+    min-height:23px;
+    align-items:center;
+    padding:2px 7px;
+    border:1px solid #d8bea4;
+    border-radius:8px;
+    background:#f4eadb;
+    color:#65462f;
+    font-size:12px;
+    font-weight:900;
+  }
+  .home-decision-card strong{
+    display:block;
+    font-size:17px;
+    line-height:1.25;
+    overflow-wrap:anywhere;
+  }
+  .home-decision-card p{
+    margin:0;
+    color:#6a5646;
+    font-size:13px;
+    line-height:1.55;
+  }
+  .home-decision-card:hover{
+    border-color:#b68d68;
+    background:#fff7eb;
+  }
   @media (max-width:760px){
     .home-auto-update{
       grid-template-columns:1fr;
@@ -4117,6 +4205,11 @@
     }
     .home-auto-update-copy h2{font-size:23px}
     .home-auto-update-actions .button{width:100%}
+    .home-decision-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .home-decision-card{min-height:0}
+  }
+  @media (max-width:520px){
+    .home-decision-grid{grid-template-columns:1fr}
   }
 
 </style>
@@ -4309,10 +4402,48 @@
       </div>
     </div>
     <div class="home-auto-update-stats" aria-label="自動更新の元データ">
-      <article class="home-auto-update-stat"><span>最終更新</span><strong>2026-06-28 01:32</strong><small>公開データを再生成</small></article>
+      <article class="home-auto-update-stat"><span>最終更新</span><strong>2026-06-28 01:45</strong><small>公開データを再生成</small></article>
       <article class="home-auto-update-stat"><span>投稿ログ</span><strong>10</strong><small>catbot反応を反映</small></article>
       <article class="home-auto-update-stat"><span>動画</span><strong>12</strong><small>素材と見せ方を調整</small></article>
       <article class="home-auto-update-stat"><span>商品候補</span><strong>9</strong><small>商品直リンクなし / 電動猫じゃらし</small></article>
+    </div>
+  </section>
+  <section id="homeDecisionStrip" class="home-decision-strip" aria-label="猫の状態から選ぶ入口" data-home-decision-strip="cat-first">
+    <div class="home-decision-strip-head">
+      <div>
+        <span class="badge ready">迷ったらここから</span>
+        <h2>リンク集ではなく、猫の状態から入る</h2>
+      </div>
+      <p>買う前に、うちの子に合うか、見送るべき条件がないかを短く確認できます。</p>
+    </div>
+    <div class="home-decision-grid">
+      <a class="home-decision-card" href="quiz/">
+        <img src="assets/ai_shortcut_match.webp" alt="" loading="lazy">
+        <span>うちの子から</span>
+        <strong>性格と困りごとで選ぶ</strong>
+        <p>怖がり、遊び足りない、留守番など、猫の状態から入口を選びます。</p>
+      </a>
+      
+      <a class="home-decision-card" href="needs/">
+        <img src="assets/ai_nav_icon_sheet_v2.webp" alt="" loading="lazy">
+        <span>困りごとから</span>
+        <strong>水・遊び・爪とぎで探す</strong>
+        <p>商品名ではなく、いま困っていることに近い入口へ進みます。</p>
+      </a>
+      
+      <a class="home-decision-card" href="buying-check/">
+        <img src="assets/ai_shortcut_advisor.webp" alt="" loading="lazy">
+        <span>買う前に</span>
+        <strong>合わない条件を見る</strong>
+        <p>音、サイズ、置き場所、誤飲、使いすぎを先に確認します。</p>
+      </a>
+      
+      <a class="home-decision-card" href="first-target/">
+        <img src="assets/ai_product_toys_p2.webp" alt="" loading="lazy">
+        <span>今日の候補</span>
+        <strong>電動猫じゃらし</strong>
+        <p>catbotで反応が強い候補を、猫優先の注意つきで見ます。</p>
+      </a>
     </div>
   </section>
 
