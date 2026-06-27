@@ -1,7 +1,7 @@
 {
   "state": "first_target_ready",
-  "generated_at": "2026-06-28T03:41:52",
-  "exported_at": "2026-06-28T03:41:52",
+  "generated_at": "2026-06-28T03:52:16",
+  "exported_at": "2026-06-28T03:52:16",
   "category_id": "toys",
   "product_id": "p2",
   "key": "toys/p2",
@@ -157,6 +157,9 @@
       "合わない猫",
       "やめるサイン"
     ],
+    "requires_scorecard_ready": true,
+    "scorecard_minimum_yes_count": 4,
+    "scorecard_event": "firstTargetScorecardUpdated",
     "status_element_id": "firstTargetSearchGateStatus"
   },
   "selection_scorecard": {
