@@ -91,6 +91,19 @@ pre{white-space:pre-wrap;overflow:auto;margin:0;padding:12px;border:1px solid va
     <div class="actions"><button class="button" type="button" id="vetCopyRoutineMemo">routineメモをコピー</button><a class="button light" href="../routine/">毎日のケア習慣へ</a></div>
     <p class="copy-status" id="vetRoutineStatus" aria-live="polite">端末内メモを確認中</p>
   </section>
+
+  <section class="template-card routine-import quiz-import" aria-label="うちの子診断メモ">
+    <span class="label">quiz連携</span>
+    <h2>うちの子診断メモを読み込む</h2>
+    <p>うちの子診断で保存したメモを読み込みます。選んだタイプ、買わない判断、最初の試し方を、相談前の整理メモとして見返せます。</p>
+    <textarea id="vetQuizMemo" readonly>quiz/でうちの子診断メモを保存すると、ここに表示されます。</textarea>
+    <div class="actions">
+      <button class="button" type="button" id="vetCopyQuizMemo">診断メモをコピー</button>
+      <a class="button light" href="../quiz/">うちの子診断へ</a>
+      <a class="button light" href="../buying-check/">買う前チェックへ</a>
+    </div>
+    <p class="copy-status" id="vetQuizStatus" aria-live="polite">診断メモを確認中</p>
+  </section>
   <section id="memo" class="memo-grid" aria-label="病院に伝えるメモ項目">
         <article class="memo-card">
           <h2>いつから</h2>
@@ -236,5 +249,56 @@ pre{white-space:pre-wrap;overflow:auto;margin:0;padding:12px;border:1px solid va
   }
 })();
 </script>
+
+<script>
+(() => {
+  const memoArea = document.getElementById("vetQuizMemo");
+  const copyButton = document.getElementById("vetCopyQuizMemo");
+  const status = document.getElementById("vetQuizStatus");
+
+  const loadQuizMemo = () => {
+    try {
+      const raw = localStorage.getItem("catbot:quiz:last");
+      if (!raw) return { memo: "", savedAt: "" };
+      const state = JSON.parse(raw);
+      return {
+        memo: String(state.memo || ""),
+        title: String(state.title || ""),
+        savedAt: String(state.savedAt || "")
+      };
+    } catch (_error) {
+      return { memo: "", savedAt: "" };
+    }
+  };
+
+  const data = loadQuizMemo();
+  if (memoArea && data.memo) {
+    memoArea.value = data.memo;
+  }
+  if (status) {
+    status.textContent = data.savedAt
+      ? `診断メモ保存 ${new Date(data.savedAt).toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" })}`
+      : "quiz/でうちの子診断メモを保存すると読み込めます";
+  }
+  if (copyButton) {
+    copyButton.addEventListener("click", async () => {
+      const text = memoArea ? memoArea.value : "";
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else if (memoArea) {
+          memoArea.focus();
+          memoArea.select();
+          document.execCommand("copy");
+        }
+        if (status) status.textContent = "診断メモをコピーしました";
+      } catch (_error) {
+        if (status) status.textContent = "コピーできませんでした";
+      }
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
