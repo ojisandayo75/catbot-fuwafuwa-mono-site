@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T12:28:12",
-  "exported_at": "2026-06-28T12:28:12",
+  "generated_at": "2026-06-28T12:59:21",
+  "exported_at": "2026-06-28T12:59:21",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -17,7 +17,7 @@
   "shop_post_guard": {
     "decision": "wait",
     "allowed": false,
-    "rate_allowed": false,
+    "rate_allowed": true,
     "launch_ready": false,
     "milestone_ready": false,
     "followers": 578,
@@ -31,14 +31,14 @@
     "hours_since_last": null,
     "next_allowed_at": "",
     "safety_cooldown": {
-      "active": true,
+      "active": false,
       "until": "2026-06-28T12:34:42+09:00",
-      "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+      "reason": "",
       "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
       "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
       "recovery": {
-        "active": false,
-        "pending": true,
+        "active": true,
+        "pending": false,
         "starts_at": "2026-06-28T12:34:42+09:00",
         "until": "2026-06-29T00:34:42+09:00",
         "hours": 12,
@@ -69,10 +69,6 @@
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "blockers": [
       {
-        "id": "safety_cooldown",
-        "detail": "cooldown active until 2026-06-28T12:34:42+09:00"
-      },
-      {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
       },
@@ -81,12 +77,7 @@
         "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
       }
     ],
-    "rate_blockers": [
-      {
-        "id": "safety_cooldown",
-        "detail": "cooldown active until 2026-06-28T12:34:42+09:00"
-      }
-    ],
+    "rate_blockers": [],
     "launch_blockers": [
       {
         "id": "affiliate_link",
@@ -104,22 +95,22 @@
     "record_command": ".\\affiliate_site_ops.bat shop-post-guard --record --text \"posted shop profile update\""
   },
   "safe_warmup": {
-    "allowed": false,
-    "decision": "wait_safety_cooldown",
+    "allowed": true,
+    "decision": "allow_warmup",
     "text": "ふわふわ猫の道具箱を整えています。\n商品直リンクはまだ置かず、買う前チェックを優先しています。\n猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。\ncatbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。\n\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
-    "command": ".\\catbot_site_warmup_ready.bat",
-    "record_command": "",
-    "copy_enabled": false,
-    "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。",
+    "command": ".\\catbot_site_warmup_ready.bat -Copy",
+    "record_command": ".\\catbot_site_warmup_ready.bat -Record",
+    "copy_enabled": true,
+    "copy_locked_reason": "",
     "safety_cooldown": {
-      "active": true,
+      "active": false,
       "until": "2026-06-28T12:34:42+09:00",
-      "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+      "reason": "",
       "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
       "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
       "recovery": {
-        "active": false,
-        "pending": true,
+        "active": true,
+        "pending": false,
         "starts_at": "2026-06-28T12:34:42+09:00",
         "until": "2026-06-29T00:34:42+09:00",
         "hours": 12,
@@ -162,7 +153,7 @@
       "use_when": "公開URLをプロフィールに入れた後の固定投稿に使う",
       "text": "猫用品をすぐ買わせる場所ではなく、合う理由・合わない条件・やめるサインから見られるページを作りました。 今は「遊び」、次は「電動猫じゃらし」を整えています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
       "copy_enabled": false,
-      "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+      "copy_locked_reason": "shop-post-guardがwaitの間は、プロフィール設定とプレ告知だけコピーできます。"
     },
     {
       "id": "soft_reply",
@@ -170,15 +161,14 @@
       "use_when": "バズ投稿への自己リプで使う",
       "text": "この投稿で反応が多かったテーマを、猫に合うかどうかから見られるページにまとめています。 買う前チェックから見られます。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
       "copy_enabled": false,
-      "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+      "copy_locked_reason": "shop-post-guardがwaitの間は、プロフィール設定とプレ告知だけコピーできます。"
     },
     {
       "id": "site_warmup",
       "title": "プレ告知",
       "use_when": "実アフィリリンクを入れる前のサイト紹介で使う",
       "text": "ふわふわ猫の道具箱を整えています。 商品直リンクはまだ置かず、買う前チェックを優先しています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
-      "copy_enabled": false,
-      "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+      "copy_enabled": true
     },
     {
       "id": "first_target_entry",
@@ -186,7 +176,7 @@
       "use_when": "商品直リンクではなく買う前チェックへ誘導する時に使う",
       "text": "次に整える猫用品は「電動猫じゃらし」。 買う前チェック: 連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。 合わない子: 音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/",
       "copy_enabled": false,
-      "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+      "copy_locked_reason": "shop-post-guardがwaitの間は、プロフィール設定とプレ告知だけコピーできます。"
     },
     {
       "id": "soft_launch",
@@ -194,7 +184,7 @@
       "use_when": "公開後や固定投稿で使う",
       "text": "ふわふわ猫の道具箱を更新しました。 商品直リンクはまだ置かず、買う前チェックを優先しています。 catbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全から見られるようにしています。 売り込みより、合わない理由とやめるサインを先に置いています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
       "copy_enabled": false,
-      "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+      "copy_locked_reason": "shop-post-guardがwaitの間は、プロフィール設定とプレ告知だけコピーできます。"
     },
     {
       "id": "cat_first",
@@ -202,7 +192,7 @@
       "use_when": "売り込み感を弱めたい時に使う",
       "text": "猫用品をすぐ買わせる場所ではなく、合う理由・合わない条件・最初の試し方を先に見る場所にしています。 今は「遊び」まわりを更新中です。",
       "copy_enabled": false,
-      "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+      "copy_locked_reason": "shop-post-guardがwaitの間は、プロフィール設定とプレ告知だけコピーできます。"
     },
     {
       "id": "next_product",
@@ -210,7 +200,7 @@
       "use_when": "商品リンクを1本ずつ整える時に使う",
       "text": "次に整える猫用品は「電動猫じゃらし」。 買う前チェック: 連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。 合わない子: 音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
       "copy_enabled": false,
-      "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+      "copy_locked_reason": "shop-post-guardがwaitの間は、プロフィール設定とプレ告知だけコピーできます。"
     }
   ],
   "rules": [
@@ -225,7 +215,7 @@
     "record": ".\\affiliate_site_ops.bat shop-post-guard --record --text \"posted shop profile update\"",
     "daily_brief": ".\\affiliate_site_ops.bat daily-brief",
     "x_copy": ".\\affiliate_site_ops.bat x-copy",
-    "site_warmup": ".\\catbot_site_warmup_ready.bat",
+    "site_warmup": ".\\catbot_site_warmup_ready.bat -Copy",
     "launch_check": ".\\affiliate_site_ops.bat launch-check"
   },
   "public_files": {
@@ -239,16 +229,16 @@
     "first_target": "first-target/"
   },
   "copy_safety": {
-    "mode": "cooldown",
+    "mode": "warmup_only",
     "guard_decision": "wait",
-    "cooldown_active": true,
+    "cooldown_active": false,
     "cooldown_until": "2026-06-28T12:34:42+09:00",
-    "recovery_active": false,
-    "recovery_pending": true,
+    "recovery_active": true,
+    "recovery_pending": false,
     "recovery_until": "2026-06-29T00:34:42+09:00",
     "recovery": {
-      "active": false,
-      "pending": true,
+      "active": true,
+      "pending": false,
       "starts_at": "2026-06-28T12:34:42+09:00",
       "until": "2026-06-29T00:34:42+09:00",
       "hours": 12,
@@ -275,20 +265,20 @@
       "note": "After cooldown ends, keep X actions slow: post<=1, tweet_send<=2, like<=2; reply/quote/follow/promo/series disabled by default."
     },
     "profile_copy_enabled": true,
-    "warmup_copy_enabled": false,
+    "warmup_copy_enabled": true,
     "enabled_variant_ids": [
-      "profile"
+      "profile",
+      "site_warmup"
     ],
     "locked_variant_ids": [
       "pinned",
       "soft_reply",
-      "site_warmup",
       "first_target_entry",
       "soft_launch",
       "cat_first",
       "next_product"
     ],
-    "message": "安全クールダウン中。プロフィールURLだけコピーできます。",
-    "lock_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。"
+    "message": "プレ告知だけコピー可。販売寄りの文はガード待ちです。",
+    "lock_reason": "shop-post-guardがwaitの間は、プロフィール設定とプレ告知だけコピーできます。"
   }
 }

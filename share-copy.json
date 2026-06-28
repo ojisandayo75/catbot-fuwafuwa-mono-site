@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T12:28:12",
+  "generated_at": "2026-06-28T12:59:21",
   "phase": "launch_waiting",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -18,22 +18,22 @@
   "next_category": "遊び",
   "primary_text": "ふわふわ猫の道具箱を更新しました。 商品直リンクはまだ置かず、買う前チェックを優先しています。 catbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全から見られるようにしています。 売り込みより、合わない理由とやめるサインを先に置いています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "safe_warmup": {
-    "allowed": false,
-    "decision": "wait_safety_cooldown",
+    "allowed": true,
+    "decision": "allow_warmup",
     "text": "ふわふわ猫の道具箱を整えています。 商品直リンクはまだ置かず、買う前チェックを優先しています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
-    "command": ".\\catbot_site_warmup_ready.bat",
-    "record_command": "",
-    "copy_enabled": false,
-    "copy_locked_reason": "安全クールダウン中です。2026-06-28T12:34:42+09:00 までは投稿文コピーを止めます。",
+    "command": ".\\catbot_site_warmup_ready.bat -Copy",
+    "record_command": ".\\catbot_site_warmup_ready.bat -Record",
+    "copy_enabled": true,
+    "copy_locked_reason": "",
     "safety_cooldown": {
-      "active": true,
+      "active": false,
       "until": "2026-06-28T12:34:42+09:00",
-      "reason": "cooldown active until 2026-06-28T12:34:42+09:00",
+      "reason": "",
       "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
       "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
       "recovery": {
-        "active": false,
-        "pending": true,
+        "active": true,
+        "pending": false,
         "starts_at": "2026-06-28T12:34:42+09:00",
         "until": "2026-06-29T00:34:42+09:00",
         "hours": 12,
@@ -124,7 +124,7 @@
       "猫の不安や体調不良を煽る文面"
     ]
   },
-  "exported_at": "2026-06-28T12:28:12",
+  "exported_at": "2026-06-28T12:59:21",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",

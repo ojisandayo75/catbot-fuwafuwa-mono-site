@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T12:28:12",
-  "exported_at": "2026-06-28T12:28:12",
+  "generated_at": "2026-06-28T12:59:21",
+  "exported_at": "2026-06-28T12:59:21",
   "account": "@fuwafuwa_mono",
   "stage": "pre_900_prepare",
   "stage_label": "900人までは静かに土台作り",
@@ -37,11 +37,11 @@
   "shop_post_allowed": false,
   "shop_post_decision": "wait",
   "x_safety": {
-    "cooldown_active": true,
+    "cooldown_active": false,
     "cooldown_until": "2026-06-28T12:34:42+09:00",
-    "cooldown_reason": "cooldown active until 2026-06-28T12:34:42+09:00",
-    "recovery_active": false,
-    "recovery_pending": true,
+    "cooldown_reason": "",
+    "recovery_active": true,
+    "recovery_pending": false,
     "recovery_until": "2026-06-29T00:34:42+09:00",
     "recovery_remaining": {
       "post": 1,
@@ -64,7 +64,6 @@
     "商品直リンクをXに貼る",
     "販売投稿、リプ誘導、タグ増やし、連投を始める",
     "普通の商品URLや検索URLを実アフィリリンクとして保存する",
-    "2026-06-28T12:34:42+09:00まではX投稿文をコピー投稿しない",
     "2026-06-29T00:34:42+09:00までは回復上限を超えない (post残り1, tweet送信残り2, like残り2)"
   ],
   "current_target": {
