@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T12:59:21",
-  "exported_at": "2026-06-28T12:59:21",
+  "generated_at": "2026-06-28T18:28:11",
+  "exported_at": "2026-06-28T18:28:11",
   "state": "needs_moshimo_approval",
   "completion_estimate": {
     "stage_label": "技術側はほぼ完了",
@@ -22,7 +22,7 @@
       "max": 20
     },
     "approval_next_check_at": "2026-06-28T16:54:29",
-    "approval_check_due": false,
+    "approval_check_due": true,
     "followers": 578,
     "follower_goal": 1000,
     "followers_to_goal": 422,
@@ -61,16 +61,16 @@
   "next_command_reason": "Moshi-mo approval is still pending, so the first-link workflow remains gated.",
   "next_command_blocked_by": "moshimo_approval_check",
   "safety_cooldown": {
-    "active": false,
-    "until": "2026-06-28T12:34:42+09:00",
-    "reason": "",
-    "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+    "active": true,
+    "until": "2026-06-29T18:11:08+09:00",
+    "reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+    "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260628_181108.json",
     "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
     "recovery": {
-      "active": true,
-      "pending": false,
-      "starts_at": "2026-06-28T12:34:42+09:00",
-      "until": "2026-06-29T00:34:42+09:00",
+      "active": false,
+      "pending": true,
+      "starts_at": "2026-06-29T18:11:08+09:00",
+      "until": "2026-06-30T06:11:08+09:00",
       "hours": 12,
       "caps": {
         "tweet_send": 2,
@@ -96,10 +96,10 @@
     }
   },
   "safety_recovery": {
-    "active": true,
-    "pending": false,
-    "starts_at": "2026-06-28T12:34:42+09:00",
-    "until": "2026-06-29T00:34:42+09:00",
+    "active": false,
+    "pending": true,
+    "starts_at": "2026-06-29T18:11:08+09:00",
+    "until": "2026-06-30T06:11:08+09:00",
     "hours": 12,
     "caps": {
       "tweet_send": 2,
@@ -124,17 +124,17 @@
     "note": "After cooldown ends, keep X actions slow: post<=1, tweet_send<=2, like<=2; reply/quote/follow/promo/series disabled by default."
   },
   "remaining_counts": {
-    "open": 4,
-    "done": 2,
+    "open": 5,
+    "done": 1,
     "total": 6,
     "open_ids": [
       "moshimo_approval",
       "first_tracking_url",
       "follower_goal",
+      "x_safety_cooldown",
       "x_recovery_mode"
     ],
     "done_ids": [
-      "x_safety_cooldown",
       "public_site"
     ]
   },
@@ -171,18 +171,18 @@
     },
     {
       "id": "x_safety_cooldown",
-      "done": true,
-      "label": "OK",
+      "done": false,
+      "label": "待ち",
       "title": "X安全クールダウン",
-      "detail": "X投稿の安全クールダウンはありません。投稿前はshop-post-guardを確認します。",
+      "detail": "2026-06-29T18:11:08+09:00 まではX投稿文は参考用です。コピー投稿はガード解除後にします。",
       "command": ".\\affiliate_site_ops.bat shop-post-guard --json"
     },
     {
       "id": "x_recovery_mode",
       "done": false,
-      "label": "回復中",
+      "label": "予定",
       "title": "X回復モード",
-      "detail": "2026-06-29T00:34:42+09:00 までは解除直後の慣らし運転です。投稿残り 1、tweet送信残り 2。リプ・引用・フォローは初期値0で止めます。",
+      "detail": "2026-06-30T06:11:08+09:00 までは解除直後の慣らし運転です。投稿残り 1、tweet送信残り 2。リプ・引用・フォローは初期値0で止めます。",
       "command": ".\\catbot_site_warmup_ready.bat -Json"
     },
     {
@@ -203,8 +203,8 @@
     "approval_last_check_at": "2026-06-28T04:54:29",
     "approval_next_check_at": "2026-06-28T16:54:29",
     "approval_next_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
-    "approval_check_due": false,
-    "approval_check_note": "pendingの間は何度も確認しすぎず、次回確認時刻か承認メールが来た時だけ見ます。",
+    "approval_check_due": true,
+    "approval_check_note": "次回確認時刻を過ぎています。もしも作業台で承認状態を見て、approvedなら状態を反映します。",
     "approval_update_commands": {
       "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
       "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",

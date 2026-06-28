@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T12:59:21",
-  "exported_at": "2026-06-28T12:59:21",
+  "generated_at": "2026-06-28T18:28:11",
+  "exported_at": "2026-06-28T18:28:11",
   "phase": "needs_moshimo_approval",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -35,7 +35,7 @@
   "shop_post_guard": {
     "decision": "wait",
     "allowed": false,
-    "rate_allowed": true,
+    "rate_allowed": false,
     "launch_ready": false,
     "milestone_ready": false,
     "followers": 578,
@@ -49,16 +49,16 @@
     "hours_since_last": null,
     "next_allowed_at": "",
     "safety_cooldown": {
-      "active": false,
-      "until": "2026-06-28T12:34:42+09:00",
-      "reason": "",
-      "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+      "active": true,
+      "until": "2026-06-29T18:11:08+09:00",
+      "reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+      "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260628_181108.json",
       "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
       "recovery": {
-        "active": true,
-        "pending": false,
-        "starts_at": "2026-06-28T12:34:42+09:00",
-        "until": "2026-06-29T00:34:42+09:00",
+        "active": false,
+        "pending": true,
+        "starts_at": "2026-06-29T18:11:08+09:00",
+        "until": "2026-06-30T06:11:08+09:00",
         "hours": 12,
         "caps": {
           "tweet_send": 2,
@@ -87,6 +87,10 @@
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "blockers": [
       {
+        "id": "safety_cooldown",
+        "detail": "cooldown active until 2026-06-29T18:11:08+09:00"
+      },
+      {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
       },
@@ -95,7 +99,12 @@
         "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
       }
     ],
-    "rate_blockers": [],
+    "rate_blockers": [
+      {
+        "id": "safety_cooldown",
+        "detail": "cooldown active until 2026-06-29T18:11:08+09:00"
+      }
+    ],
     "launch_blockers": [
       {
         "id": "affiliate_link",
@@ -113,24 +122,24 @@
     "record_command": ".\\affiliate_site_ops.bat shop-post-guard --record --text \"posted shop profile update\""
   },
   "safe_warmup": {
-    "allowed": true,
-    "decision": "allow_warmup",
+    "allowed": false,
+    "decision": "wait_safety_cooldown",
     "text": "ふわふわ猫の道具箱を整えています。\n商品直リンクはまだ置かず、買う前チェックを優先しています。\n猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。\ncatbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。\n\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
-    "command": ".\\catbot_site_warmup_ready.bat -Copy",
-    "record_command": ".\\catbot_site_warmup_ready.bat -Record",
-    "copy_enabled": true,
-    "copy_locked_reason": "",
+    "command": ".\\catbot_site_warmup_ready.bat",
+    "record_command": "",
+    "copy_enabled": false,
+    "copy_locked_reason": "安全クールダウン中です。2026-06-29T18:11:08+09:00 までは投稿文コピーを止めます。",
     "safety_cooldown": {
-      "active": false,
-      "until": "2026-06-28T12:34:42+09:00",
-      "reason": "",
-      "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+      "active": true,
+      "until": "2026-06-29T18:11:08+09:00",
+      "reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+      "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260628_181108.json",
       "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
       "recovery": {
-        "active": true,
-        "pending": false,
-        "starts_at": "2026-06-28T12:34:42+09:00",
-        "until": "2026-06-29T00:34:42+09:00",
+        "active": false,
+        "pending": true,
+        "starts_at": "2026-06-29T18:11:08+09:00",
+        "until": "2026-06-30T06:11:08+09:00",
         "hours": 12,
         "caps": {
           "tweet_send": 2,
@@ -390,24 +399,24 @@
     "phase": "launch_waiting",
     "primary_text": "ふわふわ猫の道具箱を更新しました。\n商品直リンクはまだ置かず、買う前チェックを優先しています。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全から見られるようにしています。\n売り込みより、合わない理由とやめるサインを先に置いています。\n\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "safe_warmup": {
-      "allowed": true,
-      "decision": "allow_warmup",
+      "allowed": false,
+      "decision": "wait_safety_cooldown",
       "text": "ふわふわ猫の道具箱を整えています。\n商品直リンクはまだ置かず、買う前チェックを優先しています。\n猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。\ncatbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。\n\nhttps://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
-      "command": ".\\catbot_site_warmup_ready.bat -Copy",
-      "record_command": ".\\catbot_site_warmup_ready.bat -Record",
-      "copy_enabled": true,
-      "copy_locked_reason": "",
+      "command": ".\\catbot_site_warmup_ready.bat",
+      "record_command": "",
+      "copy_enabled": false,
+      "copy_locked_reason": "安全クールダウン中です。2026-06-29T18:11:08+09:00 までは投稿文コピーを止めます。",
       "safety_cooldown": {
-        "active": false,
-        "until": "2026-06-28T12:34:42+09:00",
-        "reason": "",
-        "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260627_123442.json",
+        "active": true,
+        "until": "2026-06-29T18:11:08+09:00",
+        "reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+        "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260628_181108.json",
         "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
         "recovery": {
-          "active": true,
-          "pending": false,
-          "starts_at": "2026-06-28T12:34:42+09:00",
-          "until": "2026-06-29T00:34:42+09:00",
+          "active": false,
+          "pending": true,
+          "starts_at": "2026-06-29T18:11:08+09:00",
+          "until": "2026-06-30T06:11:08+09:00",
           "hours": 12,
           "caps": {
             "tweet_send": 2,

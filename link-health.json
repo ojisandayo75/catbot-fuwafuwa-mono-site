@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T12:59:21",
-  "exported_at": "2026-06-28T12:59:21",
+  "generated_at": "2026-06-28T18:28:11",
+  "exported_at": "2026-06-28T18:28:11",
   "phase": "needs_moshimo_approval",
   "state": "needs_moshimo_approval",
   "moshimo": {
@@ -12,8 +12,8 @@
     "approval_last_check_at": "2026-06-28T04:54:29",
     "approval_next_check_at": "2026-06-28T16:54:29",
     "approval_next_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
-    "approval_check_due": false,
-    "approval_check_note": "pendingの間は何度も確認しすぎず、次回確認時刻か承認メールが来た時だけ見ます。",
+    "approval_check_due": true,
+    "approval_check_note": "次回確認時刻を過ぎています。もしも作業台で承認状態を見て、approvedなら状態を反映します。",
     "approval_update_commands": {
       "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
       "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",

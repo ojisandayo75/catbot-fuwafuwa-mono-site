@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T12:59:21",
-  "exported_at": "2026-06-28T12:59:21",
+  "generated_at": "2026-06-28T18:28:11",
+  "exported_at": "2026-06-28T18:28:11",
   "account": "@fuwafuwa_mono",
   "stage": "pre_900_prepare",
   "stage_label": "900人までは静かに土台作り",
@@ -23,8 +23,8 @@
     "approval_last_check_at": "2026-06-28T04:54:29",
     "approval_next_check_at": "2026-06-28T16:54:29",
     "approval_next_check_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
-    "approval_check_due": false,
-    "approval_check_note": "pendingの間は何度も確認しすぎず、次回確認時刻か承認メールが来た時だけ見ます。",
+    "approval_check_due": true,
+    "approval_check_note": "次回確認時刻を過ぎています。もしも作業台で承認状態を見て、approvedなら状態を反映します。",
     "approval_update_commands": {
       "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
       "rakuten": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
@@ -37,12 +37,12 @@
   "shop_post_allowed": false,
   "shop_post_decision": "wait",
   "x_safety": {
-    "cooldown_active": false,
-    "cooldown_until": "2026-06-28T12:34:42+09:00",
-    "cooldown_reason": "",
-    "recovery_active": true,
-    "recovery_pending": false,
-    "recovery_until": "2026-06-29T00:34:42+09:00",
+    "cooldown_active": true,
+    "cooldown_until": "2026-06-29T18:11:08+09:00",
+    "cooldown_reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+    "recovery_active": false,
+    "recovery_pending": true,
+    "recovery_until": "2026-06-30T06:11:08+09:00",
     "recovery_remaining": {
       "post": 1,
       "tweet_send": 2,
@@ -64,7 +64,8 @@
     "商品直リンクをXに貼る",
     "販売投稿、リプ誘導、タグ増やし、連投を始める",
     "普通の商品URLや検索URLを実アフィリリンクとして保存する",
-    "2026-06-29T00:34:42+09:00までは回復上限を超えない (post残り1, tweet送信残り2, like残り2)"
+    "2026-06-29T18:11:08+09:00まではX投稿文をコピー投稿しない",
+    "2026-06-30T06:11:08+09:00までは回復上限を超えない (post残り1, tweet送信残り2, like残り2)"
   ],
   "current_target": {
     "key": "toys/p2",
