@@ -234,7 +234,13 @@
     "隠れ家や高い場所で安心を。大きな音や来客に配慮して、急かさないであげて。":
       "Hideaways and high spots bring comfort. Mind loud noises and guests; don’t rush them.",
     "こまめな遊びとリアクションを。おやつのごほうびでメリハリをつけてあげて。":
-      "Frequent play and reactions. Use treat rewards to add rhythm."
+      "Frequent play and reactions. Use treat rewards to add rhythm.",
+    // --- ドロップダウンメニュー ---
+    "🐾 うちの子診断": "🐾 Cat quiz",
+    "🐈 困りごとから探す": "🐈 Find by concern",
+    "🔒 プライバシーポリシー": "🔒 Privacy policy",
+    "✉️ お問い合わせ": "✉️ Contact",
+    "メニューを開く": "Open menu"
   };
 
   var KEY = "catbot-lang";

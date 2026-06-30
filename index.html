@@ -58,7 +58,7 @@
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-07-01T01:21:32",
+      "dateModified": "2026-07-01T02:32:55",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -350,7 +350,16 @@
   .wrap{max-width:480px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 60px -20px rgba(64,39,24,.25)}
 
   /* top bar */
-  .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:9px;padding:11px 18px;background:rgba(255,248,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .header-wrap{position:sticky;top:0;z-index:30}
+  .topbar{display:flex;align-items:center;gap:9px;padding:11px 18px;background:rgba(255,248,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  /* ドロップダウンメニュー */
+  .drawer{display:none;flex-direction:column;background:#fffdf8;border-bottom:1px solid var(--line);box-shadow:0 14px 26px -14px rgba(64,39,24,.34)}
+  .drawer.open{display:flex;animation:drawerIn .18s ease}
+  @keyframes drawerIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+  .drawer a{display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #f1e6d6;font-size:15px;font-weight:700;color:var(--ink)}
+  .drawer a:last-child{border-bottom:0}
+  .drawer a:hover,.drawer a:active{background:#fff2df}
+  .menu-btn.open{color:var(--caramel)}
   .brand-mark{width:38px;height:38px;border-radius:11px;background-image:url("assets/top1a_09.webp");background-size:cover;background-position:center;box-shadow:0 0 0 1px rgba(90,53,34,.15);flex:0 0 auto}
   .brand-copy{display:flex;flex-direction:column;line-height:1.15}
   .brand-copy strong{font-size:15px;white-space:nowrap}
@@ -740,11 +749,25 @@
 <body>
 <div class="wrap">
 
+  <div class="header-wrap">
   <header class="topbar">
-    <span class="brand-mark" aria-hidden="true"></span>
+    <a class="brand-mark" href="./" aria-label="トップへ"></a>
     <span class="brand-copy"><strong>ふわふわ猫の道具箱</strong><small>猫優先で選ぶ猫用品サイト</small></span>
-    <button class="menu-btn" type="button" aria-label="メニュー">☰</button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="siteDrawer">☰</button>
   </header>
+  <nav class="drawer" id="siteDrawer" aria-label="サイトメニュー">
+    <a href="choose/">🐱 猫の様子から選ぶ</a>
+    <a href="buying-check/">✅ 買う前チェック</a>
+    <a href="quiz/">🐾 うちの子診断</a>
+    <a href="articles/">📝 猫のお悩み記事</a>
+    <a href="needs/">🐈 困りごとから探す</a>
+    <a href="seasonal/">🍂 季節のケア</a>
+    <a href="consult-first/">💬 体調の相談先</a>
+    <a href="about/">📋 運営者情報・広告について</a>
+    <a href="privacy/">🔒 プライバシーポリシー</a>
+    <a href="contact/">✉️ お問い合わせ</a>
+  </nav>
+  </div>
 
   <main>
     <!-- hero -->
@@ -817,6 +840,20 @@
   </footer>
 
 </div>
-
-
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),dr=document.getElementById('siteDrawer');
+  if(!btn||!dr)return;
+  function close(){dr.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=dr.classList.toggle('open');
+    btn.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  document.addEventListener('click',function(e){ if(dr.classList.contains('open')&&!dr.contains(e.target)&&e.target!==btn) close(); });
+  dr.addEventListener('click',function(e){ if(e.target.closest('a')) close(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
 </body></html>
