@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "state": "care_routine_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "title": "毎日の猫ケアルーティン",
-  "summary": "商品名より先に、朝・夜・週1で猫の様子を見るための自動更新メモです。",
+  "summary": "商品名より先に、朝・夜・週1で猫の様子を見るための新着情報です。",
   "periods": [
     {
       "id": "morning",
@@ -100,7 +100,7 @@
       "detail_url": "products/treats/p1/",
       "lane": "ready",
       "lane_label": "リンク化しやすい",
-      "score": 51,
+      "score": 35,
       "next_target": false
     },
     {
@@ -136,7 +136,7 @@
       "detail_url": "products/water/p2/",
       "lane": "careful",
       "lane_label": "慎重にリンク化",
-      "score": 93,
+      "score": 101,
       "next_target": false
     },
     {
@@ -154,7 +154,7 @@
       "detail_url": "products/water/p1/",
       "lane": "careful",
       "lane_label": "慎重にリンク化",
-      "score": 89,
+      "score": 97,
       "next_target": false
     },
     {
@@ -208,7 +208,7 @@
       "detail_url": "products/treats/p2/",
       "lane": "careful",
       "lane_label": "慎重にリンク化",
-      "score": 55,
+      "score": 39,
       "next_target": false
     }
   ],

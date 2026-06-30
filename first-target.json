@@ -1,13 +1,13 @@
 {
   "state": "first_target_ready",
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "category_id": "toys",
   "product_id": "p2",
   "key": "toys/p2",
   "category": "遊び",
   "product": "電動猫じゃらし",
-  "lead": "人が手を離していても、短時間の運動を作れる候補です。",
+  "lead": "人が手を離していても、短時間の運動を作れるおすすめです。",
   "best_for": "遊び足りない子、留守番後に走り回る子、反応するおもちゃを増やしたい子。",
   "not_for": "音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。",
   "first_try": "最初は数分だけ。怖がる、息が上がる、部品を噛みちぎる時はすぐ止めます。",
@@ -21,12 +21,12 @@
   "ready": false,
   "ready_links": 0,
   "total_products": 9,
-  "followers": 578,
+  "followers": 672,
   "follower_goal": 1000,
   "score": 211,
   "price_band": "中",
   "primary_action": {
-    "label": "候補検索を見る",
+    "label": "おすすめ検索を見る",
     "href": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
     "kind": "search",
     "external": true
@@ -41,7 +41,7 @@
     "trend_url": "trends/#toys",
     "panel_markers": [
       "catbotSignal",
-      "catbot反応から見る",
+      "人気の猫動画から見る",
       "反応トレンドで見る"
     ],
     "signals": [
@@ -66,8 +66,8 @@
       {
         "kind": "video",
         "title": "素材動画の傾向",
-        "label": "funk nonstop in her head #fyp #rigbycat #catsoftiktok #catconte…",
-        "metric": "141,114,634 plays",
+        "label": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp",
+        "metric": "114,993,040 plays",
         "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
         "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。",
         "trend_url": "trends/#toys"
@@ -106,7 +106,7 @@
       "product_id": "p2",
       "category": "水とごはん",
       "product": "自動給餌器",
-      "score": 93,
+      "score": 101,
       "product_page": "products/water/p2/",
       "buying_check_anchor": "buying-check/#water-p2",
       "search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
@@ -123,7 +123,7 @@
       "product_id": "p1",
       "category": "水とごはん",
       "product": "循環式水飲み器",
-      "score": 89,
+      "score": 97,
       "product_page": "products/water/p1/",
       "buying_check_anchor": "buying-check/#water-p1",
       "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
@@ -171,8 +171,8 @@
         "match_url": "matches/daily-care/"
       }
     ],
-    "compatible_message": "この診断タイプでは、この候補も確認候補に入ります。買う前チェックと採点表を見てから進みます。",
-    "mismatch_message": "この診断タイプでは、この候補は主候補ではありません。商品検索より先にタイプ別ページで近い候補を見ます。",
+    "compatible_message": "この診断タイプでは、このおすすめも確認おすすめに入ります。買う前チェックと採点表を見てから進みます。",
+    "mismatch_message": "この診断タイプでは、このおすすめは主おすすめではありません。商品検索より先にタイプ別ページで近いおすすめを見ます。",
     "fallback_url": "quiz/"
   },
   "pre_click_checklist": [
@@ -230,12 +230,12 @@
         "detail": "毛やほこりが絡んだ時に、飼い主がすぐ外して清潔に戻せるかを見ます。"
       }
     ],
-    "owner_note": "承認後に商品を選ぶ時は、売れ筋より先に4項目以上YESになる候補だけを初回リンクにします。"
+    "owner_note": "承認後に商品を選ぶ時は、売れ筋より先に4項目以上YESになるおすすめだけを初回リンクにします。"
   },
   "ad_disclosure": "このサイトには広告・アフィリエイトリンクを含む場合があります。リンクが入っても、猫に合うか・合わない条件・やめるサインを先に確認します。",
   "cat_first_rules": [
     "いきなり買わせず、合う子・合わない子を先に見せる。",
-    "実リンクが入るまでは検索候補に留める。",
+    "商品リンクが入るまでは検索おすすめに留める。",
     "怖がる、壊す、飲み込む可能性がある時は止める。",
     "体調の変化がある時は、商品より相談を優先する。"
   ]

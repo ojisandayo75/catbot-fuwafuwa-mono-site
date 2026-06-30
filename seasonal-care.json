@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "month": "2026-06",
+  "month": "2026-07",
   "key": "summer",
   "title": "梅雨から夏の猫ケア",
   "summary": "湿度と暑さが上がる時期は、水分、風通し、留守中の室温を優先します。遊びは短めにして休む時間も作ります。",
@@ -17,7 +17,7 @@
       "id": "water",
       "label": "水とごはん",
       "headline": "毎日の水分とごはんをラクに整える。",
-      "score": 5,
+      "score": 13,
       "guide_url": "",
       "products": [
         {

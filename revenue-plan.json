@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "monetization_stage": "needs_moshimo_approval",
@@ -28,25 +28,25 @@
     }
   },
   "moshimo_ready_for_first_link": false,
-  "followers": 578,
+  "followers": 672,
   "follower_goal": 1000,
-  "followers_to_goal": 422,
+  "followers_to_goal": 328,
   "follower_milestone": {
-    "followers": 578,
+    "followers": 672,
     "goal": 1000,
-    "remaining": 422,
-    "progress": 57.8,
-    "last_7d_gain": 241,
-    "recent_avg_per_day": 34.4,
-    "eta_date": "2026-07-09",
+    "remaining": 328,
+    "progress": 67.2,
+    "last_7d_gain": 131,
+    "recent_avg_per_day": 21.8,
+    "eta_date": "2026-07-15",
     "state": "growing",
     "shop_promotion": "wait",
     "site_warmup": "ready"
   },
   "follower_growth": {
-    "last_7d_gain": 241,
-    "recent_avg_per_day": 34.4,
-    "eta_date": "2026-07-09",
+    "last_7d_gain": 131,
+    "recent_avg_per_day": 21.8,
+    "eta_date": "2026-07-15",
     "state": "growing"
   },
   "catbot_signal": {
@@ -168,7 +168,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。"
     },
     {
       "category_id": "water",
@@ -176,7 +176,7 @@
       "product_id": "p2",
       "product": "自動給餌器",
       "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
-      "score": 93,
+      "score": 101,
       "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
       "price_band": "高",
       "reasons": [
@@ -214,7 +214,7 @@
       "product_id": "p1",
       "product": "循環式水飲み器",
       "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
-      "score": 89,
+      "score": 97,
       "check": "洗いやすさ、フィルター代、音の小ささを確認。",
       "price_band": "中",
       "reasons": [
@@ -255,7 +255,7 @@
   "recommended_action": {
     "id": "moshimo_approval_check",
     "title": "もしも承認を確認する",
-    "detail": "Amazonまたは楽天がapprovedになってから、最初の追跡URLを作ります。",
+    "detail": "Amazonまたは楽天がapprovedになってから、最初の商品リンクを作ります。",
     "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
     "approval_update_commands": {
       "amazon": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
@@ -267,30 +267,30 @@
     {
       "id": "moshimo_approval",
       "title": "もしも提携承認",
-      "detail": "Amazonまたは楽天がapprovedになってから、toys/p2 電動猫じゃらし の追跡URLを作る。"
+      "detail": "Amazonまたは楽天がapprovedになってから、toys/p2 電動猫じゃらし の商品リンクを作る。"
     }
   ],
   "shop_post_guard": {
     "allowed": false,
     "decision": "wait",
-    "rate_allowed": false,
+    "rate_allowed": true,
     "launch_ready": false,
     "milestone_ready": false,
-    "followers": 578,
+    "followers": 672,
     "follower_goal": 1000,
-    "followers_to_goal": 422,
+    "followers_to_goal": 328,
     "daily_cap": 2,
     "remaining_today": 2,
     "min_interval_hours": 6.0,
     "safety_cooldown": {
-      "active": true,
+      "active": false,
       "until": "2026-06-29T18:11:08+09:00",
-      "reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+      "reason": "",
       "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260628_181108.json",
       "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
       "recovery": {
         "active": false,
-        "pending": true,
+        "pending": false,
         "starts_at": "2026-06-29T18:11:08+09:00",
         "until": "2026-06-30T06:11:08+09:00",
         "hours": 12,
@@ -305,9 +305,9 @@
           "series": 0
         },
         "remaining": {
-          "tweet_send": 2,
-          "post": 1,
-          "like": 2,
+          "tweet_send": 0,
+          "post": 0,
+          "like": 0,
           "follow": 0,
           "reply": 0,
           "quote": 0,
@@ -324,22 +324,18 @@
     "command": ".\\affiliate_site_ops.bat shop-post-guard --json",
     "blockers": [
       {
-        "id": "safety_cooldown",
-        "detail": "cooldown active until 2026-06-29T18:11:08+09:00"
-      },
-      {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
+        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
       }
     ],
     "milestone_blockers": [
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
+        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
       }
     ]
   },
@@ -347,7 +343,7 @@
     "商品リンクより先に、猫に合う条件・買わない理由・やめるサインを出します。",
     "食欲、水分、排泄、呼吸、元気に変化がある時は、用品より相談を優先します。",
     "Xでは商品直リンクを連投せず、プロフィールと公開サイトへ案内します。",
-    "1,000フォロワーまでは売り込み投稿を待ち、サイトの受け皿だけを温めます。",
+    "1,000猫好きの仲間までは売り込み投稿を待ち、サイトの受け皿だけを温めます。",
     "公開URL監視と投稿ガードが通るまで、ショップ投稿は出しません。"
   ],
   "commands": {

@@ -13,6 +13,11 @@
 <meta name="twitter:title" content="Catbot 使い始めの見直し">
 <meta name="twitter:description" content="猫用品を買ったあとに、初日・3日目・7日目で猫に合っているかを確認するページです。">
 <meta name="theme-color" content="#5a3522">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="../assets/catbot-ui.css">
+<script defer src="../assets/catbot-i18n.js"></script>
 <link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
 <link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
@@ -109,7 +114,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <h2>けりぐるみ</h2>
             <p>噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。</p>
             <div class="tags">
-              <span>リンク準備中</span>
+              <span>商品を探す</span>
               <span>猫優先</span>
             </div>
           </div>
@@ -135,7 +140,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <h2>電動猫じゃらし</h2>
             <p>遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。</p>
             <div class="tags">
-              <span>リンク準備中</span>
+              <span>商品を探す</span>
               <span>猫優先</span>
             </div>
           </div>
@@ -161,7 +166,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <h2>CIAO ちゅーる系おやつ</h2>
             <p>ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。</p>
             <div class="tags">
-              <span>リンク準備中</span>
+              <span>商品を探す</span>
               <span>猫優先</span>
             </div>
           </div>
@@ -187,7 +192,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <h2>無添加寄りのおやつ</h2>
             <p>原材料を見て選びたい子、いつものおやつを少し見直したい子。</p>
             <div class="tags">
-              <span>リンク準備中</span>
+              <span>商品を探す</span>
               <span>猫優先</span>
             </div>
           </div>
@@ -204,32 +209,6 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
         </article>
 
-        <article class="product-card" id="scratch-p1">
-          <div class="product-art" data-icon="scratch" aria-hidden="true">
-            <span>爪とぎ</span>
-          </div>
-          <div>
-            <span class="label">爪とぎ</span>
-            <h2>段ボール爪とぎ 大容量</h2>
-            <p>家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。</p>
-            <div class="tags">
-              <span>リンク準備中</span>
-              <span>猫優先</span>
-            </div>
-          </div>
-          <div class="checks">
-            <div><strong>初日</strong><p>使う場所に固定し、崩れた面やカスは早めに片付けます。</p></div>
-            <div><strong>3日目</strong><p>粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。</p></div>
-            <div><strong>7日目</strong><p>滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。</p></div>
-            <div><strong>止める目安</strong><p>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</p></div>
-          </div>
-          <div class="actions">
-            <a class="button light" href="../products/scratch/p1/">商品ページ</a>
-            <a class="button light" href="../cat-first/">猫優先ランキング</a>
-            <a class="button light" href="../buying-check/#scratch-p1">買う前チェック</a>
-          </div>
-        </article>
-
         <article class="product-card" id="water-p1">
           <div class="product-art" data-icon="water" aria-hidden="true">
             <span>水とごはん</span>
@@ -239,7 +218,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <h2>循環式水飲み器</h2>
             <p>流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。</p>
             <div class="tags">
-              <span>リンク準備中</span>
+              <span>商品を探す</span>
               <span>猫優先</span>
             </div>
           </div>
@@ -265,7 +244,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <h2>自動給餌器</h2>
             <p>食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。</p>
             <div class="tags">
-              <span>リンク準備中</span>
+              <span>商品を探す</span>
               <span>猫優先</span>
             </div>
           </div>
@@ -282,6 +261,32 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           </div>
         </article>
 
+        <article class="product-card" id="scratch-p1">
+          <div class="product-art" data-icon="scratch" aria-hidden="true">
+            <span>爪とぎ</span>
+          </div>
+          <div>
+            <span class="label">爪とぎ</span>
+            <h2>段ボール爪とぎ 大容量</h2>
+            <p>家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。</p>
+            <div class="tags">
+              <span>商品を探す</span>
+              <span>猫優先</span>
+            </div>
+          </div>
+          <div class="checks">
+            <div><strong>初日</strong><p>使う場所に固定し、崩れた面やカスは早めに片付けます。</p></div>
+            <div><strong>3日目</strong><p>粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。</p></div>
+            <div><strong>7日目</strong><p>滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。</p></div>
+            <div><strong>止める目安</strong><p>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/scratch/p1/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
+            <a class="button light" href="../buying-check/#scratch-p1">買う前チェック</a>
+          </div>
+        </article>
+
         <article class="product-card" id="care-p1">
           <div class="product-art" data-icon="care" aria-hidden="true">
             <span>お手入れ</span>
@@ -291,7 +296,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <h2>猫用ブラシ</h2>
             <p>換毛期の抜け毛が多い子、短時間のブラッシングなら受け入れやすい子。</p>
             <div class="tags">
-              <span>リンク準備中</span>
+              <span>商品を探す</span>
               <span>猫優先</span>
             </div>
           </div>
@@ -317,7 +322,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <h2>ペットカメラ</h2>
             <p>留守中の様子を確認したい家庭、行動変化に早く気づきたい家庭。</p>
             <div class="tags">
-              <span>リンク準備中</span>
+              <span>商品を探す</span>
               <span>猫優先</span>
             </div>
           </div>

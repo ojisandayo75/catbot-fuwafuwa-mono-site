@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "state": "decision_guide_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "summary": "商品名より先に、猫の様子・困りごと・買わない条件から入口を選ぶためのcatbot連動ページです。",
-  "followers": 578,
+  "summary": "商品名より先に、猫の様子・困りごと・買わない条件から入口を選ぶための新着情報ページです。",
+  "followers": 672,
   "follower_goal": 1000,
   "ready_links": 0,
   "total_products": 9,
@@ -14,7 +14,7 @@
       "id": "cat_first_ranking",
       "label": "ランキング",
       "title": "猫優先ランキング",
-      "summary": "売れそう順ではなく、猫に合いやすいか、慎重に見るべきかで候補を並べます。",
+      "summary": "売れそう順ではなく、猫に合いやすいか、慎重に見るべきかでおすすめを並べます。",
       "path": "cat-first/",
       "icon": "advisor",
       "priority": 1,
@@ -24,7 +24,7 @@
       "id": "cat_profile",
       "label": "うちの子",
       "title": "性格・暮らし方から選ぶ",
-      "summary": "怖がり、留守番、水分、遊び不足など、猫の状態に近い入口から候補を絞ります。",
+      "summary": "怖がり、留守番、水分、遊び不足など、猫の状態に近い入口からおすすめを絞ります。",
       "path": "quiz/",
       "icon": "match",
       "priority": 1,
@@ -42,7 +42,7 @@
     },
     {
       "id": "trends",
-      "label": "catbot連動",
+      "label": "新着情報",
       "title": "反応が強いテーマから見る",
       "summary": "伸びた投稿や動画の反応を、猫のための確認ポイントに変換して見ます。",
       "path": "trends/",
@@ -163,7 +163,7 @@
       "buying_check_url": "buying-check/#water-p1",
       "seasonal": true,
       "next_target": false,
-      "score": 93,
+      "score": 101,
       "quick_checks": [
         "洗いやすさ、フィルター代、音の小ささを確認。",
         "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
@@ -186,7 +186,7 @@
           "first_try": "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
           "stop_signal": "",
           "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
-          "score": 89
+          "score": 97
         },
         {
           "id": "p2",
@@ -200,7 +200,7 @@
           "first_try": "数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。",
           "stop_signal": "",
           "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
-          "score": 93
+          "score": 101
         }
       ]
     },
@@ -286,7 +286,7 @@
       "buying_check_url": "buying-check/#treats-p1",
       "seasonal": false,
       "next_target": false,
-      "score": 55,
+      "score": 39,
       "quick_checks": [
         "年齢、体調、総合栄養食か一般食かを確認。",
         "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。",
@@ -309,7 +309,7 @@
           "first_try": "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。",
           "stop_signal": "",
           "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
-          "score": 51
+          "score": 35
         },
         {
           "id": "p2",
@@ -323,7 +323,7 @@
           "first_try": "初日は少量だけ。数日は便、吐き戻し、かゆがる様子を確認します。",
           "stop_signal": "",
           "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
-          "score": 55
+          "score": 39
         }
       ]
     },
@@ -438,9 +438,9 @@
     {
       "kind": "video",
       "title": "素材動画の傾向",
-      "label": "funk nonstop in her head #fyp #rigbycat #catsoftiktok #catconte…",
+      "label": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp",
       "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
-      "metric": "141,114,634 plays",
+      "metric": "114,993,040 plays",
       "category_id": "toys",
       "category": "遊び",
       "guide_url": "guides/toys/",
@@ -486,7 +486,7 @@
   "cat_first_policy": [
     "商品名からではなく、猫の様子と困りごとから入口を選びます。",
     "合わない条件、やめるサイン、相談を優先する時を商品より先に見せます。",
-    "catbotで反応が強いテーマも、売る理由ではなく確認ポイントとして扱います。"
+    "人気の猫動画で注目のテーマも、売る理由ではなく確認ポイントとして扱います。"
   ],
   "related": {
     "start": "start/",

@@ -3,16 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="猫用品を売れそう順ではなく、猫に合うか・慎重に見るべきかで並べる自動更新ページです。">
+<meta name="description" content="猫用品を売れそう順ではなく、猫に合うか・慎重に見るべきかで並べる新着ページです。">
 <meta property="og:title" content="Catbot 猫優先ランキング">
-<meta property="og:description" content="猫用品を売れそう順ではなく、猫に合うか・慎重に見るべきかで並べる自動更新ページです。">
+<meta property="og:description" content="猫用品を売れそう順ではなく、猫に合うか・慎重に見るべきかで並べる新着ページです。">
 <meta property="og:site_name" content="ふわふわ猫の道具箱">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Catbot 猫優先ランキング">
-<meta name="twitter:description" content="猫用品を売れそう順ではなく、猫に合うか・慎重に見るべきかで並べる自動更新ページです。">
+<meta name="twitter:description" content="猫用品を売れそう順ではなく、猫に合うか・慎重に見るべきかで並べる新着ページです。">
 <meta name="theme-color" content="#5a3522">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="../assets/catbot-ui.css">
+<script defer src="../assets/catbot-i18n.js"></script>
 <link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
 <link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
@@ -71,23 +76,23 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 <body>
 <header class="hero">
   <div class="wrap">
-    <span class="label">自動更新</span>
+    <span class="label">新着</span>
     <h1>猫優先ランキング</h1>
-    <p>catbotで伸びているテーマを、そのまま売る順番にはしません。猫に合いやすいか、慎重に見るべきか、やめる条件が明確かで並べます。</p>
+    <p>人気の猫動画で伸びているテーマを、そのまま売る順番にはしません。猫に合いやすいか、慎重に見るべきか、やめる条件が明確かで並べます。</p>
     <div class="actions">
       <a class="button" href="#ranking">ランキングを見る</a>
       <a class="button light" href="../start/">はじめに見る3つ</a>
       <a class="button light" href="../buying-check/">買う前チェック</a>
-      <a class="button light" href="../daily/">今日の猫メモ</a>
+      <a class="button light" href="../trends/">人気の猫動画</a>
     </div>
   </div>
 </header>
 <main class="wrap">
   <section class="stats" aria-label="猫優先ランクの内訳">
     <article class="stat"><span class="label">商品数</span><b>9</b><p>@fuwafuwa_mono 連動</p></article>
-    <article class="stat"><span class="label">リンク化しやすい</span><b>3</b><p>通常の注意で紹介しやすい候補</p></article>
-    <article class="stat"><span class="label">慎重にリンク化</span><b>6</b><p>合わない条件を目立たせる候補</p></article>
-    <article class="stat"><span class="label">様子見</span><b>0</b><p>急いで売らない候補</p></article>
+    <article class="stat"><span class="label">リンク化しやすい</span><b>3</b><p>通常の注意で紹介しやすいおすすめ</p></article>
+    <article class="stat"><span class="label">慎重にリンク化</span><b>6</b><p>合わない条件を目立たせるおすすめ</p></article>
+    <article class="stat"><span class="label">様子見</span><b>0</b><p>急いで売らないおすすめ</p></article>
   </section>
   <section class="policy">
     <span class="label">このページの方針</span>
@@ -100,8 +105,8 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#1</span>
             <span class="lane ready">リンク化しやすい</span>
             <h2>猫用ブラシ</h2>
-            <p>ケア / score 100 / 検索候補</p>
-            <p class="action">通常の猫ファースト注意を添えて、次のリンク候補にできます。</p>
+            <p>ケア / 人気度 100 / 検索おすすめ</p>
+            <p class="action">通常の猫ファースト注意を添えて、次のリンクおすすめにできます。</p>
           </div>
           <div class="checks">
             <div><strong>買う前</strong><p>毛質に合う形、肌に強く当たりすぎない先端、握りやすさを確認します。</p></div>
@@ -121,8 +126,8 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#2</span>
             <span class="lane ready">リンク化しやすい</span>
             <h2>けりぐるみ</h2>
-            <p>遊び / score 90 / 検索候補</p>
-            <p class="action">通常の猫ファースト注意を添えて、次のリンク候補にできます。</p>
+            <p>遊び / 人気度 90 / 検索おすすめ</p>
+            <p class="action">通常の猫ファースト注意を添えて、次のリンクおすすめにできます。</p>
           </div>
           <div class="checks">
             <div><strong>買う前</strong><p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p></div>
@@ -142,8 +147,8 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#3</span>
             <span class="lane ready">リンク化しやすい</span>
             <h2>CIAO ちゅーる系おやつ</h2>
-            <p>おやつ / score 90 / 検索候補</p>
-            <p class="action">通常の猫ファースト注意を添えて、次のリンク候補にできます。</p>
+            <p>おやつ / 人気度 90 / 検索おすすめ</p>
+            <p class="action">通常の猫ファースト注意を添えて、次のリンクおすすめにできます。</p>
           </div>
           <div class="checks">
             <div><strong>買う前</strong><p>対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。</p></div>
@@ -163,7 +168,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#4</span>
             <span class="lane careful">慎重にリンク化</span>
             <h2>ペットカメラ</h2>
-            <p>見守り / score 80 / 検索候補</p>
+            <p>見守り / 人気度 80 / 検索おすすめ</p>
             <p class="action">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
           </div>
           <div class="checks">
@@ -184,7 +189,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#5</span>
             <span class="lane careful">慎重にリンク化</span>
             <h2>無添加寄りのおやつ</h2>
-            <p>おやつ / score 80 / 検索候補</p>
+            <p>おやつ / 人気度 80 / 検索おすすめ</p>
             <p class="action">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
           </div>
           <div class="checks">
@@ -205,7 +210,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#6</span>
             <span class="lane careful">慎重にリンク化</span>
             <h2>自動給餌器</h2>
-            <p>水とごはん / score 70 / 検索候補</p>
+            <p>水とごはん / 人気度 70 / 検索おすすめ</p>
             <p class="action">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
           </div>
           <div class="checks">
@@ -226,7 +231,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#7</span>
             <span class="lane careful">慎重にリンク化</span>
             <h2>循環式水飲み器</h2>
-            <p>水とごはん / score 70 / 検索候補</p>
+            <p>水とごはん / 人気度 70 / 検索おすすめ</p>
             <p class="action">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
           </div>
           <div class="checks">
@@ -247,7 +252,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#8</span>
             <span class="lane careful">慎重にリンク化</span>
             <h2>段ボール爪とぎ 大容量</h2>
-            <p>爪とぎ / score 70 / 検索候補</p>
+            <p>爪とぎ / 人気度 70 / 検索おすすめ</p>
             <p class="action">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
           </div>
           <div class="checks">
@@ -268,7 +273,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
             <span class="rank">#9</span>
             <span class="lane careful">慎重にリンク化</span>
             <h2>電動猫じゃらし</h2>
-            <p>遊び / score 60 / 検索候補</p>
+            <p>遊び / 人気度 60 / 検索おすすめ</p>
             <p class="action">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
           </div>
           <div class="checks">

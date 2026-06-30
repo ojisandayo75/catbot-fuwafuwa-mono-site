@@ -1,0 +1,61 @@
+/* catbot 共通デザインシステム — TOPデザイン(ふわふわ猫の道具箱)に全ページを統一 */
+:root{
+  --ink:#3a2417; --paper:#fff8ef; --card:#fffdf8; --line:#efe2d0;
+  --muted:#776555; --dim:#9f8974; --coffee:#5a3522; --caramel:#c98543; --sage:#5f7f67;
+}
+
+/* ベース: 丸ゴシック + 暖色ベージュ背景（TOPと同じ世界観） */
+body{
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic UI",Meiryo,sans-serif !important;
+  background:#f3e7d3 !important;
+  color:var(--ink);
+  font-weight:500;
+  line-height:1.75;
+}
+a{color:var(--coffee)}
+
+/* 中央カラム: ベージュ地に白いカード列（TOPの.wrapと同じ印象） */
+.wrap,main,.container,.bar-inner{
+  background:var(--paper);
+}
+.wrap,main,.container{
+  max-width:600px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  box-shadow:0 0 50px -24px rgba(64,39,24,.25);
+}
+.bar,.sitebar,header.bar{background:rgba(255,248,239,.94) !important}
+
+/* 見出し: 太い丸ゴシック */
+h1,h2,h3{font-weight:900 !important;letter-spacing:0}
+
+/* ボタン: キャラメルのピル型（TOPと同じ） */
+.button,.btn,a.button,button.button{
+  border-radius:999px !important;
+  font-weight:800 !important;
+}
+.button.primary,.btn-primary,.button.product,.button.search{
+  background:var(--caramel) !important;
+  color:#fff !important;
+  border-color:var(--caramel) !important;
+}
+.button.light,.button.secondary,.btn-secondary{
+  background:var(--card) !important;
+  color:var(--coffee) !important;
+  border:1.5px solid #e0cdb6 !important;
+}
+
+/* バッジ・ラベル・チップはピル */
+.badge,.label,.eyebrow,.chip,.tags span,.tag{border-radius:999px !important}
+
+/* カードは丸く、やわらかい影 */
+.card,.panel,.product-card,.qz-card,.qz-prod,.home-menu-card,
+.home-decision-card,.first-choice-card,.visual-menu-card,.step,.cat,
+article.card,.route-card,.outcome-card,.metric{
+  border-radius:16px !important;
+  border-color:var(--line) !important;
+}
+
+/* 画像・サムネは丸み */
+img{border-radius:12px}
+.brand-mark,.hero-image,.hero-picture img{border-radius:12px}

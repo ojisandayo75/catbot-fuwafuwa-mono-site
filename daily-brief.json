@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -138,7 +138,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。",
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。",
       "cat_first_review": {
         "review_level": "standard",
         "cat_first_score": 90,
@@ -155,7 +155,7 @@
       "category": "水とごはん",
       "product_id": "p2",
       "product": "自動給餌器",
-      "score": 93,
+      "score": 101,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -190,7 +190,7 @@
       "category": "水とごはん",
       "product_id": "p1",
       "product": "循環式水飲み器",
-      "score": 89,
+      "score": 97,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -254,13 +254,13 @@
     }
   ],
   "follower_milestone": {
-    "followers": 578,
+    "followers": 672,
     "goal": 1000,
-    "remaining": 422,
-    "progress": 57.8,
-    "eta_date": "2026-07-09",
-    "recent_avg_per_day": 34.4,
-    "last_7d_gain": 241
+    "remaining": 328,
+    "progress": 67.2,
+    "eta_date": "2026-07-15",
+    "recent_avg_per_day": 21.8,
+    "last_7d_gain": 131
   },
   "state_entries": [
     {
@@ -290,25 +290,25 @@
   ],
   "suggested_x": {
     "profile_first": true,
-    "primary_text": "ふわふわ猫の道具箱を更新しました。 商品直リンクはまだ置かず、買う前チェックを優先しています。 catbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全から見られるようにしています。 売り込みより、合わない理由とやめるサインを先に置いています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
+    "primary_text": "ふわふわ猫の道具箱を更新しました。 商品直リンクはまだ置かず、買う前チェックを優先しています。 人気の猫動画で注目の「遊び」と、今日の「電動猫じゃらし」を、猫の安全から見られるようにしています。 売り込みより、合わない理由とやめるサインを先に置いています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "variants": [
       {
         "id": "site_warmup",
         "title": "プレ告知",
         "use_when": "実アフィリリンクを入れる前のサイト紹介で使う",
-        "text": "ふわふわ猫の道具箱を整えています。 商品直リンクはまだ置かず、買う前チェックを優先しています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 catbotで反応が強い「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/"
+        "text": "ふわふわ猫の道具箱を整えています。 商品直リンクはまだ置かず、買う前チェックを優先しています。 猫用品をすぐ買わせる場所ではなく、合う子・合わない子・やめるサインを先に見られるようにしました。 人気の猫動画で注目の「遊び」と、次に見る「電動猫じゃらし」も猫ファーストで整理中です。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/"
       },
       {
         "id": "first_target_entry",
         "title": "最初の1件導線",
         "use_when": "商品直リンクではなく買う前チェックへ誘導する時に使う",
-        "text": "次に整える猫用品は「電動猫じゃらし」。 買う前チェック: 連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。 合わない子: 音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
+        "text": "今日の猫用品は「電動猫じゃらし」。 買う前チェック: 連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。 合わない子: 音や動きに怖がりやすい子、ひもや羽根を飲み込みやすい子、興奮が長引く子。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/first-target/"
       },
       {
         "id": "soft_launch",
         "title": "通常共有",
         "use_when": "公開後や固定投稿で使う",
-        "text": "ふわふわ猫の道具箱を更新しました。 商品直リンクはまだ置かず、買う前チェックを優先しています。 catbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全から見られるようにしています。 売り込みより、合わない理由とやめるサインを先に置いています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/"
+        "text": "ふわふわ猫の道具箱を更新しました。 商品直リンクはまだ置かず、買う前チェックを優先しています。 人気の猫動画で注目の「遊び」と、今日の「電動猫じゃらし」を、猫の安全から見られるようにしています。 売り込みより、合わない理由とやめるサインを先に置いています。 https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/"
       }
     ],
     "posting_guard": {
@@ -324,7 +324,7 @@
       ],
       "allowed_contexts": [
         "公開後の固定投稿",
-        "バズ投稿への短い自己リプ",
+        "人気投稿への短い自己リプ",
         "週次の更新報告"
       ],
       "avoid": [
@@ -338,7 +338,7 @@
   "shop_post_guard": {
     "allowed": false,
     "decision": "wait",
-    "rate_allowed": false,
+    "rate_allowed": true,
     "launch_ready": false,
     "milestone_ready": false,
     "daily_cap": 2,
@@ -347,14 +347,14 @@
     "min_interval_hours": 6.0,
     "next_allowed_at": "",
     "safety_cooldown": {
-      "active": true,
+      "active": false,
       "until": "2026-06-29T18:11:08+09:00",
-      "reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+      "reason": "",
       "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260628_181108.json",
       "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
       "recovery": {
         "active": false,
-        "pending": true,
+        "pending": false,
         "starts_at": "2026-06-29T18:11:08+09:00",
         "until": "2026-06-30T06:11:08+09:00",
         "hours": 12,
@@ -369,9 +369,9 @@
           "series": 0
         },
         "remaining": {
-          "tweet_send": 2,
-          "post": 1,
-          "like": 2,
+          "tweet_send": 0,
+          "post": 0,
+          "like": 0,
           "follow": 0,
           "reply": 0,
           "quote": 0,
@@ -385,24 +385,15 @@
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "blockers": [
       {
-        "id": "safety_cooldown",
-        "detail": "cooldown active until 2026-06-29T18:11:08+09:00"
-      },
-      {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
+        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
       }
     ],
-    "rate_blockers": [
-      {
-        "id": "safety_cooldown",
-        "detail": "cooldown active until 2026-06-29T18:11:08+09:00"
-      }
-    ],
+    "rate_blockers": [],
     "launch_blockers": [
       {
         "id": "affiliate_link",
@@ -412,7 +403,7 @@
     "milestone_blockers": [
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
+        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
       }
     ],
     "command": ".\\affiliate_site_ops.bat shop-post-guard --json",
@@ -421,7 +412,7 @@
   "next_actions": [
     {
       "title": "もしも承認を確認する",
-      "detail": "pendingのまま追跡URL作成へ進まず、Amazon/楽天の提携状態を先に確認する。",
+      "detail": "pendingのまま商品リンク作成へ進まず、Amazon/楽天の提携状態を先に確認する。",
       "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
       "source": "launch_gate"
     },

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "state": "needs_moshimo_approval",
   "completion_estimate": {
     "stage_label": "技術側はほぼ完了",
@@ -9,10 +9,10 @@
     "launch_gate_estimate": "12/13",
     "remaining_inputs": [
       "もしも承認",
-      "最初の追跡URL"
+      "最初の商品リンク"
     ],
     "current_blocker": "moshimo_approval",
-    "human_summary": "サイト本体・公開・自動更新は動いています。今の実質ブロックはもしも承認と最初の追跡URLです。",
+    "human_summary": "サイト本体・公開・新着は動いています。今の実質ブロックはもしも承認と最初の商品リンクです。",
     "after_moshimo_approval_minutes": {
       "min": 30,
       "max": 60
@@ -23,20 +23,20 @@
     },
     "approval_next_check_at": "2026-06-28T16:54:29",
     "approval_check_due": true,
-    "followers": 578,
+    "followers": 672,
     "follower_goal": 1000,
-    "followers_to_goal": 422,
-    "follower_eta_date": "2026-07-09",
-    "follower_eta_days": 13,
+    "followers_to_goal": 328,
+    "follower_eta_date": "2026-07-15",
+    "follower_eta_days": 15,
     "ready_links": 0,
     "total_products": 9
   },
   "headline": "まずもしも承認確認です",
   "primary_action": "Amazonまたは楽天の提携承認を確認する",
   "account": "@fuwafuwa_mono",
-  "followers": 578,
+  "followers": 672,
   "follower_goal": 1000,
-  "followers_to_goal": 422,
+  "followers_to_goal": 328,
   "ready_links": 0,
   "total_products": 9,
   "public_url_ready": true,
@@ -61,14 +61,14 @@
   "next_command_reason": "Moshi-mo approval is still pending, so the first-link workflow remains gated.",
   "next_command_blocked_by": "moshimo_approval_check",
   "safety_cooldown": {
-    "active": true,
+    "active": false,
     "until": "2026-06-29T18:11:08+09:00",
-    "reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+    "reason": "",
     "last_limit_error": "no rest_id in response. raw saved to C:\\Users\\User\\catbot-x\\create_tweet_fail_20260628_181108.json",
     "state_path": "C:\\Users\\User\\catbot-x\\catbot_safety_state.json",
     "recovery": {
       "active": false,
-      "pending": true,
+      "pending": false,
       "starts_at": "2026-06-29T18:11:08+09:00",
       "until": "2026-06-30T06:11:08+09:00",
       "hours": 12,
@@ -83,9 +83,9 @@
         "series": 0
       },
       "remaining": {
-        "tweet_send": 2,
-        "post": 1,
-        "like": 2,
+        "tweet_send": 0,
+        "post": 0,
+        "like": 0,
         "follow": 0,
         "reply": 0,
         "quote": 0,
@@ -97,7 +97,7 @@
   },
   "safety_recovery": {
     "active": false,
-    "pending": true,
+    "pending": false,
     "starts_at": "2026-06-29T18:11:08+09:00",
     "until": "2026-06-30T06:11:08+09:00",
     "hours": 12,
@@ -112,9 +112,9 @@
       "series": 0
     },
     "remaining": {
-      "tweet_send": 2,
-      "post": 1,
-      "like": 2,
+      "tweet_send": 0,
+      "post": 0,
+      "like": 0,
       "follow": 0,
       "reply": 0,
       "quote": 0,
@@ -124,17 +124,17 @@
     "note": "After cooldown ends, keep X actions slow: post<=1, tweet_send<=2, like<=2; reply/quote/follow/promo/series disabled by default."
   },
   "remaining_counts": {
-    "open": 5,
-    "done": 1,
+    "open": 3,
+    "done": 3,
     "total": 6,
     "open_ids": [
       "moshimo_approval",
       "first_tracking_url",
-      "follower_goal",
-      "x_safety_cooldown",
-      "x_recovery_mode"
+      "follower_goal"
     ],
     "done_ids": [
+      "x_safety_cooldown",
+      "x_recovery_mode",
       "public_site"
     ]
   },
@@ -157,32 +157,32 @@
       "id": "first_tracking_url",
       "done": false,
       "label": "待ち",
-      "title": "最初の追跡URL",
-      "detail": "toys/p2 電動猫じゃらし のもしも追跡URLを1本だけ入れます。",
+      "title": "最初の商品リンク",
+      "detail": "toys/p2 電動猫じゃらし のもしも商品リンクを1本だけ入れます。",
       "command": ".\\catbot_moshimo_status.bat -OpenWorkbench"
     },
     {
       "id": "follower_goal",
       "done": false,
       "label": "育成中",
-      "title": "1000フォロワー",
-      "detail": "現在 578/1000 人。残り 422 人です。",
+      "title": "1000猫好きの仲間",
+      "detail": "現在 672/1000 人。残り 328 人です。",
       "command": ".\\catbot_ops_health.bat -Json"
     },
     {
       "id": "x_safety_cooldown",
-      "done": false,
-      "label": "待ち",
+      "done": true,
+      "label": "OK",
       "title": "X安全クールダウン",
-      "detail": "2026-06-29T18:11:08+09:00 まではX投稿文は参考用です。コピー投稿はガード解除後にします。",
+      "detail": "X投稿の安全クールダウンはありません。投稿前はshop-post-guardを確認します。",
       "command": ".\\affiliate_site_ops.bat shop-post-guard --json"
     },
     {
       "id": "x_recovery_mode",
-      "done": false,
-      "label": "予定",
+      "done": true,
+      "label": "OK",
       "title": "X回復モード",
-      "detail": "2026-06-30T06:11:08+09:00 までは解除直後の慣らし運転です。投稿残り 1、tweet送信残り 2。リプ・引用・フォローは初期値0で止めます。",
+      "detail": "回復モードは現在ありません。通常の日次上限だけを見ます。",
       "command": ".\\catbot_site_warmup_ready.bat -Json"
     },
     {
@@ -190,7 +190,7 @@
       "done": true,
       "label": "OK",
       "title": "公開サイト",
-      "detail": "公開URLと自動更新は使えます。",
+      "detail": "公開URLと新着は使えます。",
       "command": ".\\affiliate_site_ops.bat verify-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\""
     }
   ],
@@ -245,7 +245,7 @@
       "id": "moshimo_approval_check",
       "done": false,
       "title": "もしも承認を確認する",
-      "detail": "Amazonまたは楽天がapprovedになってから追跡URLを作ります。pendingのままURL作成へ進まないようにします。",
+      "detail": "Amazonまたは楽天がapprovedになってから商品リンクを作ります。pendingのままURL作成へ進まないようにします。",
       "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
       "amazon_update_command": ".\\catbot_moshimo_status.bat -Amazon approved -Sync -Publish",
       "rakuten_update_command": ".\\catbot_moshimo_status.bat -Rakuten approved -Sync -Publish",
@@ -255,7 +255,7 @@
     {
       "id": "first_affiliate_link",
       "done": false,
-      "title": "1本目の追跡URLを作る",
+      "title": "1本目の商品リンクを作る",
       "detail": "承認済みになったら、もしもで toys/p2 電動猫じゃらし のAmazonまたは楽天リンクを発行します。通常の商品URLではなく、追跡付きURLだけを保存します。",
       "command": ".\\catbot_first_link_live_finish.bat -Open",
       "live_command": ".\\catbot_first_link_live_finish.bat -Open",
@@ -293,7 +293,7 @@
       "id": "finish_launch",
       "done": false,
       "title": "dry-runしてから反映する",
-      "detail": "受け箱に保存した追跡URLをdry-runで確認し、対象商品とプロバイダが正しければ公開まで反映します。",
+      "detail": "受け箱に保存した商品リンクをdry-runで確認し、対象商品とプロバイダが正しければ公開まで反映します。",
       "dry_run_command": ".\\catbot_first_link_finish.bat",
       "apply_command": ".\\catbot_first_link_finish.bat -Apply -Publish",
       "live_apply_command": ".\\catbot_first_link_live_finish.bat -Apply -Publish",
@@ -312,7 +312,7 @@
     "商品直リンクをXに連投しない。プロフィールの公開サイトへ案内する。",
     "商品ページでは、買う前チェック・合わない条件・やめるサインをリンクより先に見せる。",
     "クリック数より、猫に合わない商品が混ざっていないかを優先して見直す。",
-    "1000フォロワー前でも導線作りは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。"
+    "1000猫好きの仲間前でも導線作りは進めてよいが、売り込み投稿はshop-post-guardを通してから出す。"
   ],
   "moshimo_todo": [
     {
@@ -325,11 +325,11 @@
     },
     {
       "title": "承認後に探す商品",
-      "body": "電動猫じゃらし で検索し、猫が怖がりにくい静音・交換パーツあり・短時間運転しやすい候補を選びます。"
+      "body": "電動猫じゃらし で検索し、猫が怖がりにくい静音・交換パーツあり・短時間運転しやすいおすすめを選びます。"
     },
     {
       "title": "コピーするURL",
-      "body": "通常の商品URLではなく、もしもで発行された追跡URLだけをコピーします。短縮URLだけの場合は使わず、追跡情報が見えるURLを選びます。"
+      "body": "通常の商品URLではなく、もしもで発行された商品リンクだけをコピーします。短縮URLだけの場合は使わず、追跡情報が見えるURLを選びます。"
     },
     {
       "title": "コピー後",
@@ -342,7 +342,7 @@
   ],
   "tracking_url_rules": {
     "ok": [
-      "もしもで発行した追跡URL。",
+      "もしもで発行した商品リンク。",
       "af.moshimo.com、a.r10.to、hb.afl.rakuten.co.jp など提携経由だと分かるURL。",
       "Amazon URLなら tag= / ascsubtag= など追跡情報が見えるURL。"
     ],

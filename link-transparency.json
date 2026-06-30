@@ -1,7 +1,7 @@
 {
   "state": "link_transparency_ready",
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "ready_links": 0,
@@ -23,13 +23,13 @@
   },
   "rules": [
     "広告・アフィリエイトリンクを含む場合は、リンクの近くで分かるように表示します。",
-    "普通のAmazon/Rakuten商品URLや検索結果URLは、追跡URLとして保存しません。",
+    "普通のAmazon/Rakuten商品URLや検索結果URLは、商品リンクとして保存しません。",
     "Xでは商品直リンクを連投せず、プロフィールと公開サイトの買う前チェックへ案内します。",
     "猫に合わない条件、やめるサイン、最初の試し方をリンクより先に見せます。",
-    "実リンクは最初の1本から始め、クリックと猫優先の根拠を見ながら増やします。"
+    "商品リンクは最初の1本から始め、クリックと猫優先の根拠を見ながら増やします。"
   ],
   "accepted_url_examples": [
-    "もしもアフィリエイトで発行した追跡URL",
+    "もしもアフィリエイトで発行した商品リンク",
     "af.moshimo.com を含むURL",
     "a.r10.to / hb.afl.rakuten.co.jp など提携経由と分かるURL",
     "Amazon URLなら tag= / ascsubtag= など追跡情報が確認できるURL"

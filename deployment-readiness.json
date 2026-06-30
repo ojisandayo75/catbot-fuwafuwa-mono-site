@@ -7,10 +7,10 @@
     "launch_gate_estimate": "12/13",
     "remaining_inputs": [
       "もしも承認",
-      "最初の追跡URL"
+      "最初の商品リンク"
     ],
     "current_blocker": "moshimo_approval",
-    "human_summary": "サイト本体・公開・自動更新は動いています。今の実質ブロックはもしも承認と最初の追跡URLです。",
+    "human_summary": "サイト本体・公開・新着は動いています。今の実質ブロックはもしも承認と最初の商品リンクです。",
     "after_moshimo_approval_minutes": {
       "min": 30,
       "max": 60
@@ -21,11 +21,11 @@
     },
     "approval_next_check_at": "2026-06-28T16:54:29",
     "approval_check_due": true,
-    "followers": 578,
+    "followers": 672,
     "follower_goal": 1000,
-    "followers_to_goal": 422,
-    "follower_eta_date": "2026-07-09",
-    "follower_eta_days": 13,
+    "followers_to_goal": 328,
+    "follower_eta_date": "2026-07-15",
+    "follower_eta_days": 15,
     "ready_links": 0,
     "total_products": 9
   },
@@ -37,19 +37,19 @@
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "ready_links": 0,
   "total_products": 9,
-  "followers": 578,
+  "followers": 672,
   "follower_goal": 1000,
-  "followers_to_goal": 422,
+  "followers_to_goal": 328,
   "follower_growth": {
-    "history_count": 27,
-    "current": 578,
+    "history_count": 28,
+    "current": 672,
     "goal": 1000,
-    "remaining": 422,
-    "last_7d_gain": 241,
-    "recent_avg_per_day": 34.4,
-    "overall_avg_per_day": 19.4,
-    "eta_days": 13,
-    "eta_date": "2026-07-09",
+    "remaining": 328,
+    "last_7d_gain": 131,
+    "recent_avg_per_day": 21.8,
+    "overall_avg_per_day": 19.9,
+    "eta_days": 15,
+    "eta_date": "2026-07-15",
     "max_daily_gain": 133,
     "state": "growing"
   },
@@ -71,8 +71,8 @@
     }
   },
   "moshimo_ready_for_first_link": false,
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "next_link": {
     "category_id": "toys",
     "category": "遊び",
@@ -186,7 +186,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。"
     },
     {
       "category_id": "water",
@@ -194,7 +194,7 @@
       "product_id": "p2",
       "product": "自動給餌器",
       "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
-      "score": 93,
+      "score": 101,
       "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
       "price_band": "高",
       "reasons": [
@@ -232,7 +232,7 @@
       "product_id": "p1",
       "product": "循環式水飲み器",
       "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
-      "score": 89,
+      "score": 97,
       "check": "洗いやすさ、フィルター代、音の小ささを確認。",
       "price_band": "中",
       "reasons": [
@@ -311,21 +311,21 @@
     {
       "level": "info",
       "title": "まだ育成フェーズ",
-      "detail": "1,000フォロワーまで残り 422。売り込みよりプロフィール導線を薄く置く。"
+      "detail": "1,000フォロワーまで残り 328。売り込みよりプロフィール導線を薄く置く。"
     }
   ],
   "launch_blockers": [
     {
       "id": "moshimo_approval",
       "title": "もしも提携承認",
-      "detail": "Amazonまたは楽天がapprovedになってから、toys/p2 電動猫じゃらし の追跡URLを作る。"
+      "detail": "Amazonまたは楽天がapprovedになってから、toys/p2 電動猫じゃらし の商品リンクを作る。"
     }
   ],
   "owner_commands": [
     {
       "title": "もしも承認を確認する",
       "command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
-      "detail": "pendingのまま追跡URL作成へ進まず、Amazon/楽天の提携状態を先に確認する。"
+      "detail": "pendingのまま商品リンク作成へ進まず、Amazon/楽天の提携状態を先に確認する。"
     },
     {
       "title": "公開前チェック",
@@ -339,8 +339,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-06-29T02:34:07",
-    "exported_at": "2026-06-29T02:34:07",
+    "generated_at": "2026-07-01T01:21:32",
+    "exported_at": "2026-07-01T01:21:32",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -454,22 +454,22 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-06-29T02:34:11",
+    "checked_at": "2026-07-01T01:21:36",
     "synced": true,
-    "last_exported_at": "2026-06-29T02:34:09",
+    "last_exported_at": "2026-07-01T01:21:34",
     "ready_links": 0,
     "total_products": 9,
-    "followers": 578,
+    "followers": 672,
     "top_post_views": 156918,
     "deploy": {
       "configured": true,
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-06-29T02:21:36",
+        "deployed_at": "2026-07-01T01:17:34",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
-        "file_count": 191,
-        "total_bytes": 35825404
+        "file_count": 213,
+        "total_bytes": 25293904
       }
     },
     "scheduled_task": {
@@ -477,9 +477,9 @@
       "ok": true,
       "installed": true,
       "state": "Ready",
-      "last_run_time": "2026-06-29T02:28:09",
+      "last_run_time": "2026-07-01T00:58:09",
       "last_task_result": 0,
-      "next_run_time": "2026-06-29T02:58:08",
+      "next_run_time": "2026-07-01T01:28:08",
       "number_of_missed_runs": 0,
       "repetition_interval": "PT30M",
       "action_matches": true,

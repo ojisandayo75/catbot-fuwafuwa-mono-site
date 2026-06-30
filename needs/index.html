@@ -13,6 +13,11 @@
 <meta name="twitter:title" content="Catbot 困りごとから探す">
 <meta name="twitter:description" content="商品名ではなく、猫の困りごと・様子・買わない条件から確認する入口ページです。">
 <meta name="theme-color" content="#5a3522">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="../assets/catbot-ui.css">
+<script defer src="../assets/catbot-i18n.js"></script>
 <link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
 <link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
@@ -70,7 +75,7 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
     <div>
       <span class="label">猫の様子から選ぶ</span>
       <h1>困りごとから探す</h1>
-      <p>商品名を先に決めず、水分、遊び、爪とぎ、おやつ、ケア、留守番の不安から見ます。合わない条件を確認してから、候補へ進むページです。</p>
+      <p>商品名を先に決めず、水分、遊び、爪とぎ、おやつ、ケア、留守番の不安から見ます。合わない条件を確認してから、おすすめへ進むページです。</p>
       <div class="actions">
         <a class="button" href="#needs">困りごとを見る</a>
         <a class="button light" href="../cat-first/">猫優先ランキング</a>
@@ -86,7 +91,7 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
       <span class="label">商品より先に猫の状態</span>
       <h2>買う理由を、猫の様子から決める</h2>
       <p>商品名からではなく、猫の様子や困りごとから確認する入口です。</p>
-      <ul><li>商品より先に、猫の状態・怖がり方・食欲水分排泄の変化を見る。</li><li>合わない条件とやめるサインを見てから、候補ページへ進む。</li><li>体調変化が続く時は、このサイトで判断せず相談を優先する。</li></ul>
+      <ul><li>商品より先に、猫の状態・怖がり方・食欲水分排泄の変化を見る。</li><li>合わない条件とやめるサインを見てから、おすすめページへ進む。</li><li>体調変化が続く時は、このサイトで判断せず相談を優先する。</li></ul>
     </article>
     <article class="panel">
       <span class="label">迷った時</span>
@@ -108,7 +113,7 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
           <div class="need-body">
             <div class="need-head">
               <span class="label">遊び</span>
-              <div class="badges"><span>次の整備候補</span></div>
+              <div class="badges"><span>次の整備おすすめ</span></div>
             </div>
             <h2>遊び足りない・退屈しやすい</h2>
             <p>走り回る、構ってほしがる、留守番後に興奮しやすい時の入口です。</p>
@@ -125,15 +130,15 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
             <ul class="products">
           <li>
             <strong>けりぐるみ</strong>
-            <span>検索・確認用 / score 207</span>
+            <span>検索・確認用 / 人気度 207</span>
             <p>噛む・蹴る欲求が強い子、ひとり遊びの時間を少し作りたい子。</p>
-            <a href="../products/toys/p1/">候補を見る</a>
+            <a href="../products/toys/p1/">おすすめを見る</a>
           </li>
           <li>
             <strong>電動猫じゃらし</strong>
-            <span>検索・確認用 / score 211</span>
+            <span>検索・確認用 / 人気度 211</span>
             <p>遊び足りない子、留守番後に走り回る子、反応する遊びを増やしたい子。</p>
-            <a href="../products/toys/p2/">候補を見る</a>
+            <a href="../products/toys/p2/">おすすめを見る</a>
           </li></ul>
             <div class="actions">
               <a class="button" href="../guides/toys/">詳しく見る</a>
@@ -165,15 +170,15 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
             <ul class="products">
           <li>
             <strong>循環式水飲み器</strong>
-            <span>検索・確認用 / score 89</span>
+            <span>検索・確認用 / 人気度 97</span>
             <p>流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。</p>
-            <a href="../products/water/p1/">候補を見る</a>
+            <a href="../products/water/p1/">おすすめを見る</a>
           </li>
           <li>
             <strong>自動給餌器</strong>
-            <span>検索・確認用 / score 93</span>
+            <span>検索・確認用 / 人気度 101</span>
             <p>食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。</p>
-            <a href="../products/water/p2/">候補を見る</a>
+            <a href="../products/water/p2/">おすすめを見る</a>
           </li></ul>
             <div class="actions">
               <a class="button" href="../guides/water/">詳しく見る</a>
@@ -205,9 +210,9 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
             <ul class="products">
           <li>
             <strong>段ボール爪とぎ 大容量</strong>
-            <span>検索・確認用 / score 76</span>
+            <span>検索・確認用 / 人気度 76</span>
             <p>家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。</p>
-            <a href="../products/scratch/p1/">候補を見る</a>
+            <a href="../products/scratch/p1/">おすすめを見る</a>
           </li></ul>
             <div class="actions">
               <a class="button" href="../guides/scratch/">詳しく見る</a>
@@ -239,9 +244,9 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
             <ul class="products">
           <li>
             <strong>ペットカメラ</strong>
-            <span>検索・確認用 / score 71</span>
+            <span>検索・確認用 / 人気度 71</span>
             <p>留守中の様子を確認したい家庭、行動変化に早く気づきたい家庭。</p>
-            <a href="../products/watch/p1/">候補を見る</a>
+            <a href="../products/watch/p1/">おすすめを見る</a>
           </li></ul>
             <div class="actions">
               <a class="button" href="../guides/watch/">詳しく見る</a>
@@ -273,15 +278,15 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
             <ul class="products">
           <li>
             <strong>CIAO ちゅーる系おやつ</strong>
-            <span>検索・確認用 / score 51</span>
+            <span>検索・確認用 / 人気度 35</span>
             <p>ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。</p>
-            <a href="../products/treats/p1/">候補を見る</a>
+            <a href="../products/treats/p1/">おすすめを見る</a>
           </li>
           <li>
             <strong>無添加寄りのおやつ</strong>
-            <span>検索・確認用 / score 55</span>
+            <span>検索・確認用 / 人気度 39</span>
             <p>原材料を見て選びたい子、いつものおやつを少し見直したい子。</p>
-            <a href="../products/treats/p2/">候補を見る</a>
+            <a href="../products/treats/p2/">おすすめを見る</a>
           </li></ul>
             <div class="actions">
               <a class="button" href="../guides/treats/">詳しく見る</a>
@@ -313,9 +318,9 @@ li a{display:inline-flex;margin-top:5px;color:#5a3522;font-weight:800}
             <ul class="products">
           <li>
             <strong>猫用ブラシ</strong>
-            <span>検索・確認用 / score 23</span>
+            <span>検索・確認用 / 人気度 23</span>
             <p>換毛期の抜け毛が多い子、短時間のブラッシングなら受け入れやすい子。</p>
-            <a href="../products/care/p1/">候補を見る</a>
+            <a href="../products/care/p1/">おすすめを見る</a>
           </li></ul>
             <div class="actions">
               <a class="button" href="../guides/care/">詳しく見る</a>

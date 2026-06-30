@@ -13,6 +13,11 @@
 <meta name="twitter:title" content="Catbot 買う前チェック">
 <meta name="twitter:description" content="猫用品を買う前に、猫に合うか、やめる条件、最初の試し方を確認するページです。">
 <meta name="theme-color" content="#5a3522">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="../assets/catbot-ui.css">
+<script defer src="../assets/catbot-i18n.js"></script>
 <link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
 <link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
@@ -117,24 +122,14 @@ button.button{cursor:pointer;font:inherit}
           <strong>うちの子診断</strong>
         </a>
 
-        <a class="visual-nav-card" href="#products">
+        <a class="visual-nav-card" href="../fit-reset/">
           <span class="nav-art" data-slot="2" aria-hidden="true"></span>
           <strong>やめるサイン</strong>
         </a>
 
-        <a class="visual-nav-card" href="../health/">
-          <span class="nav-art" data-slot="3" aria-hidden="true"></span>
-          <strong>リンク健全性</strong>
-        </a>
-
-        <a class="visual-nav-card" href="../visuals/">
+        <a class="visual-nav-card" href="../seasonal/">
           <span class="nav-art" data-slot="4" aria-hidden="true"></span>
-          <strong>画像プレビュー</strong>
-        </a>
-
-        <a class="visual-nav-card" href="../status/">
-          <span class="nav-art" data-slot="5" aria-hidden="true"></span>
-          <strong>運用ステータス</strong>
+          <strong>今月の猫ケア</strong>
         </a></section>
   <section class="summary" aria-label="買う前チェック概要">
     <div class="card"><span class="label">商品</span><b>9</b></div>
@@ -170,7 +165,7 @@ button.button{cursor:pointer;font:inherit}
           <h2>体調変化は用品で解決しない</h2>
           <p>急な食欲低下、水の増減、嘔吐、下痢、痛がる様子がある時は、購入より獣医相談を優先します。</p>
         </article></section>
-  <section class="card policy"><span class="label">サイト方針</span><ul><li>商品直リンクより、猫に合うかの確認を先に見せる。</li><li>合わない条件と中止サインを各商品に残す。</li><li>最初は短時間・少量・見守りから始める。</li><li>売れそうな商品より、猫の安全と暮らしやすさを優先する。</li></ul><div class="actions"><a class="button light" href="../cat-first/">猫優先ランキング</a><a class="button light" href="../buying-check.json">buying-check.json</a><a class="button light" href="../consult-first/">相談優先</a><a class="button light" href="../quiz/">うちの子診断</a><a class="button light" href="../policy/">選定方針</a><a class="button light" href="../health/">リンク健全性</a></div></section>
+  <section class="card policy"><span class="label">サイト方針</span><ul><li>商品直リンクより、猫に合うかの確認を先に見せる。</li><li>合わない条件と中止サインを各商品に残す。</li><li>最初は短時間・少量・見守りから始める。</li><li>売れそうな商品より、猫の安全と暮らしやすさを優先する。</li></ul><div class="actions"><a class="button light" href="../cat-first/">猫優先ランキング</a><a class="button light" href="../buying-check.json">buying-check.json</a><a class="button light" href="../consult-first/">相談優先</a><a class="button light" href="../quiz/">うちの子診断</a><a class="button light" href="../policy/">選定方針</a></div></section>
 
   <section class="quiz-import" aria-label="うちの子診断メモ">
     <div>
@@ -195,7 +190,7 @@ button.button{cursor:pointer;font:inherit}
             <span class="label">遊びと運動</span>
             <h2>けりぐるみ</h2>
             <p>噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。</p>
-            <div class="tags"><span>リンク準備中</span><span>誤飲確認</span><span>破れたら交換</span><span>留守番中は注意</span></div>
+            <div class="tags"><span>商品を探す</span><span>誤飲確認</span><span>破れたら交換</span><span>留守番中は注意</span></div>
           </div>
           <div class="checks">
             <div><strong>買う前チェック</strong><p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p></div>
@@ -218,7 +213,7 @@ button.button{cursor:pointer;font:inherit}
             <span class="label">遊びと運動</span>
             <h2>電動猫じゃらし</h2>
             <p>人が手を離していても短時間の運動を作れます。</p>
-            <div class="tags"><span>リンク準備中</span><span>短時間</span><span>誤飲確認</span><span>興奮しすぎ注意</span></div>
+            <div class="tags"><span>商品を探す</span><span>短時間</span><span>誤飲確認</span><span>興奮しすぎ注意</span></div>
           </div>
           <div class="checks">
             <div><strong>買う前チェック</strong><p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p></div>
@@ -241,7 +236,7 @@ button.button{cursor:pointer;font:inherit}
             <span class="label">おやつ</span>
             <h2>CIAO ちゅーる系おやつ</h2>
             <p>少量のごほうびや水分補助として使いやすい定番です。</p>
-            <div class="tags"><span>リンク準備中</span><span>少量から</span><span>主食にしない</span><span>体調変化を見る</span></div>
+            <div class="tags"><span>商品を探す</span><span>少量から</span><span>主食にしない</span><span>体調変化を見る</span></div>
           </div>
           <div class="checks">
             <div><strong>買う前チェック</strong><p>対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。</p></div>
@@ -264,7 +259,7 @@ button.button{cursor:pointer;font:inherit}
             <span class="label">おやつ</span>
             <h2>無添加寄りのおやつ</h2>
             <p>毎日ではなくても、原材料を見て選びたい人向け。</p>
-            <div class="tags"><span>リンク準備中</span><span>原材料確認</span><span>少量から</span><span>アレルギー注意</span></div>
+            <div class="tags"><span>商品を探す</span><span>原材料確認</span><span>少量から</span><span>アレルギー注意</span></div>
           </div>
           <div class="checks">
             <div><strong>買う前チェック</strong><p>原材料、塩分、添加物、対象年齢を見て、体調に合うか先に確認します。</p></div>
@@ -279,29 +274,6 @@ button.button{cursor:pointer;font:inherit}
           </div>
         </article>
 
-        <article class="product-card" id="scratch-p1">
-          <div class="product-art" data-icon="scratch" aria-hidden="true">
-            <span>爪とぎ</span>
-          </div>
-          <div>
-            <span class="label">爪とぎ</span>
-            <h2>段ボール爪とぎ 大容量</h2>
-            <p>消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。</p>
-            <div class="tags"><span>リンク準備中</span><span>滑り止め</span><span>粉を確認</span><span>食べないか確認</span></div>
-          </div>
-          <div class="checks">
-            <div><strong>買う前チェック</strong><p>粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。</p></div>
-            <div><strong>合わないかも</strong><p>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</p></div>
-            <div><strong>やめるサイン</strong><p>滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。</p></div>
-            <div><strong>最初の試し方</strong><p>使う場所に固定し、崩れた面やカスは早めに片付けます。</p></div>
-          </div>
-          <div class="actions">
-            <a class="button light" href="../products/scratch/p1/">商品ページ</a>
-            <a class="button light" href="../cat-first/">猫優先ランキング</a>
-            <a class="button light" href="../guides/scratch/">カテゴリガイド</a>
-          </div>
-        </article>
-
         <article class="product-card" id="water-p1">
           <div class="product-art" data-icon="water" aria-hidden="true">
             <span>水とごはん</span>
@@ -310,7 +282,7 @@ button.button{cursor:pointer;font:inherit}
             <span class="label">水とごはん</span>
             <h2>循環式水飲み器</h2>
             <p>水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。</p>
-            <div class="tags"><span>リンク準備中</span><span>水皿も残す</span><span>掃除必須</span><span>音を確認</span></div>
+            <div class="tags"><span>商品を探す</span><span>水皿も残す</span><span>掃除必須</span><span>音を確認</span></div>
           </div>
           <div class="checks">
             <div><strong>買う前チェック</strong><p>洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。</p></div>
@@ -333,7 +305,7 @@ button.button{cursor:pointer;font:inherit}
             <span class="label">水とごはん</span>
             <h2>自動給餌器</h2>
             <p>時間管理が必要な家庭で、食事リズムを整えやすくなります。</p>
-            <div class="tags"><span>リンク準備中</span><span>任せきりにしない</span><span>残量確認</span><span>多頭飼い注意</span></div>
+            <div class="tags"><span>商品を探す</span><span>任せきりにしない</span><span>残量確認</span><span>多頭飼い注意</span></div>
           </div>
           <div class="checks">
             <div><strong>買う前チェック</strong><p>詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。</p></div>
@@ -348,6 +320,29 @@ button.button{cursor:pointer;font:inherit}
           </div>
         </article>
 
+        <article class="product-card" id="scratch-p1">
+          <div class="product-art" data-icon="scratch" aria-hidden="true">
+            <span>爪とぎ</span>
+          </div>
+          <div>
+            <span class="label">爪とぎ</span>
+            <h2>段ボール爪とぎ 大容量</h2>
+            <p>消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。</p>
+            <div class="tags"><span>商品を探す</span><span>滑り止め</span><span>粉を確認</span><span>食べないか確認</span></div>
+          </div>
+          <div class="checks">
+            <div><strong>買う前チェック</strong><p>粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。</p></div>
+            <div><strong>合わないかも</strong><p>削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。</p></div>
+            <div><strong>やめるサイン</strong><p>滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。</p></div>
+            <div><strong>最初の試し方</strong><p>使う場所に固定し、崩れた面やカスは早めに片付けます。</p></div>
+          </div>
+          <div class="actions">
+            <a class="button light" href="../products/scratch/p1/">商品ページ</a>
+            <a class="button light" href="../cat-first/">猫優先ランキング</a>
+            <a class="button light" href="../guides/scratch/">カテゴリガイド</a>
+          </div>
+        </article>
+
         <article class="product-card" id="care-p1">
           <div class="product-art" data-icon="care" aria-hidden="true">
             <span>お手入れ</span>
@@ -356,7 +351,7 @@ button.button{cursor:pointer;font:inherit}
             <span class="label">お手入れ</span>
             <h2>猫用ブラシ</h2>
             <p>換毛期の毛を減らし、部屋の掃除も少し楽になります。</p>
-            <div class="tags"><span>リンク準備中</span><span>短時間</span><span>皮膚確認</span><span>嫌がれば中止</span></div>
+            <div class="tags"><span>商品を探す</span><span>短時間</span><span>皮膚確認</span><span>嫌がれば中止</span></div>
           </div>
           <div class="checks">
             <div><strong>買う前チェック</strong><p>毛質に合う形、肌に強く当たりすぎない先端、握りやすさを確認します。</p></div>
@@ -379,7 +374,7 @@ button.button{cursor:pointer;font:inherit}
             <span class="label">見守り</span>
             <h2>ペットカメラ</h2>
             <p>留守中の行動や体調変化に気づきやすくなります。</p>
-            <div class="tags"><span>リンク準備中</span><span>配線確認</span><span>怖がれば移動</span><span>異変は直接確認</span></div>
+            <div class="tags"><span>商品を探す</span><span>配線確認</span><span>怖がれば移動</span><span>異変は直接確認</span></div>
           </div>
           <div class="checks">
             <div><strong>買う前チェック</strong><p>画質、夜間撮影、録画、アプリの使いやすさに加えて、配線と設置の安定を見ます。</p></div>

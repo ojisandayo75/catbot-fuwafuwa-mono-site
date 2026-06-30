@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "state": "needs_moshimo_approval",
   "phase": "needs_moshimo_approval",
   "next_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
@@ -167,7 +167,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。"
     },
     {
       "rank": 3,
@@ -176,7 +176,7 @@
       "product_id": "p2",
       "category": "水とごはん",
       "product": "自動給餌器",
-      "score": 93,
+      "score": 101,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -222,7 +222,7 @@
       "product_id": "p1",
       "category": "水とごはん",
       "product": "循環式水飲み器",
-      "score": 89,
+      "score": 97,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -314,7 +314,7 @@
   },
   "decision_rules": [
     "クリックが出た商品でも、猫に合わない条件が強いものは無理にリンク化しない。",
-    "最初の1本は、catbot反応と買う前チェックの両方が強い商品を選ぶ。",
+    "最初の1本は、人気の猫動画と買う前チェックの両方が強い商品を選ぶ。",
     "商品ページではリンクより先に、買わない条件・やめるサイン・最初の試し方を出す。",
     "体調変化、誤飲、怖がるサインがある場合は、用品ではなく相談を優先する。"
   ],

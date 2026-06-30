@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "state": "cat_first_aftercare_ready",
   "total_products": 9,
   "review_days": [
@@ -82,21 +82,6 @@
       "link_ready": false
     },
     {
-      "key": "scratch/p1",
-      "anchor": "scratch-p1",
-      "category": "爪とぎ",
-      "product": "段ボール爪とぎ 大容量",
-      "product_page": "products/scratch/p1/",
-      "buying_check": "buying-check/#scratch-p1",
-      "first_day": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
-      "day_three": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
-      "day_seven": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
-      "keep_if": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
-      "pause_if": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
-      "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
-      "link_ready": false
-    },
-    {
       "key": "water/p1",
       "anchor": "water-p1",
       "category": "水とごはん",
@@ -124,6 +109,21 @@
       "keep_if": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
       "pause_if": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
       "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+      "link_ready": false
+    },
+    {
+      "key": "scratch/p1",
+      "anchor": "scratch-p1",
+      "category": "爪とぎ",
+      "product": "段ボール爪とぎ 大容量",
+      "product_page": "products/scratch/p1/",
+      "buying_check": "buying-check/#scratch-p1",
+      "first_day": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+      "day_three": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
+      "day_seven": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+      "keep_if": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
+      "pause_if": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+      "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
       "link_ready": false
     },
     {

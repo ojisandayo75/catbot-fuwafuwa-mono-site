@@ -84,14 +84,14 @@
 ```
 
 `monitor-public-url` は `public_url_monitor.jsonl` に履歴を残し、`CATBOT_PUBLIC_MONITOR_REPORT.md` も更新します。
-`verify-public-url` は公開先の自動更新メタデータも見て、ローカルの最新エクスポートより古いZIPが公開されたままなら失敗にします。
+`verify-public-url` は公開先の新着メタデータも見て、ローカルの最新エクスポートより古いZIPが公開されたままなら失敗にします。
 
 ## 現在の状態
 
-- Generated: 2026-06-29T02:34:07
+- Generated: 2026-07-01T01:21:32
 - Public URL: https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/
 - Ready affiliate links: 0 / 9
-- Follower milestone ETA: 2026-07-09
+- Follower milestone ETA: 2026-07-15
 - Next affiliate target: toys/p2 電動猫じゃらし
 - Sitemap planned routes: see `sitemap-routes.json`
 

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "phase": "needs_moshimo_approval",
   "account": "@fuwafuwa_mono",
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -10,7 +10,7 @@
   "clicks_7d": 0,
   "ready_links": 0,
   "total_products": 9,
-  "followers": 578,
+  "followers": 672,
   "cat_first_lanes": {
     "ready": 1,
     "careful": 5,
@@ -131,7 +131,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。"
     },
     {
       "category_id": "water",
@@ -139,7 +139,7 @@
       "product_id": "p2",
       "product": "自動給餌器",
       "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
-      "score": 93,
+      "score": 101,
       "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
       "price_band": "高",
       "reasons": [
@@ -177,7 +177,7 @@
       "product_id": "p1",
       "product": "循環式水飲み器",
       "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
-      "score": 89,
+      "score": 97,
       "check": "洗いやすさ、フィルター代、音の小ささを確認。",
       "price_band": "中",
       "reasons": [

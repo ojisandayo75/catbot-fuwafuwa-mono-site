@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "state": "trends_signal_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -84,9 +84,9 @@
     {
       "kind": "video",
       "title": "素材動画の傾向",
-      "label": "funk nonstop in her head #fyp #rigbycat #catsoftiktok #catconte…",
+      "label": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp",
       "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
-      "metric": "141,114,634 plays",
+      "metric": "114,993,040 plays",
       "category_id": "toys",
       "category": "遊び",
       "guide_url": "guides/toys/",
@@ -127,7 +127,7 @@
       "trend_url": "trends/#toys",
       "panel_markers": [
         "catbotSignal",
-        "catbot反応から見る",
+        "人気の猫動画から見る",
         "反応トレンドで見る"
       ],
       "signals": [
@@ -152,8 +152,8 @@
         {
           "kind": "video",
           "title": "素材動画の傾向",
-          "label": "funk nonstop in her head #fyp #rigbycat #catsoftiktok #catconte…",
-          "metric": "141,114,634 plays",
+          "label": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp",
+          "metric": "114,993,040 plays",
           "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
           "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。",
           "trend_url": "trends/#toys"
@@ -176,7 +176,7 @@
       "trend_url": "trends/#toys",
       "panel_markers": [
         "catbotSignal",
-        "catbot反応から見る",
+        "人気の猫動画から見る",
         "反応トレンドで見る"
       ],
       "signals": [
@@ -201,8 +201,8 @@
         {
           "kind": "video",
           "title": "素材動画の傾向",
-          "label": "funk nonstop in her head #fyp #rigbycat #catsoftiktok #catconte…",
-          "metric": "141,114,634 plays",
+          "label": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp",
+          "metric": "114,993,040 plays",
           "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
           "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。",
           "trend_url": "trends/#toys"

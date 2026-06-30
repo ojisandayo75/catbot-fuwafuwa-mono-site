@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "followers": 578,
+  "followers": 672,
   "follower_goal": 1000,
-  "followers_to_goal": 422,
+  "followers_to_goal": 328,
   "affiliate_links": {
     "ready": 0,
     "total": 9
@@ -21,8 +21,8 @@
     "badges": [
       "商品直リンクなし",
       "買う前チェック優先",
-      "578/1000フォロワー",
-      "紹介リンク準備中"
+      "672/1000猫好きの仲間",
+      "紹介商品を探す"
     ]
   },
   "quiz_resume": {
@@ -43,31 +43,31 @@
     ]
   },
   "growth_meter": {
-    "title": "1000フォロワー準備",
-    "body": "catbotの伸びに合わせて、売り込みではなくプロフィール導線と買う前チェックを先に育てます。",
+    "title": "1000猫好きの仲間準備",
+    "body": "人気の猫動画の伸びに合わせて、売り込みではなくプロフィール導線と買う前チェックを先に育てます。",
     "image": "assets/ai_cat_care_scene.webp",
     "fallback": "assets/ai_cat_care_scene.jpg",
-    "alt": "catbotの伸びに合わせて猫のための導線を育てるイメージ",
-    "current": 578,
+    "alt": "人気の猫動画の伸びに合わせて猫のための導線を育てるイメージ",
+    "current": 672,
     "goal": 1000,
-    "remaining": 422,
-    "progress_percent": 57.8,
-    "last_7d_gain": 241,
-    "recent_avg_per_day": 34.4,
-    "eta_date": "2026-07-09",
+    "remaining": 328,
+    "progress_percent": 67.2,
+    "last_7d_gain": 131,
+    "recent_avg_per_day": 21.8,
+    "eta_date": "2026-07-15",
     "state": "growing",
     "badges": [
-      "進捗 57.8%",
-      "直近7日 +241",
-      "残り 422",
-      "到達目安 2026-07-09"
+      "進捗 67.2%",
+      "直近7日 +131",
+      "残り 328",
+      "到達目安 2026-07-15"
     ]
   },
   "auto_update_panel": {
-    "title": "自動更新メモ",
-    "body": "catbotの投稿ログ、動画素材、商品候補を見て、猫に合う入口と今日の候補を更新します。",
+    "title": "新着情報",
+    "body": "SNSの投稿ログ、動画素材、商品おすすめを見て、猫に合う入口と今日のおすすめを更新します。",
     "synced": true,
-    "last_exported_at": "2026-06-29T02:34:07",
+    "last_exported_at": "2026-07-01T01:21:32",
     "next_run_time": "定期更新",
     "interval": "定期更新",
     "source_counts": {
@@ -140,16 +140,12 @@
     "preferred_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
     "blockers": [
       {
-        "id": "safety_cooldown",
-        "detail": "cooldown active until 2026-06-29T18:11:08+09:00"
-      },
-      {
         "id": "affiliate_link",
         "detail": "no real affiliate/tracking link is set"
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (578/1000, remaining 422)"
+        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
       }
     ]
   },
@@ -224,7 +220,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。",
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。",
       "cat_first_review": {
         "review_level": "standard",
         "cat_first_score": 90,
@@ -241,7 +237,7 @@
       "category": "水とごはん",
       "product_id": "p2",
       "product": "自動給餌器",
-      "score": 93,
+      "score": 101,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -276,7 +272,7 @@
       "category": "水とごはん",
       "product_id": "p1",
       "product": "循環式水飲み器",
-      "score": 89,
+      "score": 97,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -340,32 +336,32 @@
     }
   ],
   "catbot_reaction_strip": {
-    "title": "catbot反応から今日見る",
-    "body": "伸びた投稿や反応テーマを、そのまま商品へ飛ばさず、猫の状態・買う前チェック・1000人準備へ分けて見ます。",
+    "title": "人気の猫動画から今日見る",
+    "body": "伸びた投稿や反応テーマを、そのまま商品へ飛ばさず、猫の状態・買う前チェック・おすすめの準備へ分けて見ます。",
     "cards": [
       {
         "kind": "daily",
         "label": "今日の反応",
         "title": "遊び",
-        "body": "catbotで反応が強いテーマを、今日の猫メモで短く確認します。",
+        "body": "人気の猫動画で注目のテーマを、今日の猫メモで短く確認します。",
         "metric": "score 32",
-        "href": "daily/"
+        "href": "trends/"
       },
       {
         "kind": "trends",
         "label": "伸びた投稿",
         "title": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…",
-        "body": "バズの空気を、買う理由ではなく猫に合うかの確認へ変換します。",
+        "body": "人気の空気を、買う理由ではなく猫に合うかの確認へ変換します。",
         "metric": "156,918 views / 1,224 likes",
         "href": "trends/"
       },
       {
-        "kind": "milestone",
-        "label": "1000人準備",
-        "title": "578/1000人",
-        "body": "販売導線を強める前に、プロフィール入口と買う前チェックを育てます。",
-        "metric": "残り 422人 / 直近7日 +241",
-        "href": "milestone/"
+        "kind": "seasonal",
+        "label": "今月のケア",
+        "title": "季節の猫ケア",
+        "body": "季節に合わせて、無理なく続けられるお手入れのポイントをまとめます。",
+        "metric": "毎月更新",
+        "href": "seasonal/"
       }
     ]
   },
@@ -377,8 +373,8 @@
       "image": "assets/ai_category_care.webp"
     },
     {
-      "label": "今の候補",
-      "title": "今日の候補",
+      "label": "今のおすすめ",
+      "title": "今日のおすすめ",
       "href": "first-target/",
       "image": "assets/ai_product_toys_p2.webp"
     },
@@ -403,7 +399,7 @@
     {
       "label": "今日の反応",
       "title": "今日の猫メモ",
-      "href": "daily/",
+      "href": "trends/",
       "image": "assets/ai_cat_care_scene.webp"
     },
     {
@@ -414,7 +410,7 @@
     }
   ],
   "quick_paths_title": "すぐ選ぶ",
-  "quick_paths_body": "Xから来た人が迷わないように、診断、困りごと、買う前チェック、今日の候補へすぐ進める入口です。",
+  "quick_paths_body": "Xから来た人が迷わないように、診断、困りごと、買う前チェック、今日のおすすめへすぐ進める入口です。",
   "quick_paths": [
     {
       "label": "うちの子から",
@@ -438,9 +434,9 @@
       "image": "assets/ai_shortcut_advisor.webp"
     },
     {
-      "label": "今日の候補",
+      "label": "今日のおすすめ",
       "title": "電動猫じゃらし",
-      "body": "catbotで反応が強い候補を、猫優先の注意つきで見ます。",
+      "body": "人気の猫動画で注目のグッズを、猫優先の注意つきで見ます。",
       "href": "first-target/",
       "image": "assets/ai_product_toys_p2.webp"
     }
@@ -448,7 +444,7 @@
   "journey_visual": {
     "image": "assets/ai_profile_journey.webp",
     "fallback": "assets/ai_profile_journey.png",
-    "alt": "診断、買う前チェック、今日の候補へ進む猫優先の導線"
+    "alt": "診断、買う前チェック、今日のおすすめへ進む猫優先の導線"
   },
   "journey_steps": [
     {
@@ -463,15 +459,15 @@
       "step": "2",
       "label": "買う前",
       "title": "合わない条件を先に見る",
-      "body": "音、サイズ、置き場所、使いすぎ、やめるサインを確認してから候補へ進みます。",
+      "body": "音、サイズ、置き場所、使いすぎ、やめるサインを確認してからおすすめへ進みます。",
       "href": "buying-check/",
       "image": "assets/ai_shortcut_advisor.webp"
     },
     {
       "step": "3",
-      "label": "候補を見る",
-      "title": "今日の候補は 電動猫じゃらし",
-      "body": "catbotで反応が強いテーマを、猫優先の基準に通してから見ます。",
+      "label": "おすすめを見る",
+      "title": "今日のおすすめは 電動猫じゃらし",
+      "body": "人気の猫動画で注目のテーマを、猫優先の基準に通してから見ます。",
       "href": "first-target/",
       "image": "assets/ai_product_toys_p2.webp"
     }

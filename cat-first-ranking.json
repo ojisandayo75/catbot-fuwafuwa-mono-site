@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "account": "@fuwafuwa_mono",
@@ -42,7 +42,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。",
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。",
       "cat_first_score": 100,
       "risk_signals": [],
       "link_ready": false,
@@ -84,7 +84,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。",
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。",
       "cat_first_score": 90,
       "risk_signals": [
         "誤飲・破損"
@@ -128,7 +128,7 @@
       "cat_first_lane": "ready",
       "cat_first_lane_rank": 1,
       "cat_first_lane_label": "リンク化しやすい",
-      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。",
+      "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。",
       "cat_first_score": 90,
       "risk_signals": [
         "体調・食事"
@@ -137,7 +137,7 @@
       "link_kind": "search",
       "link_status": "検索候補",
       "priority_rank": 8,
-      "priority_score": 51,
+      "priority_score": 35,
       "price_band": "低",
       "rank": 3
     },
@@ -229,7 +229,7 @@
       "link_kind": "search",
       "link_status": "検索候補",
       "priority_rank": 7,
-      "priority_score": 55,
+      "priority_score": 39,
       "price_band": "中",
       "rank": 5
     },
@@ -277,7 +277,7 @@
       "link_kind": "search",
       "link_status": "検索候補",
       "priority_rank": 3,
-      "priority_score": 93,
+      "priority_score": 101,
       "price_band": "高",
       "rank": 6
     },
@@ -325,7 +325,7 @@
       "link_kind": "search",
       "link_status": "検索候補",
       "priority_rank": 4,
-      "priority_score": 89,
+      "priority_score": 97,
       "price_band": "中",
       "rank": 7
     },

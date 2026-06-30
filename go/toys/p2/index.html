@@ -34,7 +34,7 @@ a{color:#5a3522;font-weight:800}
 </head>
 <body>
 <main>
-<span class="badge">商品候補ページへ移動前チェック</span>
+<span class="badge">商品おすすめページへ移動前チェック</span>
 <h1>外部ページを開いています</h1>
 <p>この先は販売元または商品検索ページです。広告・アフィリエイトリンクを含む場合があります。迷う場合は、下の確認だけ読んでから開いてください。</p>
 <div class="product">
@@ -63,7 +63,7 @@ a{color:#5a3522;font-weight:800}
   <a class="button secondary" href="../../../">サイトに戻る</a>
   <span class="sub">自動で切り替わらない場合は「今すぐ開く」を押してください。</span>
 </div>
-<p class="countdown" id="countdown">検索候補は自動で開きません。猫に合うか確認してから「今すぐ開く」を押してください。</p>
+<p class="countdown" id="countdown">検索おすすめは自動で開きません。猫に合うか確認してから「今すぐ開く」を押してください。</p>
 <div class="bar" aria-hidden="true"><span></span></div>
 </main>
 <script>
@@ -102,7 +102,7 @@ const pauseLink = document.getElementById("pauseLink");
 function paintCountdown(){
   if(countdown) {
     if(!autoRedirect) {
-      countdown.textContent = "検索候補は自動で開きません。猫に合うか確認してから「今すぐ開く」を押してください。";
+      countdown.textContent = "検索おすすめは自動で開きません。猫に合うか確認してから「今すぐ開く」を押してください。";
     } else {
       countdown.textContent = paused
         ? "自動移動を止めました。猫に合いそうなら「今すぐ開く」を押してください。"

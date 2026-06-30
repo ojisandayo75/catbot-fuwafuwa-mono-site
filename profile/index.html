@@ -3,16 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Xから来た人が、猫に合うかを確認してから候補へ進めるプロフィール用入口です。">
+<meta name="description" content="Xから来た人が、猫に合うかを確認してからおすすめへ進めるプロフィール用入口です。">
 <meta property="og:title" content="Catbot プロフィール入口">
-<meta property="og:description" content="Xから来た人が、猫に合うかを確認してから候補へ進めるプロフィール用入口です。">
+<meta property="og:description" content="Xから来た人が、猫に合うかを確認してからおすすめへ進めるプロフィール用入口です。">
 <meta property="og:site_name" content="ふわふわ猫の道具箱">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Catbot プロフィール入口">
-<meta name="twitter:description" content="Xから来た人が、猫に合うかを確認してから候補へ進めるプロフィール用入口です。">
+<meta name="twitter:description" content="Xから来た人が、猫に合うかを確認してからおすすめへ進めるプロフィール用入口です。">
 <meta name="theme-color" content="#5a3522">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="../assets/catbot-ui.css">
+<script defer src="../assets/catbot-i18n.js"></script>
 <link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
 <link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
@@ -155,10 +160,10 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
     <div class="hero-copy">
       <span class="label">Xから来た人へ</span>
       <h1>Catbot プロフィール入口</h1>
-      <p>ここは商品リンクを急いで押す場所ではなく、猫に合うかを先に見てから候補へ進む入口です。迷ったら、猫優先ランキング、今日の候補、買う前チェックの順で見ます。</p>
+      <p>ここは商品リンクを急いで押す場所ではなく、猫に合うかを先に見てからおすすめへ進む入口です。迷ったら、猫優先ランキング、今日のおすすめ、買う前チェックの順で見ます。</p>
       <div class="actions">
         <a class="button sage" href="../cat-first/">猫優先ランキング</a>
-        <a class="button light" href="../first-target/">今日の候補</a>
+        <a class="button light" href="../first-target/">今日のおすすめ</a>
         <a class="button light" href="../buying-check/">買う前チェック</a>
       </div>
     </div>
@@ -167,9 +172,9 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 <main class="wrap">
   <section class="status" aria-label="はじめに見る入口">
     <article class="metric"><span class="pill">はじめに</span><strong>うちの子診断</strong><p>性格と困りごとから入口を選びます</p></article>
-    <article class="metric"><span class="pill">今日の候補</span><strong>電動猫じゃらし</strong><p>遊び</p></article>
+    <article class="metric"><span class="pill">今日のおすすめ</span><strong>電動猫じゃらし</strong><p>遊び</p></article>
     <article class="metric"><span class="pill">買う前</span><strong>相性確認</strong><p>合わない条件とやめるサインを先に見ます</p></article>
-    <article class="metric"><span class="pill">リンク準備中</span><strong>商品直リンクなし</strong><p>今は買う前チェックを優先します</p></article>
+    <article class="metric"><span class="pill">商品を探す</span><strong>商品直リンクなし</strong><p>今は買う前チェックを優先します</p></article>
   </section>
 
   <section class="visitor-state" aria-label="現在のサイト状態">
@@ -178,35 +183,35 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <strong>商品直リンクはまだ置いていません</strong>
       <p>今は、猫に合うか・合わない条件・やめるサインを先に見られる準備ページです。紹介リンクの確認が終わるまで、販売リンクより買う前チェックを優先します。</p>
     </div>
-    <div class="badges"><span>商品直リンクなし</span><span>買う前チェック優先</span><span>578/1000フォロワー</span><span>紹介リンク準備中</span></div>
+    <div class="badges"><span>商品直リンクなし</span><span>買う前チェック優先</span><span>672/1000猫好きの仲間</span><span>紹介商品を探す</span></div>
   </section>
 
-  <section id="profileCatbotReaction" class="profile-reaction" aria-label="catbot反応から今日見る入口" data-profile-reaction-strip="catbot">
+  <section id="profileCatbotReaction" class="profile-reaction" aria-label="人気の猫動画から今日見る入口" data-profile-reaction-strip="catbot">
     <div>
-      <span class="pill">catbot反応から自動更新</span>
-      <h2>catbot反応から今日見る</h2>
-      <p>伸びた投稿や反応テーマを、そのまま商品へ飛ばさず、猫の状態・買う前チェック・1000人準備へ分けて見ます。</p>
+      <span class="pill">新着のおすすめ</span>
+      <h2>人気の猫動画から今日見る</h2>
+      <p>伸びた投稿や反応テーマを、そのまま商品へ飛ばさず、猫の状態・買う前チェック・おすすめの準備へ分けて見ます。</p>
     </div>
     <div class="profile-reaction-grid">
-        <a class="profile-reaction-card" data-profile-reaction-card="daily" href="../daily/">
+        <a class="profile-reaction-card" data-profile-reaction-card="daily" href="../trends/">
           <span>今日の反応</span>
           <strong>遊び</strong>
-          <p>catbotで反応が強いテーマを、今日の猫メモで短く確認します。</p>
+          <p>人気の猫動画で注目のテーマを、今日の猫メモで短く確認します。</p>
           <small>score 32</small>
         </a>
 
         <a class="profile-reaction-card" data-profile-reaction-card="trends" href="../trends/">
           <span>伸びた投稿</span>
           <strong>まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…</strong>
-          <p>バズの空気を、買う理由ではなく猫に合うかの確認へ変換します。</p>
+          <p>人気の空気を、買う理由ではなく猫に合うかの確認へ変換します。</p>
           <small>156,918 views / 1,224 likes</small>
         </a>
 
-        <a class="profile-reaction-card" data-profile-reaction-card="milestone" href="../milestone/">
-          <span>1000人準備</span>
-          <strong>578/1000人</strong>
-          <p>販売導線を強める前に、プロフィール入口と買う前チェックを育てます。</p>
-          <small>残り 422人 / 直近7日 +241</small>
+        <a class="profile-reaction-card" data-profile-reaction-card="seasonal" href="../seasonal/">
+          <span>今月のケア</span>
+          <strong>季節の猫ケア</strong>
+          <p>季節に合わせて、無理なく続けられるお手入れのポイントをまとめます。</p>
+          <small>毎月更新</small>
         </a></div>
   </section>
 
@@ -214,9 +219,9 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
     <div class="quick-path-head">
       <div>
         <span class="pill">すぐ選ぶ</span>
-        <h2>リンク集ではなく、猫の状態から入る</h2>
+        <h2>うちの子の様子から、ぴったりを探そう🐾</h2>
       </div>
-      <p>Xから来た人が迷わないように、診断、困りごと、買う前チェック、今日の候補へすぐ進める入口です。</p>
+      <p>Xから来た人が迷わないように、診断、困りごと、買う前チェック、今日のおすすめへすぐ進める入口です。</p>
     </div>
     <div class="quick-path-grid">
         <a class="quick-path-card" href="../quiz/">
@@ -242,9 +247,9 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 
         <a class="quick-path-card" href="../first-target/">
           <img src="../assets/ai_product_toys_p2.webp" alt="" loading="lazy">
-          <span>今日の候補</span>
+          <span>今日のおすすめ</span>
           <strong>電動猫じゃらし</strong>
-          <p>catbotで反応が強い候補を、猫優先の注意つきで見ます。</p>
+          <p>人気の猫動画で注目のグッズを、猫優先の注意つきで見ます。</p>
         </a></div>
   </section>
 
@@ -263,40 +268,40 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
     </div>
   </section>
 
-  <section class="growth-meter" aria-label="1000フォロワー準備">
+  <section class="growth-meter" aria-label="1000猫好きの仲間準備">
     <div>
-      <span class="pill">catbotの伸び</span>
-      <strong>1000フォロワー準備</strong>
-      <p>catbotの伸びに合わせて、売り込みではなくプロフィール導線と買う前チェックを先に育てます。</p>
-      <div class="progress-track" role="img" aria-label="57.8%"><span style="width:57.8%"></span></div>
-      <div class="badges"><span>進捗 57.8%</span><span>直近7日 +241</span><span>残り 422</span><span>到達目安 2026-07-09</span></div>
+      <span class="pill">人気の猫動画の伸び</span>
+      <strong>1000猫好きの仲間準備</strong>
+      <p>人気の猫動画の伸びに合わせて、売り込みではなくプロフィール導線と買う前チェックを先に育てます。</p>
+      <div class="progress-track" role="img" aria-label="67.2%"><span style="width:67.2%"></span></div>
+      <div class="badges"><span>進捗 67.2%</span><span>直近7日 +131</span><span>残り 328</span><span>到達目安 2026-07-15</span></div>
     </div>
     <div class="growth-side">
       <picture class="growth-visual">
         <source srcset="../assets/ai_cat_care_scene.webp" type="image/webp">
-        <img src="../assets/ai_cat_care_scene.jpg" alt="catbotの伸びに合わせて猫のための導線を育てるイメージ" loading="lazy">
+        <img src="../assets/ai_cat_care_scene.jpg" alt="人気の猫動画の伸びに合わせて猫のための導線を育てるイメージ" loading="lazy">
       </picture>
       <div class="growth-stats">
-        <div><small>現在</small><b>578</b><p>1000フォロワーまで</p></div>
-        <div><small>残り</small><b>422</b><p>売り込みを強めず準備</p></div>
-        <div><small>直近7日</small><b>+241</b><p>catbot反応を導線へ反映</p></div>
-        <div><small>到達目安</small><b>2026-07-09</b><p>自動更新で再計算</p></div>
+        <div><small>現在</small><b>672</b><p>1000猫好きの仲間まで</p></div>
+        <div><small>残り</small><b>328</b><p>売り込みを強めず準備</p></div>
+        <div><small>直近7日</small><b>+131</b><p>人気の猫動画を導線へ反映</p></div>
+        <div><small>到達目安</small><b>2026-07-15</b><p>新着で再計算</p></div>
       </div>
     </div>
   </section>
 
-  <section class="auto-update-panel" aria-label="自動更新メモ">
+  <section class="auto-update-panel" aria-label="新着情報">
     <div>
-      <span class="pill">自動更新メモ</span>
-      <strong>自動更新メモ</strong>
-      <p>catbotの投稿ログ、動画素材、商品候補を見て、猫に合う入口と今日の候補を更新します。</p>
+      <span class="pill">新着情報</span>
+      <strong>新着情報</strong>
+      <p>SNSの投稿ログ、動画素材、商品おすすめを見て、猫に合う入口と今日のおすすめを更新します。</p>
       <div class="badges"><span>同期済み</span><span>投稿 10</span><span>動画 12</span><span>商品 9</span></div>
     </div>
     <div class="update-stats">
-      <div><small>最終更新</small><b>2026-06-29T02:34:07</b><p>公開データに反映済み</p></div>
+      <div><small>最終更新</small><b>2026-07-01T01:21:32</b><p>公開データに反映済み</p></div>
       <div><small>次回目安</small><b>定期更新</b><p>定期更新</p></div>
-      <div><small>投稿ログ</small><b>10</b><p>catbot反応の入口</p></div>
-      <div><small>動画/商品</small><b>12/9</b><p>猫用品候補へ変換</p></div>
+      <div><small>投稿ログ</small><b>10</b><p>人気の猫動画の入口</p></div>
+      <div><small>動画/商品</small><b>12/9</b><p>猫用品おすすめへ変換</p></div>
     </div>
   </section>
 
@@ -306,11 +311,11 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
         <span class="pill">迷ったらこの順番</span>
         <h2>商品より先に、うちの子に合うかを見ます</h2>
       </div>
-      <p>診断、買う前チェック、今日の候補の順に見ると、衝動買いではなく猫に合う候補だけを残せます。</p>
+      <p>診断、買う前チェック、今日のおすすめの順に見ると、衝動買いではなく猫に合うおすすめだけを残せます。</p>
     </div>
     <picture class="journey-visual">
       <source srcset="../assets/ai_profile_journey.webp" type="image/webp">
-      <img src="../assets/ai_profile_journey.png" alt="診断、買う前チェック、今日の候補へ進む猫優先の導線" loading="lazy">
+      <img src="../assets/ai_profile_journey.png" alt="診断、買う前チェック、今日のおすすめへ進む猫優先の導線" loading="lazy">
     </picture>
     <div class="journey-grid">
         <a class="journey-step" href="../quiz/">
@@ -329,7 +334,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           <div>
             <small>買う前</small>
             <strong>合わない条件を先に見る</strong>
-            <p>音、サイズ、置き場所、使いすぎ、やめるサインを確認してから候補へ進みます。</p>
+            <p>音、サイズ、置き場所、使いすぎ、やめるサインを確認してからおすすめへ進みます。</p>
           </div>
         </a>
 
@@ -337,9 +342,9 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           <img src="../assets/ai_product_toys_p2.webp" alt="" loading="lazy">
           <span class="step-no">3</span>
           <div>
-            <small>候補を見る</small>
-            <strong>今日の候補は 電動猫じゃらし</strong>
-            <p>catbotで反応が強いテーマを、猫優先の基準に通してから見ます。</p>
+            <small>おすすめを見る</small>
+            <strong>今日のおすすめは 電動猫じゃらし</strong>
+            <p>人気の猫動画で注目のテーマを、猫優先の基準に通してから見ます。</p>
           </div>
         </a></div>
   </section>
@@ -355,9 +360,9 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 
         <a class="menu-card" href="../first-target/">
           <img src="../assets/ai_product_toys_p2.webp" alt="" loading="lazy">
-          <span>今の候補</span>
-          <strong>今日の候補</strong>
-          <p>今いちばん整える候補は 電動猫じゃらし です。</p>
+          <span>今のおすすめ</span>
+          <strong>今日のおすすめ</strong>
+          <p>今いちばん整えるおすすめは 電動猫じゃらし です。</p>
         </a>
 
         <a class="menu-card" href="../buying-check/">
@@ -381,11 +386,11 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
           <p>遊び、水、爪とぎ、留守番など困りごとから選べます。</p>
         </a>
 
-        <a class="menu-card" href="../daily/">
+        <a class="menu-card" href="../trends/">
           <img src="../assets/ai_cat_care_scene.webp" alt="" loading="lazy">
           <span>今日の反応</span>
           <strong>今日の猫メモ</strong>
-          <p>catbotの反応から、今日見るテーマを短く確認できます。</p>
+          <p></p>
         </a>
 
         <a class="menu-card" href="../policy/">
@@ -396,9 +401,9 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
         </a>
   </section>
 
-  <section class="grid" aria-label="今日の候補と猫優先チェック">
+  <section class="grid" aria-label="今日のおすすめと猫優先チェック">
     <article class="panel primary">
-      <span class="pill">今日の候補</span>
+      <span class="pill">今日のおすすめ</span>
       <h2>電動猫じゃらし</h2>
       <span class="lane careful">慎重にリンク化</span>
       <img class="hero-product" src="../assets/ai_product_toys_p2.webp" alt="" loading="lazy">
@@ -408,35 +413,35 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
         <div><strong>やめるサイン</strong><p>怖がる、息が上がりすぎる、執着が強くなる時は短時間で止めます。</p></div>
       </div>
       <div class="actions">
-        <a class="button" href="../products/toys/p2/">候補を見る</a>
-        <a class="button light" href="../first-target/">今日の候補</a>
+        <a class="button" href="../products/toys/p2/">おすすめを見る</a>
+        <a class="button light" href="../first-target/">今日のおすすめ</a>
       </div>
       <div class="badges"><span>商品直リンクは急がない</span><span>合わない条件まで見る</span><span>広告表記あり</span></div>
     </article>
     <aside class="panel">
       <span class="pill">次に見る順番</span>
       <h2>リンクより先に、猫に合うか</h2>
-      <p>catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。</p>
+      <p>人気の猫動画の投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。</p>
       <div class="queue-list">
         <article class="queue-card">
           <span class="lane careful">慎重にリンク化</span>
           <h3>電動猫じゃらし</h3>
           <p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p>
-          <a href="../products/toys/p2/">候補を見る</a>
+          <a href="../products/toys/p2/">おすすめを見る</a>
         </article>
 
         <article class="queue-card">
           <span class="lane ready">リンク化しやすい</span>
           <h3>けりぐるみ</h3>
           <p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p>
-          <a href="../products/toys/p1/">候補を見る</a>
+          <a href="../products/toys/p1/">おすすめを見る</a>
         </article>
 
         <article class="queue-card">
           <span class="lane careful">慎重にリンク化</span>
           <h3>自動給餌器</h3>
           <p>詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。</p>
-          <a href="../products/water/p2/">候補を見る</a>
+          <a href="../products/water/p2/">おすすめを見る</a>
         </article></div>
     </aside>
   </section>
@@ -460,7 +465,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
     <article class="panel">
       <span class="pill">判断の方針</span>
       <h2>売るより、合わない理由を先に出します</h2>
-      <p>catbotで反応が強くても、怖がる子・誤飲しやすい子・体調に不安がある子には別の入口を案内します。買わない判断があるほうが、猫のための導線として長く使えます。</p>
+      <p>人気の猫動画で反応が強くても、怖がる子・誤飲しやすい子・体調に不安がある子には別の入口を案内します。買わない判断があるほうが、猫のための導線として長く使えます。</p>
       <div class="actions"><a class="button light" href="../fit-reset/">見送り・やめどき</a><a class="button light" href="../needs/">困りごとから探す</a><a class="button light" href="../cat-first/">猫優先ランキング</a></div>
     </article>
   </section>
@@ -497,7 +502,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
       <span class="pill">広告と選定方針</span>
       <h2>猫優先で紹介します</h2>
       <p>このサイトには広告・アフィリエイトリンクを含む場合があります。猫に合うか、合わない条件、やめるサインを先に確認します。</p>
-      <div class="actions"><a class="button light" href="../policy/">広告と選定方針</a><a class="button light" href="../daily/">今日の猫メモ</a></div>
+      <div class="actions"><a class="button light" href="../policy/">広告と選定方針</a><a class="button light" href="../trends/">人気の猫動画</a></div>
     </article>
   </section>
   <p class="disclosure">広告・アフィリエイトリンクを含む場合があります。商品より先に、猫の安全、相性、使いすぎないことを確認します。</p>
@@ -505,7 +510,7 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 <nav id="profileStickyNav" class="profile-sticky-nav" aria-label="スマホ用プロフィール導線" data-profile-sticky-nav="mobile">
   <a href="../quiz/">診断</a>
   <a href="../buying-check/">買う前</a>
-  <a href="../first-target/">今日の候補</a>
+  <a href="../first-target/">今日のおすすめ</a>
   <a href="#profileCatbotReaction">反応</a>
 </nav>
 <script>

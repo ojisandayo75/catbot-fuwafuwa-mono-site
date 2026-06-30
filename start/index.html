@@ -13,6 +13,11 @@
 <meta name="twitter:title" content="Catbot はじめに見る3つ">
 <meta name="twitter:description" content="Xから来た人が、商品より先に猫に合うかを確認できる入口ページです。">
 <meta name="theme-color" content="#5a3522">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="../assets/catbot-ui.css">
+<script defer src="../assets/catbot-i18n.js"></script>
 <link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
 <link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
@@ -75,21 +80,21 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
     <div class="hero-inner">
       <span class="label">Xから来た人へ</span>
       <h1>はじめに見る3つ</h1>
-      <p>ここは、catbotで見かけた猫テーマを「すぐ買う」ではなく、猫に合うかを先に見るための入口です。迷ったら診断、買う前チェック、今日の猫メモの順に見ます。</p>
+      <p>ここは、人気の猫動画で見かけた猫テーマを「すぐ買う」ではなく、猫に合うかを先に見るための入口です。迷ったら診断、買う前チェック、今日の猫メモの順に見ます。</p>
       <div class="actions">
         <a class="button sage" href="#routes">3つの入口を見る</a>
         <a class="button light" href="../cat-first/">猫優先ランキング</a>
         <a class="button light" href="../needs/">困りごとから探す</a>
-        <a class="button light" href="../daily/">今日の猫メモ</a>
+        <a class="button light" href="../trends/">人気の猫動画</a>
         <a class="button light" href="../">トップへ</a>
       </div>
     </div>
   </div>
 </header>
 <main class="wrap">
-  <section class="status" aria-label="catbotの現在地">
-    <article class="stat"><span class="label">フォロワー</span><b>578/1000</b><p>1000人まで残り 422</p></article>
-    <article class="stat"><span class="label">実リンク</span><b>0/9</b><p>本物の追跡URLは慎重に追加</p></article>
+  <section class="status" aria-label="人気の猫動画の現在地">
+    <article class="stat"><span class="label">猫好きの仲間</span><b>672/1000</b><p>1000人まで残り 328</p></article>
+    <article class="stat"><span class="label">商品リンク</span><b>0/9</b><p>本物の商品リンクは慎重に追加</p></article>
     <article class="stat"><span class="label">今日の反応</span><b>遊び</b><p>score 32</p></article>
     <article class="stat"><span class="label">猫優先</span><b>慎重にリンク化</b><p>ready 1 / careful 4 / watch 0</p></article>
     <article class="stat"><span class="label">Xガード</span><b>ショップ投稿は待機</b><p>まだ商品リンクを強く出さず、プロフィールと猫ファーストの確認ページへ流します。</p></article>
@@ -113,48 +118,48 @@ p{margin:0;color:var(--muted);overflow-wrap:anywhere}
 
         <article class="route-card">
           <span class="step">3</span>
-          <h2>今日のcatbot反応を見る</h2>
-          <p>catbotの反応から、今日よく見られている猫テーマと次の候補を短くまとめます。</p>
-          <a class="button light" href="../daily/">今日の猫メモ</a>
+          <h2>人気の猫動画を見る</h2>
+          <p>人気の猫動画から、今日よく見られている猫テーマと次のおすすめを短くまとめます。</p>
+          <a class="button light" href="../trends/">人気の猫動画</a>
         </article>
   </section>
 
-  <section class="grid" aria-label="次に見る候補と猫ファースト確認">
+  <section class="grid" aria-label="次に見るおすすめと猫ファースト確認">
     <article class="panel primary">
-      <span class="label">次に整える候補</span>
+      <span class="label">今日のおすすめ</span>
       <h2>電動猫じゃらし</h2>
       <span class="lane careful">慎重にリンク化</span>
       <p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p>
       <p class="lane-note">合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。</p>
-      <div class="badges"><span>cooldown active until 2026-06-29T18:11:08+09:00</span><span>実アフィリリンク待ち: 電動猫じゃらし</span><span>1,000フォロワーまで待機: 578/1000</span></div>
+      <div class="badges"><span>実アフィリリンク待ち: 電動猫じゃらし</span><span>1,000猫好きの仲間まで待機: 672/1000</span></div>
       <div class="actions">
-        <a class="button" href="../products/toys/p2/">候補を見る</a>
+        <a class="button" href="../products/toys/p2/">おすすめを見る</a>
         <a class="button light" href="../cat-first/">猫優先ランキング</a>
-        <a class="button light" href="../link-plan/">リンク計画</a>
+        
       </div>
     </article>
     <article class="panel">
-      <span class="label">候補の並び</span>
-      <h2>catbot反応から自動更新</h2>
+      <span class="label">おすすめの並び</span>
+      <h2>新着のおすすめ</h2>
       <p>伸びている投稿テーマを見ながら、猫に合いやすい順ではなく「確認すべき点が見える順」に並べます。</p>
       <ul>
         <li>
           <strong>電動猫じゃらし</strong>
-          <span>遊び / score 211</span>
+          <span>遊び / 人気度 211</span>
           <span class="lane careful">慎重にリンク化</span>
           <p>連続稼働しすぎないもの、羽根やひもの交換ができるものを優先します。</p>
         </li>
 
         <li>
           <strong>けりぐるみ</strong>
-          <span>遊び / score 207</span>
+          <span>遊び / 人気度 207</span>
           <span class="lane ready">リンク化しやすい</span>
           <p>縫い目が強く、猫の口より小さすぎないサイズを選びます。</p>
         </li>
 
         <li>
           <strong>自動給餌器</strong>
-          <span>水とごはん / score 93</span>
+          <span>水とごはん / 人気度 101</span>
           <span class="lane careful">慎重にリンク化</span>
           <p>詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。</p>
         </li></ul>

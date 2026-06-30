@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "state": "needs_index_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -68,7 +68,7 @@
       "buying_check_url": "buying-check/#water-p1",
       "seasonal": true,
       "next_target": false,
-      "score": 93,
+      "score": 101,
       "quick_checks": [
         "洗いやすさ、フィルター代、音の小ささを確認。",
         "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
@@ -91,7 +91,7 @@
           "first_try": "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
           "stop_signal": "",
           "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
-          "score": 89
+          "score": 97
         },
         {
           "id": "p2",
@@ -105,7 +105,7 @@
           "first_try": "数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。",
           "stop_signal": "",
           "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
-          "score": 93
+          "score": 101
         }
       ]
     },
@@ -191,7 +191,7 @@
       "buying_check_url": "buying-check/#treats-p1",
       "seasonal": false,
       "next_target": false,
-      "score": 55,
+      "score": 39,
       "quick_checks": [
         "年齢、体調、総合栄養食か一般食かを確認。",
         "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。",
@@ -214,7 +214,7 @@
           "first_try": "1本まるごとではなく少量から始め、便・吐き戻し・食欲の変化を見ます。",
           "stop_signal": "",
           "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
-          "score": 51
+          "score": 35
         },
         {
           "id": "p2",
@@ -228,7 +228,7 @@
           "first_try": "初日は少量だけ。数日は便、吐き戻し、かゆがる様子を確認します。",
           "stop_signal": "",
           "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
-          "score": 55
+          "score": 39
         }
       ]
     },
@@ -277,7 +277,7 @@
   },
   "cat_first_policy": [
     "商品より先に、猫の状態・怖がり方・食欲水分排泄の変化を見る。",
-    "合わない条件とやめるサインを見てから、候補ページへ進む。",
+    "合わない条件とやめるサインを見てから、おすすめページへ進む。",
     "体調変化が続く時は、このサイトで判断せず相談を優先する。"
   ],
   "related": {

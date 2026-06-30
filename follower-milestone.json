@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "account": "@fuwafuwa_mono",
   "stage": "pre_900_prepare",
   "stage_label": "900人までは静かに土台作り",
-  "stage_detail": "Xでは売り込みを増やさず、もしも承認確認、最初の追跡URL、猫優先ページを順番に完成させます。",
-  "followers": 578,
+  "stage_detail": "Xでは売り込みを増やさず、もしも承認確認、最初の商品リンク、猫優先ページを順番に完成させます。",
+  "followers": 672,
   "goal": 1000,
-  "remaining": 422,
-  "progress": 57.8,
-  "last_7d_gain": 241,
-  "recent_avg_per_day": 34.4,
-  "eta_date": "2026-07-09",
+  "remaining": 328,
+  "progress": 67.2,
+  "last_7d_gain": 131,
+  "recent_avg_per_day": 21.8,
+  "eta_date": "2026-07-15",
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
   "moshimo": {
@@ -37,16 +37,16 @@
   "shop_post_allowed": false,
   "shop_post_decision": "wait",
   "x_safety": {
-    "cooldown_active": true,
+    "cooldown_active": false,
     "cooldown_until": "2026-06-29T18:11:08+09:00",
-    "cooldown_reason": "cooldown active until 2026-06-29T18:11:08+09:00",
+    "cooldown_reason": "",
     "recovery_active": false,
-    "recovery_pending": true,
+    "recovery_pending": false,
     "recovery_until": "2026-06-30T06:11:08+09:00",
     "recovery_remaining": {
-      "post": 1,
-      "tweet_send": 2,
-      "like": 2
+      "post": 0,
+      "tweet_send": 0,
+      "like": 0
     },
     "recovery_caps": {
       "post": 1,
@@ -57,15 +57,14 @@
   "safe_work_now": [
     "もしも承認状態を確認する",
     "猫優先ランキング、買う前チェック、商品ページを整える",
-    "最初の追跡URL候補を下調べする",
-    "公開URL、自動更新、リンク健全性を確認する"
+    "最初の商品リンクおすすめを下調べする",
+    "公開URL、新着、リンク健全性を確認する",
+    "shop-post-guardを確認してから、プロフィール導線の軽い案内だけ使う"
   ],
   "do_not_do_yet": [
     "商品直リンクをXに貼る",
     "販売投稿、リプ誘導、タグ増やし、連投を始める",
-    "普通の商品URLや検索URLを実アフィリリンクとして保存する",
-    "2026-06-29T18:11:08+09:00まではX投稿文をコピー投稿しない",
-    "2026-06-30T06:11:08+09:00までは回復上限を超えない (post残り1, tweet送信残り2, like残り2)"
+    "普通の商品URLや検索URLを実アフィリリンクとして保存する"
   ],
   "current_target": {
     "key": "toys/p2",
@@ -76,13 +75,13 @@
   },
   "now_action": {
     "title": "もしも承認を確認する",
-    "detail": "Amazonまたは楽天がapprovedになってから、最初の追跡URLを作ります。",
+    "detail": "Amazonまたは楽天がapprovedになってから、最初の商品リンクを作ります。",
     "command": ".\\catbot_moshimo_status.bat -OpenWorkbench"
   },
   "milestone_flow": [
     {
       "title": "900人を超える前",
-      "detail": "サイト、プロフィール導線、猫優先ランキング、もしも承認確認、最初の追跡URLだけを整えます。",
+      "detail": "サイト、プロフィール導線、猫優先ランキング、もしも承認確認、最初の商品リンクだけを整えます。",
       "posting": "売り込み投稿は待つ"
     },
     {

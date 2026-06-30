@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
-  "exported_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
+  "exported_at": "2026-07-01T01:21:32",
   "state": "cat_first_buying_check_ready",
   "total_products": 9,
   "categories": [
@@ -15,14 +15,14 @@
       "products": 2
     },
     {
-      "id": "scratch",
-      "name": "爪とぎ",
-      "products": 1
-    },
-    {
       "id": "water",
       "name": "水とごはん",
       "products": 2
+    },
+    {
+      "id": "scratch",
+      "name": "爪とぎ",
+      "products": 1
     },
     {
       "id": "care",
@@ -137,31 +137,6 @@
       "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
     },
     {
-      "key": "scratch/p1",
-      "anchor": "scratch-p1",
-      "category_id": "scratch",
-      "category": "爪とぎ",
-      "product_id": "p1",
-      "product": "段ボール爪とぎ 大容量",
-      "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
-      "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
-      "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
-      "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
-      "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
-      "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
-      "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
-      "tags": [
-        "滑り止め",
-        "粉を確認",
-        "食べないか確認"
-      ],
-      "product_page": "products/scratch/p1/",
-      "guide_page": "guides/scratch/",
-      "link_ready": false,
-      "link_kind": "search",
-      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
-    },
-    {
       "key": "water/p1",
       "anchor": "water-p1",
       "category_id": "water",
@@ -207,6 +182,31 @@
       ],
       "product_page": "products/water/p2/",
       "guide_page": "guides/water/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "scratch/p1",
+      "anchor": "scratch-p1",
+      "category_id": "scratch",
+      "category": "爪とぎ",
+      "product_id": "p1",
+      "product": "段ボール爪とぎ 大容量",
+      "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
+      "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
+      "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+      "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+      "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
+      "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+      "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
+      "tags": [
+        "滑り止め",
+        "粉を確認",
+        "食べないか確認"
+      ],
+      "product_page": "products/scratch/p1/",
+      "guide_page": "guides/scratch/",
       "link_ready": false,
       "link_kind": "search",
       "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
@@ -281,8 +281,8 @@
     }
   ],
   "consult_first": {
-    "generated_at": "2026-06-29T02:34:07",
-    "exported_at": "2026-06-29T02:34:07",
+    "generated_at": "2026-07-01T01:21:32",
+    "exported_at": "2026-07-01T01:21:32",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",

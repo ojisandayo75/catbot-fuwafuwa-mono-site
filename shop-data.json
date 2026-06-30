@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T02:34:07",
+  "generated_at": "2026-07-01T01:21:32",
   "site": {
     "name": "ふわふわ猫の道具箱",
     "tagline": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
@@ -14,27 +14,27 @@
     "static_export": true
   },
   "stats": {
-    "followers": 578,
+    "followers": 672,
     "follower_goal": 1000,
-    "followers_to_goal": 422,
-    "follower_progress": 57.8,
+    "followers_to_goal": 328,
+    "follower_progress": 67.2,
     "follower_growth": {
-      "history_count": 27,
+      "history_count": 28,
       "first_date": "2026-05-29",
-      "last_date": "2026-06-26",
-      "current": 578,
+      "last_date": "2026-06-30",
+      "current": 672,
       "goal": 1000,
-      "remaining": 422,
-      "overall_gain": 544,
-      "overall_avg_per_day": 19.4,
-      "last_7d_gain": 241,
-      "recent_avg_per_day": 34.4,
-      "eta_days": 13,
-      "eta_date": "2026-07-09",
+      "remaining": 328,
+      "overall_gain": 638,
+      "overall_avg_per_day": 19.9,
+      "last_7d_gain": 131,
+      "recent_avg_per_day": 21.8,
+      "eta_days": 15,
+      "eta_date": "2026-07-15",
       "max_daily_gain": 133,
       "state": "growing"
     },
-    "post_count": 178,
+    "post_count": 183,
     "top_post_views": 156918,
     "ready_links": 0,
     "total_products": 9,
@@ -50,7 +50,7 @@
     {
       "level": "info",
       "title": "まだ育成フェーズ",
-      "detail": "1,000フォロワーまで残り 422。売り込みよりプロフィール導線を薄く置く。"
+      "detail": "1,000猫好きの仲間まで残り 328。売り込みよりプロフィール導線を薄く置く。"
     }
   ],
   "copy": {
@@ -115,8 +115,8 @@
           "link": {
             "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
             "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
             "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
             "ready": false,
             "go_url": "go/toys/p1/",
@@ -126,11 +126,11 @@
             "rank": 2,
             "score": 207,
             "reasons": [
-              "catbot反応",
+              "人気の猫動画",
               "買う前チェック: 留守番が多い猫",
               "買う前チェック: よく走る・遊び足りない猫"
             ],
-            "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+            "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
           },
           "detail_url": "products/toys/p1/",
           "cat_first_review": {
@@ -151,7 +151,7 @@
           "cat_first_lane": "ready",
           "cat_first_lane_rank": 1,
           "cat_first_lane_label": "リンク化しやすい",
-          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
+          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。"
         },
         {
           "name": "電動猫じゃらし",
@@ -184,8 +184,8 @@
           "link": {
             "url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
             "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
             "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
             "ready": false,
             "go_url": "go/toys/p2/",
@@ -195,12 +195,12 @@
             "rank": 1,
             "score": 211,
             "reasons": [
-              "catbot反応",
+              "人気の猫動画",
               "買う前チェック: 留守番が多い猫",
               "買う前チェック: よく走る・遊び足りない猫",
               "中単価"
             ],
-            "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+            "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
           },
           "detail_url": "products/toys/p2/",
           "cat_first_review": {
@@ -276,8 +276,8 @@
           "link": {
             "url": "https://www.amazon.co.jp/s?k=CIAO+%E3%81%A1%E3%82%85%E3%83%BC%E3%82%8B+%E7%8C%AB",
             "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
             "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
             "ready": false,
             "go_url": "go/treats/p1/",
@@ -285,11 +285,11 @@
           },
           "priority": {
             "rank": 8,
-            "score": 51,
+            "score": 35,
             "reasons": [
               "買う前チェック: 水分・ごはんを整えたい猫"
             ],
-            "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+            "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
           },
           "detail_url": "products/treats/p1/",
           "cat_first_review": {
@@ -310,7 +310,7 @@
           "cat_first_lane": "ready",
           "cat_first_lane_rank": 1,
           "cat_first_lane_label": "リンク化しやすい",
-          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
+          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。"
         },
         {
           "name": "無添加寄りのおやつ",
@@ -343,8 +343,8 @@
           "link": {
             "url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E3%81%8A%E3%82%84%E3%81%A4+%E7%84%A1%E6%B7%BB%E5%8A%A0/",
             "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
             "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
             "ready": false,
             "go_url": "go/treats/p2/",
@@ -352,12 +352,12 @@
           },
           "priority": {
             "rank": 7,
-            "score": 55,
+            "score": 39,
             "reasons": [
               "買う前チェック: 水分・ごはんを整えたい猫",
               "中単価"
             ],
-            "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+            "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
           },
           "detail_url": "products/treats/p2/",
           "cat_first_review": {
@@ -382,95 +382,7 @@
           "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
         }
       ],
-      "score": 31
-    },
-    {
-      "id": "scratch",
-      "name": "爪とぎ",
-      "short_name": "爪とぎ",
-      "headline": "家具より先に、気持ちよく削れる場所を。",
-      "why": "消耗品で買い替え需要があり、猫のためにも家のためにも納得感が出やすいカテゴリです。",
-      "priority": 6,
-      "signals": [
-        "scratch",
-        "claw",
-        "cardboard",
-        "box"
-      ],
-      "products": [
-        {
-          "name": "段ボール爪とぎ 大容量",
-          "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
-          "check": "粉が出にくいもの、滑りにくい形を優先。",
-          "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
-          "cat_fit": {
-            "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
-            "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
-            "first_try": "よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。"
-          },
-          "safety": {
-            "check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
-            "stop": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
-            "routine": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
-            "tags": [
-              "滑り止め",
-              "粉を確認",
-              "食べないか確認"
-            ]
-          },
-          "price_band": "低",
-          "affiliate_url": "",
-          "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
-          "cta": "爪とぎを見る",
-          "image": "assets/ai_product_scratch_p1.png",
-          "image_webp": "assets/ai_product_scratch_p1.webp",
-          "id": "p1",
-          "clicks": 0,
-          "link": {
-            "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
-            "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
-            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
-            "ready": false,
-            "go_url": "go/scratch/p1/",
-            "redirect_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F"
-          },
-          "priority": {
-            "rank": 5,
-            "score": 76,
-            "reasons": [
-              "季節ケア",
-              "買う前チェック: よく走る・遊び足りない猫",
-              "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫"
-            ],
-            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
-          },
-          "detail_url": "products/scratch/p1/",
-          "cat_first_review": {
-            "review_level": "watch",
-            "cat_first_score": 70,
-            "risk_signals": [
-              "誤飲・破損",
-              "怖がり・音",
-              "衛生・手入れ"
-            ],
-            "info_complete": true,
-            "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
-            "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
-            "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
-            "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
-            "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
-            "decision": "review_before_link",
-            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
-          },
-          "cat_first_lane": "careful",
-          "cat_first_lane_rank": 2,
-          "cat_first_lane_label": "慎重にリンク化",
-          "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
-        }
-      ],
-      "score": 6
+      "score": 15
     },
     {
       "id": "water",
@@ -517,8 +429,8 @@
           "link": {
             "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
             "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
             "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
             "ready": false,
             "go_url": "go/water/p1/",
@@ -526,14 +438,14 @@
           },
           "priority": {
             "rank": 4,
-            "score": 89,
+            "score": 97,
             "reasons": [
               "季節ケア",
               "買う前チェック: 留守番が多い猫",
               "買う前チェック: 水分・ごはんを整えたい猫",
               "中単価"
             ],
-            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+            "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
           },
           "detail_url": "products/water/p1/",
           "cat_first_review": {
@@ -589,8 +501,8 @@
           "link": {
             "url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
             "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
             "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
             "ready": false,
             "go_url": "go/water/p2/",
@@ -598,14 +510,14 @@
           },
           "priority": {
             "rank": 3,
-            "score": 93,
+            "score": 101,
             "reasons": [
               "季節ケア",
               "買う前チェック: 留守番が多い猫",
               "買う前チェック: 水分・ごはんを整えたい猫",
               "高単価"
             ],
-            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+            "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
           },
           "detail_url": "products/water/p2/",
           "cat_first_review": {
@@ -631,7 +543,95 @@
           "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
         }
       ],
-      "score": 5
+      "score": 13
+    },
+    {
+      "id": "scratch",
+      "name": "爪とぎ",
+      "short_name": "爪とぎ",
+      "headline": "家具より先に、気持ちよく削れる場所を。",
+      "why": "消耗品で買い替え需要があり、猫のためにも家のためにも納得感が出やすいカテゴリです。",
+      "priority": 6,
+      "signals": [
+        "scratch",
+        "claw",
+        "cardboard",
+        "box"
+      ],
+      "products": [
+        {
+          "name": "段ボール爪とぎ 大容量",
+          "reason": "消耗が早い家庭でも交換しやすく、置き場所を増やしやすいです。",
+          "check": "粉が出にくいもの、滑りにくい形を優先。",
+          "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
+          "cat_fit": {
+            "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
+            "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+            "first_try": "よく通る場所に固定して置き、粉・滑り・食べていないかを数日見ます。"
+          },
+          "safety": {
+            "check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
+            "stop": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+            "routine": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+            "tags": [
+              "滑り止め",
+              "粉を確認",
+              "食べないか確認"
+            ]
+          },
+          "price_band": "低",
+          "affiliate_url": "",
+          "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
+          "cta": "爪とぎを見る",
+          "image": "assets/ai_product_scratch_p1.png",
+          "image_webp": "assets/ai_product_scratch_p1.webp",
+          "id": "p1",
+          "clicks": 0,
+          "link": {
+            "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F",
+            "kind": "search",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
+            "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+            "ready": false,
+            "go_url": "go/scratch/p1/",
+            "redirect_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F"
+          },
+          "priority": {
+            "rank": 5,
+            "score": 76,
+            "reasons": [
+              "季節ケア",
+              "買う前チェック: よく走る・遊び足りない猫",
+              "買う前チェック: 毛・爪・部屋のケアを楽にしたい猫"
+            ],
+            "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+          },
+          "detail_url": "products/scratch/p1/",
+          "cat_first_review": {
+            "review_level": "watch",
+            "cat_first_score": 70,
+            "risk_signals": [
+              "誤飲・破損",
+              "怖がり・音",
+              "衛生・手入れ"
+            ],
+            "info_complete": true,
+            "best_for": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
+            "not_for": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
+            "buy_before_check": "粉が出にくく、滑りにくく、猫の体格に合う幅と安定感を見ます。",
+            "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+            "first_try": "使う場所に固定し、崩れた面やカスは早めに片付けます。",
+            "decision": "review_before_link",
+            "note": "リンク化する前に、合わない条件とやめるサインを商品ページ・買う前チェックに出します。"
+          },
+          "cat_first_lane": "careful",
+          "cat_first_lane_rank": 2,
+          "cat_first_lane_label": "慎重にリンク化",
+          "cat_first_action": "合わない猫と止めるサインを目立たせ、Xでは便利さだけで押しません。"
+        }
+      ],
+      "score": 6
     },
     {
       "id": "care",
@@ -678,8 +678,8 @@
           "link": {
             "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%96%E3%83%A9%E3%82%B7",
             "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
             "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
             "ready": false,
             "go_url": "go/care/p1/",
@@ -711,7 +711,7 @@
           "cat_first_lane": "ready",
           "cat_first_lane_rank": 1,
           "cat_first_lane_label": "リンク化しやすい",
-          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンク候補にできます。"
+          "cat_first_action": "通常の猫ファースト注意を添えて、次のリンクおすすめにできます。"
         }
       ],
       "score": 4
@@ -721,7 +721,7 @@
       "name": "見守り",
       "short_name": "見守り",
       "headline": "留守中の様子を見られる安心感。",
-      "why": "高単価ですが、猫の安全確認という理由が明確。1000フォロワー後に比較記事化しやすいカテゴリです。",
+      "why": "高単価ですが、猫の安全確認という理由が明確。1000猫好きの仲間後に比較記事化しやすいカテゴリです。",
       "priority": 3,
       "signals": [
         "home",
@@ -761,8 +761,8 @@
           "link": {
             "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%83%9A%E3%83%83%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9",
             "kind": "search",
-            "label": "検索候補を見る",
-            "status_label": "検索候補",
+            "label": "検索おすすめを見る",
+            "status_label": "検索おすすめ",
             "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
             "ready": false,
             "go_url": "go/watch/p1/",
@@ -833,13 +833,31 @@
         "原材料や塩分が気になる場合は、無添加寄りから試す。"
       ],
       "category": "おやつ",
-      "category_score": 31,
+      "category_score": 15,
       "product_count": 2,
       "first_product": "CIAO ちゅーる系おやつ",
       "first_product_reason": "少量のごほうびや水分補助として使いやすい定番です。",
       "cta": "おやつを見る",
       "target": "guides/treats/",
       "guide_url": "guides/treats/"
+    },
+    {
+      "id": "water",
+      "title": "水をあまり飲まない子",
+      "lead": "水分が気になる子は、飲みやすさと手入れのしやすさを先に見ます。",
+      "steps": [
+        "水の置き場所を複数にして、音や高さの好みを試す。",
+        "循環式はフィルター代と洗いやすさまで見る。",
+        "急な体調変化や飲水量の不安が強い時は、商品より先に獣医師へ相談する。"
+      ],
+      "category": "水とごはん",
+      "category_score": 13,
+      "product_count": 2,
+      "first_product": "循環式水飲み器",
+      "first_product_reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+      "cta": "水とごはんを見る",
+      "target": "guides/water/",
+      "guide_url": "guides/water/"
     },
     {
       "id": "scratch",
@@ -858,24 +876,6 @@
       "cta": "爪とぎを見る",
       "target": "guides/scratch/",
       "guide_url": "guides/scratch/"
-    },
-    {
-      "id": "water",
-      "title": "水をあまり飲まない子",
-      "lead": "水分が気になる子は、飲みやすさと手入れのしやすさを先に見ます。",
-      "steps": [
-        "水の置き場所を複数にして、音や高さの好みを試す。",
-        "循環式はフィルター代と洗いやすさまで見る。",
-        "急な体調変化や飲水量の不安が強い時は、商品より先に獣医師へ相談する。"
-      ],
-      "category": "水とごはん",
-      "category_score": 5,
-      "product_count": 2,
-      "first_product": "循環式水飲み器",
-      "first_product_reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
-      "cta": "水とごはんを見る",
-      "target": "guides/water/",
-      "guide_url": "guides/water/"
     },
     {
       "id": "care",
@@ -916,7 +916,7 @@
   ],
   "seasonal_care": {
     "key": "summer",
-    "month": "2026-06",
+    "month": "2026-07",
     "title": "梅雨から夏の猫ケア",
     "summary": "湿度と暑さが上がる時期は、水分、風通し、留守中の室温を優先します。遊びは短めにして休む時間も作ります。",
     "checks": [
@@ -929,7 +929,7 @@
         "id": "water",
         "label": "水とごはん",
         "headline": "毎日の水分とごはんをラクに整える。",
-        "score": 5
+        "score": 13
       },
       {
         "id": "watch",
@@ -947,7 +947,7 @@
     "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
   },
   "catbot_trends": {
-    "generated_at": "2026-06-29T02:34:07",
+    "generated_at": "2026-07-01T01:21:32",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -958,7 +958,7 @@
         "kind": "category",
         "title": "反応が強いテーマ",
         "label": "遊び",
-        "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
+        "detail": "人気の猫動画の投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
         "metric": "score 32",
         "category_id": "toys"
       },
@@ -973,16 +973,16 @@
       {
         "kind": "video",
         "title": "素材動画の傾向",
-        "label": "funk nonstop in her head #fyp #rigbycat #catsoftiktok #catconte…",
-        "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
-        "metric": "141,114,634 plays",
+        "label": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp",
+        "detail": "人気の猫動画で扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
+        "metric": "114,993,040 plays",
         "category_id": "toys"
       }
     ],
-    "summary": "catbotの投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
+    "summary": "人気の猫動画の投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
   },
   "purchase_advisor": {
-    "generated_at": "2026-06-29T02:34:07",
+    "generated_at": "2026-07-01T01:21:32",
     "cards": [
       {
         "id": "home-alone",
@@ -1014,9 +1014,9 @@
         ],
         "first_product": "ペットカメラ",
         "first_product_reason": "留守中の行動や体調変化に気づきやすくなります。",
-        "score": 158,
+        "score": 166,
         "source_labels": [
-          "catbot反応",
+          "人気の猫動画",
           "季節ケア"
         ],
         "rank": 1
@@ -1048,7 +1048,7 @@
         "first_product_reason": "噛む・蹴るの欲求を受け止めやすく、ひとり遊びにも向きます。",
         "score": 138,
         "source_labels": [
-          "catbot反応",
+          "人気の猫動画",
           "季節ケア"
         ],
         "rank": 2
@@ -1078,7 +1078,7 @@
         ],
         "first_product": "循環式水飲み器",
         "first_product_reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
-        "score": 90,
+        "score": 82,
         "source_labels": [
           "季節ケア"
         ],
@@ -1116,15 +1116,15 @@
         "rank": 4
       }
     ],
-    "summary": "猫の性格・暮らし・catbotの反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
+    "summary": "猫の性格・暮らし・人気の猫動画の反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
   },
   "update_notes": {
-    "generated_at": "2026-06-29T02:34:07",
+    "generated_at": "2026-07-01T01:21:32",
     "cards": [
       {
-        "title": "フォロワー進捗",
-        "label": "578 / 1,000",
-        "detail": "1,000人まで残り 422。公開前は売り込みを強めず、プロフィール導線と猫向け情報を育てます。"
+        "title": "猫好きの仲間進捗",
+        "label": "672 / 1,000",
+        "detail": "1,000人まで残り 328。公開前は売り込みを強めず、プロフィール導線と猫向け情報を育てます。"
       },
       {
         "title": "今日の反応テーマ",
@@ -1144,7 +1144,7 @@
         "detail": "実アフィリリンク未投入。まずは反応が強いカテゴリから、もしもリンクへ差し替えます。"
       }
     ],
-    "summary": "catbotのフォロワー、投稿反応、季節ケア、リンク準備をまとめた自動更新メモです。"
+    "summary": "人気の猫動画の猫好きの仲間、投稿反応、季節ケア、リンク準備をまとめた自動更新メモです。"
   },
   "featured_category": {
     "id": "toys",
@@ -1194,8 +1194,8 @@
         "link": {
           "url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
           "kind": "search",
-          "label": "検索候補を見る",
-          "status_label": "検索候補",
+          "label": "検索おすすめを見る",
+          "status_label": "検索おすすめ",
           "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
           "ready": false,
           "go_url": "/go/toys/p1"
@@ -1204,11 +1204,11 @@
           "rank": 2,
           "score": 207,
           "reasons": [
-            "catbot反応",
+            "人気の猫動画",
             "買う前チェック: 留守番が多い猫",
             "買う前チェック: よく走る・遊び足りない猫"
           ],
-          "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+          "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
         }
       },
       {
@@ -1242,8 +1242,8 @@
         "link": {
           "url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
           "kind": "search",
-          "label": "検索候補を見る",
-          "status_label": "検索候補",
+          "label": "検索おすすめを見る",
+          "status_label": "検索おすすめ",
           "note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
           "ready": false,
           "go_url": "/go/toys/p2"
@@ -1252,12 +1252,12 @@
           "rank": 1,
           "score": 211,
           "reasons": [
-            "catbot反応",
+            "人気の猫動画",
             "買う前チェック: 留守番が多い猫",
             "買う前チェック: よく走る・遊び足りない猫",
             "中単価"
           ],
-          "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+          "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
         }
       }
     ],
@@ -1357,6 +1357,52 @@
       }
     },
     {
+      "posted_at": "2026-06-25T19:40:24",
+      "tweet_id": "2070094755141398824",
+      "rank": 7,
+      "video_id": "7628924218847071518",
+      "tiktok_user": "schmitt.william",
+      "text": "待って、他人の猫動画なのに、寝ぼけて飼い主さんの手を探す姿で胸がきゅっとした\n\nうちの子にも、今日いつもより長く撫でようと思った🐾\n\n猫って小さな幸せの先生だね #猫好きさんと繋がりたい #猫動画",
+      "char_count": 98,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感・うちの子語り",
+      "engine": "codex",
+      "play_count": 14392160,
+      "like_count": 2058028,
+      "engagement": {
+        "favorite": 4831,
+        "retweet": 133,
+        "reply": 2,
+        "view": 46278,
+        "bookmark": 712,
+        "age_hours": 112.58
+      }
+    },
+    {
+      "posted_at": "2026-06-26T06:02:26",
+      "tweet_id": "2070251294368108803",
+      "rank": 1,
+      "video_id": "7592934067977342221",
+      "tiktok_user": "castobong3",
+      "text": "えっ今\n\n知らない子の猫動画なのに、名前を呼ばれて振り返るだけで胸がぎゅっとした。\n\n画面越しでも、愛されてる顔ってわかるんだね🐾 #猫好きさんと繋がりたい #猫動画",
+      "char_count": 83,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感と猫動画への愛着",
+      "engine": "codex",
+      "play_count": 53790099,
+      "like_count": 7406735,
+      "engagement": {
+        "favorite": 5589,
+        "retweet": 368,
+        "reply": 5,
+        "view": 33717,
+        "bookmark": 1383,
+        "age_hours": 102.21
+      }
+    },
+    {
       "posted_at": "2026-06-16T19:30:47",
       "tweet_id": "2066830846116696118",
       "rank": 7,
@@ -1394,12 +1440,12 @@
       "play_count": 28723620,
       "like_count": 1793356,
       "engagement": {
-        "favorite": 1016,
+        "favorite": 1015,
         "retweet": 82,
         "reply": 0,
-        "view": 20338,
-        "bookmark": 112,
-        "age_hours": 54.08
+        "view": 20555,
+        "bookmark": 110,
+        "age_hours": 150.09
       }
     },
     {
@@ -1426,29 +1472,6 @@
       }
     },
     {
-      "posted_at": "2026-06-25T19:40:24",
-      "tweet_id": "2070094755141398824",
-      "rank": 7,
-      "video_id": "7628924218847071518",
-      "tiktok_user": "schmitt.william",
-      "text": "待って、他人の猫動画なのに、寝ぼけて飼い主さんの手を探す姿で胸がきゅっとした\n\nうちの子にも、今日いつもより長く撫でようと思った🐾\n\n猫って小さな幸せの先生だね #猫好きさんと繋がりたい #猫動画",
-      "char_count": 98,
-      "hashtag_count": 2,
-      "emoji_count": 1,
-      "fish_for": "共感・うちの子語り",
-      "engine": "codex",
-      "play_count": 14392160,
-      "like_count": 2058028,
-      "engagement": {
-        "favorite": 837,
-        "retweet": 30,
-        "reply": 1,
-        "view": 15942,
-        "bookmark": 129,
-        "age_hours": 16.7
-      }
-    },
-    {
       "posted_at": "2026-06-11T06:00:34",
       "tweet_id": "2064815008991813868",
       "rank": 1,
@@ -1470,153 +1493,130 @@
         "bookmark": 59,
         "age_hours": 150.25
       }
-    },
-    {
-      "posted_at": "2026-06-20T22:30:43",
-      "tweet_id": "2068325680555954370",
-      "rank": 8,
-      "video_id": "7636329379626274061",
-      "tiktok_user": "catfunny86.0",
-      "text": "え、今\n\n他人の猫動画なのに、こっちを見上げて小さく鳴いた瞬間、胸がぎゅっとした。今日も猫に救われてる🐾\n\n#猫好きさんと繋がりたい #猫動画",
-      "char_count": 71,
-      "hashtag_count": 2,
-      "emoji_count": 1,
-      "fish_for": "共感リプと猫動画共有",
-      "engine": "codex",
-      "play_count": 17147855,
-      "like_count": 2637602,
-      "engagement": {
-        "favorite": 931,
-        "retweet": 113,
-        "reply": 1,
-        "view": 13895,
-        "bookmark": 220,
-        "age_hours": 133.74
-      }
     }
   ],
   "videos": [
     {
       "rank": 1,
-      "video_id": "7606523760253947166",
-      "username": "iamrigbycat",
-      "url": "https://www.tiktok.com/@iamrigbycat/video/7606523760253947166",
-      "title": "funk nonstop in her head #fyp #rigbycat #catsoftiktok #catcontent #sillycat ",
-      "play_count": 141114634,
-      "like_count": 21412263,
-      "comment_count": 90233,
-      "mp4": "01_iamrigbycat_7606523760253947166.mp4",
+      "video_id": "7571394880136629518",
+      "username": "pawsitive.energy7",
+      "url": "https://www.tiktok.com/@pawsitive.energy7/video/7571394880136629518",
+      "title": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp ",
+      "play_count": 114993040,
+      "like_count": 25029450,
+      "comment_count": 45577,
+      "mp4": "01_pawsitive.energy7_7571394880136629518.mp4",
       "status": "fresh",
       "posted_count": 0,
       "last_posted_at": null
     },
     {
       "rank": 2,
-      "video_id": "7571394880136629518",
-      "username": "pawsitive.energy7",
-      "url": "https://www.tiktok.com/@pawsitive.energy7/video/7571394880136629518",
-      "title": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp ",
-      "play_count": 114939508,
-      "like_count": 25025266,
-      "comment_count": 45567,
-      "mp4": "02_pawsitive.energy7_7571394880136629518.mp4",
-      "status": "fresh",
-      "posted_count": 0,
-      "last_posted_at": null
+      "video_id": "7545089658544229654",
+      "username": "deryasefil",
+      "url": "https://www.tiktok.com/@deryasefil/video/7545089658544229654",
+      "title": "therapy session wth loki🧚🏼 #cat #catsoftiktok #therapy ",
+      "play_count": 112286333,
+      "like_count": 21805418,
+      "comment_count": 79205,
+      "mp4": "02_deryasefil_7545089658544229654.mp4",
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-30T12:43:13"
     },
     {
       "rank": 3,
+      "video_id": "7508869947372703022",
+      "username": "knitpets",
+      "url": "https://www.tiktok.com/@knitpets/video/7508869947372703022",
+      "title": "Crochet kitty caught by tickle monster #cutecat #pet #kucing #kucinglucu #猫 #kitty #viral ",
+      "play_count": 84844985,
+      "like_count": 3452287,
+      "comment_count": 21314,
+      "mp4": "03_knitpets_7508869947372703022.mp4",
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-25T15:10:13"
+    },
+    {
+      "rank": 4,
       "video_id": "6993643918827080962",
       "username": "cloud9pethotel",
       "url": "https://www.tiktok.com/@cloud9pethotel/video/6993643918827080962",
       "title": "Yabadabadooooo!! #catsoftiktok #cats #kittens #angrycat #funnycat. #pets #PetsOfTikTok",
-      "play_count": 80460504,
-      "like_count": 7110879,
-      "comment_count": 113004,
-      "mp4": "03_cloud9pethotel_6993643918827080962.mp4",
-      "status": "fresh",
-      "posted_count": 0,
-      "last_posted_at": null
-    },
-    {
-      "rank": 4,
-      "video_id": "7453762218933406983",
-      "username": "heyan_lin",
-      "url": "https://www.tiktok.com/@heyan_lin/video/7453762218933406983",
-      "title": "#cat #cutecat #funnycat #catsoftiktok #kitty ",
-      "play_count": 46086611,
-      "like_count": 3692110,
-      "comment_count": 75405,
-      "mp4": "04_heyan_lin_7453762218933406983.mp4",
+      "play_count": 80530484,
+      "like_count": 7115106,
+      "comment_count": 113070,
+      "mp4": "04_cloud9pethotel_6993643918827080962.mp4",
       "status": "fresh",
       "posted_count": 0,
       "last_posted_at": null
     },
     {
       "rank": 5,
-      "video_id": "7650829523151277343",
-      "username": "okgocute",
-      "url": "https://www.tiktok.com/@okgocute/video/7650829523151277343",
-      "title": "#catsoftiktok #cat #cutebaby #baby ",
-      "play_count": 39450004,
-      "like_count": 1780724,
-      "comment_count": 26150,
-      "mp4": "05_okgocute_7650829523151277343.mp4",
+      "video_id": "7495676113289481503",
+      "username": "lazysuperman8",
+      "url": "https://www.tiktok.com/@lazysuperman8/video/7495676113289481503",
+      "title": "This cat looks like he pays rent and has regrets 😭 #talkingtoanimals #catsoftiktok #straycat #catvibes #funnyvoiceover #emotionalcat #povcat #tiktokcat #nightca",
+      "play_count": 78714978,
+      "like_count": 16102621,
+      "comment_count": 37884,
+      "mp4": "05_lazysuperman8_7495676113289481503.mp4",
       "status": "blocked",
       "posted_count": 1,
-      "last_posted_at": "2026-06-23T09:00:31"
+      "last_posted_at": "2026-06-30T15:05:30"
     },
     {
       "rank": 6,
-      "video_id": "7607787265405848845",
-      "username": "funny.cat555",
-      "url": "https://www.tiktok.com/@funny.cat555/video/7607787265405848845",
-      "title": "A clingy cat 🐱🥰 #cat #cats #catsoftiktok #funnycat #catlovers #cutecat #funnyvideos #funny #funnyanimals #funnytiktok #viral #fyp #cute #tiktok #Foryou ",
-      "play_count": 35788649,
-      "like_count": 4632462,
-      "comment_count": 9729,
-      "mp4": "06_funny.cat555_7607787265405848845.mp4",
+      "video_id": "7620350949999037709",
+      "username": "code_mamat5",
+      "url": "https://www.tiktok.com/@code_mamat5/video/7620350949999037709",
+      "title": "#catsoftiktok ",
+      "play_count": 78189971,
+      "like_count": 16072232,
+      "comment_count": 73446,
+      "mp4": "06_code_mamat5_7620350949999037709.mp4",
       "status": "blocked",
       "posted_count": 1,
-      "last_posted_at": "2026-06-22T21:00:55"
+      "last_posted_at": "2026-06-29T19:31:52"
     },
     {
       "rank": 7,
-      "video_id": "7606455685215243542",
-      "username": "artista.myelson.1",
-      "url": "https://www.tiktok.com/@artista.myelson.1/video/7606455685215243542",
-      "title": "The poor cat who refused to give up. #catg #meow #HistoryTime #cat",
-      "play_count": 29622268,
-      "like_count": 1091822,
-      "comment_count": 22451,
+      "video_id": "7587334753955663117",
+      "username": "furball.magic666",
+      "url": "https://www.tiktok.com/@furball.magic666/video/7587334753955663117",
+      "title": "Cat’s Version of ‘Helping’ 💥🐾 #cat #cats #catslovers #catsoftiktok #fyp",
+      "play_count": 57520144,
+      "like_count": 5655089,
+      "comment_count": 8097,
+      "mp4": null,
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-25T18:13:16"
+    },
+    {
+      "rank": 8,
+      "video_id": "7512479649004293422",
+      "username": "ringodanyan",
+      "url": "https://www.tiktok.com/@ringodanyan/video/7512479649004293422",
+      "title": "My heart is 100% damaged!😍 #cute #cat #catsoftiktok ",
+      "play_count": 36664984,
+      "like_count": 5493581,
+      "comment_count": 14389,
       "mp4": null,
       "status": "fresh",
       "posted_count": 0,
       "last_posted_at": null
     },
     {
-      "rank": 8,
-      "video_id": "7603013549035703582",
-      "username": "aloong110",
-      "url": "https://www.tiktok.com/@aloong110/video/7603013549035703582",
-      "title": "Let's learn to meow together! #Cats #KittensMeow #CuteCats",
-      "play_count": 29217633,
-      "like_count": 1801693,
-      "comment_count": 9616,
-      "mp4": null,
-      "status": "blocked",
-      "posted_count": 1,
-      "last_posted_at": "2026-06-24T06:10:08"
-    },
-    {
       "rank": 9,
-      "video_id": "7572237337120296206",
-      "username": "zobi.ai.edit",
-      "url": "https://www.tiktok.com/@zobi.ai.edit/video/7572237337120296206",
-      "title": "Meow Meow eating food#cat #aicat #catsoftiktok #kitten #catstory ",
-      "play_count": 27676364,
-      "like_count": 172417,
-      "comment_count": 13694,
+      "video_id": "7655830585184750861",
+      "username": "shlowhoho",
+      "url": "https://www.tiktok.com/@shlowhoho/video/7655830585184750861",
+      "title": "My poor baby went FLYING 😭😂 She’s okay, she’s still getting used to it 😂😂😂 #blackcat #automaticfeeder ",
+      "play_count": 31046910,
+      "like_count": 6569888,
+      "comment_count": 20846,
       "mp4": null,
       "status": "fresh",
       "posted_count": 0,
@@ -1624,41 +1624,41 @@
     },
     {
       "rank": 10,
-      "video_id": "7652091075699445022",
-      "username": "lovechickensoup",
-      "url": "https://www.tiktok.com/@lovechickensoup/video/7652091075699445022",
-      "title": "cat with glasses glasses on cat #cats #catsoftiktok #fyp #funny #trend ",
-      "play_count": 22383527,
-      "like_count": 5689569,
-      "comment_count": 10408,
+      "video_id": "7606455685215243542",
+      "username": "artista.myelson.1",
+      "url": "https://www.tiktok.com/@artista.myelson.1/video/7606455685215243542",
+      "title": "The poor cat who refused to give up. #catg #meow #HistoryTime #cat",
+      "play_count": 29624437,
+      "like_count": 1091851,
+      "comment_count": 22444,
       "mp4": null,
-      "status": "blocked",
-      "posted_count": 1,
-      "last_posted_at": "2026-06-22T09:00:39"
-    },
-    {
-      "rank": 11,
-      "video_id": "7620409134713736462",
-      "username": "bpiu35",
-      "url": "https://www.tiktok.com/@bpiu35/video/7620409134713736462",
-      "title": "Funny cat #pets #funnycats #cat #catsoftiktok #PetsOfTikTok ",
-      "play_count": 21001812,
-      "like_count": 715694,
-      "comment_count": 6194,
-      "mp4": "99_bpiu35_7620409134713736462.mp4",
       "status": "fresh",
       "posted_count": 0,
       "last_posted_at": null
     },
     {
+      "rank": 11,
+      "video_id": "7603013549035703582",
+      "username": "aloong110",
+      "url": "https://www.tiktok.com/@aloong110/video/7603013549035703582",
+      "title": "Let's learn to meow together! #Cats #KittensMeow #CuteCats",
+      "play_count": 29410584,
+      "like_count": 1805011,
+      "comment_count": 9710,
+      "mp4": null,
+      "status": "blocked",
+      "posted_count": 1,
+      "last_posted_at": "2026-06-24T06:10:08"
+    },
+    {
       "rank": 12,
-      "video_id": "7653507049849965854",
-      "username": "pets_95227",
-      "url": "https://www.tiktok.com/@pets_95227/video/7653507049849965854",
-      "title": "The cat 🐱 still thinking why the one is different🐾🐈😝😝😝😝😜😜😜😜🤣🤣🤣……. #funnycats #fyp #catsoftiktok #funnypets #viral ",
-      "play_count": 20813093,
-      "like_count": 778523,
-      "comment_count": 28163,
+      "video_id": "7641693768831225101",
+      "username": "akay.editz",
+      "url": "https://www.tiktok.com/@akay.editz/video/7641693768831225101",
+      "title": "In another life? #couple #cats #cat #cute #us ",
+      "play_count": 28009914,
+      "like_count": 5486140,
+      "comment_count": 17221,
       "mp4": null,
       "status": "fresh",
       "posted_count": 0,
@@ -1667,23 +1667,23 @@
   ],
   "hero_video": {
     "rank": 1,
-    "video_id": "7606523760253947166",
-    "username": "iamrigbycat",
-    "url": "https://www.tiktok.com/@iamrigbycat/video/7606523760253947166",
-    "title": "funk nonstop in her head #fyp #rigbycat #catsoftiktok #catcontent #sillycat ",
-    "play_count": 141114634,
-    "like_count": 21412263,
-    "comment_count": 90233,
-    "mp4": "01_iamrigbycat_7606523760253947166.mp4",
+    "video_id": "7571394880136629518",
+    "username": "pawsitive.energy7",
+    "url": "https://www.tiktok.com/@pawsitive.energy7/video/7571394880136629518",
+    "title": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp ",
+    "play_count": 114993040,
+    "like_count": 25029450,
+    "comment_count": 45577,
+    "mp4": "01_pawsitive.energy7_7571394880136629518.mp4",
     "status": "fresh",
     "posted_count": 0,
     "last_posted_at": null
   },
   "report": {
-    "generated_at": "2026-06-29T02:34:07",
+    "generated_at": "2026-07-01T01:21:32",
     "phase": "link_setup",
     "summary": {
-      "followers": 578,
+      "followers": 672,
       "follower_goal": 1000,
       "ready_links": 0,
       "total_products": 9,
@@ -1706,7 +1706,7 @@
         "category_score": 32,
         "priority_score": 211,
         "priority_reasons": [
-          "catbot反応",
+          "人気の猫動画",
           "買う前チェック: 留守番が多い猫",
           "買う前チェック: よく走る・遊び足りない猫",
           "中単価"
@@ -1721,7 +1721,7 @@
         "fallback_search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
         "clicks": 0,
         "price_band": "中",
-        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       }
     },
     "category_rows": [
@@ -1740,12 +1740,23 @@
         "id": "treats",
         "name": "おやつ",
         "short_name": "おやつ",
-        "score": 31,
+        "score": 15,
         "priority": 7,
         "product_count": 2,
         "ready_links": 0,
         "clicks": 0,
         "headline": "ごほうびは少量で、続けやすいものを。"
+      },
+      {
+        "id": "water",
+        "name": "水とごはん",
+        "short_name": "水とごはん",
+        "score": 13,
+        "priority": 5,
+        "product_count": 2,
+        "ready_links": 0,
+        "clicks": 0,
+        "headline": "毎日の水分とごはんをラクに整える。"
       },
       {
         "id": "scratch",
@@ -1757,17 +1768,6 @@
         "ready_links": 0,
         "clicks": 0,
         "headline": "家具より先に、気持ちよく削れる場所を。"
-      },
-      {
-        "id": "water",
-        "name": "水とごはん",
-        "short_name": "水とごはん",
-        "score": 5,
-        "priority": 5,
-        "product_count": 2,
-        "ready_links": 0,
-        "clicks": 0,
-        "headline": "毎日の水分とごはんをラクに整える。"
       },
       {
         "id": "care",
@@ -1799,7 +1799,7 @@
         "category_score": 32,
         "priority_score": 211,
         "priority_reasons": [
-          "catbot反応",
+          "人気の猫動画",
           "買う前チェック: 留守番が多い猫",
           "買う前チェック: よく走る・遊び足りない猫",
           "中単価"
@@ -1814,7 +1814,7 @@
         "fallback_search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
         "clicks": 0,
         "price_band": "中",
-        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "toys",
@@ -1822,7 +1822,7 @@
         "category_score": 32,
         "priority_score": 207,
         "priority_reasons": [
-          "catbot反応",
+          "人気の猫動画",
           "買う前チェック: 留守番が多い猫",
           "買う前チェック: よく走る・遊び足りない猫"
         ],
@@ -1836,13 +1836,13 @@
         "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
         "clicks": 0,
         "price_band": "低",
-        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "water",
         "category": "水とごはん",
-        "category_score": 5,
-        "priority_score": 93,
+        "category_score": 13,
+        "priority_score": 101,
         "priority_reasons": [
           "季節ケア",
           "買う前チェック: 留守番が多い猫",
@@ -1859,13 +1859,13 @@
         "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
         "clicks": 0,
         "price_band": "高",
-        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "water",
         "category": "水とごはん",
-        "category_score": 5,
-        "priority_score": 89,
+        "category_score": 13,
+        "priority_score": 97,
         "priority_reasons": [
           "季節ケア",
           "買う前チェック: 留守番が多い猫",
@@ -1882,7 +1882,7 @@
         "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
         "clicks": 0,
         "price_band": "中",
-        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "scratch",
@@ -1931,8 +1931,8 @@
       {
         "category_id": "treats",
         "category": "おやつ",
-        "category_score": 31,
-        "priority_score": 55,
+        "category_score": 15,
+        "priority_score": 39,
         "priority_reasons": [
           "買う前チェック: 水分・ごはんを整えたい猫",
           "中単価"
@@ -1947,13 +1947,13 @@
         "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E3%81%8A%E3%82%84%E3%81%A4+%E7%84%A1%E6%B7%BB%E5%8A%A0/",
         "clicks": 0,
         "price_band": "中",
-        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "treats",
         "category": "おやつ",
-        "category_score": 31,
-        "priority_score": 51,
+        "category_score": 15,
+        "priority_score": 35,
         "priority_reasons": [
           "買う前チェック: 水分・ごはんを整えたい猫"
         ],
@@ -1967,7 +1967,7 @@
         "fallback_search_url": "https://www.amazon.co.jp/s?k=CIAO+%E3%81%A1%E3%82%85%E3%83%BC%E3%82%8B+%E7%8C%AB",
         "clicks": 0,
         "price_band": "低",
-        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "care",
@@ -1998,7 +1998,7 @@
         "category_score": 32,
         "priority_score": 211,
         "priority_reasons": [
-          "catbot反応",
+          "人気の猫動画",
           "買う前チェック: 留守番が多い猫",
           "買う前チェック: よく走る・遊び足りない猫",
           "中単価"
@@ -2013,7 +2013,7 @@
         "fallback_search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97",
         "clicks": 0,
         "price_band": "中",
-        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "toys",
@@ -2021,7 +2021,7 @@
         "category_score": 32,
         "priority_score": 207,
         "priority_reasons": [
-          "catbot反応",
+          "人気の猫動画",
           "買う前チェック: 留守番が多い猫",
           "買う前チェック: よく走る・遊び足りない猫"
         ],
@@ -2035,13 +2035,13 @@
         "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E3%81%91%E3%82%8A%E3%81%90%E3%82%8B%E3%81%BF",
         "clicks": 0,
         "price_band": "低",
-        "action": "catbotデータとの相性が高い。最初にもしもリンクを作る候補。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "water",
         "category": "水とごはん",
-        "category_score": 5,
-        "priority_score": 93,
+        "category_score": 13,
+        "priority_score": 101,
         "priority_reasons": [
           "季節ケア",
           "買う前チェック: 留守番が多い猫",
@@ -2058,13 +2058,13 @@
         "fallback_search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/",
         "clicks": 0,
         "price_band": "高",
-        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "water",
         "category": "水とごはん",
-        "category_score": 5,
-        "priority_score": 89,
+        "category_score": 13,
+        "priority_score": 97,
         "priority_reasons": [
           "季節ケア",
           "買う前チェック: 留守番が多い猫",
@@ -2081,7 +2081,7 @@
         "fallback_search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF",
         "clicks": 0,
         "price_band": "中",
-        "action": "優先度は中。主要商品のリンク投入後に差し替える。"
+        "action": "人気の猫動画との相性が高い。最初にもしもリンクを作るおすすめ。"
       },
       {
         "category_id": "scratch",
@@ -2122,7 +2122,7 @@
   "next_link_spotlight": {
     "available": true,
     "title": "次に整える猫用品",
-    "lead": "catbotの反応、季節ケア、買う前チェックから、次に詳しく見る候補を自動で選んでいます。",
+    "lead": "人気の猫動画の反応、季節ケア、買う前チェックから、次に詳しく見るおすすめを自動で選んでいます。",
     "category_id": "toys",
     "category": "遊び",
     "product_id": "p2",
@@ -2132,7 +2132,7 @@
     "price_band": "中",
     "score": 211,
     "reasons": [
-      "catbot反応",
+      "人気の猫動画",
       "買う前チェック: 留守番が多い猫",
       "買う前チェック: よく走る・遊び足りない猫",
       "中単価"
@@ -2140,37 +2140,37 @@
     "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
   },
   "share_copy": {
-    "generated_at": "2026-06-29T02:34:07",
+    "generated_at": "2026-07-01T01:21:32",
     "phase": "launch_waiting",
     "account": "@fuwafuwa_mono",
     "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
     "url_hint": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-    "followers": 578,
+    "followers": 672,
     "follower_goal": 1000,
     "ready_links": 0,
     "trend_label": "遊び",
     "trend_metric": "score 32",
     "next_product": "電動猫じゃらし",
     "next_category": "遊び",
-    "primary_text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。",
+    "primary_text": "ふわふわ猫の道具箱を更新しました。\n人気の猫動画で注目の「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。",
     "texts": [
       {
         "id": "soft_launch",
         "title": "通常共有",
         "use_when": "公開直後や固定投稿で使う",
-        "text": "ふわふわ猫の道具箱を更新しました。\ncatbotで反応が強い「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。"
+        "text": "ふわふわ猫の道具箱を更新しました。\n人気の猫動画で注目の「遊び」と、次に整える「電動猫じゃらし」を、猫の安全・買う前チェックから見られます。\n売り込みより、合わない理由と買わない判断を先に置いています。"
       },
       {
         "id": "cat_first",
         "title": "猫優先",
         "use_when": "売り込み感を弱めたい時に使う",
-        "text": "ふわふわ猫の道具箱は、猫用品をすぐ買わせる場所ではなく、合わない理由・相談した方がいい状態・最初の試し方を先に見る場所にしています。\n今はcatbot反応から「遊び」まわりを更新中です。"
+        "text": "ふわふわ猫の道具箱は、猫用品をすぐ買わせる場所ではなく、合わない理由・相談した方がいい状態・最初の試し方を先に見る場所にしています。\n今は人気の猫動画から「遊び」まわりを更新中です。"
       },
       {
         "id": "next_product",
         "title": "次の1件",
         "use_when": "商品リンクを1本ずつ整える時に使う",
-        "text": "次に整える猫用品は「電動猫じゃらし」。\nカテゴリは「遊び」で、catbot反応と買う前チェックから優先度を見ています。\n実リンクを入れる前に、怖がる子・誤飲しそうな子・体調不安がある子向けの注意も確認します。"
+        "text": "次に整える猫用品は「電動猫じゃらし」。\nカテゴリは「遊び」で、人気の猫動画と買う前チェックから優先度を見ています。\n商品リンクを入れる前に、怖がる子・誤飲しそうな子・体調不安がある子向けの注意も確認します。"
       }
     ],
     "policy": [
@@ -2197,10 +2197,10 @@
       ]
     }
   },
-  "exported_at": "2026-06-29T02:34:07",
+  "exported_at": "2026-07-01T01:21:32",
   "consult_first": {
-    "generated_at": "2026-06-29T02:34:07",
-    "exported_at": "2026-06-29T02:34:07",
+    "generated_at": "2026-07-01T01:21:32",
+    "exported_at": "2026-07-01T01:21:32",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",
