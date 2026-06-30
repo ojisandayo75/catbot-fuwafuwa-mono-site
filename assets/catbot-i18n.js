@@ -4,28 +4,28 @@
 (function () {
   "use strict";
 
-  // 日本語 → 英語 辞書（手書き翻訳）。テキストノードのtrim一致で置換。
+  // 日本語 英語 辞書（手書き翻訳）。テキストノードのtrim一致で置換。
   var DICT = {
     // --- ブランド / 共通 ---
     "ふわふわ猫の道具箱": "Fuwafuwa Cat Toolbox",
     "猫優先で選ぶ猫用品サイト": "Cat-first cat goods guide",
-    "🐾 猫好きさんのためのお店": "🐾 A shop for cat lovers",
+    "猫好きさんのためのお店": "A shop for cat lovers",
     "うちの子のための猫グッズ": "Cat goods for your kitty",
     "トップへ戻る": "Back to top",
-    "🏠 トップへ戻る": "🏠 Back to top",
+    "トップへ戻る": "Back to top",
     "トップへ": "Top",
     "もっと見る": "See more",
     // --- ヒーロー ---
     "うちの子にぴったりの": "Find the perfect",
-    "猫グッズを、いっしょに選ぼう🐾": "cat goods for your kitty, together 🐾",
+    "猫グッズを、いっしょに選ぼう": "cat goods for your kitty, together ",
     "「買う前チェック」で“合う・合わない”を先に確認。失敗しないお買い物を、やさしくお手伝いします。":
       "Use the “Pre-buy Check” to see “fit / not fit” first. We gently help you shop without regrets.",
-    "🐱 猫の様子から選ぶ": "🐱 Choose by your cat",
-    "✅ 買う前チェック": "✅ Pre-buy Check",
-    "🐾 猫ファースト ・ 押し売りしません": "🐾 Cat-first · No hard selling",
+    "猫の様子から選ぶ": "Choose by your cat",
+    "買う前チェック": "Pre-buy Check",
+    "猫ファースト ・ 押し売りしません": "Cat-first · No hard selling",
     // --- 使い方3ステップ ---
     "はじめての方へ": "New here?",
-    "はじめての方へ — 使い方はこれだけ🐾": "New here? — Here’s all you do 🐾",
+    "はじめての方へ — 使い方はこれだけ": "New here? — Here’s all you do ",
     "かんたん3ステップ": "3 easy steps",
     "かんたん6問・30秒": "Easy 6 questions · 30 sec",
     "まず猫の様子を選ぶ": "First, pick your cat’s situation",
@@ -43,7 +43,7 @@
     "② 合うか・注意点をチェック": "② Check fit & cautions",
     "③ ぴったりの猫グッズへ": "③ To the perfect cat goods",
     // --- カテゴリ ---
-    "🖼️ 画像から選ぶ": "🖼️ Choose by picture",
+    "画像から選ぶ": "Choose by picture",
     "いまの様子に近いものへ": "Go to what fits now",
     "遊び": "Play",
     "じゃらし・けりぐるみ": "Teasers & kicker toys",
@@ -62,34 +62,34 @@
     "うちの子ネコ気持ち診断": "Your Cat’s Feelings Quiz",
     "6つの質問で性格タイプとおすすめが分かります。":
       "6 questions reveal your cat’s personality type and picks.",
-    "6つの質問で、うちの子の性格タイプと“いまの気持ち”が分かります。ぴったりの猫グッズもご提案🐾":
-      "6 questions reveal your cat’s personality type and “current mood”, with matching cat-goods picks 🐾",
-    "🐾 6問・約1分": "🐾 6 questions · ~1 min",
-    "診断をはじめる →": "Start the quiz →",
-    "🐾 診断をはじめる": "🐾 Start the quiz",
+    "6つの質問で、うちの子の性格タイプと“いまの気持ち”が分かります。ぴったりの猫グッズもご提案":
+      "6 questions reveal your cat’s personality type and “current mood”, with matching cat-goods picks ",
+    "6問・約1分": "6 questions · ~1 min",
+    "診断をはじめる ": "Start the quiz ",
+    "診断をはじめる": "Start the quiz",
     // --- もっと見るメニュー ---
-    "🐈 猫別ガイド": "🐈 Guides by cat",
-    "🍂 季節のケア": "🍂 Seasonal care",
-    "💬 体調の相談先": "💬 Where to consult",
-    "📋 運営者情報・広告について": "📋 About us & ads",
+    "猫別ガイド": "Guides by cat",
+    "季節のケア": "Seasonal care",
+    "体調の相談先": "Where to consult",
+    "運営者情報・広告について": "About us & ads",
     "当サイトは広告(アフィリエイト)を含みます。": "This site contains ads (affiliate links).",
     "商品は猫の安全・続けやすさで選んでいます。": "We choose products for cat safety and ease of use.",
-    "🐾 目的のページへ": "🐾 Go to a topic page",
+    "目的のページへ": "Go to a topic page",
     "気になるところから、それぞれのページでじっくり見られます。":
       "Browse each topic in detail from whatever catches your eye.",
     // --- 主要ページ 見出し/ボタン（共通語彙） ---
-    "🐱 うちの子から選ぶ": "🐱 Choose by your cat",
-    "🐈 猫の様子から選ぶ": "🐈 Choose by your cat’s situation",
-    "🎯 目的から選ぶ": "🎯 Choose by goal",
-    "🐾 困りごとから探す": "🐾 Find by concern",
+    "うちの子から選ぶ": "Choose by your cat",
+    "猫の様子から選ぶ": "Choose by your cat’s situation",
+    "目的から選ぶ": "Choose by goal",
     "困りごとから探す": "Find by concern",
-    "✅ 買う前チェック": "✅ Pre-buy Check",
+    "困りごとから探す": "Find by concern",
     "買う前チェック": "Pre-buy Check",
-    "🛍️ 猫用品": "🛍️ Cat goods",
+    "買う前チェック": "Pre-buy Check",
     "猫用品": "Cat goods",
-    "🐱 猫優先ランキング": "🐱 Cat-first ranking",
+    "猫用品": "Cat goods",
     "猫優先ランキング": "Cat-first ranking",
-    "🎬 人気の猫動画": "🎬 Popular cat videos",
+    "猫優先ランキング": "Cat-first ranking",
+    "人気の猫動画": "Popular cat videos",
     "人気の猫動画": "Popular cat videos",
     "うちの子診断": "Cat quiz",
     "うちの子プロフィール": "Your cat’s profile",
@@ -103,12 +103,12 @@
     "リンク方針": "Link policy",
     // --- 診断結果 ---
     "うちの子は…": "Your cat is…",
-    "🐾 いまの気持ち": "🐾 Current mood",
-    "💡 接し方のヒント：": "💡 How to interact:",
-    "🛍️ このタイプにおすすめの猫グッズ": "🛍️ Recommended cat goods for this type",
-    "✅ 買う前チェックを見る": "✅ See the Pre-buy Check",
-    "𝕏 結果をシェア": "𝕏 Share the result",
-    "🔄 もう一度診断": "🔄 Take it again",
+    "いまの気持ち": "Current mood",
+    "接し方のヒント：": "How to interact:",
+    "このタイプにおすすめの猫グッズ": "Recommended cat goods for this type",
+    "買う前チェックを見る": "See the Pre-buy Check",
+    "結果をシェア": "Share the result",
+    "もう一度診断": "Take it again",
     "商品を探す": "Find products",
     "詳しく見る": "Details",
     "おすすめ": "Recommended",
@@ -123,7 +123,7 @@
     "やめるサイン": "Signs to stop",
     "サイト方針": "Site policy",
     "ペットカメラ": "Pet camera",
-    "🐱 かんたん6問・30秒": "🐱 Easy 6 questions · 30 sec",
+    "かんたん6問・30秒": "Easy 6 questions · 30 sec",
     "家具で爪とぎしやすい": "Tends to scratch furniture",
     "共通": "Common",
     "共通確認": "Common checks",
@@ -148,12 +148,12 @@
     "自動猫じゃらし": "Automatic teaser",
     "電動猫じゃらし": "Electric cat teaser",
     // --- 性格6タイプ ---
-    "🥰 甘えんぼプリンス／プリンセス": "🥰 Cuddly Prince / Princess",
-    "😼 クールハンター": "😼 Cool Hunter",
-    "😌 のんびり仙人": "😌 Easygoing Sage",
-    "🔍 好奇心エクスプローラー": "🔍 Curious Explorer",
-    "🫣 びびり慎重さん": "🫣 Cautious Shy One",
-    "📣 かまってアイドル": "📣 Attention-loving Idol",
+    "甘えんぼプリンス／プリンセス": "Cuddly Prince / Princess",
+    "クールハンター": "Cool Hunter",
+    "のんびり仙人": "Easygoing Sage",
+    "好奇心エクスプローラー": "Curious Explorer",
+    "びびり慎重さん": "Cautious Shy One",
+    "かまってアイドル": "Attention-loving Idol",
     "「甘えんぼプリンス／プリンセス」タイプ": "“Cuddly Prince / Princess” type",
     "「クールハンター」タイプ": "“Cool Hunter” type",
     "「のんびり仙人」タイプ": "“Easygoing Sage” type",
@@ -185,10 +185,10 @@
     "よく動いて走り回る": "Active, runs around a lot",
     "ほとんど寝てる": "Sleeps most of the time",
     "いつも人の近くにいたい": "Always wants to be near people",
-    "6つの質問で、うちの子の性格タイプと“いまの気持ち”が分かります。ぴったりの猫グッズもご提案🐾":
-      "6 questions reveal your cat’s personality type and “current mood”, with matching cat-goods picks 🐾",
-    "6つの質問に答えると、うちの子の性格タイプと“いまの気持ち”が分かります。ぴったりの猫グッズもご提案します🐾":
-      "Answer 6 questions to find your cat’s personality type and “current mood”. We’ll also suggest matching cat-goods 🐾",
+    "6つの質問で、うちの子の性格タイプと“いまの気持ち”が分かります。ぴったりの猫グッズもご提案":
+      "6 questions reveal your cat’s personality type and “current mood”, with matching cat-goods picks ",
+    "6つの質問に答えると、うちの子の性格タイプと“いまの気持ち”が分かります。ぴったりの猫グッズもご提案します":
+      "Answer 6 questions to find your cat’s personality type and “current mood”. We’ll also suggest matching cat-goods ",
     // --- サイトの約束（共通） ---
     "先に猫の状態を選び、商品名より相性と安全確認を見ます。":
       "Pick your cat’s situation first, and check fit and safety before product names.",
@@ -201,12 +201,12 @@
     "※ 診断は遊びです。気になる体調変化は商品より先に獣医師へご相談ください。":
       "* The quiz is just for fun. For any health concerns, please see a vet before buying.",
     // --- 結果ページ UI ---
-    "🐾 診断する": "🐾 Take the quiz",
-    "🐱 自分の猫も診断する": "🐱 Quiz your own cat",
-    "𝕏 シェア": "𝕏 Share",
+    "診断する": "Take the quiz",
+    "自分の猫も診断する": "Quiz your own cat",
+    "シェア": "Share",
     "商品を見る": "View product",
     "商品リンク準備中": "Product link coming soon",
-    "📝 猫のお悩み記事": "📝 Cat-care articles",
+    "猫のお悩み記事": "Cat-care articles",
     // --- 性格6タイプ：性格 ---
     "とにかく人が大好きで、いつもそばにいたいタイプ。": "Loves people and always wants to be by your side.",
     "狩りの本能が強い、しなやかな実力派。": "A sleek go-getter with strong hunting instincts.",
@@ -215,7 +215,7 @@
     "こわがりで慎重。安心がいちばん大事なタイプ。": "Timid and careful — safety matters most to them.",
     "注目されるのが大好き、にぎやかな人気者。": "Loves attention — a lively crowd-pleaser.",
     // --- 性格6タイプ：気持ち ---
-    "ずっとそばにいてほしいの…かまってくれたら安心するにゃ🐾": "I want you near me always… I feel safe when you pet me, nya 🐾",
+    "ずっとそばにいてほしいの…かまってくれたら安心するにゃ": "I want you near me always… I feel safe when you pet me, nya ",
     "ずっとそばにいてほしいの…かまってくれたら安心するにゃ": "I want you near me always… I feel safe when you pet me, nya.",
     "動くものを狩りたくてウズウズ…本気で遊ばせてにゃ！": "I’m itching to hunt moving things… let me really play, nya!",
     "あくせくしたくないにゃ…静かに過ごさせておくれ。": "I don’t want to rush… let me relax quietly, nya.",
@@ -236,10 +236,10 @@
     "こまめな遊びとリアクションを。おやつのごほうびでメリハリをつけてあげて。":
       "Frequent play and reactions. Use treat rewards to add rhythm.",
     // --- ドロップダウンメニュー ---
-    "🐾 うちの子診断": "🐾 Cat quiz",
-    "🐈 困りごとから探す": "🐈 Find by concern",
-    "🔒 プライバシーポリシー": "🔒 Privacy policy",
-    "✉️ お問い合わせ": "✉️ Contact",
+    "うちの子診断": "Cat quiz",
+    "困りごとから探す": "Find by concern",
+    "プライバシーポリシー": "Privacy policy",
+    "お問い合わせ": "Contact",
     "メニューを開く": "Open menu"
   };
 
@@ -317,7 +317,7 @@
       document.querySelector(".menu-btn") ||
       document.querySelector(".bar .top-link, .bar-inner .top-link, .top-link");
     if (anchor && anchor.parentNode) {
-      // アンカー(メニュー/戻る)の右寄せautoを解除し、ENにautoを移して [EN][☰] を右に並べる。
+      // アンカー(メニュー/戻る)の右寄せautoを解除し、ENにautoを移して [EN][] を右に並べる。
       try { anchor.style.marginLeft = "0"; } catch (e) {}
       b.style.cssText = base + "margin-left:auto;margin-right:8px;align-self:center;flex:0 0 auto;";
       anchor.parentNode.insertBefore(b, anchor);

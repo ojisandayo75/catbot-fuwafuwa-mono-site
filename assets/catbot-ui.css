@@ -59,3 +59,7 @@ article.card,.route-card,.outcome-card,.metric{
 /* 画像・サムネは丸み */
 img{border-radius:12px}
 .brand-mark,.hero-image,.hero-picture img{border-radius:12px}
+
+/* 絵文字除去で空になった装飾要素の隙間を畳む（上品化） */
+.rp-emoji:empty,.qz-emoji-big:empty,.home-howto-emoji:empty,.home-quiz-emoji:empty,
+.qz-type-emoji:empty,.art-emoji:empty{display:none}
