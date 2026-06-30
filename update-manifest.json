@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-07-01T03:49:49",
-  "generated_at": "2026-07-01T03:49:49",
+  "exported_at": "2026-07-01T04:28:11",
+  "generated_at": "2026-07-01T04:28:11",
   "phase": "needs_moshimo_approval",
   "public_url_configured": true,
   "followers": 672,
@@ -275,8 +275,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-07-01T03:49:49",
-    "exported_at": "2026-07-01T03:49:49",
+    "generated_at": "2026-07-01T04:28:11",
+    "exported_at": "2026-07-01T04:28:11",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -393,23 +393,23 @@
     ]
   },
   "auto_export": {
-    "exported_at": "2026-07-01T03:49:52",
+    "exported_at": "2026-07-01T04:28:14",
     "output": "C:\\Users\\User\\catbot-x\\public_shop",
     "ready_links": 0,
     "total_products": 9,
     "followers": 672,
     "top_post_views": 156918,
     "last_deploy": {
-      "deployed_at": "2026-07-01T03:40:58",
+      "deployed_at": "2026-07-01T03:49:55",
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "file_count": 213,
       "total_bytes": 25294857
     }
   },
   "auto_update": {
-    "checked_at": "2026-07-01T03:49:54",
+    "checked_at": "2026-07-01T04:28:15",
     "synced": true,
-    "last_exported_at": "2026-07-01T03:49:52",
+    "last_exported_at": "2026-07-01T04:28:14",
     "ready_links": 0,
     "total_products": 9,
     "followers": 672,
@@ -419,7 +419,7 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-07-01T03:40:58",
+        "deployed_at": "2026-07-01T03:49:55",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 213,
         "total_bytes": 25294857
@@ -429,10 +429,10 @@
       "checked": true,
       "ok": true,
       "installed": true,
-      "state": "Ready",
-      "last_run_time": "2026-07-01T03:28:09",
-      "last_task_result": 0,
-      "next_run_time": "2026-07-01T03:58:08",
+      "state": "Running",
+      "last_run_time": "2026-07-01T04:28:09",
+      "last_task_result": 267009,
+      "next_run_time": "2026-07-01T04:58:08",
       "number_of_missed_runs": 0,
       "repetition_interval": "PT30M",
       "action_matches": true,
