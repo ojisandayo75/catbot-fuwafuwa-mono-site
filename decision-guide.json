@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T05:25:06",
-  "exported_at": "2026-07-01T05:25:06",
+  "generated_at": "2026-07-01T05:31:30",
+  "exported_at": "2026-07-01T05:31:30",
   "state": "decision_guide_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -39,16 +39,6 @@
       "icon": "needs",
       "priority": 2,
       "cat_first_check": "買う理由が猫の暮らしにあるかを先に確認します。"
-    },
-    {
-      "id": "trends",
-      "label": "新着情報",
-      "title": "反応が強いテーマから見る",
-      "summary": "伸びた投稿や動画の反応を、猫のための確認ポイントに変換して見ます。",
-      "path": "trends/",
-      "icon": "trends",
-      "priority": 3,
-      "cat_first_check": "反応が強くても、合わない条件とやめるサインを先に出します。"
     },
     {
       "id": "buying_check",
@@ -492,7 +482,6 @@
     "start": "start/",
     "cat_first": "cat-first/",
     "needs": "needs/",
-    "trends": "trends/",
     "buying_check": "buying-check/",
     "fit_reset": "fit-reset/",
     "consult_first": "consult-first/",

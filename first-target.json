@@ -1,7 +1,7 @@
 {
   "state": "first_target_ready",
-  "generated_at": "2026-07-01T05:25:06",
-  "exported_at": "2026-07-01T05:25:06",
+  "generated_at": "2026-07-01T05:31:30",
+  "exported_at": "2026-07-01T05:31:30",
   "category_id": "toys",
   "product_id": "p2",
   "key": "toys/p2",
@@ -38,11 +38,11 @@
     "product_id": "p2",
     "product": "電動猫じゃらし",
     "detail_url": "products/toys/p2/",
-    "trend_url": "trends/#toys",
+    "trend_url": "cat-first/#toys",
     "panel_markers": [
       "catbotSignal",
       "人気の猫動画から見る",
-      "反応トレンドで見る"
+      "ランキングで見る"
     ],
     "signals": [
       {
@@ -52,7 +52,7 @@
         "metric": "score 32",
         "detail": "catbotの投稿・動画素材で反応が出やすいテーマです。このカテゴリの商品やガイドを先に整えると導線がつながりやすくなります。",
         "cat_first_take": "遊びの反応が強い時は、運動不足か退屈かを見て、短時間で安全に試せるものから考えます。",
-        "trend_url": "trends/#toys"
+        "trend_url": "cat-first/#toys"
       },
       {
         "kind": "post",
@@ -61,7 +61,7 @@
         "metric": "156,918 views / 1,224 likes",
         "detail": "最近の上位投稿から、読者が反応している猫の雰囲気を拾います。",
         "cat_first_take": "読者が反応した空気を、うちの子にも必要か確認する入口にします。感情で急いで買わず、生活に合うかを見ます。",
-        "trend_url": "trends/#toys"
+        "trend_url": "cat-first/#toys"
       },
       {
         "kind": "video",
@@ -70,7 +70,7 @@
         "metric": "114,993,040 plays",
         "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
         "cat_first_take": "動画の勢いは参考にしつつ、音・動き・誤飲・怖がり方を先に見ます。",
-        "trend_url": "trends/#toys"
+        "trend_url": "cat-first/#toys"
       }
     ],
     "signal_count": 3,
