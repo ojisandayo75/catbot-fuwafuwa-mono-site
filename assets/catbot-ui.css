@@ -25,6 +25,8 @@ a{color:var(--coffee)}
   box-shadow:0 0 50px -24px rgba(64,39,24,.25);
 }
 .bar,.sitebar,header.bar{background:rgba(255,248,239,.94) !important}
+/* ヒーロー内側の.wrapは透過に。暗い画像ヒーローを淡背景で隠さず、明色文字を読めるようにする */
+.hero .wrap{background:transparent !important;box-shadow:none !important}
 
 /* 見出し: 太い丸ゴシック */
 h1,h2,h3{font-weight:900 !important;letter-spacing:0}
