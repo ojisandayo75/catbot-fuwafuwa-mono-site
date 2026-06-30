@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T05:31:30",
-  "exported_at": "2026-07-01T05:31:30",
+  "generated_at": "2026-07-01T06:28:11",
+  "exported_at": "2026-07-01T06:28:11",
   "state": "needs_moshimo_approval",
   "completion_estimate": {
     "stage_label": "技術側はほぼ完了",
@@ -83,9 +83,9 @@
         "series": 0
       },
       "remaining": {
-        "tweet_send": 0,
+        "tweet_send": 1,
         "post": 0,
-        "like": 0,
+        "like": 2,
         "follow": 0,
         "reply": 0,
         "quote": 0,
@@ -112,9 +112,9 @@
       "series": 0
     },
     "remaining": {
-      "tweet_send": 0,
+      "tweet_send": 1,
       "post": 0,
-      "like": 0,
+      "like": 2,
       "follow": 0,
       "reply": 0,
       "quote": 0,
