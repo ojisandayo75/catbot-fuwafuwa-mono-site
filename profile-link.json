@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T04:28:11",
-  "exported_at": "2026-07-01T04:28:11",
+  "generated_at": "2026-07-01T05:25:06",
+  "exported_at": "2026-07-01T05:25:06",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -67,7 +67,7 @@
     "title": "新着情報",
     "body": "SNSの投稿ログ、動画素材、商品おすすめを見て、猫に合う入口と今日のおすすめを更新します。",
     "synced": true,
-    "last_exported_at": "2026-07-01T04:28:11",
+    "last_exported_at": "2026-07-01T05:25:06",
     "next_run_time": "定期更新",
     "interval": "定期更新",
     "source_counts": {
@@ -345,7 +345,7 @@
         "title": "遊び",
         "body": "人気の猫動画で注目のテーマを、今日の猫メモで短く確認します。",
         "metric": "score 32",
-        "href": "trends/"
+        "href": "cat-first/"
       },
       {
         "kind": "trends",
@@ -353,7 +353,7 @@
         "title": "まさか、他の子の動画で泣きそうになるなんて。 小さな前足で飼い主さんの指をぎゅっと掴んだ瞬間、うちの子にも会いたくなった🐾 #…",
         "body": "人気の空気を、買う理由ではなく猫に合うかの確認へ変換します。",
         "metric": "156,918 views / 1,224 likes",
-        "href": "trends/"
+        "href": "cat-first/"
       },
       {
         "kind": "seasonal",
@@ -399,7 +399,7 @@
     {
       "label": "今日の反応",
       "title": "今日の猫メモ",
-      "href": "trends/",
+      "href": "cat-first/",
       "image": "assets/ai_cat_care_scene.webp"
     },
     {
