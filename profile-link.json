@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T11:28:11",
-  "exported_at": "2026-07-01T11:28:11",
+  "generated_at": "2026-07-01T12:28:11",
+  "exported_at": "2026-07-01T12:28:11",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -53,21 +53,21 @@
     "remaining": 328,
     "progress_percent": 67.2,
     "last_7d_gain": 131,
-    "recent_avg_per_day": 21.8,
-    "eta_date": "2026-07-15",
+    "recent_avg_per_day": 18.7,
+    "eta_date": "2026-07-19",
     "state": "growing",
     "badges": [
       "進捗 67.2%",
       "直近7日 +131",
       "残り 328",
-      "到達目安 2026-07-15"
+      "到達目安 2026-07-19"
     ]
   },
   "auto_update_panel": {
     "title": "新着情報",
     "body": "SNSの投稿ログ、動画素材、商品おすすめを見て、猫に合う入口と今日のおすすめを更新します。",
     "synced": true,
-    "last_exported_at": "2026-07-01T11:28:11",
+    "last_exported_at": "2026-07-01T12:28:11",
     "next_run_time": "定期更新",
     "interval": "定期更新",
     "source_counts": {

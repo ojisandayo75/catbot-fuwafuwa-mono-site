@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T11:28:11",
-  "exported_at": "2026-07-01T11:28:11",
+  "generated_at": "2026-07-01T12:28:11",
+  "exported_at": "2026-07-01T12:28:11",
   "state": "cat_first_buying_check_ready",
   "total_products": 9,
   "categories": [
@@ -10,13 +10,13 @@
       "products": 2
     },
     {
-      "id": "treats",
-      "name": "おやつ",
+      "id": "water",
+      "name": "水とごはん",
       "products": 2
     },
     {
-      "id": "water",
-      "name": "水とごはん",
+      "id": "treats",
+      "name": "おやつ",
       "products": 2
     },
     {
@@ -87,56 +87,6 @@
       "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
     },
     {
-      "key": "treats/p1",
-      "anchor": "treats-p1",
-      "category_id": "treats",
-      "category": "おやつ",
-      "product_id": "p1",
-      "product": "CIAO ちゅーる系おやつ",
-      "reason": "少量のごほうびや水分補助として使いやすい定番です。",
-      "buy_before_check": "対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。",
-      "stop_signal": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
-      "first_try": "主食の代わりにせず、あげた日は他のおやつ量を減らします。",
-      "best_for": "ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。",
-      "not_for": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。",
-      "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
-      "tags": [
-        "少量から",
-        "主食にしない",
-        "体調変化を見る"
-      ],
-      "product_page": "products/treats/p1/",
-      "guide_page": "guides/treats/",
-      "link_ready": false,
-      "link_kind": "search",
-      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
-    },
-    {
-      "key": "treats/p2",
-      "anchor": "treats-p2",
-      "category_id": "treats",
-      "category": "おやつ",
-      "product_id": "p2",
-      "product": "無添加寄りのおやつ",
-      "reason": "毎日ではなくても、原材料を見て選びたい人向け。",
-      "buy_before_check": "原材料、塩分、添加物、対象年齢を見て、体調に合うか先に確認します。",
-      "stop_signal": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
-      "first_try": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。",
-      "best_for": "原材料を見て選びたい子、いつものおやつを少し見直したい子。",
-      "not_for": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。",
-      "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
-      "tags": [
-        "原材料確認",
-        "少量から",
-        "アレルギー注意"
-      ],
-      "product_page": "products/treats/p2/",
-      "guide_page": "guides/treats/",
-      "link_ready": false,
-      "link_kind": "search",
-      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
-    },
-    {
       "key": "water/p1",
       "anchor": "water-p1",
       "category_id": "water",
@@ -182,6 +132,56 @@
       ],
       "product_page": "products/water/p2/",
       "guide_page": "guides/water/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "treats/p1",
+      "anchor": "treats-p1",
+      "category_id": "treats",
+      "category": "おやつ",
+      "product_id": "p1",
+      "product": "CIAO ちゅーる系おやつ",
+      "reason": "少量のごほうびや水分補助として使いやすい定番です。",
+      "buy_before_check": "対象年齢、一般食か総合栄養食か、塩分やカロリーを先に確認します。",
+      "stop_signal": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
+      "first_try": "主食の代わりにせず、あげた日は他のおやつ量を減らします。",
+      "best_for": "ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。",
+      "not_for": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。",
+      "care_note": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
+      "tags": [
+        "少量から",
+        "主食にしない",
+        "体調変化を見る"
+      ],
+      "product_page": "products/treats/p1/",
+      "guide_page": "guides/treats/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "treats/p2",
+      "anchor": "treats-p2",
+      "category_id": "treats",
+      "category": "おやつ",
+      "product_id": "p2",
+      "product": "無添加寄りのおやつ",
+      "reason": "毎日ではなくても、原材料を見て選びたい人向け。",
+      "buy_before_check": "原材料、塩分、添加物、対象年齢を見て、体調に合うか先に確認します。",
+      "stop_signal": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
+      "first_try": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。",
+      "best_for": "原材料を見て選びたい子、いつものおやつを少し見直したい子。",
+      "not_for": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。",
+      "care_note": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
+      "tags": [
+        "原材料確認",
+        "少量から",
+        "アレルギー注意"
+      ],
+      "product_page": "products/treats/p2/",
+      "guide_page": "guides/treats/",
       "link_ready": false,
       "link_kind": "search",
       "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
@@ -281,8 +281,8 @@
     }
   ],
   "consult_first": {
-    "generated_at": "2026-07-01T11:28:11",
-    "exported_at": "2026-07-01T11:28:11",
+    "generated_at": "2026-07-01T12:28:11",
+    "exported_at": "2026-07-01T12:28:11",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",

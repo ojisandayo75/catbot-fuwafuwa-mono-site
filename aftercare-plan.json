@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T11:28:11",
-  "exported_at": "2026-07-01T11:28:11",
+  "generated_at": "2026-07-01T12:28:11",
+  "exported_at": "2026-07-01T12:28:11",
   "state": "cat_first_aftercare_ready",
   "total_products": 9,
   "review_days": [
@@ -52,36 +52,6 @@
       "link_ready": false
     },
     {
-      "key": "treats/p1",
-      "anchor": "treats-p1",
-      "category": "おやつ",
-      "product": "CIAO ちゅーる系おやつ",
-      "product_page": "products/treats/p1/",
-      "buying_check": "buying-check/#treats-p1",
-      "first_day": "主食の代わりにせず、あげた日は他のおやつ量を減らします。",
-      "day_three": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
-      "day_seven": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
-      "keep_if": "ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。",
-      "pause_if": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。",
-      "stop_signal": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
-      "link_ready": false
-    },
-    {
-      "key": "treats/p2",
-      "anchor": "treats-p2",
-      "category": "おやつ",
-      "product": "無添加寄りのおやつ",
-      "product_page": "products/treats/p2/",
-      "buying_check": "buying-check/#treats-p2",
-      "first_day": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。",
-      "day_three": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
-      "day_seven": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
-      "keep_if": "原材料を見て選びたい子、いつものおやつを少し見直したい子。",
-      "pause_if": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。",
-      "stop_signal": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
-      "link_ready": false
-    },
-    {
       "key": "water/p1",
       "anchor": "water-p1",
       "category": "水とごはん",
@@ -109,6 +79,36 @@
       "keep_if": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
       "pause_if": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
       "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+      "link_ready": false
+    },
+    {
+      "key": "treats/p1",
+      "anchor": "treats-p1",
+      "category": "おやつ",
+      "product": "CIAO ちゅーる系おやつ",
+      "product_page": "products/treats/p1/",
+      "buying_check": "buying-check/#treats-p1",
+      "first_day": "主食の代わりにせず、あげた日は他のおやつ量を減らします。",
+      "day_three": "主食の代わりにしません。体重管理中、腎臓・尿路などの不安がある子は量と種類を先に確認します。",
+      "day_seven": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
+      "keep_if": "ごほうびを少量だけ使いたい子、水分補助のきっかけを作りたい子。",
+      "pause_if": "体重管理中の子、腎臓・尿路などの不安がある子、食事制限中の子。",
+      "stop_signal": "吐く、下痢をする、食欲が乱れる、体重が増えやすい時は続けません。",
+      "link_ready": false
+    },
+    {
+      "key": "treats/p2",
+      "anchor": "treats-p2",
+      "category": "おやつ",
+      "product": "無添加寄りのおやつ",
+      "product_page": "products/treats/p2/",
+      "buying_check": "buying-check/#treats-p2",
+      "first_day": "新しい素材は一度に増やさず、いつもの食事量とのバランスを見ます。",
+      "day_three": "初めての素材は少量から。吐く、下痢をする、かゆがるなどの変化があれば続けません。",
+      "day_seven": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
+      "keep_if": "原材料を見て選びたい子、いつものおやつを少し見直したい子。",
+      "pause_if": "アレルギーが疑われる子、療法食中の子、初めての素材で体調を崩しやすい子。",
+      "stop_signal": "吐く、下痢をする、かゆがる、食べた後に元気がない時は続けません。",
       "link_ready": false
     },
     {

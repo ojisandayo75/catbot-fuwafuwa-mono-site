@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T11:28:11",
-  "exported_at": "2026-07-01T11:28:11",
+  "generated_at": "2026-07-01T12:28:11",
+  "exported_at": "2026-07-01T12:28:11",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "monetization_stage": "needs_moshimo_approval",
@@ -37,16 +37,16 @@
     "remaining": 328,
     "progress": 67.2,
     "last_7d_gain": 131,
-    "recent_avg_per_day": 21.8,
-    "eta_date": "2026-07-15",
+    "recent_avg_per_day": 18.7,
+    "eta_date": "2026-07-19",
     "state": "growing",
     "shop_promotion": "wait",
     "site_warmup": "ready"
   },
   "follower_growth": {
     "last_7d_gain": 131,
-    "recent_avg_per_day": 21.8,
-    "eta_date": "2026-07-15",
+    "recent_avg_per_day": 18.7,
+    "eta_date": "2026-07-19",
     "state": "growing"
   },
   "catbot_signal": {

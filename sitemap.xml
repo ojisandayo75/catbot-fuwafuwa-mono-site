@@ -163,13 +163,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/treats/</loc>
+    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/water/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/water/</loc>
+    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/treats/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -229,18 +229,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/treats/p1/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/treats/p2/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p1/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -248,6 +236,18 @@
   </url>
   <url>
     <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p2/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/treats/p1/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/treats/p2/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
