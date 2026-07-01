@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T05:28:12",
-  "exported_at": "2026-07-02T05:28:12",
+  "generated_at": "2026-07-02T06:27:41",
+  "exported_at": "2026-07-02T06:27:41",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -53,9 +53,9 @@
           "series": 0
         },
         "remaining": {
-          "tweet_send": 0,
+          "tweet_send": 1,
           "post": 0,
-          "like": 0,
+          "like": 2,
           "follow": 0,
           "reply": 0,
           "quote": 0,
@@ -125,9 +125,9 @@
           "series": 0
         },
         "remaining": {
-          "tweet_send": 0,
+          "tweet_send": 1,
           "post": 0,
-          "like": 0,
+          "like": 2,
           "follow": 0,
           "reply": 0,
           "quote": 0,
@@ -253,9 +253,9 @@
         "series": 0
       },
       "remaining": {
-        "tweet_send": 0,
+        "tweet_send": 1,
         "post": 0,
-        "like": 0,
+        "like": 2,
         "follow": 0,
         "reply": 0,
         "quote": 0,

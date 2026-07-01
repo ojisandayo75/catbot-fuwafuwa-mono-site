@@ -65,3 +65,23 @@ img{border-radius:12px}
 /* 絵文字除去で空になった装飾要素の隙間を畳む（上品化） */
 .rp-emoji:empty,.qz-emoji-big:empty,.home-howto-emoji:empty,.home-quiz-emoji:empty,
 .qz-type-emoji:empty,.art-emoji:empty{display:none}
+
+/* ===== 全ページ共通ヘッダ（TOPと同一のマガジンバー / catbot-header.js が注入） ===== */
+/* 旧B型バー（header.bar）は撤去。div.bar のヘッダは JS 側で除去する */
+header.bar{display:none !important}
+/* 固定ヘッダの高さぶん本文を下げ、重なりを防ぐ */
+body.has-shared-header{padding-top:61px}
+.header-wrap{position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:600px;z-index:40}
+.header-wrap .topbar{display:flex;align-items:center;gap:9px;padding:11px 18px;background:rgba(255,248,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.header-wrap .brand-mark{width:38px;height:38px;border-radius:11px;background:url("top1a_09.webp") center/cover;box-shadow:0 0 0 1px rgba(90,53,34,.15);flex:0 0 auto;text-decoration:none}
+.header-wrap .brand-copy{display:flex;flex-direction:column;line-height:1.15}
+.header-wrap .brand-copy strong{font-size:15px;white-space:nowrap}
+.header-wrap .brand-copy small{font-size:11px;color:var(--dim)}
+.header-wrap .menu-btn{margin-left:auto;font-size:20px;color:#8a7460;background:none;border:0;cursor:pointer;line-height:1}
+.header-wrap .menu-btn.open{color:var(--caramel)}
+.header-wrap .drawer{display:none;flex-direction:column;background:#fffdf8;border-bottom:1px solid var(--line);box-shadow:0 14px 26px -14px rgba(64,39,24,.34)}
+.header-wrap .drawer.open{display:flex;animation:drawerIn .18s ease}
+@keyframes drawerIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.header-wrap .drawer a{display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #f1e6d6;font-size:15px;font-weight:700;color:var(--ink);text-decoration:none}
+.header-wrap .drawer a:last-child{border-bottom:0}
+.header-wrap .drawer a:hover,.header-wrap .drawer a:active{background:#fff2df}
