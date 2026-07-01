@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T08:28:11",
-  "exported_at": "2026-07-01T08:28:11",
+  "generated_at": "2026-07-01T09:28:11",
+  "exported_at": "2026-07-01T09:28:11",
   "phase": "needs_moshimo_approval",
   "account": "@fuwafuwa_mono",
   "site_name": "ふわふわ猫の道具箱",
@@ -71,7 +71,7 @@
           "series": 0
         },
         "remaining": {
-          "tweet_send": 1,
+          "tweet_send": 0,
           "post": 0,
           "like": 2,
           "follow": 0,
@@ -143,7 +143,7 @@
           "series": 0
         },
         "remaining": {
-          "tweet_send": 1,
+          "tweet_send": 0,
           "post": 0,
           "like": 2,
           "follow": 0,
@@ -420,7 +420,7 @@
             "series": 0
           },
           "remaining": {
-            "tweet_send": 1,
+            "tweet_send": 0,
             "post": 0,
             "like": 2,
             "follow": 0,

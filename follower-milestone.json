@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T08:28:11",
-  "exported_at": "2026-07-01T08:28:11",
+  "generated_at": "2026-07-01T09:28:11",
+  "exported_at": "2026-07-01T09:28:11",
   "account": "@fuwafuwa_mono",
   "stage": "pre_900_prepare",
   "stage_label": "900人までは静かに土台作り",
@@ -45,7 +45,7 @@
     "recovery_until": "2026-06-30T06:11:08+09:00",
     "recovery_remaining": {
       "post": 0,
-      "tweet_send": 1,
+      "tweet_send": 0,
       "like": 2
     },
     "recovery_caps": {
