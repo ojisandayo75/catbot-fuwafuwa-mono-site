@@ -1,7 +1,7 @@
 {
-  "name": "ふわふわ猫の道具箱",
-  "short_name": "猫の道具箱",
-  "description": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
+  "name": "ふわふわ猫マガジン",
+  "short_name": "猫マガジン",
+  "description": "猫と暮らす、毎日のヒント。困りごとの原因と対策を、やさしくまとめています。",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

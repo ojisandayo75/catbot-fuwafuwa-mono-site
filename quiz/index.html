@@ -6,7 +6,7 @@
 <meta name="description" content="6つの質問でうちの子の性格タイプと“いまの気持ち”が分かる、かわいい猫診断。タイプに合った猫グッズと買う前チェックも見られます。">
 <meta property="og:title" content="うちの子ネコ気持ち診断">
 <meta property="og:description" content="6つの質問でうちの子の性格タイプと“いまの気持ち”が分かる、かわいい猫診断。タイプに合った猫グッズと買う前チェックも見られます。">
-<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:site_name" content="ふわふわ猫マガジン">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
@@ -27,12 +27,12 @@
 <meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta property="og:image:alt" content="ふわふわ猫マガジンの猫用品と猫のための道具">
 <meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
-<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image:alt" content="ふわふわ猫マガジンの猫用品と猫のための道具">
 <meta name="twitter:site" content="@fuwafuwa_mono">
 <meta name="twitter:creator" content="@fuwafuwa_mono">
-<title>うちの子ネコ気持ち診断｜ふわふわ猫の道具箱</title>
+<title>うちの子ネコ気持ち診断｜ふわふわ猫マガジン</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap">
@@ -102,7 +102,7 @@ main{padding-bottom:90px}
 <body>
 <header class="bar">
   <div class="bar-inner">
-    <a class="brand" href="../">ふわふわ猫の道具箱<small>うちの子のための猫グッズ</small></a>
+    <a class="brand" href="../">ふわふわ猫マガジン<small>うちの子のための猫グッズ</small></a>
     <a class="top-link" href="../">トップへ戻る</a>
   </div>
 </header>
@@ -230,7 +230,7 @@ function showResult(){
   $("rTip").textContent = esc(t.tip);
   const prods = (t.products || []);
   $("rProds").innerHTML = prods.length ? prods.map(productCard).join("") : '<p>このタイプのおすすめは準備中です。</p>';
-  const shareText = "うちの子は「"+esc(t.name)+"」タイプ！ "+esc(t.emoji)+"\n"+esc(t.feeling)+"\n#ふわふわ猫の道具箱 でネコ気持ち診断";
+  const shareText = "うちの子は「"+esc(t.name)+"」タイプ！ "+esc(t.emoji)+"\n"+esc(t.feeling)+"\n#ふわふわ猫マガジン でネコ気持ち診断";
   $("rShare").href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(shareText) + "&url=" + encodeURIComponent(SHOP + "quiz/type/" + esc(t.id) + "/");
   const r = $("qzResult");
   r.classList.add("show");

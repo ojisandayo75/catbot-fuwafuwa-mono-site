@@ -2,21 +2,21 @@
 <html lang="ja"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ふわふわ猫の道具箱｜猫グッズを“買う前チェック”で選ぶ猫用品サイト</title>
+<title>ふわふわ猫マガジン｜猫の困りごとの原因と対策をやさしくまとめる情報サイト</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <script defer src="assets/catbot-i18n.js"></script>
 <meta name="description" content="人気の猫動画で注目の「遊び」と、今日の「電動猫じゃらし」を、猫の安全・買う前チェックから選べる猫用品の情報サイト。">
-<meta property="og:title" content="ふわふわ猫の道具箱">
+<meta property="og:title" content="ふわふわ猫マガジン">
 <meta property="og:description" content="人気の猫動画で注目の「遊び」と、今日の「電動猫じゃらし」を、猫の安全・買う前チェックから選べる猫用品の情報サイト。">
-<meta property="og:site_name" content="ふわふわ猫の道具箱">
+<meta property="og:site_name" content="ふわふわ猫マガジン">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ふわふわ猫の道具箱">
+<meta name="twitter:title" content="ふわふわ猫マガジン">
 <meta name="twitter:description" content="人気の猫動画で注目の「遊び」と、今日の「電動猫じゃらし」を、猫の安全・買う前チェックから選べる猫用品の情報サイト。">
 <meta name="theme-color" content="#5a3522">
-<meta name="application-name" content="ふわふわ猫の道具箱">
+<meta name="application-name" content="ふわふわ猫マガジン">
 <link rel="manifest" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/site.webmanifest">
 <link rel="icon" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/site-icon-32.png">
@@ -29,12 +29,12 @@
 <meta property="og:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta property="og:image:alt" content="ふわふわ猫マガジンの猫用品と猫のための道具">
 <meta name="twitter:image" content="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/assets/ai_social_card.jpg">
-<meta name="twitter:image:alt" content="ふわふわ猫の道具箱の猫用品と猫のための道具">
+<meta name="twitter:image:alt" content="ふわふわ猫マガジンの猫用品と猫のための道具">
 <meta name="twitter:site" content="@fuwafuwa_mono">
 <meta name="twitter:creator" content="@fuwafuwa_mono">
-<link rel="alternate" type="application/rss+xml" title="ふわふわ猫の道具箱 更新履歴" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ふわふわ猫マガジン 更新履歴" href="https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/feed.xml">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -42,7 +42,7 @@
     {
       "@type": "Organization",
       "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization",
-      "name": "ふわふわ猫の道具箱",
+      "name": "ふわふわ猫マガジン",
       "url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
       "sameAs": [
         "https://x.com/fuwafuwa_mono"
@@ -51,14 +51,14 @@
     {
       "@type": "WebSite",
       "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#website",
-      "name": "ふわふわ猫の道具箱",
-      "description": "毎日猫動画を見ている人が、猫との暮らしが少し楽になるものを集める場所。",
+      "name": "ふわふわ猫マガジン",
+      "description": "猫と暮らす、毎日のヒント。困りごとの原因と対策を、やさしくまとめています。",
       "url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
       "inLanguage": "ja",
       "publisher": {
         "@id": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/#organization"
       },
-      "dateModified": "2026-07-02T03:41:05",
+      "dateModified": "2026-07-02T04:47:19",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -349,8 +349,10 @@
   img{display:block}
   .wrap{max-width:480px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 60px -20px rgba(64,39,24,.25)}
 
-  /* top bar */
-  .header-wrap{position:sticky;top:0;z-index:30}
+  /* top bar：スクロール中も画面上部に確実に固定（見た目は現状のまま） */
+  .header-wrap{position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;z-index:30}
+  /* 固定バーの高さぶんだけ本文に余白を足し、重なりを防ぐ（従来と同じ配置） */
+  main{padding-top:61px}
   .topbar{display:flex;align-items:center;gap:9px;padding:11px 18px;background:rgba(255,248,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   /* ドロップダウンメニュー */
   .drawer{display:none;flex-direction:column;background:#fffdf8;border-bottom:1px solid var(--line);box-shadow:0 14px 26px -14px rgba(64,39,24,.34)}
@@ -415,6 +417,17 @@
   .quiz p{margin:3px 0 8px;font-size:13px;color:#877262}
   .quiz .chip{display:inline-block;font-size:11px;font-weight:800;color:#7a4b2f;background:#fff;border:1px solid #ecd6b4;padding:2px 9px;border-radius:999px;margin-bottom:10px}
   .quiz .go{display:inline-flex;align-items:center;gap:6px;background:var(--coffee);color:#fff;font-weight:800;font-size:14px;padding:9px 15px;border-radius:12px}
+
+  /* article feed (magazine) */
+  .feed{display:flex;flex-direction:column;gap:11px}
+  .art-item{display:flex;gap:13px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:11px;box-shadow:0 6px 14px -10px rgba(64,39,24,.4);transition:transform .18s,box-shadow .18s,border-color .18s}
+  .art-item:hover{transform:translateY(-2px);box-shadow:0 13px 22px -11px rgba(64,39,24,.5);border-color:#e0cdb6}
+  .art-item img{width:78px;height:78px;object-fit:cover;border-radius:12px;flex:0 0 auto;background:#fdf6e7}
+  .art-item .txt{min-width:0}
+  .art-item .tag{display:inline-block;font-size:10.5px;font-weight:800;color:#7a4b2f;background:#f4eadb;border:1px solid #ecd6b4;padding:1px 8px;border-radius:999px;margin-bottom:5px}
+  .art-item strong{display:block;font-size:14.5px;line-height:1.42;font-weight:900}
+  .art-item small{display:block;font-size:12px;color:var(--dim);margin-top:4px;line-height:1.5}
+  .more-link{display:inline-block;margin-top:13px;font-size:13.5px;font-weight:800;color:var(--caramel)}
 
   /* more list */
   .more{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
@@ -752,17 +765,17 @@
   <div class="header-wrap">
   <header class="topbar">
     <a class="brand-mark" href="./" aria-label="トップへ"></a>
-    <span class="brand-copy"><strong>ふわふわ猫の道具箱</strong><small>猫優先で選ぶ猫用品サイト</small></span>
+    <span class="brand-copy"><strong>ふわふわ猫マガジン</strong><small>猫と暮らす、毎日のヒント</small></span>
     <button class="menu-btn" id="menuBtn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="siteDrawer">&#9776;</button>
   </header>
   <nav class="drawer" id="siteDrawer" aria-label="サイトメニュー">
-    <a href="choose/">猫の様子から選ぶ</a>
-    <a href="buying-check/">買う前チェック</a>
-    <a href="quiz/">うちの子診断</a>
     <a href="articles/">猫のお悩み記事</a>
     <a href="needs/">困りごとから探す</a>
     <a href="seasonal/">季節のケア</a>
+    <a href="quiz/">うちの子診断</a>
     <a href="consult-first/">体調の相談先</a>
+    <a href="choose/">猫用品から選ぶ</a>
+    <a href="buying-check/">買う前チェック</a>
     <a href="about/">運営者情報・広告について</a>
     <a href="privacy/">プライバシーポリシー</a>
     <a href="contact/">お問い合わせ</a>
@@ -773,39 +786,39 @@
     <!-- hero -->
     <section>
       <div class="hero-img">
-        <img src="assets/top1a_05.webp" alt="日だまりの子猫">
-        <span class="badge">猫好きさんのためのお店</span>
+        <img src="assets/top1a_05.webp" alt="日だまりでくつろぐ子猫">
+        <span class="badge">猫と暮らすヒント</span>
       </div>
-      <h1>うちの子にぴったりの<br>猫グッズを、いっしょに選ぼう</h1>
-      <p class="hero-copy">「買う前チェック」で“合う・合わない”を先に確認。失敗しないお買い物を、やさしくお手伝いします。</p>
+      <h1>猫と暮らす、<br>毎日のヒント</h1>
+      <p class="hero-copy">水を飲まない・爪とぎ・留守番…よくある猫の困りごとの原因と、今日からできる対策を、やさしくまとめています。</p>
       <div class="cta-col">
-        <a class="btn btn-primary" href="choose/">猫の様子から選ぶ</a>
-        <a class="btn btn-secondary" href="buying-check/">買う前チェック</a>
+        <a class="btn btn-primary" href="articles/">お悩み記事を読む</a>
+        <a class="btn btn-secondary" href="quiz/">うちの子診断をする</a>
       </div>
-      <div class="promise">猫ファースト ・ 押し売りしません</div>
+      <div class="promise">猫ファースト ・ 体調の不安は受診を優先</div>
     </section>
 
-    <!-- 3 steps -->
+    <!-- 新着記事（主役） -->
     <section class="pad-t">
-      <div class="sec-head"><span class="bar" style="background:var(--caramel)"></span><strong>はじめての方へ</strong><small>かんたん3ステップ</small></div>
-      <div class="steps">
-        <div class="step"><span class="n">1</span><span class="t"><strong>まず猫の様子を選ぶ</strong><br><small>近い場面を1つ選ぶと、必要なカテゴリと判断をまとめます。</small></span></div>
-        <div class="step"><span class="n">2</span><span class="t"><strong>商品は後で見る</strong><br><small>先に困りごとを決めて、合いそうなおすすめだけに絞ります。</small></span></div>
-        <div class="step note"><span class="n">3</span><span class="t"><strong>体調の不安は相談を優先</strong><br><small>食欲・トイレ・呼吸がいつもと違う時は、商品より先に獣医さんへ。</small></span></div>
+      <div class="sec-head"><span class="bar" style="background:var(--caramel)"></span><strong>猫のお悩み記事</strong><small>気になることから読む</small></div>
+      <div class="feed">
+                <a class="art-item" href="articles/cat-not-drinking-water/"><img src="assets/top1a_06.webp" alt="猫が水を飲まない…原因と今日からできる対策"><span class="txt"><span class="tag">水・食事</span><strong>猫が水を飲まない…原因と今日からできる対策</strong><small>猫が水を飲まない原因と、今日からできる工夫をやさしく解説。水飲み場の置き方や器の選び方、…</small></span></a>
+        <a class="art-item" href="articles/cat-scratching-furniture/"><img src="assets/top1a_04.webp" alt="猫が家具で爪とぎ…やめさせる前にできる対策"><span class="txt"><span class="tag">爪とぎ</span><strong>猫が家具で爪とぎ…やめさせる前にできる対策</strong><small>猫が家具やソファで爪とぎする理由と、叱らずにやめさせる対策。爪とぎの素材・置き場所の選び…</small></span></a>
+        <a class="art-item" href="articles/cat-home-alone/"><img src="assets/top1a_02.webp" alt="猫の留守番は何時間まで？さみしさ・退屈の工夫"><span class="txt"><span class="tag">留守番</span><strong>猫の留守番は何時間まで？さみしさ・退屈の工夫</strong><small>猫の留守番は何時間まで大丈夫か、さみしさや退屈への対策、見守りカメラの使いどころをやさし…</small></span></a>
+        <a class="art-item" href="articles/cat-shedding-care/"><img src="assets/top1a_08.webp" alt="猫の抜け毛がすごい…ブラッシングと部屋ケアのコツ"><span class="txt"><span class="tag">お手入れ</span><strong>猫の抜け毛がすごい…ブラッシングと部屋ケアのコツ</strong><small>猫の抜け毛が多い時期の対策。ブラッシングの頻度とコツ、嫌がりにくい道具の選び方、毛球症の…</small></span></a>
+        <a class="art-item" href="articles/cat-not-enough-play/"><img src="assets/top1a_07.webp" alt="猫が遊び足りない？運動不足のサインとおもちゃ選び"><span class="txt"><span class="tag">遊び</span><strong>猫が遊び足りない？運動不足のサインとおもちゃ選び</strong><small>猫の運動不足のサインと、遊び足りない時の対策。安全なおもちゃの選び方、遊ばせ方のコツ、誤…</small></span></a>
       </div>
+      <a class="more-link" href="articles/">記事をすべて見る ›</a>
     </section>
 
-    <!-- categories -->
+    <!-- 困りごとから探す -->
     <section class="pad-t">
-      <div class="sec-head"><span class="bar" style="background:var(--sage)"></span><strong>画像から選ぶ</strong><small>いまの様子に近いものへ</small></div>
-      <div class="cat-grid">
-        <a class="cat" href="choose/"><img src="assets/top1a_07.webp" alt="遊び"><strong>遊び</strong><small>じゃらし・けりぐるみ</small></a>
-        <a class="cat" href="choose/"><img src="assets/top1a_03.webp" alt="おやつ"><strong>おやつ</strong><small>おやつ・水分補助</small></a>
-        <a class="cat" href="choose/"><img src="assets/top1a_04.webp" alt="爪とぎ"><strong>爪とぎ</strong><small>家具を守る消耗品</small></a>
-        <a class="cat" href="choose/"><img src="assets/top1a_06.webp" alt="水ごはん"><strong>水ごはん</strong><small>飲水・食事リズム</small></a>
-        <a class="cat" href="choose/"><img src="assets/top1a_08.webp" alt="ケア"><strong>ケア</strong><small>ブラシ・抜け毛対策</small></a>
-        <a class="cat" href="choose/"><img src="assets/top1a_02.webp" alt="見守り"><strong>見守り</strong><small>留守番・ペットカメラ</small></a>
-      </div>
+      <div class="sec-head"><span class="bar" style="background:var(--sage)"></span><strong>困りごとから探す</strong><small>猫の様子に近いものへ</small></div>
+      <nav class="more">
+        <a href="needs/">水・遊び・爪とぎ・抜け毛から探す<span class="arr">›</span></a>
+        <a href="seasonal/">今月の猫ケア（季節のヒント）<span class="arr">›</span></a>
+        <a href="consult-first/">体調が気になる時の相談先<span class="arr">›</span></a>
+      </nav>
     </section>
 
     <!-- diagnosis -->
@@ -814,21 +827,19 @@
         <img src="assets/top1a_01.webp" alt="うちの子診断">
         <span>
           <strong>うちの子は何タイプ?</strong>
-          <p>6つの質問で性格タイプとおすすめが分かります。</p>
+          <p>6つの質問で性格タイプと“いまの気持ち”が分かります。</p>
           <span class="chip">6問・約1分</span><br>
           <span class="go">診断をはじめる </span>
         </span>
       </a>
     </section>
 
-    <!-- more -->
+    <!-- グッズから探したい方へ（demote） -->
     <section class="pad-t">
-      <div class="sec-head"><span class="bar" style="background:#c2ac93"></span><strong>もっと見る</strong></div>
+      <div class="sec-head"><span class="bar" style="background:#c2ac93"></span><strong>グッズから探したい方へ</strong><small>記事のあとに、そっと</small></div>
       <nav class="more">
-        <a href="articles/">猫のお悩み記事<span class="arr">›</span></a>
-        <a href="needs/">猫別ガイド<span class="arr">›</span></a>
-        <a href="seasonal/">季節のケア<span class="arr">›</span></a>
-        <a href="consult-first/">体調の相談先<span class="arr">›</span></a>
+        <a href="choose/">猫の様子から用品を選ぶ<span class="arr">›</span></a>
+        <a href="buying-check/">買う前チェック<span class="arr">›</span></a>
         <a href="about/">運営者情報・広告について<span class="arr">›</span></a>
       </nav>
     </section>
