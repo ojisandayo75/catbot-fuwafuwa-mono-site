@@ -69,8 +69,9 @@ img{border-radius:12px}
 /* ===== 全ページ共通ヘッダ（TOPと同一のマガジンバー / catbot-header.js が注入） ===== */
 /* 旧B型バー（header.bar）は撤去。div.bar のヘッダは JS 側で除去する */
 header.bar{display:none !important}
-/* 固定ヘッダの高さぶん本文を下げ、重なりを防ぐ */
-body.has-shared-header{padding-top:61px}
+/* 子ページは常に共通固定ヘッダを持つ（このCSSはTOPでは読まれない）。
+   JS実行前にCSSで余白を確保し、初回表示のレイアウトシフト(CLS)を防ぐ */
+body{padding-top:61px}
 .header-wrap{position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:600px;z-index:40}
 .header-wrap .topbar{display:flex;align-items:center;gap:9px;padding:11px 18px;background:rgba(255,248,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .header-wrap .brand-mark{width:38px;height:38px;border-radius:11px;background:url("top1a_09.webp") center/cover;box-shadow:0 0 0 1px rgba(90,53,34,.15);flex:0 0 auto;text-decoration:none}

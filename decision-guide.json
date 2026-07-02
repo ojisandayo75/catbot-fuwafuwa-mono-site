@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "state": "decision_guide_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "summary": "商品名より先に、猫の様子・困りごと・買わない条件から入口を選ぶための新着情報ページです。",
-  "followers": 672,
+  "followers": 673,
   "follower_goal": 1000,
   "ready_links": 0,
   "total_products": 9,
@@ -153,7 +153,7 @@
       "buying_check_url": "buying-check/#water-p1",
       "seasonal": true,
       "next_target": false,
-      "score": 101,
+      "score": 93,
       "quick_checks": [
         "洗いやすさ、フィルター代、音の小ささを確認。",
         "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
@@ -176,7 +176,7 @@
           "first_try": "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
           "stop_signal": "",
           "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
-          "score": 97
+          "score": 89
         },
         {
           "id": "p2",
@@ -190,7 +190,7 @@
           "first_try": "数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。",
           "stop_signal": "",
           "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
-          "score": 101
+          "score": 93
         }
       ]
     },
@@ -430,7 +430,7 @@
       "title": "素材動画の傾向",
       "label": "Orange cat behavior🤣#cat #cats #catslovers #catsoftiktok #fyp",
       "detail": "catbotで扱う動画素材側の強い反応です。投稿テーマと商品カテゴリのズレを見ます。",
-      "metric": "115,016,991 plays",
+      "metric": "115,031,619 plays",
       "category_id": "toys",
       "category": "遊び",
       "guide_url": "guides/toys/",

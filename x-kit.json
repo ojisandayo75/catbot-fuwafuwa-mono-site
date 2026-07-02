@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "state": "x_kit_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -11,18 +11,18 @@
   "public_url_ready": true,
   "affiliate_links_ready": 0,
   "affiliate_links_total": 9,
-  "followers": 672,
+  "followers": 673,
   "follower_goal": 1000,
-  "followers_to_goal": 328,
+  "followers_to_goal": 327,
   "shop_post_guard": {
     "decision": "wait",
     "allowed": false,
     "rate_allowed": true,
     "launch_ready": false,
     "milestone_ready": false,
-    "followers": 672,
+    "followers": 673,
     "follower_goal": 1000,
-    "followers_to_goal": 328,
+    "followers_to_goal": 327,
     "today_count": 0,
     "daily_cap": 2,
     "remaining_today": 2,
@@ -74,7 +74,7 @@
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
+        "detail": "shop promotion waits for 1000 followers (673/1000, remaining 327)"
       }
     ],
     "rate_blockers": [],
@@ -87,7 +87,7 @@
     "milestone_blockers": [
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
+        "detail": "shop promotion waits for 1000 followers (673/1000, remaining 327)"
       }
     ],
     "command": ".\\affiliate_site_ops.bat shop-post-guard",

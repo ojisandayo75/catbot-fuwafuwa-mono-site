@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -155,7 +155,7 @@
       "category": "水とごはん",
       "product_id": "p2",
       "product": "自動給餌器",
-      "score": 101,
+      "score": 93,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -190,7 +190,7 @@
       "category": "水とごはん",
       "product_id": "p1",
       "product": "循環式水飲み器",
-      "score": 97,
+      "score": 89,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -254,13 +254,13 @@
     }
   ],
   "follower_milestone": {
-    "followers": 672,
+    "followers": 673,
     "goal": 1000,
-    "remaining": 328,
-    "progress": 67.2,
-    "eta_date": "2026-07-19",
-    "recent_avg_per_day": 18.7,
-    "last_7d_gain": 131
+    "remaining": 327,
+    "progress": 67.3,
+    "eta_date": "2026-07-23",
+    "recent_avg_per_day": 15.8,
+    "last_7d_gain": 95
   },
   "state_entries": [
     {
@@ -390,7 +390,7 @@
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
+        "detail": "shop promotion waits for 1000 followers (673/1000, remaining 327)"
       }
     ],
     "rate_blockers": [],
@@ -403,7 +403,7 @@
     "milestone_blockers": [
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
+        "detail": "shop promotion waits for 1000 followers (673/1000, remaining 327)"
       }
     ],
     "command": ".\\affiliate_site_ops.bat shop-post-guard --json",

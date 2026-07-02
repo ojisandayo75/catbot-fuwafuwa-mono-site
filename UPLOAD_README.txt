@@ -88,10 +88,10 @@
 
 ## 現在の状態
 
-- Generated: 2026-07-02T11:28:11
+- Generated: 2026-07-02T12:37:19
 - Public URL: https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/
 - Ready affiliate links: 0 / 9
-- Follower milestone ETA: 2026-07-19
+- Follower milestone ETA: 2026-07-23
 - Next affiliate target: toys/p2 電動猫じゃらし
 - Sitemap planned routes: see `sitemap-routes.json`
 

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "account": "@fuwafuwa_mono",
   "profile_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/profile/",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "followers": 672,
+  "followers": 673,
   "follower_goal": 1000,
-  "followers_to_goal": 328,
+  "followers_to_goal": 327,
   "affiliate_links": {
     "ready": 0,
     "total": 9
@@ -21,7 +21,7 @@
     "badges": [
       "商品直リンクなし",
       "買う前チェック優先",
-      "672/1000猫好きの仲間",
+      "673/1000猫好きの仲間",
       "紹介商品を探す"
     ]
   },
@@ -48,26 +48,26 @@
     "image": "assets/ai_cat_care_scene.webp",
     "fallback": "assets/ai_cat_care_scene.jpg",
     "alt": "人気の猫動画の伸びに合わせて猫のための導線を育てるイメージ",
-    "current": 672,
+    "current": 673,
     "goal": 1000,
-    "remaining": 328,
-    "progress_percent": 67.2,
-    "last_7d_gain": 131,
-    "recent_avg_per_day": 18.7,
-    "eta_date": "2026-07-19",
+    "remaining": 327,
+    "progress_percent": 67.3,
+    "last_7d_gain": 95,
+    "recent_avg_per_day": 15.8,
+    "eta_date": "2026-07-23",
     "state": "growing",
     "badges": [
-      "進捗 67.2%",
-      "直近7日 +131",
-      "残り 328",
-      "到達目安 2026-07-19"
+      "進捗 67.3%",
+      "直近7日 +95",
+      "残り 327",
+      "到達目安 2026-07-23"
     ]
   },
   "auto_update_panel": {
     "title": "新着情報",
     "body": "SNSの投稿ログ、動画素材、商品おすすめを見て、猫に合う入口と今日のおすすめを更新します。",
     "synced": true,
-    "last_exported_at": "2026-07-02T11:28:11",
+    "last_exported_at": "2026-07-02T12:37:19",
     "next_run_time": "定期更新",
     "interval": "定期更新",
     "source_counts": {
@@ -145,7 +145,7 @@
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
+        "detail": "shop promotion waits for 1000 followers (673/1000, remaining 327)"
       }
     ]
   },
@@ -237,7 +237,7 @@
       "category": "水とごはん",
       "product_id": "p2",
       "product": "自動給餌器",
-      "score": 101,
+      "score": 93,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -272,7 +272,7 @@
       "category": "水とごはん",
       "product_id": "p1",
       "product": "循環式水飲み器",
-      "score": 97,
+      "score": 89,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",

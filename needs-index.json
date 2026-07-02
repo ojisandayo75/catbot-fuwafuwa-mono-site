@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "state": "needs_index_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -68,7 +68,7 @@
       "buying_check_url": "buying-check/#water-p1",
       "seasonal": true,
       "next_target": false,
-      "score": 101,
+      "score": 93,
       "quick_checks": [
         "洗いやすさ、フィルター代、音の小ささを確認。",
         "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
@@ -91,7 +91,7 @@
           "first_try": "いつもの水皿を残したまま並べ、音・置き場所・飲む量の変化を見ます。",
           "stop_signal": "",
           "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
-          "score": 97
+          "score": 89
         },
         {
           "id": "p2",
@@ -105,7 +105,7 @@
           "first_try": "数日は手動確認と併用し、出た量・残量・詰まり・横取りを見ます。",
           "stop_signal": "",
           "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
-          "score": 101
+          "score": 93
         }
       ]
     },

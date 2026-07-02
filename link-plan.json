@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "state": "needs_moshimo_approval",
   "phase": "needs_moshimo_approval",
   "next_command": ".\\catbot_moshimo_status.bat -OpenWorkbench",
@@ -176,7 +176,7 @@
       "product_id": "p2",
       "category": "水とごはん",
       "product": "自動給餌器",
-      "score": 101,
+      "score": 93,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",
@@ -222,7 +222,7 @@
       "product_id": "p1",
       "category": "水とごはん",
       "product": "循環式水飲み器",
-      "score": 97,
+      "score": 89,
       "reasons": [
         "季節ケア",
         "買う前チェック: 留守番が多い猫",

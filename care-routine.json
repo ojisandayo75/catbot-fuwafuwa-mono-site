@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "state": "care_routine_ready",
   "account": "@fuwafuwa_mono",
   "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -136,7 +136,7 @@
       "detail_url": "products/water/p2/",
       "lane": "careful",
       "lane_label": "慎重にリンク化",
-      "score": 101,
+      "score": 93,
       "next_target": false
     },
     {
@@ -154,7 +154,7 @@
       "detail_url": "products/water/p1/",
       "lane": "careful",
       "lane_label": "慎重にリンク化",
-      "score": 97,
+      "score": 89,
       "next_target": false
     },
     {

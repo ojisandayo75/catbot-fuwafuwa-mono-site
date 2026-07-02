@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "phase": "needs_moshimo_approval",
   "completion_estimate": {
     "stage_label": "技術側はほぼ完了",
@@ -23,11 +23,11 @@
     },
     "approval_next_check_at": "2026-06-28T16:54:29",
     "approval_check_due": true,
-    "followers": 672,
+    "followers": 673,
     "follower_goal": 1000,
-    "followers_to_goal": 328,
-    "follower_eta_date": "2026-07-19",
-    "follower_eta_days": 18,
+    "followers_to_goal": 327,
+    "follower_eta_date": "2026-07-23",
+    "follower_eta_days": 21,
     "ready_links": 0,
     "total_products": 9
   },
@@ -38,20 +38,20 @@
   "public_url_raw": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
   "public_url_errors": [],
   "public_base_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
-  "followers": 672,
+  "followers": 673,
   "follower_goal": 1000,
-  "followers_to_goal": 328,
-  "follower_progress": 67.2,
+  "followers_to_goal": 327,
+  "follower_progress": 67.3,
   "follower_growth": {
-    "history_count": 29,
-    "current": 672,
+    "history_count": 30,
+    "current": 673,
     "goal": 1000,
-    "remaining": 328,
-    "last_7d_gain": 131,
-    "recent_avg_per_day": 18.7,
-    "overall_avg_per_day": 19.3,
-    "eta_days": 18,
-    "eta_date": "2026-07-19",
+    "remaining": 327,
+    "last_7d_gain": 95,
+    "recent_avg_per_day": 15.8,
+    "overall_avg_per_day": 18.8,
+    "eta_days": 21,
+    "eta_date": "2026-07-23",
     "max_daily_gain": 133,
     "state": "growing"
   },
@@ -197,7 +197,7 @@
       "product_id": "p2",
       "product": "自動給餌器",
       "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
-      "score": 101,
+      "score": 93,
       "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
       "price_band": "高",
       "reasons": [
@@ -235,7 +235,7 @@
       "product_id": "p1",
       "product": "循環式水飲み器",
       "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
-      "score": 97,
+      "score": 89,
       "check": "洗いやすさ、フィルター代、音の小ささを確認。",
       "price_band": "中",
       "reasons": [
@@ -314,7 +314,7 @@
     {
       "level": "info",
       "title": "まだ育成フェーズ",
-      "detail": "1,000フォロワーまで残り 328。売り込みよりプロフィール導線を薄く置く。"
+      "detail": "1,000フォロワーまで残り 327。売り込みよりプロフィール導線を薄く置く。"
     }
   ],
   "launch_blockers": [
@@ -354,8 +354,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-07-02T11:28:11",
-    "exported_at": "2026-07-02T11:28:11",
+    "generated_at": "2026-07-02T12:37:19",
+    "exported_at": "2026-07-02T12:37:19",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -425,32 +425,32 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-07-02T11:28:16",
+    "checked_at": "2026-07-02T12:37:24",
     "synced": true,
-    "last_exported_at": "2026-07-02T11:28:14",
+    "last_exported_at": "2026-07-02T12:37:22",
     "ready_links": 0,
     "total_products": 9,
-    "followers": 672,
+    "followers": 673,
     "top_post_views": 156918,
     "deploy": {
       "configured": true,
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-07-02T10:28:16",
+        "deployed_at": "2026-07-02T12:28:19",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 214,
-        "total_bytes": 27044718
+        "total_bytes": 25233498
       }
     },
     "scheduled_task": {
       "checked": true,
       "ok": true,
       "installed": true,
-      "state": "Running",
-      "last_run_time": "2026-07-02T11:28:09",
-      "last_task_result": 267009,
-      "next_run_time": "2026-07-02T11:58:08",
+      "state": "Ready",
+      "last_run_time": "2026-07-02T12:28:09",
+      "last_task_result": 0,
+      "next_run_time": "2026-07-02T12:58:08",
       "number_of_missed_runs": 0,
       "repetition_interval": "PT30M",
       "action_matches": true,

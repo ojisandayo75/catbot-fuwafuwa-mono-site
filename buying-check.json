@@ -1,17 +1,12 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "state": "cat_first_buying_check_ready",
   "total_products": 9,
   "categories": [
     {
       "id": "toys",
       "name": "遊びと運動",
-      "products": 2
-    },
-    {
-      "id": "water",
-      "name": "水とごはん",
       "products": 2
     },
     {
@@ -23,6 +18,11 @@
       "id": "scratch",
       "name": "爪とぎ",
       "products": 1
+    },
+    {
+      "id": "water",
+      "name": "水とごはん",
+      "products": 2
     },
     {
       "id": "care",
@@ -82,56 +82,6 @@
       ],
       "product_page": "products/toys/p2/",
       "guide_page": "guides/toys/",
-      "link_ready": false,
-      "link_kind": "search",
-      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
-    },
-    {
-      "key": "water/p1",
-      "anchor": "water-p1",
-      "category_id": "water",
-      "category": "水とごはん",
-      "product_id": "p1",
-      "product": "循環式水飲み器",
-      "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
-      "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。",
-      "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
-      "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
-      "best_for": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。",
-      "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
-      "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
-      "tags": [
-        "水皿も残す",
-        "掃除必須",
-        "音を確認"
-      ],
-      "product_page": "products/water/p1/",
-      "guide_page": "guides/water/",
-      "link_ready": false,
-      "link_kind": "search",
-      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
-    },
-    {
-      "key": "water/p2",
-      "anchor": "water-p2",
-      "category_id": "water",
-      "category": "水とごはん",
-      "product_id": "p2",
-      "product": "自動給餌器",
-      "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
-      "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。",
-      "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
-      "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
-      "best_for": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
-      "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
-      "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
-      "tags": [
-        "任せきりにしない",
-        "残量確認",
-        "多頭飼い注意"
-      ],
-      "product_page": "products/water/p2/",
-      "guide_page": "guides/water/",
       "link_ready": false,
       "link_kind": "search",
       "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
@@ -212,6 +162,56 @@
       "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
     },
     {
+      "key": "water/p1",
+      "anchor": "water-p1",
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p1",
+      "product": "循環式水飲み器",
+      "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
+      "buy_before_check": "洗いやすさ、フィルター代、音の小ささ、コード位置を確認します。",
+      "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
+      "first_try": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
+      "best_for": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。",
+      "not_for": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
+      "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
+      "tags": [
+        "水皿も残す",
+        "掃除必須",
+        "音を確認"
+      ],
+      "product_page": "products/water/p1/",
+      "guide_page": "guides/water/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
+      "key": "water/p2",
+      "anchor": "water-p2",
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p2",
+      "product": "自動給餌器",
+      "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
+      "buy_before_check": "詰まりにくさ、洗いやすさ、停電時の挙動、フード粒サイズ対応を確認します。",
+      "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+      "first_try": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
+      "best_for": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
+      "not_for": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
+      "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
+      "tags": [
+        "任せきりにしない",
+        "残量確認",
+        "多頭飼い注意"
+      ],
+      "product_page": "products/water/p2/",
+      "guide_page": "guides/water/",
+      "link_ready": false,
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。"
+    },
+    {
       "key": "care/p1",
       "anchor": "care-p1",
       "category_id": "care",
@@ -281,8 +281,8 @@
     }
   ],
   "consult_first": {
-    "generated_at": "2026-07-02T11:28:11",
-    "exported_at": "2026-07-02T11:28:11",
+    "generated_at": "2026-07-02T12:37:19",
+    "exported_at": "2026-07-02T12:37:19",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "phase": "needs_moshimo_approval",
   "state": "needs_moshimo_approval",
   "moshimo": {
@@ -103,54 +103,6 @@
       "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
     },
     {
-      "key": "water/p1",
-      "category_id": "water",
-      "category": "水とごはん",
-      "product_id": "p1",
-      "product": "循環式水飲み器",
-      "status": "needs_tracking_url",
-      "url_present": true,
-      "host": "www.amazon.co.jp",
-      "provider": "amazon",
-      "looks_affiliate": false,
-      "valid_url": true,
-      "reasons": [],
-      "warnings": [
-        "Amazon URLですが追跡パラメータが見えません"
-      ],
-      "link_kind": "search",
-      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
-      "product_page": "products/water/p1/",
-      "redirect_page": "go/water/p1/",
-      "cat_first_check": "洗いやすさ、フィルター代、音の小ささを確認。",
-      "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
-      "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF"
-    },
-    {
-      "key": "water/p2",
-      "category_id": "water",
-      "category": "水とごはん",
-      "product_id": "p2",
-      "product": "自動給餌器",
-      "status": "needs_tracking_url",
-      "url_present": true,
-      "host": "www.rakuten.co.jp",
-      "provider": "rakuten",
-      "looks_affiliate": false,
-      "valid_url": true,
-      "reasons": [],
-      "warnings": [
-        "楽天URLですが追跡ヒントが見えません"
-      ],
-      "link_kind": "search",
-      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
-      "product_page": "products/water/p2/",
-      "redirect_page": "go/water/p2/",
-      "cat_first_check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
-      "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
-      "search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/"
-    },
-    {
       "key": "treats/p1",
       "category_id": "treats",
       "category": "おやつ",
@@ -221,6 +173,54 @@
       "cat_first_check": "粉が出にくいもの、滑りにくい形を優先。",
       "care_note": "粉が多い、滑って怖がる、削りカスを食べる子には合わないことがあります。固定できる場所に置きます。",
       "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E7%88%AA%E3%81%A8%E3%81%8E+%E5%A4%A7%E5%AE%B9%E9%87%8F"
+    },
+    {
+      "key": "water/p1",
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p1",
+      "product": "循環式水飲み器",
+      "status": "needs_tracking_url",
+      "url_present": true,
+      "host": "www.amazon.co.jp",
+      "provider": "amazon",
+      "looks_affiliate": false,
+      "valid_url": true,
+      "reasons": [],
+      "warnings": [
+        "Amazon URLですが追跡パラメータが見えません"
+      ],
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+      "product_page": "products/water/p1/",
+      "redirect_page": "go/water/p1/",
+      "cat_first_check": "洗いやすさ、フィルター代、音の小ささを確認。",
+      "care_note": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
+      "search_url": "https://www.amazon.co.jp/s?k=%E7%8C%AB+%E5%BE%AA%E7%92%B0%E5%BC%8F%E6%B0%B4%E9%A3%B2%E3%81%BF"
+    },
+    {
+      "key": "water/p2",
+      "category_id": "water",
+      "category": "水とごはん",
+      "product_id": "p2",
+      "product": "自動給餌器",
+      "status": "needs_tracking_url",
+      "url_present": true,
+      "host": "www.rakuten.co.jp",
+      "provider": "rakuten",
+      "looks_affiliate": false,
+      "valid_url": true,
+      "reasons": [],
+      "warnings": [
+        "楽天URLですが追跡ヒントが見えません"
+      ],
+      "link_kind": "search",
+      "link_note": "提携リンクは準備中です。今はAmazon/楽天などの検索結果だけ開きます。",
+      "product_page": "products/water/p2/",
+      "redirect_page": "go/water/p2/",
+      "cat_first_check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
+      "care_note": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
+      "search_url": "https://www.rakuten.co.jp/search/mall/%E7%8C%AB+%E8%87%AA%E5%8B%95%E7%B5%A6%E9%A4%8C%E5%99%A8/"
     },
     {
       "key": "care/p1",

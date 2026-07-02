@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
   "public_url_configured": true,
   "public_url_valid": true,
   "public_url_entered": true,
@@ -281,15 +281,6 @@
     },
     {
       "kind": "guide",
-      "path": "guides/water/",
-      "title": "水をあまり飲まない子",
-      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/water/",
-      "lastmod": "2026-07-02",
-      "changefreq": "weekly",
-      "priority": 0.8
-    },
-    {
-      "kind": "guide",
       "path": "guides/treats/",
       "title": "ごほうびで仲良くしたい子",
       "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/treats/",
@@ -302,6 +293,15 @@
       "path": "guides/scratch/",
       "title": "家具で爪とぎしがちな子",
       "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/scratch/",
+      "lastmod": "2026-07-02",
+      "changefreq": "weekly",
+      "priority": 0.8
+    },
+    {
+      "kind": "guide",
+      "path": "guides/water/",
+      "title": "水をあまり飲まない子",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/guides/water/",
       "lastmod": "2026-07-02",
       "changefreq": "weekly",
       "priority": 0.8
@@ -380,24 +380,6 @@
     },
     {
       "kind": "product",
-      "path": "products/water/p1/",
-      "title": "循環式水飲み器 - 水とごはん",
-      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p1/",
-      "lastmod": "2026-07-02",
-      "changefreq": "weekly",
-      "priority": 0.75
-    },
-    {
-      "kind": "product",
-      "path": "products/water/p2/",
-      "title": "自動給餌器 - 水とごはん",
-      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p2/",
-      "lastmod": "2026-07-02",
-      "changefreq": "weekly",
-      "priority": 0.75
-    },
-    {
-      "kind": "product",
       "path": "products/treats/p1/",
       "title": "CIAO ちゅーる系おやつ - おやつ",
       "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/treats/p1/",
@@ -419,6 +401,24 @@
       "path": "products/scratch/p1/",
       "title": "段ボール爪とぎ 大容量 - 爪とぎ",
       "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/scratch/p1/",
+      "lastmod": "2026-07-02",
+      "changefreq": "weekly",
+      "priority": 0.75
+    },
+    {
+      "kind": "product",
+      "path": "products/water/p1/",
+      "title": "循環式水飲み器 - 水とごはん",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p1/",
+      "lastmod": "2026-07-02",
+      "changefreq": "weekly",
+      "priority": 0.75
+    },
+    {
+      "kind": "product",
+      "path": "products/water/p2/",
+      "title": "自動給餌器 - 水とごはん",
+      "loc": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/products/water/p2/",
       "lastmod": "2026-07-02",
       "changefreq": "weekly",
       "priority": 0.75

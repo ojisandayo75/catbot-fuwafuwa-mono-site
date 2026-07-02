@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "monetization_stage": "needs_moshimo_approval",
@@ -28,25 +28,25 @@
     }
   },
   "moshimo_ready_for_first_link": false,
-  "followers": 672,
+  "followers": 673,
   "follower_goal": 1000,
-  "followers_to_goal": 328,
+  "followers_to_goal": 327,
   "follower_milestone": {
-    "followers": 672,
+    "followers": 673,
     "goal": 1000,
-    "remaining": 328,
-    "progress": 67.2,
-    "last_7d_gain": 131,
-    "recent_avg_per_day": 18.7,
-    "eta_date": "2026-07-19",
+    "remaining": 327,
+    "progress": 67.3,
+    "last_7d_gain": 95,
+    "recent_avg_per_day": 15.8,
+    "eta_date": "2026-07-23",
     "state": "growing",
     "shop_promotion": "wait",
     "site_warmup": "ready"
   },
   "follower_growth": {
-    "last_7d_gain": 131,
-    "recent_avg_per_day": 18.7,
-    "eta_date": "2026-07-19",
+    "last_7d_gain": 95,
+    "recent_avg_per_day": 15.8,
+    "eta_date": "2026-07-23",
     "state": "growing"
   },
   "catbot_signal": {
@@ -176,7 +176,7 @@
       "product_id": "p2",
       "product": "自動給餌器",
       "reason": "時間管理が必要な家庭で、食事リズムを整えやすくなります。",
-      "score": 101,
+      "score": 93,
       "check": "詰まりにくさ、洗いやすさ、停電時の挙動を確認。",
       "price_band": "高",
       "reasons": [
@@ -214,7 +214,7 @@
       "product_id": "p1",
       "product": "循環式水飲み器",
       "reason": "水に興味を持つきっかけを作りやすく、留守中も管理しやすいです。",
-      "score": 97,
+      "score": 89,
       "check": "洗いやすさ、フィルター代、音の小ささを確認。",
       "price_band": "中",
       "reasons": [
@@ -276,9 +276,9 @@
     "rate_allowed": true,
     "launch_ready": false,
     "milestone_ready": false,
-    "followers": 672,
+    "followers": 673,
     "follower_goal": 1000,
-    "followers_to_goal": 328,
+    "followers_to_goal": 327,
     "daily_cap": 2,
     "remaining_today": 2,
     "min_interval_hours": 6.0,
@@ -329,13 +329,13 @@
       },
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
+        "detail": "shop promotion waits for 1000 followers (673/1000, remaining 327)"
       }
     ],
     "milestone_blockers": [
       {
         "id": "follower_goal",
-        "detail": "shop promotion waits for 1000 followers (672/1000, remaining 328)"
+        "detail": "shop promotion waits for 1000 followers (673/1000, remaining 327)"
       }
     ]
   },

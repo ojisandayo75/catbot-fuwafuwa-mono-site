@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T11:28:11",
-  "exported_at": "2026-07-02T11:28:11",
+  "generated_at": "2026-07-02T12:37:19",
+  "exported_at": "2026-07-02T12:37:19",
   "state": "cat_first_aftercare_ready",
   "total_products": 9,
   "review_days": [
@@ -52,36 +52,6 @@
       "link_ready": false
     },
     {
-      "key": "water/p1",
-      "anchor": "water-p1",
-      "category": "水とごはん",
-      "product": "循環式水飲み器",
-      "product_page": "products/water/p1/",
-      "buying_check": "buying-check/#water-p1",
-      "first_day": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
-      "day_three": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
-      "day_seven": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
-      "keep_if": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。",
-      "pause_if": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
-      "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
-      "link_ready": false
-    },
-    {
-      "key": "water/p2",
-      "anchor": "water-p2",
-      "category": "水とごはん",
-      "product": "自動給餌器",
-      "product_page": "products/water/p2/",
-      "buying_check": "buying-check/#water-p2",
-      "first_day": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
-      "day_three": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
-      "day_seven": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
-      "keep_if": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
-      "pause_if": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
-      "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
-      "link_ready": false
-    },
-    {
       "key": "treats/p1",
       "anchor": "treats-p1",
       "category": "おやつ",
@@ -124,6 +94,36 @@
       "keep_if": "家具で爪とぎしやすい子、置き場所を増やしたい子、よく削る子。",
       "pause_if": "削りカスを食べる子、滑る台を怖がる子、粉でくしゃみが出やすい子。",
       "stop_signal": "滑って怖がる、削りカスを食べる、粉でむせる時は場所や種類を変えます。",
+      "link_ready": false
+    },
+    {
+      "key": "water/p1",
+      "anchor": "water-p1",
+      "category": "水とごはん",
+      "product": "循環式水飲み器",
+      "product_page": "products/water/p1/",
+      "buying_check": "buying-check/#water-p1",
+      "first_day": "水皿をすぐ撤去せず、フィルターと本体を定期的に洗います。",
+      "day_three": "水を飲む量が急に変わった時は用品だけで判断しません。ぬめりやフィルター汚れが出る前に洗います。",
+      "day_seven": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
+      "keep_if": "流れる水に興味を示す子、水皿の置き場所で飲む量が変わる子。",
+      "pause_if": "モーター音を怖がる子、掃除の手間を続けにくい家庭、コードを噛みやすい子。",
+      "stop_signal": "飲む量が急に増減する、怖がって近づかない、ぬめりが出る時は見直します。",
+      "link_ready": false
+    },
+    {
+      "key": "water/p2",
+      "anchor": "water-p2",
+      "category": "水とごはん",
+      "product": "自動給餌器",
+      "product_page": "products/water/p2/",
+      "buying_check": "buying-check/#water-p2",
+      "first_day": "毎日残量を見て、療法食や多頭飼いでは必ず手動確認を残します。",
+      "day_three": "食欲低下に気づきにくくなるため、毎日の残量確認は続けます。療法食や多頭飼いでは誤食にも注意します。",
+      "day_seven": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
+      "keep_if": "食事時間を整えたい家庭、留守中のごはん管理を補助したい家庭。",
+      "pause_if": "療法食中、多頭飼いで横取りがある家庭、食欲低下に気づきにくい状況。",
+      "stop_signal": "食べ残しが増える、横取りが起きる、詰まりや誤作動がある時は任せきりにしません。",
       "link_ready": false
     },
     {
