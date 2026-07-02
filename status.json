@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T09:28:11",
-  "exported_at": "2026-07-02T09:28:11",
+  "generated_at": "2026-07-02T10:28:10",
+  "exported_at": "2026-07-02T10:28:10",
   "phase": "needs_moshimo_approval",
   "completion_estimate": {
     "stage_label": "技術側はほぼ完了",
@@ -354,8 +354,8 @@
     "refresh_command": ".\\affiliate_site_ops.bat sync-now --smoke-test",
     "verify_command": ".\\affiliate_site_ops.bat preview-check",
     "public_monitor_command": ".\\affiliate_site_ops.bat monitor-public-url \"https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/\"",
-    "generated_at": "2026-07-02T09:28:11",
-    "exported_at": "2026-07-02T09:28:11",
+    "generated_at": "2026-07-02T10:28:10",
+    "exported_at": "2026-07-02T10:28:10",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -425,9 +425,9 @@
     ]
   },
   "auto_update": {
-    "checked_at": "2026-07-02T09:28:17",
+    "checked_at": "2026-07-02T10:28:15",
     "synced": true,
-    "last_exported_at": "2026-07-02T09:28:16",
+    "last_exported_at": "2026-07-02T10:28:14",
     "ready_links": 0,
     "total_products": 9,
     "followers": 672,
@@ -437,10 +437,10 @@
       "enabled": true,
       "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
       "last_deploy": {
-        "deployed_at": "2026-07-02T08:28:16",
+        "deployed_at": "2026-07-02T09:28:19",
         "target": "C:\\Users\\User\\catbot-x\\deploy_auto_preview",
         "file_count": 214,
-        "total_bytes": 27044663
+        "total_bytes": 27044718
       }
     },
     "scheduled_task": {
@@ -448,9 +448,9 @@
       "ok": true,
       "installed": true,
       "state": "Running",
-      "last_run_time": "2026-07-02T09:28:09",
+      "last_run_time": "2026-07-02T10:28:09",
       "last_task_result": 267009,
-      "next_run_time": "2026-07-02T09:58:08",
+      "next_run_time": "2026-07-02T10:58:08",
       "number_of_missed_runs": 0,
       "repetition_interval": "PT30M",
       "action_matches": true,
