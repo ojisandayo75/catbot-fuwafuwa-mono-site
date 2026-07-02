@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T23:28:11",
+  "generated_at": "2026-07-03T00:28:11",
   "site": {
     "name": "ふわふわ猫マガジン",
     "tagline": "猫と暮らす、毎日のヒント。困りごとの原因と対策を、やさしくまとめています。",
@@ -947,7 +947,7 @@
     "note": "体調の変化が続く時は、商品選びより先に動物病院へ相談してください。"
   },
   "catbot_trends": {
-    "generated_at": "2026-07-02T23:28:11",
+    "generated_at": "2026-07-03T00:28:11",
     "source_counts": {
       "posts": 10,
       "videos": 12,
@@ -982,7 +982,7 @@
     "summary": "人気の猫動画の投稿・動画データから、いま商品導線につなげやすい猫テーマを自動で並べています。"
   },
   "purchase_advisor": {
-    "generated_at": "2026-07-02T23:28:11",
+    "generated_at": "2026-07-03T00:28:11",
     "cards": [
       {
         "id": "home-alone",
@@ -1119,7 +1119,7 @@
     "summary": "猫の性格・暮らし・人気の猫動画の反応・季節ケアから、買う前に確認するポイントを自動で並べています。"
   },
   "update_notes": {
-    "generated_at": "2026-07-02T23:28:11",
+    "generated_at": "2026-07-03T00:28:11",
     "cards": [
       {
         "title": "猫好きの仲間進捗",
@@ -1449,6 +1449,29 @@
       }
     },
     {
+      "posted_at": "2026-07-02T15:01:00",
+      "tweet_id": "2072561159480439253",
+      "rank": 4,
+      "video_id": "7607787265405848845",
+      "tiktok_user": "funny.cat555",
+      "text": "え、今\n\n他人の猫動画で、寝ぼけた子が飼い主さんの声にしっぽだけ返事してて、胸がきゅっとした\n\n私まで呼ばれた気分🐾 #猫好きさんと繋がりたい #猫動画",
+      "char_count": 76,
+      "hashtag_count": 2,
+      "emoji_count": 1,
+      "fish_for": "共感リプといいね",
+      "engine": "codex",
+      "play_count": 35876170,
+      "like_count": 4640924,
+      "engagement": {
+        "favorite": 895,
+        "retweet": 71,
+        "reply": 0,
+        "view": 20511,
+        "bookmark": 238,
+        "age_hours": 9.23
+      }
+    },
+    {
       "posted_at": "2026-06-20T19:30:40",
       "tweet_id": "2068280369628217440",
       "rank": 7,
@@ -1469,29 +1492,6 @@
         "view": 20124,
         "bookmark": 361,
         "age_hours": 136.74
-      }
-    },
-    {
-      "posted_at": "2026-06-11T06:00:34",
-      "tweet_id": "2064815008991813868",
-      "rank": 1,
-      "video_id": "7165883165049916718",
-      "tiktok_user": "mother_ofcats_",
-      "text": "え、今\n\n知らない猫ちゃんが、飼い主さんの声で急に目を細めた瞬間、私まで胸がぎゅっとなった\n\n画面越しでも愛って伝わるね🐾 #猫好きさんと繋がりたい #猫動画",
-      "char_count": 79,
-      "hashtag_count": 2,
-      "emoji_count": 1,
-      "fish_for": "猫動画で泣いた共感",
-      "engine": "codex",
-      "play_count": 35311819,
-      "like_count": 8072219,
-      "engagement": {
-        "favorite": 280,
-        "retweet": 15,
-        "reply": 1,
-        "view": 15435,
-        "bookmark": 59,
-        "age_hours": 150.25
       }
     }
   ],
@@ -1680,7 +1680,7 @@
     "last_posted_at": "2026-07-01T09:06:04"
   },
   "report": {
-    "generated_at": "2026-07-02T23:28:11",
+    "generated_at": "2026-07-03T00:28:11",
     "phase": "link_setup",
     "summary": {
       "followers": 673,
@@ -2140,7 +2140,7 @@
     "search_url": "https://www.amazon.co.jp/s?k=%E9%9B%BB%E5%8B%95+%E7%8C%AB%E3%81%98%E3%82%83%E3%82%89%E3%81%97"
   },
   "share_copy": {
-    "generated_at": "2026-07-02T23:28:11",
+    "generated_at": "2026-07-03T00:28:11",
     "phase": "launch_waiting",
     "account": "@fuwafuwa_mono",
     "public_url": "https://ojisandayo75.github.io/catbot-fuwafuwa-mono-site/",
@@ -2197,10 +2197,10 @@
       ]
     }
   },
-  "exported_at": "2026-07-02T23:28:11",
+  "exported_at": "2026-07-03T00:28:11",
   "consult_first": {
-    "generated_at": "2026-07-02T23:28:11",
-    "exported_at": "2026-07-02T23:28:11",
+    "generated_at": "2026-07-03T00:28:11",
+    "exported_at": "2026-07-03T00:28:11",
     "state": "consult_first_ready",
     "headline": "商品より先に相談する目安",
     "disclaimer": "このサイトは診断をしません。呼吸、尿、食欲、嘔吐・下痢、ぐったり、誤飲やけがの不安がある時は、猫用品ではなく獣医師への相談を優先します。",
