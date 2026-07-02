@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-02T12:58:10",
-  "exported_at": "2026-07-02T12:58:10",
+  "generated_at": "2026-07-02T13:28:10",
+  "exported_at": "2026-07-02T13:28:10",
   "account": "@fuwafuwa_mono",
   "phase": "needs_moshimo_approval",
   "monetization_stage": "needs_moshimo_approval",
@@ -307,7 +307,7 @@
         "remaining": {
           "tweet_send": 0,
           "post": 0,
-          "like": 2,
+          "like": 0,
           "follow": 0,
           "reply": 0,
           "quote": 0,
